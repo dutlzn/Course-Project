@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-//@EnableEurekaClient // 注册到注册中心
+@EnableEurekaClient // 注册到注册中心
 public class SystemApplication {
 
 

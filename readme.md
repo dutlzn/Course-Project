@@ -414,7 +414,7 @@ server.port=9001
 
 log配置里面 斜杠方向变一下
 
-讲system 子模块 注册到注册中心, 注册中心客户端
+修改system 启动类
 
 ```java
 package com.lzn;
@@ -427,7 +427,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-@EnableEurekaClient // 注册到注册中心
 public class SystemApplication {
 
 
@@ -460,6 +459,49 @@ public class TestController {
     public String test() {
         return "test";
     }
+
+}
+
+```
+
+将system 注册到注册中心
+
+修改system 配置属性
+
+```
+spring.application.name=system
+server.servlet.context-path=/system
+server.port=9001
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+```
+
+
+
+修改 system 启动类
+
+```java
+package com.lzn;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.core.env.Environment;
+
+@SpringBootApplication
+@EnableEurekaClient // 注册到注册中心
+public class SystemApplication {
+
+
+	private static final Logger LOG = LoggerFactory.getLogger(SystemApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication app = new SpringApplication(SystemApplication.class);
+		Environment environment = app.run(args).getEnvironment();
+		LOG.info("启动成功！！");
+		LOG.info("System地址: \thttp://127.0.0.1:{}", environment.getProperty("server.port"));
+	}
 
 }
 
