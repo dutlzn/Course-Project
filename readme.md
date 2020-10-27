@@ -851,3 +851,181 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
 
 
+mybatis使用实例
+
+system domain
+
+```java
+package com.lzn.domain;
+
+public class Test {
+
+    private String id;
+
+    private String name;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+```
+
+
+
+在system.resource 下面新建mapper文件夹
+
+新建TestMapper.xml
+
+
+
+system 下面新建mapper包
+
+```java
+package com.lzn.mapper;
+
+import com.lzn.domain.Test;
+
+import java.util.List;
+
+public interface TestMapper {
+
+    public List<Test> list();
+    
+}
+
+```
+
+
+
+装一个插件 free mybatis
+
+修改启动类
+
+```java
+
+package com.lzn;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.core.env.Environment;
+
+@SpringBootApplication
+@EnableEurekaClient // 注册到注册中心
+@MapperScan("com.lzn.mapper")
+public class SystemApplication {
+
+
+	private static final Logger LOG = LoggerFactory.getLogger(SystemApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication app = new SpringApplication(SystemApplication.class);
+		Environment environment = app.run(args).getEnvironment();
+		LOG.info("启动成功！！");
+		LOG.info("System地址: \thttp://127.0.0.1:{}", environment.getProperty("server.port"));
+	}
+
+}
+
+```
+
+
+
+一个项目一般会有controller  service mapper 或者 叫dao三层
+
+新家一个服务
+
+```java
+package com.lzn.service;
+
+import com.lzn.domain.Test;
+import com.lzn.mapper.TestMapper;
+import com.netflix.discovery.converters.Auto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Service
+public class TestService {
+
+    @Autowired
+    private TestMapper testMapper;
+
+
+    public List<Test> list() {
+        return testMapper.list();
+    }
+}
+
+```
+
+修改控制器
+
+```java
+package com.lzn.controller;
+
+import com.lzn.domain.Test;
+import com.lzn.service.TestService;
+import com.netflix.discovery.converters.Auto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class TestController {
+
+    @Autowired
+    private TestService testService;
+
+    @RequestMapping("/test")
+    public List<Test> test() {
+//        return "test";
+        return testService.list();
+    }
+
+}
+
+
+```
+
+修改system 属性配置文件
+
+```
+spring.application.name=system
+server.servlet.context-path=/system
+server.port=9001
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+spring.datasource.url=jdbc:mysql://192.168.56.101:3306/course?characterEncoding=UTF8&autoReconnect=true
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+
+# mybatis 路径
+mybatis.mapper-locations=classpath:/mapper/*.xml
+
+```
+
+
+
