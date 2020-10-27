@@ -889,6 +889,19 @@ public class Test {
 
 新建TestMapper.xml
 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzn.mapper.TestMapper">
+    <select id="list" resultType="com.lzn.domain.Test">
+        select `id`, `name`
+        from  `test`
+    </select>
+</mapper>
+```
+
+
+
 
 
 system 下面新建mapper包
@@ -1028,4 +1041,105 @@ mybatis.mapper-locations=classpath:/mapper/*.xml
 ```
 
 
+
+## 项目优化
+
+idea数据库 插件的使用
+
+社区版安装databse navigator插件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzn.mapper.TestMapper">
+    <select id="list" resultType="com.lzn.domain.Test">
+        select t.id, t.name from test t 
+    </select>
+</mapper>
+```
+
+注意 mapper xml 中sql 不能加  " ; "
+
+
+
+database 插件
+
+custom mysql
+
+jdbc:mysql://192.168.56.101:3306/couse?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+
+![](/3.png)
+
+
+
+其实上很差劲...
+
+```sql
+drop table if exists `test`;
+create table `test` (
+    `id` char(8) not null default '' comment 'id',
+    `name` varchar(255) comment '名称',
+    primary key (`id`)
+) engine=innodb default charset=utf8mb4 ;
+
+insert into `test` (id, name) values (1, '测试');
+```
+
+
+
+还是用navicat吧.idea社区版太差劲了
+
+## 搭建服务模块 server
+
+公共模块, 工具模块,放一些业务相关
+
+业务扩展后,需要对表加一个字段,这时 如果要保持实体类和表结构一致,则所有模块的实体都要改,费时费力
+
+如果采取的策略是: 哪个模块需要用到新的字段,就改哪里的实体类,时间长了,所有的实体类和表都对应不上,并且这种策略不能用Mybatis 代码生成器
+
+新建公共模块 server
+
+把system 下面的东西 全部拷贝到server 下面
+
+server 下面 pom.xml修改成
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>course</artifactId>
+        <groupId>com.lzn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>server</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 集成mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+    </dependencies>
+</project>
+```
+
+
+
+删掉server的启动类和controller
 
