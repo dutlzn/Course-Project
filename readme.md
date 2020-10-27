@@ -113,8 +113,11 @@ etflix.discovery.shared.transport.TransportException: Cannot execute request on 
 
 把父模块pom.xml中的
 
-```
-<dependency>   <groupId>org.springframework.cloud</groupId>   <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId></dependency>
+```xml
+<dependency>  
+    <groupId>org.springframework.cloud</groupId>   
+    <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
 ```
 
 放到eureka中 eureka.pom.xml变成这样
@@ -671,4 +674,180 @@ eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
 路由转发
 
 将外部请求转发到实际的业务模块进行处理
+
+目的 将9001地址对外隐藏, 访问的是9000/system/** 实际上访问的是9001/sytem/**
+
+启动顺序: 先启动注册中心 -> system -> gateway
+
+# SpringBoot技术整合
+
+
+
+## 集成持久层框架MyBatis
+
+负责数据持久化,将数据存储到数据库或硬盘,断电也不会丢失数据
+
+ORM对象关系映射,hibernate 是全自动orm,mybatis是半自动orm ,mybatis可以操作的花样更多,是首选的持久层框架
+
+
+
+装mysql5.7
+
+创建数据库
+
+uft8是三个字节,支持的字符有限,mysql在5.5.3之后增加了uft8mb4的编码,支持更多的字符,比如emoji小表情
+
+创建course数据库专用的用户,用户名就叫做courseroot
+
+用navicat 用户功能
+
+密码 
+
+@aA123aJLJL1123
+
+填localhost  表示创建的这个用户,只能本机登录数据库,远程是不能登录的,填%表示允许本地登录和远程登录数据库
+
+用户- 权限 添加权限 选择数据库 全选中操作
+
+上面这一部分 不是很需要 补充即可
+
+
+
+引入mysql mybatis包
+
+在根pom.xml文件中引入依赖
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>eureka</module>
+		<module>system</module>
+		<module>gateway</module>
+	</modules>
+    <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.lzn</groupId>
+	<artifactId>course</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>course</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+	</properties>
+
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+
+			<!-- 集成mybatis -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.37</version>
+			</dependency>
+
+
+
+		</dependencies>
+
+
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+
+```
+
+
+
+system 下面的pom.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>course</artifactId>
+        <groupId>com.lzn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>system</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 集成mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
+```
+
+
+
+引入的时候注意去掉版本号
+
+system 属性配置
+
+```
+spring.datasource.url=jdbc:mysql://192.168.56.101:3306/course?characterEncoding=UTF8&autoReconnect=true
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+```
+
+
 
