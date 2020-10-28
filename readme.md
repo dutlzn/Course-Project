@@ -1721,5 +1721,36 @@ public class TestService {
 
 ```
 
+以上代码 参考2
 
+
+
+# 使用Vue-Cli搭建管理控台
+
+## 使用vue cli创建admin项目
+
+vue.js vue-cli
+
+* 用法一:直接引入vue.js 适用于现成的jsp项目 thymeleaf项目等,这种用法不算前后端分离,发布时依然是前后端一起部署的
+* 用法二使用vue-cli新建项目 前后端分离开发 分离部署
+
+
+
+安装nodejs
+
+npm install -g @vue/cli 可以用于初始安装,也可以用于升级到最新版本
+
+vue create admin
+
+vue cli 初始安装带了bable和eslint插件
+
+babel:js编译器, eslint 代码规范检查
+
+选择默认选项就好
+
+
+
+main.js是vue入口文件,用来初始化vue实例并集成所需要的插件
+
+把app.vue替换调index.html 里 <div id="app"></div>
 
