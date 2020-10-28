@@ -1754,3 +1754,119 @@ main.js是vue入口文件,用来初始化vue实例并集成所需要的插件
 
 把app.vue替换调index.html 里 <div id="app"></div>
 
+
+
+## 集成bootstrap后台响应式管理模板
+
+### ace admin  
+
+技术 : ace bootstrap + jquery
+
+http://ace.jeka.by/index.html
+
+admin 增加ace模板
+
+ace放到admin public文件夹下面
+
+所有项目中的静态代码全部放在public目录下
+
+login.html 里 head + 最后的js 全部放到index.html 里的 head
+
+index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head> -->
+
+  <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Login Page - Ace Admin</title>
+
+
+		<meta name="description" content="User login page" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="<%= BASE_URL %>ace/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/ace.min.css" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" />
+		<![endif]-->
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/ace-rtl.min.css" />
+    
+    <!--[if !IE]> -->
+    <script src="<%= BASE_URL %>ace/assets/js/jquery-2.1.4.min.js"></script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+    </script>
+
+  </head>
+  
+
+
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+```
+
+
+
+关闭代码检查
+
+.eslintrc.js 增加这个文件
+
+```typescript
+module.exports = {
+    root: true,
+    env: {
+        node: true
+    },
+    'extends': [
+        'plugin:vue/essential',
+        'eslint:recommended'
+    ],
+    rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-undef': 'off',
+        'vue/no-unused-vars': 'off',
+        'vue/require-v-for-key': 'off',
+        'no-unused-vars': 'off',
+        'vue/no-unused-components': 'off'
+    },
+    parserOptions: {
+        parser: 'babel-eslint'
+    }
+};
+
+```
+
+
+
