@@ -843,10 +843,16 @@ system 下面的pom.xml
 system 属性配置
 
 ```
-spring.datasource.url=jdbc:mysql://192.168.56.101:3306/course?characterEncoding=UTF8&autoReconnect=true
+spring.application.name=system
+server.servlet.context-path=/system
+server.port=9001
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+spring.datasource.url=jdbc:mysql://192.168.56.101:3306/couse?characterEncoding=UTF8&autoReconnect=true
 spring.datasource.username=root
 spring.datasource.password=123456
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
 ```
 
 
@@ -1142,4 +1148,578 @@ server 下面 pom.xml修改成
 
 
 删掉server的启动类和controller
+
+
+
+system集成server
+
+根pom.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>eureka</module>
+		<module>system</module>
+		<module>gateway</module>
+        <module>server</module>
+    </modules>
+    <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.lzn</groupId>
+	<artifactId>course</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>course</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+	</properties>
+
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+
+			<!-- 集成mybatis -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.37</version>
+			</dependency>
+
+            
+			<dependency>
+				<groupId>com.lzn</groupId>
+				<artifactId>server</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+
+
+		</dependencies>
+
+
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+
+```
+
+
+
+system pom 引入server
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>course</artifactId>
+        <groupId>com.lzn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>system</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 集成mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.lzn</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lzn</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
+```
+
+
+
+工程目录:
+
+![](/4.png)
+
+server 下面的属性配置文件可以不需要 后面会介绍
+
+
+
+
+
+```
+
+
+```
+
+system下面的属性配置文件
+
+```
+spring.application.name=system
+server.servlet.context-path=/system
+server.port=9001
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+spring.datasource.url=jdbc:mysql://192.168.56.101:3306/couse?characterEncoding=UTF8&autoReconnect=true
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+
+# mybatis 路径
+mybatis.mapper-locations=classpath:/mapper/*.xml
+
+```
+
+
+
+集中配置
+
+整理属性配置
+
+server作为jar包被依赖,她的resources下的配置文件会和system下的配置文件冲突
+
+spring默认也会读取resources/config下的配置文件
+
+改完之后
+
+server resources config 属性文件
+
+```
+
+
+spring.datasource.url=jdbc:mysql://192.168.56.101:3306/couse?characterEncoding=UTF8&autoReconnect=true
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+
+# mybatis 路径
+mybatis.mapper-locations=classpath:/mapper/*.xml
+
+# 日志输出级别
+logging.level.com.lzn.mapper=trace
+
+
+```
+
+
+
+system 属性文件
+
+```
+spring.application.name=system
+server.servlet.context-path=/system
+server.port=9001
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+#spring.datasource.url=jdbc:mysql://192.168.56.101:3306/couse?characterEncoding=UTF8&autoReconnect=true
+#spring.datasource.username=root
+#spring.datasource.password=123456
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+#
+#
+## mybatis 路径
+#mybatis.mapper-locations=classpath:/mapper/*.xml
+#
+## 日志输出级别
+#logging.level.com.lzn.mapper=trace
+#
+
+```
+
+
+
+system java 新建 config 包, 把system 启动类 放到config里面
+
+```java
+package com.lzn.config;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.core.env.Environment;
+
+@SpringBootApplication
+@EnableEurekaClient // 注册到注册中心
+@MapperScan("com.lzn.mapper")
+@ComponentScan("com.lzn")
+public class SystemApplication {
+
+
+	private static final Logger LOG = LoggerFactory.getLogger(SystemApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication app = new SpringApplication(SystemApplication.class);
+		Environment environment = app.run(args).getEnvironment();
+		LOG.info("启动成功！！");
+		LOG.info("System地址: \thttp://127.0.0.1:{}", environment.getProperty("server.port"));
+	}
+
+}
+
+```
+
+
+
+
+
+项目结构
+
+![](/5.png)
+
+
+
+以上代码见代码1 
+
+## 集成mybatis generator
+
+官方工具
+
+idea 集成 mybatis generator 生成 mybatis 代码
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>eureka</module>
+		<module>system</module>
+		<module>gateway</module>
+        <module>server</module>
+    </modules>
+    <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.lzn</groupId>
+	<artifactId>course</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>course</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+	</properties>
+
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+
+			<!-- 集成mybatis -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.37</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.lzn</groupId>
+				<artifactId>server</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+
+
+		</dependencies>
+
+
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- mybatis generator 自动生成代码插件 -->
+			<plugin>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<version>1.3.7</version>
+				<configuration>
+<!--					配置文件 -->
+					<configurationFile>src/main/resources/generator/generatorConfig.xml</configurationFile>
+					<overwrite>true</overwrite>
+					<verbose>true</verbose>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.37</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>
+
+```
+
+
+
+添加配置文件generatorConfig.xml
+
+server - resources - generator - generatorConfig.xml
+
+反引号`` 如果表名或者字段名是mysql的关键字,比如table from 等, 这时可以加上反引号,比如
+
+```sql
+select `data` from `from`
+```
+
+mapper 类型
+
+有三种生成方式, annotatedmapper (生成的sql全部在java中)
+
+mixedmapper(sql部分在java中)
+
+xmlmapper(生成的sql全部在xml中)
+
+推荐使用xmlmapper将java代码和sql 代码分离
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- 生成的实体类添加toString()方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+        <!-- 不生成注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.56.101:3306/couse"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <!-- domain类的位置 -->
+        <javaModelGenerator targetProject="src\main\java"
+                            targetPackage="com.lzn.domain"/>
+
+        <!-- mapper xml的位置 -->
+        <sqlMapGenerator targetProject="src\main\resources"
+                         targetPackage="mapper"/>
+
+        <!-- mapper类的位置 -->
+        <javaClientGenerator targetProject="src\main\java"
+                             targetPackage="com.lzn.mapper"
+                             type="XMLMAPPER" />
+
+        <!--        <table tableName="test" domainObjectName="Test"/>-->
+        <!--        <table tableName="chapter" domainObjectName="Chapter"/>-->
+        <!--        <table tableName="section" domainObjectName="Section"/>-->
+        <!--        <table tableName="course" domainObjectName="Course"/>-->
+        <!--        <table tableName="course_content" domainObjectName="CourseContent"/>-->
+        <!--        <table tableName="course_content_file" domainObjectName="CourseContentFile"/>-->
+        <!--        <table tableName="teacher" domainObjectName="Teacher"/>-->
+        <!--        <table tableName="file" domainObjectName="File"/>-->
+        <!--        <table tableName="user" domainObjectName="User"/>-->
+        <!--        <table tableName="resource" domainObjectName="Resource"/>-->
+        <!--        <table tableName="role" domainObjectName="Role"/>-->
+        <!--        <table tableName="role_resource" domainObjectName="RoleResource"/>-->
+        <!--        <table tableName="role_user" domainObjectName="RoleUser"/>-->
+        <!--        <table tableName="member" domainObjectName="Member"/>-->
+        <!--        <table tableName="sms" domainObjectName="Sms"/>-->
+        <table tableName="test" domainObjectName="Test"/>
+    </context>
+</generatorConfiguration>
+
+```
+
+
+
+
+
+修改配置
+
+![](/6.png)
+
+
+
+
+解决mapper.xml重复生成代码的问题
+
+见上面, 旧版本 自己写java类,用来启动生成器,而不是用maven命令启动,在java类里删除表xml文件,在执行生成代码
+
+所以要注意生成器的版本
+
+原来的的xml会被覆盖,所以绝对不要在生成的xml手动修改代码,因为下次在生成时,手动修改的代码会被覆盖掉
+
+
+
+example可以理解成where ,通过example,可以帮我们写入where,order by distinct等,需要熟练掌握,可以极大提高单表的开发效率
+
+
+
+修改testService 用生成的mapper方法
+
+```java
+package com.lzn.service;
+
+import com.lzn.domain.Test;
+import com.lzn.mapper.TestMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Service
+public class TestService {
+
+    @Autowired
+    private TestMapper testMapper;
+
+
+    public List<Test> list() {
+//        return testMapper.list();
+        // 查询所有的符合条件的数据, 没有条件就是null
+        return testMapper.selectByExample(null);
+    }
+}
+
+```
+
+
+
+
+
+
+
+小技巧: ctrl+alt+v 快速生成一个变量
+
+取出来的数据 排序
+
+```java
+package com.lzn.service;
+
+import com.lzn.domain.Test;
+import com.lzn.domain.TestExample;
+import com.lzn.mapper.TestMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Service
+public class TestService {
+
+    @Autowired
+    private TestMapper testMapper;
+
+
+    public List<Test> list() {
+//        return testMapper.list();
+        TestExample testExample = new TestExample();
+
+        // createCriteria才是相当于where
+        testExample.createCriteria().andIdEqualTo("1");
+//        testExample.setOrderByClause("id asc");// id 从小到大
+        testExample.setOrderByClause("id desc");// id 从大到小
+        return testMapper.selectByExample(testExample);
+    }
+}
+
+```
+
+
 
