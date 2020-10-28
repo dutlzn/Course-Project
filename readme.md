@@ -2239,3 +2239,182 @@ export default {
 
 
 
+## 集成路由vue-router
+
+cd admin
+
+cnpm install --save vue-router
+
+
+
+app.vue
+
+```
+<template>
+  <div id="app">
+    <router-view/>
+  </div>
+</template>>
+```
+
+
+
+router-view是路由嵌套的标签,一般配合父子路由使用
+
+
+
+src/view/login.vue  就是原来的app.vue
+
+```vue
+<template>
+		<div class="main-container">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="login-container">
+							<div class="center">
+								<h1>
+									<i class="ace-icon fa fa-leaf green"></i>
+
+                  <span class="">控台管理</span>
+								</h1>
+							</div>
+
+							<div class="space-6"></div>
+
+							<div class="position-relative">
+								<div id="login-box" class="login-box visible widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header blue lighter bigger">
+												<i class="ace-icon fa fa-coffee green"></i>
+											请输入用户名密码
+											</h4>
+
+											<div class="space-6"></div>
+
+											<form>
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="用户名" />
+															<i class="ace-icon fa fa-user"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="密码" />
+															<i class="ace-icon fa fa-lock"></i>
+														</span>
+													</label>
+
+													<div class="space"></div>
+
+													<div class="clearfix">
+														<label class="inline">
+															<input type="checkbox" class="ace" />
+															<span class="lbl"> 记住我</span>
+														</label>
+
+														<button type="button" class="width-35 pull-right btn btn-sm btn-primary">
+															<i class="ace-icon fa fa-key"></i>
+															<span class="bigger-110">登录</span>
+														</button>
+													</div>
+
+													<div class="space-4"></div>
+												</fieldset>
+											</form>
+
+
+											<div class="space-6"></div>
+										</div><!-- /.widget-main -->
+
+			
+									</div><!-- /.widget-body -->
+								</div><!-- /.login-box -->
+
+						
+							</div><!-- /.position-relative -->
+
+							<!-- <div class="navbar-fixed-top align-right">
+								<br />
+								&nbsp;
+								<a id="btn-login-dark" href="#">Dark</a>
+								&nbsp;
+								<span class="blue">/</span>
+								&nbsp;
+								<a id="btn-login-blur" href="#">Blur</a>
+								&nbsp;
+								<span class="blue">/</span>
+								&nbsp;
+								<a id="btn-login-light" href="#">Light</a>
+								&nbsp; &nbsp; &nbsp;
+							</div> -->
+						</div>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.main-content -->
+		</div><!-- /.main-container -->
+
+</template>
+
+<script>
+$('body').attr('class', 'login-layout light-login');
+export default {
+  name: 'login',
+
+}
+</script>
+
+```
+
+
+
+main.js
+
+```vue
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app')
+
+```
+
+
+
+main.js同目录 router.js
+
+```vue
+
+import Vue from 'vue'
+import Router from 'vue-router'
+import Login from './views/login.vue'
+
+Vue.use(Router);
+
+export default new Router(
+    {
+        mode: 'history',
+        base: process.env.BABEL_URL,
+        routes: [{
+            path: '*',
+            redirect: "/login",
+        }, {
+            path: "/login",
+            component: Login
+        }]
+    }
+
+)
+```
+
+angular也有两种url展示形式 hash 或者 history 一般选择 history 美观
+
