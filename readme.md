@@ -7447,6 +7447,138 @@ mounted: function() {
 
 这里有一个bug 从login跳转到 welcome 无法伸缩
 
+cnpm i axios --save
+
+--save 在pacjage.json添加依赖  不加,只是去下载插件,项目中并没有依赖插件
+
+
+
+
+
+
+
+
+
+### 集成axios完成前后端交互
+
+修改main.js
+
+```
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+
+import axios from 'axios'
+
+Vue.config.productionTip = false
+Vue.prototype.$ajax=axios;
+
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app')
+
+```
+
+
+
+Vue.prototype. 可以理解为vue组件的全局变量,可以在任意vue组件中,使用this.xxx来获取这个值, $是达标vue全局属性的一个约定
+
+
+
+chapter.vue 中 获取后端数据
+
+```
+
+export default {
+    name: 'chapter',
+
+    // 页面初始化加载方法
+    mounted: function() {
+        // this.$parent.activeSidebar('business-chapter-sidebar');
+        let _this = this;
+        _this.list();
+    },
+    methods: {
+        list() {
+            let _this = this;
+            _this.$ajax.get('http://127.0.0.1:9002/business/admin/chapter/list').then((response)=>{
+                console.log("查询大章列表结果:", response);
+            })
+        }
+    }
+}
+</script>
+```
+
+
+
+后端 chapterController 改成
+
+```
+package com.lzn.business.controller.admin;
+
+
+import com.lzn.domain.Chapter;
+import com.lzn.dto.ChapterDto;
+import com.lzn.service.ChapterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+// 该路径说明是用来供控台使用了
+@RequestMapping("/admin/chapter")
+public class ChapterController {
+    @Autowired
+    private ChapterService chapterService;
+
+    @RequestMapping("/list")
+    public List<ChapterDto> chapter() {
+        return chapterService.list();
+    }
+}
+
+```
+
+
+
+
+
+cors 跨站点,资源分享, 属于跨域问题, 同个ip 的不同端口间的访问也属于跨域,前后端分离必然有跨域问题
+
+
+
+
+
+在后端,server  config 加入
+
+```
+package com.lzn.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class CorsConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowedHeaders(CorsConfiguration.ALL)
+                .allowedMethods(CorsConfiguration.ALL)
+                .allowCredentials(true)
+                .maxAge(3600); // 1小时内不需要再预检（发OPTIONS请求）
+    }
+}
+```
+
+
+
 
 
 

@@ -12,12 +12,12 @@ import java.util.List;
 
 @RestController
 // 该路径说明是用来供控台使用了
-@RequestMapping("/admin")
+@RequestMapping("/admin/chapter")
 public class ChapterController {
     @Autowired
     private ChapterService chapterService;
 
-    @RequestMapping("/chapter")
+    @RequestMapping("/list")
     public List<ChapterDto> chapter() {
         return chapterService.list();
     }
