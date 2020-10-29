@@ -1023,3 +1023,167 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2020-10-29 20:15:30.660 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
 2020-10-29 20:19:29.606 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
 2020-10-29 20:19:31.074 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-10-29 20:19:31.587 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=7188964d-28bd-3423-8fa4-b255a0700b3f
+2020-10-29 20:19:32.028 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-10-29 20:19:32.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-10-29 20:19:32.038 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-10-29 20:19:32.038 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-29 20:19:32.181 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-10-29 20:19:32.181 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1094 ms
+2020-10-29 20:19:32.459 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-10-29 20:19:32.459 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-29 20:19:32.465 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-10-29 20:19:32.465 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-29 20:19:32.586 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 20:19:33.988 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-10-29 20:19:34.015 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-10-29 20:19:35.166 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-10-29 20:19:35.187 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-29 20:19:35.230 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-10-29 20:19:35.283 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-10-29 20:19:35.414 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-10-29 20:19:35.414 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-10-29 20:19:35.531 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-10-29 20:19:35.531 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-10-29 20:19:35.665 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-10-29 20:19:35.758 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-10-29 20:19:35.758 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-10-29 20:19:35.758 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-10-29 20:19:35.758 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-10-29 20:19:35.759 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-10-29 20:19:35.759 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-10-29 20:19:35.759 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-10-29 20:19:35.896 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-10-29 20:19:35.898 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-10-29 20:19:35.900 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-29 20:19:35.902 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1603973975901 with initial instances count: 1
+2020-10-29 20:19:35.903 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-10-29 20:19:35.903 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1603973975903, current=UP, previous=STARTING]
+2020-10-29 20:19:35.905 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-10-29 20:19:35.906 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-10-29 20:19:35.930 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-10-29 20:19:35.931 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-10-29 20:19:35.932 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-10-29 20:19:37.052 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-10-29 20:19:37.058 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 8.865 seconds (JVM running for 9.333)
+2020-10-29 20:19:37.059 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-10-29 20:19:37.060 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-10-29 20:19:40.075 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-29 20:19:40.076 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-10-29 20:19:40.081 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 5 ms
+2020-10-29 20:19:40.151 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2020-10-29 20:19:40.311 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2020-10-29 20:19:40.316 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:19:40.329 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:19:40.337 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:19:40.337 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:19:40.338 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:19:40.339 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:21:40.471 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:21:40.472 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:21:40.473 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:21:40.473 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:21:40.474 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:21:40.474 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:22:09.677 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:22:09.678 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:22:09.680 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:22:09.680 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:22:09.681 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:22:09.681 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:22:09.703 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:22:09.703 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:22:09.704 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:22:09.704 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:22:09.705 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:22:09.705 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:22:19.321 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:22:19.322 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:22:19.324 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:22:19.325 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:22:19.326 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:22:19.327 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:23:00.949 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:23:00.950 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:23:00.951 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:23:00.952 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:23:00.952 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:23:00.953 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:23:07.716 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:23:07.716 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:23:07.717 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:23:07.717 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:23:07.718 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:23:07.718 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:23:32.873 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:23:32.874 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:23:32.875 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:23:32.875 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:23:32.875 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:23:32.876 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:24:09.114 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:24:09.114 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:24:09.115 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:24:09.115 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:24:09.115 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:24:09.116 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:24:13.176 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:24:13.177 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:24:13.178 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:24:13.178 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:24:13.179 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:24:13.179 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:24:35.762 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-10-29 20:25:05.804 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:25:05.805 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:25:05.811 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:25:05.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:25:05.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:25:05.812 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:25:08.275 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:25:08.276 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:25:08.277 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:25:08.278 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:25:08.279 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:25:08.279 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:25:31.518 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:25:31.519 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:25:31.520 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:25:31.520 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:25:31.520 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:25:31.521 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:25:52.983 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:25:52.983 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:25:52.984 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:25:52.984 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:25:52.984 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:25:52.985 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:26:06.170 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:26:06.170 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:26:06.171 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:26:06.172 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:26:06.172 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:26:06.173 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:26:54.409 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:26:54.410 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:26:54.412 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:26:54.412 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:26:54.412 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:26:54.412 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:28:10.000 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:28:10.001 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:28:10.002 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:28:10.002 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:28:10.003 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:28:10.003 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:28:14.093 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-10-29 20:28:14.093 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 
+2020-10-29 20:28:14.094 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-10-29 20:28:14.094 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章一
+2020-10-29 20:28:14.095 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 0000001, 测试大章二
+2020-10-29 20:28:14.095 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 2
+2020-10-29 20:29:35.764 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-10-29 20:34:35.766 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-10-29 20:37:28.227 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-10-29 20:37:29.744 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-10-29 20:37:30.463 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=7188964d-28bd-3423-8fa4-b255a0700b3f
