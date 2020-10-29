@@ -4909,8 +4909,8 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
                                     <ul class="dropdown-menu dropdown-navbar">
                                         <li>
                                             <a href="#" class="clearfix">
-                                                <img src="../../public/ace/assets/images/avatars/avatar.png" class="msg-photo"
-                                                    alt="Alex's Avatar" />
+                                                <img src="../../public/ace/assets/images/avatars/avatar.png"
+                                                    class="msg-photo" alt="Alex's Avatar" />
                                                 <span class="msg-body">
                                                     <span class="msg-title">
                                                         <span class="blue">Alex:</span>
@@ -4927,8 +4927,8 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
 
                                         <li>
                                             <a href="#" class="clearfix">
-                                                <img src="../../public/ace/assets/images/avatars/avatar3.png" class="msg-photo"
-                                                    alt="Susan's Avatar" />
+                                                <img src="../../public/ace/assets/images/avatars/avatar3.png"
+                                                    class="msg-photo" alt="Susan's Avatar" />
                                                 <span class="msg-body">
                                                     <span class="msg-title">
                                                         <span class="blue">Susan:</span>
@@ -4945,8 +4945,8 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
 
                                         <li>
                                             <a href="#" class="clearfix">
-                                                <img src="../../public/ace/assets/images/avatars/avatar4.png" class="msg-photo"
-                                                    alt="Bob's Avatar" />
+                                                <img src="../../public/ace/assets/images/avatars/avatar4.png"
+                                                    class="msg-photo" alt="Bob's Avatar" />
                                                 <span class="msg-body">
                                                     <span class="msg-title">
                                                         <span class="blue">Bob:</span>
@@ -4963,8 +4963,8 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
 
                                         <li>
                                             <a href="#" class="clearfix">
-                                                <img src="../../public/ace/assets/images/avatars/avatar2.png" class="msg-photo"
-                                                    alt="Kate's Avatar" />
+                                                <img src="../../public/ace/assets/images/avatars/avatar2.png"
+                                                    class="msg-photo" alt="Kate's Avatar" />
                                                 <span class="msg-body">
                                                     <span class="msg-title">
                                                         <span class="blue">Kate:</span>
@@ -4981,8 +4981,8 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
 
                                         <li>
                                             <a href="#" class="clearfix">
-                                                <img src="../../public/ace/assets/images/avatars/avatar5.png" class="msg-photo"
-                                                    alt="Fred's Avatar" />
+                                                <img src="../../public/ace/assets/images/avatars/avatar5.png"
+                                                    class="msg-photo" alt="Fred's Avatar" />
                                                 <span class="msg-body">
                                                     <span class="msg-title">
                                                         <span class="blue">Fred:</span>
@@ -5010,7 +5010,8 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
 
                         <li class="light-blue dropdown-modal">
                             <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                                <img class="nav-user-photo" src="../../public/ace/assets/images/avatars/user.jpg" alt="Jason's Photo" />
+                                <img class="nav-user-photo" src="../../public/ace/assets/images/avatars/user.jpg"
+                                    alt="Jason's Photo" />
                                 <span class="user-info">
                                     <small>Welcome,</small>
                                     Jason
@@ -5106,9 +5107,9 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
                         <b class="arrow"></b>
                     </li>
 
-       
 
-                    <li class = "active open">
+
+                    <li class="active open">
                         <a href="#" class="dropdown-toggle">
                             <i class="menu-icon fa fa-list"></i>
                             <span class="menu-text">系统管理</span>
@@ -5139,7 +5140,7 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
                         </ul>
                     </li>
 
-         
+
                 </ul>
                 <!-- /.nav-list -->
 
@@ -5204,6 +5205,352 @@ active : 当前菜单是激活样式(高亮,粗体,字体颜色是蓝色等, ope
     }
 </script>
 ```
+
+
+
+# 单表管理功能前后端开发
+
+## 大章列表查询功能开发
+
+### 增加maven子项目business
+
+把system pom.xml里的依赖全部拷贝到business中
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>course</artifactId>
+        <groupId>com.lzn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>business</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 集成mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.lzn</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lzn</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+</project>
+```
+
+在business下面新建com.lzn.buiness包
+
+把system下面的config和controller全部拷贝到这里来
+
+重命名BusinessApplication
+
+
+
+拷贝business里的resource文件
+
+属性配置如下
+
+```
+spring.application.name=business
+server.servlet.context-path=/business
+server.port=9002
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+#spring.datasource.url=jdbc:mysql://192.168.56.101:3306/couse?characterEncoding=UTF8&autoReconnect=true
+#spring.datasource.username=root
+#spring.datasource.password=123456
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+#
+#
+## mybatis 路径
+#mybatis.mapper-locations=classpath:/mapper/*.xml
+#
+## 日志输出级别
+#logging.level.com.lzn.mapper=trace
+#
+
+```
+
+
+
+
+
+新建大章sql
+
+```
+# ------ 大章 ---------
+drop table if EXISTS `chapter`;
+create table `chapter` (
+	`id` char(8) not null COMMENT 'ID',
+	`course_id` char(8) comment '课程id',
+	`name` varchar(50) comment '名称',
+	primary key (`id`)
+) ENGINE=INNODB DEFAULT charset=utf8mb4 comment='大章';
+
+# ----------------测试
+drop table if exists `test`;
+create table `test` (
+    `id` char(8) not null default '' comment 'id',
+    `name` varchar(255) comment '名称',
+    primary key (`id`)
+) engine=innodb default charset=utf8mb4 ;
+
+insert into `test` (id, name) values (1, '测试');
+insert into `test` (id, name) values (3, '测试2');
+
+
+
+```
+
+
+修改mapper 代码生成器
+
+```
+<table tableName="chapter" domainObjectName="Chapter"/>
+```
+
+### 完成后端列表查询接口
+
+server service
+
+```java
+package com.lzn.service;
+
+import com.lzn.domain.Chapter;
+import com.lzn.domain.ChapterExample;
+import com.lzn.domain.Test;
+import com.lzn.domain.TestExample;
+import com.lzn.mapper.ChapterMapper;
+import com.lzn.mapper.TestMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Service
+public class ChapterService {
+
+    @Autowired
+    private ChapterMapper chapterMapper;
+
+
+    public List<Chapter> list() {
+//        return testMapper.list();
+        ChapterExample chapterExample = new ChapterExample();
+
+
+        // createCriteria才是相当于where
+        chapterExample.createCriteria().andIdEqualTo("1");
+//        testExample.setOrderByClause("id asc");// id 从小到大
+        chapterExample.setOrderByClause("id desc");// id 从大到小
+        return chapterMapper.selectByExample(chapterExample);
+    }
+}
+
+```
+
+
+
+business controller
+
+```java
+package com.lzn.business.controller;
+
+
+import com.lzn.domain.Chapter;
+import com.lzn.service.ChapterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class ChapterController {
+    @Autowired
+    private ChapterService chapterService;
+
+    @RequestMapping("/chapter")
+    public List<Chapter> chapter() {
+        return chapterService.list();
+    }
+}
+
+```
+
+business controller 
+
+web 包 外网
+
+admin 包 控台使用
+
+ChapterController放在admin下面
+
+```java
+package com.lzn.business.controller.admin;
+
+
+import com.lzn.domain.Chapter;
+import com.lzn.service.ChapterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/admin")
+public class ChapterController {
+    @Autowired
+    private ChapterService chapterService;
+
+    @RequestMapping("/chapter")
+    public List<Chapter> chapter() {
+        return chapterService.list();
+    }
+}
+
+```
+
+
+
+
+
+
+
+分层
+
+server domain 是属于底层的
+
+增加数据传输层 dto 数据传输对象,用于数据传输
+
+domain内的实体,是mybatis 自动生成的,不允许手动修改,一旦修改 再次生成实体类, 所做的的修改会被覆盖
+
+domain 作用于service 和 mapper  
+
+dto作用于ctroller 和 service
+
+
+
+Chapter改名 ChapterDto
+
+修改服务
+
+```java
+package com.lzn.service;
+
+import com.lzn.domain.Chapter;
+import com.lzn.domain.ChapterExample;
+import com.lzn.domain.Test;
+import com.lzn.domain.TestExample;
+import com.lzn.dto.ChapterDto;
+import com.lzn.mapper.ChapterMapper;
+import com.lzn.mapper.TestMapper;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+@Service
+public class ChapterService {
+
+    @Autowired
+    private ChapterMapper chapterMapper;
+
+
+    public List<ChapterDto> list() {
+        ChapterExample chapterExample = new ChapterExample();
+        chapterExample.createCriteria().andIdEqualTo("1");
+        chapterExample.setOrderByClause("id desc");
+        List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
+        List<ChapterDto> chapterDtoList = new ArrayList<>();
+
+        for(int i = 0;i<chapterList.size();++i){
+            Chapter chapter = chapterList.get(i);
+            ChapterDto chapterDto = new ChapterDto();
+            BeanUtils.copyProperties(chapter, chapterDto);
+            chapterDtoList.add(chapterDto);
+        }
+
+
+        return chapterDtoList;
+
+
+    }
+}
+
+```
+
+
+
+增加测试数据
+
+```sql
+# ------ 大章 ---------
+drop table if EXISTS `chapter`;
+create table `chapter` (
+	`id` char(8) not null COMMENT 'ID',
+	`course_id` char(8) comment '课程id',
+	`name` varchar(50) comment '名称',
+	primary key (`id`)
+) ENGINE=INNODB DEFAULT charset=utf8mb4 comment='大章';
+
+insert into `chapter` (id, course_id, name) values ('00000000', '0000000', '测试大章一');
+insert into `chapter` (id, course_id, name) values ('00000001', '0000001', '测试大章二');
+
+# ----------------测试
+drop table if exists `test`;
+create table `test` (
+    `id` char(8) not null default '' comment 'id',
+    `name` varchar(255) comment '名称',
+    primary key (`id`)
+) engine=innodb default charset=utf8mb4 ;
+
+insert into `test` (id, name) values (1, '测试');
+insert into `test` (id, name) values (3, '测试2');
+
+
+
+```
+
+
+
+
+
+
+
+## 分页功能开发
 
 
 
