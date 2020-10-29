@@ -9,10 +9,10 @@ export default {
     name: 'welcome',
     // 页面初始化加载
     mounted: function() {
-        this.$parent.activeSidebar('welcome-sidebar');
+        // this.$parent.activeSidebar('welcome-sidebar');
     },
 
-    
+
     methods: {
 
     }

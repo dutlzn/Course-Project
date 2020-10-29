@@ -1016,7 +1016,7 @@ export default {
 
     // 页面初始化加载方法
     mounted: function() {
-        this.$parent.activeSidebar('business-chapter-sidebar');
+        // this.$parent.activeSidebar('business-chapter-sidebar');
     },
     methods: {
 

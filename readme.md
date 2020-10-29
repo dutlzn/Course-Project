@@ -7291,6 +7291,162 @@ export default {
 
 
 
+为每一个路由都 加上一个name属性,后续做通用的sidebar激活样式方法时候会用到
+
+
+
+路由修改
+
+login.vue
+
+```
+<script>
+export default {
+  name: "login",
+  mounted: function() {
+    $("body").attr("class", "login-layout light-login");
+  },
+  methods: {
+    login() {
+      this.$router.push("/welcome");
+    }
+  }
+};
+</script>
+
+```
+
+
+
+
+
+admin.vue  去掉/admin
+
+```
+          <li class="" id="welcome-sidebar">
+                        <router-link to="/welcome">
+                            <i class="menu-icon fa fa-tachometer"></i>
+                            <span class="menu-text">欢迎</span>
+                        </router-link>
+
+                        <b class="arrow"></b>
+                    </li>
+
+```
+
+
+
+修改router.js
+
+```vue
+import Vue from 'vue'
+import Router from 'vue-router'
+import Login from './views/login.vue'
+import Admin from './views/admin.vue'
+import Welcome from './views/admin/welcome.vue'
+import Chapter from './views/admin/chapter.vue'
+
+Vue.use(Router);
+
+export default new Router(
+    {
+        mode: 'history', // history hash 推荐使用history hash 的话前面由前缀，url形式不美观，history推荐使用，路由前面只有以恶搞#
+        base: process.env.BASE_URL,
+        routes: [{
+            path: '*',
+            redirect: "/login",
+        }, {
+            path: "/login",
+            component: Login
+        }, {
+            path: "/",
+            name: "admin",
+            component: Admin,
+            children: [{
+                path: 'welcome',
+                name: 'welcome',
+                component: Welcome
+
+            }, {
+                path: 'business/chapter',
+                name: 'business/chapter',
+                component: Chapter
+            }]
+        }]
+    }
+
+)
+```
+
+
+
+通用的sidebar点击激活样式方法
+
+vue 内置的watch,用来检测vue实例上的数据变化,$route也是一个变量
+
+admin.vue
+
+```
+  watch: {
+    $route: {
+      handler: function(val, oldVal) {
+        // sidebar激活样式方法二
+        console.log("---->页面跳转：", val, oldVal);
+
+        _this.$nextTick(function() {
+          //页面加载完成后执行
+          _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+        });
+      }
+    }
+  },
+```
+
+
+
+然后就可以去掉 chapter 和 welcome 里sidebar的话了
+
+通过name属性值,得到菜单id的值,前面我们有约定,id的命名要和路由相关,程序开发中有一个设计范式叫,约定优于配置,(按约定编程)
+
+此时如果从login点击登录跳到welcome页面 , welcome并不会有激活样式 这里的watch 只在admin下面的自组件互相跳转时才有效
+
+
+
+js有关键字,代表当前执行方法的对象,养成习惯,在方法开头,声明本地变量_this 代替this,后面会介绍直接使用this 的坑
+
+
+
+所以在admin.vue js改成这样
+
+```
+mounted: function() {
+    let _this = this;
+    $("body").removeAttr("class", "login-layout light-login");
+    $("body").attr("class", "no-skin");
+     _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+  },
+
+  watch: {
+    $route: {
+      handler: function(val, oldVal) {
+        // sidebar激活样式方法二
+        console.log("---->页面跳转：", val, oldVal);
+        let _this = this;
+
+        _this.$nextTick(function() {
+          //页面加载完成后执行
+          _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+        });
+      }
+    }
+  },
+
+```
+
+
+
+这里有一个bug 从login跳转到 welcome 无法伸缩
+
 
 
 
