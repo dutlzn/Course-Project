@@ -21,14 +21,14 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.56.101:3306/couse"
+                        connectionURL="jdbc:mysql://192.168.56.101:3306/course"
                         userId="root"
                         password="123456">
         </jdbcConnection>
 
         <!-- domain类的位置 -->
         <javaModelGenerator targetProject="src\main\java"
-                            targetPackage="com.lzn.domain"/>
+                            targetPackage="com.lzn.domain"/>r
 
         <!-- mapper xml的位置 -->
         <sqlMapGenerator targetProject="src\main\resources"

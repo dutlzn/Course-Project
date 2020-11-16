@@ -19,7 +19,8 @@ export default new Router(
             component: Login
         }, {
             path: "/",
-            name: "admin",
+            name: "admin", 
+            // name属性后面会用到
             component: Admin,
             children: [{
                 path: 'welcome',
