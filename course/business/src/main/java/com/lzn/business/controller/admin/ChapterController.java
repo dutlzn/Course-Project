@@ -21,8 +21,10 @@ public class ChapterController {
     private ChapterService chapterService;
 
     @RequestMapping("/list")
+    // requestBody --- json 默认是表单
     public PageDto list(@RequestBody PageDto pageDto) {
         chapterService.list(pageDto);
         return pageDto;
     }
+    
 }
