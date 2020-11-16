@@ -1,5 +1,6 @@
 package com.lzn.service;
 
+import com.github.pagehelper.PageHelper;
 import com.lzn.domain.Chapter;
 import com.lzn.domain.ChapterExample;
 import com.lzn.domain.Test;
@@ -23,6 +24,8 @@ public class ChapterService {
 
 
     public List<ChapterDto> list() {
+
+        PageHelper.startPage(1,1);
         ChapterExample chapterExample = new ChapterExample();
 //        chapterExample.createCriteria().andIdEqualTo("1");
 //        chapterExample.setOrderByClause("id desc ");
