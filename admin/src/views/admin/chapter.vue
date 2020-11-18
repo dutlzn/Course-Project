@@ -31,20 +31,14 @@
           <td>{{ chapter.courseId }}</td>
           <td>
             <div class="hidden-sm hidden-xs btn-group">
-              <button class="btn btn-xs btn-success">
-                <i class="ace-icon fa fa-check bigger-120"></i>
-              </button>
-
-              <button class="btn btn-xs btn-info">
+              <button v-on:click="edit(chapter)" class="btn btn-xs btn-info">
                 <i class="ace-icon fa fa-pencil bigger-120"></i>
               </button>
-
-              <button class="btn btn-xs btn-danger">
+              <button
+                v-on:click="del(chapter.id)"
+                class="btn btn-xs btn-danger"
+              >
                 <i class="ace-icon fa fa-trash-o bigger-120"></i>
-              </button>
-
-              <button class="btn btn-xs btn-warning">
-                <i class="ace-icon fa fa-flag bigger-120"></i>
               </button>
             </div>
 
@@ -159,7 +153,9 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">
               取消
             </button>
-            <button v-on:click="save()" type="button" class="btn btn-primary">保存</button>
+            <button v-on:click="save()" type="button" class="btn btn-primary">
+              保存
+            </button>
           </div>
         </div>
         <!-- /.modal-content -->
@@ -196,19 +192,42 @@ export default {
   },
   methods: {
     // 编辑大章
-    edit() {},
-    // 删除大章
-    delete() {},
-    // 新增大章
-    add() {
+    edit(chapter) {
       let _this = this;
+      // _this.chapter = chapter;
+      _this.chapter = $.extend({}, chapter);
       // 禁止点击空白的地方关闭
       $(".modal").modal({
         backdrop: "static",
       });
       $("#form-modal").modal("show");
     },
-
+    // 删除大章
+    del(id) {
+      let _this = this;
+      _this.$ajax
+        .delete(
+          "http://127.0.0.1:9000/business/admin/chapter/delete/" + id
+        )
+        .then((response) => {
+          let resp = response.data;
+          if (resp.success) {
+            // 关闭模态框
+            // $("#form-modal").modal("hide");
+            _this.list(1);
+          }
+        });
+    },
+    // 新增大章
+    add() {
+      let _this = this;
+      // 禁止点击空白的地方关闭
+      _this.chapter = {};
+      $(".modal").modal({
+        backdrop: "static",
+      });
+      $("#form-modal").modal("show");
+    },
 
     // 获取所有大章的数据
     list(page) {
@@ -230,11 +249,13 @@ export default {
     save(page) {
       let _this = this;
       _this.$ajax
-        .post("http://127.0.0.1:9000/business/admin/chapter/save",
-        _this.chapter)
+        .post(
+          "http://127.0.0.1:9000/business/admin/chapter/save",
+          _this.chapter
+        )
         .then((response) => {
           let resp = response.data;
-          if(resp.success) {
+          if (resp.success) {
             // 关闭模态框
             $("#form-modal").modal("hide");
             _this.list(1);

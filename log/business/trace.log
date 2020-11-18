@@ -1039,3 +1039,711 @@
 2020-11-18 18:56:40.924 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: e9wkTA8e, 1, 1
 2020-11-18 18:56:40.925 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
 2020-11-18 18:59:20.748 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:11:36.975 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-11-18 19:11:38.399 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-18 19:11:38.932 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=395a47b1-cd63-315a-830e-cbdcdf359def
+2020-11-18 19:11:39.335 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-18 19:11:39.343 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-18 19:11:39.344 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-18 19:11:39.344 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-18 19:11:39.493 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-18 19:11:39.493 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1082 ms
+2020-11-18 19:11:39.768 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-18 19:11:39.768 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 19:11:39.773 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-18 19:11:39.773 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 19:11:39.893 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-18 19:11:41.169 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-18 19:11:41.199 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-11-18 19:11:42.305 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-18 19:11:42.328 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-18 19:11:42.379 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-18 19:11:42.443 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-18 19:11:42.680 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-18 19:11:42.680 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-18 19:11:42.796 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-18 19:11:42.797 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-18 19:11:42.933 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:11:43.021 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-18 19:11:43.022 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-18 19:11:43.023 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-18 19:11:43.023 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-18 19:11:43.024 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-18 19:11:43.024 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-11-18 19:11:43.024 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-18 19:11:43.174 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-18 19:11:43.177 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-18 19:11:43.179 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-18 19:11:43.183 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1605697903181 with initial instances count: 2
+2020-11-18 19:11:43.185 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-18 19:11:43.185 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605697903185, current=UP, previous=STARTING]
+2020-11-18 19:11:43.186 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-18 19:11:43.187 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-18 19:11:43.214 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-18 19:11:43.214 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-18 19:11:43.219 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-18 19:11:43.574 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-18 19:11:43.575 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-18 19:11:43.579 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 4 ms
+2020-11-18 19:11:43.657 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2020-11-18 19:11:43.850 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2020-11-18 19:11:43.902 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:11:43.902 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:11:43.916 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:11:43.916 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:11:43.925 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:11:43.925 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:11:43.925 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 25
+2020-11-18 19:11:43.925 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 25
+2020-11-18 19:11:43.926 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:11:43.926 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:11:43.929 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:11:43.929 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:11:43.929 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:11:43.929 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:11:43.930 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:11:43.930 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:11:43.931 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:11:43.931 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:11:43.932 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:11:43.932 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:11:43.932 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:11:43.932 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:11:43.933 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:11:43.933 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:11:43.933 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:11:43.933 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:11:43.934 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:11:43.934 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:11:44.287 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-18 19:11:44.296 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 8.657 seconds (JVM running for 10.018)
+2020-11-18 19:11:44.297 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-11-18 19:11:44.297 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-11-18 19:11:45.643 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:11:45.643 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:11:45.644 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:11:45.644 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 25
+2020-11-18 19:11:45.644 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:11:45.645 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-18 19:11:45.645 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-18 19:11:45.646 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:11:45.646 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000020, 00000020, 测试大章21
+2020-11-18 19:11:45.646 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000021, 00000021, 测试大章22
+2020-11-18 19:11:45.646 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 0PYiLdYh, 21341, 141234
+2020-11-18 19:11:45.647 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 8PCKUEUi, 123, test
+2020-11-18 19:11:45.647 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: e9wkTA8e, 1, 1
+2020-11-18 19:11:45.647 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:11:46.441 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:11:46.441 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:11:46.442 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:11:46.442 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 25
+2020-11-18 19:11:46.443 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:11:46.443 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:11:46.443 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:11:46.444 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:11:46.444 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:11:46.445 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:11:46.445 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:11:46.446 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:11:46.446 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:11:46.446 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:11:49.410 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, `name`) values (?, ?, ?) 
+2020-11-18 19:11:49.410 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m ==> Parameters: 2ukng3XP(String), 1234123412(String), 142(String)
+2020-11-18 19:11:49.608 ERROR o.a.c.c.C.[.[.[/business].[dispatcherServlet]     :175  [32m        [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/business] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1
+### The error may involve com.lzn.mapper.ChapterMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into chapter (id, course_id, `name`)     values (?, ?, ?)
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1
+; Data truncation: Data too long for column 'course_id' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1] with root cause
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy117.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy115.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy78.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy79.insert(Unknown Source)
+	at com.lzn.service.ChapterService.insert(ChapterService.java:74)
+	at com.lzn.service.ChapterService.save(ChapterService.java:60)
+	at com.lzn.business.controller.admin.ChapterController.save(ChapterController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-18 19:13:47.450 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, `name`) values (?, ?, ?) 
+2020-11-18 19:13:47.450 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m ==> Parameters: vdNwHcFe(String), 1234123412(String), 142134132(String)
+2020-11-18 19:13:47.452 ERROR o.a.c.c.C.[.[.[/business].[dispatcherServlet]     :175  [32m        [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/business] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1
+### The error may involve com.lzn.mapper.ChapterMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into chapter (id, course_id, `name`)     values (?, ?, ?)
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1
+; Data truncation: Data too long for column 'course_id' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1] with root cause
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'course_id' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy117.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy115.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy78.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy79.insert(Unknown Source)
+	at com.lzn.service.ChapterService.insert(ChapterService.java:74)
+	at com.lzn.service.ChapterService.save(ChapterService.java:60)
+	at com.lzn.business.controller.admin.ChapterController.save(ChapterController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-18 19:13:53.817 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, `name`) values (?, ?, ?) 
+2020-11-18 19:13:53.818 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m ==> Parameters: bkbEE17x(String), 1241(String), 14(String)
+2020-11-18 19:13:53.838 DEBUG com.lzn.mapper.ChapterMapper.insert               :159  [32m        [0;39m <==    Updates: 1
+2020-11-18 19:13:53.848 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:13:53.848 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:13:53.849 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:13:53.850 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:13:53.850 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:13:53.850 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:13:53.850 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:13:53.851 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:13:53.851 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:13:53.852 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:13:53.852 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:13:53.852 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:13:53.852 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:13:53.853 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:13:55.160 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:13:55.160 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:13:55.161 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:13:55.161 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:13:55.161 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:13:55.162 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-18 19:13:55.162 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 25(Integer), 5(Integer)
+2020-11-18 19:13:55.163 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:13:55.163 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: e9wkTA8e, 1, 1
+2020-11-18 19:13:55.163 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:13:57.216 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:13:57.217 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:13:57.218 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:13:57.219 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:13:57.219 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:13:57.219 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-18 19:13:57.220 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-18 19:13:57.220 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:13:57.221 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000020, 00000020, 测试大章21
+2020-11-18 19:13:57.221 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000021, 00000021, 测试大章22
+2020-11-18 19:13:57.221 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 0PYiLdYh, 21341, 141234
+2020-11-18 19:13:57.221 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 8PCKUEUi, 123, test
+2020-11-18 19:13:57.222 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: bkbEE17x, 1241, 14
+2020-11-18 19:13:57.222 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:16:43.027 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:16:43.102 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:16:43.102 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:16:43.103 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:16:43.103 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:16:43.103 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:16:43.104 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:16:43.104 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:16:43.105 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:16:43.105 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:16:43.106 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:16:43.106 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:16:43.106 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:16:43.106 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:16:43.106 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:19:08.714 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:19:08.714 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:19:08.715 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:19:08.715 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:19:08.715 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:19:08.715 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:19:08.715 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:19:08.716 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:19:08.717 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:19:08.717 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:19:08.717 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:19:08.717 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:19:08.718 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:19:08.718 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:19:33.124 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:19:33.125 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:19:33.125 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:19:33.126 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:19:33.126 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:19:33.126 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:19:33.126 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:19:33.127 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:19:33.127 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:19:33.127 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:19:33.128 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:19:33.128 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:19:33.128 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:19:33.128 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:20:02.805 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:20:02.806 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:20:02.807 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:20:02.807 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:20:02.807 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:20:02.808 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:20:02.808 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:20:02.808 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:20:02.809 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-18 19:20:02.809 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:20:02.809 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:20:02.809 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:20:02.809 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:20:02.810 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:20:33.576 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==>  Preparing: update chapter set course_id = ?, `name` = ? where id = ? 
+2020-11-18 19:20:33.576 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==> Parameters: 0000000(String), 测试124124313(String), 00000000(String)
+2020-11-18 19:20:33.583 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m <==    Updates: 1
+2020-11-18 19:20:33.592 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:20:33.592 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:20:33.593 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:20:33.593 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:20:33.593 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:20:33.594 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:20:33.594 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:20:33.594 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:20:33.594 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 测试124124313
+2020-11-18 19:20:33.594 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:20:33.594 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:20:33.594 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:20:33.594 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:20:33.595 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:20:39.077 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==>  Preparing: update chapter set course_id = ?, `name` = ? where id = ? 
+2020-11-18 19:20:39.078 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==> Parameters: 0000000(String), 1243(String), 00000000(String)
+2020-11-18 19:20:39.082 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m <==    Updates: 1
+2020-11-18 19:20:39.088 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:20:39.088 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:20:39.089 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:20:39.089 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:20:39.089 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:20:39.090 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:20:39.090 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:20:39.090 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:20:39.091 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 1243
+2020-11-18 19:20:39.091 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:20:39.091 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:20:39.091 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:20:39.091 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:20:39.091 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:21:17.558 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:21:17.559 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:21:17.560 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:21:17.560 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:21:17.560 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:21:17.560 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-18 19:21:17.561 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer), 5(Integer)
+2020-11-18 19:21:17.561 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:21:17.561 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000005, 00000005, 测试大章6
+2020-11-18 19:21:17.562 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000006, 00000006, 测试大章7
+2020-11-18 19:21:17.562 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000007, 00000007, 测试大章8
+2020-11-18 19:21:17.562 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000008, 00000008, 测试大章9
+2020-11-18 19:21:17.562 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000009, 00000009, 测试大章10
+2020-11-18 19:21:17.562 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:21:20.584 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:21:20.584 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:21:20.585 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:21:20.585 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:21:20.585 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:21:20.585 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:21:20.585 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 100(Integer)
+2020-11-18 19:21:20.586 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:21:20.586 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 1243
+2020-11-18 19:21:20.586 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:21:20.587 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:21:20.587 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:21:20.587 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:21:20.587 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000005, 00000005, 测试大章6
+2020-11-18 19:21:20.587 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000006, 00000006, 测试大章7
+2020-11-18 19:21:20.587 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000007, 00000007, 测试大章8
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000008, 00000008, 测试大章9
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000009, 00000009, 测试大章10
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000010, 00000010, 测试大章11
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000011, 00000011, 测试大章12
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000012, 00000012, 测试大章13
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000013, 00000013, 测试大章14
+2020-11-18 19:21:20.588 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000014, 00000014, 测试大章15
+2020-11-18 19:21:20.589 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000015, 00000015, 测试大章16
+2020-11-18 19:21:20.589 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000016, 00000016, 测试大章17
+2020-11-18 19:21:20.589 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000017, 00000017, 测试大章18
+2020-11-18 19:21:20.589 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000018, 00000018, 测试大章19
+2020-11-18 19:21:20.589 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000019, 00000019, 测试大章20
+2020-11-18 19:21:20.589 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000020, 00000020, 测试大章21
+2020-11-18 19:21:20.590 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000021, 00000021, 测试大章22
+2020-11-18 19:21:20.590 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 0PYiLdYh, 21341, 141234
+2020-11-18 19:21:20.590 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 8PCKUEUi, 123, test
+2020-11-18 19:21:20.590 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: bkbEE17x, 1241, 14
+2020-11-18 19:21:20.590 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: e9wkTA8e, 1, 1
+2020-11-18 19:21:20.590 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 26
+2020-11-18 19:21:23.104 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:21:23.105 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:21:23.105 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:21:23.106 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:21:23.106 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:21:23.106 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:21:23.107 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-18 19:21:23.107 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:21:23.107 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 1243
+2020-11-18 19:21:23.107 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:21:43.029 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:26:43.030 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:26:49.987 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:26:49.988 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:26:49.988 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:26:49.989 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:26:49.989 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:26:49.989 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:26:49.989 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:26:49.990 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:26:49.990 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 1243
+2020-11-18 19:26:49.990 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:26:49.990 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:26:49.990 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:26:49.990 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:26:49.991 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:27:05.792 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==>  Preparing: update chapter set course_id = ?, `name` = ? where id = ? 
+2020-11-18 19:27:05.792 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==> Parameters: 0000000(String), 12431243(String), 00000000(String)
+2020-11-18 19:27:05.796 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m <==    Updates: 1
+2020-11-18 19:27:05.805 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:27:05.805 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:27:05.805 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:27:05.806 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:27:05.806 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:27:05.806 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:27:05.806 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:27:05.816 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:27:05.817 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:27:05.817 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:27:05.817 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:27:05.817 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:27:05.817 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:27:05.818 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:29:58.296 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:29:58.296 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:29:58.297 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:29:58.297 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:29:58.297 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:29:58.298 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:29:58.298 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:29:58.298 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:29:58.298 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:29:58.299 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:29:58.299 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:29:58.299 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:29:58.299 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:29:58.299 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:30:14.430 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==>  Preparing: update chapter set course_id = ?, `name` = ? where id = ? 
+2020-11-18 19:30:14.431 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m ==> Parameters: 0000000(String), 12431243(String), 00000000(String)
+2020-11-18 19:30:14.441 DEBUG com.lzn.mapper.ChapterMapper.updateByPrimaryKey   :159  [32m        [0;39m <==    Updates: 1
+2020-11-18 19:30:14.448 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:30:14.449 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:30:14.450 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:30:14.450 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:30:14.451 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:30:14.451 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:30:14.451 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:30:14.453 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:30:14.453 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:30:14.453 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:30:14.453 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:30:14.453 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:30:14.453 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:30:14.454 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:31:43.033 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:36:43.035 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:39:11.900 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:39:11.901 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:39:11.901 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:39:11.901 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:39:11.902 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:39:11.902 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:39:11.902 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:39:11.903 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:39:11.903 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:39:11.903 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:39:11.903 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:39:11.903 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:39:11.904 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:39:11.904 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:40:01.810 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:40:01.810 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:40:01.811 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:40:01.811 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:40:01.811 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:40:01.811 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:40:01.811 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:40:01.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:40:01.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:40:01.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:40:01.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:40:01.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:40:01.812 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:40:01.813 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:40:12.037 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:40:12.037 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:40:12.038 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:40:12.038 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:40:12.038 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:40:12.039 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:40:12.039 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:40:12.039 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:40:12.039 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:40:12.040 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:40:12.040 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:40:12.040 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:40:12.040 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:40:12.040 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:40:25.999 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:40:26.000 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:40:26.001 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:40:26.001 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:40:26.001 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:40:26.002 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:40:26.002 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:40:26.003 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:40:26.003 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:40:26.004 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:40:26.004 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:40:26.004 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:40:26.004 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:40:26.005 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:41:43.037 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:44:38.059 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:44:38.059 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:44:38.060 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:44:38.060 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 26
+2020-11-18 19:44:38.060 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:44:38.061 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:44:38.061 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:44:38.062 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:44:38.062 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000000, 0000000, 12431243
+2020-11-18 19:44:38.062 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:44:38.062 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:44:38.063 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:44:38.063 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:44:38.063 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:44:47.024 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-11-18 19:44:48.451 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-18 19:44:49.043 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=395a47b1-cd63-315a-830e-cbdcdf359def
+2020-11-18 19:44:49.461 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-18 19:44:49.470 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-18 19:44:49.471 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-18 19:44:49.471 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-18 19:44:49.618 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-18 19:44:49.618 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1154 ms
+2020-11-18 19:44:49.881 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-18 19:44:49.881 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 19:44:49.887 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-18 19:44:49.887 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 19:44:50.008 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-18 19:44:51.304 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-18 19:44:51.336 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-11-18 19:44:52.439 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-18 19:44:52.461 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-18 19:44:52.505 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-18 19:44:52.556 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-18 19:44:52.757 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-18 19:44:52.758 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-18 19:44:52.855 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-18 19:44:52.855 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-18 19:44:52.985 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-18 19:44:53.042 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-18 19:44:53.042 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-18 19:44:53.043 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-18 19:44:53.043 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-18 19:44:53.043 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-18 19:44:53.043 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-11-18 19:44:53.043 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-18 19:44:53.158 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-18 19:44:53.160 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-18 19:44:53.162 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-18 19:44:53.165 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1605699893164 with initial instances count: 2
+2020-11-18 19:44:53.166 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-18 19:44:53.166 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605699893166, current=UP, previous=STARTING]
+2020-11-18 19:44:53.168 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-18 19:44:53.169 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-18 19:44:53.193 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-18 19:44:53.195 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-18 19:44:53.196 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-18 19:44:54.269 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-18 19:44:54.285 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 8.614 seconds (JVM running for 9.087)
+2020-11-18 19:44:54.287 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-11-18 19:44:54.287 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-11-18 19:44:56.934 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-18 19:44:56.935 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-18 19:44:56.939 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 4 ms
+2020-11-18 19:44:56.977 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2020-11-18 19:44:57.136 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2020-11-18 19:44:57.141 DEBUG com.lzn.mapper.ChapterMapper.deleteByPrimaryKey   :159  [32m        [0;39m ==>  Preparing: delete from chapter where id = ? 
+2020-11-18 19:44:57.155 DEBUG com.lzn.mapper.ChapterMapper.deleteByPrimaryKey   :159  [32m        [0;39m ==> Parameters: 00000000(String)
+2020-11-18 19:44:57.160 DEBUG com.lzn.mapper.ChapterMapper.deleteByPrimaryKey   :159  [32m        [0;39m <==    Updates: 1
+2020-11-18 19:44:57.244 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-18 19:44:57.244 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2020-11-18 19:44:57.254 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2020-11-18 19:44:57.254 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 25
+2020-11-18 19:44:57.256 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2020-11-18 19:44:57.257 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-18 19:44:57.257 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-18 19:44:57.259 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-18 19:44:57.259 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-18 19:44:57.260 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-18 19:44:57.260 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-18 19:44:57.260 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-18 19:44:57.261 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m        [0;39m <==        Row: 00000005, 00000005, 测试大章6
+2020-11-18 19:44:57.261 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m        [0;39m <==      Total: 5
+2020-11-18 19:46:09.778 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final

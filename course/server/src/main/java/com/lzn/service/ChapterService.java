@@ -10,10 +10,12 @@ import com.lzn.dto.ChapterDto;
 import com.lzn.dto.PageDto;
 import com.lzn.mapper.ChapterMapper;
 import com.lzn.mapper.TestMapper;
+import com.lzn.util.CopyUtil;
 import com.lzn.util.UuidUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,13 +53,34 @@ public class ChapterService {
 
     }
 
-
-    // 保存大章
     public void save(ChapterDto chapterDto){
+        Chapter chapter = CopyUtil.copy(chapterDto, Chapter.class);
+        if(StringUtils.isEmpty(chapterDto.getId())){
+            // 新增
+            this.insert(chapter);
+        } else {
+            // 更新
+            this.update(chapter);
+        }
+    }
+
+    // 新增大章
+    private void insert(Chapter chapter){
         // 传进来没有id
-        chapterDto.setId(UuidUtil.getShortUuid());
-        Chapter chapter = new Chapter();
-        BeanUtils.copyProperties(chapterDto, chapter);
+        chapter.setId(UuidUtil.getShortUuid());
+//        Chapter chapter = new Chapter();
+//        BeanUtils.copyProperties(chapterDto, chapter);
+//        Chapter chapter = CopyUtil.copy(chapterDto, Chapter.class);
         chapterMapper.insert(chapter);
+    }
+
+    // 更新大章
+    private void update(Chapter chapter){
+//        Chapter chapter = CopyUtil.copy(chapterDto, Chapter.class);
+        chapterMapper.updateByPrimaryKey(chapter);
+    }
+
+    public void delete(String id) {
+        chapterMapper.deleteByPrimaryKey(id);
     }
 }
