@@ -1,6 +1,11 @@
 <template>
   <div>
     <p>
+      <button v-on:click="add()" class="btn btn-white btn-default btn-round">
+        <i class="ace-icon fa fa-edit"></i>
+        新增
+      </button>
+      &nbsp;
       <button v-on:click="list(1)" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-refresh"></i>
         刷新
@@ -103,12 +108,67 @@
         </tr>
       </tbody>
     </table>
+
+    <!-- 模态框 -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">表单</h4>
+          </div>
+          <div class="modal-body">
+            <!-- 表单 -->
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">名称</label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="名称"
+                  />
+                </div>
+              </div><div class="form-group">
+                <label for="courseID" class="col-sm-2 control-label">课程id</label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="courseID"
+                    placeholder="课程id"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              取消
+            </button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <!-- /.modal -->
   </div>
 </template>>
 
 
 <script>
-import Pagination from '../../components/pagination.vue' 
+import Pagination from "../../components/pagination.vue";
 
 export default {
   name: "chapter",
@@ -128,19 +188,29 @@ export default {
     _this.list(1);
   },
   methods: {
+    // 新增大章
+    add() {
+      let _this = this;
+      // 禁止点击空白的地方关闭
+      $(".modal").modal({
+        backdrop: "static",
+      });
+      $(".modal").modal("show");
+    },
+
+    // 获取所有大章的数据
     list(page) {
       let _this = this;
       _this.$ajax
         .post("http://127.0.0.1:9000/business/admin/chapter/list", {
           page: page,
-        //  跟组子组件获取  size应该有一个默认的参数
+          //  跟组子组件获取  size应该有一个默认的参数
           size: _this.$refs.pagination.size,
         })
         .then((response) => {
           console.log("查询大章列表结果:", response);
           _this.chapters = response.data.list;
           _this.$refs.pagination.render(page, response.data.total);
-
         });
     },
   },

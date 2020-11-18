@@ -1,9 +1,6 @@
 package com.lzn.business.controller.admin;
 
 
-import com.github.pagehelper.Page;
-import com.lzn.domain.Chapter;
-import com.lzn.dto.ChapterDto;
 import com.lzn.dto.PageDto;
 import com.lzn.service.ChapterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,5 +23,5 @@ public class ChapterController {
         chapterService.list(pageDto);
         return pageDto;
     }
-    
+
 }
