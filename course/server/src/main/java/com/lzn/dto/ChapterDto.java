@@ -1,5 +1,8 @@
 package com.lzn.dto;
 
+/**
+ * DTO : 前端 -----> 后端
+ */
 public class ChapterDto {
     private String id;
 

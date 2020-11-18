@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lzn.mapper.ChapterMapper">
+
   <resultMap id="BaseResultMap" type="com.lzn.domain.Chapter">
     <id column="id" jdbcType="CHAR" property="id" />
     <result column="course_id" jdbcType="CHAR" property="courseId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

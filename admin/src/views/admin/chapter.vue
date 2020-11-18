@@ -131,16 +131,21 @@
                 <label for="name" class="col-sm-2 control-label">名称</label>
                 <div class="col-sm-10">
                   <input
+                    v-model="chapter.name"
                     type="text"
                     class="form-control"
                     id="name"
                     placeholder="名称"
                   />
                 </div>
-              </div><div class="form-group">
-                <label for="courseID" class="col-sm-2 control-label">课程id</label>
+              </div>
+              <div class="form-group">
+                <label for="courseID" class="col-sm-2 control-label"
+                  >课程id</label
+                >
                 <div class="col-sm-10">
                   <input
+                    v-model="chapter.courseId"
                     type="text"
                     class="form-control"
                     id="courseID"
@@ -154,7 +159,7 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">
               取消
             </button>
-            <button type="button" class="btn btn-primary">保存</button>
+            <button v-on:click="save()" type="button" class="btn btn-primary">保存</button>
           </div>
         </div>
         <!-- /.modal-content -->
@@ -176,6 +181,8 @@ export default {
 
   data: function () {
     return {
+      // 映射表单数据
+      chapter: {},
       chapters: [],
     };
   },
@@ -188,6 +195,10 @@ export default {
     _this.list(1);
   },
   methods: {
+    // 编辑大章
+    edit() {},
+    // 删除大章
+    delete() {},
     // 新增大章
     add() {
       let _this = this;
@@ -197,6 +208,7 @@ export default {
       });
       $(".modal").modal("show");
     },
+
 
     // 获取所有大章的数据
     list(page) {
@@ -211,6 +223,16 @@ export default {
           console.log("查询大章列表结果:", response);
           _this.chapters = response.data.list;
           _this.$refs.pagination.render(page, response.data.total);
+        });
+    },
+    // 保存大章的数据
+    save(page) {
+      let _this = this;
+      _this.$ajax
+        .post("http://127.0.0.1:9000/business/admin/chapter/save",
+        _this.chapter)
+        .then((response) => {
+          console.log("保存大章列表结果:", response);
         });
     },
   },

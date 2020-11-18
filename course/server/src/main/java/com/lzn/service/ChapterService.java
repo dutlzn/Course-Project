@@ -10,6 +10,7 @@ import com.lzn.dto.ChapterDto;
 import com.lzn.dto.PageDto;
 import com.lzn.mapper.ChapterMapper;
 import com.lzn.mapper.TestMapper;
+import com.lzn.util.UuidUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,5 +49,15 @@ public class ChapterService {
         }
         pageDto.setList(chapterDtoList);
 
+    }
+
+
+    // 保存大章
+    public void save(ChapterDto chapterDto){
+        // 传进来没有id
+        chapterDto.setId(UuidUtil.getShortUuid());
+        Chapter chapter = new Chapter();
+        BeanUtils.copyProperties(chapterDto, chapter);
+        chapterMapper.insert(chapter);
     }
 }
