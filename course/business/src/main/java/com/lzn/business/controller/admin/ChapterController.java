@@ -5,6 +5,7 @@ import com.lzn.dto.ChapterDto;
 import com.lzn.dto.PageDto;
 import com.lzn.dto.ResponseDto;
 import com.lzn.service.ChapterService;
+import com.lzn.util.ValidatorUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,16 +25,30 @@ public class ChapterController {
 //        return pageDto;
         return responseDto;
     }
-
-
     @PostMapping("/save")
     public ResponseDto save(@RequestBody ChapterDto chapterDto){
+
+        // 保存验证
+//        try {
+            ValidatorUtil.require(chapterDto.getName(), "名称");
+            ValidatorUtil.require(chapterDto.getCourseId(), "课程ID");
+            ValidatorUtil.length(chapterDto.getCourseId(), "课程ID",
+                    1, 8);
+//        } catch (Exception e) {
+//            ResponseDto responseDto = new ResponseDto();
+//            responseDto.setSuccess(false);
+//
+//            return responseDto;
+//        }
+
         ResponseDto responseDto = new ResponseDto();
         chapterService.save(chapterDto);
         responseDto.setContent(chapterDto);
 //        return chapterDto;
         return responseDto;
     }
+
+
 
 
     @DeleteMapping("/delete/{id}")
