@@ -16,9 +16,6 @@
     <list default="true" id="5382efc3-a507-4c12-bb14-8beb2ecef930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../6-通用代码生成器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../6-通用代码生成器.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/lzn/mapper/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/lzn/mapper/TestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/mapper/TestMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +53,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="ToolWindowPlantUML.ShowToolbar" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/generator/src/main/java/com/lzn/generator/ftl" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\course-project\course\generator\src\main\java\com\lzn\generator\test" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\course-project\course\generator\src\main\java\com\lzn\generator\ftl" />
+      <recent name="D:\code\course-project\course\business\src\main\resources" />
+      <recent name="D:\code\course-project\course\business\src\main\java\com\lzn\business" />
+      <recent name="D:\code\course-project\course\server\src\main\resources\config" />
+      <recent name="D:\code\course-project\course\server\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lzn.dto" />
@@ -72,15 +73,11 @@
       <recent name="com.lzn.config" />
       <recent name="com.lzn" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\course-project\course\business\src\main\resources" />
-      <recent name="D:\code\course-project\course\business\src\main\java\com\lzn\business" />
-      <recent name="D:\code\course-project\course\server\src\main\resources\config" />
-      <recent name="D:\code\course-project\course\server\src\main\resources" />
-      <recent name="D:\code\course-project\course\server\src\main\java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\course-project\course\generator\src\main\java\com\lzn\generator\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.mybatis-generator">
+  <component name="RunManager" selected="Application.ServerGenerator">
     <configuration name="BusinessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzn.business.config.BusinessApplication" />
       <module name="business" />
@@ -120,6 +117,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzn.generator.server.ServerGenerator" />
+      <module name="generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzn.generator.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzn.generator.test.TestUtil" />
       <module name="generator" />
@@ -133,34 +143,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UuidUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzn.util.UuidUtil" />
-      <module name="server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzn.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.BusinessApplication" />
       <item itemvalue="Application.EurekaApplication" />
       <item itemvalue="Application.GatewayApplication" />
-      <item itemvalue="Application.UuidUtil" />
       <item itemvalue="Application.TestUtil" />
       <item itemvalue="Maven.mybatis-generator" />
+      <item itemvalue="Application.ServerGenerator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServerGenerator" />
         <item itemvalue="Application.TestUtil" />
         <item itemvalue="Application.BusinessApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.EurekaApplication" />
-        <item itemvalue="Application.UuidUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -219,33 +216,33 @@
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603866279850" />
     <state x="1043" y="269" width="440" height="491" key="FileChooserDialogImpl/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605403611836" />
-    <state width="1815" height="293" key="GridCell.Tab.0.bottom" timestamp="1605785845649">
+    <state width="1815" height="293" key="GridCell.Tab.0.bottom" timestamp="1605789089386">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="293" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785845649" />
+    <state width="1815" height="293" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605789089386" />
     <state width="1340" height="293" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578806" />
-    <state width="1815" height="293" key="GridCell.Tab.0.center" timestamp="1605785845648">
+    <state width="1815" height="293" key="GridCell.Tab.0.center" timestamp="1605789089385">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="293" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785845648" />
+    <state width="1815" height="293" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605789089385" />
     <state width="1340" height="293" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578805" />
-    <state width="1815" height="293" key="GridCell.Tab.0.left" timestamp="1605785845648">
+    <state width="1815" height="293" key="GridCell.Tab.0.left" timestamp="1605789089385">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="293" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785845648" />
+    <state width="1815" height="293" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605789089385" />
     <state width="1340" height="293" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578804" />
-    <state width="1815" height="293" key="GridCell.Tab.0.right" timestamp="1605785845649">
+    <state width="1815" height="293" key="GridCell.Tab.0.right" timestamp="1605789089385">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="293" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785845649" />
+    <state width="1815" height="293" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605789089385" />
     <state width="1340" height="293" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578806" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1605785158698">
       <screen x="1982" y="8" width="1858" height="1080" />
