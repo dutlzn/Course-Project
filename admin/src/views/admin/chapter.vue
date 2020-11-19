@@ -148,6 +148,7 @@ export default {
     // 删除大章
     del(id) {
       let _this = this;
+
       Swal.fire({
         title: "确认删除?",
         text: "删除后不可恢复，确认删除？",
@@ -158,32 +159,18 @@ export default {
         confirmButtonText: "确认！",
       }).then((result) => {
         if (result.isConfirmed) {
+          Loading.show();
           _this.$ajax
             .delete("http://127.0.0.1:9000/business/admin/chapter/delete/" + id)
             .then((response) => {
+              Loading.hide();
               let resp = response.data;
               if (resp.success) {
                 // 关闭模态框
                 // $("#form-modal").modal("hide");
                 Swal.fire("删除成功!", "删除成功.", "success");
                 _this.list(1);
-
-                const Toast = Swal.mixin({
-                  toast: true,
-                  position: "top-end",
-                  showConfirmButton: false,
-                  timer: 3000,
-                  timerProgressBar: true,
-                  didOpen: (toast) => {
-                    toast.addEventListener("mouseenter", Swal.stopTimer);
-                    toast.addEventListener("mouseleave", Swal.resumeTimer);
-                  },
-                });
-
-                Toast.fire({
-                  icon: "success",
-                  title: "Signed in successfully",
-                });
+                toast.success("删除成功");
               }
             });
         }
@@ -203,6 +190,7 @@ export default {
     // 获取所有大章的数据
     list(page) {
       let _this = this;
+      Loading.show();
       _this.$ajax
         .post("http://127.0.0.1:9000/business/admin/chapter/list", {
           page: page,
@@ -210,6 +198,7 @@ export default {
           size: _this.$refs.pagination.size,
         })
         .then((response) => {
+          Loading.hide();
           let resp = response.data;
           _this.chapters = resp.content.list;
           _this.$refs.pagination.render(page, resp.content.total);
@@ -219,12 +208,14 @@ export default {
     // 保存大章的数据
     save(page) {
       let _this = this;
+      Loading.show();
       _this.$ajax
         .post(
           "http://127.0.0.1:9000/business/admin/chapter/save",
           _this.chapter
         )
         .then((response) => {
+          Loading.hide();
           let resp = response.data;
           if (resp.success) {
             // 关闭模态框
