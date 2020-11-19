@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 // 该路径说明是用来供控台使用了
 @RequestMapping("/admin/chapter")
 public class ChapterController {
+
+    public static final String BUSINESS_NAME = "大章";
+
     @Autowired
     private ChapterService chapterService;
 
