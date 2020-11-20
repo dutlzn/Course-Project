@@ -16,11 +16,10 @@
     <list default="true" id="5382efc3-a507-4c12-bb14-8beb2ecef930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../6-通用代码生成器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../6-通用代码生成器.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/generator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/com/lzn/generator/server/ServerGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/com/lzn/generator/server/ServerGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/target/classes/com/lzn/generator/server/ServerGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/generator/target/classes/com/lzn/generator/server/ServerGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/com/lzn/generator/ftl/dto.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/com/lzn/generator/ftl/dto.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/business/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../log/business/trace.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/eureka/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../log/eureka/trace.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/gateway/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../log/gateway/trace.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,7 @@
       <recent name="D:\code\course-project\course\server\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lzn.generator.vue" />
       <recent name="com.lzn.dto" />
       <recent name="com.lzn.service" />
       <recent name="com.lzn.config" />
@@ -82,7 +82,7 @@
       <recent name="D:\code\course-project\course\generator\src\main\java\com\lzn\generator\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BusinessApplication">
+  <component name="RunManager" selected="Application.VueGenerator">
     <configuration name="BusinessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzn.business.config.BusinessApplication" />
       <module name="business" />
@@ -135,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzn.generator.test.TestUtil" />
+    <configuration name="VueGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzn.generator.vue.VueGenerator" />
       <module name="generator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzn.generator.test.*" />
+          <option name="PATTERN" value="com.lzn.generator.vue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,17 +152,17 @@
       <item itemvalue="Application.BusinessApplication" />
       <item itemvalue="Application.EurekaApplication" />
       <item itemvalue="Application.GatewayApplication" />
-      <item itemvalue="Application.TestUtil" />
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Application.ServerGenerator" />
+      <item itemvalue="Application.VueGenerator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VueGenerator" />
         <item itemvalue="Application.BusinessApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.EurekaApplication" />
         <item itemvalue="Application.ServerGenerator" />
-        <item itemvalue="Application.TestUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -221,54 +221,54 @@
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603866279850" />
     <state x="1043" y="269" width="440" height="491" key="FileChooserDialogImpl/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605403611836" />
-    <state width="1815" height="213" key="GridCell.Tab.0.bottom" timestamp="1605862635064">
+    <state width="1815" height="213" key="GridCell.Tab.0.bottom" timestamp="1605875824598">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="213" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605862635064" />
+    <state width="1815" height="213" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605875824598" />
     <state width="1340" height="293" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578806" />
-    <state width="1815" height="213" key="GridCell.Tab.0.center" timestamp="1605862635064">
+    <state width="1815" height="213" key="GridCell.Tab.0.center" timestamp="1605875824598">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="213" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605862635064" />
+    <state width="1815" height="213" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605875824598" />
     <state width="1340" height="293" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578805" />
-    <state width="1815" height="213" key="GridCell.Tab.0.left" timestamp="1605862635063">
+    <state width="1815" height="213" key="GridCell.Tab.0.left" timestamp="1605875824598">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="213" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605862635063" />
+    <state width="1815" height="213" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605875824598" />
     <state width="1340" height="293" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578804" />
-    <state width="1815" height="213" key="GridCell.Tab.0.right" timestamp="1605862635064">
+    <state width="1815" height="213" key="GridCell.Tab.0.right" timestamp="1605875824598">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="213" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605862635064" />
+    <state width="1815" height="213" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605875824598" />
     <state width="1340" height="293" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605753578806" />
-    <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1605785158698">
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1605874195684">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="350" key="GridCell.Tab.1.bottom/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603784976432" />
-    <state width="1815" height="364" key="GridCell.Tab.1.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785158698" />
-    <state width="1815" height="364" key="GridCell.Tab.1.center" timestamp="1605785158698">
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605874195684" />
+    <state width="1815" height="364" key="GridCell.Tab.1.center" timestamp="1605874195684">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="350" key="GridCell.Tab.1.center/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603784976428" />
-    <state width="1815" height="364" key="GridCell.Tab.1.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785158698" />
-    <state width="1815" height="364" key="GridCell.Tab.1.left" timestamp="1605785158698">
+    <state width="1815" height="364" key="GridCell.Tab.1.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605874195684" />
+    <state width="1815" height="364" key="GridCell.Tab.1.left" timestamp="1605874195684">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="350" key="GridCell.Tab.1.left/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603784976427" />
-    <state width="1815" height="364" key="GridCell.Tab.1.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785158698" />
-    <state width="1815" height="364" key="GridCell.Tab.1.right" timestamp="1605785158698">
+    <state width="1815" height="364" key="GridCell.Tab.1.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605874195684" />
+    <state width="1815" height="364" key="GridCell.Tab.1.right" timestamp="1605874195684">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="350" key="GridCell.Tab.1.right/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603784976430" />
-    <state width="1815" height="364" key="GridCell.Tab.1.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605785158698" />
+    <state width="1815" height="364" key="GridCell.Tab.1.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605874195684" />
     <state x="2412" y="108" width="1305" height="711" key="SettingsEditor" timestamp="1605858266956">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
