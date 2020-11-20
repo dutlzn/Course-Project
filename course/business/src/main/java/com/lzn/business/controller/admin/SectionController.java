@@ -28,7 +28,6 @@ public class SectionController {
     public ResponseDto save(@RequestBody SectionDto sectionDto){
 
 
-
         ResponseDto responseDto = new ResponseDto();
         sectionService.save(sectionDto);
         responseDto.setContent(sectionDto);

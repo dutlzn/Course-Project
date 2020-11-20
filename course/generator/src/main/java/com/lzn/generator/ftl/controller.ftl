@@ -1,4 +1,4 @@
-package com.lzn.business.controller.admin;
+package com.lzn.${module}.controller.admin;
 
 import com.lzn.dto.${Domain}Dto;
 import com.lzn.dto.PageDto;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/admin/${domain}")
 public class ${Domain}Controller {
 
-    public static final String BUSINESS_NAME = "大章";
+    public static final String BUSINESS_NAME = "${tableNameCn}";
 
     @Autowired
     private ${Domain}Service ${domain}Service;
@@ -26,12 +26,6 @@ public class ${Domain}Controller {
     }
     @PostMapping("/save")
     public ResponseDto save(@RequestBody ${Domain}Dto ${domain}Dto){
-
-
-            ValidatorUtil.require(${domain}Dto.getName(), "名称");
-            ValidatorUtil.require(${domain}Dto.getCourseId(), "课程ID");
-            ValidatorUtil.length(${domain}Dto.getCourseId(), "课程ID",
-                    1, 8);
 
 
         ResponseDto responseDto = new ResponseDto();
