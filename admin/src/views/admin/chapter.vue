@@ -152,7 +152,7 @@ export default {
       Confirm.show("删除大章后不可恢复，确认删除？", function () {
         Loading.show();
         _this.$ajax
-          .delete("http://127.0.0.1:9000/business/admin/chapter/delete/" + id)
+          .delete(process.env.VUE_APP_SERVER + "/business/admin/chapter/delete/" + id)
           .then((response) => {
             Loading.hide();
             let resp = response.data;
@@ -179,7 +179,7 @@ export default {
       let _this = this;
       Loading.show();
       _this.$ajax
-        .post("http://127.0.0.1:9000/business/admin/chapter/list", {
+        .post(process.env.VUE_APP_SERVER + "/business/admin/chapter/list", {
           page: page,
           //  跟组子组件获取  size应该有一个默认的参数
           size: _this.$refs.pagination.size,
@@ -207,7 +207,7 @@ export default {
       Loading.show();
       _this.$ajax
         .post(
-          "http://127.0.0.1:9000/business/admin/chapter/save",
+          process.env.VUE_APP_SERVER + "/business/admin/chapter/save",
           _this.chapter
         )
         .then((response) => {

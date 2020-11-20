@@ -435,3 +435,255 @@
 2020-11-20 16:17:45.881 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mudeN4d6F[0;39m <==      Total: 5
 2020-11-20 16:17:45.881 INFO  com.lzn.config.LogAspect                          :109  [32mudeN4d6F[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
 2020-11-20 16:17:45.882 INFO  com.lzn.config.LogAspect                          :110  [32mudeN4d6F[0;39m ------------- 结束 耗时：10 ms -------------
+2020-11-20 18:52:42.724 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 18:52:44.172 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-20 18:52:44.858 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=92648b8d-095c-3ec0-a30c-b00668819c2d
+2020-11-20 18:52:45.604 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-20 18:52:45.617 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-20 18:52:45.618 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-20 18:52:45.618 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 18:52:45.764 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-20 18:52:45.765 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1578 ms
+2020-11-20 18:52:46.179 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-20 18:52:46.179 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-20 18:52:46.184 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-20 18:52:46.184 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-20 18:52:46.399 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 18:52:47.835 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-20 18:52:47.875 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-11-20 18:52:48.984 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-20 18:52:49.013 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-20 18:52:49.074 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-20 18:52:49.121 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-20 18:52:49.350 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-20 18:52:49.350 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-20 18:52:49.451 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-20 18:52:49.451 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-20 18:52:49.638 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-20 18:52:49.705 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-20 18:52:49.705 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-20 18:52:49.706 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-20 18:52:49.706 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-20 18:52:49.706 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-20 18:52:49.706 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-11-20 18:52:49.706 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-20 18:52:49.792 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-20 18:52:49.794 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-20 18:52:49.795 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-20 18:52:49.798 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1605869569797 with initial instances count: 0
+2020-11-20 18:52:49.802 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-20 18:52:49.803 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605869569803, current=UP, previous=STARTING]
+2020-11-20 18:52:49.804 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-20 18:52:49.804 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-20 18:52:49.829 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-20 18:52:49.830 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-20 18:52:49.856 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-20 18:52:50.911 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-20 18:52:50.920 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 9.608 seconds (JVM running for 10.201)
+2020-11-20 18:52:50.922 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-11-20 18:52:50.923 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-11-20 18:53:19.795 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-20 18:53:19.795 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-20 18:53:19.796 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-20 18:53:19.796 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-20 18:53:19.796 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-20 18:53:19.796 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-11-20 18:53:19.796 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-20 18:53:19.829 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-20 18:53:39.007 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 18:53:39.008 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-20 18:53:39.021 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 13 ms
+2020-11-20 18:53:39.083 INFO  com.lzn.config.LogAspect                          :76   [32mSCYz6VJW[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 18:53:39.083 INFO  com.lzn.config.LogAspect                          :77   [32mSCYz6VJW[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 18:53:39.084 INFO  com.lzn.config.LogAspect                          :78   [32mSCYz6VJW[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 18:53:39.084 INFO  com.lzn.config.LogAspect                          :79   [32mSCYz6VJW[0;39m 远程地址: 127.0.0.1
+2020-11-20 18:53:39.101 INFO  com.lzn.config.LogAspect                          :97   [32mSCYz6VJW[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 18:53:39.151 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mSCYz6VJW[0;39m HikariPool-1 - Starting...
+2020-11-20 18:53:39.448 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mSCYz6VJW[0;39m HikariPool-1 - Start completed.
+2020-11-20 18:53:39.497 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mSCYz6VJW[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 18:53:39.514 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mSCYz6VJW[0;39m ==> Parameters: 
+2020-11-20 18:53:39.524 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mSCYz6VJW[0;39m <==    Columns: count(0)
+2020-11-20 18:53:39.524 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mSCYz6VJW[0;39m <==        Row: 22
+2020-11-20 18:53:39.526 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mSCYz6VJW[0;39m <==      Total: 1
+2020-11-20 18:53:39.527 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mSCYz6VJW[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 18:53:39.527 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mSCYz6VJW[0;39m ==> Parameters: 5(Integer)
+2020-11-20 18:53:39.528 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mSCYz6VJW[0;39m <==    Columns: id, course_id, name
+2020-11-20 18:53:39.528 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mSCYz6VJW[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 18:53:39.529 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mSCYz6VJW[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 18:53:39.529 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mSCYz6VJW[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 18:53:39.529 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mSCYz6VJW[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 18:53:39.530 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mSCYz6VJW[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 18:53:39.530 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mSCYz6VJW[0;39m <==      Total: 5
+2020-11-20 18:53:39.539 INFO  com.lzn.config.LogAspect                          :109  [32mSCYz6VJW[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 18:53:39.540 INFO  com.lzn.config.LogAspect                          :110  [32mSCYz6VJW[0;39m ------------- 结束 耗时：459 ms -------------
+2020-11-20 18:53:41.863 INFO  com.lzn.config.LogAspect                          :76   [32m1nF6P23l[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 18:53:41.863 INFO  com.lzn.config.LogAspect                          :77   [32m1nF6P23l[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 18:53:41.863 INFO  com.lzn.config.LogAspect                          :78   [32m1nF6P23l[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 18:53:41.863 INFO  com.lzn.config.LogAspect                          :79   [32m1nF6P23l[0;39m 远程地址: 127.0.0.1
+2020-11-20 18:53:41.863 INFO  com.lzn.config.LogAspect                          :97   [32m1nF6P23l[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 18:53:41.866 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m1nF6P23l[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 18:53:41.867 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m1nF6P23l[0;39m ==> Parameters: 
+2020-11-20 18:53:41.868 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m1nF6P23l[0;39m <==    Columns: count(0)
+2020-11-20 18:53:41.869 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m1nF6P23l[0;39m <==        Row: 22
+2020-11-20 18:53:41.869 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m1nF6P23l[0;39m <==      Total: 1
+2020-11-20 18:53:41.870 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m1nF6P23l[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 18:53:41.872 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m1nF6P23l[0;39m ==> Parameters: 5(Integer)
+2020-11-20 18:53:41.875 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m1nF6P23l[0;39m <==    Columns: id, course_id, name
+2020-11-20 18:53:41.875 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m1nF6P23l[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 18:53:41.877 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m1nF6P23l[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 18:53:41.877 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m1nF6P23l[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 18:53:41.878 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m1nF6P23l[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 18:53:41.878 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m1nF6P23l[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 18:53:41.879 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m1nF6P23l[0;39m <==      Total: 5
+2020-11-20 18:53:41.879 INFO  com.lzn.config.LogAspect                          :109  [32m1nF6P23l[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 18:53:41.879 INFO  com.lzn.config.LogAspect                          :110  [32m1nF6P23l[0;39m ------------- 结束 耗时：17 ms -------------
+2020-11-20 18:53:42.683 INFO  com.lzn.config.LogAspect                          :76   [32mEGmZiZyO[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 18:53:42.684 INFO  com.lzn.config.LogAspect                          :77   [32mEGmZiZyO[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 18:53:42.684 INFO  com.lzn.config.LogAspect                          :78   [32mEGmZiZyO[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 18:53:42.684 INFO  com.lzn.config.LogAspect                          :79   [32mEGmZiZyO[0;39m 远程地址: 127.0.0.1
+2020-11-20 18:53:42.684 INFO  com.lzn.config.LogAspect                          :97   [32mEGmZiZyO[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 18:53:42.686 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mEGmZiZyO[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 18:53:42.686 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mEGmZiZyO[0;39m ==> Parameters: 
+2020-11-20 18:53:42.687 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mEGmZiZyO[0;39m <==    Columns: count(0)
+2020-11-20 18:53:42.687 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mEGmZiZyO[0;39m <==        Row: 22
+2020-11-20 18:53:42.688 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mEGmZiZyO[0;39m <==      Total: 1
+2020-11-20 18:53:42.690 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mEGmZiZyO[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 18:53:42.690 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mEGmZiZyO[0;39m ==> Parameters: 5(Integer)
+2020-11-20 18:53:42.693 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mEGmZiZyO[0;39m <==    Columns: id, course_id, name
+2020-11-20 18:53:42.694 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mEGmZiZyO[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 18:53:42.694 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mEGmZiZyO[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 18:53:42.694 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mEGmZiZyO[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 18:53:42.695 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mEGmZiZyO[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 18:53:42.695 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mEGmZiZyO[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 18:53:42.695 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mEGmZiZyO[0;39m <==      Total: 5
+2020-11-20 18:53:42.696 INFO  com.lzn.config.LogAspect                          :109  [32mEGmZiZyO[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 18:53:42.696 INFO  com.lzn.config.LogAspect                          :110  [32mEGmZiZyO[0;39m ------------- 结束 耗时：13 ms -------------
+2020-11-20 18:54:33.051 INFO  com.lzn.config.LogAspect                          :76   [32msu1CYX2R[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 18:54:33.051 INFO  com.lzn.config.LogAspect                          :77   [32msu1CYX2R[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 18:54:33.051 INFO  com.lzn.config.LogAspect                          :78   [32msu1CYX2R[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 18:54:33.052 INFO  com.lzn.config.LogAspect                          :79   [32msu1CYX2R[0;39m 远程地址: 127.0.0.1
+2020-11-20 18:54:33.052 INFO  com.lzn.config.LogAspect                          :97   [32msu1CYX2R[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 18:54:33.053 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32msu1CYX2R[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 18:54:33.054 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32msu1CYX2R[0;39m ==> Parameters: 
+2020-11-20 18:54:33.055 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32msu1CYX2R[0;39m <==    Columns: count(0)
+2020-11-20 18:54:33.055 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32msu1CYX2R[0;39m <==        Row: 22
+2020-11-20 18:54:33.056 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32msu1CYX2R[0;39m <==      Total: 1
+2020-11-20 18:54:33.057 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32msu1CYX2R[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 18:54:33.058 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32msu1CYX2R[0;39m ==> Parameters: 5(Integer)
+2020-11-20 18:54:33.060 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32msu1CYX2R[0;39m <==    Columns: id, course_id, name
+2020-11-20 18:54:33.060 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32msu1CYX2R[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 18:54:33.062 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32msu1CYX2R[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 18:54:33.062 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32msu1CYX2R[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 18:54:33.063 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32msu1CYX2R[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 18:54:33.063 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32msu1CYX2R[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 18:54:33.063 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32msu1CYX2R[0;39m <==      Total: 5
+2020-11-20 18:54:33.063 INFO  com.lzn.config.LogAspect                          :109  [32msu1CYX2R[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 18:54:33.063 INFO  com.lzn.config.LogAspect                          :110  [32msu1CYX2R[0;39m ------------- 结束 耗时：12 ms -------------
+2020-11-20 18:57:49.709 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-20 18:58:33.776 INFO  com.lzn.config.LogAspect                          :76   [32mRqlntu9J[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 18:58:33.777 INFO  com.lzn.config.LogAspect                          :77   [32mRqlntu9J[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 18:58:33.777 INFO  com.lzn.config.LogAspect                          :78   [32mRqlntu9J[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 18:58:33.778 INFO  com.lzn.config.LogAspect                          :79   [32mRqlntu9J[0;39m 远程地址: 127.0.0.1
+2020-11-20 18:58:33.778 INFO  com.lzn.config.LogAspect                          :97   [32mRqlntu9J[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 18:58:33.779 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mRqlntu9J[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 18:58:33.779 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mRqlntu9J[0;39m ==> Parameters: 
+2020-11-20 18:58:33.780 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mRqlntu9J[0;39m <==    Columns: count(0)
+2020-11-20 18:58:33.781 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mRqlntu9J[0;39m <==        Row: 22
+2020-11-20 18:58:33.781 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mRqlntu9J[0;39m <==      Total: 1
+2020-11-20 18:58:33.781 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mRqlntu9J[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 18:58:33.782 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mRqlntu9J[0;39m ==> Parameters: 5(Integer)
+2020-11-20 18:58:33.782 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mRqlntu9J[0;39m <==    Columns: id, course_id, name
+2020-11-20 18:58:33.783 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mRqlntu9J[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 18:58:33.783 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mRqlntu9J[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 18:58:33.783 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mRqlntu9J[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 18:58:33.784 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mRqlntu9J[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 18:58:33.784 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mRqlntu9J[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 18:58:33.785 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mRqlntu9J[0;39m <==      Total: 5
+2020-11-20 18:58:33.785 INFO  com.lzn.config.LogAspect                          :109  [32mRqlntu9J[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 18:58:33.785 INFO  com.lzn.config.LogAspect                          :110  [32mRqlntu9J[0;39m ------------- 结束 耗时：9 ms -------------
+2020-11-20 19:02:49.710 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-20 19:07:49.711 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-20 19:10:16.277 INFO  com.lzn.config.LogAspect                          :76   [32m4V6P7Dfa[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 19:10:16.278 INFO  com.lzn.config.LogAspect                          :77   [32m4V6P7Dfa[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 19:10:16.278 INFO  com.lzn.config.LogAspect                          :78   [32m4V6P7Dfa[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 19:10:16.278 INFO  com.lzn.config.LogAspect                          :79   [32m4V6P7Dfa[0;39m 远程地址: 127.0.0.1
+2020-11-20 19:10:16.278 INFO  com.lzn.config.LogAspect                          :97   [32m4V6P7Dfa[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 19:10:16.279 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m4V6P7Dfa[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 19:10:16.280 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m4V6P7Dfa[0;39m ==> Parameters: 
+2020-11-20 19:10:16.281 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m4V6P7Dfa[0;39m <==    Columns: count(0)
+2020-11-20 19:10:16.281 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m4V6P7Dfa[0;39m <==        Row: 22
+2020-11-20 19:10:16.281 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m4V6P7Dfa[0;39m <==      Total: 1
+2020-11-20 19:10:16.281 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m4V6P7Dfa[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 19:10:16.282 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m4V6P7Dfa[0;39m ==> Parameters: 5(Integer)
+2020-11-20 19:10:16.282 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m4V6P7Dfa[0;39m <==    Columns: id, course_id, name
+2020-11-20 19:10:16.282 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m4V6P7Dfa[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 19:10:16.282 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m4V6P7Dfa[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 19:10:16.282 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m4V6P7Dfa[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 19:10:16.282 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m4V6P7Dfa[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 19:10:16.282 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m4V6P7Dfa[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 19:10:16.282 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m4V6P7Dfa[0;39m <==      Total: 5
+2020-11-20 19:10:16.283 INFO  com.lzn.config.LogAspect                          :109  [32m4V6P7Dfa[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 19:10:16.283 INFO  com.lzn.config.LogAspect                          :110  [32m4V6P7Dfa[0;39m ------------- 结束 耗时：6 ms -------------
+2020-11-20 19:10:35.982 INFO  com.lzn.config.LogAspect                          :76   [32mI3EOB6w7[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 19:10:35.982 INFO  com.lzn.config.LogAspect                          :77   [32mI3EOB6w7[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 19:10:35.983 INFO  com.lzn.config.LogAspect                          :78   [32mI3EOB6w7[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 19:10:35.983 INFO  com.lzn.config.LogAspect                          :79   [32mI3EOB6w7[0;39m 远程地址: 127.0.0.1
+2020-11-20 19:10:35.983 INFO  com.lzn.config.LogAspect                          :97   [32mI3EOB6w7[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 19:10:35.984 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mI3EOB6w7[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 19:10:35.984 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mI3EOB6w7[0;39m ==> Parameters: 
+2020-11-20 19:10:35.989 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mI3EOB6w7[0;39m <==    Columns: count(0)
+2020-11-20 19:10:35.989 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mI3EOB6w7[0;39m <==        Row: 22
+2020-11-20 19:10:35.989 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mI3EOB6w7[0;39m <==      Total: 1
+2020-11-20 19:10:35.990 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mI3EOB6w7[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 19:10:35.990 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mI3EOB6w7[0;39m ==> Parameters: 5(Integer)
+2020-11-20 19:10:35.991 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mI3EOB6w7[0;39m <==    Columns: id, course_id, name
+2020-11-20 19:10:35.991 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mI3EOB6w7[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 19:10:35.991 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mI3EOB6w7[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 19:10:35.991 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mI3EOB6w7[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 19:10:35.991 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mI3EOB6w7[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 19:10:35.992 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mI3EOB6w7[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 19:10:35.992 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mI3EOB6w7[0;39m <==      Total: 5
+2020-11-20 19:10:35.992 INFO  com.lzn.config.LogAspect                          :109  [32mI3EOB6w7[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 19:10:35.992 INFO  com.lzn.config.LogAspect                          :110  [32mI3EOB6w7[0;39m ------------- 结束 耗时：10 ms -------------
+2020-11-20 19:10:42.115 INFO  com.lzn.config.LogAspect                          :76   [32mJWsPuEkk[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 19:10:42.115 INFO  com.lzn.config.LogAspect                          :77   [32mJWsPuEkk[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 19:10:42.116 INFO  com.lzn.config.LogAspect                          :78   [32mJWsPuEkk[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 19:10:42.116 INFO  com.lzn.config.LogAspect                          :79   [32mJWsPuEkk[0;39m 远程地址: 127.0.0.1
+2020-11-20 19:10:42.116 INFO  com.lzn.config.LogAspect                          :97   [32mJWsPuEkk[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 19:10:42.117 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mJWsPuEkk[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 19:10:42.117 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mJWsPuEkk[0;39m ==> Parameters: 
+2020-11-20 19:10:42.117 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mJWsPuEkk[0;39m <==    Columns: count(0)
+2020-11-20 19:10:42.117 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mJWsPuEkk[0;39m <==        Row: 22
+2020-11-20 19:10:42.117 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mJWsPuEkk[0;39m <==      Total: 1
+2020-11-20 19:10:42.118 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mJWsPuEkk[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 19:10:42.119 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mJWsPuEkk[0;39m ==> Parameters: 5(Integer)
+2020-11-20 19:10:42.120 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mJWsPuEkk[0;39m <==    Columns: id, course_id, name
+2020-11-20 19:10:42.120 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mJWsPuEkk[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 19:10:42.121 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mJWsPuEkk[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 19:10:42.121 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mJWsPuEkk[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 19:10:42.121 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mJWsPuEkk[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 19:10:42.121 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mJWsPuEkk[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 19:10:42.122 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mJWsPuEkk[0;39m <==      Total: 5
+2020-11-20 19:10:42.123 INFO  com.lzn.config.LogAspect                          :109  [32mJWsPuEkk[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 19:10:42.123 INFO  com.lzn.config.LogAspect                          :110  [32mJWsPuEkk[0;39m ------------- 结束 耗时：8 ms -------------
+2020-11-20 19:10:44.971 INFO  com.lzn.config.LogAspect                          :76   [32mpMWVqULv[0;39m ------------- 【大章】查询开始 -------------
+2020-11-20 19:10:44.971 INFO  com.lzn.config.LogAspect                          :77   [32mpMWVqULv[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-20 19:10:44.971 INFO  com.lzn.config.LogAspect                          :78   [32mpMWVqULv[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-20 19:10:44.971 INFO  com.lzn.config.LogAspect                          :79   [32mpMWVqULv[0;39m 远程地址: 127.0.0.1
+2020-11-20 19:10:44.971 INFO  com.lzn.config.LogAspect                          :97   [32mpMWVqULv[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-20 19:10:44.972 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mpMWVqULv[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-20 19:10:44.973 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mpMWVqULv[0;39m ==> Parameters: 
+2020-11-20 19:10:44.973 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mpMWVqULv[0;39m <==    Columns: count(0)
+2020-11-20 19:10:44.973 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mpMWVqULv[0;39m <==        Row: 22
+2020-11-20 19:10:44.974 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mpMWVqULv[0;39m <==      Total: 1
+2020-11-20 19:10:44.974 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mpMWVqULv[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-20 19:10:44.974 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mpMWVqULv[0;39m ==> Parameters: 5(Integer)
+2020-11-20 19:10:44.975 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpMWVqULv[0;39m <==    Columns: id, course_id, name
+2020-11-20 19:10:44.975 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpMWVqULv[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-20 19:10:44.975 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpMWVqULv[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-20 19:10:44.975 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpMWVqULv[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-20 19:10:44.976 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpMWVqULv[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-20 19:10:44.976 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpMWVqULv[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-20 19:10:44.976 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mpMWVqULv[0;39m <==      Total: 5
+2020-11-20 19:10:44.976 INFO  com.lzn.config.LogAspect                          :109  [32mpMWVqULv[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-20 19:10:44.977 INFO  com.lzn.config.LogAspect                          :110  [32mpMWVqULv[0;39m ------------- 结束 耗时：7 ms -------------
