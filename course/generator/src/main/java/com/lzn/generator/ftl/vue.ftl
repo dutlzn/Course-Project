@@ -84,7 +84,6 @@
                           />
                         </div>
                       </div>
-                      </#if>
                 </#list>
 
             </form>
@@ -112,7 +111,7 @@
 import Pagination from "../../components/pagination.vue";
 
 export default {
-  name: "${domain}",
+  name: "${business}-{domain}",
   components: { Pagination },
 
   data: function () {
