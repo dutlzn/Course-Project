@@ -20,6 +20,7 @@ import org.springframework.util.StringUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+    import java.util.Date;
 
 @Service
 public class SectionService {
@@ -32,6 +33,9 @@ public class SectionService {
 
         PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
         SectionExample sectionExample = new SectionExample();
+
+        sectionExample.setOrderByClause("sort asc");
+
         List<Section> sectionList = sectionMapper.selectByExample(sectionExample);
 
         PageInfo<Section> pageInfo = new PageInfo<>(sectionList);
@@ -59,12 +63,16 @@ public class SectionService {
     }
 
     private void insert(Section section){
+            Date now = new Date();
+            section.setCreatedAt(now);
+            section.setUpdatedAt(now);
         section.setId(UuidUtil.getShortUuid());
         sectionMapper.insert(section);
     }
 
 
     private void update(Section section){
+        section.setUpdatedAt(new Date());
         sectionMapper.updateByPrimaryKey(section);
     }
 

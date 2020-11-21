@@ -17,32 +17,28 @@
     <table id="simple-table" class="table table-bordered table-hover">
       <thead>
         <tr>
-                            <th>id</th>
-                <th>标题</th>
-                <th>课程</th>
-                <th>大章</th>
-                <th>视频</th>
-                <th>时长</th>
-                <th>收费</th>
-                <th>顺序</th>
-                <th>创建时间</th>
-                <th>修改时间</th>
+        <th>id</th>
+        <th>标题</th>
+        <th>课程</th>
+        <th>大章</th>
+        <th>视频</th>
+        <th>时长</th>
+        <th>收费</th>
+        <th>顺序</th>
           <th>操作</th>
         </tr>
       </thead>
 
       <tbody>
         <tr v-for="section in sections">
-                <td>{{ section.id }} </td>
-                <td>{{ section.title }} </td>
-                <td>{{ section.courseId }} </td>
-                <td>{{ section.chapterId }} </td>
-                <td>{{ section.video }} </td>
-                <td>{{ section.time }} </td>
-                <td>{{ section.charge }} </td>
-                <td>{{ section.sort }} </td>
-                <td>{{ section.createdAt }} </td>
-                <td>{{ section.updatedAt }} </td>
+        <td>{{section.id}}</td>
+        <td>{{section.title}}</td>
+        <td>{{section.courseId}}</td>
+        <td>{{section.chapterId}}</td>
+        <td>{{section.video}}</td>
+        <td>{{section.time}}</td>
+        <td>{{section.charge}}</td>
+        <td>{{section.sort}}</td>
 
           <td>
             <div class="hidden-sm hidden-xs btn-group">
@@ -80,18 +76,6 @@
 
             <form class="form-horizontal">
 
-                  <div class="form-group">
-                        <label for="id" class="col-sm-2 control-label">id</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.id"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="id"
-                          />
-                        </div>
-                      </div>
                   <div class="form-group">
                         <label for="title" class="col-sm-2 control-label">标题</label>
                         <div class="col-sm-10">
@@ -173,30 +157,6 @@
                             class="form-control"
                             id="name"
                             placeholder="顺序"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="createdAt" class="col-sm-2 control-label">创建时间</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.createdAt"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="创建时间"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="updatedAt" class="col-sm-2 control-label">修改时间</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.updatedAt"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="修改时间"
                           />
                         </div>
                       </div>
@@ -306,7 +266,15 @@ export default {
     // 保存小节的数据
     save(page) {
       let _this = this;
-      // 保存校验 非空检验和长度检验
+     // 保存校验
+        if (1 != 1
+          || !Validator.require(_this.section.title, "标题")
+          || !Validator.length(_this.section.title, "标题", 1, 50)
+          || !Validator.length(_this.section.video, "视频", 1, 200)
+        ) {
+          return;
+        }
+
 
       Loading.show();
       _this.$ajax
