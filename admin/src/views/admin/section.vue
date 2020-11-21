@@ -190,7 +190,7 @@ export default {
       // 映射表单数据
       section: {},
       sections: [],
-      CHARGE: [{key:"C", value:"收费"} , {key:"F", value: "免费"}]
+      CHARGE:CHARGE
     };
   },
 

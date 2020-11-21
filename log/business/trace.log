@@ -511,3 +511,521 @@
 2020-11-21 13:27:47.649 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32myyfeoswH[0;39m <==      Total: 5
 2020-11-21 13:27:47.650 INFO  com.lzn.config.LogAspect                          :109  [32myyfeoswH[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
 2020-11-21 13:27:47.650 INFO  com.lzn.config.LogAspect                          :110  [32myyfeoswH[0;39m ------------- 结束 耗时：8 ms -------------
+2020-11-21 13:28:11.887 INFO  com.lzn.config.LogAspect                          :76   [32mbCfhDsIw[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:28:11.887 INFO  com.lzn.config.LogAspect                          :77   [32mbCfhDsIw[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:28:11.887 INFO  com.lzn.config.LogAspect                          :78   [32mbCfhDsIw[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:28:11.887 INFO  com.lzn.config.LogAspect                          :79   [32mbCfhDsIw[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:28:11.887 INFO  com.lzn.config.LogAspect                          :97   [32mbCfhDsIw[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:28:11.888 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mbCfhDsIw[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:28:11.888 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mbCfhDsIw[0;39m ==> Parameters: 
+2020-11-21 13:28:11.889 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mbCfhDsIw[0;39m <==    Columns: count(0)
+2020-11-21 13:28:11.889 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mbCfhDsIw[0;39m <==        Row: 5
+2020-11-21 13:28:11.889 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mbCfhDsIw[0;39m <==      Total: 1
+2020-11-21 13:28:11.889 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mbCfhDsIw[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:28:11.890 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mbCfhDsIw[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:28:11.890 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mbCfhDsIw[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:28:11.890 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mbCfhDsIw[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:28:11.891 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mbCfhDsIw[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:28:11.891 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mbCfhDsIw[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:28:11.891 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mbCfhDsIw[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:28:11.892 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mbCfhDsIw[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:28:11.892 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mbCfhDsIw[0;39m <==      Total: 5
+2020-11-21 13:28:11.892 INFO  com.lzn.config.LogAspect                          :109  [32mbCfhDsIw[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:28:11.892 INFO  com.lzn.config.LogAspect                          :110  [32mbCfhDsIw[0;39m ------------- 结束 耗时：5 ms -------------
+2020-11-21 13:31:50.109 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-21 13:36:17.854 INFO  com.lzn.config.LogAspect                          :76   [32mLE4x38Ki[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:36:17.855 INFO  com.lzn.config.LogAspect                          :77   [32mLE4x38Ki[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:36:17.855 INFO  com.lzn.config.LogAspect                          :78   [32mLE4x38Ki[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:36:17.855 INFO  com.lzn.config.LogAspect                          :79   [32mLE4x38Ki[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:36:17.855 INFO  com.lzn.config.LogAspect                          :97   [32mLE4x38Ki[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:36:17.857 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mLE4x38Ki[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:36:17.857 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mLE4x38Ki[0;39m ==> Parameters: 
+2020-11-21 13:36:17.858 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mLE4x38Ki[0;39m <==    Columns: count(0)
+2020-11-21 13:36:17.858 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mLE4x38Ki[0;39m <==        Row: 5
+2020-11-21 13:36:17.859 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mLE4x38Ki[0;39m <==      Total: 1
+2020-11-21 13:36:17.859 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mLE4x38Ki[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:36:17.859 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mLE4x38Ki[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:36:17.860 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mLE4x38Ki[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:36:17.860 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mLE4x38Ki[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:36:17.861 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mLE4x38Ki[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:36:17.862 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mLE4x38Ki[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:36:17.862 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mLE4x38Ki[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:36:17.862 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mLE4x38Ki[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:36:17.863 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mLE4x38Ki[0;39m <==      Total: 5
+2020-11-21 13:36:17.863 INFO  com.lzn.config.LogAspect                          :109  [32mLE4x38Ki[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:36:17.863 INFO  com.lzn.config.LogAspect                          :110  [32mLE4x38Ki[0;39m ------------- 结束 耗时：9 ms -------------
+2020-11-21 13:36:21.041 INFO  com.lzn.config.LogAspect                          :76   [32mo8WTZByz[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:36:21.041 INFO  com.lzn.config.LogAspect                          :77   [32mo8WTZByz[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:36:21.042 INFO  com.lzn.config.LogAspect                          :78   [32mo8WTZByz[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:36:21.042 INFO  com.lzn.config.LogAspect                          :79   [32mo8WTZByz[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:36:21.042 INFO  com.lzn.config.LogAspect                          :97   [32mo8WTZByz[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:36:21.049 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mo8WTZByz[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:36:21.050 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mo8WTZByz[0;39m ==> Parameters: 
+2020-11-21 13:36:21.051 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mo8WTZByz[0;39m <==    Columns: count(0)
+2020-11-21 13:36:21.051 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mo8WTZByz[0;39m <==        Row: 22
+2020-11-21 13:36:21.051 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mo8WTZByz[0;39m <==      Total: 1
+2020-11-21 13:36:21.052 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mo8WTZByz[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:36:21.052 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mo8WTZByz[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:36:21.052 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mo8WTZByz[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:36:21.052 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mo8WTZByz[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:36:21.053 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mo8WTZByz[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:36:21.053 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mo8WTZByz[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:36:21.053 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mo8WTZByz[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:36:21.053 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mo8WTZByz[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:36:21.053 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mo8WTZByz[0;39m <==      Total: 5
+2020-11-21 13:36:21.058 INFO  com.lzn.config.LogAspect                          :109  [32mo8WTZByz[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:36:21.059 INFO  com.lzn.config.LogAspect                          :110  [32mo8WTZByz[0;39m ------------- 结束 耗时：18 ms -------------
+2020-11-21 13:36:22.456 INFO  com.lzn.config.LogAspect                          :76   [32mA305mZju[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:36:22.457 INFO  com.lzn.config.LogAspect                          :77   [32mA305mZju[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:36:22.457 INFO  com.lzn.config.LogAspect                          :78   [32mA305mZju[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:36:22.457 INFO  com.lzn.config.LogAspect                          :79   [32mA305mZju[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:36:22.457 INFO  com.lzn.config.LogAspect                          :97   [32mA305mZju[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:36:22.458 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mA305mZju[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:36:22.459 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mA305mZju[0;39m ==> Parameters: 
+2020-11-21 13:36:22.460 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mA305mZju[0;39m <==    Columns: count(0)
+2020-11-21 13:36:22.460 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mA305mZju[0;39m <==        Row: 5
+2020-11-21 13:36:22.460 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mA305mZju[0;39m <==      Total: 1
+2020-11-21 13:36:22.461 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mA305mZju[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:36:22.461 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mA305mZju[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:36:22.462 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mA305mZju[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:36:22.462 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mA305mZju[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:36:22.463 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mA305mZju[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:36:22.463 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mA305mZju[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:36:22.464 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mA305mZju[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:36:22.464 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mA305mZju[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:36:22.465 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mA305mZju[0;39m <==      Total: 5
+2020-11-21 13:36:22.465 INFO  com.lzn.config.LogAspect                          :109  [32mA305mZju[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:36:22.465 INFO  com.lzn.config.LogAspect                          :110  [32mA305mZju[0;39m ------------- 结束 耗时：9 ms -------------
+2020-11-21 13:36:50.110 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-21 13:38:57.829 INFO  com.lzn.config.LogAspect                          :76   [32mnzSOCibO[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:38:57.829 INFO  com.lzn.config.LogAspect                          :77   [32mnzSOCibO[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:38:57.829 INFO  com.lzn.config.LogAspect                          :78   [32mnzSOCibO[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:38:57.829 INFO  com.lzn.config.LogAspect                          :79   [32mnzSOCibO[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:38:57.830 INFO  com.lzn.config.LogAspect                          :97   [32mnzSOCibO[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:38:57.831 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mnzSOCibO[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:38:57.831 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mnzSOCibO[0;39m ==> Parameters: 
+2020-11-21 13:38:57.832 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mnzSOCibO[0;39m <==    Columns: count(0)
+2020-11-21 13:38:57.832 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mnzSOCibO[0;39m <==        Row: 22
+2020-11-21 13:38:57.832 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mnzSOCibO[0;39m <==      Total: 1
+2020-11-21 13:38:57.833 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mnzSOCibO[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:38:57.833 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mnzSOCibO[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:38:57.838 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mnzSOCibO[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:38:57.838 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mnzSOCibO[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:38:57.839 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mnzSOCibO[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:38:57.839 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mnzSOCibO[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:38:57.839 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mnzSOCibO[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:38:57.839 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mnzSOCibO[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:38:57.839 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mnzSOCibO[0;39m <==      Total: 5
+2020-11-21 13:38:57.840 INFO  com.lzn.config.LogAspect                          :109  [32mnzSOCibO[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:38:57.840 INFO  com.lzn.config.LogAspect                          :110  [32mnzSOCibO[0;39m ------------- 结束 耗时：12 ms -------------
+2020-11-21 13:38:58.866 INFO  com.lzn.config.LogAspect                          :76   [32mrhXkOlcX[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:38:58.867 INFO  com.lzn.config.LogAspect                          :77   [32mrhXkOlcX[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:38:58.867 INFO  com.lzn.config.LogAspect                          :78   [32mrhXkOlcX[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:38:58.867 INFO  com.lzn.config.LogAspect                          :79   [32mrhXkOlcX[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:38:58.867 INFO  com.lzn.config.LogAspect                          :97   [32mrhXkOlcX[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:38:58.868 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mrhXkOlcX[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:38:58.869 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mrhXkOlcX[0;39m ==> Parameters: 
+2020-11-21 13:38:58.870 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mrhXkOlcX[0;39m <==    Columns: count(0)
+2020-11-21 13:38:58.870 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mrhXkOlcX[0;39m <==        Row: 5
+2020-11-21 13:38:58.870 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mrhXkOlcX[0;39m <==      Total: 1
+2020-11-21 13:38:58.870 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mrhXkOlcX[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:38:58.871 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mrhXkOlcX[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:38:58.871 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mrhXkOlcX[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:38:58.872 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mrhXkOlcX[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:38:58.872 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mrhXkOlcX[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:38:58.872 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mrhXkOlcX[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:38:58.872 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mrhXkOlcX[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:38:58.873 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mrhXkOlcX[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:38:58.873 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mrhXkOlcX[0;39m <==      Total: 5
+2020-11-21 13:38:58.874 INFO  com.lzn.config.LogAspect                          :109  [32mrhXkOlcX[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:38:58.874 INFO  com.lzn.config.LogAspect                          :110  [32mrhXkOlcX[0;39m ------------- 结束 耗时：8 ms -------------
+2020-11-21 13:41:50.111 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-21 13:42:49.969 INFO  com.lzn.config.LogAspect                          :76   [32mL1CY0LF6[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:42:49.969 INFO  com.lzn.config.LogAspect                          :77   [32mL1CY0LF6[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:42:49.969 INFO  com.lzn.config.LogAspect                          :78   [32mL1CY0LF6[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:42:49.969 INFO  com.lzn.config.LogAspect                          :79   [32mL1CY0LF6[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:42:49.970 INFO  com.lzn.config.LogAspect                          :97   [32mL1CY0LF6[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:42:49.971 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mL1CY0LF6[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:42:49.972 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mL1CY0LF6[0;39m ==> Parameters: 
+2020-11-21 13:42:49.972 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mL1CY0LF6[0;39m <==    Columns: count(0)
+2020-11-21 13:42:49.972 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mL1CY0LF6[0;39m <==        Row: 5
+2020-11-21 13:42:49.973 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mL1CY0LF6[0;39m <==      Total: 1
+2020-11-21 13:42:49.973 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mL1CY0LF6[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:42:49.973 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mL1CY0LF6[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:42:49.974 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mL1CY0LF6[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:42:49.974 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mL1CY0LF6[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:42:49.975 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mL1CY0LF6[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:42:49.975 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mL1CY0LF6[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:42:49.975 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mL1CY0LF6[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:42:49.975 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mL1CY0LF6[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:42:49.976 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mL1CY0LF6[0;39m <==      Total: 5
+2020-11-21 13:42:49.976 INFO  com.lzn.config.LogAspect                          :109  [32mL1CY0LF6[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:42:49.976 INFO  com.lzn.config.LogAspect                          :110  [32mL1CY0LF6[0;39m ------------- 结束 耗时：7 ms -------------
+2020-11-21 13:42:50.017 INFO  com.lzn.config.LogAspect                          :76   [32mpGNbUItK[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:42:50.018 INFO  com.lzn.config.LogAspect                          :77   [32mpGNbUItK[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:42:50.018 INFO  com.lzn.config.LogAspect                          :78   [32mpGNbUItK[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:42:50.018 INFO  com.lzn.config.LogAspect                          :79   [32mpGNbUItK[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:42:50.018 INFO  com.lzn.config.LogAspect                          :97   [32mpGNbUItK[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:42:50.019 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mpGNbUItK[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:42:50.019 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mpGNbUItK[0;39m ==> Parameters: 
+2020-11-21 13:42:50.020 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mpGNbUItK[0;39m <==    Columns: count(0)
+2020-11-21 13:42:50.021 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mpGNbUItK[0;39m <==        Row: 22
+2020-11-21 13:42:50.021 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mpGNbUItK[0;39m <==      Total: 1
+2020-11-21 13:42:50.022 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mpGNbUItK[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:42:50.022 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mpGNbUItK[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:42:50.023 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpGNbUItK[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:42:50.023 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpGNbUItK[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:42:50.024 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpGNbUItK[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:42:50.024 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpGNbUItK[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:42:50.024 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpGNbUItK[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:42:50.025 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mpGNbUItK[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:42:50.025 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mpGNbUItK[0;39m <==      Total: 5
+2020-11-21 13:42:50.026 INFO  com.lzn.config.LogAspect                          :109  [32mpGNbUItK[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:42:50.026 INFO  com.lzn.config.LogAspect                          :110  [32mpGNbUItK[0;39m ------------- 结束 耗时：9 ms -------------
+2020-11-21 13:42:50.218 INFO  com.lzn.config.LogAspect                          :76   [32mlw3NUHxm[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:42:50.218 INFO  com.lzn.config.LogAspect                          :77   [32mlw3NUHxm[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:42:50.218 INFO  com.lzn.config.LogAspect                          :78   [32mlw3NUHxm[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:42:50.218 INFO  com.lzn.config.LogAspect                          :79   [32mlw3NUHxm[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:42:50.218 INFO  com.lzn.config.LogAspect                          :97   [32mlw3NUHxm[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:42:50.219 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mlw3NUHxm[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:42:50.219 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mlw3NUHxm[0;39m ==> Parameters: 
+2020-11-21 13:42:50.220 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mlw3NUHxm[0;39m <==    Columns: count(0)
+2020-11-21 13:42:50.220 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mlw3NUHxm[0;39m <==        Row: 22
+2020-11-21 13:42:50.221 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mlw3NUHxm[0;39m <==      Total: 1
+2020-11-21 13:42:50.221 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mlw3NUHxm[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:42:50.221 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mlw3NUHxm[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:42:50.222 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mlw3NUHxm[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:42:50.222 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mlw3NUHxm[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:42:50.223 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mlw3NUHxm[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:42:50.223 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mlw3NUHxm[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:42:50.223 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mlw3NUHxm[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:42:50.223 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mlw3NUHxm[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:42:50.224 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mlw3NUHxm[0;39m <==      Total: 5
+2020-11-21 13:42:50.225 INFO  com.lzn.config.LogAspect                          :109  [32mlw3NUHxm[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:42:50.225 INFO  com.lzn.config.LogAspect                          :110  [32mlw3NUHxm[0;39m ------------- 结束 耗时：8 ms -------------
+2020-11-21 13:42:57.756 INFO  com.lzn.config.LogAspect                          :76   [32mJonPw6Tf[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:42:57.757 INFO  com.lzn.config.LogAspect                          :77   [32mJonPw6Tf[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:42:57.757 INFO  com.lzn.config.LogAspect                          :78   [32mJonPw6Tf[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:42:57.757 INFO  com.lzn.config.LogAspect                          :79   [32mJonPw6Tf[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:42:57.757 INFO  com.lzn.config.LogAspect                          :97   [32mJonPw6Tf[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:42:57.758 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mJonPw6Tf[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:42:57.759 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mJonPw6Tf[0;39m ==> Parameters: 
+2020-11-21 13:42:57.760 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mJonPw6Tf[0;39m <==    Columns: count(0)
+2020-11-21 13:42:57.760 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mJonPw6Tf[0;39m <==        Row: 5
+2020-11-21 13:42:57.760 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mJonPw6Tf[0;39m <==      Total: 1
+2020-11-21 13:42:57.761 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mJonPw6Tf[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:42:57.762 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mJonPw6Tf[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:42:57.763 INFO  com.lzn.config.LogAspect                          :76   [32mh4Gt20nB[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:42:57.763 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mJonPw6Tf[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:42:57.764 INFO  com.lzn.config.LogAspect                          :77   [32mh4Gt20nB[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:42:57.764 INFO  com.lzn.config.LogAspect                          :78   [32mh4Gt20nB[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:42:57.764 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mJonPw6Tf[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:42:57.764 INFO  com.lzn.config.LogAspect                          :79   [32mh4Gt20nB[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:42:57.764 INFO  com.lzn.config.LogAspect                          :97   [32mh4Gt20nB[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:42:57.764 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mJonPw6Tf[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:42:57.765 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mJonPw6Tf[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:42:57.765 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mJonPw6Tf[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:42:57.766 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mJonPw6Tf[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:42:57.766 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mh4Gt20nB[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:42:57.766 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mh4Gt20nB[0;39m ==> Parameters: 
+2020-11-21 13:42:57.766 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mJonPw6Tf[0;39m <==      Total: 5
+2020-11-21 13:42:57.767 INFO  com.lzn.config.LogAspect                          :109  [32mJonPw6Tf[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:42:57.767 INFO  com.lzn.config.LogAspect                          :110  [32mJonPw6Tf[0;39m ------------- 结束 耗时：11 ms -------------
+2020-11-21 13:42:57.767 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mh4Gt20nB[0;39m <==    Columns: count(0)
+2020-11-21 13:42:57.768 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mh4Gt20nB[0;39m <==        Row: 22
+2020-11-21 13:42:57.768 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mh4Gt20nB[0;39m <==      Total: 1
+2020-11-21 13:42:57.769 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mh4Gt20nB[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:42:57.769 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mh4Gt20nB[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:42:57.770 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mh4Gt20nB[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:42:57.771 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mh4Gt20nB[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:42:57.771 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mh4Gt20nB[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:42:57.771 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mh4Gt20nB[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:42:57.771 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mh4Gt20nB[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:42:57.772 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mh4Gt20nB[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:42:57.772 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mh4Gt20nB[0;39m <==      Total: 5
+2020-11-21 13:42:57.773 INFO  com.lzn.config.LogAspect                          :109  [32mh4Gt20nB[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:42:57.773 INFO  com.lzn.config.LogAspect                          :110  [32mh4Gt20nB[0;39m ------------- 结束 耗时：10 ms -------------
+2020-11-21 13:42:58.038 INFO  com.lzn.config.LogAspect                          :76   [32meQYY3n5F[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:42:58.039 INFO  com.lzn.config.LogAspect                          :77   [32meQYY3n5F[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:42:58.039 INFO  com.lzn.config.LogAspect                          :78   [32meQYY3n5F[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:42:58.039 INFO  com.lzn.config.LogAspect                          :79   [32meQYY3n5F[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:42:58.039 INFO  com.lzn.config.LogAspect                          :97   [32meQYY3n5F[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:42:58.040 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32meQYY3n5F[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:42:58.041 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32meQYY3n5F[0;39m ==> Parameters: 
+2020-11-21 13:42:58.041 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32meQYY3n5F[0;39m <==    Columns: count(0)
+2020-11-21 13:42:58.042 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32meQYY3n5F[0;39m <==        Row: 22
+2020-11-21 13:42:58.042 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32meQYY3n5F[0;39m <==      Total: 1
+2020-11-21 13:42:58.042 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32meQYY3n5F[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:42:58.043 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32meQYY3n5F[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:42:58.043 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32meQYY3n5F[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:42:58.044 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32meQYY3n5F[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:42:58.044 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32meQYY3n5F[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:42:58.045 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32meQYY3n5F[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:42:58.045 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32meQYY3n5F[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:42:58.046 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32meQYY3n5F[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:42:58.046 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32meQYY3n5F[0;39m <==      Total: 5
+2020-11-21 13:42:58.047 INFO  com.lzn.config.LogAspect                          :109  [32meQYY3n5F[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:42:58.047 INFO  com.lzn.config.LogAspect                          :110  [32meQYY3n5F[0;39m ------------- 结束 耗时：9 ms -------------
+2020-11-21 13:43:17.067 INFO  com.lzn.config.LogAspect                          :76   [32mQv6VZqKL[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:43:17.067 INFO  com.lzn.config.LogAspect                          :76   [32mljgfMVPh[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:43:17.067 INFO  com.lzn.config.LogAspect                          :77   [32mQv6VZqKL[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:43:17.067 INFO  com.lzn.config.LogAspect                          :77   [32mljgfMVPh[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:43:17.068 INFO  com.lzn.config.LogAspect                          :78   [32mQv6VZqKL[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:43:17.068 INFO  com.lzn.config.LogAspect                          :78   [32mljgfMVPh[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:43:17.068 INFO  com.lzn.config.LogAspect                          :79   [32mQv6VZqKL[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:17.068 INFO  com.lzn.config.LogAspect                          :79   [32mljgfMVPh[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:17.068 INFO  com.lzn.config.LogAspect                          :97   [32mQv6VZqKL[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:17.068 INFO  com.lzn.config.LogAspect                          :97   [32mljgfMVPh[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:17.069 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mQv6VZqKL[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:43:17.069 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mljgfMVPh[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:43:17.069 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mQv6VZqKL[0;39m ==> Parameters: 
+2020-11-21 13:43:17.069 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mljgfMVPh[0;39m ==> Parameters: 
+2020-11-21 13:43:17.070 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mljgfMVPh[0;39m <==    Columns: count(0)
+2020-11-21 13:43:17.070 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mQv6VZqKL[0;39m <==    Columns: count(0)
+2020-11-21 13:43:17.070 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mljgfMVPh[0;39m <==        Row: 5
+2020-11-21 13:43:17.070 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mQv6VZqKL[0;39m <==        Row: 22
+2020-11-21 13:43:17.070 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mljgfMVPh[0;39m <==      Total: 1
+2020-11-21 13:43:17.070 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mQv6VZqKL[0;39m <==      Total: 1
+2020-11-21 13:43:17.070 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mljgfMVPh[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:43:17.070 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mQv6VZqKL[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:43:17.070 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mQv6VZqKL[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:17.070 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mljgfMVPh[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:17.071 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mljgfMVPh[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:43:17.071 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQv6VZqKL[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:43:17.071 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQv6VZqKL[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:43:17.071 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mljgfMVPh[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:43:17.072 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQv6VZqKL[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:43:17.072 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mljgfMVPh[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:43:17.072 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQv6VZqKL[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:43:17.072 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mljgfMVPh[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:43:17.072 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mljgfMVPh[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:43:17.072 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQv6VZqKL[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:43:17.073 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mljgfMVPh[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:43:17.073 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQv6VZqKL[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:43:17.073 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mljgfMVPh[0;39m <==      Total: 5
+2020-11-21 13:43:17.073 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mQv6VZqKL[0;39m <==      Total: 5
+2020-11-21 13:43:17.073 INFO  com.lzn.config.LogAspect                          :109  [32mljgfMVPh[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:43:17.073 INFO  com.lzn.config.LogAspect                          :109  [32mQv6VZqKL[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:43:17.073 INFO  com.lzn.config.LogAspect                          :110  [32mljgfMVPh[0;39m ------------- 结束 耗时：6 ms -------------
+2020-11-21 13:43:17.073 INFO  com.lzn.config.LogAspect                          :110  [32mQv6VZqKL[0;39m ------------- 结束 耗时：6 ms -------------
+2020-11-21 13:43:17.287 INFO  com.lzn.config.LogAspect                          :76   [32muMTb8RgP[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:43:17.288 INFO  com.lzn.config.LogAspect                          :77   [32muMTb8RgP[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:43:17.288 INFO  com.lzn.config.LogAspect                          :78   [32muMTb8RgP[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:43:17.288 INFO  com.lzn.config.LogAspect                          :79   [32muMTb8RgP[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:17.288 INFO  com.lzn.config.LogAspect                          :97   [32muMTb8RgP[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:17.289 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32muMTb8RgP[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:43:17.289 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32muMTb8RgP[0;39m ==> Parameters: 
+2020-11-21 13:43:17.289 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32muMTb8RgP[0;39m <==    Columns: count(0)
+2020-11-21 13:43:17.289 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32muMTb8RgP[0;39m <==        Row: 22
+2020-11-21 13:43:17.289 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32muMTb8RgP[0;39m <==      Total: 1
+2020-11-21 13:43:17.290 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32muMTb8RgP[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:43:17.290 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32muMTb8RgP[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:17.291 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muMTb8RgP[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:43:17.291 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muMTb8RgP[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:43:17.291 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muMTb8RgP[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:43:17.291 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muMTb8RgP[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:43:17.291 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muMTb8RgP[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:43:17.292 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muMTb8RgP[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:43:17.292 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32muMTb8RgP[0;39m <==      Total: 5
+2020-11-21 13:43:17.292 INFO  com.lzn.config.LogAspect                          :109  [32muMTb8RgP[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:43:17.292 INFO  com.lzn.config.LogAspect                          :110  [32muMTb8RgP[0;39m ------------- 结束 耗时：5 ms -------------
+2020-11-21 13:43:22.471 INFO  com.lzn.config.LogAspect                          :76   [32m3BmPE5uK[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:43:22.471 INFO  com.lzn.config.LogAspect                          :77   [32m3BmPE5uK[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:43:22.471 INFO  com.lzn.config.LogAspect                          :78   [32m3BmPE5uK[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:43:22.472 INFO  com.lzn.config.LogAspect                          :79   [32m3BmPE5uK[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:22.472 INFO  com.lzn.config.LogAspect                          :97   [32m3BmPE5uK[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:22.473 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32m3BmPE5uK[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:43:22.473 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32m3BmPE5uK[0;39m ==> Parameters: 
+2020-11-21 13:43:22.474 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32m3BmPE5uK[0;39m <==    Columns: count(0)
+2020-11-21 13:43:22.474 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32m3BmPE5uK[0;39m <==        Row: 5
+2020-11-21 13:43:22.474 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32m3BmPE5uK[0;39m <==      Total: 1
+2020-11-21 13:43:22.475 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32m3BmPE5uK[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:43:22.475 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32m3BmPE5uK[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:22.476 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m3BmPE5uK[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:43:22.476 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m3BmPE5uK[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:43:22.476 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m3BmPE5uK[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:43:22.476 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m3BmPE5uK[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:43:22.477 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m3BmPE5uK[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:43:22.477 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m3BmPE5uK[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:43:22.477 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32m3BmPE5uK[0;39m <==      Total: 5
+2020-11-21 13:43:22.478 INFO  com.lzn.config.LogAspect                          :109  [32m3BmPE5uK[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:43:22.478 INFO  com.lzn.config.LogAspect                          :110  [32m3BmPE5uK[0;39m ------------- 结束 耗时：7 ms -------------
+2020-11-21 13:43:22.488 INFO  com.lzn.config.LogAspect                          :76   [32mGpUPmw80[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:43:22.488 INFO  com.lzn.config.LogAspect                          :77   [32mGpUPmw80[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:43:22.488 INFO  com.lzn.config.LogAspect                          :78   [32mGpUPmw80[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:43:22.488 INFO  com.lzn.config.LogAspect                          :79   [32mGpUPmw80[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:22.489 INFO  com.lzn.config.LogAspect                          :97   [32mGpUPmw80[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:22.490 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mGpUPmw80[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:43:22.490 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mGpUPmw80[0;39m ==> Parameters: 
+2020-11-21 13:43:22.491 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mGpUPmw80[0;39m <==    Columns: count(0)
+2020-11-21 13:43:22.492 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mGpUPmw80[0;39m <==        Row: 22
+2020-11-21 13:43:22.492 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mGpUPmw80[0;39m <==      Total: 1
+2020-11-21 13:43:22.493 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mGpUPmw80[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:43:22.493 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mGpUPmw80[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:22.495 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mGpUPmw80[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:43:22.495 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mGpUPmw80[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:43:22.496 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mGpUPmw80[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:43:22.496 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mGpUPmw80[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:43:22.496 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mGpUPmw80[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:43:22.497 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mGpUPmw80[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:43:22.497 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mGpUPmw80[0;39m <==      Total: 5
+2020-11-21 13:43:22.498 INFO  com.lzn.config.LogAspect                          :109  [32mGpUPmw80[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:43:22.498 INFO  com.lzn.config.LogAspect                          :110  [32mGpUPmw80[0;39m ------------- 结束 耗时：10 ms -------------
+2020-11-21 13:43:22.783 INFO  com.lzn.config.LogAspect                          :76   [32muHoNuoIJ[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:43:22.783 INFO  com.lzn.config.LogAspect                          :77   [32muHoNuoIJ[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:43:22.783 INFO  com.lzn.config.LogAspect                          :78   [32muHoNuoIJ[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:43:22.783 INFO  com.lzn.config.LogAspect                          :79   [32muHoNuoIJ[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:22.783 INFO  com.lzn.config.LogAspect                          :97   [32muHoNuoIJ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:22.784 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32muHoNuoIJ[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:43:22.784 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32muHoNuoIJ[0;39m ==> Parameters: 
+2020-11-21 13:43:22.785 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32muHoNuoIJ[0;39m <==    Columns: count(0)
+2020-11-21 13:43:22.785 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32muHoNuoIJ[0;39m <==        Row: 22
+2020-11-21 13:43:22.785 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32muHoNuoIJ[0;39m <==      Total: 1
+2020-11-21 13:43:22.785 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32muHoNuoIJ[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:43:22.785 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32muHoNuoIJ[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:22.786 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muHoNuoIJ[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:43:22.786 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muHoNuoIJ[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:43:22.786 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muHoNuoIJ[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:43:22.787 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muHoNuoIJ[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:43:22.787 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muHoNuoIJ[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:43:22.787 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32muHoNuoIJ[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:43:22.787 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32muHoNuoIJ[0;39m <==      Total: 5
+2020-11-21 13:43:22.787 INFO  com.lzn.config.LogAspect                          :109  [32muHoNuoIJ[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:43:22.788 INFO  com.lzn.config.LogAspect                          :110  [32muHoNuoIJ[0;39m ------------- 结束 耗时：5 ms -------------
+2020-11-21 13:43:25.508 INFO  com.lzn.config.LogAspect                          :76   [32m6ypi3czX[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:43:25.509 INFO  com.lzn.config.LogAspect                          :77   [32m6ypi3czX[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:43:25.509 INFO  com.lzn.config.LogAspect                          :78   [32m6ypi3czX[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:43:25.509 INFO  com.lzn.config.LogAspect                          :79   [32m6ypi3czX[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:25.509 INFO  com.lzn.config.LogAspect                          :97   [32m6ypi3czX[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:25.511 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m6ypi3czX[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:43:25.512 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m6ypi3czX[0;39m ==> Parameters: 
+2020-11-21 13:43:25.513 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m6ypi3czX[0;39m <==    Columns: count(0)
+2020-11-21 13:43:25.513 INFO  com.lzn.config.LogAspect                          :76   [32m8NPiyQG4[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:43:25.513 INFO  com.lzn.config.LogAspect                          :77   [32m8NPiyQG4[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:43:25.513 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32m6ypi3czX[0;39m <==        Row: 22
+2020-11-21 13:43:25.513 INFO  com.lzn.config.LogAspect                          :78   [32m8NPiyQG4[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:43:25.513 INFO  com.lzn.config.LogAspect                          :79   [32m8NPiyQG4[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:25.513 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32m6ypi3czX[0;39m <==      Total: 1
+2020-11-21 13:43:25.513 INFO  com.lzn.config.LogAspect                          :97   [32m8NPiyQG4[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:25.514 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m6ypi3czX[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:43:25.514 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m6ypi3czX[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:25.515 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32m8NPiyQG4[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:43:25.515 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m6ypi3czX[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:43:25.516 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32m8NPiyQG4[0;39m ==> Parameters: 
+2020-11-21 13:43:25.516 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m6ypi3czX[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:43:25.516 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m6ypi3czX[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:43:25.517 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32m8NPiyQG4[0;39m <==    Columns: count(0)
+2020-11-21 13:43:25.516 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m6ypi3czX[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:43:25.517 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32m8NPiyQG4[0;39m <==        Row: 5
+2020-11-21 13:43:25.517 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m6ypi3czX[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:43:25.517 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32m8NPiyQG4[0;39m <==      Total: 1
+2020-11-21 13:43:25.517 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32m6ypi3czX[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:43:25.517 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32m6ypi3czX[0;39m <==      Total: 5
+2020-11-21 13:43:25.518 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32m8NPiyQG4[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:43:25.518 INFO  com.lzn.config.LogAspect                          :109  [32m6ypi3czX[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:43:25.518 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32m8NPiyQG4[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:25.518 INFO  com.lzn.config.LogAspect                          :110  [32m6ypi3czX[0;39m ------------- 结束 耗时：10 ms -------------
+2020-11-21 13:43:25.519 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m8NPiyQG4[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:43:25.520 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m8NPiyQG4[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:43:25.522 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m8NPiyQG4[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:43:25.522 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m8NPiyQG4[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:43:25.523 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m8NPiyQG4[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:43:25.524 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32m8NPiyQG4[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:43:25.524 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32m8NPiyQG4[0;39m <==      Total: 5
+2020-11-21 13:43:25.525 INFO  com.lzn.config.LogAspect                          :109  [32m8NPiyQG4[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:43:25.525 INFO  com.lzn.config.LogAspect                          :110  [32m8NPiyQG4[0;39m ------------- 结束 耗时：12 ms -------------
+2020-11-21 13:43:25.819 INFO  com.lzn.config.LogAspect                          :76   [32mQAvEPrqL[0;39m ------------- 【大章】查询开始 -------------
+2020-11-21 13:43:25.819 INFO  com.lzn.config.LogAspect                          :77   [32mQAvEPrqL[0;39m 请求地址: http://localhost:9002/business/admin/chapter/list POST
+2020-11-21 13:43:25.819 INFO  com.lzn.config.LogAspect                          :78   [32mQAvEPrqL[0;39m 类名方法: com.lzn.business.controller.admin.ChapterController.list
+2020-11-21 13:43:25.820 INFO  com.lzn.config.LogAspect                          :79   [32mQAvEPrqL[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:25.820 INFO  com.lzn.config.LogAspect                          :97   [32mQAvEPrqL[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:25.820 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mQAvEPrqL[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-21 13:43:25.820 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mQAvEPrqL[0;39m ==> Parameters: 
+2020-11-21 13:43:25.820 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mQAvEPrqL[0;39m <==    Columns: count(0)
+2020-11-21 13:43:25.821 TRACE com.lzn.mapper.ChapterMapper.selectByExample_COUNT:165  [32mQAvEPrqL[0;39m <==        Row: 22
+2020-11-21 13:43:25.821 DEBUG com.lzn.mapper.ChapterMapper.selectByExample_COUNT:159  [32mQAvEPrqL[0;39m <==      Total: 1
+2020-11-21 13:43:25.821 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mQAvEPrqL[0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-21 13:43:25.821 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mQAvEPrqL[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:25.822 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQAvEPrqL[0;39m <==    Columns: id, course_id, name
+2020-11-21 13:43:25.823 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQAvEPrqL[0;39m <==        Row: 00000000, 0000000, 测试大章1
+2020-11-21 13:43:25.823 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQAvEPrqL[0;39m <==        Row: 00000001, 00000000, 测试大章2
+2020-11-21 13:43:25.823 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQAvEPrqL[0;39m <==        Row: 00000002, 00000002, 测试大章3
+2020-11-21 13:43:25.823 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQAvEPrqL[0;39m <==        Row: 00000003, 00000003, 测试大章4
+2020-11-21 13:43:25.823 TRACE com.lzn.mapper.ChapterMapper.selectByExample      :165  [32mQAvEPrqL[0;39m <==        Row: 00000004, 00000004, 测试大章5
+2020-11-21 13:43:25.824 DEBUG com.lzn.mapper.ChapterMapper.selectByExample      :159  [32mQAvEPrqL[0;39m <==      Total: 5
+2020-11-21 13:43:25.824 INFO  com.lzn.config.LogAspect                          :109  [32mQAvEPrqL[0;39m 返回结果: {"content":{"list":[{"courseId":"0000000","id":"00000000","name":"测试大章1"},{"courseId":"00000000","id":"00000001","name":"测试大章2"},{"courseId":"00000002","id":"00000002","name":"测试大章3"},{"courseId":"00000003","id":"00000003","name":"测试大章4"},{"courseId":"00000004","id":"00000004","name":"测试大章5"}],"page":1,"size":5,"total":22},"success":true}
+2020-11-21 13:43:25.824 INFO  com.lzn.config.LogAspect                          :110  [32mQAvEPrqL[0;39m ------------- 结束 耗时：5 ms -------------
+2020-11-21 13:43:43.551 INFO  com.lzn.config.LogAspect                          :76   [32mYAjUIkLf[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:43:43.552 INFO  com.lzn.config.LogAspect                          :77   [32mYAjUIkLf[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:43:43.552 INFO  com.lzn.config.LogAspect                          :78   [32mYAjUIkLf[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:43:43.552 INFO  com.lzn.config.LogAspect                          :79   [32mYAjUIkLf[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:43:43.552 INFO  com.lzn.config.LogAspect                          :97   [32mYAjUIkLf[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:43:43.553 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mYAjUIkLf[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:43:43.553 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mYAjUIkLf[0;39m ==> Parameters: 
+2020-11-21 13:43:43.554 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mYAjUIkLf[0;39m <==    Columns: count(0)
+2020-11-21 13:43:43.554 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mYAjUIkLf[0;39m <==        Row: 5
+2020-11-21 13:43:43.554 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mYAjUIkLf[0;39m <==      Total: 1
+2020-11-21 13:43:43.554 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mYAjUIkLf[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:43:43.554 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mYAjUIkLf[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:43:43.555 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mYAjUIkLf[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:43:43.555 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mYAjUIkLf[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:43:43.556 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mYAjUIkLf[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:43:43.556 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mYAjUIkLf[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:43:43.556 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mYAjUIkLf[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:43:43.556 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mYAjUIkLf[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:43:43.556 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mYAjUIkLf[0;39m <==      Total: 5
+2020-11-21 13:43:43.557 INFO  com.lzn.config.LogAspect                          :109  [32mYAjUIkLf[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:43:43.557 INFO  com.lzn.config.LogAspect                          :110  [32mYAjUIkLf[0;39m ------------- 结束 耗时：6 ms -------------
+2020-11-21 13:44:17.265 INFO  com.lzn.config.LogAspect                          :76   [32mVGhegHUw[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:44:17.265 INFO  com.lzn.config.LogAspect                          :77   [32mVGhegHUw[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:44:17.265 INFO  com.lzn.config.LogAspect                          :78   [32mVGhegHUw[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:44:17.265 INFO  com.lzn.config.LogAspect                          :79   [32mVGhegHUw[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:44:17.265 INFO  com.lzn.config.LogAspect                          :97   [32mVGhegHUw[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:44:17.266 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mVGhegHUw[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:44:17.267 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mVGhegHUw[0;39m ==> Parameters: 
+2020-11-21 13:44:17.267 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mVGhegHUw[0;39m <==    Columns: count(0)
+2020-11-21 13:44:17.267 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mVGhegHUw[0;39m <==        Row: 5
+2020-11-21 13:44:17.267 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mVGhegHUw[0;39m <==      Total: 1
+2020-11-21 13:44:17.267 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mVGhegHUw[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:44:17.267 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mVGhegHUw[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:44:17.268 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mVGhegHUw[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:44:17.268 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mVGhegHUw[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:44:17.269 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mVGhegHUw[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, F, null, 2020-11-21 13:27:14.0, 2020-11-21 13:27:47.622
+2020-11-21 13:44:17.269 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mVGhegHUw[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:44:17.269 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mVGhegHUw[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:44:17.269 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mVGhegHUw[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:44:17.269 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mVGhegHUw[0;39m <==      Total: 5
+2020-11-21 13:44:17.270 INFO  com.lzn.config.LogAspect                          :109  [32mVGhegHUw[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"F","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467622},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:44:17.270 INFO  com.lzn.config.LogAspect                          :110  [32mVGhegHUw[0;39m ------------- 结束 耗时：5 ms -------------
+2020-11-21 13:44:22.298 INFO  com.lzn.config.LogAspect                          :76   [32mj2aAxOEN[0;39m ------------- 【小节】保存开始 -------------
+2020-11-21 13:44:22.298 INFO  com.lzn.config.LogAspect                          :77   [32mj2aAxOEN[0;39m 请求地址: http://localhost:9002/business/admin/section/save POST
+2020-11-21 13:44:22.298 INFO  com.lzn.config.LogAspect                          :78   [32mj2aAxOEN[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.save
+2020-11-21 13:44:22.298 INFO  com.lzn.config.LogAspect                          :79   [32mj2aAxOEN[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:44:22.299 INFO  com.lzn.config.LogAspect                          :97   [32mj2aAxOEN[0;39m 请求参数: [{"charge":"C","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467000}]
+2020-11-21 13:44:22.300 DEBUG com.lzn.mapper.SectionMapper.updateByPrimaryKey   :159  [32mj2aAxOEN[0;39m ==>  Preparing: update section set title = ?, course_id = ?, chapter_id = ?, video = ?, `time` = ?, charge = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2020-11-21 13:44:22.300 DEBUG com.lzn.mapper.SectionMapper.updateByPrimaryKey   :159  [32mj2aAxOEN[0;39m ==> Parameters: 1(String), null, null, null, null, C(String), null, 2020-11-21 13:27:14.0(Timestamp), 2020-11-21 13:44:22.299(Timestamp), Hh2to2AK(String)
+2020-11-21 13:44:22.305 DEBUG com.lzn.mapper.SectionMapper.updateByPrimaryKey   :159  [32mj2aAxOEN[0;39m <==    Updates: 1
+2020-11-21 13:44:22.305 INFO  com.lzn.config.LogAspect                          :109  [32mj2aAxOEN[0;39m 返回结果: {"content":{"charge":"C","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605936467000},"success":true}
+2020-11-21 13:44:22.305 INFO  com.lzn.config.LogAspect                          :110  [32mj2aAxOEN[0;39m ------------- 结束 耗时：7 ms -------------
+2020-11-21 13:44:22.325 INFO  com.lzn.config.LogAspect                          :76   [32mpBX2yYUb[0;39m ------------- 【小节】查询开始 -------------
+2020-11-21 13:44:22.325 INFO  com.lzn.config.LogAspect                          :77   [32mpBX2yYUb[0;39m 请求地址: http://localhost:9002/business/admin/section/list POST
+2020-11-21 13:44:22.325 INFO  com.lzn.config.LogAspect                          :78   [32mpBX2yYUb[0;39m 类名方法: com.lzn.business.controller.admin.SectionController.list
+2020-11-21 13:44:22.325 INFO  com.lzn.config.LogAspect                          :79   [32mpBX2yYUb[0;39m 远程地址: 127.0.0.1
+2020-11-21 13:44:22.325 INFO  com.lzn.config.LogAspect                          :97   [32mpBX2yYUb[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-21 13:44:22.327 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mpBX2yYUb[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-21 13:44:22.328 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mpBX2yYUb[0;39m ==> Parameters: 
+2020-11-21 13:44:22.329 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mpBX2yYUb[0;39m <==    Columns: count(0)
+2020-11-21 13:44:22.329 TRACE com.lzn.mapper.SectionMapper.selectByExample_COUNT:165  [32mpBX2yYUb[0;39m <==        Row: 5
+2020-11-21 13:44:22.329 DEBUG com.lzn.mapper.SectionMapper.selectByExample_COUNT:159  [32mpBX2yYUb[0;39m <==      Total: 1
+2020-11-21 13:44:22.329 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mpBX2yYUb[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-21 13:44:22.330 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mpBX2yYUb[0;39m ==> Parameters: 5(Integer)
+2020-11-21 13:44:22.330 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mpBX2yYUb[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-21 13:44:22.330 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mpBX2yYUb[0;39m <==        Row: DnQKwmD1, test, null, null, null, null, null, null, 2020-11-21 13:19:43.624, 2020-11-21 13:19:43.624
+2020-11-21 13:44:22.331 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mpBX2yYUb[0;39m <==        Row: Hh2to2AK, 1, null, null, null, null, C, null, 2020-11-21 13:27:14.0, 2020-11-21 13:44:22.299
+2020-11-21 13:44:22.331 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mpBX2yYUb[0;39m <==        Row: SKvuB2uu, 1, null, null, null, null, null, null, null, null
+2020-11-21 13:44:22.331 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mpBX2yYUb[0;39m <==        Row: 00000001, 测试小节011, 00000001, 00000000, , 500, f, 1, 2020-11-20 07:43:04.0, 2020-11-20 07:43:04.0
+2020-11-21 13:44:22.331 TRACE com.lzn.mapper.SectionMapper.selectByExample      :165  [32mpBX2yYUb[0;39m <==        Row: BmUvuctN, 4312222222222222222222222222222222, 1, 1, 1, 13, 1, 1, null, 2020-11-21 13:17:49.615
+2020-11-21 13:44:22.331 DEBUG com.lzn.mapper.SectionMapper.selectByExample      :159  [32mpBX2yYUb[0;39m <==      Total: 5
+2020-11-21 13:44:22.332 INFO  com.lzn.config.LogAspect                          :109  [32mpBX2yYUb[0;39m 返回结果: {"content":{"list":[{"createdAt":1605935983624,"id":"DnQKwmD1","title":"test","updatedAt":1605935983624},{"charge":"C","createdAt":1605936434000,"id":"Hh2to2AK","title":"1","updatedAt":1605937462299},{"id":"SKvuB2uu","title":"1"},{"chapterId":"00000000","charge":"f","courseId":"00000001","createdAt":1605829384000,"id":"00000001","sort":1,"time":500,"title":"测试小节011","updatedAt":1605829384000,"video":""},{"chapterId":"1","charge":"1","courseId":"1","id":"BmUvuctN","sort":1,"time":13,"title":"4312222222222222222222222222222222","updatedAt":1605935869615,"video":"1"}],"page":1,"size":5,"total":5},"success":true}
+2020-11-21 13:44:22.332 INFO  com.lzn.config.LogAspect                          :110  [32mpBX2yYUb[0;39m ------------- 结束 耗时：7 ms -------------
+2020-11-21 13:46:50.113 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
