@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="progress progress-mini">
-                          <div style="width:65%" class="progress-bar"></div>
+                          <div style="width: 65%" class="progress-bar"></div>
                         </div>
                       </a>
                     </li>
@@ -65,7 +65,10 @@
                         </div>
 
                         <div class="progress progress-mini">
-                          <div style="width:35%" class="progress-bar progress-bar-danger"></div>
+                          <div
+                            style="width: 35%"
+                            class="progress-bar progress-bar-danger"
+                          ></div>
                         </div>
                       </a>
                     </li>
@@ -78,7 +81,10 @@
                         </div>
 
                         <div class="progress progress-mini">
-                          <div style="width:15%" class="progress-bar progress-bar-warning"></div>
+                          <div
+                            style="width: 15%"
+                            class="progress-bar progress-bar-warning"
+                          ></div>
                         </div>
                       </a>
                     </li>
@@ -90,8 +96,13 @@
                           <span class="pull-right">90%</span>
                         </div>
 
-                        <div class="progress progress-mini progress-striped active">
-                          <div style="width:90%" class="progress-bar progress-bar-success"></div>
+                        <div
+                          class="progress progress-mini progress-striped active"
+                        >
+                          <div
+                            style="width: 90%"
+                            class="progress-bar progress-bar-success"
+                          ></div>
                         </div>
                       </a>
                     </li>
@@ -127,7 +138,9 @@
                       <a href="#">
                         <div class="clearfix">
                           <span class="pull-left">
-                            <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
+                            <i
+                              class="btn btn-xs no-hover btn-pink fa fa-comment"
+                            ></i>
                             New Comments
                           </span>
                           <span class="pull-right badge badge-info">+12</span>
@@ -146,7 +159,9 @@
                       <a href="#">
                         <div class="clearfix">
                           <span class="pull-left">
-                            <i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
+                            <i
+                              class="btn btn-xs no-hover btn-success fa fa-shopping-cart"
+                            ></i>
                             New Orders
                           </span>
                           <span class="pull-right badge badge-success">+8</span>
@@ -158,7 +173,9 @@
                       <a href="#">
                         <div class="clearfix">
                           <span class="pull-left">
-                            <i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
+                            <i
+                              class="btn btn-xs no-hover btn-info fa fa-twitter"
+                            ></i>
                             Followers
                           </span>
                           <span class="pull-right badge badge-info">+11</span>
@@ -423,6 +440,15 @@
             <b class="arrow"></b>
 
             <ul class="submenu">
+              <li class="active" id="business-course-sidebar">
+                <router-link to="/business/course">
+                  <i class="menu-icon fa fa-caret-right"></i>
+                  课程管理
+                </router-link>
+
+                <b class="arrow"></b>
+              </li>
+
               <li class="active" id="business-chapter-sidebar">
                 <router-link to="/business/chapter">
                   <i class="menu-icon fa fa-caret-right"></i>
@@ -439,7 +465,7 @@
                 </router-link>
 
                 <b class="arrow"></b>
-              </li>              
+              </li>
             </ul>
           </li>
         </ul>
@@ -485,7 +511,11 @@
         </div>
       </div>
 
-      <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+      <a
+        href="#"
+        id="btn-scroll-up"
+        class="btn-scroll-up btn btn-sm btn-inverse"
+      >
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
       </a>
     </div>
@@ -496,26 +526,26 @@
 <script>
 export default {
   name: "admin",
-  mounted: function() {
+  mounted: function () {
     let _this = this;
     $("body").removeAttr("class", "login-layout light-login");
     $("body").attr("class", "no-skin");
-     _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+    _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
   },
 
   watch: {
     $route: {
-      handler: function(val, oldVal) {
+      handler: function (val, oldVal) {
         // sidebar激活样式方法二
         console.log("---->页面跳转：", val, oldVal);
         let _this = this;
 
-        _this.$nextTick(function() {
+        _this.$nextTick(function () {
           //页面加载完成后执行
           _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
         });
-      }
-    }
+      },
+    },
   },
 
   methods: {
@@ -526,7 +556,7 @@ export default {
      * 菜单激活样式，id是当前点击的菜单的id
      * @param id
      */
-    activeSidebar: function(id) {
+    activeSidebar: function (id) {
       // 兄弟菜单去掉active样式，自身增加active样式
       $("#" + id)
         .siblings()
@@ -544,7 +574,7 @@ export default {
         // parentLi.siblings().find("li").removeClass("active");
         parentLi.addClass("open active");
       }
-    }
-  }
+    },
+  },
 };
 </script>
