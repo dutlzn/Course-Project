@@ -2,6 +2,7 @@ package com.lzn.business.controller.admin;
 
 
 import com.lzn.dto.ChapterDto;
+import com.lzn.dto.ChapterPageDto;
 import com.lzn.dto.PageDto;
 import com.lzn.dto.ResponseDto;
 import com.lzn.service.ChapterService;
@@ -21,11 +22,11 @@ public class ChapterController {
 
     @PostMapping("/list")
     // requestBody --- json 默认是表单
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    public ResponseDto list(@RequestBody ChapterPageDto chapterPageDto) {
         ResponseDto responseDto = new ResponseDto();
-        chapterService.list(pageDto);
-        responseDto.setContent(pageDto);
-//        return pageDto;
+        ValidatorUtil.require(chapterPageDto.getCourseId(), "课程ID");
+        chapterService.list(chapterPageDto);
+        responseDto.setContent(chapterPageDto);
         return responseDto;
     }
     @PostMapping("/save")

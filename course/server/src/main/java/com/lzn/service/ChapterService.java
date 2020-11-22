@@ -7,6 +7,7 @@ import com.lzn.domain.ChapterExample;
 import com.lzn.domain.Test;
 import com.lzn.domain.TestExample;
 import com.lzn.dto.ChapterDto;
+import com.lzn.dto.ChapterPageDto;
 import com.lzn.dto.PageDto;
 import com.lzn.mapper.ChapterMapper;
 import com.lzn.mapper.TestMapper;
@@ -28,29 +29,18 @@ public class ChapterService {
     private ChapterMapper chapterMapper;
 
 
-//    public List<ChapterDto> list(PageDto pageDto) {
-    public void list(PageDto pageDto) {
-
-//        PageHelper.startPage(1,1);
-        PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
+    public void list(ChapterPageDto chapterPageDto) {
+        PageHelper.startPage(chapterPageDto.getPage(), chapterPageDto.getSize());
         ChapterExample chapterExample = new ChapterExample();
-//        chapterExample.createCriteria().andIdEqualTo("1");
-//        chapterExample.setOrderByClause("id desc ");
-        List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
-
-        PageInfo<Chapter> pageInfo = new PageInfo<>(chapterList);
-        pageDto.setTotal(pageInfo.getTotal());
-
-        List<ChapterDto> chapterDtoList = new ArrayList<>();
-
-        for(int i = 0;i<chapterList.size();++i){
-            Chapter chapter = chapterList.get(i);
-            ChapterDto chapterDto = new ChapterDto();
-            BeanUtils.copyProperties(chapter, chapterDto);
-            chapterDtoList.add(chapterDto);
+        ChapterExample.Criteria criteria = chapterExample.createCriteria();
+        if (!StringUtils.isEmpty(chapterPageDto.getCourseId())) {
+            criteria.andCourseIdEqualTo(chapterPageDto.getCourseId());
         }
-        pageDto.setList(chapterDtoList);
-
+        List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
+        PageInfo<Chapter> pageInfo = new PageInfo<>(chapterList);
+        chapterPageDto.setTotal(pageInfo.getTotal());
+        List<ChapterDto> chapterDtoList = CopyUtil.copyList(chapterList, ChapterDto.class);
+        chapterPageDto.setList(chapterDtoList);
     }
 
     public void save(ChapterDto chapterDto){

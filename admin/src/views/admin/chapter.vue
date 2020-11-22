@@ -83,16 +83,10 @@
               </div>
               <div class="form-group">
                 <label for="courseID" class="col-sm-2 control-label"
-                  >课程id</label
+                  >课程</label
                 >
                 <div class="col-sm-10">
-                  <input
-                    v-model="chapter.courseId"
-                    type="text"
-                    class="form-control"
-                    id="courseID"
-                    placeholder="课程id"
-                  />
+                  <p class="form-control-static">{{course.name}}</p>
                 </div>
               </div>
             </form>
@@ -194,6 +188,7 @@ export default {
           page: page,
           //  跟组子组件获取  size应该有一个默认的参数
           size: _this.$refs.pagination.size,
+          courseId: _this.course.id
         })
         .then((response) => {
           Loading.hide();
@@ -209,11 +204,15 @@ export default {
       // 保存校验 非空检验和长度检验
       if (
         !Validator.require(_this.chapter.name, "名称") ||
-        !Validator.require(_this.chapter.courseId, '课程ID') || 
+        // !Validator.require(_this.chapter.courseId, '课程ID') || 
         !Validator.length(_this.chapter.courseId, "课程ID", 1, 8)
       ) {
         return;
       }
+
+      _this.chapter.courseId = _this.course.id;
+
+      
 
       Loading.show();
       _this.$ajax
