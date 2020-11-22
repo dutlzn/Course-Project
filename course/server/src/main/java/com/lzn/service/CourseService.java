@@ -10,8 +10,11 @@ import com.lzn.dto.CourseDto;
 import com.lzn.dto.PageDto;
 import com.lzn.mapper.CourseMapper;
 import com.lzn.mapper.TestMapper;
+import com.lzn.mapper.my.MyCourseMapper;
 import com.lzn.util.CopyUtil;
 import com.lzn.util.UuidUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,9 +27,13 @@ import java.util.List;
 
 @Service
 public class CourseService {
+    private static final Logger LOG = LoggerFactory.getLogger(CourseService.class);
 
     @Autowired
     private CourseMapper courseMapper;
+
+    @Autowired
+    private MyCourseMapper myCourseMapper;
 
 
     public void list(PageDto pageDto) {
@@ -79,4 +86,16 @@ public class CourseService {
     public void delete(String id) {
         courseMapper.deleteByPrimaryKey(id);
     }
+
+    /**
+     * 更新课程时长
+     * @param courseId
+     * @return
+     */
+    public void updateTime(String courseId) {
+        LOG.info("更新课程时长：{}", courseId);
+        myCourseMapper.updateTime(courseId);
+    }
+
+
 }

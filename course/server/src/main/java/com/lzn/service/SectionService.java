@@ -29,6 +29,9 @@ public class SectionService {
     @Autowired
     private SectionMapper sectionMapper;
 
+    @Autowired
+    private CourseService courseService;
+
 
     public void list(SectionPageDto sectionPageDto) {
 
@@ -63,6 +66,7 @@ public class SectionService {
         } else {
             this.update(section);
         }
+        courseService.updateTime(sectionDto.getCourseId());
     }
 
     private void insert(Section section){
