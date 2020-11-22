@@ -61,15 +61,28 @@
 
             <p>
               <span class="badge badge-info"> {{ course.id }} </span>
-               <span class="badge badge-info">排序:{{ course.sort }} </span>
-                <span class="badge badge-info">时长:{{ course.time }} </span>
+              <span class="badge badge-info">排序:{{ course.sort }} </span>
+              <span class="badge badge-info">时长:{{ course.time }} </span>
             </p>
             <p>
-              <button v-on:click="edit(course)" class="btn btn-white btn-xs btn-info btn-round">
+              <button
+                v-on:click="toChapter(course)"
+                class="btn btn-white btn-xs btn-default btn-round"
+              >
+                <i class="ace-icon fa fa-edit"></i>
+                大章
+              </button>
+              <button
+                v-on:click="edit(course)"
+                class="btn btn-white btn-xs btn-info btn-round"
+              >
                 <!-- <i class="ace-icon fa fa-pencil bigger-120"></i> -->
                 编辑
               </button>
-              <button v-on:click="del(course.id)" class="btn btn-white btn-xs btn-warning btn-round">
+              <button
+                v-on:click="del(course.id)"
+                class="btn btn-white btn-xs btn-warning btn-round"
+              >
                 <!-- <i class="ace-icon fa fa-trash-o bigger-120"></i> -->
                 删除
               </button>
@@ -269,6 +282,14 @@ export default {
       let _this = this;
       _this.course = $.extend({}, course);
       $("#form-modal").modal("show");
+    },
+    /**
+     * 点击【大章】
+     */
+    toChapter(course) {
+      let _this = this;
+      SessionStorage.set("course", course);
+      _this.$router.push("/business/chapter");
     },
 
     /**
