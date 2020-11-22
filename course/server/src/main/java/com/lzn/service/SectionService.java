@@ -8,6 +8,7 @@ import com.lzn.domain.Test;
 import com.lzn.domain.TestExample;
 import com.lzn.dto.SectionDto;
 import com.lzn.dto.PageDto;
+import com.lzn.dto.SectionPageDto;
 import com.lzn.mapper.SectionMapper;
 import com.lzn.mapper.TestMapper;
 import com.lzn.util.CopyUtil;
@@ -29,27 +30,29 @@ public class SectionService {
     private SectionMapper sectionMapper;
 
 
-    public void list(PageDto pageDto) {
+    public void list(SectionPageDto sectionPageDto) {
 
-        PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
+        PageHelper.startPage(sectionPageDto.getPage(), sectionPageDto.getSize());
         SectionExample sectionExample = new SectionExample();
+        SectionExample.Criteria criteria = sectionExample.createCriteria();
+        if (!StringUtils.isEmpty(sectionPageDto.getCourseId())) {
+            criteria.andCourseIdEqualTo(sectionPageDto.getCourseId());
+        }
+        if (!StringUtils.isEmpty(sectionPageDto.getChapterId())) {
+            criteria.andChapterIdEqualTo(sectionPageDto.getChapterId());
+        }
 
         sectionExample.setOrderByClause("sort asc");
+        // 查找
+
 
         List<Section> sectionList = sectionMapper.selectByExample(sectionExample);
 
         PageInfo<Section> pageInfo = new PageInfo<>(sectionList);
-        pageDto.setTotal(pageInfo.getTotal());
+        sectionPageDto.setTotal(pageInfo.getTotal());
 
-        List<SectionDto> sectionDtoList = new ArrayList<>();
-
-        for(int i = 0;i<sectionList.size();++i){
-            Section section = sectionList.get(i);
-            SectionDto sectionDto = new SectionDto();
-            BeanUtils.copyProperties(section, sectionDto);
-            sectionDtoList.add(sectionDto);
-        }
-        pageDto.setList(sectionDtoList);
+        List<SectionDto> sectionDtoList = CopyUtil.copyList(sectionList, SectionDto.class);
+        sectionPageDto.setList(sectionDtoList);
 
     }
 

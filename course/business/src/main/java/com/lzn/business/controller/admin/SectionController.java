@@ -1,8 +1,8 @@
 package com.lzn.business.controller.admin;
 
 import com.lzn.dto.SectionDto;
-import com.lzn.dto.PageDto;
 import com.lzn.dto.ResponseDto;
+import com.lzn.dto.SectionPageDto;
 import com.lzn.service.SectionService;
 import com.lzn.util.ValidatorUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +18,19 @@ public class SectionController {
     private SectionService sectionService;
 
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    public ResponseDto list(@RequestBody SectionPageDto pageDto) {
         ResponseDto responseDto = new ResponseDto();
+        System.err.println(pageDto.getChapterId());
+        System.err.println(pageDto.getCourseId());
+
+        // 控制器要严格一点 ， 服务层要宽松一点 ，先对课程id和大章进行验证
+        ValidatorUtil.require(pageDto.getCourseId(), "课程ID");
+        ValidatorUtil.require(pageDto.getChapterId(), "大章ID");
         sectionService.list(pageDto);
         responseDto.setContent(pageDto);
         return responseDto;
     }
+
     @PostMapping("/save")
     public ResponseDto save(@RequestBody SectionDto sectionDto){
         // 保存校验

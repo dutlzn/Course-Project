@@ -1,5 +1,20 @@
 <template>
   <div>
+    <h4 class="lighter">
+      <i
+        class="ace-icon fa fa-hand-o-right icon-animated-hand-pointer blue"
+      ></i>
+      <router-link to="/business/course" class="pink">
+        {{ course.name }} </router-link
+      >：
+      <i
+        class="ace-icon fa fa-hand-o-right icon-animated-hand-pointer blue"
+      ></i>
+      <router-link to="/business/chapter" class="pink">
+        {{ chapter.name }}
+      </router-link>
+    </h4>
+    <hr />
     <p>
       <button v-on:click="add()" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-edit"></i>
@@ -17,28 +32,24 @@
     <table id="simple-table" class="table table-bordered table-hover">
       <thead>
         <tr>
-        <th>id</th>
-        <th>标题</th>
-        <th>课程</th>
-        <th>大章</th>
-        <th>视频</th>
-        <th>时长</th>
-        <th>收费</th>
-        <th>顺序</th>
+          <th>id</th>
+          <th>标题</th>
+          <th>视频</th>
+          <th>时长</th>
+          <th>收费</th>
+          <th>顺序</th>
           <th>操作</th>
         </tr>
       </thead>
 
       <tbody>
         <tr v-for="section in sections">
-        <td>{{section.id}}</td>
-        <td>{{section.title}}</td>
-        <td>{{section.courseId}}</td>
-        <td>{{section.chapterId}}</td>
-        <td>{{section.video}}</td>
-        <td>{{section.time}}</td>
-        <td>{{SECTION_CHARGE | optionKV(section.charge)}}</td>
-        <td>{{section.sort}}</td>
+          <td>{{ section.id }}</td>
+          <td>{{ section.title }}</td>
+          <td>{{ section.video }}</td>
+          <td>{{ section.time }}</td>
+          <td>{{ SECTION_CHARGE | optionKV(section.charge) }}</td>
+          <td>{{ section.sort }}</td>
 
           <td>
             <div class="hidden-sm hidden-xs btn-group">
@@ -47,7 +58,8 @@
               </button>
               <button
                 v-on:click="del(section.id)"
-                class="btn btn-xs btn-danger">
+                class="btn btn-xs btn-danger"
+              >
                 <i class="ace-icon fa fa-trash-o bigger-120"></i>
               </button>
             </div>
@@ -75,88 +87,80 @@
             <!-- 表单 -->
 
             <form class="form-horizontal">
-
-                  <div class="form-group">
-                        <label for="title" class="col-sm-2 control-label">标题</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.title"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="标题"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="courseId" class="col-sm-2 control-label">课程</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.courseId"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="课程"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="chapterId" class="col-sm-2 control-label">大章</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.chapterId"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="大章"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="video" class="col-sm-2 control-label">视频</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.video"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="视频"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="time" class="col-sm-2 control-label">时长</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.time"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="时长"
-                          />
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="charge" class="col-sm-2 control-label">收费</label>
-                        <div class="col-sm-10">
-                          <select v-model="section.charge" class="form-control">
-                            <option v-for="o in SECTION_CHARGE" v-bind:value="o.key"> {{o.value}}</option>
-                          </select>
-                        </div>
-                      </div>
-                  <div class="form-group">
-                        <label for="sort" class="col-sm-2 control-label">顺序</label>
-                        <div class="col-sm-10">
-                          <input
-                            v-model="section.sort"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="顺序"
-                          />
-                        </div>
-                      </div>
-
+              <div class="form-group">
+                <label for="title" class="col-sm-2 control-label">标题</label>
+                <div class="col-sm-10">
+                  <input
+                    v-model="section.title"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="标题"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="courseId" class="col-sm-2 control-label"
+                  >课程</label
+                >
+                <div class="col-sm-10">
+                  <p class="form-control-static">{{ course.name }}</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="chapterId" class="col-sm-2 control-label"
+                  >大章</label
+                >
+                <div class="col-sm-10">
+                  <p class="form-control-static">{{ chapter.name }}</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="video" class="col-sm-2 control-label">视频</label>
+                <div class="col-sm-10">
+                  <input
+                    v-model="section.video"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="视频"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="time" class="col-sm-2 control-label">时长</label>
+                <div class="col-sm-10">
+                  <input
+                    v-model="section.time"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="时长"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="charge" class="col-sm-2 control-label">收费</label>
+                <div class="col-sm-10">
+                  <select v-model="section.charge" class="form-control">
+                    <option v-for="o in SECTION_CHARGE" v-bind:value="o.key">
+                      {{ o.value }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="sort" class="col-sm-2 control-label">顺序</label>
+                <div class="col-sm-10">
+                  <input
+                    v-model="section.sort"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="顺序"
+                  />
+                </div>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
@@ -190,7 +194,9 @@ export default {
       // 映射表单数据
       section: {},
       sections: [],
-      SECTION_CHARGE:SECTION_CHARGE
+      SECTION_CHARGE: SECTION_CHARGE,
+      course: {},
+      chapter: {},
     };
   },
 
@@ -199,6 +205,13 @@ export default {
     // this.$parent.activeSidebar('business-section-sidebar');
     let _this = this;
     _this.$refs.pagination.size = 5;
+    let course = SessionStorage.get("course") || {};
+    let chapter = SessionStorage.get("chapter") || {};
+    if (Tool.isEmpty(course) || Tool.isEmpty(chapter)) {
+      _this.$router.push("/welcome");
+    }
+    _this.course = course;
+    _this.chapter = chapter;
     _this.list(1);
   },
   methods: {
@@ -220,7 +233,9 @@ export default {
       Confirm.show("删除小节后不可恢复，确认删除？", function () {
         Loading.show();
         _this.$ajax
-          .delete(process.env.VUE_APP_SERVER + "/business/admin/section/delete/" + id)
+          .delete(
+            process.env.VUE_APP_SERVER + "/business/admin/section/delete/" + id
+          )
           .then((response) => {
             Loading.hide();
             let resp = response.data;
@@ -251,6 +266,8 @@ export default {
           page: page,
           //  跟组子组件获取  size应该有一个默认的参数
           size: _this.$refs.pagination.size,
+          courseId: _this.course.id,
+          chapterId: _this.chapter.id
         })
         .then((response) => {
           Loading.hide();
@@ -263,15 +280,18 @@ export default {
     // 保存小节的数据
     save(page) {
       let _this = this;
-     // 保存校验
-        if (1 != 1
-          || !Validator.require(_this.section.title, "标题")
-          || !Validator.length(_this.section.title, "标题", 1, 50)
-          || !Validator.length(_this.section.video, "视频", 1, 200)
-        ) {
-          return;
-        }
+      // 保存校验
+      if (
+        1 != 1 ||
+        !Validator.require(_this.section.title, "标题") ||
+        !Validator.length(_this.section.title, "标题", 1, 50) ||
+        !Validator.length(_this.section.video, "视频", 1, 200)
+      ) {
+        return;
+      }
 
+      _this.section.courseId = _this.course.id;
+      _this.section.chapterId = _this.chapter.id;
 
       Loading.show();
       _this.$ajax
