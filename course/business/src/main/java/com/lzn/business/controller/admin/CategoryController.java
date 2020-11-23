@@ -24,6 +24,14 @@ public class CategoryController {
         responseDto.setContent(pageDto);
         return responseDto;
     }
+
+    @PostMapping("/all")
+    public ResponseDto all() {
+        ResponseDto responseDto = new ResponseDto();
+        responseDto.setContent(categoryService.all());
+        return responseDto;
+    }
+
     @PostMapping("/save")
     public ResponseDto save(@RequestBody CategoryDto categoryDto){
         // 保存校验
