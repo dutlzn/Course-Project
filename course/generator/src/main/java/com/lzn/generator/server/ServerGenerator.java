@@ -24,6 +24,7 @@ public class ServerGenerator {
 
     public static void main(String[] args) throws Exception {
 // 只生成配置文件中的第一个table节点
+        String module = MODULE;
         File file = new File(generatorConfigPath);
         SAXReader reader=new SAXReader();
         //读取xml文件到Document中
@@ -42,7 +43,7 @@ public class ServerGenerator {
         String domain = Domain.substring(0, 1).toLowerCase() + Domain.substring(1);
         System.out.println("表："+tableElement.attributeValue("tableName"));
         System.out.println("Domain："+tableElement.attributeValue("domainObjectName"));
-        List<Field> fieldList = DbUtil.getColumnByTableName(domain);
+        List<Field> fieldList = DbUtil.getColumnByTableName(tableName); // domain
         Set<String> typeSet = getJavaTypes(fieldList);
 
         Map<String, Object> map = new HashMap<>();
