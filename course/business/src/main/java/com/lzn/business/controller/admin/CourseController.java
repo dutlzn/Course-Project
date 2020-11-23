@@ -1,12 +1,17 @@
 package com.lzn.business.controller.admin;
 
+import com.lzn.dto.CourseCategoryDto;
 import com.lzn.dto.CourseDto;
 import com.lzn.dto.PageDto;
 import com.lzn.dto.ResponseDto;
+import com.lzn.service.CourseCategoryService;
 import com.lzn.service.CourseService;
 import com.lzn.util.ValidatorUtil;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/admin/course")
@@ -16,6 +21,9 @@ public class CourseController {
 
     @Autowired
     private CourseService courseService;
+
+    @Autowired
+    private CourseCategoryService courseCategoryService;
 
     @PostMapping("/list")
     public ResponseDto list(@RequestBody PageDto pageDto) {
@@ -43,6 +51,18 @@ public class CourseController {
     public ResponseDto delete(@PathVariable String id) {
         ResponseDto responseDto = new ResponseDto();
         courseService.delete(id);
+        return responseDto;
+    }
+
+    /**
+     * 查找课程下所有分类
+     * @param courseId
+     */
+    @PostMapping("/list-category/{courseId}")
+    public ResponseDto listCategory(@PathVariable(value = "courseId") String courseId) {
+        ResponseDto responseDto = new ResponseDto();
+        List<CourseCategoryDto> dtoList = courseCategoryService.listByCourse(courseId);
+        responseDto.setContent(dtoList);
         return responseDto;
     }
 }
