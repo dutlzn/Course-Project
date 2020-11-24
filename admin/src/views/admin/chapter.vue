@@ -147,7 +147,7 @@ export default {
 
   // 页面初始化加载方法
   mounted: function () {
-    // this.$parent.activeSidebar('business-chapter-sidebar');
+    this.$parent.activeSidebar('business-course-sidebar');
     let _this = this;
     _this.$refs.pagination.size = 5;
     let course = SessionStorage.get("course") || {};
