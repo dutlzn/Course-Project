@@ -6,6 +6,7 @@ import com.lzn.domain.*;
 import com.lzn.dto.CourseContentDto;
 import com.lzn.dto.CourseDto;
 import com.lzn.dto.PageDto;
+import com.lzn.dto.SortDto;
 import com.lzn.mapper.CourseContentMapper;
 import com.lzn.mapper.CourseMapper;
 import com.lzn.mapper.TestMapper;
@@ -19,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -131,6 +133,18 @@ public class CourseService {
         return i;
     }
 
+    @Transactional
+    public void sort(SortDto sortDto) {
+        // 修改当前记录的排序值
+        myCourseMapper.updateSort(sortDto);
+        // 如果排序值变大
+        if (sortDto.getNewSort() > sortDto.getOldSort()){
+            myCourseMapper.moveSortsForward(sortDto);
+        }
 
-
+        // 如果排序值变小
+        if (sortDto.getNewSort() < sortDto.getOldSort() ){
+            myCourseMapper.moveSortsBackward(sortDto);
+        }
+    }
 }

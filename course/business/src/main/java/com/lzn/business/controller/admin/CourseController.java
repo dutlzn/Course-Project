@@ -79,4 +79,12 @@ public class CourseController {
         return responseDto;
     }
 
+
+    @RequestMapping("/sort")
+    public ResponseDto sort(@RequestBody SortDto sortDto){
+        ResponseDto responseDto = new ResponseDto();
+        courseService.sort(sortDto);
+        return responseDto;
+    }
+
 }
