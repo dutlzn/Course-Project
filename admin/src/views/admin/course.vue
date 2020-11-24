@@ -73,14 +73,23 @@
               >
                 <i class="ace-icon fa fa-edit"></i>
                 大章
-              </button>
+              </button> &nbsp;
+
+              <button
+                v-on:click="editContent(course)"
+                class="btn btn-white btn-xs btn-default btn-round"
+              >
+                <i class="ace-icon fa fa-edit"></i>
+                内容
+              </button>&nbsp;
+
               <button
                 v-on:click="edit(course)"
                 class="btn btn-white btn-xs btn-info btn-round"
               >
                 <!-- <i class="ace-icon fa fa-pencil bigger-120"></i> -->
                 编辑
-              </button>
+              </button>&nbsp;
               <button
                 v-on:click="del(course.id)"
                 class="btn btn-white btn-xs btn-warning btn-round"
@@ -93,51 +102,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <table id="simple-table" class="table table-bordered table-hover">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>名称</th>
-          <th>概述</th>
-          <th>时长</th>
-          <th>价格（元）</th>
-          <th>封面</th>
-          <th>级别</th>
-          <th>收费</th>
-          <th>状态</th>
-          <th>报名数</th>
-          <th>顺序</th>
-          <th>操作</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr v-for="course in courses">
-          <td>{{ course.id }}</td>
-          <td>{{ course.name }}</td>
-          <td>{{ course.summary }}</td>
-          <td>{{ course.time }}</td>
-          <td>{{ course.price }}</td>
-          <td>{{ course.image }}</td>
-          <td>{{ COURSE_LEVEL | optionKV(course.level) }}</td>
-          <td>{{ COURSE_CHARGE | optionKV(course.charge) }}</td>
-          <td>{{ COURSE_STATUS | optionKV(course.status) }}</td>
-          <td>{{ course.enroll }}</td>
-          <td>{{ course.sort }}</td>
-          <td>
-            <div class="hidden-sm hidden-xs btn-group">
-              <button v-on:click="edit(course)" class="btn btn-xs btn-info">
-                <i class="ace-icon fa fa-pencil bigger-120"></i>
-              </button>
-              <button v-on:click="del(course.id)" class="btn btn-xs btn-danger">
-                <i class="ace-icon fa fa-trash-o bigger-120"></i>
-              </button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table> -->
 
     <div id="form-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -249,6 +213,47 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="course-content-modal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">内容编辑</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="col-lg-12">
+                  <div id="content"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              取消
+            </button>
+            <button v-on:click="saveContent()" type="button" class="btn btn-primary">
+              保存
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -332,6 +337,74 @@ export default {
       _this.course = $.extend({}, course);
       _this.listCategory(course.id);
       $("#form-modal").modal("show");
+    },
+    /**
+     * 打开内容编辑器
+     */
+    editContent(course) {
+      $("#course-content-modal").modal("show");
+      let _this = this;
+      let id = course.id;
+      _this.course = course;
+        $("#content").summernote({
+          focus: true,
+          height: 300
+        });
+
+      // 先清空历史文本
+      $("#content").summernote("code", "");
+
+      Loading.show();
+
+      _this.$ajax
+        .get(
+          process.env.VUE_APP_SERVER +
+            "/business/admin/course/find-content/" +
+            id
+        )
+        .then((response) => {
+          Loading.hide();
+          let resp = response.data;
+
+          if (resp.success) {
+            $("course-content-modal").modal({
+              backdrop: "static",
+              keyboard: false,
+            });
+
+            if (resp.content) {
+              $("#content").summernote("code", resp.content.content);
+            }
+          } else {
+            Toast.warning(resp.message);
+          }
+        });
+    },
+
+    /**
+     * 保存内容
+     */
+    saveContent() {
+      let _this = this;
+      let content = $("#content").summernote("code");
+      Loading.show();
+      _this.$ajax
+        .post(
+          process.env.VUE_APP_SERVER + "/business/admin/course/save-content",
+          {
+            id: _this.course.id,
+            content: content,
+          }
+        )
+        .then((response) => {
+          Loading.hide();
+          let resp = response.data;
+          if (resp.success) {
+            Toast.success("内容保存成功");
+          } else {
+            Toast.warning(resp.message);
+          }
+        });
     },
     /**
      * 点击【大章】

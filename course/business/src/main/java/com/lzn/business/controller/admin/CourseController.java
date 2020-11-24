@@ -1,9 +1,6 @@
 package com.lzn.business.controller.admin;
 
-import com.lzn.dto.CourseCategoryDto;
-import com.lzn.dto.CourseDto;
-import com.lzn.dto.PageDto;
-import com.lzn.dto.ResponseDto;
+import com.lzn.dto.*;
 import com.lzn.service.CourseCategoryService;
 import com.lzn.service.CourseService;
 import com.lzn.util.ValidatorUtil;
@@ -65,4 +62,21 @@ public class CourseController {
         responseDto.setContent(dtoList);
         return responseDto;
     }
+
+
+    @GetMapping("/find-content/{id}")
+    public ResponseDto findContent(@PathVariable String id) {
+        ResponseDto responseDto = new ResponseDto();
+        CourseContentDto contentDto = courseService.findContent(id);
+        responseDto.setContent(contentDto);
+        return responseDto;
+    }
+
+    @PostMapping("/save-content")
+    public ResponseDto saveContent(@RequestBody CourseContentDto contentDto) {
+        ResponseDto responseDto = new ResponseDto();
+        courseService.saveContent(contentDto);
+        return responseDto;
+    }
+
 }

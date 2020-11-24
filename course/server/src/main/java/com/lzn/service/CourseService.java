@@ -2,12 +2,11 @@ package com.lzn.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.lzn.domain.Course;
-import com.lzn.domain.CourseExample;
-import com.lzn.domain.Test;
-import com.lzn.domain.TestExample;
+import com.lzn.domain.*;
+import com.lzn.dto.CourseContentDto;
 import com.lzn.dto.CourseDto;
 import com.lzn.dto.PageDto;
+import com.lzn.mapper.CourseContentMapper;
 import com.lzn.mapper.CourseMapper;
 import com.lzn.mapper.TestMapper;
 import com.lzn.mapper.my.MyCourseMapper;
@@ -38,6 +37,9 @@ public class CourseService {
 
     @Autowired
     private CourseCategoryService courseCategoryService;
+
+    @Autowired
+    private CourseContentMapper courseContentMapper;
 
 
     public void list(PageDto pageDto) {
@@ -74,7 +76,7 @@ public class CourseService {
         }
 
         // 批量保存课程分类
-        courseCategoryService.saveBatch(courseDto.getId(), courseDto.getCategorys());
+        courseCategoryService.saveBatch(course.getId(), courseDto.getCategorys());
 
     }
 
@@ -105,6 +107,30 @@ public class CourseService {
         LOG.info("更新课程时长：{}", courseId);
         myCourseMapper.updateTime(courseId);
     }
+
+    /**
+     * 查找课程内容
+     */
+    public CourseContentDto findContent(String id) {
+        CourseContent content = courseContentMapper.selectByPrimaryKey(id);
+        if (content == null) {
+            return null;
+        }
+        return CopyUtil.copy(content, CourseContentDto.class);
+    }
+
+    /**
+     * 保存课程内容，包含新增和修改
+     */
+    public int saveContent(CourseContentDto contentDto) {
+        CourseContent content = CopyUtil.copy(contentDto, CourseContent.class);
+        int i = courseContentMapper.updateByPrimaryKeyWithBLOBs(content);
+        if (i == 0) {
+            i = courseContentMapper.insert(content);
+        }
+        return i;
+    }
+
 
 
 }

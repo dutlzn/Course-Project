@@ -77,8 +77,20 @@ function PrefixInteger(num, length) {
     return (Array(length).join('0') + num).slice(-length);
 }
 
+/**
+ * 控制长度
+ */
+function ellipsis(value) {
+    if(!value) return '';
+    if(value.length > 32) {
+        return value.slice(0,32)+ '...';
+    }
+    return value;
+}
+
 
 export default {
     optionKV,
-    formatSecond
+    formatSecond,
+    ellipsis
 }
