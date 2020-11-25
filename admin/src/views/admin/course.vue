@@ -106,6 +106,19 @@
 									<input v-model="course.name" class="form-control" />
 								</div>
 							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">讲师</label>
+								<div class="col-sm-10">
+									<select v-model="course.teacherId" class="form-control">
+										<option v-for="o in teachers" v-bind:value="o.id">
+											{{ o.name }}
+										</option>
+									</select>
+								</div>
+							</div>
+							
+							
 							<div class="form-group">
 								<label class="col-sm-2 control-label">概述</label>
 								<div class="col-sm-10">
@@ -294,13 +307,17 @@
 					oldSort: 0,
 					newSort: 0
 				},
+				teachers: [],
 
 			};
 		},
 		mounted: function() {
 			let _this = this;
 			_this.$refs.pagination.size = 5;
+			// 获取所有分类
 			_this.allCategory();
+			// 获取所有讲师
+			_this.allTeachers();
 			_this.list(1);
 
 			// sidebar激活样式方法一
@@ -604,6 +621,20 @@
 						});
 				});
 			},
+		
+		allTeachers() {
+			let _this = this;
+			Loading.show();
+			_this.$ajax
+				.post(process.env.VUE_APP_SERVER + "/business/admin/teacher/all")
+				.then((response) => {
+					Loading.hide();
+					let resp = response.data;
+					_this.teachers = resp.content;
+		
+					_this.initTree();
+				});
+		},
 		},
 	};
 </script>

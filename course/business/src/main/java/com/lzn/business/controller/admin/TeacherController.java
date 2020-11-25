@@ -48,4 +48,13 @@ public class TeacherController {
         teacherService.delete(id);
         return responseDto;
     }
+
+
+    // 返回所有讲师
+    @PostMapping("/all")
+    public ResponseDto all() {
+        ResponseDto responseDto = new ResponseDto();
+        responseDto.setContent(teacherService.all());
+        return responseDto;
+    }
 }

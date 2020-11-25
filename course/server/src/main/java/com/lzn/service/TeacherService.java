@@ -2,10 +2,8 @@ package com.lzn.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.lzn.domain.Teacher;
-import com.lzn.domain.TeacherExample;
-import com.lzn.domain.Test;
-import com.lzn.domain.TestExample;
+import com.lzn.domain.*;
+import com.lzn.dto.CategoryDto;
 import com.lzn.dto.TeacherDto;
 import com.lzn.dto.PageDto;
 import com.lzn.mapper.TeacherMapper;
@@ -72,5 +70,13 @@ public class TeacherService {
 
     public void delete(String id) {
         teacherMapper.deleteByPrimaryKey(id);
+    }
+
+    // 查询全部数据
+    public List<TeacherDto> all(){
+        TeacherExample teacherExample = new TeacherExample();
+        List<Teacher> teachersList = teacherMapper.selectByExample(teacherExample);
+        return CopyUtil.copyList(teachersList,TeacherDto.class);
+
     }
 }
