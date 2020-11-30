@@ -19,9 +19,9 @@
 			<div v-for="teacher in teachers" class="col-md-3">
 				<div class="center">
 					<span class="profile-picture">
-						<img v-show="!teacher.image" class="editable  editable-click editable-empty" src="/static/image/profile-pic.jpg"
+						<img v-show="!teacher.image" class="editable img-responsive editable-click editable-empty" src="/static/image/profile-pic.jpg"
 						 v-bind:title="teacher.intro" />
-						<img v-show="teacher.image" class="editable  editable-click editable-empty" v-bind:src="teacher.image"
+						<img v-show="teacher.image" class="editable img-responsive editable-click editable-empty" v-bind:src="teacher.image"
 						 v-bind:title="teacher.intro" />
 					</span>
 
@@ -89,7 +89,12 @@
 								<label class="col-sm-2 control-label">头像</label>
 								<div class="col-sm-10">
 									<input id="file-upload-input" type="file" v-on:change="uploadImage()">
-									<img v-bind:src="teacher.image" class="img-responsive" >
+									<div v-show="teacher.image" class="row">
+										<div class="col-sm-4">
+											<img v-bind:src="teacher.image" class="img-responsive" >
+										</div>
+									
+									</div>
 								</div>
 							</div>
 							<div class="form-group">
