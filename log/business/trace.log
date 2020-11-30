@@ -103,3 +103,439 @@
 2020-11-30 14:20:50.649 INFO  com.lzn.config.LogAspect                          :109  [32mSAy7QA2i[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
 2020-11-30 14:20:50.649 INFO  com.lzn.config.LogAspect                          :110  [32mSAy7QA2i[0;39m ------------- 结束 耗时：16 ms -------------
 2020-11-30 14:24:12.386 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:29:12.387 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:34:12.390 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:35:10.939 INFO  com.lzn.config.LogAspect                          :76   [32m8cKExBIV[0;39m ------------- 【讲师】查询开始 -------------
+2020-11-30 14:35:10.940 INFO  com.lzn.config.LogAspect                          :77   [32m8cKExBIV[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-11-30 14:35:10.940 INFO  com.lzn.config.LogAspect                          :78   [32m8cKExBIV[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-11-30 14:35:10.940 INFO  com.lzn.config.LogAspect                          :79   [32m8cKExBIV[0;39m 远程地址: 127.0.0.1
+2020-11-30 14:35:10.941 INFO  com.lzn.config.LogAspect                          :97   [32m8cKExBIV[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-30 14:35:10.942 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32m8cKExBIV[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-11-30 14:35:10.943 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32m8cKExBIV[0;39m ==> Parameters: 
+2020-11-30 14:35:10.944 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32m8cKExBIV[0;39m <==    Columns: count(0)
+2020-11-30 14:35:10.944 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32m8cKExBIV[0;39m <==        Row: 4
+2020-11-30 14:35:10.944 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32m8cKExBIV[0;39m <==      Total: 1
+2020-11-30 14:35:10.945 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32m8cKExBIV[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-11-30 14:35:10.945 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32m8cKExBIV[0;39m ==> Parameters: 5(Integer)
+2020-11-30 14:35:10.946 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m8cKExBIV[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-11-30 14:35:10.946 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m8cKExBIV[0;39m <==        Row: 2daFvSFf, 小明, 1234, , 全栈工程师, 431323412, 1234
+2020-11-30 14:35:10.947 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m8cKExBIV[0;39m <==        Row: dnPUSYOE, 小红, null, , java工程师, null, 12412341241234132
+12
+412343124132431
+2020-11-30 14:35:10.947 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m8cKExBIV[0;39m <==        Row: FjlwXo3X, 小张, null, null, 前端工程师, null, null
+2020-11-30 14:35:10.947 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m8cKExBIV[0;39m <==        Row: ucQAzB2D, 小王, null, null, 测试工程师, null, null
+2020-11-30 14:35:10.948 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32m8cKExBIV[0;39m <==      Total: 4
+2020-11-30 14:35:10.948 INFO  com.lzn.config.LogAspect                          :109  [32m8cKExBIV[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
+2020-11-30 14:35:10.948 INFO  com.lzn.config.LogAspect                          :110  [32m8cKExBIV[0;39m ------------- 结束 耗时：9 ms -------------
+2020-11-30 14:39:12.391 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:44:12.393 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:46:16.746 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:890)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1459)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2020-11-30 14:46:16.747 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-11-30 14:46:16.844 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1131)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1013)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1533)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1500)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+2020-11-30 14:46:16.845 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-11-30 14:46:21.048 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-11-30 14:46:22.786 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-30 14:46:23.904 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=2cc666f8-0308-3e48-809b-58f9d4830bb0
+2020-11-30 14:46:24.740 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-30 14:46:24.752 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-30 14:46:24.752 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-30 14:46:24.753 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-30 14:46:24.879 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-30 14:46:24.880 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2072 ms
+2020-11-30 14:46:25.543 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-30 14:46:25.543 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-30 14:46:25.550 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-30 14:46:25.550 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-30 14:46:25.802 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-30 14:46:27.228 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 14:46:27.281 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-11-30 14:46:28.454 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 14:46:28.494 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-30 14:46:28.541 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-30 14:46:28.602 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-30 14:46:28.839 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-30 14:46:28.839 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-30 14:46:28.940 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-30 14:46:28.940 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-30 14:46:29.193 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:46:29.269 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-30 14:46:29.269 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-30 14:46:29.269 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-30 14:46:29.269 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-30 14:46:29.270 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-30 14:46:29.270 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-11-30 14:46:29.270 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-30 14:46:29.367 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-30 14:46:29.368 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-30 14:46:29.370 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-30 14:46:29.373 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1606718789372 with initial instances count: 0
+2020-11-30 14:46:29.378 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-30 14:46:29.379 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606718789379, current=UP, previous=STARTING]
+2020-11-30 14:46:29.380 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-30 14:46:29.381 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-30 14:46:29.406 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-30 14:46:29.407 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-30 14:46:29.432 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-30 14:46:30.486 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 14:46:30.493 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 11.005 seconds (JVM running for 11.799)
+2020-11-30 14:46:30.495 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-11-30 14:46:30.495 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-11-30 14:46:59.370 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-30 14:46:59.371 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-30 14:46:59.371 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-30 14:46:59.371 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-30 14:46:59.371 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-30 14:46:59.371 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-11-30 14:46:59.371 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-30 14:46:59.399 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-30 14:51:29.274 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 14:56:29.276 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:01:29.278 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:06:29.280 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:11:29.282 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:16:29.285 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:21:28.958 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-30 15:21:28.958 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-30 15:21:28.972 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 14 ms
+2020-11-30 15:21:29.164 INFO  com.lzn.config.LogAspect                          :76   [32mY1X3wmTA[0;39m ------------- 【讲师】查询开始 -------------
+2020-11-30 15:21:29.165 INFO  com.lzn.config.LogAspect                          :77   [32mY1X3wmTA[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-11-30 15:21:29.165 INFO  com.lzn.config.LogAspect                          :78   [32mY1X3wmTA[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-11-30 15:21:29.165 INFO  com.lzn.config.LogAspect                          :79   [32mY1X3wmTA[0;39m 远程地址: 127.0.0.1
+2020-11-30 15:21:29.180 INFO  com.lzn.config.LogAspect                          :97   [32mY1X3wmTA[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-30 15:21:29.221 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mY1X3wmTA[0;39m HikariPool-1 - Starting...
+2020-11-30 15:21:29.287 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:21:29.413 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mY1X3wmTA[0;39m HikariPool-1 - Start completed.
+2020-11-30 15:21:29.467 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mY1X3wmTA[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-11-30 15:21:29.484 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mY1X3wmTA[0;39m ==> Parameters: 
+2020-11-30 15:21:29.494 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mY1X3wmTA[0;39m <==    Columns: count(0)
+2020-11-30 15:21:29.495 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mY1X3wmTA[0;39m <==        Row: 4
+2020-11-30 15:21:29.496 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mY1X3wmTA[0;39m <==      Total: 1
+2020-11-30 15:21:29.498 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mY1X3wmTA[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-11-30 15:21:29.499 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mY1X3wmTA[0;39m ==> Parameters: 5(Integer)
+2020-11-30 15:21:29.500 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mY1X3wmTA[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-11-30 15:21:29.500 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mY1X3wmTA[0;39m <==        Row: 2daFvSFf, 小明, 1234, , 全栈工程师, 431323412, 1234
+2020-11-30 15:21:29.501 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mY1X3wmTA[0;39m <==        Row: dnPUSYOE, 小红, null, , java工程师, null, 12412341241234132
+12
+412343124132431
+2020-11-30 15:21:29.501 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mY1X3wmTA[0;39m <==        Row: FjlwXo3X, 小张, null, null, 前端工程师, null, null
+2020-11-30 15:21:29.502 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mY1X3wmTA[0;39m <==        Row: ucQAzB2D, 小王, null, null, 测试工程师, null, null
+2020-11-30 15:21:29.502 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mY1X3wmTA[0;39m <==      Total: 4
+2020-11-30 15:21:29.511 INFO  com.lzn.config.LogAspect                          :109  [32mY1X3wmTA[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
+2020-11-30 15:21:29.512 INFO  com.lzn.config.LogAspect                          :110  [32mY1X3wmTA[0;39m ------------- 结束 耗时：350 ms -------------
+2020-11-30 15:22:16.672 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-11-30 15:22:18.109 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-30 15:22:18.884 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=2cc666f8-0308-3e48-809b-58f9d4830bb0
+2020-11-30 15:22:19.612 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-30 15:22:19.621 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-30 15:22:19.621 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-30 15:22:19.622 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-30 15:22:19.746 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-30 15:22:19.746 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1621 ms
+2020-11-30 15:22:20.326 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-30 15:22:20.326 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-30 15:22:20.331 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-30 15:22:20.332 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-30 15:22:20.652 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-30 15:22:22.097 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 15:22:22.136 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-11-30 15:22:23.244 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 15:22:23.290 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-30 15:22:23.375 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-30 15:22:23.453 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-30 15:22:23.812 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-30 15:22:23.813 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-30 15:22:23.976 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-30 15:22:23.977 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-30 15:22:24.233 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:22:24.319 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-30 15:22:24.320 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-30 15:22:24.320 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-30 15:22:24.320 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-30 15:22:24.320 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-30 15:22:24.320 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-11-30 15:22:24.320 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-30 15:22:24.488 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-30 15:22:24.491 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-30 15:22:24.492 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-30 15:22:24.495 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1606720944495 with initial instances count: 3
+2020-11-30 15:22:24.501 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-30 15:22:24.501 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606720944501, current=UP, previous=STARTING]
+2020-11-30 15:22:24.503 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-30 15:22:24.503 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-30 15:22:24.531 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-30 15:22:24.532 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-30 15:22:24.533 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-30 15:22:25.633 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 15:22:25.641 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 10.322 seconds (JVM running for 10.785)
+2020-11-30 15:22:25.643 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-11-30 15:22:25.644 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-11-30 15:27:24.324 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:31:31.859 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-30 15:31:31.859 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-30 15:31:31.868 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
+2020-11-30 15:31:32.036 INFO  com.lzn.config.LogAspect                          :76   [32mpFPs3V9A[0;39m ------------- 【讲师】保存开始 -------------
+2020-11-30 15:31:32.037 INFO  com.lzn.config.LogAspect                          :77   [32mpFPs3V9A[0;39m 请求地址: http://localhost:9002/business/admin/teacher/save POST
+2020-11-30 15:31:32.037 INFO  com.lzn.config.LogAspect                          :78   [32mpFPs3V9A[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.save
+2020-11-30 15:31:32.038 INFO  com.lzn.config.LogAspect                          :79   [32mpFPs3V9A[0;39m 远程地址: 127.0.0.1
+2020-11-30 15:31:32.051 INFO  com.lzn.config.LogAspect                          :97   [32mpFPs3V9A[0;39m 请求参数: [{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"}]
+2020-11-30 15:31:32.076 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mpFPs3V9A[0;39m HikariPool-1 - Starting...
+2020-11-30 15:31:32.252 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mpFPs3V9A[0;39m HikariPool-1 - Start completed.
+2020-11-30 15:31:32.257 DEBUG com.lzn.mapper.TeacherMapper.updateByPrimaryKey   :159  [32mpFPs3V9A[0;39m ==>  Preparing: update teacher set `name` = ?, nickname = ?, image = ?, `position` = ?, motto = ?, intro = ? where id = ? 
+2020-11-30 15:31:32.272 DEBUG com.lzn.mapper.TeacherMapper.updateByPrimaryKey   :159  [32mpFPs3V9A[0;39m ==> Parameters: 小红(String), null, (String), java工程师(String), null, 12412341241234132
+12
+412343124132431(String), dnPUSYOE(String)
+2020-11-30 15:31:32.280 DEBUG com.lzn.mapper.TeacherMapper.updateByPrimaryKey   :159  [32mpFPs3V9A[0;39m <==    Updates: 1
+2020-11-30 15:31:32.283 INFO  com.lzn.config.LogAspect                          :109  [32mpFPs3V9A[0;39m 返回结果: {"content":{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},"success":true}
+2020-11-30 15:31:32.283 INFO  com.lzn.config.LogAspect                          :110  [32mpFPs3V9A[0;39m ------------- 结束 耗时：249 ms -------------
+2020-11-30 15:31:32.334 INFO  com.lzn.config.LogAspect                          :76   [32mIORC6RbR[0;39m ------------- 【讲师】查询开始 -------------
+2020-11-30 15:31:32.335 INFO  com.lzn.config.LogAspect                          :77   [32mIORC6RbR[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-11-30 15:31:32.335 INFO  com.lzn.config.LogAspect                          :78   [32mIORC6RbR[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-11-30 15:31:32.335 INFO  com.lzn.config.LogAspect                          :79   [32mIORC6RbR[0;39m 远程地址: 127.0.0.1
+2020-11-30 15:31:32.337 INFO  com.lzn.config.LogAspect                          :97   [32mIORC6RbR[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-30 15:31:32.409 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mIORC6RbR[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-11-30 15:31:32.410 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mIORC6RbR[0;39m ==> Parameters: 
+2020-11-30 15:31:32.424 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mIORC6RbR[0;39m <==    Columns: count(0)
+2020-11-30 15:31:32.425 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mIORC6RbR[0;39m <==        Row: 4
+2020-11-30 15:31:32.426 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mIORC6RbR[0;39m <==      Total: 1
+2020-11-30 15:31:32.428 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mIORC6RbR[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-11-30 15:31:32.428 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mIORC6RbR[0;39m ==> Parameters: 5(Integer)
+2020-11-30 15:31:32.429 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mIORC6RbR[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-11-30 15:31:32.429 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mIORC6RbR[0;39m <==        Row: 2daFvSFf, 小明, 1234, , 全栈工程师, 431323412, 1234
+2020-11-30 15:31:32.430 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mIORC6RbR[0;39m <==        Row: dnPUSYOE, 小红, null, , java工程师, null, 12412341241234132
+12
+412343124132431
+2020-11-30 15:31:32.430 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mIORC6RbR[0;39m <==        Row: FjlwXo3X, 小张, null, null, 前端工程师, null, null
+2020-11-30 15:31:32.431 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mIORC6RbR[0;39m <==        Row: ucQAzB2D, 小王, null, null, 测试工程师, null, null
+2020-11-30 15:31:32.432 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mIORC6RbR[0;39m <==      Total: 4
+2020-11-30 15:31:32.434 INFO  com.lzn.config.LogAspect                          :109  [32mIORC6RbR[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
+2020-11-30 15:31:32.434 INFO  com.lzn.config.LogAspect                          :110  [32mIORC6RbR[0;39m ------------- 结束 耗时：100 ms -------------
+2020-11-30 15:32:24.327 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:37:24.328 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:42:42.386 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-11-30 15:42:44.192 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-30 15:42:45.601 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=2cc666f8-0308-3e48-809b-58f9d4830bb0
+2020-11-30 15:42:46.474 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-30 15:42:46.487 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-30 15:42:46.487 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-30 15:42:46.488 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-30 15:42:46.594 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-30 15:42:46.595 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2317 ms
+2020-11-30 15:42:47.249 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-30 15:42:47.249 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-30 15:42:47.267 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-30 15:42:47.268 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-30 15:42:47.705 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-30 15:42:49.505 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 15:42:49.568 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-11-30 15:42:50.719 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 15:42:50.760 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-30 15:42:50.824 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-30 15:42:50.884 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-30 15:42:51.104 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-30 15:42:51.104 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-30 15:42:51.222 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-30 15:42:51.223 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-30 15:42:51.450 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:42:51.521 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-30 15:42:51.521 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-30 15:42:51.521 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-30 15:42:51.521 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-30 15:42:51.522 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-30 15:42:51.522 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-11-30 15:42:51.522 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-30 15:42:51.624 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-30 15:42:51.626 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-30 15:42:51.628 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-30 15:42:51.630 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1606722171629 with initial instances count: 0
+2020-11-30 15:42:51.636 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-30 15:42:51.637 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606722171637, current=UP, previous=STARTING]
+2020-11-30 15:42:51.639 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-30 15:42:51.640 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-30 15:42:51.673 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-30 15:42:51.673 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-30 15:42:51.716 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-30 15:42:52.788 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-30 15:42:52.798 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 12.04 seconds (JVM running for 12.983)
+2020-11-30 15:42:52.800 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-11-30 15:42:52.801 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-11-30 15:43:21.626 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-11-30 15:43:21.626 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-11-30 15:43:21.626 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-11-30 15:43:21.626 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-11-30 15:43:21.627 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-11-30 15:43:21.627 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-11-30 15:43:21.627 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-30 15:43:21.655 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-11-30 15:46:08.797 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-30 15:46:08.797 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-30 15:46:08.807 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
+2020-11-30 15:46:08.987 INFO  com.lzn.config.LogAspect                          :76   [32mITRGTbrV[0;39m ------------- 【讲师】查询开始 -------------
+2020-11-30 15:46:08.988 INFO  com.lzn.config.LogAspect                          :77   [32mITRGTbrV[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-11-30 15:46:08.988 INFO  com.lzn.config.LogAspect                          :78   [32mITRGTbrV[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-11-30 15:46:08.988 INFO  com.lzn.config.LogAspect                          :79   [32mITRGTbrV[0;39m 远程地址: 127.0.0.1
+2020-11-30 15:46:09.015 INFO  com.lzn.config.LogAspect                          :97   [32mITRGTbrV[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-30 15:46:09.065 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mITRGTbrV[0;39m HikariPool-1 - Starting...
+2020-11-30 15:46:09.246 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mITRGTbrV[0;39m HikariPool-1 - Start completed.
+2020-11-30 15:46:09.292 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mITRGTbrV[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-11-30 15:46:09.307 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mITRGTbrV[0;39m ==> Parameters: 
+2020-11-30 15:46:09.317 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mITRGTbrV[0;39m <==    Columns: count(0)
+2020-11-30 15:46:09.317 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mITRGTbrV[0;39m <==        Row: 4
+2020-11-30 15:46:09.318 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mITRGTbrV[0;39m <==      Total: 1
+2020-11-30 15:46:09.320 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mITRGTbrV[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-11-30 15:46:09.321 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mITRGTbrV[0;39m ==> Parameters: 5(Integer)
+2020-11-30 15:46:09.322 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mITRGTbrV[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-11-30 15:46:09.322 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mITRGTbrV[0;39m <==        Row: 2daFvSFf, 小明, 1234, , 全栈工程师, 431323412, 1234
+2020-11-30 15:46:09.323 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mITRGTbrV[0;39m <==        Row: dnPUSYOE, 小红, null, , java工程师, null, 12412341241234132
+12
+412343124132431
+2020-11-30 15:46:09.323 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mITRGTbrV[0;39m <==        Row: FjlwXo3X, 小张, null, null, 前端工程师, null, null
+2020-11-30 15:46:09.324 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mITRGTbrV[0;39m <==        Row: ucQAzB2D, 小王, null, null, 测试工程师, null, null
+2020-11-30 15:46:09.324 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mITRGTbrV[0;39m <==      Total: 4
+2020-11-30 15:46:09.333 INFO  com.lzn.config.LogAspect                          :109  [32mITRGTbrV[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
+2020-11-30 15:46:09.334 INFO  com.lzn.config.LogAspect                          :110  [32mITRGTbrV[0;39m ------------- 结束 耗时：350 ms -------------
+2020-11-30 15:47:51.525 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:52:40.900 INFO  com.lzn.config.LogAspect                          :76   [32m7P8rRzcx[0;39m ------------- 【讲师】查询开始 -------------
+2020-11-30 15:52:40.901 INFO  com.lzn.config.LogAspect                          :77   [32m7P8rRzcx[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-11-30 15:52:40.901 INFO  com.lzn.config.LogAspect                          :78   [32m7P8rRzcx[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-11-30 15:52:40.901 INFO  com.lzn.config.LogAspect                          :79   [32m7P8rRzcx[0;39m 远程地址: 127.0.0.1
+2020-11-30 15:52:40.902 INFO  com.lzn.config.LogAspect                          :97   [32m7P8rRzcx[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-30 15:52:40.904 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32m7P8rRzcx[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-11-30 15:52:40.905 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32m7P8rRzcx[0;39m ==> Parameters: 
+2020-11-30 15:52:40.907 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32m7P8rRzcx[0;39m <==    Columns: count(0)
+2020-11-30 15:52:40.908 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32m7P8rRzcx[0;39m <==        Row: 4
+2020-11-30 15:52:40.909 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32m7P8rRzcx[0;39m <==      Total: 1
+2020-11-30 15:52:40.910 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32m7P8rRzcx[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-11-30 15:52:40.911 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32m7P8rRzcx[0;39m ==> Parameters: 5(Integer)
+2020-11-30 15:52:40.913 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m7P8rRzcx[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-11-30 15:52:40.914 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m7P8rRzcx[0;39m <==        Row: 2daFvSFf, 小明, 1234, , 全栈工程师, 431323412, 1234
+2020-11-30 15:52:40.915 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m7P8rRzcx[0;39m <==        Row: dnPUSYOE, 小红, null, , java工程师, null, 12412341241234132
+12
+412343124132431
+2020-11-30 15:52:40.916 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m7P8rRzcx[0;39m <==        Row: FjlwXo3X, 小张, null, null, 前端工程师, null, null
+2020-11-30 15:52:40.917 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32m7P8rRzcx[0;39m <==        Row: ucQAzB2D, 小王, null, null, 测试工程师, null, null
+2020-11-30 15:52:40.917 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32m7P8rRzcx[0;39m <==      Total: 4
+2020-11-30 15:52:40.918 INFO  com.lzn.config.LogAspect                          :109  [32m7P8rRzcx[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
+2020-11-30 15:52:40.919 INFO  com.lzn.config.LogAspect                          :110  [32m7P8rRzcx[0;39m ------------- 结束 耗时：19 ms -------------
+2020-11-30 15:52:51.527 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-30 15:56:28.363 INFO  com.lzn.config.LogAspect                          :76   [32maspSRrkr[0;39m ------------- 【讲师】查询开始 -------------
+2020-11-30 15:56:28.363 INFO  com.lzn.config.LogAspect                          :77   [32maspSRrkr[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-11-30 15:56:28.363 INFO  com.lzn.config.LogAspect                          :78   [32maspSRrkr[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-11-30 15:56:28.364 INFO  com.lzn.config.LogAspect                          :79   [32maspSRrkr[0;39m 远程地址: 127.0.0.1
+2020-11-30 15:56:28.364 INFO  com.lzn.config.LogAspect                          :97   [32maspSRrkr[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-11-30 15:56:28.365 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32maspSRrkr[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-11-30 15:56:28.366 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32maspSRrkr[0;39m ==> Parameters: 
+2020-11-30 15:56:28.366 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32maspSRrkr[0;39m <==    Columns: count(0)
+2020-11-30 15:56:28.367 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32maspSRrkr[0;39m <==        Row: 4
+2020-11-30 15:56:28.367 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32maspSRrkr[0;39m <==      Total: 1
+2020-11-30 15:56:28.367 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32maspSRrkr[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-11-30 15:56:28.368 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32maspSRrkr[0;39m ==> Parameters: 5(Integer)
+2020-11-30 15:56:28.368 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32maspSRrkr[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-11-30 15:56:28.369 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32maspSRrkr[0;39m <==        Row: 2daFvSFf, 小明, 1234, , 全栈工程师, 431323412, 1234
+2020-11-30 15:56:28.369 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32maspSRrkr[0;39m <==        Row: dnPUSYOE, 小红, null, , java工程师, null, 12412341241234132
+12
+412343124132431
+2020-11-30 15:56:28.369 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32maspSRrkr[0;39m <==        Row: FjlwXo3X, 小张, null, null, 前端工程师, null, null
+2020-11-30 15:56:28.369 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32maspSRrkr[0;39m <==        Row: ucQAzB2D, 小王, null, null, 测试工程师, null, null
+2020-11-30 15:56:28.370 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32maspSRrkr[0;39m <==      Total: 4
+2020-11-30 15:56:28.370 INFO  com.lzn.config.LogAspect                          :109  [32maspSRrkr[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"","intro":"1234","motto":"431323412","name":"小明","nickname":"1234","position":"全栈工程师"},{"id":"dnPUSYOE","image":"","intro":"12412341241234132\n12\n412343124132431","name":"小红","position":"java工程师"},{"id":"FjlwXo3X","name":"小张","position":"前端工程师"},{"id":"ucQAzB2D","name":"小王","position":"测试工程师"}],"page":1,"size":5,"total":4},"success":true}
+2020-11-30 15:56:28.370 INFO  com.lzn.config.LogAspect                          :110  [32maspSRrkr[0;39m ------------- 结束 耗时：7 ms -------------
+2020-11-30 15:57:51.529 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
