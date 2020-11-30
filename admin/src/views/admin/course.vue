@@ -17,8 +17,11 @@
 		<div class="row">
 			<div v-for="course in courses" class="col-md-4">
 				<div class="thumbnail search-thumbnail">
-					<img v-show="!course.image" class="media-object" src="/static/image/demo-course.jpg" />
-					<img v-show="course.image" class="media-object" v-bind:src="course.image" />
+
+					<!-- <div style="width: 100%;"> -->
+						<img v-show="!course.image" style="width: 100%;" class="media-object img-responsive" src="/static/image/demo-course.jpg" />
+						<img v-show="course.image" style="width: 100%;"  class="media-object img-responsive" v-bind:src="course.image" />
+					<!-- </div> -->
 
 					<div class="caption">
 						<div class="clearfix">
@@ -39,7 +42,7 @@
 
 						<div v-for="teacher in teachers.filter(t=>{return t.id===course.teacherId})" class="profile-activity clearfix">
 							<div>
-								<img v-show="!teacher.image" class="pull-left" src="/ace/assets/images/avatars/avatar5.png">
+								<img v-show="!teacher.image" class="pull-left " src="/ace/assets/images/avatars/avatar5.png">
 								<img v-show="teacher.image" class="pull-left" v-bind:src="teacher.image">
 								<a class="user" href="#"> {{teacher.name}} </a>
 								<br>
@@ -652,11 +655,10 @@
 	.caption h3 {
 		font-size: 30px;
 	}
-	
+
 	@media (max-width: 1199px) {
 		.caption h3 {
 			font-size: 16px;
 		}
 	}
-	
 </style>

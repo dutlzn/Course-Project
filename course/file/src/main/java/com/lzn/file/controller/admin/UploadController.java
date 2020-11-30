@@ -32,7 +32,6 @@ public class UploadController {
             ) throws IOException {
 //        debug
 
-
         LOG.info("上传文件开始:{}", file);
         LOG.info(file.getOriginalFilename());
         LOG.info(String.valueOf(file.getSize()));
@@ -46,6 +45,7 @@ public class UploadController {
         LOG.info(dest.getAbsolutePath());
 
         ResponseDto responseDto = new ResponseDto();
+        responseDto.setContent("http://127.0.0.1:9000/file/f/teacher/" + key + "-" +fileName);
         return responseDto;
     }
 }
