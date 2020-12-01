@@ -20,9 +20,9 @@
 				<div class="center">
 					<span class="profile-picture">
 						<img v-show="!teacher.image" class="editable img-responsive editable-click editable-empty" src="/static/image/profile-pic.jpg"
-						 v-bind:title="teacher.intro" />
+						 v-bind:title="teacher.intro" style="width: 200px;height:200px;" />
 						<img v-show="teacher.image" class="editable img-responsive editable-click editable-empty" v-bind:src="teacher.image"
-						 v-bind:title="teacher.intro" />
+						 v-bind:title="teacher.intro" style="width: 200px;height:200px;" />
 					</span>
 
 					<div class="space-4"></div>
@@ -79,24 +79,30 @@
 									<input v-model="teacher.name" class="form-control">
 								</div>
 							</div>
+
 							<div class="form-group">
 								<label class="col-sm-2 control-label">昵称</label>
 								<div class="col-sm-10">
 									<input v-model="teacher.nickname" class="form-control">
 								</div>
 							</div>
+
 							<div class="form-group">
 								<label class="col-sm-2 control-label">头像</label>
 								<div class="col-sm-10">
-									<input id="file-upload-input" type="file" v-on:change="uploadImage()">
-									<div v-show="teacher.image" class="row">
-										<div class="col-sm-4">
-											<img v-bind:src="teacher.image" class="img-responsive" >
-										</div>
+									<file v-bind:text="'上传头像1'" 
+									v-bind:after-upload="afterUpload"
+									v-bind:suffixs="['jpg', 'jpeg', 'png']"
+									v-bind:input-id="'image-upload'"></file>
 									
+									<div v-show="teacher.image" class="row">
+										<div class="col-md-4">
+											<img v-bind:src="teacher.image" class="img-responsive">
+										</div>
 									</div>
 								</div>
 							</div>
+
 							<div class="form-group">
 								<label class="col-sm-2 control-label">职位</label>
 								<div class="col-sm-10">
@@ -129,9 +135,11 @@
 
 <script>
 	import Pagination from "../../components/pagination";
+	import File from "../../components/file.vue";
 	export default {
 		components: {
-			Pagination
+			Pagination,
+			File
 		},
 		name: "business-teacher",
 		data: function() {
@@ -235,22 +243,12 @@
 					})
 				});
 			},
-			
-			
-			uploadImage() {
+
+			afterUpload(resp) {
 				let _this = this;
-				let formData = new window.FormData();
-				// key: "file"必须和后端controller参数名一样
-				formData.append('file', document.querySelector('#file-upload-input').files[0]);
-				Loading.show();
-				_this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response) => {
-					Loading.hide();
-					let resp = response.data;
-					let image = resp.content;
-					console.log("头像地址:" , image);
-					_this.teacher.image = image;
-					
-				})
+				let image = resp.content;
+				console.log("头像地址:" , image);
+				_this.teacher.image = image;
 			}
 		}
 	}
