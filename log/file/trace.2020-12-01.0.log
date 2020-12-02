@@ -1,0 +1,301 @@
+2020-12-01 09:14:44.790 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-01 09:14:46.750 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-01 09:14:47.275 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=33abd142-6cf1-3733-b879-96a4354dcd3a
+2020-12-01 09:14:48.005 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-01 09:14:48.014 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-01 09:14:48.015 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-01 09:14:48.015 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-01 09:14:48.102 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-01 09:14:48.102 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1338 ms
+2020-12-01 09:14:48.716 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-01 09:14:48.717 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-01 09:14:48.724 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-01 09:14:48.724 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-01 09:14:50.149 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-01 09:14:50.195 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-01 09:14:51.357 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-01 09:14:51.405 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-01 09:14:51.481 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-01 09:14:51.554 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-01 09:14:51.837 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-01 09:14:51.837 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-01 09:14:51.965 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-01 09:14:51.966 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-01 09:14:52.206 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:14:52.269 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-01 09:14:52.269 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-01 09:14:52.269 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-01 09:14:52.270 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-01 09:14:52.270 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-01 09:14:52.270 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-01 09:14:52.270 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-01 09:14:52.354 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-01 09:14:52.356 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-01 09:14:52.357 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-01 09:14:52.360 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1606785292359 with initial instances count: 0
+2020-12-01 09:14:52.365 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-01 09:14:52.366 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606785292366, current=UP, previous=STARTING]
+2020-12-01 09:14:52.368 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-01 09:14:52.368 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-01 09:14:52.396 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-01 09:14:52.397 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-01 09:14:52.423 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-01 09:14:53.480 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-01 09:14:53.487 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 10.137 seconds (JVM running for 10.732)
+2020-12-01 09:14:53.488 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-01 09:14:53.489 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-01 09:15:22.358 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-01 09:15:22.358 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-01 09:15:22.358 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-01 09:15:22.358 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-01 09:15:22.359 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-01 09:15:22.359 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-12-01 09:15:22.359 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-01 09:15:22.384 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-01 09:19:52.273 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:24:52.275 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:29:52.278 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:34:52.280 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:39:52.282 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:44:52.283 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:49:52.285 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:54:52.286 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 09:59:52.289 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:04:52.291 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:09:52.292 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:14:52.295 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:19:52.297 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:24:52.298 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:29:52.301 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:34:52.303 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:39:52.304 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:40:02.147 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 10:40:02.147 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-01 10:40:02.161 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 14 ms
+2020-12-01 10:42:27.779 INFO  com.lzn.config.LogAspect                          :76   [32mhrYXEgjF[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 10:42:27.780 INFO  com.lzn.config.LogAspect                          :77   [32mhrYXEgjF[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 10:42:27.780 INFO  com.lzn.config.LogAspect                          :78   [32mhrYXEgjF[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 10:42:27.780 INFO  com.lzn.config.LogAspect                          :79   [32mhrYXEgjF[0;39m 远程地址: 127.0.0.1
+2020-12-01 10:42:27.785 INFO  com.lzn.config.LogAspect                          :97   [32mhrYXEgjF[0;39m 请求参数: [null]
+2020-12-01 10:42:27.788 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mhrYXEgjF[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@58491d7b
+2020-12-01 10:42:27.788 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mhrYXEgjF[0;39m 3.jpg
+2020-12-01 10:42:27.789 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mhrYXEgjF[0;39m 29612
+2020-12-01 10:42:27.790 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mhrYXEgjF[0;39m D:\code\file\teacher\gWKxtOAo-3.jpg
+2020-12-01 10:42:27.806 INFO  com.lzn.config.LogAspect                          :109  [32mhrYXEgjF[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/gWKxtOAo-3.jpg","success":true}
+2020-12-01 10:42:27.806 INFO  com.lzn.config.LogAspect                          :110  [32mhrYXEgjF[0;39m ------------- 结束 耗时：29 ms -------------
+2020-12-01 10:43:32.357 INFO  com.lzn.config.LogAspect                          :76   [32mm3bhQGnv[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 10:43:32.357 INFO  com.lzn.config.LogAspect                          :77   [32mm3bhQGnv[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 10:43:32.358 INFO  com.lzn.config.LogAspect                          :78   [32mm3bhQGnv[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 10:43:32.358 INFO  com.lzn.config.LogAspect                          :79   [32mm3bhQGnv[0;39m 远程地址: 127.0.0.1
+2020-12-01 10:43:32.358 INFO  com.lzn.config.LogAspect                          :97   [32mm3bhQGnv[0;39m 请求参数: [null]
+2020-12-01 10:43:32.358 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mm3bhQGnv[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5bbc7fb9
+2020-12-01 10:43:32.358 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mm3bhQGnv[0;39m 3.jpg
+2020-12-01 10:43:32.358 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mm3bhQGnv[0;39m 29612
+2020-12-01 10:43:32.359 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mm3bhQGnv[0;39m D:\code\file\teacher\WbSJ9If7-3.jpg
+2020-12-01 10:43:32.359 INFO  com.lzn.config.LogAspect                          :109  [32mm3bhQGnv[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/WbSJ9If7-3.jpg","success":true}
+2020-12-01 10:43:32.360 INFO  com.lzn.config.LogAspect                          :110  [32mm3bhQGnv[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-01 10:43:41.766 INFO  com.lzn.config.LogAspect                          :76   [32mKQdGH5rw[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 10:43:41.767 INFO  com.lzn.config.LogAspect                          :77   [32mKQdGH5rw[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 10:43:41.767 INFO  com.lzn.config.LogAspect                          :78   [32mKQdGH5rw[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 10:43:41.767 INFO  com.lzn.config.LogAspect                          :79   [32mKQdGH5rw[0;39m 远程地址: 127.0.0.1
+2020-12-01 10:43:41.768 INFO  com.lzn.config.LogAspect                          :97   [32mKQdGH5rw[0;39m 请求参数: [null]
+2020-12-01 10:43:41.768 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mKQdGH5rw[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2045771
+2020-12-01 10:43:41.768 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mKQdGH5rw[0;39m 3.jpg
+2020-12-01 10:43:41.768 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mKQdGH5rw[0;39m 29612
+2020-12-01 10:43:41.770 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mKQdGH5rw[0;39m D:\code\file\teacher\5scYLVUW-3.jpg
+2020-12-01 10:43:41.771 INFO  com.lzn.config.LogAspect                          :109  [32mKQdGH5rw[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/5scYLVUW-3.jpg","success":true}
+2020-12-01 10:43:41.771 INFO  com.lzn.config.LogAspect                          :110  [32mKQdGH5rw[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-01 10:44:52.305 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:47:06.093 INFO  com.lzn.config.LogAspect                          :76   [32msgzakAOD[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 10:47:06.093 INFO  com.lzn.config.LogAspect                          :77   [32msgzakAOD[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 10:47:06.094 INFO  com.lzn.config.LogAspect                          :78   [32msgzakAOD[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 10:47:06.094 INFO  com.lzn.config.LogAspect                          :79   [32msgzakAOD[0;39m 远程地址: 127.0.0.1
+2020-12-01 10:47:06.094 INFO  com.lzn.config.LogAspect                          :97   [32msgzakAOD[0;39m 请求参数: [null]
+2020-12-01 10:47:06.094 INFO  com.lzn.file.controller.admin.UploadController    :41   [32msgzakAOD[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5a352561
+2020-12-01 10:47:06.094 INFO  com.lzn.file.controller.admin.UploadController    :42   [32msgzakAOD[0;39m 3.jpg
+2020-12-01 10:47:06.094 INFO  com.lzn.file.controller.admin.UploadController    :43   [32msgzakAOD[0;39m 29612
+2020-12-01 10:47:06.095 INFO  com.lzn.file.controller.admin.UploadController    :51   [32msgzakAOD[0;39m D:\code\file\teacher\OBXyPSRH-3.jpg
+2020-12-01 10:47:06.095 INFO  com.lzn.config.LogAspect                          :109  [32msgzakAOD[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/OBXyPSRH-3.jpg","success":true}
+2020-12-01 10:47:06.095 INFO  com.lzn.config.LogAspect                          :110  [32msgzakAOD[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-01 10:48:09.740 INFO  com.lzn.config.LogAspect                          :76   [32mMaxebOvJ[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 10:48:09.740 INFO  com.lzn.config.LogAspect                          :77   [32mMaxebOvJ[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 10:48:09.741 INFO  com.lzn.config.LogAspect                          :78   [32mMaxebOvJ[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 10:48:09.741 INFO  com.lzn.config.LogAspect                          :79   [32mMaxebOvJ[0;39m 远程地址: 127.0.0.1
+2020-12-01 10:48:09.741 INFO  com.lzn.config.LogAspect                          :97   [32mMaxebOvJ[0;39m 请求参数: [null]
+2020-12-01 10:48:09.741 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mMaxebOvJ[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@372053f1
+2020-12-01 10:48:09.741 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mMaxebOvJ[0;39m 1.jpg
+2020-12-01 10:48:09.742 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mMaxebOvJ[0;39m 26968
+2020-12-01 10:48:09.742 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mMaxebOvJ[0;39m D:\code\file\teacher\VtQ0g75L-1.jpg
+2020-12-01 10:48:09.743 INFO  com.lzn.config.LogAspect                          :109  [32mMaxebOvJ[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/VtQ0g75L-1.jpg","success":true}
+2020-12-01 10:48:09.743 INFO  com.lzn.config.LogAspect                          :110  [32mMaxebOvJ[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-01 10:49:52.306 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:54:52.308 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 10:59:52.310 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:04:52.311 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:09:52.313 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:14:52.315 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:19:52.317 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:24:52.320 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:29:52.322 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:34:52.323 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:39:52.324 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:44:52.326 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:49:52.327 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:54:52.328 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 11:59:52.330 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:04:52.332 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:09:52.334 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:14:52.336 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:19:52.337 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:24:52.340 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:29:52.342 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:34:52.344 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:39:52.347 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:44:52.348 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:49:52.350 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:54:52.352 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 12:59:52.353 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:04:52.355 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:09:52.356 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:14:52.359 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:19:52.360 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:24:52.361 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:29:52.362 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:34:52.363 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:39:52.365 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:44:52.368 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:49:52.370 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:54:52.374 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 13:59:52.377 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:04:52.379 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:06:35.633 INFO  com.lzn.config.LogAspect                          :76   [32m3fvAmKZW[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 14:06:35.634 INFO  com.lzn.config.LogAspect                          :77   [32m3fvAmKZW[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 14:06:35.635 INFO  com.lzn.config.LogAspect                          :78   [32m3fvAmKZW[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 14:06:35.635 INFO  com.lzn.config.LogAspect                          :79   [32m3fvAmKZW[0;39m 远程地址: 127.0.0.1
+2020-12-01 14:06:35.635 INFO  com.lzn.config.LogAspect                          :97   [32m3fvAmKZW[0;39m 请求参数: [null]
+2020-12-01 14:06:35.636 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m3fvAmKZW[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@441252d5
+2020-12-01 14:06:35.636 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m3fvAmKZW[0;39m 3.jpg
+2020-12-01 14:06:35.636 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m3fvAmKZW[0;39m 29612
+2020-12-01 14:06:35.637 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m3fvAmKZW[0;39m D:\code\file\teacher\kVs7aaGg-3.jpg
+2020-12-01 14:06:35.638 INFO  com.lzn.config.LogAspect                          :109  [32m3fvAmKZW[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/kVs7aaGg-3.jpg","success":true}
+2020-12-01 14:06:35.638 INFO  com.lzn.config.LogAspect                          :110  [32m3fvAmKZW[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-01 14:06:42.418 INFO  com.lzn.config.LogAspect                          :76   [32mkAQQCCdq[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 14:06:42.419 INFO  com.lzn.config.LogAspect                          :77   [32mkAQQCCdq[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 14:06:42.419 INFO  com.lzn.config.LogAspect                          :78   [32mkAQQCCdq[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 14:06:42.419 INFO  com.lzn.config.LogAspect                          :79   [32mkAQQCCdq[0;39m 远程地址: 127.0.0.1
+2020-12-01 14:06:42.419 INFO  com.lzn.config.LogAspect                          :97   [32mkAQQCCdq[0;39m 请求参数: [null]
+2020-12-01 14:06:42.419 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mkAQQCCdq[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@77b3627a
+2020-12-01 14:06:42.419 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mkAQQCCdq[0;39m 2.jpg
+2020-12-01 14:06:42.420 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mkAQQCCdq[0;39m 21520
+2020-12-01 14:06:42.420 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mkAQQCCdq[0;39m D:\code\file\teacher\MnUvecDN-2.jpg
+2020-12-01 14:06:42.421 INFO  com.lzn.config.LogAspect                          :109  [32mkAQQCCdq[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/MnUvecDN-2.jpg","success":true}
+2020-12-01 14:06:42.421 INFO  com.lzn.config.LogAspect                          :110  [32mkAQQCCdq[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-01 14:09:52.381 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:09:59.759 INFO  com.lzn.config.LogAspect                          :76   [32miPG6A68D[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 14:09:59.759 INFO  com.lzn.config.LogAspect                          :77   [32miPG6A68D[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 14:09:59.760 INFO  com.lzn.config.LogAspect                          :78   [32miPG6A68D[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 14:09:59.760 INFO  com.lzn.config.LogAspect                          :79   [32miPG6A68D[0;39m 远程地址: 127.0.0.1
+2020-12-01 14:09:59.760 INFO  com.lzn.config.LogAspect                          :97   [32miPG6A68D[0;39m 请求参数: [null]
+2020-12-01 14:09:59.760 INFO  com.lzn.file.controller.admin.UploadController    :41   [32miPG6A68D[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@276cf511
+2020-12-01 14:09:59.760 INFO  com.lzn.file.controller.admin.UploadController    :42   [32miPG6A68D[0;39m 2.jpg
+2020-12-01 14:09:59.761 INFO  com.lzn.file.controller.admin.UploadController    :43   [32miPG6A68D[0;39m 21520
+2020-12-01 14:09:59.762 INFO  com.lzn.file.controller.admin.UploadController    :51   [32miPG6A68D[0;39m D:\code\file\teacher\hOjdivyP-2.jpg
+2020-12-01 14:09:59.763 INFO  com.lzn.config.LogAspect                          :109  [32miPG6A68D[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/hOjdivyP-2.jpg","success":true}
+2020-12-01 14:09:59.763 INFO  com.lzn.config.LogAspect                          :110  [32miPG6A68D[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-01 14:10:05.457 INFO  com.lzn.config.LogAspect                          :76   [32m619Pzkxp[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 14:10:05.457 INFO  com.lzn.config.LogAspect                          :77   [32m619Pzkxp[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 14:10:05.458 INFO  com.lzn.config.LogAspect                          :78   [32m619Pzkxp[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 14:10:05.458 INFO  com.lzn.config.LogAspect                          :79   [32m619Pzkxp[0;39m 远程地址: 127.0.0.1
+2020-12-01 14:10:05.458 INFO  com.lzn.config.LogAspect                          :97   [32m619Pzkxp[0;39m 请求参数: [null]
+2020-12-01 14:10:05.458 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m619Pzkxp[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@d0efccf
+2020-12-01 14:10:05.458 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m619Pzkxp[0;39m 1.jpg
+2020-12-01 14:10:05.458 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m619Pzkxp[0;39m 26968
+2020-12-01 14:10:05.459 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m619Pzkxp[0;39m D:\code\file\teacher\7jOZzGE9-1.jpg
+2020-12-01 14:10:05.459 INFO  com.lzn.config.LogAspect                          :109  [32m619Pzkxp[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/7jOZzGE9-1.jpg","success":true}
+2020-12-01 14:10:05.459 INFO  com.lzn.config.LogAspect                          :110  [32m619Pzkxp[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-01 14:14:52.383 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:19:52.384 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:24:52.385 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:29:52.388 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:34:52.390 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:39:52.392 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:44:37.523 INFO  com.lzn.config.LogAspect                          :76   [32mhPnuSjaZ[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-01 14:44:37.523 INFO  com.lzn.config.LogAspect                          :77   [32mhPnuSjaZ[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-01 14:44:37.524 INFO  com.lzn.config.LogAspect                          :78   [32mhPnuSjaZ[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-01 14:44:37.524 INFO  com.lzn.config.LogAspect                          :79   [32mhPnuSjaZ[0;39m 远程地址: 127.0.0.1
+2020-12-01 14:44:37.524 INFO  com.lzn.config.LogAspect                          :97   [32mhPnuSjaZ[0;39m 请求参数: [null]
+2020-12-01 14:44:37.525 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mhPnuSjaZ[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1787d044
+2020-12-01 14:44:37.525 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mhPnuSjaZ[0;39m demo-course.jpg
+2020-12-01 14:44:37.525 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mhPnuSjaZ[0;39m 6785
+2020-12-01 14:44:37.527 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mhPnuSjaZ[0;39m D:\code\file\teacher\tYTKGLzo-demo-course.jpg
+2020-12-01 14:44:37.528 INFO  com.lzn.config.LogAspect                          :109  [32mhPnuSjaZ[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/tYTKGLzo-demo-course.jpg","success":true}
+2020-12-01 14:44:37.539 INFO  com.lzn.config.LogAspect                          :110  [32mhPnuSjaZ[0;39m ------------- 结束 耗时：17 ms -------------
+2020-12-01 14:44:52.394 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:49:52.396 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:54:52.397 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 14:59:52.399 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:04:52.400 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:09:52.402 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:14:52.403 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:19:52.405 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:24:52.407 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:29:52.409 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:34:52.413 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:39:52.415 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:44:52.417 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:49:52.420 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:54:52.422 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 15:59:52.424 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:04:52.426 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:09:52.428 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:14:52.429 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:19:52.430 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:24:52.431 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:29:52.433 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:34:52.435 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:39:52.437 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:44:52.439 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:49:52.440 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:54:52.442 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 16:59:52.444 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:04:52.445 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:09:52.447 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:14:52.448 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:19:52.449 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:24:52.450 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:29:52.451 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:34:52.453 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:39:52.455 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:44:52.458 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:49:52.459 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:54:52.462 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 17:59:52.463 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:04:52.465 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:09:52.467 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:14:52.469 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:19:52.471 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:24:52.472 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:29:52.474 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:34:52.474 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:39:52.476 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:44:52.477 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:49:52.481 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:54:52.483 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 18:59:52.484 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:04:52.485 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:09:52.487 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:14:52.489 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:19:52.490 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:24:52.492 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:29:52.493 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:34:52.495 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:39:52.496 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:44:52.498 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:49:52.501 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:54:52.503 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 19:59:52.505 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 20:04:52.507 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 20:09:52.509 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 20:14:52.511 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 20:19:52.512 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-01 20:24:52.514 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
