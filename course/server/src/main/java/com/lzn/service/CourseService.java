@@ -105,9 +105,9 @@ public class CourseService {
      * @param courseId
      * @return
      */
-    public void updateTime(String courseId) {
+    public void updateTime(String courseId, String chapterId) {
         LOG.info("更新课程时长：{}", courseId);
-        myCourseMapper.updateTime(courseId);
+        myCourseMapper.updateTime(courseId, chapterId);
     }
 
     /**

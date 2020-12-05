@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EnumGenerator {
-    static String path = "D:\\code\\course-project\\admin\\public\\static\\js\\enums.js";
+    static String path = "D:\\code\\course-project\\course-admin\\public\\static\\js\\enums.js";
 
     public static void main(String[] args) {
         StringBuffer bufferObject = new StringBuffer();

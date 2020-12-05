@@ -644,7 +644,7 @@
 						let resp = response.data;
 						_this.teachers = resp.content;
 
-						_this.initTree();
+						// _this.initTree();
 					});
 			},
 		},

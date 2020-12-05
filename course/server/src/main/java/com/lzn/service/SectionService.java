@@ -68,7 +68,7 @@ public class SectionService {
         } else {
             this.update(section);
         }
-        courseService.updateTime(sectionDto.getCourseId());
+        courseService.updateTime(sectionDto.getCourseId(), sectionDto.getChapterId());
     }
 
     private void insert(Section section){

@@ -1,0 +1,726 @@
+2020-12-03 10:01:16.388 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-03 10:01:17.815 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-03 10:01:18.650 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=2f0b7930-2572-3fd6-a121-599d7bc2674d
+2020-12-03 10:01:19.635 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-03 10:01:19.648 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-03 10:01:19.654 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-03 10:01:19.655 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-03 10:01:19.783 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-03 10:01:19.784 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1954 ms
+2020-12-03 10:01:20.940 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-03 10:01:20.941 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-03 10:01:20.948 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-03 10:01:20.949 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-03 10:01:22.318 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-03 10:01:22.370 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-03 10:01:23.484 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-03 10:01:23.533 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-03 10:01:23.622 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-03 10:01:23.694 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-03 10:01:24.083 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-03 10:01:24.083 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-03 10:01:24.253 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-03 10:01:24.254 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-03 10:01:24.511 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:01:24.581 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-03 10:01:24.581 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-03 10:01:24.581 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-03 10:01:24.581 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-03 10:01:24.581 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-03 10:01:24.582 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-03 10:01:24.582 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-03 10:01:24.672 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-03 10:01:24.673 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-03 10:01:24.675 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-03 10:01:24.678 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1606960884677 with initial instances count: 0
+2020-12-03 10:01:24.684 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-03 10:01:24.685 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606960884685, current=UP, previous=STARTING]
+2020-12-03 10:01:24.686 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-03 10:01:24.687 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-03 10:01:24.715 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-03 10:01:24.717 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-03 10:01:24.747 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-03 10:01:25.829 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-03 10:01:25.835 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 10.876 seconds (JVM running for 11.502)
+2020-12-03 10:01:25.836 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-03 10:01:25.837 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-03 10:01:54.676 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-03 10:01:54.677 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-03 10:01:54.677 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-03 10:01:54.677 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-03 10:01:54.677 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-03 10:01:54.677 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-12-03 10:01:54.677 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-03 10:01:54.704 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-03 10:06:24.585 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:11:24.586 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:16:24.588 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:21:24.590 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:26:24.591 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:31:24.593 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:36:24.596 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:41:24.597 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:46:24.598 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:51:24.599 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 10:56:24.600 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:01:24.601 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:06:24.602 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:11:24.603 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:16:24.604 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:21:24.605 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:26:24.607 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:31:24.609 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:36:24.611 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:41:24.613 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:46:24.614 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:51:24.617 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 11:56:24.618 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:01:24.620 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:06:24.622 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:11:24.623 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:16:24.625 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:21:24.627 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:26:24.629 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:31:24.630 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:35:51.759 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-03 12:35:51.759 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-03 12:35:51.778 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 19 ms
+2020-12-03 12:36:24.633 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:41:24.634 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:46:24.635 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:51:24.637 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 12:56:24.638 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:01:24.640 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:06:24.641 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:11:24.643 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:16:24.644 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:21:24.646 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:26:24.647 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:31:24.648 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:36:24.649 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:41:24.651 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:46:24.652 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:51:24.654 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 13:56:24.655 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:01:24.657 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:06:24.658 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:11:24.659 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:16:24.661 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:21:24.662 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:26:24.664 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:31:24.667 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:36:24.669 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:41:24.673 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:46:24.674 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:51:24.676 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 14:56:24.678 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:01:24.681 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:06:24.685 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:11:24.686 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:16:24.689 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:21:24.691 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:26:24.693 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:31:24.694 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:33:57.106 INFO  com.lzn.config.LogAspect                          :76   [32mKHW2JMpV[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:33:57.107 INFO  com.lzn.config.LogAspect                          :77   [32mKHW2JMpV[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:33:57.108 INFO  com.lzn.config.LogAspect                          :78   [32mKHW2JMpV[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:33:57.108 INFO  com.lzn.config.LogAspect                          :79   [32mKHW2JMpV[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:33:57.113 INFO  com.lzn.config.LogAspect                          :97   [32mKHW2JMpV[0;39m 请求参数: [null]
+2020-12-03 15:33:57.122 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mKHW2JMpV[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@67001700
+2020-12-03 15:33:57.123 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mKHW2JMpV[0;39m 20111108205451737.jpg
+2020-12-03 15:33:57.123 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mKHW2JMpV[0;39m 172854
+2020-12-03 15:33:57.137 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mKHW2JMpV[0;39m D:\code\file\teacher\056koZmm-20111108205451737.jpg
+2020-12-03 15:33:57.183 INFO  com.lzn.config.LogAspect                          :109  [32mKHW2JMpV[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/056koZmm-20111108205451737.jpg","success":true}
+2020-12-03 15:33:57.183 INFO  com.lzn.config.LogAspect                          :110  [32mKHW2JMpV[0;39m ------------- 结束 耗时：93 ms -------------
+2020-12-03 15:35:12.646 INFO  com.lzn.config.LogAspect                          :76   [32m7roxKGM7[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:35:12.646 INFO  com.lzn.config.LogAspect                          :77   [32m7roxKGM7[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:35:12.647 INFO  com.lzn.config.LogAspect                          :78   [32m7roxKGM7[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:35:12.647 INFO  com.lzn.config.LogAspect                          :79   [32m7roxKGM7[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:35:12.647 INFO  com.lzn.config.LogAspect                          :97   [32m7roxKGM7[0;39m 请求参数: [null]
+2020-12-03 15:35:12.647 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m7roxKGM7[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5505a84f
+2020-12-03 15:35:12.647 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m7roxKGM7[0;39m 20111108205451737.jpg
+2020-12-03 15:35:12.648 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m7roxKGM7[0;39m 172854
+2020-12-03 15:35:12.648 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m7roxKGM7[0;39m D:\code\file\teacher\khc9RDLu-20111108205451737.jpg
+2020-12-03 15:35:12.649 INFO  com.lzn.config.LogAspect                          :109  [32m7roxKGM7[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/khc9RDLu-20111108205451737.jpg","success":true}
+2020-12-03 15:35:12.649 INFO  com.lzn.config.LogAspect                          :110  [32m7roxKGM7[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 15:35:52.498 INFO  com.lzn.config.LogAspect                          :76   [32m0UTGzn1a[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:35:52.498 INFO  com.lzn.config.LogAspect                          :77   [32m0UTGzn1a[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:35:52.498 INFO  com.lzn.config.LogAspect                          :78   [32m0UTGzn1a[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:35:52.498 INFO  com.lzn.config.LogAspect                          :79   [32m0UTGzn1a[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:35:52.498 INFO  com.lzn.config.LogAspect                          :97   [32m0UTGzn1a[0;39m 请求参数: [null]
+2020-12-03 15:35:52.499 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m0UTGzn1a[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@48283b30
+2020-12-03 15:35:52.499 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m0UTGzn1a[0;39m 20111108205451737.jpg
+2020-12-03 15:35:52.499 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m0UTGzn1a[0;39m 172854
+2020-12-03 15:35:52.500 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m0UTGzn1a[0;39m D:\code\file\teacher\uzwC4Ofp-20111108205451737.jpg
+2020-12-03 15:35:52.500 INFO  com.lzn.config.LogAspect                          :109  [32m0UTGzn1a[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/uzwC4Ofp-20111108205451737.jpg","success":true}
+2020-12-03 15:35:52.500 INFO  com.lzn.config.LogAspect                          :110  [32m0UTGzn1a[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 15:35:57.947 INFO  com.lzn.config.LogAspect                          :76   [32mWPBT7EE4[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:35:57.947 INFO  com.lzn.config.LogAspect                          :77   [32mWPBT7EE4[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:35:57.947 INFO  com.lzn.config.LogAspect                          :78   [32mWPBT7EE4[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:35:57.947 INFO  com.lzn.config.LogAspect                          :79   [32mWPBT7EE4[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:35:57.948 INFO  com.lzn.config.LogAspect                          :97   [32mWPBT7EE4[0;39m 请求参数: [null]
+2020-12-03 15:35:57.948 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mWPBT7EE4[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5b50c917
+2020-12-03 15:35:57.948 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mWPBT7EE4[0;39m 20111108205452769.jpg
+2020-12-03 15:35:57.948 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mWPBT7EE4[0;39m 172854
+2020-12-03 15:35:57.949 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mWPBT7EE4[0;39m D:\code\file\teacher\UrNh1oUJ-20111108205452769.jpg
+2020-12-03 15:35:57.949 INFO  com.lzn.config.LogAspect                          :109  [32mWPBT7EE4[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/UrNh1oUJ-20111108205452769.jpg","success":true}
+2020-12-03 15:35:57.949 INFO  com.lzn.config.LogAspect                          :110  [32mWPBT7EE4[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 15:36:03.919 INFO  com.lzn.config.LogAspect                          :76   [32mwWV2WJ8n[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:36:03.919 INFO  com.lzn.config.LogAspect                          :77   [32mwWV2WJ8n[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:36:03.919 INFO  com.lzn.config.LogAspect                          :78   [32mwWV2WJ8n[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:36:03.920 INFO  com.lzn.config.LogAspect                          :79   [32mwWV2WJ8n[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:36:03.920 INFO  com.lzn.config.LogAspect                          :97   [32mwWV2WJ8n[0;39m 请求参数: [null]
+2020-12-03 15:36:03.920 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mwWV2WJ8n[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@65d947cf
+2020-12-03 15:36:03.920 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mwWV2WJ8n[0;39m 20111108205452638.jpg
+2020-12-03 15:36:03.920 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mwWV2WJ8n[0;39m 172854
+2020-12-03 15:36:03.931 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mwWV2WJ8n[0;39m D:\code\file\teacher\VdjysTx5-20111108205452638.jpg
+2020-12-03 15:36:03.932 INFO  com.lzn.config.LogAspect                          :109  [32mwWV2WJ8n[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/VdjysTx5-20111108205452638.jpg","success":true}
+2020-12-03 15:36:03.932 INFO  com.lzn.config.LogAspect                          :110  [32mwWV2WJ8n[0;39m ------------- 结束 耗时：14 ms -------------
+2020-12-03 15:36:14.132 INFO  com.lzn.config.LogAspect                          :76   [32mWmJ7Rclw[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:36:14.133 INFO  com.lzn.config.LogAspect                          :77   [32mWmJ7Rclw[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:36:14.133 INFO  com.lzn.config.LogAspect                          :78   [32mWmJ7Rclw[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:36:14.133 INFO  com.lzn.config.LogAspect                          :79   [32mWmJ7Rclw[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:36:14.133 INFO  com.lzn.config.LogAspect                          :97   [32mWmJ7Rclw[0;39m 请求参数: [null]
+2020-12-03 15:36:14.133 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mWmJ7Rclw[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@31ae0681
+2020-12-03 15:36:14.134 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mWmJ7Rclw[0;39m 20111108205452769.jpg
+2020-12-03 15:36:14.134 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mWmJ7Rclw[0;39m 172854
+2020-12-03 15:36:14.135 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mWmJ7Rclw[0;39m D:\code\file\teacher\CD4AAcAt-20111108205452769.jpg
+2020-12-03 15:36:14.136 INFO  com.lzn.config.LogAspect                          :109  [32mWmJ7Rclw[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/CD4AAcAt-20111108205452769.jpg","success":true}
+2020-12-03 15:36:14.136 INFO  com.lzn.config.LogAspect                          :110  [32mWmJ7Rclw[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 15:36:21.579 INFO  com.lzn.config.LogAspect                          :76   [32mKyyBYDa1[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:36:21.579 INFO  com.lzn.config.LogAspect                          :77   [32mKyyBYDa1[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:36:21.579 INFO  com.lzn.config.LogAspect                          :78   [32mKyyBYDa1[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:36:21.580 INFO  com.lzn.config.LogAspect                          :79   [32mKyyBYDa1[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:36:21.580 INFO  com.lzn.config.LogAspect                          :97   [32mKyyBYDa1[0;39m 请求参数: [null]
+2020-12-03 15:36:21.580 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mKyyBYDa1[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@44c00cd4
+2020-12-03 15:36:21.580 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mKyyBYDa1[0;39m 20111108205452638.jpg
+2020-12-03 15:36:21.580 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mKyyBYDa1[0;39m 172854
+2020-12-03 15:36:21.581 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mKyyBYDa1[0;39m D:\code\file\teacher\lXlX6ZFV-20111108205452638.jpg
+2020-12-03 15:36:21.581 INFO  com.lzn.config.LogAspect                          :109  [32mKyyBYDa1[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/lXlX6ZFV-20111108205452638.jpg","success":true}
+2020-12-03 15:36:21.581 INFO  com.lzn.config.LogAspect                          :110  [32mKyyBYDa1[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 15:36:24.696 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:41:03.236 INFO  com.lzn.config.LogAspect                          :76   [32mA6qFqYWU[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 15:41:03.237 INFO  com.lzn.config.LogAspect                          :77   [32mA6qFqYWU[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 15:41:03.237 INFO  com.lzn.config.LogAspect                          :78   [32mA6qFqYWU[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 15:41:03.238 INFO  com.lzn.config.LogAspect                          :79   [32mA6qFqYWU[0;39m 远程地址: 127.0.0.1
+2020-12-03 15:41:03.238 INFO  com.lzn.config.LogAspect                          :97   [32mA6qFqYWU[0;39m 请求参数: [null]
+2020-12-03 15:41:03.238 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mA6qFqYWU[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@30a95b26
+2020-12-03 15:41:03.238 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mA6qFqYWU[0;39m 1598409955.0172384.jpg.rotate.jpg
+2020-12-03 15:41:03.238 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mA6qFqYWU[0;39m 288042
+2020-12-03 15:41:03.243 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mA6qFqYWU[0;39m D:\code\file\teacher\vxF9NQl9-1598409955.0172384.jpg.rotate.jpg
+2020-12-03 15:41:03.244 INFO  com.lzn.config.LogAspect                          :109  [32mA6qFqYWU[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/vxF9NQl9-1598409955.0172384.jpg.rotate.jpg","success":true}
+2020-12-03 15:41:03.244 INFO  com.lzn.config.LogAspect                          :110  [32mA6qFqYWU[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-03 15:41:24.698 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:46:24.701 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:51:24.702 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 15:56:24.703 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:01:24.705 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:05:09.536 INFO  com.lzn.config.LogAspect                          :76   [32mDFD98pfe[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 16:05:09.536 INFO  com.lzn.config.LogAspect                          :77   [32mDFD98pfe[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 16:05:09.536 INFO  com.lzn.config.LogAspect                          :78   [32mDFD98pfe[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 16:05:09.537 INFO  com.lzn.config.LogAspect                          :79   [32mDFD98pfe[0;39m 远程地址: 127.0.0.1
+2020-12-03 16:05:09.537 INFO  com.lzn.config.LogAspect                          :97   [32mDFD98pfe[0;39m 请求参数: [null]
+2020-12-03 16:05:09.537 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mDFD98pfe[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@56d643a1
+2020-12-03 16:05:09.537 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mDFD98pfe[0;39m 20111108205452638.jpg
+2020-12-03 16:05:09.537 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mDFD98pfe[0;39m 172854
+2020-12-03 16:05:09.539 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mDFD98pfe[0;39m D:\code\file\teacher\YOp8n4hq-20111108205452638.jpg
+2020-12-03 16:05:09.539 INFO  com.lzn.config.LogAspect                          :109  [32mDFD98pfe[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/YOp8n4hq-20111108205452638.jpg","success":true}
+2020-12-03 16:05:09.539 INFO  com.lzn.config.LogAspect                          :110  [32mDFD98pfe[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 16:06:24.706 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:11:24.708 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:16:24.710 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:21:24.712 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:26:24.715 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:31:24.718 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:36:24.719 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:41:24.719 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:46:24.721 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:51:24.723 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 16:56:24.724 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:01:24.726 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:06:24.728 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:11:24.731 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:16:24.733 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:21:24.734 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:26:24.735 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:31:24.737 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:36:24.739 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:41:24.741 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:46:24.743 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:51:24.745 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 17:56:24.748 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:01:24.750 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:06:24.751 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:06:42.804 INFO  com.lzn.config.LogAspect                          :76   [32mWYI6GTAi[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:06:42.805 INFO  com.lzn.config.LogAspect                          :77   [32mWYI6GTAi[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:06:42.806 INFO  com.lzn.config.LogAspect                          :78   [32mWYI6GTAi[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:06:42.806 INFO  com.lzn.config.LogAspect                          :79   [32mWYI6GTAi[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:06:42.807 INFO  com.lzn.config.LogAspect                          :97   [32mWYI6GTAi[0;39m 请求参数: [null]
+2020-12-03 18:06:42.807 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mWYI6GTAi[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@609d7125
+2020-12-03 18:06:42.807 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mWYI6GTAi[0;39m 20111108205452769.jpg
+2020-12-03 18:06:42.807 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mWYI6GTAi[0;39m 172854
+2020-12-03 18:06:42.808 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mWYI6GTAi[0;39m D:\code\file\teacher\DfHvTLTv-20111108205452769.jpg
+2020-12-03 18:06:42.808 INFO  com.lzn.config.LogAspect                          :109  [32mWYI6GTAi[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/DfHvTLTv-20111108205452769.jpg","success":true}
+2020-12-03 18:06:42.808 INFO  com.lzn.config.LogAspect                          :110  [32mWYI6GTAi[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 18:07:27.991 INFO  com.lzn.config.LogAspect                          :76   [32mWqrUXVTp[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:07:27.991 INFO  com.lzn.config.LogAspect                          :77   [32mWqrUXVTp[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:07:27.991 INFO  com.lzn.config.LogAspect                          :78   [32mWqrUXVTp[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:07:27.991 INFO  com.lzn.config.LogAspect                          :79   [32mWqrUXVTp[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:07:27.991 INFO  com.lzn.config.LogAspect                          :97   [32mWqrUXVTp[0;39m 请求参数: [null]
+2020-12-03 18:07:27.992 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mWqrUXVTp[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5f342262
+2020-12-03 18:07:27.992 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mWqrUXVTp[0;39m 20111108205451737.jpg
+2020-12-03 18:07:27.992 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mWqrUXVTp[0;39m 172854
+2020-12-03 18:07:27.993 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mWqrUXVTp[0;39m D:\code\file\teacher\qPjJhGNw-20111108205451737.jpg
+2020-12-03 18:07:27.993 INFO  com.lzn.config.LogAspect                          :109  [32mWqrUXVTp[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/qPjJhGNw-20111108205451737.jpg","success":true}
+2020-12-03 18:07:27.993 INFO  com.lzn.config.LogAspect                          :110  [32mWqrUXVTp[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 18:07:31.667 INFO  com.lzn.config.LogAspect                          :76   [32mLQRTnDT9[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:07:31.668 INFO  com.lzn.config.LogAspect                          :77   [32mLQRTnDT9[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:07:31.668 INFO  com.lzn.config.LogAspect                          :78   [32mLQRTnDT9[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:07:31.668 INFO  com.lzn.config.LogAspect                          :79   [32mLQRTnDT9[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:07:31.681 INFO  com.lzn.config.LogAspect                          :97   [32mLQRTnDT9[0;39m 请求参数: [null]
+2020-12-03 18:07:31.681 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mLQRTnDT9[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6067e0eb
+2020-12-03 18:07:31.681 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mLQRTnDT9[0;39m 20111108205452638.jpg
+2020-12-03 18:07:31.681 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mLQRTnDT9[0;39m 172854
+2020-12-03 18:07:31.682 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mLQRTnDT9[0;39m D:\code\file\teacher\GOlgnBFd-20111108205452638.jpg
+2020-12-03 18:07:31.683 INFO  com.lzn.config.LogAspect                          :109  [32mLQRTnDT9[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/GOlgnBFd-20111108205452638.jpg","success":true}
+2020-12-03 18:07:31.683 INFO  com.lzn.config.LogAspect                          :110  [32mLQRTnDT9[0;39m ------------- 结束 耗时：16 ms -------------
+2020-12-03 18:10:12.135 INFO  com.lzn.config.LogAspect                          :76   [32mFHuWwOIP[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:10:12.135 INFO  com.lzn.config.LogAspect                          :77   [32mFHuWwOIP[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:10:12.135 INFO  com.lzn.config.LogAspect                          :78   [32mFHuWwOIP[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:10:12.135 INFO  com.lzn.config.LogAspect                          :79   [32mFHuWwOIP[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:10:12.135 INFO  com.lzn.config.LogAspect                          :97   [32mFHuWwOIP[0;39m 请求参数: [null]
+2020-12-03 18:10:12.136 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mFHuWwOIP[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@15136477
+2020-12-03 18:10:12.136 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mFHuWwOIP[0;39m 20111108205452769.jpg
+2020-12-03 18:10:12.136 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mFHuWwOIP[0;39m 172854
+2020-12-03 18:10:12.137 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mFHuWwOIP[0;39m D:\code\file\teacher\1MhUKc6y-20111108205452769.jpg
+2020-12-03 18:10:12.137 INFO  com.lzn.config.LogAspect                          :109  [32mFHuWwOIP[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/1MhUKc6y-20111108205452769.jpg","success":true}
+2020-12-03 18:10:12.138 INFO  com.lzn.config.LogAspect                          :110  [32mFHuWwOIP[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 18:10:14.940 INFO  com.lzn.config.LogAspect                          :76   [32mK8clPgrd[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:10:14.940 INFO  com.lzn.config.LogAspect                          :77   [32mK8clPgrd[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:10:14.941 INFO  com.lzn.config.LogAspect                          :78   [32mK8clPgrd[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:10:14.941 INFO  com.lzn.config.LogAspect                          :79   [32mK8clPgrd[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:10:14.941 INFO  com.lzn.config.LogAspect                          :97   [32mK8clPgrd[0;39m 请求参数: [null]
+2020-12-03 18:10:14.941 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mK8clPgrd[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6d89ef3b
+2020-12-03 18:10:14.941 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mK8clPgrd[0;39m 20111108205452638.jpg
+2020-12-03 18:10:14.941 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mK8clPgrd[0;39m 172854
+2020-12-03 18:10:14.942 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mK8clPgrd[0;39m D:\code\file\teacher\JBD0xZli-20111108205452638.jpg
+2020-12-03 18:10:14.943 INFO  com.lzn.config.LogAspect                          :109  [32mK8clPgrd[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/JBD0xZli-20111108205452638.jpg","success":true}
+2020-12-03 18:10:14.943 INFO  com.lzn.config.LogAspect                          :110  [32mK8clPgrd[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 18:11:24.752 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:14:35.715 INFO  com.lzn.config.LogAspect                          :76   [32mkCIaSQ4l[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:14:35.715 INFO  com.lzn.config.LogAspect                          :77   [32mkCIaSQ4l[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:14:35.716 INFO  com.lzn.config.LogAspect                          :78   [32mkCIaSQ4l[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:14:35.717 INFO  com.lzn.config.LogAspect                          :79   [32mkCIaSQ4l[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:14:35.717 INFO  com.lzn.config.LogAspect                          :97   [32mkCIaSQ4l[0;39m 请求参数: [null]
+2020-12-03 18:14:35.717 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mkCIaSQ4l[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@34d5c5d9
+2020-12-03 18:14:35.717 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mkCIaSQ4l[0;39m 20111108205452638.jpg
+2020-12-03 18:14:35.717 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mkCIaSQ4l[0;39m 172854
+2020-12-03 18:14:35.719 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mkCIaSQ4l[0;39m D:\code\file\teacher\VUQaUP24-20111108205452638.jpg
+2020-12-03 18:14:35.720 INFO  com.lzn.config.LogAspect                          :109  [32mkCIaSQ4l[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/VUQaUP24-20111108205452638.jpg","success":true}
+2020-12-03 18:14:35.720 INFO  com.lzn.config.LogAspect                          :110  [32mkCIaSQ4l[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-03 18:16:24.753 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:16:29.797 INFO  com.lzn.config.LogAspect                          :76   [32muAA02u26[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 18:16:29.798 INFO  com.lzn.config.LogAspect                          :77   [32muAA02u26[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 18:16:29.798 INFO  com.lzn.config.LogAspect                          :78   [32muAA02u26[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 18:16:29.798 INFO  com.lzn.config.LogAspect                          :79   [32muAA02u26[0;39m 远程地址: 127.0.0.1
+2020-12-03 18:16:29.798 INFO  com.lzn.config.LogAspect                          :97   [32muAA02u26[0;39m 请求参数: [null]
+2020-12-03 18:16:29.798 INFO  com.lzn.file.controller.admin.UploadController    :41   [32muAA02u26[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3c5289e4
+2020-12-03 18:16:29.798 INFO  com.lzn.file.controller.admin.UploadController    :42   [32muAA02u26[0;39m 20111108205452638.jpg
+2020-12-03 18:16:29.799 INFO  com.lzn.file.controller.admin.UploadController    :43   [32muAA02u26[0;39m 172854
+2020-12-03 18:16:29.801 INFO  com.lzn.file.controller.admin.UploadController    :51   [32muAA02u26[0;39m D:\code\file\teacher\5spq1FcX-20111108205452638.jpg
+2020-12-03 18:16:29.801 INFO  com.lzn.config.LogAspect                          :109  [32muAA02u26[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/5spq1FcX-20111108205452638.jpg","success":true}
+2020-12-03 18:16:29.801 INFO  com.lzn.config.LogAspect                          :110  [32muAA02u26[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-03 18:21:24.756 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:26:24.757 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:31:24.759 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:36:24.760 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:41:24.762 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:46:24.763 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:51:24.765 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 18:56:24.767 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:01:24.770 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:06:24.771 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:11:24.772 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:16:24.774 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:21:24.776 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:26:24.777 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:27:59.494 INFO  com.lzn.config.LogAspect                          :76   [32mlmy8nRsz[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:27:59.494 INFO  com.lzn.config.LogAspect                          :77   [32mlmy8nRsz[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:27:59.495 INFO  com.lzn.config.LogAspect                          :78   [32mlmy8nRsz[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:27:59.495 INFO  com.lzn.config.LogAspect                          :79   [32mlmy8nRsz[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:27:59.495 INFO  com.lzn.config.LogAspect                          :97   [32mlmy8nRsz[0;39m 请求参数: [null]
+2020-12-03 19:27:59.495 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mlmy8nRsz[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@693ace44
+2020-12-03 19:27:59.495 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mlmy8nRsz[0;39m 1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:27:59.496 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mlmy8nRsz[0;39m 503051
+2020-12-03 19:27:59.501 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mlmy8nRsz[0;39m D:\code\file\teacher\j6juKHHE-1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:27:59.501 INFO  com.lzn.config.LogAspect                          :109  [32mlmy8nRsz[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/j6juKHHE-1598428702.2341146.jpg.rotate.jpg","success":true}
+2020-12-03 19:27:59.502 INFO  com.lzn.config.LogAspect                          :110  [32mlmy8nRsz[0;39m ------------- 结束 耗时：9 ms -------------
+2020-12-03 19:28:11.435 INFO  com.lzn.config.LogAspect                          :76   [32mZbRAJaeX[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:28:11.435 INFO  com.lzn.config.LogAspect                          :77   [32mZbRAJaeX[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:28:11.435 INFO  com.lzn.config.LogAspect                          :78   [32mZbRAJaeX[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:28:11.436 INFO  com.lzn.config.LogAspect                          :79   [32mZbRAJaeX[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:28:11.436 INFO  com.lzn.config.LogAspect                          :97   [32mZbRAJaeX[0;39m 请求参数: [null]
+2020-12-03 19:28:11.436 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mZbRAJaeX[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@38bf1d54
+2020-12-03 19:28:11.436 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mZbRAJaeX[0;39m 1598409955.0172384.jpg.rotate.jpg
+2020-12-03 19:28:11.436 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mZbRAJaeX[0;39m 288042
+2020-12-03 19:28:11.437 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mZbRAJaeX[0;39m D:\code\file\teacher\5MALnuD4-1598409955.0172384.jpg.rotate.jpg
+2020-12-03 19:28:11.438 INFO  com.lzn.config.LogAspect                          :109  [32mZbRAJaeX[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/5MALnuD4-1598409955.0172384.jpg.rotate.jpg","success":true}
+2020-12-03 19:28:11.438 INFO  com.lzn.config.LogAspect                          :110  [32mZbRAJaeX[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 19:31:24.778 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:34:48.237 INFO  com.lzn.config.LogAspect                          :76   [32mPXyNdcDo[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:34:48.237 INFO  com.lzn.config.LogAspect                          :77   [32mPXyNdcDo[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:34:48.238 INFO  com.lzn.config.LogAspect                          :78   [32mPXyNdcDo[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:34:48.238 INFO  com.lzn.config.LogAspect                          :79   [32mPXyNdcDo[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:34:48.238 INFO  com.lzn.config.LogAspect                          :97   [32mPXyNdcDo[0;39m 请求参数: [null]
+2020-12-03 19:34:48.238 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mPXyNdcDo[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5203ff25
+2020-12-03 19:34:48.239 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mPXyNdcDo[0;39m 1598495821.9574246.jpg.rotate.jpg
+2020-12-03 19:34:48.239 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mPXyNdcDo[0;39m 437830
+2020-12-03 19:34:48.250 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mPXyNdcDo[0;39m D:\code\file\teacher\IQvifyN1-1598495821.9574246.jpg.rotate.jpg
+2020-12-03 19:34:48.251 INFO  com.lzn.config.LogAspect                          :109  [32mPXyNdcDo[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/IQvifyN1-1598495821.9574246.jpg.rotate.jpg","success":true}
+2020-12-03 19:34:48.251 INFO  com.lzn.config.LogAspect                          :110  [32mPXyNdcDo[0;39m ------------- 结束 耗时：14 ms -------------
+2020-12-03 19:34:54.319 INFO  com.lzn.config.LogAspect                          :76   [32mwPFJNwYT[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:34:54.319 INFO  com.lzn.config.LogAspect                          :77   [32mwPFJNwYT[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:34:54.320 INFO  com.lzn.config.LogAspect                          :78   [32mwPFJNwYT[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:34:54.320 INFO  com.lzn.config.LogAspect                          :79   [32mwPFJNwYT[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:34:54.321 INFO  com.lzn.config.LogAspect                          :97   [32mwPFJNwYT[0;39m 请求参数: [null]
+2020-12-03 19:34:54.321 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mwPFJNwYT[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4d7644d0
+2020-12-03 19:34:54.322 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mwPFJNwYT[0;39m 1598495509.4216523.jpg.rotate.jpg
+2020-12-03 19:34:54.322 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mwPFJNwYT[0;39m 410909
+2020-12-03 19:34:54.323 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mwPFJNwYT[0;39m D:\code\file\teacher\W4U65YpW-1598495509.4216523.jpg.rotate.jpg
+2020-12-03 19:34:54.323 INFO  com.lzn.config.LogAspect                          :109  [32mwPFJNwYT[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/W4U65YpW-1598495509.4216523.jpg.rotate.jpg","success":true}
+2020-12-03 19:34:54.323 INFO  com.lzn.config.LogAspect                          :110  [32mwPFJNwYT[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 19:35:01.579 INFO  com.lzn.config.LogAspect                          :76   [32mN5eT2cXy[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:35:01.579 INFO  com.lzn.config.LogAspect                          :77   [32mN5eT2cXy[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:35:01.579 INFO  com.lzn.config.LogAspect                          :78   [32mN5eT2cXy[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:35:01.579 INFO  com.lzn.config.LogAspect                          :79   [32mN5eT2cXy[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:35:01.579 INFO  com.lzn.config.LogAspect                          :97   [32mN5eT2cXy[0;39m 请求参数: [null]
+2020-12-03 19:35:01.579 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mN5eT2cXy[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@e9e76b9
+2020-12-03 19:35:01.579 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mN5eT2cXy[0;39m 1598495509.4216523.jpg.rotate.jpg
+2020-12-03 19:35:01.579 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mN5eT2cXy[0;39m 410909
+2020-12-03 19:35:01.580 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mN5eT2cXy[0;39m D:\code\file\teacher\NtnE8m0O-1598495509.4216523.jpg.rotate.jpg
+2020-12-03 19:35:01.581 INFO  com.lzn.config.LogAspect                          :109  [32mN5eT2cXy[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/NtnE8m0O-1598495509.4216523.jpg.rotate.jpg","success":true}
+2020-12-03 19:35:01.581 INFO  com.lzn.config.LogAspect                          :110  [32mN5eT2cXy[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:35:34.637 INFO  com.lzn.config.LogAspect                          :76   [32mrPvJgvbv[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:35:34.637 INFO  com.lzn.config.LogAspect                          :77   [32mrPvJgvbv[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:35:34.637 INFO  com.lzn.config.LogAspect                          :78   [32mrPvJgvbv[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:35:34.637 INFO  com.lzn.config.LogAspect                          :79   [32mrPvJgvbv[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:35:34.638 INFO  com.lzn.config.LogAspect                          :97   [32mrPvJgvbv[0;39m 请求参数: [null]
+2020-12-03 19:35:34.638 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mrPvJgvbv[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@29f9d23d
+2020-12-03 19:35:34.638 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mrPvJgvbv[0;39m 1598506235.3109124.jpg.rotate.jpg
+2020-12-03 19:35:34.638 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mrPvJgvbv[0;39m 704258
+2020-12-03 19:35:34.639 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mrPvJgvbv[0;39m D:\code\file\teacher\D2YcUG1Z-1598506235.3109124.jpg.rotate.jpg
+2020-12-03 19:35:34.639 INFO  com.lzn.config.LogAspect                          :109  [32mrPvJgvbv[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/D2YcUG1Z-1598506235.3109124.jpg.rotate.jpg","success":true}
+2020-12-03 19:35:34.640 INFO  com.lzn.config.LogAspect                          :110  [32mrPvJgvbv[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 19:36:24.780 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:36:53.493 INFO  com.lzn.config.LogAspect                          :76   [32mhXgLUnAM[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:36:53.493 INFO  com.lzn.config.LogAspect                          :77   [32mhXgLUnAM[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:36:53.494 INFO  com.lzn.config.LogAspect                          :78   [32mhXgLUnAM[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:36:53.494 INFO  com.lzn.config.LogAspect                          :79   [32mhXgLUnAM[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:36:53.494 INFO  com.lzn.config.LogAspect                          :97   [32mhXgLUnAM[0;39m 请求参数: [null]
+2020-12-03 19:36:53.494 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mhXgLUnAM[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@24a988f1
+2020-12-03 19:36:53.494 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mhXgLUnAM[0;39m 1598409955.0172384.jpg.rotate.jpg
+2020-12-03 19:36:53.494 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mhXgLUnAM[0;39m 288042
+2020-12-03 19:36:53.495 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mhXgLUnAM[0;39m D:\code\file\teacher\68JDpw99-1598409955.0172384.jpg.rotate.jpg
+2020-12-03 19:36:53.496 INFO  com.lzn.config.LogAspect                          :109  [32mhXgLUnAM[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/68JDpw99-1598409955.0172384.jpg.rotate.jpg","success":true}
+2020-12-03 19:36:53.496 INFO  com.lzn.config.LogAspect                          :110  [32mhXgLUnAM[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:37:22.096 INFO  com.lzn.config.LogAspect                          :76   [32mwddWTA8w[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:37:22.097 INFO  com.lzn.config.LogAspect                          :77   [32mwddWTA8w[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:37:22.097 INFO  com.lzn.config.LogAspect                          :78   [32mwddWTA8w[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:37:22.097 INFO  com.lzn.config.LogAspect                          :79   [32mwddWTA8w[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:37:22.097 INFO  com.lzn.config.LogAspect                          :97   [32mwddWTA8w[0;39m 请求参数: [null]
+2020-12-03 19:37:22.097 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mwddWTA8w[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@824e209
+2020-12-03 19:37:22.097 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mwddWTA8w[0;39m 1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:37:22.098 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mwddWTA8w[0;39m 485189
+2020-12-03 19:37:22.099 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mwddWTA8w[0;39m D:\code\file\teacher\dvbCGYDA-1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:37:22.099 INFO  com.lzn.config.LogAspect                          :109  [32mwddWTA8w[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/dvbCGYDA-1598428010.9628887.jpg.rotate.jpg","success":true}
+2020-12-03 19:37:22.099 INFO  com.lzn.config.LogAspect                          :110  [32mwddWTA8w[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:37:31.093 INFO  com.lzn.config.LogAspect                          :76   [32mkq759BUK[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:37:31.094 INFO  com.lzn.config.LogAspect                          :77   [32mkq759BUK[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:37:31.094 INFO  com.lzn.config.LogAspect                          :78   [32mkq759BUK[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:37:31.094 INFO  com.lzn.config.LogAspect                          :79   [32mkq759BUK[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:37:31.094 INFO  com.lzn.config.LogAspect                          :97   [32mkq759BUK[0;39m 请求参数: [null]
+2020-12-03 19:37:31.095 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mkq759BUK[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@64a18cfe
+2020-12-03 19:37:31.095 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mkq759BUK[0;39m 1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:37:31.095 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mkq759BUK[0;39m 485189
+2020-12-03 19:37:31.096 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mkq759BUK[0;39m D:\code\file\teacher\pQQc4ZJM-1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:37:31.096 INFO  com.lzn.config.LogAspect                          :109  [32mkq759BUK[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/pQQc4ZJM-1598428010.9628887.jpg.rotate.jpg","success":true}
+2020-12-03 19:37:31.096 INFO  com.lzn.config.LogAspect                          :110  [32mkq759BUK[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:37:41.299 INFO  com.lzn.config.LogAspect                          :76   [32mDyg68nnt[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:37:41.300 INFO  com.lzn.config.LogAspect                          :77   [32mDyg68nnt[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:37:41.300 INFO  com.lzn.config.LogAspect                          :78   [32mDyg68nnt[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:37:41.300 INFO  com.lzn.config.LogAspect                          :79   [32mDyg68nnt[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:37:41.300 INFO  com.lzn.config.LogAspect                          :97   [32mDyg68nnt[0;39m 请求参数: [null]
+2020-12-03 19:37:41.300 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mDyg68nnt[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@41359184
+2020-12-03 19:37:41.300 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mDyg68nnt[0;39m 1598495509.4216523.jpg.rotate.jpg
+2020-12-03 19:37:41.301 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mDyg68nnt[0;39m 410909
+2020-12-03 19:37:41.302 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mDyg68nnt[0;39m D:\code\file\teacher\k4jM0JDj-1598495509.4216523.jpg.rotate.jpg
+2020-12-03 19:37:41.302 INFO  com.lzn.config.LogAspect                          :109  [32mDyg68nnt[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/k4jM0JDj-1598495509.4216523.jpg.rotate.jpg","success":true}
+2020-12-03 19:37:41.302 INFO  com.lzn.config.LogAspect                          :110  [32mDyg68nnt[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:38:22.362 INFO  com.lzn.config.LogAspect                          :76   [32mENhjfdno[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:38:22.362 INFO  com.lzn.config.LogAspect                          :77   [32mENhjfdno[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:38:22.362 INFO  com.lzn.config.LogAspect                          :78   [32mENhjfdno[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:38:22.363 INFO  com.lzn.config.LogAspect                          :79   [32mENhjfdno[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:38:22.363 INFO  com.lzn.config.LogAspect                          :97   [32mENhjfdno[0;39m 请求参数: [null]
+2020-12-03 19:38:22.363 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mENhjfdno[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4d1c9d3
+2020-12-03 19:38:22.363 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mENhjfdno[0;39m 1598495821.9574246.jpg.rotate.jpg
+2020-12-03 19:38:22.364 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mENhjfdno[0;39m 437830
+2020-12-03 19:38:22.365 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mENhjfdno[0;39m D:\code\file\teacher\WwuIhfXf-1598495821.9574246.jpg.rotate.jpg
+2020-12-03 19:38:22.365 INFO  com.lzn.config.LogAspect                          :109  [32mENhjfdno[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/WwuIhfXf-1598495821.9574246.jpg.rotate.jpg","success":true}
+2020-12-03 19:38:22.365 INFO  com.lzn.config.LogAspect                          :110  [32mENhjfdno[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 19:39:35.460 INFO  com.lzn.config.LogAspect                          :76   [32mEPG127BI[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:39:35.460 INFO  com.lzn.config.LogAspect                          :77   [32mEPG127BI[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:39:35.460 INFO  com.lzn.config.LogAspect                          :78   [32mEPG127BI[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:39:35.460 INFO  com.lzn.config.LogAspect                          :79   [32mEPG127BI[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:39:35.460 INFO  com.lzn.config.LogAspect                          :97   [32mEPG127BI[0;39m 请求参数: [null]
+2020-12-03 19:39:35.461 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mEPG127BI[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@237c045
+2020-12-03 19:39:35.461 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mEPG127BI[0;39m 1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:39:35.461 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mEPG127BI[0;39m 503051
+2020-12-03 19:39:35.462 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mEPG127BI[0;39m D:\code\file\teacher\ojwVISUz-1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:39:35.462 INFO  com.lzn.config.LogAspect                          :109  [32mEPG127BI[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/ojwVISUz-1598428702.2341146.jpg.rotate.jpg","success":true}
+2020-12-03 19:39:35.462 INFO  com.lzn.config.LogAspect                          :110  [32mEPG127BI[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:41:18.449 INFO  com.lzn.config.LogAspect                          :76   [32m92EDilvm[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:41:18.450 INFO  com.lzn.config.LogAspect                          :77   [32m92EDilvm[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:41:18.450 INFO  com.lzn.config.LogAspect                          :78   [32m92EDilvm[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:41:18.450 INFO  com.lzn.config.LogAspect                          :79   [32m92EDilvm[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:41:18.450 INFO  com.lzn.config.LogAspect                          :97   [32m92EDilvm[0;39m 请求参数: [null]
+2020-12-03 19:41:18.450 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m92EDilvm[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@67d6c348
+2020-12-03 19:41:18.450 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m92EDilvm[0;39m 1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:41:18.451 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m92EDilvm[0;39m 503051
+2020-12-03 19:41:18.452 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m92EDilvm[0;39m D:\code\file\teacher\BFDLCSPJ-1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:41:18.452 INFO  com.lzn.config.LogAspect                          :109  [32m92EDilvm[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/BFDLCSPJ-1598428702.2341146.jpg.rotate.jpg","success":true}
+2020-12-03 19:41:18.452 INFO  com.lzn.config.LogAspect                          :110  [32m92EDilvm[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:41:24.782 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:41:37.193 INFO  com.lzn.config.LogAspect                          :76   [32mns6kec4L[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:41:37.193 INFO  com.lzn.config.LogAspect                          :77   [32mns6kec4L[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:41:37.193 INFO  com.lzn.config.LogAspect                          :78   [32mns6kec4L[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:41:37.193 INFO  com.lzn.config.LogAspect                          :79   [32mns6kec4L[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:41:37.193 INFO  com.lzn.config.LogAspect                          :97   [32mns6kec4L[0;39m 请求参数: [null]
+2020-12-03 19:41:37.194 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mns6kec4L[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@57061f9b
+2020-12-03 19:41:37.194 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mns6kec4L[0;39m 1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:41:37.194 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mns6kec4L[0;39m 485189
+2020-12-03 19:41:37.195 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mns6kec4L[0;39m D:\code\file\teacher\Gq4vKCTj-1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:41:37.195 INFO  com.lzn.config.LogAspect                          :109  [32mns6kec4L[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/Gq4vKCTj-1598428010.9628887.jpg.rotate.jpg","success":true}
+2020-12-03 19:41:37.195 INFO  com.lzn.config.LogAspect                          :110  [32mns6kec4L[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:41:44.650 INFO  com.lzn.config.LogAspect                          :76   [32mFpt24946[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:41:44.650 INFO  com.lzn.config.LogAspect                          :77   [32mFpt24946[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:41:44.651 INFO  com.lzn.config.LogAspect                          :78   [32mFpt24946[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:41:44.651 INFO  com.lzn.config.LogAspect                          :79   [32mFpt24946[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:41:44.651 INFO  com.lzn.config.LogAspect                          :97   [32mFpt24946[0;39m 请求参数: [null]
+2020-12-03 19:41:44.651 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mFpt24946[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6ce47de6
+2020-12-03 19:41:44.651 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mFpt24946[0;39m 1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:41:44.651 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mFpt24946[0;39m 503051
+2020-12-03 19:41:44.652 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mFpt24946[0;39m D:\code\file\teacher\fI94ujS7-1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:41:44.653 INFO  com.lzn.config.LogAspect                          :109  [32mFpt24946[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/fI94ujS7-1598428702.2341146.jpg.rotate.jpg","success":true}
+2020-12-03 19:41:44.653 INFO  com.lzn.config.LogAspect                          :110  [32mFpt24946[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:41:52.055 INFO  com.lzn.config.LogAspect                          :76   [32mJCIjS779[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:41:52.055 INFO  com.lzn.config.LogAspect                          :77   [32mJCIjS779[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:41:52.055 INFO  com.lzn.config.LogAspect                          :78   [32mJCIjS779[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:41:52.055 INFO  com.lzn.config.LogAspect                          :79   [32mJCIjS779[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:41:52.056 INFO  com.lzn.config.LogAspect                          :97   [32mJCIjS779[0;39m 请求参数: [null]
+2020-12-03 19:41:52.056 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mJCIjS779[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@28e000d4
+2020-12-03 19:41:52.056 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mJCIjS779[0;39m 1598491522.6698585.jpg.rotate.jpg
+2020-12-03 19:41:52.056 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mJCIjS779[0;39m 407745
+2020-12-03 19:41:52.057 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mJCIjS779[0;39m D:\code\file\teacher\M2bFZnB9-1598491522.6698585.jpg.rotate.jpg
+2020-12-03 19:41:52.057 INFO  com.lzn.config.LogAspect                          :109  [32mJCIjS779[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/M2bFZnB9-1598491522.6698585.jpg.rotate.jpg","success":true}
+2020-12-03 19:41:52.057 INFO  com.lzn.config.LogAspect                          :110  [32mJCIjS779[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:41:56.961 INFO  com.lzn.config.LogAspect                          :76   [32mMUI7UlID[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:41:56.961 INFO  com.lzn.config.LogAspect                          :77   [32mMUI7UlID[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:41:56.961 INFO  com.lzn.config.LogAspect                          :78   [32mMUI7UlID[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:41:56.961 INFO  com.lzn.config.LogAspect                          :79   [32mMUI7UlID[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:41:56.961 INFO  com.lzn.config.LogAspect                          :97   [32mMUI7UlID[0;39m 请求参数: [null]
+2020-12-03 19:41:56.962 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mMUI7UlID[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@71e30240
+2020-12-03 19:41:56.962 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mMUI7UlID[0;39m 1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:41:56.962 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mMUI7UlID[0;39m 485189
+2020-12-03 19:41:56.963 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mMUI7UlID[0;39m D:\code\file\teacher\crrVi3II-1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:41:56.964 INFO  com.lzn.config.LogAspect                          :109  [32mMUI7UlID[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/crrVi3II-1598428010.9628887.jpg.rotate.jpg","success":true}
+2020-12-03 19:41:56.964 INFO  com.lzn.config.LogAspect                          :110  [32mMUI7UlID[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:42:08.293 INFO  com.lzn.config.LogAspect                          :76   [32mhMJgCFAF[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:42:08.293 INFO  com.lzn.config.LogAspect                          :77   [32mhMJgCFAF[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:42:08.294 INFO  com.lzn.config.LogAspect                          :78   [32mhMJgCFAF[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:42:08.294 INFO  com.lzn.config.LogAspect                          :79   [32mhMJgCFAF[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:42:08.294 INFO  com.lzn.config.LogAspect                          :97   [32mhMJgCFAF[0;39m 请求参数: [null]
+2020-12-03 19:42:08.294 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mhMJgCFAF[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@19ade820
+2020-12-03 19:42:08.294 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mhMJgCFAF[0;39m 1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:42:08.294 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mhMJgCFAF[0;39m 485189
+2020-12-03 19:42:08.296 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mhMJgCFAF[0;39m D:\code\file\teacher\2IW500Ev-1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:42:08.296 INFO  com.lzn.config.LogAspect                          :109  [32mhMJgCFAF[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/2IW500Ev-1598428010.9628887.jpg.rotate.jpg","success":true}
+2020-12-03 19:42:08.296 INFO  com.lzn.config.LogAspect                          :110  [32mhMJgCFAF[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:44:22.684 INFO  com.lzn.config.LogAspect                          :76   [32m9w6DA1ay[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:44:22.685 INFO  com.lzn.config.LogAspect                          :77   [32m9w6DA1ay[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:44:22.685 INFO  com.lzn.config.LogAspect                          :78   [32m9w6DA1ay[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:44:22.685 INFO  com.lzn.config.LogAspect                          :79   [32m9w6DA1ay[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:44:22.685 INFO  com.lzn.config.LogAspect                          :97   [32m9w6DA1ay[0;39m 请求参数: [null]
+2020-12-03 19:44:22.686 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m9w6DA1ay[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4fdf3955
+2020-12-03 19:44:22.686 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m9w6DA1ay[0;39m 1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:44:22.686 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m9w6DA1ay[0;39m 485189
+2020-12-03 19:44:22.688 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m9w6DA1ay[0;39m D:\code\file\teacher\WZlJmJtm-1598428010.9628887.jpg.rotate.jpg
+2020-12-03 19:44:22.688 INFO  com.lzn.config.LogAspect                          :109  [32m9w6DA1ay[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/WZlJmJtm-1598428010.9628887.jpg.rotate.jpg","success":true}
+2020-12-03 19:44:22.688 INFO  com.lzn.config.LogAspect                          :110  [32m9w6DA1ay[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 19:44:26.343 INFO  com.lzn.config.LogAspect                          :76   [32mBmu8flwE[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:44:26.344 INFO  com.lzn.config.LogAspect                          :77   [32mBmu8flwE[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:44:26.344 INFO  com.lzn.config.LogAspect                          :78   [32mBmu8flwE[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:44:26.344 INFO  com.lzn.config.LogAspect                          :79   [32mBmu8flwE[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:44:26.344 INFO  com.lzn.config.LogAspect                          :97   [32mBmu8flwE[0;39m 请求参数: [null]
+2020-12-03 19:44:26.344 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mBmu8flwE[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@7fd26952
+2020-12-03 19:44:26.344 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mBmu8flwE[0;39m 1598491522.6698585.jpg.rotate.jpg
+2020-12-03 19:44:26.344 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mBmu8flwE[0;39m 407745
+2020-12-03 19:44:26.345 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mBmu8flwE[0;39m D:\code\file\teacher\16IhStsf-1598491522.6698585.jpg.rotate.jpg
+2020-12-03 19:44:26.345 INFO  com.lzn.config.LogAspect                          :109  [32mBmu8flwE[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/16IhStsf-1598491522.6698585.jpg.rotate.jpg","success":true}
+2020-12-03 19:44:26.345 INFO  com.lzn.config.LogAspect                          :110  [32mBmu8flwE[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:44:31.816 INFO  com.lzn.config.LogAspect                          :76   [32mtPWgFku2[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:44:31.816 INFO  com.lzn.config.LogAspect                          :77   [32mtPWgFku2[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:44:31.816 INFO  com.lzn.config.LogAspect                          :78   [32mtPWgFku2[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:44:31.817 INFO  com.lzn.config.LogAspect                          :79   [32mtPWgFku2[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:44:31.817 INFO  com.lzn.config.LogAspect                          :97   [32mtPWgFku2[0;39m 请求参数: [null]
+2020-12-03 19:44:31.817 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mtPWgFku2[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@683155d4
+2020-12-03 19:44:31.817 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mtPWgFku2[0;39m 1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:44:31.817 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mtPWgFku2[0;39m 503051
+2020-12-03 19:44:31.819 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mtPWgFku2[0;39m D:\code\file\teacher\NGd5PXUw-1598428702.2341146.jpg.rotate.jpg
+2020-12-03 19:44:31.819 INFO  com.lzn.config.LogAspect                          :109  [32mtPWgFku2[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/NGd5PXUw-1598428702.2341146.jpg.rotate.jpg","success":true}
+2020-12-03 19:44:31.819 INFO  com.lzn.config.LogAspect                          :110  [32mtPWgFku2[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:45:23.162 INFO  com.lzn.config.LogAspect                          :76   [32mY2Nkdzhe[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:45:23.163 INFO  com.lzn.config.LogAspect                          :77   [32mY2Nkdzhe[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:45:23.163 INFO  com.lzn.config.LogAspect                          :78   [32mY2Nkdzhe[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:45:23.163 INFO  com.lzn.config.LogAspect                          :79   [32mY2Nkdzhe[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:45:23.163 INFO  com.lzn.config.LogAspect                          :97   [32mY2Nkdzhe[0;39m 请求参数: [null]
+2020-12-03 19:45:23.163 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mY2Nkdzhe[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6b798c9b
+2020-12-03 19:45:23.164 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mY2Nkdzhe[0;39m 20111108205452769.jpg
+2020-12-03 19:45:23.164 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mY2Nkdzhe[0;39m 172854
+2020-12-03 19:45:23.165 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mY2Nkdzhe[0;39m D:\code\file\teacher\uWkcZMLl-20111108205452769.jpg
+2020-12-03 19:45:23.165 INFO  com.lzn.config.LogAspect                          :109  [32mY2Nkdzhe[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/uWkcZMLl-20111108205452769.jpg","success":true}
+2020-12-03 19:45:23.165 INFO  com.lzn.config.LogAspect                          :110  [32mY2Nkdzhe[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:45:51.900 INFO  com.lzn.config.LogAspect                          :76   [32medIGXohM[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:45:51.900 INFO  com.lzn.config.LogAspect                          :77   [32medIGXohM[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:45:51.901 INFO  com.lzn.config.LogAspect                          :78   [32medIGXohM[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:45:51.901 INFO  com.lzn.config.LogAspect                          :79   [32medIGXohM[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:45:51.901 INFO  com.lzn.config.LogAspect                          :97   [32medIGXohM[0;39m 请求参数: [null]
+2020-12-03 19:45:51.901 INFO  com.lzn.file.controller.admin.UploadController    :41   [32medIGXohM[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@7479d35a
+2020-12-03 19:45:51.901 INFO  com.lzn.file.controller.admin.UploadController    :42   [32medIGXohM[0;39m 20111108205451737.jpg
+2020-12-03 19:45:51.901 INFO  com.lzn.file.controller.admin.UploadController    :43   [32medIGXohM[0;39m 172854
+2020-12-03 19:45:51.903 INFO  com.lzn.file.controller.admin.UploadController    :51   [32medIGXohM[0;39m D:\code\file\teacher\1LNgt5KH-20111108205451737.jpg
+2020-12-03 19:45:51.903 INFO  com.lzn.config.LogAspect                          :109  [32medIGXohM[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/1LNgt5KH-20111108205451737.jpg","success":true}
+2020-12-03 19:45:51.903 INFO  com.lzn.config.LogAspect                          :110  [32medIGXohM[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:46:19.877 INFO  com.lzn.config.LogAspect                          :76   [32mZabqKmch[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:46:19.877 INFO  com.lzn.config.LogAspect                          :77   [32mZabqKmch[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:46:19.877 INFO  com.lzn.config.LogAspect                          :78   [32mZabqKmch[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:46:19.878 INFO  com.lzn.config.LogAspect                          :79   [32mZabqKmch[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:46:19.878 INFO  com.lzn.config.LogAspect                          :97   [32mZabqKmch[0;39m 请求参数: [null]
+2020-12-03 19:46:19.878 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mZabqKmch[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@430e0d32
+2020-12-03 19:46:19.878 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mZabqKmch[0;39m 20111108205452638.jpg
+2020-12-03 19:46:19.878 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mZabqKmch[0;39m 172854
+2020-12-03 19:46:19.879 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mZabqKmch[0;39m D:\code\file\teacher\HseU3r4h-20111108205452638.jpg
+2020-12-03 19:46:19.879 INFO  com.lzn.config.LogAspect                          :109  [32mZabqKmch[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/HseU3r4h-20111108205452638.jpg","success":true}
+2020-12-03 19:46:19.879 INFO  com.lzn.config.LogAspect                          :110  [32mZabqKmch[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:46:24.784 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:47:03.841 INFO  com.lzn.config.LogAspect                          :76   [32mmlR8zC6O[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:47:03.842 INFO  com.lzn.config.LogAspect                          :77   [32mmlR8zC6O[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:47:03.842 INFO  com.lzn.config.LogAspect                          :78   [32mmlR8zC6O[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:47:03.842 INFO  com.lzn.config.LogAspect                          :79   [32mmlR8zC6O[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:47:03.842 INFO  com.lzn.config.LogAspect                          :97   [32mmlR8zC6O[0;39m 请求参数: [null]
+2020-12-03 19:47:03.842 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mmlR8zC6O[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4b633645
+2020-12-03 19:47:03.843 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mmlR8zC6O[0;39m 20111108205452769.jpg
+2020-12-03 19:47:03.843 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mmlR8zC6O[0;39m 172854
+2020-12-03 19:47:03.844 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mmlR8zC6O[0;39m D:\code\file\teacher\ynQ9ySle-20111108205452769.jpg
+2020-12-03 19:47:03.844 INFO  com.lzn.config.LogAspect                          :109  [32mmlR8zC6O[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/ynQ9ySle-20111108205452769.jpg","success":true}
+2020-12-03 19:47:03.844 INFO  com.lzn.config.LogAspect                          :110  [32mmlR8zC6O[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:48:48.680 INFO  com.lzn.config.LogAspect                          :76   [32mlwb6N4ic[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:48:48.681 INFO  com.lzn.config.LogAspect                          :77   [32mlwb6N4ic[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:48:48.681 INFO  com.lzn.config.LogAspect                          :78   [32mlwb6N4ic[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:48:48.681 INFO  com.lzn.config.LogAspect                          :79   [32mlwb6N4ic[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:48:48.681 INFO  com.lzn.config.LogAspect                          :97   [32mlwb6N4ic[0;39m 请求参数: [null]
+2020-12-03 19:48:48.681 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mlwb6N4ic[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2fe7b81d
+2020-12-03 19:48:48.682 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mlwb6N4ic[0;39m 20111108205452638.jpg
+2020-12-03 19:48:48.682 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mlwb6N4ic[0;39m 172854
+2020-12-03 19:48:48.683 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mlwb6N4ic[0;39m D:\code\file\teacher\zzZ67RRn-20111108205452638.jpg
+2020-12-03 19:48:48.683 INFO  com.lzn.config.LogAspect                          :109  [32mlwb6N4ic[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/zzZ67RRn-20111108205452638.jpg","success":true}
+2020-12-03 19:48:48.683 INFO  com.lzn.config.LogAspect                          :110  [32mlwb6N4ic[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:49:00.581 INFO  com.lzn.config.LogAspect                          :76   [32mCrUm2QzT[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:49:00.581 INFO  com.lzn.config.LogAspect                          :77   [32mCrUm2QzT[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:49:00.581 INFO  com.lzn.config.LogAspect                          :78   [32mCrUm2QzT[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:49:00.581 INFO  com.lzn.config.LogAspect                          :79   [32mCrUm2QzT[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:49:00.582 INFO  com.lzn.config.LogAspect                          :97   [32mCrUm2QzT[0;39m 请求参数: [null]
+2020-12-03 19:49:00.582 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mCrUm2QzT[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@7b5ea16d
+2020-12-03 19:49:00.582 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mCrUm2QzT[0;39m 20111108205452638.jpg
+2020-12-03 19:49:00.582 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mCrUm2QzT[0;39m 172854
+2020-12-03 19:49:00.583 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mCrUm2QzT[0;39m D:\code\file\teacher\3HWbdsxg-20111108205452638.jpg
+2020-12-03 19:49:00.583 INFO  com.lzn.config.LogAspect                          :109  [32mCrUm2QzT[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/3HWbdsxg-20111108205452638.jpg","success":true}
+2020-12-03 19:49:00.583 INFO  com.lzn.config.LogAspect                          :110  [32mCrUm2QzT[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 19:51:06.925 INFO  com.lzn.config.LogAspect                          :76   [32mTNdM03jZ[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:51:06.925 INFO  com.lzn.config.LogAspect                          :77   [32mTNdM03jZ[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:51:06.926 INFO  com.lzn.config.LogAspect                          :78   [32mTNdM03jZ[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:51:06.926 INFO  com.lzn.config.LogAspect                          :79   [32mTNdM03jZ[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:51:06.926 INFO  com.lzn.config.LogAspect                          :97   [32mTNdM03jZ[0;39m 请求参数: [null]
+2020-12-03 19:51:06.926 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mTNdM03jZ[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@318a5244
+2020-12-03 19:51:06.926 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mTNdM03jZ[0;39m 20111108205451737.jpg
+2020-12-03 19:51:06.926 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mTNdM03jZ[0;39m 172854
+2020-12-03 19:51:06.928 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mTNdM03jZ[0;39m D:\code\file\teacher\aWT1ylxm-20111108205451737.jpg
+2020-12-03 19:51:06.928 INFO  com.lzn.config.LogAspect                          :109  [32mTNdM03jZ[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/aWT1ylxm-20111108205451737.jpg","success":true}
+2020-12-03 19:51:06.928 INFO  com.lzn.config.LogAspect                          :110  [32mTNdM03jZ[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:51:24.786 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:51:29.815 INFO  com.lzn.config.LogAspect                          :76   [32mWOcF6VE0[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:51:29.815 INFO  com.lzn.config.LogAspect                          :77   [32mWOcF6VE0[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:51:29.816 INFO  com.lzn.config.LogAspect                          :78   [32mWOcF6VE0[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:51:29.816 INFO  com.lzn.config.LogAspect                          :79   [32mWOcF6VE0[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:51:29.816 INFO  com.lzn.config.LogAspect                          :97   [32mWOcF6VE0[0;39m 请求参数: [null]
+2020-12-03 19:51:29.816 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mWOcF6VE0[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2bbd781d
+2020-12-03 19:51:29.817 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mWOcF6VE0[0;39m 20111108205452638.jpg
+2020-12-03 19:51:29.817 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mWOcF6VE0[0;39m 172854
+2020-12-03 19:51:29.818 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mWOcF6VE0[0;39m D:\code\file\teacher\EZuFLkt4-20111108205452638.jpg
+2020-12-03 19:51:29.819 INFO  com.lzn.config.LogAspect                          :109  [32mWOcF6VE0[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/EZuFLkt4-20111108205452638.jpg","success":true}
+2020-12-03 19:51:29.819 INFO  com.lzn.config.LogAspect                          :110  [32mWOcF6VE0[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-03 19:56:24.787 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 19:58:44.512 INFO  com.lzn.config.LogAspect                          :76   [32mrgB9QG6j[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:58:44.513 INFO  com.lzn.config.LogAspect                          :77   [32mrgB9QG6j[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:58:44.513 INFO  com.lzn.config.LogAspect                          :78   [32mrgB9QG6j[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:58:44.513 INFO  com.lzn.config.LogAspect                          :79   [32mrgB9QG6j[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:58:44.513 INFO  com.lzn.config.LogAspect                          :97   [32mrgB9QG6j[0;39m 请求参数: [null]
+2020-12-03 19:58:44.513 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mrgB9QG6j[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2eaa9e43
+2020-12-03 19:58:44.514 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mrgB9QG6j[0;39m 20111108205451737.jpg
+2020-12-03 19:58:44.514 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mrgB9QG6j[0;39m 172854
+2020-12-03 19:58:44.515 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mrgB9QG6j[0;39m D:\code\file\teacher\dbUEwgYw-20111108205451737.jpg
+2020-12-03 19:58:44.515 INFO  com.lzn.config.LogAspect                          :109  [32mrgB9QG6j[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/dbUEwgYw-20111108205451737.jpg","success":true}
+2020-12-03 19:58:44.515 INFO  com.lzn.config.LogAspect                          :110  [32mrgB9QG6j[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 19:59:40.611 INFO  com.lzn.config.LogAspect                          :76   [32miJu6hyUG[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 19:59:40.611 INFO  com.lzn.config.LogAspect                          :77   [32miJu6hyUG[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 19:59:40.611 INFO  com.lzn.config.LogAspect                          :78   [32miJu6hyUG[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 19:59:40.611 INFO  com.lzn.config.LogAspect                          :79   [32miJu6hyUG[0;39m 远程地址: 127.0.0.1
+2020-12-03 19:59:40.611 INFO  com.lzn.config.LogAspect                          :97   [32miJu6hyUG[0;39m 请求参数: [null]
+2020-12-03 19:59:40.611 INFO  com.lzn.file.controller.admin.UploadController    :41   [32miJu6hyUG[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1e69ec7a
+2020-12-03 19:59:40.612 INFO  com.lzn.file.controller.admin.UploadController    :42   [32miJu6hyUG[0;39m 20111108205452769.jpg
+2020-12-03 19:59:40.612 INFO  com.lzn.file.controller.admin.UploadController    :43   [32miJu6hyUG[0;39m 172854
+2020-12-03 19:59:40.613 INFO  com.lzn.file.controller.admin.UploadController    :51   [32miJu6hyUG[0;39m D:\code\file\teacher\NguT5BAB-20111108205452769.jpg
+2020-12-03 19:59:40.613 INFO  com.lzn.config.LogAspect                          :109  [32miJu6hyUG[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/NguT5BAB-20111108205452769.jpg","success":true}
+2020-12-03 19:59:40.614 INFO  com.lzn.config.LogAspect                          :110  [32miJu6hyUG[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-03 20:00:43.356 INFO  com.lzn.config.LogAspect                          :76   [32mqDY5oT02[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 20:00:43.357 INFO  com.lzn.config.LogAspect                          :77   [32mqDY5oT02[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 20:00:43.357 INFO  com.lzn.config.LogAspect                          :78   [32mqDY5oT02[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 20:00:43.357 INFO  com.lzn.config.LogAspect                          :79   [32mqDY5oT02[0;39m 远程地址: 127.0.0.1
+2020-12-03 20:00:43.357 INFO  com.lzn.config.LogAspect                          :97   [32mqDY5oT02[0;39m 请求参数: [null]
+2020-12-03 20:00:43.357 INFO  com.lzn.file.controller.admin.UploadController    :41   [32mqDY5oT02[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2995f2c1
+2020-12-03 20:00:43.357 INFO  com.lzn.file.controller.admin.UploadController    :42   [32mqDY5oT02[0;39m 20111108205452638.jpg
+2020-12-03 20:00:43.357 INFO  com.lzn.file.controller.admin.UploadController    :43   [32mqDY5oT02[0;39m 172854
+2020-12-03 20:00:43.357 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mqDY5oT02[0;39m D:\code\file\teacher\Z3TqxEpi-20111108205452638.jpg
+2020-12-03 20:00:43.358 INFO  com.lzn.config.LogAspect                          :109  [32mqDY5oT02[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/Z3TqxEpi-20111108205452638.jpg","success":true}
+2020-12-03 20:00:43.358 INFO  com.lzn.config.LogAspect                          :110  [32mqDY5oT02[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 20:00:47.647 INFO  com.lzn.config.LogAspect                          :76   [32m6lK4cOcB[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-03 20:00:47.647 INFO  com.lzn.config.LogAspect                          :77   [32m6lK4cOcB[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-03 20:00:47.647 INFO  com.lzn.config.LogAspect                          :78   [32m6lK4cOcB[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-03 20:00:47.648 INFO  com.lzn.config.LogAspect                          :79   [32m6lK4cOcB[0;39m 远程地址: 127.0.0.1
+2020-12-03 20:00:47.648 INFO  com.lzn.config.LogAspect                          :97   [32m6lK4cOcB[0;39m 请求参数: [null]
+2020-12-03 20:00:47.648 INFO  com.lzn.file.controller.admin.UploadController    :41   [32m6lK4cOcB[0;39m 上传文件开始:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@72429ac6
+2020-12-03 20:00:47.648 INFO  com.lzn.file.controller.admin.UploadController    :42   [32m6lK4cOcB[0;39m 20111108205452769.jpg
+2020-12-03 20:00:47.648 INFO  com.lzn.file.controller.admin.UploadController    :43   [32m6lK4cOcB[0;39m 172854
+2020-12-03 20:00:47.649 INFO  com.lzn.file.controller.admin.UploadController    :51   [32m6lK4cOcB[0;39m D:\code\file\teacher\TgZ61PXU-20111108205452769.jpg
+2020-12-03 20:00:47.649 INFO  com.lzn.config.LogAspect                          :109  [32m6lK4cOcB[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher/TgZ61PXU-20111108205452769.jpg","success":true}
+2020-12-03 20:00:47.649 INFO  com.lzn.config.LogAspect                          :110  [32m6lK4cOcB[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-03 20:01:24.788 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:06:24.789 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:11:24.791 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:16:24.793 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:21:24.795 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:26:24.796 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:31:24.797 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:36:24.800 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:41:24.801 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:46:24.803 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-03 20:51:24.805 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration

@@ -11,8 +11,8 @@ import java.io.File;
 import java.util.*;
 
 public class VueGenerator {
-    static String MODULE = "business";
-    static String toVuePath = "D:\\code\\course-project\\admin\\src\\views\\admin\\";
+    static String MODULE = "file";
+    static String toVuePath = "D:\\code\\course-project\\course-admin\\src\\views\\admin\\";
     static String generatorConfigPath = "server\\src\\main\\resources\\generator\\generatorConfig.xml";
 
     public static void main(String[] args) throws Exception {
@@ -49,7 +49,7 @@ public class VueGenerator {
         map.put("typeSet", typeSet);
 
         // 生成vue
-        FreemarkerUtil.initConfig("vue.ftl");
+        FreemarkerUtil.initConfig("vue2.ftl");
         FreemarkerUtil.generator(toVuePath + domain + ".vue", map);
     }
 

@@ -16,7 +16,7 @@ import java.util.*;
 import java.io.IOException;
 
 public class ServerGenerator {
-    static String MODULE = "business";
+    static String MODULE = "file";
     static String toServicePath = "server\\src\\main\\java\\com\\lzn\\service\\";
     static String toControllerPath = MODULE + "\\src\\main\\java\\com\\lzn\\"+MODULE+"\\controller\\admin\\";
     static String toDtoPath = "server\\src\\main\\java\\com\\lzn\\dto\\";
