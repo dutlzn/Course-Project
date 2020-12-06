@@ -66,13 +66,32 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 					</v-row>
 				</v-card-text>
 
-				<v-card-text>
+	<!-- 			<v-card-text>
 					<v-col cols="12">
 						<v-text-field label="封面" v-model="course.image"></v-text-field>
 					</v-col>
 				</v-card-text>
-
-
+ -->
+				<v-card-text>
+					<v-col cols="12">
+					
+						<file 
+						v-bind:text="'上传封面'" 		      		
+						v-bind:after-upload="afterUpload" 
+						v-bind:suffixs="['jpg', 'jpeg', 'png']"
+						v-bind:use="FILE_USE.COURSE.key"
+						v-bind:input-id="'image-upload'" v-bind:label="'封面'"></file>
+					
+					</v-col>
+					
+					
+					<v-col cols="4">
+						<v-img v-show="course.image" v-bind:src="course.image"></v-img>
+						<v-img v-show="!course.image" src="/static/image/demo-course.jpg"></v-img>
+					</v-col>
+					
+					
+				</v-card-text>
 
 
 				<v-card-actions>
@@ -288,6 +307,7 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 
 <script>
 	import Pagination from "../../components/pagination";
+	import File from "../../components/file.vue"
 	export default {
 
 		updated() {
@@ -296,7 +316,8 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 
 
 		components: {
-			Pagination
+			Pagination,
+			File
 		},
 
 		name: 'business-course',
@@ -305,6 +326,8 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 			return {
 				// treeview try demo
 				selection: [], // 表示已经选择的数据
+				
+				FILE_USE: FILE_USE,
 
 
 
@@ -367,7 +390,7 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 				handler() {
 
 					// changedIndex 就是发生改变的位置
-					// console.log(this.selection);
+					console.log(this.selection.length);
 				}
 
 			}
@@ -639,8 +662,9 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 
 				_this.course.categorys = _this.selection;
 
-				if (_this.selection.length == 0) {
+				if (_this.course.categorys.length == 0) {
 					Toast.warning("请选择分类!");
+					return ;
 				}
 
 				Loading.show();
@@ -716,6 +740,17 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 						});
 				});
 			},
+			
+			
+			/**
+			 * 选择封面之后
+			 */
+			afterUpload(resp) {
+				let _this = this;
+				let image = resp.content.path;
+				_this.course.image = image;
+			}
+			
 
 		},
 

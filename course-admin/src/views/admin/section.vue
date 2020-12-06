@@ -9,7 +9,7 @@
 		</div>
 
 
-		<v-dialog v-model="dialogSection" persistent max-width="300">
+		<v-dialog v-model="dialogSection" persistent max-width="1000">
 			<v-card>
 				<v-card-title>
 					小节表单
@@ -17,30 +17,43 @@
 
 				<v-card-text>
 					<v-row>
-						<v-col cols="12">
+						<v-col cols="6">
 							<v-text-field label="课程名称" :value="course.name" disabled=""></v-text-field>
 						</v-col>
-						<v-col cols="12">
+						<v-col cols="6">
 							<v-text-field label="大章名称" :value="chapter.name" disabled></v-text-field>
 						</v-col>
 
-						<v-col cols="12">
+						<v-col cols="6">
 							<v-text-field label="标题" v-model="section.title" required></v-text-field>
 						</v-col>
 
-						<v-col cols="4">
+						<v-col cols="6">
 							<v-select label="收费" v-model="section.charge" :items="SECTION_CHARGE" item-text="value" item-value="key"></v-select>
 						</v-col>
-						<v-col cols="12">
-							<v-text-field label="视频" v-model="section.video" required></v-text-field>
+
+						<v-col cols="6">
+							<v-text-field label="时长" v-model="section.time" required></v-text-field>
+						</v-col>
+						<v-col cols="6">
+							<v-text-field label="顺序" v-model="section.sort" required></v-text-field>
 						</v-col>
 
 						<v-col cols="12">
-							<v-text-field label="时长" v-model="section.time" required></v-text-field>
+							<!-- <v-text-field label="视频" v-model="section.video" required></v-text-field> -->
+							<file v-bind:text="'上传视频'" v-bind:afterUpload="afterUpload" v-bind:use="FILE_USE.COURSE.key" v-bind:suffixs="['mp4']"
+							>
+
+							</file>
+
+							<v-col cols="4">
+								<video v-bind:src="section.video" controls="controls">
+									
+								</video>
+							</v-col>
 						</v-col>
-						<v-col cols="12">
-							<v-text-field label="顺序" v-model="section.sort" required></v-text-field>
-						</v-col>
+
+
 
 					</v-row>
 				</v-card-text>
@@ -163,10 +176,12 @@
 
 <script>
 	import Pagination from "../../components/pagination.vue";
+	import File from "../../components/file.vue"
 	export default {
 
 		components: {
-			Pagination
+			Pagination,
+			File
 		},
 
 		data: function() {
@@ -176,6 +191,8 @@
 				chapter: {},
 				course: {},
 				SECTION_CHARGE: SECTION_CHARGE_ARRAY,
+				
+				FILE_USE: FILE_USE,
 
 				dialogSection: false,
 			}
@@ -292,9 +309,22 @@
 						});
 				});
 			},
+
+			/**
+			 * 选择小节视频之后
+			 */
+			afterUpload(resp) {
+				let _this = this;
+				let video = resp.content.path;
+				_this.section.video = video;
+			}
+
 		}
 	}
 </script>
 
-<style>
+<style scoped>
+	video {
+		width: 100%;
+	}
 </style>

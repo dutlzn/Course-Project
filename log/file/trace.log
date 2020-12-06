@@ -1302,3 +1302,306 @@
 2020-12-06 15:58:37.269 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.201 seconds (JVM running for 9.657)
 2020-12-06 15:58:37.271 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
 2020-12-06 15:58:37.271 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 15:59:15.643 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 15:59:15.644 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 15:59:15.650 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 5 ms
+2020-12-06 15:59:18.746 INFO  com.lzn.config.LogAspect                          :76   [32mSyBgoG1Q[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 15:59:18.747 INFO  com.lzn.config.LogAspect                          :77   [32mSyBgoG1Q[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 15:59:18.747 INFO  com.lzn.config.LogAspect                          :78   [32mSyBgoG1Q[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 15:59:18.747 INFO  com.lzn.config.LogAspect                          :79   [32mSyBgoG1Q[0;39m 远程地址: 127.0.0.1
+2020-12-06 15:59:18.751 INFO  com.lzn.config.LogAspect                          :97   [32mSyBgoG1Q[0;39m 请求参数: [null,"T"]
+2020-12-06 15:59:18.755 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mSyBgoG1Q[0;39m 20111108205452769.jpg
+2020-12-06 15:59:18.755 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mSyBgoG1Q[0;39m 172854
+2020-12-06 15:59:18.757 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mSyBgoG1Q[0;39m D:\code\file\teacher\BxNJeITS.jpg
+2020-12-06 15:59:18.758 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mSyBgoG1Q[0;39m 保存文件记录开始
+2020-12-06 15:59:18.781 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mSyBgoG1Q[0;39m HikariPool-1 - Starting...
+2020-12-06 15:59:19.078 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mSyBgoG1Q[0;39m HikariPool-1 - Start completed.
+2020-12-06 15:59:19.082 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mSyBgoG1Q[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 15:59:19.099 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mSyBgoG1Q[0;39m ==> Parameters: GkSM13qh(String), teacher\BxNJeITS.jpg(String), 20111108205452769.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 15:59:18.761(Timestamp), 2020-12-06 15:59:18.761(Timestamp)
+2020-12-06 15:59:19.107 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mSyBgoG1Q[0;39m <==    Updates: 1
+2020-12-06 15:59:19.122 INFO  com.lzn.config.LogAspect                          :109  [32mSyBgoG1Q[0;39m 返回结果: {"content":{"name":"20111108205452769.jpg","path":"http://127.0.0.1:9000/file/f/teacher\\BxNJeITS.jpg","size":172854,"suffix":"jpg","use":"T"},"success":true}
+2020-12-06 15:59:19.122 INFO  com.lzn.config.LogAspect                          :110  [32mSyBgoG1Q[0;39m ------------- 结束 耗时：377 ms -------------
+2020-12-06 16:03:35.974 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:06:52.373 INFO  com.lzn.config.LogAspect                          :76   [32myvVtuH8h[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 16:06:52.373 INFO  com.lzn.config.LogAspect                          :77   [32myvVtuH8h[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 16:06:52.373 INFO  com.lzn.config.LogAspect                          :78   [32myvVtuH8h[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 16:06:52.373 INFO  com.lzn.config.LogAspect                          :79   [32myvVtuH8h[0;39m 远程地址: 127.0.0.1
+2020-12-06 16:06:52.373 INFO  com.lzn.config.LogAspect                          :97   [32myvVtuH8h[0;39m 请求参数: [null,"T"]
+2020-12-06 16:06:52.373 INFO  com.lzn.file.controller.admin.UploadController    :48   [32myvVtuH8h[0;39m 20111108205452638.jpg
+2020-12-06 16:06:52.373 INFO  com.lzn.file.controller.admin.UploadController    :49   [32myvVtuH8h[0;39m 172854
+2020-12-06 16:06:52.374 INFO  com.lzn.file.controller.admin.UploadController    :71   [32myvVtuH8h[0;39m D:\code\file\teacher\COxmBuYQ.jpg
+2020-12-06 16:06:52.374 INFO  com.lzn.file.controller.admin.UploadController    :73   [32myvVtuH8h[0;39m 保存文件记录开始
+2020-12-06 16:06:52.375 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32myvVtuH8h[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 16:06:52.377 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32myvVtuH8h[0;39m ==> Parameters: uTsWnKOK(String), teacher\COxmBuYQ.jpg(String), 20111108205452638.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 16:06:52.374(Timestamp), 2020-12-06 16:06:52.374(Timestamp)
+2020-12-06 16:06:52.381 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32myvVtuH8h[0;39m <==    Updates: 1
+2020-12-06 16:06:52.381 INFO  com.lzn.config.LogAspect                          :109  [32myvVtuH8h[0;39m 返回结果: {"content":{"name":"20111108205452638.jpg","path":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","size":172854,"suffix":"jpg","use":"T"},"success":true}
+2020-12-06 16:06:52.381 INFO  com.lzn.config.LogAspect                          :110  [32myvVtuH8h[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-06 16:08:35.976 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:13:35.977 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:18:35.980 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:23:35.981 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:28:35.984 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:33:35.986 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:38:35.987 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:43:35.989 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:48:35.990 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:49:19.401 INFO  com.lzn.config.LogAspect                          :76   [32mwIMsIS9T[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 16:49:19.401 INFO  com.lzn.config.LogAspect                          :77   [32mwIMsIS9T[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 16:49:19.402 INFO  com.lzn.config.LogAspect                          :78   [32mwIMsIS9T[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 16:49:19.402 INFO  com.lzn.config.LogAspect                          :79   [32mwIMsIS9T[0;39m 远程地址: 127.0.0.1
+2020-12-06 16:49:19.402 INFO  com.lzn.config.LogAspect                          :97   [32mwIMsIS9T[0;39m 请求参数: [null,"C"]
+2020-12-06 16:49:19.402 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mwIMsIS9T[0;39m 20111108205452769.jpg
+2020-12-06 16:49:19.403 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mwIMsIS9T[0;39m 172854
+2020-12-06 16:49:19.404 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mwIMsIS9T[0;39m D:\code\file\course\pPwenSXs.jpg
+2020-12-06 16:49:19.404 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mwIMsIS9T[0;39m 保存文件记录开始
+2020-12-06 16:49:19.406 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mwIMsIS9T[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 16:49:19.408 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mwIMsIS9T[0;39m ==> Parameters: ooLNG78a(String), course\pPwenSXs.jpg(String), 20111108205452769.jpg(String), jpg(String), 172854(Integer), C(String), 2020-12-06 16:49:19.405(Timestamp), 2020-12-06 16:49:19.405(Timestamp)
+2020-12-06 16:49:19.414 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mwIMsIS9T[0;39m <==    Updates: 1
+2020-12-06 16:49:19.415 INFO  com.lzn.config.LogAspect                          :109  [32mwIMsIS9T[0;39m 返回结果: {"content":{"name":"20111108205452769.jpg","path":"http://127.0.0.1:9000/file/f/course\\pPwenSXs.jpg","size":172854,"suffix":"jpg","use":"C"},"success":true}
+2020-12-06 16:49:19.415 INFO  com.lzn.config.LogAspect                          :110  [32mwIMsIS9T[0;39m ------------- 结束 耗时：14 ms -------------
+2020-12-06 16:49:42.604 INFO  com.lzn.config.LogAspect                          :76   [32mnbLE3hS7[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 16:49:42.604 INFO  com.lzn.config.LogAspect                          :77   [32mnbLE3hS7[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 16:49:42.605 INFO  com.lzn.config.LogAspect                          :78   [32mnbLE3hS7[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 16:49:42.605 INFO  com.lzn.config.LogAspect                          :79   [32mnbLE3hS7[0;39m 远程地址: 127.0.0.1
+2020-12-06 16:49:42.605 INFO  com.lzn.config.LogAspect                          :97   [32mnbLE3hS7[0;39m 请求参数: [null,"C"]
+2020-12-06 16:49:42.606 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mnbLE3hS7[0;39m 课程封面2.jpg
+2020-12-06 16:49:42.606 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mnbLE3hS7[0;39m 121122
+2020-12-06 16:49:42.608 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mnbLE3hS7[0;39m D:\code\file\course\9DCRmx2D.jpg
+2020-12-06 16:49:42.608 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mnbLE3hS7[0;39m 保存文件记录开始
+2020-12-06 16:49:42.611 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mnbLE3hS7[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 16:49:42.613 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mnbLE3hS7[0;39m ==> Parameters: 8D1FSPd4(String), course\9DCRmx2D.jpg(String), 课程封面2.jpg(String), jpg(String), 121122(Integer), C(String), 2020-12-06 16:49:42.608(Timestamp), 2020-12-06 16:49:42.608(Timestamp)
+2020-12-06 16:49:42.618 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mnbLE3hS7[0;39m <==    Updates: 1
+2020-12-06 16:49:42.619 INFO  com.lzn.config.LogAspect                          :109  [32mnbLE3hS7[0;39m 返回结果: {"content":{"name":"课程封面2.jpg","path":"http://127.0.0.1:9000/file/f/course\\9DCRmx2D.jpg","size":121122,"suffix":"jpg","use":"C"},"success":true}
+2020-12-06 16:49:42.620 INFO  com.lzn.config.LogAspect                          :110  [32mnbLE3hS7[0;39m ------------- 结束 耗时：16 ms -------------
+2020-12-06 16:53:35.992 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 16:58:35.993 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:03:35.995 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:08:35.996 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:13:35.997 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:18:35.999 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:23:36.000 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:28:36.002 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:33:36.003 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:38:36.005 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:42:31.687 INFO  com.lzn.config.LogAspect                          :76   [32mJmSEafsc[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 17:42:31.688 INFO  com.lzn.config.LogAspect                          :77   [32mJmSEafsc[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 17:42:31.688 INFO  com.lzn.config.LogAspect                          :78   [32mJmSEafsc[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 17:42:31.688 INFO  com.lzn.config.LogAspect                          :79   [32mJmSEafsc[0;39m 远程地址: 127.0.0.1
+2020-12-06 17:42:31.688 INFO  com.lzn.config.LogAspect                          :97   [32mJmSEafsc[0;39m 请求参数: [null,"C"]
+2020-12-06 17:42:31.688 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mJmSEafsc[0;39m 课程封面5.jpg
+2020-12-06 17:42:31.689 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mJmSEafsc[0;39m 210224
+2020-12-06 17:42:31.690 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mJmSEafsc[0;39m D:\code\file\course\glhGIlnm.jpg
+2020-12-06 17:42:31.690 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mJmSEafsc[0;39m 保存文件记录开始
+2020-12-06 17:42:31.691 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJmSEafsc[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 17:42:31.693 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJmSEafsc[0;39m ==> Parameters: hbTrsA8b(String), course\glhGIlnm.jpg(String), 课程封面5.jpg(String), jpg(String), 210224(Integer), C(String), 2020-12-06 17:42:31.69(Timestamp), 2020-12-06 17:42:31.69(Timestamp)
+2020-12-06 17:42:31.698 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJmSEafsc[0;39m <==    Updates: 1
+2020-12-06 17:42:31.699 INFO  com.lzn.config.LogAspect                          :109  [32mJmSEafsc[0;39m 返回结果: {"content":{"name":"课程封面5.jpg","path":"http://127.0.0.1:9000/file/f/course\\glhGIlnm.jpg","size":210224,"suffix":"jpg","use":"C"},"success":true}
+2020-12-06 17:42:31.699 INFO  com.lzn.config.LogAspect                          :110  [32mJmSEafsc[0;39m ------------- 结束 耗时：12 ms -------------
+2020-12-06 17:43:36.007 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:48:36.010 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:53:36.010 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 17:58:36.012 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:03:36.014 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:06:37.812 INFO  com.lzn.config.LogAspect                          :76   [32myKtW4HBL[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:06:37.813 INFO  com.lzn.config.LogAspect                          :77   [32myKtW4HBL[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:06:37.813 INFO  com.lzn.config.LogAspect                          :78   [32myKtW4HBL[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:06:37.814 INFO  com.lzn.config.LogAspect                          :79   [32myKtW4HBL[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:06:37.814 INFO  com.lzn.config.LogAspect                          :97   [32myKtW4HBL[0;39m 请求参数: [null,"C"]
+2020-12-06 18:06:37.814 INFO  com.lzn.file.controller.admin.UploadController    :48   [32myKtW4HBL[0;39m test1.mp4
+2020-12-06 18:06:37.814 INFO  com.lzn.file.controller.admin.UploadController    :49   [32myKtW4HBL[0;39m 342107
+2020-12-06 18:06:37.821 INFO  com.lzn.file.controller.admin.UploadController    :71   [32myKtW4HBL[0;39m D:\code\file\course\ybtYxJAV.mp4
+2020-12-06 18:06:37.822 INFO  com.lzn.file.controller.admin.UploadController    :73   [32myKtW4HBL[0;39m 保存文件记录开始
+2020-12-06 18:06:37.823 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32myKtW4HBL[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:06:37.824 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32myKtW4HBL[0;39m ==> Parameters: I1zFCPqp(String), course\ybtYxJAV.mp4(String), test1.mp4(String), mp4(String), 342107(Integer), C(String), 2020-12-06 18:06:37.822(Timestamp), 2020-12-06 18:06:37.822(Timestamp)
+2020-12-06 18:06:37.830 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32myKtW4HBL[0;39m <==    Updates: 1
+2020-12-06 18:06:37.831 INFO  com.lzn.config.LogAspect                          :109  [32myKtW4HBL[0;39m 返回结果: {"content":{"name":"test1.mp4","path":"http://127.0.0.1:9000/file/f/course\\ybtYxJAV.mp4","size":342107,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:06:37.831 INFO  com.lzn.config.LogAspect                          :110  [32myKtW4HBL[0;39m ------------- 结束 耗时：19 ms -------------
+2020-12-06 18:08:36.016 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:08:40.091 ERROR o.a.c.c.C.[.[.[/file].[dispatcherServlet]         :175  [32myvVtuH8h[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/file] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded; nested exception is java.lang.IllegalStateException: org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException: the request was rejected because its size (86411379) exceeds the configured maximum (10485760)] with root cause
+org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException: the request was rejected because its size (86411379) exceeds the configured maximum (10485760)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:146)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:190)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:209)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:127)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:256)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:280)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2869)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2771)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1178)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1012)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-06 18:10:14.323 INFO  com.lzn.config.LogAspect                          :76   [32mgWF5yXYO[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:10:14.324 INFO  com.lzn.config.LogAspect                          :77   [32mgWF5yXYO[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:10:14.324 INFO  com.lzn.config.LogAspect                          :78   [32mgWF5yXYO[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:10:14.324 INFO  com.lzn.config.LogAspect                          :79   [32mgWF5yXYO[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:10:14.324 INFO  com.lzn.config.LogAspect                          :97   [32mgWF5yXYO[0;39m 请求参数: [null,"C"]
+2020-12-06 18:10:14.325 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mgWF5yXYO[0;39m test1.mp4
+2020-12-06 18:10:14.325 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mgWF5yXYO[0;39m 342107
+2020-12-06 18:10:14.327 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mgWF5yXYO[0;39m D:\code\file\course\NxkUlQlw.mp4
+2020-12-06 18:10:14.327 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mgWF5yXYO[0;39m 保存文件记录开始
+2020-12-06 18:10:14.328 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mgWF5yXYO[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:10:14.330 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mgWF5yXYO[0;39m ==> Parameters: cCEBMES4(String), course\NxkUlQlw.mp4(String), test1.mp4(String), mp4(String), 342107(Integer), C(String), 2020-12-06 18:10:14.328(Timestamp), 2020-12-06 18:10:14.328(Timestamp)
+2020-12-06 18:10:14.335 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mgWF5yXYO[0;39m <==    Updates: 1
+2020-12-06 18:10:14.336 INFO  com.lzn.config.LogAspect                          :109  [32mgWF5yXYO[0;39m 返回结果: {"content":{"name":"test1.mp4","path":"http://127.0.0.1:9000/file/f/course\\NxkUlQlw.mp4","size":342107,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:10:14.336 INFO  com.lzn.config.LogAspect                          :110  [32mgWF5yXYO[0;39m ------------- 结束 耗时：13 ms -------------
+2020-12-06 18:13:36.018 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:13:40.616 INFO  com.lzn.config.LogAspect                          :76   [32m1ekP6ZGy[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:13:40.619 INFO  com.lzn.config.LogAspect                          :77   [32m1ekP6ZGy[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:13:40.619 INFO  com.lzn.config.LogAspect                          :78   [32m1ekP6ZGy[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:13:40.619 INFO  com.lzn.config.LogAspect                          :79   [32m1ekP6ZGy[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:13:40.619 INFO  com.lzn.config.LogAspect                          :97   [32m1ekP6ZGy[0;39m 请求参数: [null,"C"]
+2020-12-06 18:13:40.619 INFO  com.lzn.file.controller.admin.UploadController    :48   [32m1ekP6ZGy[0;39m test.mp4
+2020-12-06 18:13:40.619 INFO  com.lzn.file.controller.admin.UploadController    :49   [32m1ekP6ZGy[0;39m 539246
+2020-12-06 18:13:40.620 INFO  com.lzn.file.controller.admin.UploadController    :71   [32m1ekP6ZGy[0;39m D:\code\file\course\BT4bNCVc.mp4
+2020-12-06 18:13:40.621 INFO  com.lzn.file.controller.admin.UploadController    :73   [32m1ekP6ZGy[0;39m 保存文件记录开始
+2020-12-06 18:13:40.621 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m1ekP6ZGy[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:13:40.623 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m1ekP6ZGy[0;39m ==> Parameters: lLgt13Ni(String), course\BT4bNCVc.mp4(String), test.mp4(String), mp4(String), 539246(Integer), C(String), 2020-12-06 18:13:40.621(Timestamp), 2020-12-06 18:13:40.621(Timestamp)
+2020-12-06 18:13:40.627 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m1ekP6ZGy[0;39m <==    Updates: 1
+2020-12-06 18:13:40.628 INFO  com.lzn.config.LogAspect                          :109  [32m1ekP6ZGy[0;39m 返回结果: {"content":{"name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\BT4bNCVc.mp4","size":539246,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:13:40.628 INFO  com.lzn.config.LogAspect                          :110  [32m1ekP6ZGy[0;39m ------------- 结束 耗时：12 ms -------------
+2020-12-06 18:14:07.452 ERROR o.a.c.c.C.[.[.[/file].[dispatcherServlet]         :175  [32mwIMsIS9T[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/file] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded; nested exception is java.lang.IllegalStateException: org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException: the request was rejected because its size (106824413) exceeds the configured maximum (10485760)] with root cause
+org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException: the request was rejected because its size (106824413) exceeds the configured maximum (10485760)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:146)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:190)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:209)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:127)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:256)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:280)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2869)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2771)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1178)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1012)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-06 18:18:27.080 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-06 18:18:28.506 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-06 18:18:29.057 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-06 18:18:29.666 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-06 18:18:29.675 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-06 18:18:29.676 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-06 18:18:29.676 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-06 18:18:29.763 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-06 18:18:29.764 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1245 ms
+2020-12-06 18:18:30.373 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 18:18:30.373 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 18:18:30.377 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 18:18:30.377 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 18:18:31.720 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 18:18:31.758 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-06 18:18:32.861 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 18:18:32.889 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-06 18:18:32.935 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-06 18:18:32.987 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-06 18:18:33.179 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-06 18:18:33.180 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-06 18:18:33.272 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-06 18:18:33.272 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-06 18:18:33.451 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:18:33.513 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-06 18:18:33.513 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-06 18:18:33.514 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-06 18:18:33.514 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-06 18:18:33.514 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-06 18:18:33.514 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-06 18:18:33.514 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-06 18:18:33.633 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-06 18:18:33.635 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-06 18:18:33.636 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-06 18:18:33.638 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607249913637 with initial instances count: 3
+2020-12-06 18:18:33.641 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-06 18:18:33.641 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607249913641, current=UP, previous=STARTING]
+2020-12-06 18:18:33.643 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-06 18:18:33.643 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-06 18:18:33.668 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-06 18:18:33.670 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-06 18:18:33.674 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-06 18:18:34.747 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 18:18:34.762 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.034 seconds (JVM running for 9.501)
+2020-12-06 18:18:34.763 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-06 18:18:34.763 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 18:18:56.140 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 18:18:56.140 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 18:18:56.151 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 11 ms
+2020-12-06 18:19:00.114 INFO  com.lzn.config.LogAspect                          :76   [32mIBm5iyVD[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:19:00.115 INFO  com.lzn.config.LogAspect                          :77   [32mIBm5iyVD[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:19:00.115 INFO  com.lzn.config.LogAspect                          :78   [32mIBm5iyVD[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:19:00.115 INFO  com.lzn.config.LogAspect                          :79   [32mIBm5iyVD[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:19:00.119 INFO  com.lzn.config.LogAspect                          :97   [32mIBm5iyVD[0;39m 请求参数: [null,"C"]
+2020-12-06 18:19:00.121 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mIBm5iyVD[0;39m 8-8 作业讲解课程内容中增加文件管理_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4
+2020-12-06 18:19:00.122 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mIBm5iyVD[0;39m 106824042
+2020-12-06 18:19:00.170 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mIBm5iyVD[0;39m D:\code\file\course\fo3m3LAU.mp4
+2020-12-06 18:19:00.170 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mIBm5iyVD[0;39m 保存文件记录开始
+2020-12-06 18:19:00.299 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mIBm5iyVD[0;39m HikariPool-1 - Starting...
+2020-12-06 18:19:00.466 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mIBm5iyVD[0;39m HikariPool-1 - Start completed.
+2020-12-06 18:19:00.471 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mIBm5iyVD[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:19:00.486 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mIBm5iyVD[0;39m ==> Parameters: FFmMyrOb(String), course\fo3m3LAU.mp4(String), 8-8 作业讲解课程内容中增加文件管理_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4(String), mp4(String), 106824042(Integer), C(String), 2020-12-06 18:19:00.173(Timestamp), 2020-12-06 18:19:00.173(Timestamp)
+2020-12-06 18:19:00.492 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mIBm5iyVD[0;39m <==    Updates: 1
+2020-12-06 18:19:00.506 INFO  com.lzn.config.LogAspect                          :109  [32mIBm5iyVD[0;39m 返回结果: {"content":{"name":"8-8 作业讲解课程内容中增加文件管理_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4","path":"http://127.0.0.1:9000/file/f/course\\fo3m3LAU.mp4","size":106824042,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:19:00.506 INFO  com.lzn.config.LogAspect                          :110  [32mIBm5iyVD[0;39m ------------- 结束 耗时：393 ms -------------
