@@ -78,6 +78,23 @@ function PrefixInteger(num, length) {
 }
 
 /**
+ * 格式化文件大小
+ * @param value
+ * @returns {string}
+ */
+let formatFileSize = (value) => {
+    value = value || 0;
+    let result;
+    if (value > 100 * 1024) {
+        result = Math.round((value / 1024 / 1024) * 100) / 100 + "MB";
+    } else {
+        result = Math.round((value / 1024) * 100) / 100 + "KB";
+    }
+    return result;
+};
+
+
+/**
  * 控制长度
  */
 function ellipsis(value) {
@@ -92,5 +109,6 @@ function ellipsis(value) {
 export default {
     optionKV,
     formatSecond,
-    ellipsis
+    ellipsis,
+		formatFileSize
 }
