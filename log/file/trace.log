@@ -1605,3 +1605,139 @@ org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException: the requ
 2020-12-06 18:19:00.492 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mIBm5iyVD[0;39m <==    Updates: 1
 2020-12-06 18:19:00.506 INFO  com.lzn.config.LogAspect                          :109  [32mIBm5iyVD[0;39m 返回结果: {"content":{"name":"8-8 作业讲解课程内容中增加文件管理_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4","path":"http://127.0.0.1:9000/file/f/course\\fo3m3LAU.mp4","size":106824042,"suffix":"mp4","use":"C"},"success":true}
 2020-12-06 18:19:00.506 INFO  com.lzn.config.LogAspect                          :110  [32mIBm5iyVD[0;39m ------------- 结束 耗时：393 ms -------------
+2020-12-06 18:23:33.515 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:28:33.517 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:33:33.519 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:38:33.520 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:39:06.281 INFO  com.lzn.config.LogAspect                          :76   [32mquA5ew6T[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:39:06.281 INFO  com.lzn.config.LogAspect                          :77   [32mquA5ew6T[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:39:06.281 INFO  com.lzn.config.LogAspect                          :78   [32mquA5ew6T[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:39:06.281 INFO  com.lzn.config.LogAspect                          :79   [32mquA5ew6T[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:39:06.282 INFO  com.lzn.config.LogAspect                          :97   [32mquA5ew6T[0;39m 请求参数: [null,"C"]
+2020-12-06 18:39:06.282 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mquA5ew6T[0;39m 8-4 文件上传组件开发2_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4
+2020-12-06 18:39:06.282 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mquA5ew6T[0;39m 68155310
+2020-12-06 18:39:06.825 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mquA5ew6T[0;39m D:\code\file\course\tma2rIQr.mp4
+2020-12-06 18:39:06.825 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mquA5ew6T[0;39m 保存文件记录开始
+2020-12-06 18:39:06.826 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mquA5ew6T[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:39:06.828 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mquA5ew6T[0;39m ==> Parameters: lrYbobCl(String), course\tma2rIQr.mp4(String), 8-4 文件上传组件开发2_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4(String), mp4(String), 68155310(Integer), C(String), 2020-12-06 18:39:06.825(Timestamp), 2020-12-06 18:39:06.825(Timestamp)
+2020-12-06 18:39:06.833 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mquA5ew6T[0;39m <==    Updates: 1
+2020-12-06 18:39:06.833 INFO  com.lzn.config.LogAspect                          :109  [32mquA5ew6T[0;39m 返回结果: {"content":{"name":"8-4 文件上传组件开发2_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4","path":"http://127.0.0.1:9000/file/f/course\\tma2rIQr.mp4","size":68155310,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:39:06.833 INFO  com.lzn.config.LogAspect                          :110  [32mquA5ew6T[0;39m ------------- 结束 耗时：552 ms -------------
+2020-12-06 18:40:09.612 INFO  com.lzn.config.LogAspect                          :76   [32m9iUVIbca[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:40:09.613 INFO  com.lzn.config.LogAspect                          :77   [32m9iUVIbca[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:40:09.613 INFO  com.lzn.config.LogAspect                          :78   [32m9iUVIbca[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:40:09.613 INFO  com.lzn.config.LogAspect                          :79   [32m9iUVIbca[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:40:09.614 INFO  com.lzn.config.LogAspect                          :97   [32m9iUVIbca[0;39m 请求参数: [null,"C"]
+2020-12-06 18:40:09.614 INFO  com.lzn.file.controller.admin.UploadController    :48   [32m9iUVIbca[0;39m test1.mp4
+2020-12-06 18:40:09.614 INFO  com.lzn.file.controller.admin.UploadController    :49   [32m9iUVIbca[0;39m 342107
+2020-12-06 18:40:09.616 INFO  com.lzn.file.controller.admin.UploadController    :71   [32m9iUVIbca[0;39m D:\code\file\course\FINWC1FK.mp4
+2020-12-06 18:40:09.618 INFO  com.lzn.file.controller.admin.UploadController    :73   [32m9iUVIbca[0;39m 保存文件记录开始
+2020-12-06 18:40:09.620 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m9iUVIbca[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:40:09.621 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m9iUVIbca[0;39m ==> Parameters: 22YePfZf(String), course\FINWC1FK.mp4(String), test1.mp4(String), mp4(String), 342107(Integer), C(String), 2020-12-06 18:40:09.619(Timestamp), 2020-12-06 18:40:09.619(Timestamp)
+2020-12-06 18:40:09.626 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m9iUVIbca[0;39m <==    Updates: 1
+2020-12-06 18:40:09.627 INFO  com.lzn.config.LogAspect                          :109  [32m9iUVIbca[0;39m 返回结果: {"content":{"name":"test1.mp4","path":"http://127.0.0.1:9000/file/f/course\\FINWC1FK.mp4","size":342107,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:40:09.627 INFO  com.lzn.config.LogAspect                          :110  [32m9iUVIbca[0;39m ------------- 结束 耗时：15 ms -------------
+2020-12-06 18:42:06.236 INFO  com.lzn.config.LogAspect                          :76   [32m3d9USLJy[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 18:42:06.236 INFO  com.lzn.config.LogAspect                          :77   [32m3d9USLJy[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 18:42:06.236 INFO  com.lzn.config.LogAspect                          :78   [32m3d9USLJy[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 18:42:06.237 INFO  com.lzn.config.LogAspect                          :79   [32m3d9USLJy[0;39m 远程地址: 127.0.0.1
+2020-12-06 18:42:06.237 INFO  com.lzn.config.LogAspect                          :97   [32m3d9USLJy[0;39m 请求参数: [null,"C"]
+2020-12-06 18:42:06.237 INFO  com.lzn.file.controller.admin.UploadController    :48   [32m3d9USLJy[0;39m test.mp4
+2020-12-06 18:42:06.237 INFO  com.lzn.file.controller.admin.UploadController    :49   [32m3d9USLJy[0;39m 539246
+2020-12-06 18:42:06.240 INFO  com.lzn.file.controller.admin.UploadController    :71   [32m3d9USLJy[0;39m D:\code\file\course\cfNiPauL.mp4
+2020-12-06 18:42:06.240 INFO  com.lzn.file.controller.admin.UploadController    :73   [32m3d9USLJy[0;39m 保存文件记录开始
+2020-12-06 18:42:06.240 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m3d9USLJy[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 18:42:06.241 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m3d9USLJy[0;39m ==> Parameters: 8QLWOgIG(String), course\cfNiPauL.mp4(String), test.mp4(String), mp4(String), 539246(Integer), C(String), 2020-12-06 18:42:06.24(Timestamp), 2020-12-06 18:42:06.24(Timestamp)
+2020-12-06 18:42:06.246 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m3d9USLJy[0;39m <==    Updates: 1
+2020-12-06 18:42:06.247 INFO  com.lzn.config.LogAspect                          :109  [32m3d9USLJy[0;39m 返回结果: {"content":{"name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\cfNiPauL.mp4","size":539246,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 18:42:06.247 INFO  com.lzn.config.LogAspect                          :110  [32m3d9USLJy[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-06 18:43:33.523 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:48:33.525 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:53:33.527 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:58:33.529 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:03:33.529 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:08:33.532 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:13:33.534 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:18:33.535 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:20:15.852 INFO  com.lzn.config.LogAspect                          :76   [32mlxnhM614[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 19:20:15.853 INFO  com.lzn.config.LogAspect                          :77   [32mlxnhM614[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 19:20:15.853 INFO  com.lzn.config.LogAspect                          :78   [32mlxnhM614[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 19:20:15.853 INFO  com.lzn.config.LogAspect                          :79   [32mlxnhM614[0;39m 远程地址: 127.0.0.1
+2020-12-06 19:20:15.854 INFO  com.lzn.config.LogAspect                          :97   [32mlxnhM614[0;39m 请求参数: [null,"C"]
+2020-12-06 19:20:15.854 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mlxnhM614[0;39m test1.mp4
+2020-12-06 19:20:15.854 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mlxnhM614[0;39m 342107
+2020-12-06 19:20:15.859 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mlxnhM614[0;39m D:\code\file\course\G2pd38Bq.mp4
+2020-12-06 19:20:15.859 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mlxnhM614[0;39m 保存文件记录开始
+2020-12-06 19:20:15.861 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mlxnhM614[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 19:20:15.862 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mlxnhM614[0;39m ==> Parameters: 0KEuDJiV(String), course\G2pd38Bq.mp4(String), test1.mp4(String), mp4(String), 342107(Integer), C(String), 2020-12-06 19:20:15.86(Timestamp), 2020-12-06 19:20:15.86(Timestamp)
+2020-12-06 19:20:15.867 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mlxnhM614[0;39m <==    Updates: 1
+2020-12-06 19:20:15.868 INFO  com.lzn.config.LogAspect                          :109  [32mlxnhM614[0;39m 返回结果: {"content":{"name":"test1.mp4","path":"http://127.0.0.1:9000/file/f/course\\G2pd38Bq.mp4","size":342107,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 19:20:15.868 INFO  com.lzn.config.LogAspect                          :110  [32mlxnhM614[0;39m ------------- 结束 耗时：16 ms -------------
+2020-12-06 19:23:33.538 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:28:33.540 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:33:33.542 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:38:33.544 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:43:33.545 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:48:33.548 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:53:33.550 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:58:33.551 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:03:33.553 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:07:14.945 INFO  com.lzn.config.LogAspect                          :76   [32mJnvtmnCi[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 20:07:14.946 INFO  com.lzn.config.LogAspect                          :77   [32mJnvtmnCi[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 20:07:14.947 INFO  com.lzn.config.LogAspect                          :78   [32mJnvtmnCi[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 20:07:14.947 INFO  com.lzn.config.LogAspect                          :79   [32mJnvtmnCi[0;39m 远程地址: 127.0.0.1
+2020-12-06 20:07:14.947 INFO  com.lzn.config.LogAspect                          :97   [32mJnvtmnCi[0;39m 请求参数: [null,"C"]
+2020-12-06 20:07:14.947 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mJnvtmnCi[0;39m test.mp4
+2020-12-06 20:07:14.947 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mJnvtmnCi[0;39m 539246
+2020-12-06 20:07:14.955 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mJnvtmnCi[0;39m D:\code\file\course\3rxmQNuJ.mp4
+2020-12-06 20:07:14.956 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mJnvtmnCi[0;39m 保存文件记录开始
+2020-12-06 20:07:14.958 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJnvtmnCi[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 20:07:14.960 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJnvtmnCi[0;39m ==> Parameters: eYvHKAyZ(String), course\3rxmQNuJ.mp4(String), test.mp4(String), mp4(String), 539246(Integer), C(String), 2020-12-06 20:07:14.956(Timestamp), 2020-12-06 20:07:14.956(Timestamp)
+2020-12-06 20:07:14.965 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJnvtmnCi[0;39m <==    Updates: 1
+2020-12-06 20:07:14.967 INFO  com.lzn.config.LogAspect                          :109  [32mJnvtmnCi[0;39m 返回结果: {"content":{"name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\3rxmQNuJ.mp4","size":539246,"suffix":"mp4","use":"C"},"success":true}
+2020-12-06 20:07:14.968 INFO  com.lzn.config.LogAspect                          :110  [32mJnvtmnCi[0;39m ------------- 结束 耗时：23 ms -------------
+2020-12-06 20:08:33.556 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:13:33.558 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:18:33.561 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:21:27.417 INFO  com.lzn.config.LogAspect                          :76   [32ms3C07liM[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 20:21:27.418 INFO  com.lzn.config.LogAspect                          :77   [32ms3C07liM[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 20:21:27.419 INFO  com.lzn.config.LogAspect                          :78   [32ms3C07liM[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 20:21:27.419 INFO  com.lzn.config.LogAspect                          :79   [32ms3C07liM[0;39m 远程地址: 127.0.0.1
+2020-12-06 20:21:27.420 INFO  com.lzn.config.LogAspect                          :97   [32ms3C07liM[0;39m 请求参数: [null,"C"]
+2020-12-06 20:21:27.420 INFO  com.lzn.file.controller.admin.UploadController    :48   [32ms3C07liM[0;39m blob
+2020-12-06 20:21:27.420 INFO  com.lzn.file.controller.admin.UploadController    :49   [32ms3C07liM[0;39m 20971520
+2020-12-06 20:21:27.435 INFO  com.lzn.file.controller.admin.UploadController    :71   [32ms3C07liM[0;39m D:\code\file\course\ih3gk2lq.blob
+2020-12-06 20:21:27.436 INFO  com.lzn.file.controller.admin.UploadController    :73   [32ms3C07liM[0;39m 保存文件记录开始
+2020-12-06 20:21:27.437 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32ms3C07liM[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 20:21:27.438 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32ms3C07liM[0;39m ==> Parameters: u1pFvWkm(String), course\ih3gk2lq.blob(String), blob(String), blob(String), 20971520(Integer), C(String), 2020-12-06 20:21:27.436(Timestamp), 2020-12-06 20:21:27.436(Timestamp)
+2020-12-06 20:21:27.442 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32ms3C07liM[0;39m <==    Updates: 1
+2020-12-06 20:21:27.443 INFO  com.lzn.config.LogAspect                          :109  [32ms3C07liM[0;39m 返回结果: {"content":{"name":"blob","path":"http://127.0.0.1:9000/file/f/course\\ih3gk2lq.blob","size":20971520,"suffix":"blob","use":"C"},"success":true}
+2020-12-06 20:21:27.443 INFO  com.lzn.config.LogAspect                          :110  [32ms3C07liM[0;39m ------------- 结束 耗时：26 ms -------------
+2020-12-06 20:21:45.769 INFO  com.lzn.config.LogAspect                          :76   [32mXgoXMexp[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 20:21:45.769 INFO  com.lzn.config.LogAspect                          :77   [32mXgoXMexp[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 20:21:45.769 INFO  com.lzn.config.LogAspect                          :78   [32mXgoXMexp[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 20:21:45.769 INFO  com.lzn.config.LogAspect                          :79   [32mXgoXMexp[0;39m 远程地址: 127.0.0.1
+2020-12-06 20:21:45.769 INFO  com.lzn.config.LogAspect                          :97   [32mXgoXMexp[0;39m 请求参数: [null,"C"]
+2020-12-06 20:21:45.770 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mXgoXMexp[0;39m blob
+2020-12-06 20:21:45.770 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mXgoXMexp[0;39m 20971520
+2020-12-06 20:21:45.786 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mXgoXMexp[0;39m D:\code\file\course\tWIHxFHz.blob
+2020-12-06 20:21:45.786 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mXgoXMexp[0;39m 保存文件记录开始
+2020-12-06 20:21:45.787 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mXgoXMexp[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 20:21:45.788 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mXgoXMexp[0;39m ==> Parameters: AcHX5I9d(String), course\tWIHxFHz.blob(String), blob(String), blob(String), 20971520(Integer), C(String), 2020-12-06 20:21:45.787(Timestamp), 2020-12-06 20:21:45.787(Timestamp)
+2020-12-06 20:21:45.792 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mXgoXMexp[0;39m <==    Updates: 1
+2020-12-06 20:21:45.792 INFO  com.lzn.config.LogAspect                          :109  [32mXgoXMexp[0;39m 返回结果: {"content":{"name":"blob","path":"http://127.0.0.1:9000/file/f/course\\tWIHxFHz.blob","size":20971520,"suffix":"blob","use":"C"},"success":true}
+2020-12-06 20:21:45.792 INFO  com.lzn.config.LogAspect                          :110  [32mXgoXMexp[0;39m ------------- 结束 耗时：23 ms -------------
+2020-12-06 20:21:55.620 INFO  com.lzn.config.LogAspect                          :76   [32m6Ym5hDSO[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 20:21:55.620 INFO  com.lzn.config.LogAspect                          :77   [32m6Ym5hDSO[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 20:21:55.620 INFO  com.lzn.config.LogAspect                          :78   [32m6Ym5hDSO[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 20:21:55.620 INFO  com.lzn.config.LogAspect                          :79   [32m6Ym5hDSO[0;39m 远程地址: 127.0.0.1
+2020-12-06 20:21:55.621 INFO  com.lzn.config.LogAspect                          :97   [32m6Ym5hDSO[0;39m 请求参数: [null,"C"]
+2020-12-06 20:21:55.621 INFO  com.lzn.file.controller.admin.UploadController    :48   [32m6Ym5hDSO[0;39m blob
+2020-12-06 20:21:55.621 INFO  com.lzn.file.controller.admin.UploadController    :49   [32m6Ym5hDSO[0;39m 20971520
+2020-12-06 20:21:55.631 INFO  com.lzn.file.controller.admin.UploadController    :71   [32m6Ym5hDSO[0;39m D:\code\file\course\1KjIWezs.blob
+2020-12-06 20:21:55.631 INFO  com.lzn.file.controller.admin.UploadController    :73   [32m6Ym5hDSO[0;39m 保存文件记录开始
+2020-12-06 20:21:55.632 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m6Ym5hDSO[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 20:21:55.633 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m6Ym5hDSO[0;39m ==> Parameters: F9061g1a(String), course\1KjIWezs.blob(String), blob(String), blob(String), 20971520(Integer), C(String), 2020-12-06 20:21:55.631(Timestamp), 2020-12-06 20:21:55.631(Timestamp)
+2020-12-06 20:21:55.639 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m6Ym5hDSO[0;39m <==    Updates: 1
+2020-12-06 20:21:55.639 INFO  com.lzn.config.LogAspect                          :109  [32m6Ym5hDSO[0;39m 返回结果: {"content":{"name":"blob","path":"http://127.0.0.1:9000/file/f/course\\1KjIWezs.blob","size":20971520,"suffix":"blob","use":"C"},"success":true}
+2020-12-06 20:21:55.640 INFO  com.lzn.config.LogAspect                          :110  [32m6Ym5hDSO[0;39m ------------- 结束 耗时：20 ms -------------

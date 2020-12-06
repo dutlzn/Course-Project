@@ -190,3 +190,53 @@
 2020-12-06 17:52:52.735 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-06 17:57:52.736 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-06 18:02:52.737 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:07:52.739 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:08:41.063 WARN  reactor.netty.http.client.HttpClientConnect       :299  [32m        [0;39m [id: 0x7fd658bc, L:0.0.0.0/0.0.0.0:5568 ! R:localhost/127.0.0.1:9003] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection has been closed BEFORE response, while sending request body
+2020-12-06 18:08:41.081 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:122  [32m        [0;39m [aab3fb22-495]  500 Server Error for HTTP POST "/file/admin/upload"
+reactor.netty.http.client.PrematureCloseException: Connection has been closed BEFORE response, while sending request body
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ HTTP POST "/file/admin/upload" [ExceptionHandlingWebHandler]
+Stack trace:
+2020-12-06 18:12:52.740 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:14:08.450 WARN  reactor.netty.http.client.HttpClientConnect       :299  [32m        [0;39m [id: 0xb572abb2, L:0.0.0.0/0.0.0.0:5851 ! R:localhost/127.0.0.1:9003] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection has been closed BEFORE response, while sending request body
+2020-12-06 18:14:08.451 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:122  [32m        [0;39m [aab3fb22-512]  500 Server Error for HTTP POST "/file/admin/upload"
+reactor.netty.http.client.PrematureCloseException: Connection has been closed BEFORE response, while sending request body
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ HTTP POST "/file/admin/upload" [ExceptionHandlingWebHandler]
+Stack trace:
+2020-12-06 18:17:52.743 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:21:02.776 WARN  reactor.netty.channel.FluxReceive                 :294  [32m        [0;39m [id: 0x4b4763dd, L:/127.0.0.1:9000 - R:/127.0.0.1:6169] An exception has been observed post termination, use DEBUG level to see the full stack: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2020-12-06 18:22:52.745 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:27:52.746 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:32:52.747 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:37:52.748 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:42:04.359 WARN  reactor.netty.channel.FluxReceive                 :294  [32m        [0;39m [id: 0x60116fb6, L:/127.0.0.1:9000 - R:/127.0.0.1:1895] An exception has been observed post termination, use DEBUG level to see the full stack: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2020-12-06 18:42:52.750 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:47:52.752 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:52:52.754 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 18:57:52.755 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:02:52.757 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:07:52.760 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:12:52.762 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:17:52.764 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:22:52.766 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:27:52.768 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:32:52.771 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:37:52.773 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:42:52.775 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:47:52.778 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:52:52.780 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 19:57:52.782 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:02:52.785 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:07:52.787 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:12:52.789 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:17:52.792 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 20:21:27.499 WARN  reactor.netty.channel.FluxReceive                 :294  [32m        [0;39m [id: 0x2c2eff2e, L:/127.0.0.1:9000 - R:/127.0.0.1:8283] An exception has been observed post termination, use DEBUG level to see the full stack: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。

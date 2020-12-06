@@ -41,20 +41,21 @@
 
 						<v-col cols="12">
 							<!-- <v-text-field label="视频" v-model="section.video" required></v-text-field> -->
-							<file v-bind:text="'上传视频'" v-bind:afterUpload="afterUpload" v-bind:use="FILE_USE.COURSE.key" v-bind:suffixs="['mp4']"
+							<big-file v-bind:text="'上传大视频'" v-bind:afterUpload="afterUpload" v-bind:use="FILE_USE.COURSE.key" v-bind:suffixs="['mp4']"
 							>
 
-							</file>
-
-							<v-col cols="4">
-								<video v-bind:src="section.video" controls="controls">
-									
-								</video>
-							</v-col>
+							</big-file>
 						</v-col>
 
-
-
+					</v-row>
+					
+					<v-row class="d-flex justify-center">
+						<v-col cols="8">
+							<video v-bind:src="section.video" controls="controls" id="video">
+								
+							</video>
+						</v-col>
+						
 					</v-row>
 				</v-card-text>
 
@@ -176,12 +177,13 @@
 
 <script>
 	import Pagination from "../../components/pagination.vue";
-	import File from "../../components/file.vue"
+	// import File from "../../components/file.vue"
+	import BigFile from '../../components/big-file.vue'
 	export default {
 
 		components: {
 			Pagination,
-			File
+			BigFile
 		},
 
 		data: function() {
@@ -317,6 +319,16 @@
 				let _this = this;
 				let video = resp.content.path;
 				_this.section.video = video;
+				_this.getTime();
+			},
+			
+			/**
+			 * 获取时长
+			 */
+			getTime() {
+				let _this = this;
+				let ele = document.getElementById("video");
+				_this.section.time = parseInt(ele.duration, 10);
 			}
 
 		}

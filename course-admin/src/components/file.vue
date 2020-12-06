@@ -19,10 +19,10 @@
 
 <script>
 	export default {
-		name: 'file',
+		name: 'big-file',
 		props: {
 			text: {
-				default: "上传文件"
+				default: "上传大文件"
 			},
 			inputId: {
 				default: "file-upload"
