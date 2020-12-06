@@ -1,10 +1,13 @@
 package com.lzn.file.controller.admin;
 
 
+import com.lzn.dto.FileDto;
 import com.lzn.dto.ResponseDto;
+import com.lzn.service.FileService;
 import com.lzn.util.UuidUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,6 +26,9 @@ public class UploadController {
     private String FILE_PATH;
     @Value("${file.domain}")
     private String FILE_DOMAIN;
+
+    @Autowired
+    private FileService fileService;
 
     private static final Logger LOG = LoggerFactory.getLogger(
             UploadController.class
@@ -44,14 +50,31 @@ public class UploadController {
 
         // 保存文件到本地
         String fileName=  file.getOriginalFilename();
+        // 文件后缀
+        String suffix = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
         String key = UuidUtil.getShortUuid();
-        String fullPath =FILE_PATH  + "teacher/" + key +"-" + fileName;
+        String path  = "teacher/" + key + "." + suffix;
+
+        String fullPath =FILE_PATH  + path;
+        // 文件的路径应该是自动生成的
         File dest = new File(fullPath);// 生成目标位置
         file.transferTo(dest);// 写道目标位置
         LOG.info(dest.getAbsolutePath());
 
+        LOG.info("保存文件记录开始");
+        FileDto fileDto = new FileDto();
+        fileDto.setPath(path);
+        fileDto.setName(fileName);
+        fileDto.setSize(Math.toIntExact(file.getSize()));
+        fileDto.setSuffix(suffix);
+        fileDto.setUse("");
+
+
+        fileService.save(fileDto);
+
+
         ResponseDto responseDto = new ResponseDto();
-        responseDto.setContent(FILE_DOMAIN + "f/teacher/" + key + "-" +fileName);
+        responseDto.setContent(FILE_DOMAIN + path);
         return responseDto;
     }
 }
