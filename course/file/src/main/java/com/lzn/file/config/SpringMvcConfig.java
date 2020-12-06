@@ -15,9 +15,11 @@ public  class SpringMvcConfig extends WebMvcConfigurationSupport {
 
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/f/teacher/**")
-                .addResourceLocations("file:" + FILE_PATH+ "/teacher/");
-
+//        registry.addResourceHandler("/f/teacher/**")
+//                .addResourceLocations("file:" + FILE_PATH+ "/teacher/");
+//        registry.addResourceHandler("/f/teacher/**")
+//                .addResourceLocations("file:" + FILE_PATH+ "/course/");
+        registry.addResourceHandler("/f/**").addResourceLocations("file:" + FILE_PATH);
         super.addResourceHandlers(registry);
     }
 }

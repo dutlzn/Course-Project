@@ -297,3 +297,627 @@
 2020-12-06 09:21:24.119 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m2DG0tAeY[0;39m <==      Total: 5
 2020-12-06 09:21:24.119 INFO  com.lzn.config.LogAspect                          :109  [32m2DG0tAeY[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
 2020-12-06 09:21:24.119 INFO  com.lzn.config.LogAspect                          :110  [32m2DG0tAeY[0;39m ------------- 结束 耗时：17 ms -------------
+2020-12-06 09:26:10.218 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 09:27:47.976 INFO  com.lzn.config.LogAspect                          :76   [32mzh0mJmJL[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 09:27:47.977 INFO  com.lzn.config.LogAspect                          :77   [32mzh0mJmJL[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 09:27:47.978 INFO  com.lzn.config.LogAspect                          :78   [32mzh0mJmJL[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 09:27:47.978 INFO  com.lzn.config.LogAspect                          :79   [32mzh0mJmJL[0;39m 远程地址: 127.0.0.1
+2020-12-06 09:27:47.979 INFO  com.lzn.config.LogAspect                          :97   [32mzh0mJmJL[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 09:27:47.982 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mzh0mJmJL[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 09:27:47.982 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mzh0mJmJL[0;39m ==> Parameters: 
+2020-12-06 09:27:47.984 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mzh0mJmJL[0;39m <==    Columns: count(0)
+2020-12-06 09:27:47.984 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mzh0mJmJL[0;39m <==        Row: 5
+2020-12-06 09:27:47.984 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mzh0mJmJL[0;39m <==      Total: 1
+2020-12-06 09:27:47.985 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mzh0mJmJL[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 09:27:47.985 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mzh0mJmJL[0;39m ==> Parameters: 5(Integer)
+2020-12-06 09:27:47.986 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mzh0mJmJL[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 09:27:47.986 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mzh0mJmJL[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 09:27:47.987 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mzh0mJmJL[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 09:27:47.988 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mzh0mJmJL[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 09:27:47.988 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mzh0mJmJL[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 09:27:47.989 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mzh0mJmJL[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 09:27:47.989 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mzh0mJmJL[0;39m <==      Total: 5
+2020-12-06 09:27:47.990 INFO  com.lzn.config.LogAspect                          :109  [32mzh0mJmJL[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 09:27:47.991 INFO  com.lzn.config.LogAspect                          :110  [32mzh0mJmJL[0;39m ------------- 结束 耗时：16 ms -------------
+2020-12-06 09:28:19.869 INFO  com.lzn.config.LogAspect                          :76   [32mehpp8rdw[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 09:28:19.869 INFO  com.lzn.config.LogAspect                          :77   [32mehpp8rdw[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 09:28:19.869 INFO  com.lzn.config.LogAspect                          :78   [32mehpp8rdw[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 09:28:19.870 INFO  com.lzn.config.LogAspect                          :79   [32mehpp8rdw[0;39m 远程地址: 127.0.0.1
+2020-12-06 09:28:19.870 INFO  com.lzn.config.LogAspect                          :97   [32mehpp8rdw[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 09:28:19.871 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mehpp8rdw[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 09:28:19.871 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mehpp8rdw[0;39m ==> Parameters: 
+2020-12-06 09:28:19.872 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mehpp8rdw[0;39m <==    Columns: count(0)
+2020-12-06 09:28:19.873 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mehpp8rdw[0;39m <==        Row: 5
+2020-12-06 09:28:19.873 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mehpp8rdw[0;39m <==      Total: 1
+2020-12-06 09:28:19.873 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mehpp8rdw[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 09:28:19.874 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mehpp8rdw[0;39m ==> Parameters: 5(Integer)
+2020-12-06 09:28:19.876 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mehpp8rdw[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 09:28:19.877 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mehpp8rdw[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 09:28:19.878 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mehpp8rdw[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 09:28:19.880 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mehpp8rdw[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 09:28:19.882 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mehpp8rdw[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 09:28:19.883 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mehpp8rdw[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 09:28:19.883 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mehpp8rdw[0;39m <==      Total: 5
+2020-12-06 09:28:19.886 INFO  com.lzn.config.LogAspect                          :109  [32mehpp8rdw[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 09:28:19.887 INFO  com.lzn.config.LogAspect                          :110  [32mehpp8rdw[0;39m ------------- 结束 耗时：18 ms -------------
+2020-12-06 09:29:48.362 INFO  com.lzn.config.LogAspect                          :76   [32muBJMbCSP[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 09:29:48.362 INFO  com.lzn.config.LogAspect                          :77   [32muBJMbCSP[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 09:29:48.363 INFO  com.lzn.config.LogAspect                          :78   [32muBJMbCSP[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 09:29:48.363 INFO  com.lzn.config.LogAspect                          :79   [32muBJMbCSP[0;39m 远程地址: 127.0.0.1
+2020-12-06 09:29:48.363 INFO  com.lzn.config.LogAspect                          :97   [32muBJMbCSP[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 09:29:48.365 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32muBJMbCSP[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 09:29:48.366 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32muBJMbCSP[0;39m ==> Parameters: 
+2020-12-06 09:29:48.367 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32muBJMbCSP[0;39m <==    Columns: count(0)
+2020-12-06 09:29:48.367 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32muBJMbCSP[0;39m <==        Row: 5
+2020-12-06 09:29:48.368 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32muBJMbCSP[0;39m <==      Total: 1
+2020-12-06 09:29:48.368 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32muBJMbCSP[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 09:29:48.369 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32muBJMbCSP[0;39m ==> Parameters: 5(Integer)
+2020-12-06 09:29:48.369 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32muBJMbCSP[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 09:29:48.369 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32muBJMbCSP[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 09:29:48.370 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32muBJMbCSP[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 09:29:48.371 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32muBJMbCSP[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 09:29:48.372 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32muBJMbCSP[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 09:29:48.372 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32muBJMbCSP[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 09:29:48.372 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32muBJMbCSP[0;39m <==      Total: 5
+2020-12-06 09:29:48.373 INFO  com.lzn.config.LogAspect                          :109  [32muBJMbCSP[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 09:29:48.373 INFO  com.lzn.config.LogAspect                          :110  [32muBJMbCSP[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-06 09:31:10.219 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 09:36:10.221 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 09:36:28.191 INFO  com.lzn.config.LogAspect                          :76   [32mCqA6XWeL[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 09:36:28.192 INFO  com.lzn.config.LogAspect                          :77   [32mCqA6XWeL[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 09:36:28.192 INFO  com.lzn.config.LogAspect                          :78   [32mCqA6XWeL[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 09:36:28.193 INFO  com.lzn.config.LogAspect                          :79   [32mCqA6XWeL[0;39m 远程地址: 127.0.0.1
+2020-12-06 09:36:28.193 INFO  com.lzn.config.LogAspect                          :97   [32mCqA6XWeL[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 09:36:28.195 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mCqA6XWeL[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 09:36:28.196 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mCqA6XWeL[0;39m ==> Parameters: 
+2020-12-06 09:36:28.204 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mCqA6XWeL[0;39m <==    Columns: count(0)
+2020-12-06 09:36:28.205 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mCqA6XWeL[0;39m <==        Row: 5
+2020-12-06 09:36:28.206 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mCqA6XWeL[0;39m <==      Total: 1
+2020-12-06 09:36:28.206 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mCqA6XWeL[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 09:36:28.207 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mCqA6XWeL[0;39m ==> Parameters: 5(Integer)
+2020-12-06 09:36:28.211 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mCqA6XWeL[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 09:36:28.213 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mCqA6XWeL[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 09:36:28.215 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mCqA6XWeL[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 09:36:28.216 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mCqA6XWeL[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 09:36:28.216 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mCqA6XWeL[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 09:36:28.217 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mCqA6XWeL[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 09:36:28.218 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mCqA6XWeL[0;39m <==      Total: 5
+2020-12-06 09:36:28.219 INFO  com.lzn.config.LogAspect                          :109  [32mCqA6XWeL[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 09:36:28.219 INFO  com.lzn.config.LogAspect                          :110  [32mCqA6XWeL[0;39m ------------- 结束 耗时：28 ms -------------
+2020-12-06 09:41:10.223 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 09:46:10.225 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 09:51:10.226 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 09:56:10.229 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:01:10.231 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:06:10.233 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:11:10.235 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:16:10.238 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:21:10.239 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:26:10.242 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:31:10.243 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:36:10.246 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:37:03.192 INFO  com.lzn.config.LogAspect                          :76   [32mK1Wt2xpY[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 10:37:03.192 INFO  com.lzn.config.LogAspect                          :77   [32mK1Wt2xpY[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 10:37:03.193 INFO  com.lzn.config.LogAspect                          :78   [32mK1Wt2xpY[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 10:37:03.193 INFO  com.lzn.config.LogAspect                          :79   [32mK1Wt2xpY[0;39m 远程地址: 127.0.0.1
+2020-12-06 10:37:03.193 INFO  com.lzn.config.LogAspect                          :97   [32mK1Wt2xpY[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 10:37:03.199 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mK1Wt2xpY[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 10:37:03.201 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mK1Wt2xpY[0;39m ==> Parameters: 
+2020-12-06 10:37:03.202 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mK1Wt2xpY[0;39m <==    Columns: count(0)
+2020-12-06 10:37:03.202 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mK1Wt2xpY[0;39m <==        Row: 5
+2020-12-06 10:37:03.203 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mK1Wt2xpY[0;39m <==      Total: 1
+2020-12-06 10:37:03.204 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mK1Wt2xpY[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 10:37:03.204 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mK1Wt2xpY[0;39m ==> Parameters: 5(Integer)
+2020-12-06 10:37:03.212 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mK1Wt2xpY[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 10:37:03.213 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mK1Wt2xpY[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 10:37:03.213 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mK1Wt2xpY[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 10:37:03.214 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mK1Wt2xpY[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 10:37:03.214 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mK1Wt2xpY[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 10:37:03.215 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mK1Wt2xpY[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 10:37:03.216 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mK1Wt2xpY[0;39m <==      Total: 5
+2020-12-06 10:37:03.217 INFO  com.lzn.config.LogAspect                          :109  [32mK1Wt2xpY[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 10:37:03.218 INFO  com.lzn.config.LogAspect                          :110  [32mK1Wt2xpY[0;39m ------------- 结束 耗时：27 ms -------------
+2020-12-06 10:41:10.248 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:46:10.250 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:51:10.252 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:56:10.253 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 10:58:24.109 INFO  com.lzn.config.LogAspect                          :76   [32meT0q7MI4[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 10:58:24.109 INFO  com.lzn.config.LogAspect                          :77   [32meT0q7MI4[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 10:58:24.109 INFO  com.lzn.config.LogAspect                          :78   [32meT0q7MI4[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 10:58:24.110 INFO  com.lzn.config.LogAspect                          :79   [32meT0q7MI4[0;39m 远程地址: 127.0.0.1
+2020-12-06 10:58:24.110 INFO  com.lzn.config.LogAspect                          :97   [32meT0q7MI4[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 10:58:24.114 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32meT0q7MI4[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 10:58:24.116 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32meT0q7MI4[0;39m ==> Parameters: 
+2020-12-06 10:58:24.120 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32meT0q7MI4[0;39m <==    Columns: count(0)
+2020-12-06 10:58:24.120 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32meT0q7MI4[0;39m <==        Row: 5
+2020-12-06 10:58:24.120 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32meT0q7MI4[0;39m <==      Total: 1
+2020-12-06 10:58:24.122 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32meT0q7MI4[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 10:58:24.122 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32meT0q7MI4[0;39m ==> Parameters: 5(Integer)
+2020-12-06 10:58:24.123 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32meT0q7MI4[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 10:58:24.124 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32meT0q7MI4[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 10:58:24.124 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32meT0q7MI4[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 10:58:24.124 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32meT0q7MI4[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 10:58:24.125 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32meT0q7MI4[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 10:58:24.125 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32meT0q7MI4[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 10:58:24.125 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32meT0q7MI4[0;39m <==      Total: 5
+2020-12-06 10:58:24.126 INFO  com.lzn.config.LogAspect                          :109  [32meT0q7MI4[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 10:58:24.126 INFO  com.lzn.config.LogAspect                          :110  [32meT0q7MI4[0;39m ------------- 结束 耗时：17 ms -------------
+2020-12-06 11:01:10.255 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:06:10.256 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:11:10.257 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:16:10.259 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:21:10.261 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:26:10.263 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:31:10.264 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:36:10.265 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:41:10.267 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:46:10.269 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:51:10.270 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 11:56:10.272 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:01:10.273 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:06:10.275 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:11:10.276 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:16:10.278 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:21:10.279 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:26:10.282 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:31:10.284 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:36:10.284 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:41:10.286 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:46:10.287 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:51:10.289 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 12:56:10.291 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:01:10.293 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:06:10.295 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:11:10.296 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:16:10.298 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:21:10.300 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:26:10.302 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:31:10.303 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:36:10.304 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:41:10.306 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:43:28.314 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-06 13:43:29.771 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-06 13:43:30.343 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-06 13:43:30.936 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-06 13:43:30.944 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-06 13:43:30.945 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-06 13:43:30.945 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-06 13:43:31.035 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-06 13:43:31.036 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1250 ms
+2020-12-06 13:43:31.700 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 13:43:31.700 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 13:43:31.704 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 13:43:31.704 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 13:43:33.049 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 13:43:33.087 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-06 13:43:34.189 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 13:43:34.228 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-06 13:43:34.276 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-06 13:43:34.320 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-06 13:43:34.535 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-06 13:43:34.535 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-06 13:43:34.646 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-06 13:43:34.646 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-06 13:43:34.823 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:43:34.885 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-06 13:43:34.885 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-06 13:43:34.886 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-06 13:43:34.886 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-06 13:43:34.886 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-06 13:43:34.886 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-06 13:43:34.886 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-06 13:43:35.013 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-06 13:43:35.015 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-06 13:43:35.017 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-06 13:43:35.020 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607233415019 with initial instances count: 3
+2020-12-06 13:43:35.023 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-06 13:43:35.024 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607233415024, current=UP, previous=STARTING]
+2020-12-06 13:43:35.026 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-06 13:43:35.026 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-06 13:43:35.052 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-06 13:43:35.053 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-06 13:43:35.054 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-06 13:43:36.130 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 13:43:36.137 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.166 seconds (JVM running for 9.626)
+2020-12-06 13:43:36.138 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-06 13:43:36.138 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 13:43:41.591 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 13:43:41.591 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 13:43:41.601 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
+2020-12-06 13:43:41.649 INFO  com.lzn.config.LogAspect                          :76   [32mEv7I7W8G[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 13:43:41.650 INFO  com.lzn.config.LogAspect                          :77   [32mEv7I7W8G[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 13:43:41.650 INFO  com.lzn.config.LogAspect                          :78   [32mEv7I7W8G[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 13:43:41.650 INFO  com.lzn.config.LogAspect                          :79   [32mEv7I7W8G[0;39m 远程地址: 127.0.0.1
+2020-12-06 13:43:41.664 INFO  com.lzn.config.LogAspect                          :97   [32mEv7I7W8G[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 13:43:41.833 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mEv7I7W8G[0;39m HikariPool-1 - Starting...
+2020-12-06 13:43:42.018 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mEv7I7W8G[0;39m HikariPool-1 - Start completed.
+2020-12-06 13:43:42.063 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mEv7I7W8G[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 13:43:42.077 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mEv7I7W8G[0;39m ==> Parameters: 
+2020-12-06 13:43:42.087 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mEv7I7W8G[0;39m <==    Columns: count(0)
+2020-12-06 13:43:42.087 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mEv7I7W8G[0;39m <==        Row: 5
+2020-12-06 13:43:42.089 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mEv7I7W8G[0;39m <==      Total: 1
+2020-12-06 13:43:42.090 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mEv7I7W8G[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 13:43:42.091 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mEv7I7W8G[0;39m ==> Parameters: 5(Integer)
+2020-12-06 13:43:42.092 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mEv7I7W8G[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 13:43:42.092 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mEv7I7W8G[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 13:43:42.093 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mEv7I7W8G[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 13:43:42.094 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mEv7I7W8G[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 13:43:42.095 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mEv7I7W8G[0;39m <==        Row: Y20rmSnX, teacher/yih1sgSX.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:12:17.679, 2020-12-06 09:12:17.679
+2020-12-06 13:43:42.096 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mEv7I7W8G[0;39m <==        Row: ZkT8tKF5, teacher/JQUNYJU5.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:13:47.237, 2020-12-06 09:13:47.237
+2020-12-06 13:43:42.097 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mEv7I7W8G[0;39m <==      Total: 5
+2020-12-06 13:43:42.108 INFO  com.lzn.config.LogAspect                          :109  [32mEv7I7W8G[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607217137679,"id":"Y20rmSnX","name":"20111108205452769.jpg","path":"teacher/yih1sgSX.jpg","size":172854,"suffix":"jpg","updatedAt":1607217137679,"use":""},{"createdAt":1607217227237,"id":"ZkT8tKF5","name":"20111108205451737.jpg","path":"teacher/JQUNYJU5.jpg","size":172854,"suffix":"jpg","updatedAt":1607217227237,"use":""}],"page":1,"size":5,"total":5},"success":true}
+2020-12-06 13:43:42.108 INFO  com.lzn.config.LogAspect                          :110  [32mEv7I7W8G[0;39m ------------- 结束 耗时：461 ms -------------
+2020-12-06 13:46:57.949 INFO  com.lzn.config.LogAspect                          :76   [32mhdjR2nX4[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 13:46:57.950 INFO  com.lzn.config.LogAspect                          :77   [32mhdjR2nX4[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 13:46:57.950 INFO  com.lzn.config.LogAspect                          :78   [32mhdjR2nX4[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 13:46:57.950 INFO  com.lzn.config.LogAspect                          :79   [32mhdjR2nX4[0;39m 远程地址: 127.0.0.1
+2020-12-06 13:46:57.950 INFO  com.lzn.config.LogAspect                          :97   [32mhdjR2nX4[0;39m 请求参数: [null,"T"]
+2020-12-06 13:46:57.952 INFO  com.lzn.file.controller.admin.UploadController    :50   [32mhdjR2nX4[0;39m 20111108205451737.jpg
+2020-12-06 13:46:57.953 INFO  com.lzn.file.controller.admin.UploadController    :51   [32mhdjR2nX4[0;39m 172854
+2020-12-06 13:46:57.964 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mhdjR2nX4[0;39m D:\code\file\teacher\OcziSJhI.jpg
+2020-12-06 13:46:57.965 INFO  com.lzn.file.controller.admin.UploadController    :75   [32mhdjR2nX4[0;39m 保存文件记录开始
+2020-12-06 13:46:57.967 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mhdjR2nX4[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 13:46:57.968 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mhdjR2nX4[0;39m ==> Parameters: TF8IENux(String), teacher\OcziSJhI.jpg(String), 20111108205451737.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 13:46:57.966(Timestamp), 2020-12-06 13:46:57.966(Timestamp)
+2020-12-06 13:46:57.972 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mhdjR2nX4[0;39m <==    Updates: 1
+2020-12-06 13:46:57.973 INFO  com.lzn.config.LogAspect                          :109  [32mhdjR2nX4[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\OcziSJhI.jpg","success":true}
+2020-12-06 13:46:57.973 INFO  com.lzn.config.LogAspect                          :110  [32mhdjR2nX4[0;39m ------------- 结束 耗时：24 ms -------------
+2020-12-06 13:48:15.313 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-06 13:48:16.745 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-06 13:48:17.289 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-06 13:48:17.925 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-06 13:48:17.933 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-06 13:48:17.934 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-06 13:48:17.934 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-06 13:48:18.022 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-06 13:48:18.022 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1263 ms
+2020-12-06 13:48:18.597 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 13:48:18.598 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 13:48:18.601 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 13:48:18.601 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 13:48:19.965 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 13:48:19.998 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-06 13:48:21.102 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 13:48:21.135 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-06 13:48:21.189 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-06 13:48:21.235 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-06 13:48:21.441 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-06 13:48:21.441 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-06 13:48:21.554 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-06 13:48:21.554 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-06 13:48:21.771 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:48:21.841 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-06 13:48:21.841 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-06 13:48:21.841 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-06 13:48:21.842 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-06 13:48:21.842 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-06 13:48:21.842 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-06 13:48:21.842 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-06 13:48:21.963 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-06 13:48:21.965 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-06 13:48:21.966 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-06 13:48:21.969 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607233701968 with initial instances count: 3
+2020-12-06 13:48:21.973 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-06 13:48:21.973 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607233701973, current=UP, previous=STARTING]
+2020-12-06 13:48:21.975 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-06 13:48:21.975 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-06 13:48:22.001 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-06 13:48:22.002 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-06 13:48:22.002 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-06 13:48:23.081 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 13:48:23.087 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.137 seconds (JVM running for 9.596)
+2020-12-06 13:48:23.089 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-06 13:48:23.089 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 13:48:25.763 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 13:48:25.763 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 13:48:25.771 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
+2020-12-06 13:48:34.855 INFO  com.lzn.config.LogAspect                          :76   [32mBWW6Nj1j[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 13:48:34.855 INFO  com.lzn.config.LogAspect                          :77   [32mBWW6Nj1j[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 13:48:34.855 INFO  com.lzn.config.LogAspect                          :78   [32mBWW6Nj1j[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 13:48:34.855 INFO  com.lzn.config.LogAspect                          :79   [32mBWW6Nj1j[0;39m 远程地址: 127.0.0.1
+2020-12-06 13:48:34.860 INFO  com.lzn.config.LogAspect                          :97   [32mBWW6Nj1j[0;39m 请求参数: [null,"T"]
+2020-12-06 13:48:34.864 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mBWW6Nj1j[0;39m 20111108205452769.jpg
+2020-12-06 13:48:34.864 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mBWW6Nj1j[0;39m 172854
+2020-12-06 13:48:34.866 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mBWW6Nj1j[0;39m D:\code\file\teacher\AT6PLQ88.jpg
+2020-12-06 13:48:34.867 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mBWW6Nj1j[0;39m 保存文件记录开始
+2020-12-06 13:48:35.033 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mBWW6Nj1j[0;39m HikariPool-1 - Starting...
+2020-12-06 13:48:35.217 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mBWW6Nj1j[0;39m HikariPool-1 - Start completed.
+2020-12-06 13:48:35.222 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mBWW6Nj1j[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 13:48:35.238 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mBWW6Nj1j[0;39m ==> Parameters: sahdRTf3(String), teacher\AT6PLQ88.jpg(String), 20111108205452769.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 13:48:34.87(Timestamp), 2020-12-06 13:48:34.87(Timestamp)
+2020-12-06 13:48:35.243 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mBWW6Nj1j[0;39m <==    Updates: 1
+2020-12-06 13:48:35.254 INFO  com.lzn.config.LogAspect                          :109  [32mBWW6Nj1j[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\AT6PLQ88.jpg","success":true}
+2020-12-06 13:48:35.254 INFO  com.lzn.config.LogAspect                          :110  [32mBWW6Nj1j[0;39m ------------- 结束 耗时：401 ms -------------
+2020-12-06 13:48:40.169 INFO  com.lzn.config.LogAspect                          :76   [32mVkKyFFh9[0;39m ------------- 【文件】查询开始 -------------
+2020-12-06 13:48:40.170 INFO  com.lzn.config.LogAspect                          :77   [32mVkKyFFh9[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-06 13:48:40.170 INFO  com.lzn.config.LogAspect                          :78   [32mVkKyFFh9[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-06 13:48:40.170 INFO  com.lzn.config.LogAspect                          :79   [32mVkKyFFh9[0;39m 远程地址: 127.0.0.1
+2020-12-06 13:48:40.175 INFO  com.lzn.config.LogAspect                          :97   [32mVkKyFFh9[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-06 13:48:40.241 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mVkKyFFh9[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-06 13:48:40.242 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mVkKyFFh9[0;39m ==> Parameters: 
+2020-12-06 13:48:40.252 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mVkKyFFh9[0;39m <==    Columns: count(0)
+2020-12-06 13:48:40.253 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mVkKyFFh9[0;39m <==        Row: 7
+2020-12-06 13:48:40.254 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mVkKyFFh9[0;39m <==      Total: 1
+2020-12-06 13:48:40.256 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mVkKyFFh9[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-12-06 13:48:40.256 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mVkKyFFh9[0;39m ==> Parameters: 5(Integer)
+2020-12-06 13:48:40.257 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mVkKyFFh9[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-12-06 13:48:40.257 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mVkKyFFh9[0;39m <==        Row: edneSlJU, teacher/mgC89wTO.jpg, 20111108205452769.jpg, jpg, 172854, , 2020-12-06 09:21:20.839, 2020-12-06 09:21:20.839
+2020-12-06 13:48:40.258 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mVkKyFFh9[0;39m <==        Row: IErRIyYj, teacher/8SWMSIfV.jpg, 20111108205452638.jpg, jpg, 172854, , 2020-12-06 09:10:19.197, 2020-12-06 09:10:19.197
+2020-12-06 13:48:40.259 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mVkKyFFh9[0;39m <==        Row: KJZ2DjDL, teacher/v6Tx0Fng.jpg, 20111108205451737.jpg, jpg, 172854, , 2020-12-06 09:10:03.875, 2020-12-06 09:10:03.875
+2020-12-06 13:48:40.260 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mVkKyFFh9[0;39m <==        Row: sahdRTf3, teacher\AT6PLQ88.jpg, 20111108205452769.jpg, jpg, 172854, T, 2020-12-06 13:48:34.87, 2020-12-06 13:48:34.87
+2020-12-06 13:48:40.262 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mVkKyFFh9[0;39m <==        Row: TF8IENux, teacher\OcziSJhI.jpg, 20111108205451737.jpg, jpg, 172854, T, 2020-12-06 13:46:57.966, 2020-12-06 13:46:57.966
+2020-12-06 13:48:40.263 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mVkKyFFh9[0;39m <==      Total: 5
+2020-12-06 13:48:40.271 INFO  com.lzn.config.LogAspect                          :109  [32mVkKyFFh9[0;39m 返回结果: {"content":{"list":[{"createdAt":1607217680839,"id":"edneSlJU","name":"20111108205452769.jpg","path":"teacher/mgC89wTO.jpg","size":172854,"suffix":"jpg","updatedAt":1607217680839,"use":""},{"createdAt":1607217019197,"id":"IErRIyYj","name":"20111108205452638.jpg","path":"teacher/8SWMSIfV.jpg","size":172854,"suffix":"jpg","updatedAt":1607217019197,"use":""},{"createdAt":1607217003875,"id":"KJZ2DjDL","name":"20111108205451737.jpg","path":"teacher/v6Tx0Fng.jpg","size":172854,"suffix":"jpg","updatedAt":1607217003875,"use":""},{"createdAt":1607233714870,"id":"sahdRTf3","name":"20111108205452769.jpg","path":"teacher\\AT6PLQ88.jpg","size":172854,"suffix":"jpg","updatedAt":1607233714870,"use":"T"},{"createdAt":1607233617966,"id":"TF8IENux","name":"20111108205451737.jpg","path":"teacher\\OcziSJhI.jpg","size":172854,"suffix":"jpg","updatedAt":1607233617966,"use":"T"}],"page":1,"size":5,"total":7},"success":true}
+2020-12-06 13:48:40.271 INFO  com.lzn.config.LogAspect                          :110  [32mVkKyFFh9[0;39m ------------- 结束 耗时：102 ms -------------
+2020-12-06 13:53:21.846 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 13:58:21.849 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:03:21.851 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:08:21.852 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:13:21.854 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:18:21.855 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:23:21.857 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:28:21.858 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:33:21.860 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:33:28.807 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-06 14:33:30.236 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-06 14:33:30.770 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-06 14:33:31.380 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-06 14:33:31.388 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-06 14:33:31.389 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-06 14:33:31.389 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-06 14:33:31.480 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-06 14:33:31.480 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1233 ms
+2020-12-06 14:33:32.075 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 14:33:32.075 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 14:33:32.079 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 14:33:32.079 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 14:33:33.430 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:33:33.471 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-06 14:33:34.574 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:33:34.603 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-06 14:33:34.652 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-06 14:33:34.699 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-06 14:33:34.902 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-06 14:33:34.902 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-06 14:33:34.995 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-06 14:33:34.995 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-06 14:33:35.166 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:33:35.230 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-06 14:33:35.230 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-06 14:33:35.230 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-06 14:33:35.230 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-06 14:33:35.231 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-06 14:33:35.231 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-06 14:33:35.231 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-06 14:33:35.357 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-06 14:33:35.359 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-06 14:33:35.361 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-06 14:33:35.363 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607236415362 with initial instances count: 3
+2020-12-06 14:33:35.367 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-06 14:33:35.368 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607236415368, current=UP, previous=STARTING]
+2020-12-06 14:33:35.370 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-06 14:33:35.371 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-06 14:33:35.394 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-06 14:33:35.394 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-06 14:33:35.398 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-06 14:33:36.472 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:33:36.479 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.041 seconds (JVM running for 9.508)
+2020-12-06 14:33:36.480 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-06 14:33:36.480 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 14:33:59.540 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 14:33:59.540 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 14:33:59.548 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
+2020-12-06 14:33:59.604 INFO  com.lzn.config.LogAspect                          :76   [32mTGyHaK6D[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:33:59.605 INFO  com.lzn.config.LogAspect                          :77   [32mTGyHaK6D[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:33:59.605 INFO  com.lzn.config.LogAspect                          :78   [32mTGyHaK6D[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:33:59.605 INFO  com.lzn.config.LogAspect                          :79   [32mTGyHaK6D[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:33:59.609 INFO  com.lzn.config.LogAspect                          :97   [32mTGyHaK6D[0;39m 请求参数: [null,"T"]
+2020-12-06 14:33:59.612 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mTGyHaK6D[0;39m 20111108205452769.jpg
+2020-12-06 14:33:59.612 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mTGyHaK6D[0;39m 172854
+2020-12-06 14:33:59.615 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mTGyHaK6D[0;39m D:\code\file\teacher\hfBA1ZoI.jpg
+2020-12-06 14:33:59.615 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mTGyHaK6D[0;39m 保存文件记录开始
+2020-12-06 14:33:59.644 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mTGyHaK6D[0;39m HikariPool-1 - Starting...
+2020-12-06 14:33:59.939 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mTGyHaK6D[0;39m HikariPool-1 - Start completed.
+2020-12-06 14:33:59.944 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mTGyHaK6D[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:33:59.959 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mTGyHaK6D[0;39m ==> Parameters: Oq68n1Y0(String), teacher\hfBA1ZoI.jpg(String), 20111108205452769.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:33:59.62(Timestamp), 2020-12-06 14:33:59.62(Timestamp)
+2020-12-06 14:33:59.964 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mTGyHaK6D[0;39m <==    Updates: 1
+2020-12-06 14:33:59.976 INFO  com.lzn.config.LogAspect                          :109  [32mTGyHaK6D[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\hfBA1ZoI.jpg","success":true}
+2020-12-06 14:33:59.976 INFO  com.lzn.config.LogAspect                          :110  [32mTGyHaK6D[0;39m ------------- 结束 耗时：374 ms -------------
+2020-12-06 14:34:45.849 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-06 14:34:47.281 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-06 14:34:47.827 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-06 14:34:48.426 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-06 14:34:48.435 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-06 14:34:48.435 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-06 14:34:48.435 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-06 14:34:48.520 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-06 14:34:48.520 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1225 ms
+2020-12-06 14:34:49.108 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 14:34:49.109 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 14:34:49.113 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 14:34:49.114 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 14:34:50.468 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:34:50.509 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-06 14:34:51.613 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:34:51.641 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-06 14:34:51.693 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-06 14:34:51.738 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-06 14:34:51.929 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-06 14:34:51.930 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-06 14:34:52.031 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-06 14:34:52.032 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-06 14:34:52.212 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:34:52.273 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-06 14:34:52.273 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-06 14:34:52.273 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-06 14:34:52.273 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-06 14:34:52.273 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-06 14:34:52.273 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-06 14:34:52.274 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-06 14:34:52.393 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-06 14:34:52.395 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-06 14:34:52.397 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-06 14:34:52.400 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607236492399 with initial instances count: 3
+2020-12-06 14:34:52.403 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-06 14:34:52.404 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607236492404, current=UP, previous=STARTING]
+2020-12-06 14:34:52.405 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-06 14:34:52.406 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-06 14:34:52.430 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-06 14:34:52.431 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-06 14:34:52.432 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-06 14:34:53.508 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:34:53.518 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.043 seconds (JVM running for 9.499)
+2020-12-06 14:34:53.520 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-06 14:34:53.520 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 14:35:12.318 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 14:35:12.318 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 14:35:12.330 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 12 ms
+2020-12-06 14:35:17.027 INFO  com.lzn.config.LogAspect                          :76   [32menrVIBHB[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:35:17.027 INFO  com.lzn.config.LogAspect                          :77   [32menrVIBHB[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:35:17.028 INFO  com.lzn.config.LogAspect                          :78   [32menrVIBHB[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:35:17.028 INFO  com.lzn.config.LogAspect                          :79   [32menrVIBHB[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:35:17.032 INFO  com.lzn.config.LogAspect                          :97   [32menrVIBHB[0;39m 请求参数: [null,"T"]
+2020-12-06 14:35:17.035 INFO  com.lzn.file.controller.admin.UploadController    :48   [32menrVIBHB[0;39m 20111108205452638.jpg
+2020-12-06 14:35:17.036 INFO  com.lzn.file.controller.admin.UploadController    :49   [32menrVIBHB[0;39m 172854
+2020-12-06 14:35:17.038 INFO  com.lzn.file.controller.admin.UploadController    :71   [32menrVIBHB[0;39m D:\code\file\teacher\P6lwK9Zi.jpg
+2020-12-06 14:35:17.038 INFO  com.lzn.file.controller.admin.UploadController    :73   [32menrVIBHB[0;39m 保存文件记录开始
+2020-12-06 14:35:17.067 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32menrVIBHB[0;39m HikariPool-1 - Starting...
+2020-12-06 14:35:17.360 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32menrVIBHB[0;39m HikariPool-1 - Start completed.
+2020-12-06 14:35:17.365 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32menrVIBHB[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:35:17.379 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32menrVIBHB[0;39m ==> Parameters: WlzKM4Sk(String), teacher\P6lwK9Zi.jpg(String), 20111108205452638.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:35:17.042(Timestamp), 2020-12-06 14:35:17.042(Timestamp)
+2020-12-06 14:35:17.384 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32menrVIBHB[0;39m <==    Updates: 1
+2020-12-06 14:35:17.395 INFO  com.lzn.config.LogAspect                          :109  [32menrVIBHB[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\P6lwK9Zi.jpg","success":true}
+2020-12-06 14:35:17.396 INFO  com.lzn.config.LogAspect                          :110  [32menrVIBHB[0;39m ------------- 结束 耗时：371 ms -------------
+2020-12-06 14:38:37.494 INFO  com.lzn.config.LogAspect                          :76   [32mETfhr15K[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:38:37.494 INFO  com.lzn.config.LogAspect                          :77   [32mETfhr15K[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:38:37.495 INFO  com.lzn.config.LogAspect                          :78   [32mETfhr15K[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:38:37.495 INFO  com.lzn.config.LogAspect                          :79   [32mETfhr15K[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:38:37.495 INFO  com.lzn.config.LogAspect                          :97   [32mETfhr15K[0;39m 请求参数: [null,"T"]
+2020-12-06 14:38:37.496 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mETfhr15K[0;39m 20111108205452638.jpg
+2020-12-06 14:38:37.496 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mETfhr15K[0;39m 172854
+2020-12-06 14:38:37.498 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mETfhr15K[0;39m D:\code\file\teacher\ZsZVV3Id.jpg
+2020-12-06 14:38:37.499 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mETfhr15K[0;39m 保存文件记录开始
+2020-12-06 14:38:37.501 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mETfhr15K[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:38:37.502 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mETfhr15K[0;39m ==> Parameters: 6lCsJmcJ(String), teacher\ZsZVV3Id.jpg(String), 20111108205452638.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:38:37.499(Timestamp), 2020-12-06 14:38:37.499(Timestamp)
+2020-12-06 14:38:37.507 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mETfhr15K[0;39m <==    Updates: 1
+2020-12-06 14:38:37.507 INFO  com.lzn.config.LogAspect                          :109  [32mETfhr15K[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\ZsZVV3Id.jpg","success":true}
+2020-12-06 14:38:37.507 INFO  com.lzn.config.LogAspect                          :110  [32mETfhr15K[0;39m ------------- 结束 耗时：14 ms -------------
+2020-12-06 14:38:40.598 INFO  com.lzn.config.LogAspect                          :76   [32mKjSpnBpG[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:38:40.598 INFO  com.lzn.config.LogAspect                          :77   [32mKjSpnBpG[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:38:40.598 INFO  com.lzn.config.LogAspect                          :78   [32mKjSpnBpG[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:38:40.598 INFO  com.lzn.config.LogAspect                          :79   [32mKjSpnBpG[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:38:40.598 INFO  com.lzn.config.LogAspect                          :97   [32mKjSpnBpG[0;39m 请求参数: [null,"T"]
+2020-12-06 14:38:40.599 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mKjSpnBpG[0;39m 20111108205451737.jpg
+2020-12-06 14:38:40.599 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mKjSpnBpG[0;39m 172854
+2020-12-06 14:38:40.620 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mKjSpnBpG[0;39m D:\code\file\teacher\5B2iSDTf.jpg
+2020-12-06 14:38:40.621 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mKjSpnBpG[0;39m 保存文件记录开始
+2020-12-06 14:38:40.621 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mKjSpnBpG[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:38:40.622 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mKjSpnBpG[0;39m ==> Parameters: 5XpY0ywb(String), teacher\5B2iSDTf.jpg(String), 20111108205451737.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:38:40.621(Timestamp), 2020-12-06 14:38:40.621(Timestamp)
+2020-12-06 14:38:40.626 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mKjSpnBpG[0;39m <==    Updates: 1
+2020-12-06 14:38:40.626 INFO  com.lzn.config.LogAspect                          :109  [32mKjSpnBpG[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\5B2iSDTf.jpg","success":true}
+2020-12-06 14:38:40.627 INFO  com.lzn.config.LogAspect                          :110  [32mKjSpnBpG[0;39m ------------- 结束 耗时：30 ms -------------
+2020-12-06 14:38:50.428 INFO  com.lzn.config.LogAspect                          :76   [32mcPBNRusP[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:38:50.429 INFO  com.lzn.config.LogAspect                          :77   [32mcPBNRusP[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:38:50.429 INFO  com.lzn.config.LogAspect                          :78   [32mcPBNRusP[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:38:50.429 INFO  com.lzn.config.LogAspect                          :79   [32mcPBNRusP[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:38:50.430 INFO  com.lzn.config.LogAspect                          :97   [32mcPBNRusP[0;39m 请求参数: [null,"T"]
+2020-12-06 14:38:50.430 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mcPBNRusP[0;39m 20111108205452769.jpg
+2020-12-06 14:38:50.430 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mcPBNRusP[0;39m 172854
+2020-12-06 14:38:50.432 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mcPBNRusP[0;39m D:\code\file\teacher\NiyBuUHC.jpg
+2020-12-06 14:38:50.433 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mcPBNRusP[0;39m 保存文件记录开始
+2020-12-06 14:38:50.434 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mcPBNRusP[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:38:50.436 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mcPBNRusP[0;39m ==> Parameters: 9kNunQyH(String), teacher\NiyBuUHC.jpg(String), 20111108205452769.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:38:50.433(Timestamp), 2020-12-06 14:38:50.433(Timestamp)
+2020-12-06 14:38:50.441 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mcPBNRusP[0;39m <==    Updates: 1
+2020-12-06 14:38:50.442 INFO  com.lzn.config.LogAspect                          :109  [32mcPBNRusP[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","success":true}
+2020-12-06 14:38:50.442 INFO  com.lzn.config.LogAspect                          :110  [32mcPBNRusP[0;39m ------------- 结束 耗时：14 ms -------------
+2020-12-06 14:38:58.934 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-06 14:39:00.366 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-06 14:39:00.901 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-06 14:39:01.501 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-06 14:39:01.508 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-06 14:39:01.509 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-06 14:39:01.509 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-06 14:39:01.593 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-06 14:39:01.593 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1213 ms
+2020-12-06 14:39:02.197 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 14:39:02.197 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 14:39:02.202 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-06 14:39:02.202 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-06 14:39:03.559 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:39:03.596 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-06 14:39:04.701 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:39:04.728 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-06 14:39:04.780 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-06 14:39:04.825 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-06 14:39:05.059 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-06 14:39:05.059 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-06 14:39:05.234 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-06 14:39:05.235 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-06 14:39:05.465 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-06 14:39:05.548 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-06 14:39:05.549 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-06 14:39:05.549 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-06 14:39:05.549 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-06 14:39:05.549 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-06 14:39:05.550 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-06 14:39:05.550 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-06 14:39:05.708 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-06 14:39:05.710 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-06 14:39:05.712 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-06 14:39:05.716 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607236745715 with initial instances count: 3
+2020-12-06 14:39:05.720 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-06 14:39:05.720 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607236745720, current=UP, previous=STARTING]
+2020-12-06 14:39:05.722 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-06 14:39:05.722 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-06 14:39:05.754 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-06 14:39:05.755 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-06 14:39:05.756 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-06 14:39:06.259 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 14:39:06.259 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-06 14:39:06.272 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 13 ms
+2020-12-06 14:39:06.840 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-06 14:39:06.854 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.272 seconds (JVM running for 9.736)
+2020-12-06 14:39:06.856 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-06 14:39:06.857 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-06 14:39:10.667 INFO  com.lzn.config.LogAspect                          :76   [32mo6aVhwDm[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:39:10.668 INFO  com.lzn.config.LogAspect                          :77   [32mo6aVhwDm[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:39:10.668 INFO  com.lzn.config.LogAspect                          :78   [32mo6aVhwDm[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:39:10.668 INFO  com.lzn.config.LogAspect                          :79   [32mo6aVhwDm[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:39:10.672 INFO  com.lzn.config.LogAspect                          :97   [32mo6aVhwDm[0;39m 请求参数: [null,"T"]
+2020-12-06 14:39:10.674 INFO  com.lzn.file.controller.admin.UploadController    :48   [32mo6aVhwDm[0;39m 20111108205452769.jpg
+2020-12-06 14:39:10.674 INFO  com.lzn.file.controller.admin.UploadController    :49   [32mo6aVhwDm[0;39m 172854
+2020-12-06 14:39:10.676 INFO  com.lzn.file.controller.admin.UploadController    :71   [32mo6aVhwDm[0;39m D:\code\file\teacher\i68SKYi5.jpg
+2020-12-06 14:39:10.677 INFO  com.lzn.file.controller.admin.UploadController    :73   [32mo6aVhwDm[0;39m 保存文件记录开始
+2020-12-06 14:39:10.824 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mo6aVhwDm[0;39m HikariPool-1 - Starting...
+2020-12-06 14:39:10.994 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mo6aVhwDm[0;39m HikariPool-1 - Start completed.
+2020-12-06 14:39:10.999 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mo6aVhwDm[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:39:11.014 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mo6aVhwDm[0;39m ==> Parameters: Mb3OV2r3(String), teacher\i68SKYi5.jpg(String), 20111108205452769.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:39:10.683(Timestamp), 2020-12-06 14:39:10.683(Timestamp)
+2020-12-06 14:39:11.019 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mo6aVhwDm[0;39m <==    Updates: 1
+2020-12-06 14:39:11.030 INFO  com.lzn.config.LogAspect                          :109  [32mo6aVhwDm[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\i68SKYi5.jpg","success":true}
+2020-12-06 14:39:11.030 INFO  com.lzn.config.LogAspect                          :110  [32mo6aVhwDm[0;39m ------------- 结束 耗时：365 ms -------------
+2020-12-06 14:39:20.667 INFO  com.lzn.config.LogAspect                          :76   [32msz0NNgaE[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:39:20.667 INFO  com.lzn.config.LogAspect                          :77   [32msz0NNgaE[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:39:20.667 INFO  com.lzn.config.LogAspect                          :78   [32msz0NNgaE[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:39:20.667 INFO  com.lzn.config.LogAspect                          :79   [32msz0NNgaE[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:39:20.668 INFO  com.lzn.config.LogAspect                          :97   [32msz0NNgaE[0;39m 请求参数: [null,"T"]
+2020-12-06 14:39:20.668 INFO  com.lzn.file.controller.admin.UploadController    :48   [32msz0NNgaE[0;39m 20111108205451737.jpg
+2020-12-06 14:39:20.668 INFO  com.lzn.file.controller.admin.UploadController    :49   [32msz0NNgaE[0;39m 172854
+2020-12-06 14:39:20.669 INFO  com.lzn.file.controller.admin.UploadController    :71   [32msz0NNgaE[0;39m D:\code\file\teacher\Uk51oHo8.jpg
+2020-12-06 14:39:20.669 INFO  com.lzn.file.controller.admin.UploadController    :73   [32msz0NNgaE[0;39m 保存文件记录开始
+2020-12-06 14:39:20.671 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32msz0NNgaE[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:39:20.672 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32msz0NNgaE[0;39m ==> Parameters: PUk6u54t(String), teacher\Uk51oHo8.jpg(String), 20111108205451737.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:39:20.67(Timestamp), 2020-12-06 14:39:20.67(Timestamp)
+2020-12-06 14:39:20.676 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32msz0NNgaE[0;39m <==    Updates: 1
+2020-12-06 14:39:20.677 INFO  com.lzn.config.LogAspect                          :109  [32msz0NNgaE[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","success":true}
+2020-12-06 14:39:20.677 INFO  com.lzn.config.LogAspect                          :110  [32msz0NNgaE[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-06 14:39:41.657 INFO  com.lzn.config.LogAspect                          :76   [32m5i6VdShV[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-06 14:39:41.657 INFO  com.lzn.config.LogAspect                          :77   [32m5i6VdShV[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-06 14:39:41.657 INFO  com.lzn.config.LogAspect                          :78   [32m5i6VdShV[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-06 14:39:41.658 INFO  com.lzn.config.LogAspect                          :79   [32m5i6VdShV[0;39m 远程地址: 127.0.0.1
+2020-12-06 14:39:41.658 INFO  com.lzn.config.LogAspect                          :97   [32m5i6VdShV[0;39m 请求参数: [null,"T"]
+2020-12-06 14:39:41.658 INFO  com.lzn.file.controller.admin.UploadController    :48   [32m5i6VdShV[0;39m 20111108205452638.jpg
+2020-12-06 14:39:41.658 INFO  com.lzn.file.controller.admin.UploadController    :49   [32m5i6VdShV[0;39m 172854
+2020-12-06 14:39:41.659 INFO  com.lzn.file.controller.admin.UploadController    :71   [32m5i6VdShV[0;39m D:\code\file\teacher\LwVdWzP2.jpg
+2020-12-06 14:39:41.659 INFO  com.lzn.file.controller.admin.UploadController    :73   [32m5i6VdShV[0;39m 保存文件记录开始
+2020-12-06 14:39:41.660 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m5i6VdShV[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-06 14:39:41.661 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m5i6VdShV[0;39m ==> Parameters: KrvcETk0(String), teacher\LwVdWzP2.jpg(String), 20111108205452638.jpg(String), jpg(String), 172854(Integer), T(String), 2020-12-06 14:39:41.659(Timestamp), 2020-12-06 14:39:41.659(Timestamp)
+2020-12-06 14:39:41.668 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m5i6VdShV[0;39m <==    Updates: 1
+2020-12-06 14:39:41.669 INFO  com.lzn.config.LogAspect                          :109  [32m5i6VdShV[0;39m 返回结果: {"content":"http://127.0.0.1:9000/file/f/teacher\\LwVdWzP2.jpg","success":true}
+2020-12-06 14:39:41.669 INFO  com.lzn.config.LogAspect                          :110  [32m5i6VdShV[0;39m ------------- 结束 耗时：12 ms -------------

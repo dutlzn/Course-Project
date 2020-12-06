@@ -23,7 +23,8 @@
 					<v-col cols="12">
 
 						<file v-bind:text="'上传头像'" v-bind:after-upload="afterUpload" v-bind:suffixs="['jpg', 'jpeg', 'png']"
-						 v-bind:input-id="'image-upload'" v-bind:label="'头像'"></file>
+						 v-bind:use="FILE_USE.TEACHER.key"
+							v-bind:input-id="'image-upload'" v-bind:label="'头像'"></file>
 
 					</v-col>
 
@@ -148,6 +149,7 @@
 			return {
 				teacher: {},
 				teachers: [],
+				FILE_USE: FILE_USE,
 
 				// 控制模态框
 				dialog: false,

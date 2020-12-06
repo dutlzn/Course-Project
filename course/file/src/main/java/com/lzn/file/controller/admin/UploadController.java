@@ -3,6 +3,7 @@ package com.lzn.file.controller.admin;
 
 import com.lzn.dto.FileDto;
 import com.lzn.dto.ResponseDto;
+import com.lzn.enums.FileUseEnum;
 import com.lzn.service.FileService;
 import com.lzn.util.UuidUtil;
 import org.slf4j.Logger;
@@ -40,20 +41,28 @@ public class UploadController {
 
     @RequestMapping("/upload")
     public ResponseDto upload(
-            @RequestParam MultipartFile file
+            @RequestParam MultipartFile file,
+            String use
             ) throws IOException {
-//        debug
 
-        LOG.info("上传文件开始:{}", file);
         LOG.info(file.getOriginalFilename());
         LOG.info(String.valueOf(file.getSize()));
 
         // 保存文件到本地
+        FileUseEnum useEnum = FileUseEnum.getByCode(use);
+
         String fileName=  file.getOriginalFilename();
-        // 文件后缀
         String suffix = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
         String key = UuidUtil.getShortUuid();
-        String path  = "teacher/" + key + "." + suffix;
+
+        // 如果文件夹不存在则创建
+        String dir = useEnum.name().toLowerCase();
+        File fullDir = new File(FILE_PATH + dir);
+        if( !fullDir.exists()){
+            fullDir.mkdir();
+        }
+
+        String path  = dir +  File.separator + key + "." + suffix;
 
         String fullPath =FILE_PATH  + path;
         // 文件的路径应该是自动生成的
@@ -67,7 +76,7 @@ public class UploadController {
         fileDto.setName(fileName);
         fileDto.setSize(Math.toIntExact(file.getSize()));
         fileDto.setSuffix(suffix);
-        fileDto.setUse("");
+        fileDto.setUse(use);
 
 
         fileService.save(fileDto);
