@@ -61,9 +61,16 @@ public class UploadController {
             fullDir.mkdir();
         }
 
-        String path  = dir +  File.separator + key + "." + suffix;
+        String path  = new StringBuffer(dir)
+                .append(File.separator)
+                .append(key)
+                .append(".")
+                .append(suffix)
+                .append(".")
+                .append(fileDto.getShardIndex())
+                .toString();
+        String fullPath = FILE_PATH + path;
 
-        String fullPath =FILE_PATH  + path;
         // 文件的路径应该是自动生成的
         File dest = new File(fullPath);// 生成目标位置
         shard.transferTo(dest);// 写道目标位置
