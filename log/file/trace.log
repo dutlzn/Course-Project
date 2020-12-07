@@ -800,3 +800,399 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Dupl
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2020-12-07 15:35:51.796 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-07 15:35:53.244 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-07 15:35:53.949 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-07 15:35:54.758 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-07 15:35:54.768 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-07 15:35:54.769 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-07 15:35:54.770 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-07 15:35:54.863 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-07 15:35:54.863 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1603 ms
+2020-12-07 15:35:55.552 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-07 15:35:55.553 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 15:35:55.557 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-07 15:35:55.557 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 15:35:56.903 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 15:35:56.937 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-07 15:35:58.050 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 15:35:58.083 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-07 15:35:58.134 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-07 15:35:58.179 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-07 15:35:58.378 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-07 15:35:58.378 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-07 15:35:58.481 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-07 15:35:58.481 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-07 15:35:58.654 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 15:35:58.717 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-07 15:35:58.717 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-07 15:35:58.717 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-07 15:35:58.717 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-07 15:35:58.717 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-07 15:35:58.717 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-07 15:35:58.718 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-07 15:35:58.851 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-07 15:35:58.854 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-07 15:35:58.856 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-07 15:35:58.860 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607326558859 with initial instances count: 3
+2020-12-07 15:35:58.868 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-07 15:35:58.868 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607326558868, current=UP, previous=STARTING]
+2020-12-07 15:35:58.870 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-07 15:35:58.872 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-07 15:35:58.903 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-07 15:35:58.904 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-07 15:35:58.906 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-07 15:35:59.984 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 15:35:59.989 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.589 seconds (JVM running for 10.052)
+2020-12-07 15:35:59.990 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-07 15:35:59.991 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-07 15:36:07.861 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-07 15:36:07.861 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-07 15:36:07.870 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
+2020-12-07 15:36:10.472 INFO  com.lzn.config.LogAspect                          :76   [32mYxWe7ZJt[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-07 15:36:10.473 INFO  com.lzn.config.LogAspect                          :77   [32mYxWe7ZJt[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-07 15:36:10.473 INFO  com.lzn.config.LogAspect                          :78   [32mYxWe7ZJt[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-07 15:36:10.473 INFO  com.lzn.config.LogAspect                          :79   [32mYxWe7ZJt[0;39m 远程地址: 127.0.0.1
+2020-12-07 15:36:10.478 INFO  com.lzn.config.LogAspect                          :97   [32mYxWe7ZJt[0;39m 请求参数: [null,"C","test.mp4","mp4",23799951,1,20971520,2,"6sfSqfOwzmik4A4icMYuUe"]
+2020-12-07 15:36:10.481 INFO  com.lzn.file.controller.admin.UploadController    :58   [32mYxWe7ZJt[0;39m 上传文件开始
+2020-12-07 15:36:10.497 INFO  com.lzn.file.controller.admin.UploadController    :76   [32mYxWe7ZJt[0;39m D:\code\file\course\6sfSqfOwzmik4A4icMYuUe.mp4
+2020-12-07 15:36:10.497 INFO  com.lzn.file.controller.admin.UploadController    :78   [32mYxWe7ZJt[0;39m 保存文件记录开始
+2020-12-07 15:36:10.675 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mYxWe7ZJt[0;39m HikariPool-1 - Starting...
+2020-12-07 15:36:10.868 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mYxWe7ZJt[0;39m HikariPool-1 - Start completed.
+2020-12-07 15:36:10.873 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mYxWe7ZJt[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key` from file WHERE ( `key` = ? ) 
+2020-12-07 15:36:10.889 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mYxWe7ZJt[0;39m ==> Parameters: 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 15:36:10.898 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mYxWe7ZJt[0;39m <==      Total: 0
+2020-12-07 15:36:10.903 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mYxWe7ZJt[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-07 15:36:10.904 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mYxWe7ZJt[0;39m ==> Parameters: mNHYzxFS(String), course\6sfSqfOwzmik4A4icMYuUe.mp4(String), test.mp4(String), mp4(String), 23799951(Integer), C(String), 2020-12-07 15:36:10.903(Timestamp), 2020-12-07 15:36:10.903(Timestamp), 1(Integer), 20971520(Integer), 2(Integer), 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 15:36:10.908 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mYxWe7ZJt[0;39m <==    Updates: 1
+2020-12-07 15:36:10.923 INFO  com.lzn.config.LogAspect                          :109  [32mYxWe7ZJt[0;39m 返回结果: {"content":{"key":"6sfSqfOwzmik4A4icMYuUe","name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\6sfSqfOwzmik4A4icMYuUe.mp4","shardIndex":1,"shardSize":20971520,"shardTotal":2,"size":23799951,"suffix":"mp4","use":"C"},"success":true}
+2020-12-07 15:36:10.924 INFO  com.lzn.config.LogAspect                          :110  [32mYxWe7ZJt[0;39m ------------- 结束 耗时：454 ms -------------
+2020-12-07 15:36:25.383 INFO  com.lzn.config.LogAspect                          :76   [32m7koT1Naq[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-07 15:36:25.384 INFO  com.lzn.config.LogAspect                          :77   [32m7koT1Naq[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-07 15:36:25.385 INFO  com.lzn.config.LogAspect                          :78   [32m7koT1Naq[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-07 15:36:25.386 INFO  com.lzn.config.LogAspect                          :79   [32m7koT1Naq[0;39m 远程地址: 127.0.0.1
+2020-12-07 15:36:25.387 INFO  com.lzn.config.LogAspect                          :97   [32m7koT1Naq[0;39m 请求参数: [null,"C","test.mp4","mp4",23799951,2,20971520,2,"6sfSqfOwzmik4A4icMYuUe"]
+2020-12-07 15:36:25.387 INFO  com.lzn.file.controller.admin.UploadController    :58   [32m7koT1Naq[0;39m 上传文件开始
+2020-12-07 15:36:25.393 INFO  com.lzn.file.controller.admin.UploadController    :76   [32m7koT1Naq[0;39m D:\code\file\course\6sfSqfOwzmik4A4icMYuUe.mp4
+2020-12-07 15:36:25.393 INFO  com.lzn.file.controller.admin.UploadController    :78   [32m7koT1Naq[0;39m 保存文件记录开始
+2020-12-07 15:36:25.394 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m7koT1Naq[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key` from file WHERE ( `key` = ? ) 
+2020-12-07 15:36:25.395 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m7koT1Naq[0;39m ==> Parameters: 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 15:36:25.396 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32m7koT1Naq[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at, shard_index, shard_size, shard_total, key
+2020-12-07 15:36:25.397 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32m7koT1Naq[0;39m <==        Row: mNHYzxFS, course\6sfSqfOwzmik4A4icMYuUe.mp4, test.mp4, mp4, 23799951, C, 2020-12-07 15:36:10.903, 2020-12-07 15:36:10.903, 1, 20971520, 2, 6sfSqfOwzmik4A4icMYuUe
+2020-12-07 15:36:25.398 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m7koT1Naq[0;39m <==      Total: 1
+2020-12-07 15:36:25.399 DEBUG com.lzn.mapper.FileMapper.updateByPrimaryKey      :159  [32m7koT1Naq[0;39m ==>  Preparing: update file set `path` = ?, `name` = ?, suffix = ?, `size` = ?, `use` = ?, created_at = ?, updated_at = ?, shard_index = ?, shard_size = ?, shard_total = ?, `key` = ? where id = ? 
+2020-12-07 15:36:25.400 DEBUG com.lzn.mapper.FileMapper.updateByPrimaryKey      :159  [32m7koT1Naq[0;39m ==> Parameters: course\6sfSqfOwzmik4A4icMYuUe.mp4(String), test.mp4(String), mp4(String), 23799951(Integer), C(String), 2020-12-07 15:36:10.903(Timestamp), 2020-12-07 15:36:25.399(Timestamp), 2(Integer), 20971520(Integer), 2(Integer), 6sfSqfOwzmik4A4icMYuUe(String), mNHYzxFS(String)
+2020-12-07 15:36:25.404 DEBUG com.lzn.mapper.FileMapper.updateByPrimaryKey      :159  [32m7koT1Naq[0;39m <==    Updates: 1
+2020-12-07 15:36:25.405 INFO  com.lzn.config.LogAspect                          :109  [32m7koT1Naq[0;39m 返回结果: {"content":{"key":"6sfSqfOwzmik4A4icMYuUe","name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\6sfSqfOwzmik4A4icMYuUe.mp4","shardIndex":2,"shardSize":20971520,"shardTotal":2,"size":23799951,"suffix":"mp4","use":"C"},"success":true}
+2020-12-07 15:36:25.406 INFO  com.lzn.config.LogAspect                          :110  [32m7koT1Naq[0;39m ------------- 结束 耗时：24 ms -------------
+2020-12-07 15:40:58.721 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 15:45:58.723 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 15:50:58.725 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 15:55:58.727 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:00:58.728 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:05:58.731 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:10:58.732 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:15:58.734 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:20:58.735 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:25:58.737 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:30:58.738 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:35:58.740 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:40:58.741 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:45:58.743 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:50:58.745 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 16:55:58.747 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:00:58.749 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:05:58.751 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:10:58.754 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:15:58.762 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:20:58.763 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:25:58.765 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:30:58.766 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:35:58.768 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:40:58.770 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:45:58.771 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:50:58.772 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:55:58.774 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 17:57:46.967 INFO  com.lzn.config.LogAspect                          :76   [32m1hDW3GD3[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-07 17:57:46.970 INFO  com.lzn.config.LogAspect                          :77   [32m1hDW3GD3[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-07 17:57:46.970 INFO  com.lzn.config.LogAspect                          :78   [32m1hDW3GD3[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-07 17:57:46.971 INFO  com.lzn.config.LogAspect                          :79   [32m1hDW3GD3[0;39m 远程地址: 127.0.0.1
+2020-12-07 17:57:46.972 INFO  com.lzn.config.LogAspect                          :97   [32m1hDW3GD3[0;39m 请求参数: [null,"C","test.mp4","mp4",23799951,2,20971520,2,"6sfSqfOwzmik4A4icMYuUe"]
+2020-12-07 17:57:46.972 INFO  com.lzn.file.controller.admin.UploadController    :58   [32m1hDW3GD3[0;39m 上传文件开始
+2020-12-07 17:57:47.020 INFO  com.lzn.file.controller.admin.UploadController    :76   [32m1hDW3GD3[0;39m D:\code\file\course\6sfSqfOwzmik4A4icMYuUe.mp4
+2020-12-07 17:57:47.021 INFO  com.lzn.file.controller.admin.UploadController    :78   [32m1hDW3GD3[0;39m 保存文件记录开始
+2020-12-07 17:57:47.029 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m1hDW3GD3[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key` from file WHERE ( `key` = ? ) 
+2020-12-07 17:57:47.032 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m1hDW3GD3[0;39m ==> Parameters: 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 17:57:47.033 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32m1hDW3GD3[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at, shard_index, shard_size, shard_total, key
+2020-12-07 17:57:47.034 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32m1hDW3GD3[0;39m <==        Row: mNHYzxFS, course\6sfSqfOwzmik4A4icMYuUe.mp4, test.mp4, mp4, 23799951, C, 2020-12-07 15:36:10.903, 2020-12-07 15:36:25.399, 2, 20971520, 2, 6sfSqfOwzmik4A4icMYuUe
+2020-12-07 17:57:47.036 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m1hDW3GD3[0;39m <==      Total: 1
+2020-12-07 17:57:47.037 DEBUG com.lzn.mapper.FileMapper.updateByPrimaryKey      :159  [32m1hDW3GD3[0;39m ==>  Preparing: update file set `path` = ?, `name` = ?, suffix = ?, `size` = ?, `use` = ?, created_at = ?, updated_at = ?, shard_index = ?, shard_size = ?, shard_total = ?, `key` = ? where id = ? 
+2020-12-07 17:57:47.038 DEBUG com.lzn.mapper.FileMapper.updateByPrimaryKey      :159  [32m1hDW3GD3[0;39m ==> Parameters: course\6sfSqfOwzmik4A4icMYuUe.mp4(String), test.mp4(String), mp4(String), 23799951(Integer), C(String), 2020-12-07 15:36:10.903(Timestamp), 2020-12-07 17:57:47.037(Timestamp), 2(Integer), 20971520(Integer), 2(Integer), 6sfSqfOwzmik4A4icMYuUe(String), mNHYzxFS(String)
+2020-12-07 17:57:47.043 DEBUG com.lzn.mapper.FileMapper.updateByPrimaryKey      :159  [32m1hDW3GD3[0;39m <==    Updates: 1
+2020-12-07 17:57:47.044 INFO  com.lzn.config.LogAspect                          :109  [32m1hDW3GD3[0;39m 返回结果: {"content":{"key":"6sfSqfOwzmik4A4icMYuUe","name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\6sfSqfOwzmik4A4icMYuUe.mp4","shardIndex":2,"shardSize":20971520,"shardTotal":2,"size":23799951,"suffix":"mp4","use":"C"},"success":true}
+2020-12-07 17:57:47.044 INFO  com.lzn.config.LogAspect                          :110  [32m1hDW3GD3[0;39m ------------- 结束 耗时：78 ms -------------
+2020-12-07 18:00:58.776 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:05:58.779 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:10:58.780 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:15:58.782 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:20:58.783 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:25:58.785 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:30:58.786 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:35:58.787 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:40:58.789 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:45:58.792 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:50:58.794 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 18:55:58.797 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 19:00:58.799 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 19:05:07.584 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-07 19:05:09.022 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-07 19:05:09.584 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-07 19:05:10.196 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-07 19:05:10.204 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-07 19:05:10.205 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-07 19:05:10.205 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-07 19:05:10.289 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-07 19:05:10.290 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1255 ms
+2020-12-07 19:05:10.907 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-07 19:05:10.907 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 19:05:10.912 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-07 19:05:10.913 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 19:05:12.270 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 19:05:12.318 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-07 19:05:13.422 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 19:05:13.454 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-07 19:05:13.512 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-07 19:05:13.564 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-07 19:05:13.768 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-07 19:05:13.768 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-07 19:05:13.863 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-07 19:05:13.864 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-07 19:05:14.076 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 19:05:14.139 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-07 19:05:14.140 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-07 19:05:14.140 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-07 19:05:14.140 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-07 19:05:14.140 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-07 19:05:14.140 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-07 19:05:14.140 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-07 19:05:14.264 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-07 19:05:14.266 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-07 19:05:14.268 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-07 19:05:14.271 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607339114270 with initial instances count: 3
+2020-12-07 19:05:14.275 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-07 19:05:14.275 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607339114275, current=UP, previous=STARTING]
+2020-12-07 19:05:14.277 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-07 19:05:14.277 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-07 19:05:14.304 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-07 19:05:14.305 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-07 19:05:14.308 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-07 19:05:15.386 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 19:05:15.393 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.175 seconds (JVM running for 9.644)
+2020-12-07 19:05:15.394 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-07 19:05:15.394 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-07 19:05:52.274 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-07 19:05:52.275 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-07 19:05:52.287 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 12 ms
+2020-12-07 19:05:55.331 INFO  com.lzn.config.LogAspect                          :76   [32m8j287ufw[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-07 19:05:55.332 INFO  com.lzn.config.LogAspect                          :77   [32m8j287ufw[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-07 19:05:55.333 INFO  com.lzn.config.LogAspect                          :78   [32m8j287ufw[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-07 19:05:55.333 INFO  com.lzn.config.LogAspect                          :79   [32m8j287ufw[0;39m 远程地址: 127.0.0.1
+2020-12-07 19:05:55.353 INFO  com.lzn.config.LogAspect                          :97   [32m8j287ufw[0;39m 请求参数: [{"key":"6sfSqfOwzmik4A4icMYuUe","name":"test.mp4","shardIndex":1,"shardSize":20971520,"shardTotal":2,"size":23799951,"suffix":"mp4","use":"C"}]
+2020-12-07 19:05:55.356 INFO  com.lzn.file.controller.admin.UploadController    :46   [32m8j287ufw[0;39m 上传文件开始
+2020-12-07 19:05:55.681 INFO  com.lzn.file.controller.admin.UploadController    :70   [32m8j287ufw[0;39m D:\code\file\course\6sfSqfOwzmik4A4icMYuUe.mp4
+2020-12-07 19:05:55.681 INFO  com.lzn.file.controller.admin.UploadController    :72   [32m8j287ufw[0;39m 保存文件记录开始
+2020-12-07 19:05:55.876 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m8j287ufw[0;39m HikariPool-1 - Starting...
+2020-12-07 19:05:56.058 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m8j287ufw[0;39m HikariPool-1 - Start completed.
+2020-12-07 19:05:56.064 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m8j287ufw[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key` from file WHERE ( `key` = ? ) 
+2020-12-07 19:05:56.085 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m8j287ufw[0;39m ==> Parameters: 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 19:05:56.094 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32m8j287ufw[0;39m <==      Total: 0
+2020-12-07 19:05:56.100 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m8j287ufw[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-07 19:05:56.102 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32m8j287ufw[0;39m ==> Parameters: Yaqz0cHE(String), null, test.mp4(String), mp4(String), 23799951(Integer), C(String), 2020-12-07 19:05:56.099(Timestamp), 2020-12-07 19:05:56.099(Timestamp), 1(Integer), 20971520(Integer), 2(Integer), 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 19:05:56.141 ERROR o.a.c.c.C.[.[.[/file].[dispatcherServlet]         :175  [32m8j287ufw[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/file] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'path' cannot be null
+### The error may involve com.lzn.mapper.FileMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into file (id, `path`, `name`,        suffix, `size`, `use`, created_at,        updated_at, shard_index, shard_size,        shard_total, `key`)     values (?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'path' cannot be null
+; Column 'path' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'path' cannot be null] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'path' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3870)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy141.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy139.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy87.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy88.insert(Unknown Source)
+	at com.lzn.service.FileService.insert(FileService.java:76)
+	at com.lzn.service.FileService.save(FileService.java:63)
+	at com.lzn.file.controller.admin.UploadController.upload(UploadController.java:73)
+	at com.lzn.file.controller.admin.UploadController$$FastClassBySpringCGLIB$$11e2b97.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.lzn.config.LogAspect.doAround(LogAspect.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lzn.file.controller.admin.UploadController$$EnhancerBySpringCGLIB$$80525690.upload(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-07 19:07:07.974 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-07 19:07:09.408 INFO  com.lzn.file.config.FileApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-07 19:07:09.967 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e0921c95-1ead-368e-9322-f396fbea23e0
+2020-12-07 19:07:10.590 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-12-07 19:07:10.599 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-12-07 19:07:10.599 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-07 19:07:10.599 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-07 19:07:10.687 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-07 19:07:10.687 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1264 ms
+2020-12-07 19:07:11.340 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-07 19:07:11.340 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 19:07:11.344 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-07 19:07:11.344 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 19:07:12.693 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 19:07:12.728 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-07 19:07:13.829 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 19:07:13.856 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-07 19:07:13.900 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-07 19:07:13.944 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-07 19:07:14.135 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-07 19:07:14.135 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-07 19:07:14.232 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-07 19:07:14.232 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-07 19:07:14.410 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 19:07:14.475 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-07 19:07:14.475 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-07 19:07:14.475 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-07 19:07:14.475 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-07 19:07:14.475 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-07 19:07:14.475 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-07 19:07:14.476 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-07 19:07:14.599 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-07 19:07:14.601 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-07 19:07:14.602 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-07 19:07:14.604 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607339234604 with initial instances count: 3
+2020-12-07 19:07:14.608 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-12-07 19:07:14.608 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607339234608, current=UP, previous=STARTING]
+2020-12-07 19:07:14.610 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003: registering service...
+2020-12-07 19:07:14.610 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-12-07 19:07:14.636 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-12-07 19:07:14.637 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-12-07 19:07:14.640 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_FILE/localhost:file:9003 - registration status: 204
+2020-12-07 19:07:15.716 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-07 19:07:15.731 INFO  com.lzn.file.config.FileApplication               :61   [32m        [0;39m Started FileApplication in 9.116 seconds (JVM running for 9.587)
+2020-12-07 19:07:15.732 INFO  com.lzn.file.config.FileApplication               :23   [32m        [0;39m 启动成功！！
+2020-12-07 19:07:15.733 INFO  com.lzn.file.config.FileApplication               :24   [32m        [0;39m File地址: 	http://127.0.0.1:9003
+2020-12-07 19:08:29.409 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/file]:173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-07 19:08:29.410 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-07 19:08:29.419 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
+2020-12-07 19:08:32.309 INFO  com.lzn.config.LogAspect                          :76   [32mJ0GOAfSq[0;39m ------------- 【文件上传】操作开始 -------------
+2020-12-07 19:08:32.309 INFO  com.lzn.config.LogAspect                          :77   [32mJ0GOAfSq[0;39m 请求地址: http://localhost:9003/file/admin/upload POST
+2020-12-07 19:08:32.309 INFO  com.lzn.config.LogAspect                          :78   [32mJ0GOAfSq[0;39m 类名方法: com.lzn.file.controller.admin.UploadController.upload
+2020-12-07 19:08:32.309 INFO  com.lzn.config.LogAspect                          :79   [32mJ0GOAfSq[0;39m 远程地址: 127.0.0.1
+2020-12-07 19:08:32.326 INFO  com.lzn.config.LogAspect                          :97   [32mJ0GOAfSq[0;39m 请求参数: [{"key":"6sfSqfOwzmik4A4icMYuUe","name":"test.mp4","shardIndex":1,"shardSize":20971520,"shardTotal":2,"size":23799951,"suffix":"mp4","use":"C"}]
+2020-12-07 19:08:32.476 INFO  com.lzn.file.controller.admin.UploadController    :46   [32mJ0GOAfSq[0;39m 上传文件开始
+2020-12-07 19:08:32.767 INFO  com.lzn.file.controller.admin.UploadController    :70   [32mJ0GOAfSq[0;39m D:\code\file\course\6sfSqfOwzmik4A4icMYuUe.mp4
+2020-12-07 19:08:32.768 INFO  com.lzn.file.controller.admin.UploadController    :72   [32mJ0GOAfSq[0;39m 保存文件记录开始
+2020-12-07 19:08:32.816 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mJ0GOAfSq[0;39m HikariPool-1 - Starting...
+2020-12-07 19:08:32.986 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mJ0GOAfSq[0;39m HikariPool-1 - Start completed.
+2020-12-07 19:08:32.991 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mJ0GOAfSq[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key` from file WHERE ( `key` = ? ) 
+2020-12-07 19:08:33.008 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mJ0GOAfSq[0;39m ==> Parameters: 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 19:08:33.019 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mJ0GOAfSq[0;39m <==      Total: 0
+2020-12-07 19:08:33.024 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJ0GOAfSq[0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-12-07 19:08:33.025 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJ0GOAfSq[0;39m ==> Parameters: EsJBUlO2(String), http://127.0.0.1:9000/file/f/course\6sfSqfOwzmik4A4icMYuUe.mp4(String), test.mp4(String), mp4(String), 23799951(Integer), C(String), 2020-12-07 19:08:33.024(Timestamp), 2020-12-07 19:08:33.024(Timestamp), 1(Integer), 20971520(Integer), 2(Integer), 6sfSqfOwzmik4A4icMYuUe(String)
+2020-12-07 19:08:33.028 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mJ0GOAfSq[0;39m <==    Updates: 1
+2020-12-07 19:08:33.031 INFO  com.lzn.config.LogAspect                          :109  [32mJ0GOAfSq[0;39m 返回结果: {"content":{"key":"6sfSqfOwzmik4A4icMYuUe","name":"test.mp4","path":"http://127.0.0.1:9000/file/f/course\\6sfSqfOwzmik4A4icMYuUe.mp4","shardIndex":1,"shardSize":20971520,"shardTotal":2,"size":23799951,"suffix":"mp4","use":"C"},"success":true}
+2020-12-07 19:08:33.032 INFO  com.lzn.config.LogAspect                          :110  [32mJ0GOAfSq[0;39m ------------- 结束 耗时：725 ms -------------

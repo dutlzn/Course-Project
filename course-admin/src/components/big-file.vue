@@ -61,11 +61,11 @@
 				  size: 37415970
 				  type: "video/mp4"
 				*/
-			 
-			 // 文件标识
-        let key = hex_md5(file);
-        let key10 = parseInt(key, 16);
-        let key62 = Tool._10to62(key10);
+
+				// 文件标识
+				let key = hex_md5(file);
+				let key10 = parseInt(key, 16);
+				let key62 = Tool._10to62(key10);
 				console.log(key, key10, key62);
 
 
@@ -90,8 +90,8 @@
 
 				// 文件分片
 				let shardSize = 20 * 1024 * 1024; // 20mb为一个分片
-				let shardIndex = 2; //分片索引 1标识第一个分片
-				let start = (shardIndex-1)* shardSize; // 当前分片起始位置
+				let shardIndex = 1; //分片索引 1标识第一个分片
+				let start = (shardIndex - 1) * shardSize; // 当前分片起始位置
 				let end = Math.min(file.size, start + shardSize); //当前分片结束位置
 				let fileShard = file.slice(start, end);
 				let size = file.size;
@@ -111,17 +111,37 @@
 				formData.append('size', size);
 				formData.append('key', key62);
 
-				Loading.show();
-				_this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response) => {
-					Loading.hide();
-					let resp = response.data;
-					_this.afterUpload(resp);
+				// 将图片转为base64进行传输
+				let fileReader = new FileReader();
+				// event listener
+				fileReader.onload = function(e) {
+					let base64 = e.target.result;
+					// console.log("base64:", base64);
 
-					// 清空，下次在选择同一个东西时候，也会触发
-					$("#" + _this.intputId + "-input").val("");
+					let param = {
+						'shardIndex': shardIndex,
+						'shardSize': shardSize,
+						'shardTotal': shardTotal,
+						'shard': base64,
+						'use': _this.use,
+						'name': file.name,
+						'suffix': suffix,
+						'size': file.size,
+						'key': key62
+					};
 
+					Loading.show();
+					_this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', param).then((response) => {
+						Loading.hide();
+						let resp = response.data;
+						_this.afterUpload(resp);
+						// 清空，下次在选择同一个东西时候，也会触发
+						$("#" + _this.intputId + "-input").val("");
+					});
 
-				})
+				};
+				fileReader.readAsDataURL(fileShard);
+
 			},
 
 			selectFile() {

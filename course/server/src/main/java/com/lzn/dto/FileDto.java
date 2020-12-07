@@ -53,6 +53,12 @@ public class FileDto {
     private Integer shardTotal;
     private String key;
 
+    /**
+     * base64
+     * @return
+     */
+    private String shard;
+
     @Override
     public String toString() {
         return "FileDto{" +
@@ -68,7 +74,16 @@ public class FileDto {
                 ", shardSize=" + shardSize +
                 ", shardTotal=" + shardTotal +
                 ", key='" + key + '\'' +
+                ", shard='" + shard + '\'' +
                 '}';
+    }
+
+    public String getShard() {
+        return shard;
+    }
+
+    public void setShard(String shard) {
+        this.shard = shard;
     }
 
     public Integer getShardIndex() {
