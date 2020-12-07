@@ -52,7 +52,6 @@
 					<v-row class="d-flex justify-center">
 						<v-col cols="8">
 							<video v-bind:src="section.video" controls="controls" id="video">
-								
 							</video>
 						</v-col>
 						

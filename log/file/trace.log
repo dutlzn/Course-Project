@@ -447,3 +447,62 @@
 2020-12-07 11:08:23.019 DEBUG com.lzn.mapper.FileMapper.insert                  :159  [32mjKyi3JdR[0;39m <==    Updates: 1
 2020-12-07 11:08:23.036 INFO  com.lzn.config.LogAspect                          :109  [32mjKyi3JdR[0;39m 返回结果: {"content":{"key":"T6BkJvAg","name":"8-1 完成基本的文件上传功能_慕课网【更多IT资源 www.cong0sousuo.top】.ev4.mp4","path":"http://127.0.0.1:9000/file/f/course\\T6BkJvAg.mp4","shardIndex":1,"shardSize":20971520,"shardTotal":5,"size":93287446,"suffix":"mp4","use":"C"},"success":true}
 2020-12-07 11:08:23.037 INFO  com.lzn.config.LogAspect                          :110  [32mjKyi3JdR[0;39m ------------- 结束 耗时：522 ms -------------
+2020-12-07 11:13:11.551 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:18:11.553 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:23:11.555 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:28:11.557 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:33:11.558 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:38:11.560 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:42:03.073 INFO  com.lzn.config.LogAspect                          :76   [32mPFiV6ALr[0;39m ------------- 【文件】查询开始 -------------
+2020-12-07 11:42:03.073 INFO  com.lzn.config.LogAspect                          :77   [32mPFiV6ALr[0;39m 请求地址: http://localhost:9003/file/admin/file/list POST
+2020-12-07 11:42:03.074 INFO  com.lzn.config.LogAspect                          :78   [32mPFiV6ALr[0;39m 类名方法: com.lzn.file.controller.admin.FileController.list
+2020-12-07 11:42:03.074 INFO  com.lzn.config.LogAspect                          :79   [32mPFiV6ALr[0;39m 远程地址: 127.0.0.1
+2020-12-07 11:42:03.077 INFO  com.lzn.config.LogAspect                          :97   [32mPFiV6ALr[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-07 11:42:03.143 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mPFiV6ALr[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-12-07 11:42:03.144 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mPFiV6ALr[0;39m ==> Parameters: 
+2020-12-07 11:42:03.153 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mPFiV6ALr[0;39m <==    Columns: count(0)
+2020-12-07 11:42:03.153 TRACE com.lzn.mapper.FileMapper.selectByExample_COUNT   :165  [32mPFiV6ALr[0;39m <==        Row: 46
+2020-12-07 11:42:03.155 DEBUG com.lzn.mapper.FileMapper.selectByExample_COUNT   :159  [32mPFiV6ALr[0;39m <==      Total: 1
+2020-12-07 11:42:03.158 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mPFiV6ALr[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at, shard_index, shard_size, shard_total, `key` from file LIMIT ? 
+2020-12-07 11:42:03.158 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mPFiV6ALr[0;39m ==> Parameters: 5(Integer)
+2020-12-07 11:42:03.159 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mPFiV6ALr[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at, shard_index, shard_size, shard_total, key
+2020-12-07 11:42:03.160 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mPFiV6ALr[0;39m <==        Row: 0KEuDJiV, course\G2pd38Bq.mp4, test1.mp4, mp4, 342107, C, 2020-12-06 19:20:15.86, 2020-12-06 19:20:15.86, null, null, null, null
+2020-12-07 11:42:03.161 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mPFiV6ALr[0;39m <==        Row: 0OG3eXol, course\0mUkwqKQ.blob, blob, blob, 52428800, C, 2020-12-07 09:36:11.954, 2020-12-07 09:36:11.954, null, null, null, null
+2020-12-07 11:42:03.162 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mPFiV6ALr[0;39m <==        Row: 1JJsEb61, course\gwfyXcBy.blob, blob, blob, 20971520, C, 2020-12-06 20:29:14.211, 2020-12-06 20:29:14.211, null, null, null, null
+2020-12-07 11:42:03.163 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mPFiV6ALr[0;39m <==        Row: 22YePfZf, course\FINWC1FK.mp4, test1.mp4, mp4, 342107, C, 2020-12-06 18:40:09.619, 2020-12-06 18:40:09.619, null, null, null, null
+2020-12-07 11:42:03.163 TRACE com.lzn.mapper.FileMapper.selectByExample         :165  [32mPFiV6ALr[0;39m <==        Row: 83RBaABw, course\BaNkTIJX.blob, blob, blob, 40858646, C, 2020-12-07 09:35:09.421, 2020-12-07 09:35:09.421, null, null, null, null
+2020-12-07 11:42:03.163 DEBUG com.lzn.mapper.FileMapper.selectByExample         :159  [32mPFiV6ALr[0;39m <==      Total: 5
+2020-12-07 11:42:03.166 INFO  com.lzn.config.LogAspect                          :109  [32mPFiV6ALr[0;39m 返回结果: {"content":{"list":[{"createdAt":1607253615860,"id":"0KEuDJiV","name":"test1.mp4","path":"course\\G2pd38Bq.mp4","size":342107,"suffix":"mp4","updatedAt":1607253615860,"use":"C"},{"createdAt":1607304971954,"id":"0OG3eXol","name":"blob","path":"course\\0mUkwqKQ.blob","size":52428800,"suffix":"blob","updatedAt":1607304971954,"use":"C"},{"createdAt":1607257754211,"id":"1JJsEb61","name":"blob","path":"course\\gwfyXcBy.blob","size":20971520,"suffix":"blob","updatedAt":1607257754211,"use":"C"},{"createdAt":1607251209619,"id":"22YePfZf","name":"test1.mp4","path":"course\\FINWC1FK.mp4","size":342107,"suffix":"mp4","updatedAt":1607251209619,"use":"C"},{"createdAt":1607304909421,"id":"83RBaABw","name":"blob","path":"course\\BaNkTIJX.blob","size":40858646,"suffix":"blob","updatedAt":1607304909421,"use":"C"}],"page":1,"size":5,"total":46},"success":true}
+2020-12-07 11:42:03.166 INFO  com.lzn.config.LogAspect                          :110  [32mPFiV6ALr[0;39m ------------- 结束 耗时：93 ms -------------
+2020-12-07 11:43:11.562 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:48:11.564 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:53:11.566 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 11:58:11.568 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:03:11.570 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:08:11.571 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:13:11.572 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:18:11.574 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:23:11.577 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:28:11.578 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:33:11.579 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:38:11.581 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:43:11.583 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:48:11.585 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:53:11.586 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 12:58:11.588 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:03:11.589 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:08:11.590 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:13:11.592 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:18:11.594 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:23:11.597 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:28:11.597 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:33:11.599 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:38:11.601 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:43:11.604 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:48:11.605 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:53:11.606 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 13:58:11.607 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 14:03:11.608 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 14:08:11.610 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 14:13:11.612 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-07 14:15:16.809 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
