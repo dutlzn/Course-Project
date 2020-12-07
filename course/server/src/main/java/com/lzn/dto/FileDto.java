@@ -48,6 +48,60 @@ public class FileDto {
     private Date updatedAt;
 
 
+    private Integer shardIndex;
+    private Integer shardSize;
+    private Integer shardTotal;
+    private String key;
+
+    @Override
+    public String toString() {
+        return "FileDto{" +
+                "id='" + id + '\'' +
+                ", path='" + path + '\'' +
+                ", name='" + name + '\'' +
+                ", suffix='" + suffix + '\'' +
+                ", size=" + size +
+                ", use='" + use + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", shardIndex=" + shardIndex +
+                ", shardSize=" + shardSize +
+                ", shardTotal=" + shardTotal +
+                ", key='" + key + '\'' +
+                '}';
+    }
+
+    public Integer getShardIndex() {
+        return shardIndex;
+    }
+
+    public void setShardIndex(Integer shardIndex) {
+        this.shardIndex = shardIndex;
+    }
+
+    public Integer getShardSize() {
+        return shardSize;
+    }
+
+    public void setShardSize(Integer shardSize) {
+        this.shardSize = shardSize;
+    }
+
+    public Integer getShardTotal() {
+        return shardTotal;
+    }
+
+    public void setShardTotal(Integer shardTotal) {
+        this.shardTotal = shardTotal;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public String getId() {
         return id;
@@ -113,23 +167,5 @@ public class FileDto {
         this.updatedAt = updatedAt;
     }
 
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", path=").append(path);
-        sb.append(", name=").append(name);
-        sb.append(", suffix=").append(suffix);
-        sb.append(", size=").append(size);
-        sb.append(", use=").append(use);
-        sb.append(", createdAt=").append(createdAt);
-        sb.append(", updatedAt=").append(updatedAt);
-        sb.append("]");
-        return sb.toString();
-    }
 
 }

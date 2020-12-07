@@ -44,18 +44,21 @@ public class UploadController {
 
     @RequestMapping("/upload")
     public ResponseDto upload(
-            @RequestParam MultipartFile file,
-            String use
+            @RequestParam MultipartFile shard,
+            String use,
+            String name,
+            String suffix,
+            Integer size,
+            Integer shardIndex,
+            Integer shardSize,
+            Integer shardTotal
             ) throws IOException {
 
-        LOG.info(file.getOriginalFilename());
-        LOG.info(String.valueOf(file.getSize()));
+        LOG.info("上传文件开始");
 
         // 保存文件到本地
         FileUseEnum useEnum = FileUseEnum.getByCode(use);
 
-        String fileName=  file.getOriginalFilename();
-        String suffix = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
         String key = UuidUtil.getShortUuid();
 
         // 如果文件夹不存在则创建
@@ -70,18 +73,20 @@ public class UploadController {
         String fullPath =FILE_PATH  + path;
         // 文件的路径应该是自动生成的
         File dest = new File(fullPath);// 生成目标位置
-        file.transferTo(dest);// 写道目标位置
+        shard.transferTo(dest);// 写道目标位置
         LOG.info(dest.getAbsolutePath());
 
         LOG.info("保存文件记录开始");
         FileDto fileDto = new FileDto();
         fileDto.setPath(path);
-        fileDto.setName(fileName);
-        fileDto.setSize(Math.toIntExact(file.getSize()));
+        fileDto.setName(name);
+        fileDto.setSize(size);
         fileDto.setSuffix(suffix);
         fileDto.setUse(use);
-
-
+        fileDto.setShardIndex(shardIndex);
+        fileDto.setShardSize(shardSize);
+        fileDto.setShardTotal(shardTotal);
+        fileDto.setKey(key);
         fileService.save(fileDto);
 
         ResponseDto responseDto = new ResponseDto();
