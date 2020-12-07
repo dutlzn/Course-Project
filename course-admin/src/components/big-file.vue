@@ -70,7 +70,7 @@
 				}
 				
 				// 文件分片
-				let shardSize = 50*1024*1024;// 20mb为一个分片
+				let shardSize = 20*1024*1024;// 20mb为一个分片
 				let shardIndex = 1;//分片索引
 				let start = shardIndex * shardSize;// 当前分片起始位置
 				let end = Math.min(file.size, start + shardSize);//当前分片结束位置
