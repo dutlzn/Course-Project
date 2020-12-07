@@ -154,7 +154,7 @@
 			
 			getFileShard(shardIndex, shardSize) {
 				let _this = this;
-								let file = _this.$refs.file.files[0];
+				let file = _this.$refs.file.files[0];
 				let start = (shardIndex - 1) * shardSize; // 当前分片起始位置
 				let end = Math.min(file.size, start + shardSize); //当前分片结束位置
 				
