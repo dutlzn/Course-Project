@@ -35,6 +35,23 @@
 		<v-navigation-drawer v-model="drawer" app  color="#F8F8F8">
 			<!-- 对应了菜单先写死 -->
 			<v-list>
+				
+				<v-list-group :value="true" prepend-icon="person" color="blue" no-action="">
+					<template v-slot:activator>
+						<v-list-item-content>
+							<v-list-item-title>系统管理</v-list-item-title>
+						</v-list-item-content>
+					</template>
+				
+					<v-list-item to="/system/user">
+						<v-list-item-content>
+							<v-list-item-title>用户管理</v-list-item-title>
+						</v-list-item-content>
+					</v-list-item>
+				
+				</v-list-group>
+				
+				
 				<v-list-group :value="true" prepend-icon="apps" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
@@ -77,6 +94,10 @@
 					</v-list-item>
 				
 				</v-list-group>
+				
+				
+				
+				
 			</v-list>
 
 		</v-navigation-drawer>

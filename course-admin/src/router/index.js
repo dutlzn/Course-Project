@@ -11,6 +11,7 @@ import Course from '../views/admin/course.vue'
 import Chapter from '../views/admin/chapter.vue'
 import Section from '../views/admin/section.vue'
 import File from '../views/admin/file.vue'
+import User from '../views/admin/user'
 // Vue.use(VueRouter);
 Vue.use(Router);
 
@@ -68,6 +69,10 @@ export default new Router(
 							path: 'file/file',
 							name: 'file/file',
 							component: File
+						}, {
+							path: 'system/user',
+							name: 'system/user',
+							component: User
 						}]
         }],
 				
