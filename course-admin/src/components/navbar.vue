@@ -36,7 +36,7 @@
 			<!-- 对应了菜单先写死 -->
 			<v-list>
 				
-				<v-list-group :value="true" prepend-icon="person" color="blue" no-action="">
+				<v-list-group  prepend-icon="settings" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>系统管理</v-list-item-title>
@@ -52,7 +52,7 @@
 				</v-list-group>
 				
 				
-				<v-list-group :value="true" prepend-icon="apps" color="blue" no-action="">
+				<v-list-group  prepend-icon="apps" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>业务管理</v-list-item-title>
@@ -79,8 +79,8 @@
 
 				</v-list-group>
 				
-				
-				<v-list-group :value="true" prepend-icon="folder" color="blue" no-action="">
+				<!-- :value="true" 就是展开了 -->
+				<v-list-group  prepend-icon="folder" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>文件管理</v-list-item-title>

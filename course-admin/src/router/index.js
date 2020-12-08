@@ -34,9 +34,12 @@ export default new Router(
             path: '*',
             redirect: "/login",
         }, {
-            path: "/login",
+            path: "",
             component: Login
-        }, {
+        },{
+						path: "/login",
+						component: Login
+				} ,{
             path: "/",
             name: "admin", 
             // name属性后面会用到
