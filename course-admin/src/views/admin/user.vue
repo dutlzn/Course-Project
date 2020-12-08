@@ -8,8 +8,9 @@
 				</v-card-title>
 
 				<v-card-text>
-					 						<v-col cols="12">
-							<v-text-field label="登陆名" v-model="user.loginName" required></v-text-field>
+					 	<v-col cols="12">
+							<v-text-field label="登陆名" v-if="user.id" disabled v-model="user.loginName"></v-text-field>
+											<v-text-field label="登陆名" v-if="!user.id"  v-model="user.loginName"></v-text-field>
 						</v-col>
 						<v-col cols="12">
 							<v-text-field label="昵称" v-model="user.name" required></v-text-field>
