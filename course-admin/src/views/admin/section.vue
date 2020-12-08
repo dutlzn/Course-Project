@@ -33,34 +33,32 @@
 						</v-col>
 
 						<v-col cols="6">
-							<v-text-field label="时长" v-model="section.time" required></v-text-field>
-						</v-col>
-						<v-col cols="6">
 							<v-text-field label="顺序" v-model="section.sort" required></v-text-field>
 						</v-col>
+						
 
 						<v-col cols="12">
 							<!-- <v-text-field label="视频" v-model="section.video" required></v-text-field> -->
-							<big-file v-bind:text="'上传大视频'" v-bind:afterUpload="afterUpload" v-bind:use="FILE_USE.COURSE.key" v-bind:suffixs="['mp4']"
-							>
+							<big-file v-bind:text="'上传大视频'" v-bind:afterUpload="afterUpload" v-bind:use="FILE_USE.COURSE.key" v-bind:suffixs="['mp4']">
 
 							</big-file>
 						</v-col>
+						
 
 					</v-row>
-					
+
 					<v-row class="d-flex justify-center">
 						<v-col cols="8">
 							<video v-bind:src="section.video" controls="controls" id="video">
 							</video>
 						</v-col>
-						
+
 					</v-row>
 				</v-card-text>
 
 				<v-card-actions>
 					<v-spacer></v-spacer>
-					<v-btn @click="dialogSection = false" clas="info">
+					<v-btn @click="closeDialog()" clas="info">
 						取消
 					</v-btn>
 
@@ -192,13 +190,14 @@
 				chapter: {},
 				course: {},
 				SECTION_CHARGE: SECTION_CHARGE_ARRAY,
-				
+
 				FILE_USE: FILE_USE,
 
 				dialogSection: false,
 			}
 		},
-
+		
+		
 		mounted: function() {
 			let _this = this;
 			_this.$refs.pagination.size = 5;
@@ -213,6 +212,14 @@
 		},
 
 		methods: {
+			// 关闭模态框
+			closeDialog() {
+				let _this = this;
+				_this.dialogSection = false;
+				_this.section = {};
+				_this.section.video = {};
+			},
+			
 			// 获取所有小节的数据
 			list(page) {
 				let _this = this;
@@ -238,6 +245,11 @@
 			 */
 			add() {
 				let _this = this;
+				// 先清空视频
+				
+				_this.section = {};
+				_this.section.video = {};
+				// _this.section.time = 0;
 				_this.dialogSection = true;
 			},
 
@@ -281,6 +293,12 @@
 							// 关闭模态框
 							_this.dialogSection = false;
 							_this.list(1);
+
+							// 暂停video 元素
+							var myVideo = document.getElementById('video');
+							myVideo.pause();
+
+
 							Toast.success("保存成功");
 						} else {
 							Toast.warning(resp.message);
@@ -318,18 +336,18 @@
 				let _this = this;
 				let video = resp.content.path;
 				_this.section.video = video;
-				_this.getTime();
+				console.log(_this.section.video);
+				// 新增有一个不会刷新的bug
+				$('video').attr('src', _this.section.video);
+				// 设置时长
+        setTimeout(function () {
+          let ele = document.getElementById("video");
+					_this.section.time = 0;
+          _this.section.time = parseInt(ele.duration, 10);
+					console.log(_this.section.time); // 有值 但是时长，在表单新增时候有bug
+        }, 1000);
+				
 			},
-			
-			/**
-			 * 获取时长
-			 */
-			getTime() {
-				let _this = this;
-				let ele = document.getElementById("video");
-				_this.section.time = parseInt(ele.duration, 10);
-			}
-
 		}
 	}
 </script>

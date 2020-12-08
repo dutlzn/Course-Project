@@ -47,7 +47,7 @@
 
 			uploadFile() {
 				let _this = this;
-				let formData = new window.FormData();
+				// let formData = new window.FormData();
 				// key: "file"必须和后端controller参数名一样
 				let file = _this.$refs.file.files[0];
 
@@ -63,10 +63,11 @@
 				*/
 
 				// 文件标识
-				let key = hex_md5(file);
-				let key10 = parseInt(key, 16);
-				let key62 = Tool._10to62(key10);
-				console.log(key, key10, key62);
+        let key = hex_md5(file.name + file.size + file.type);
+        let key10 = parseInt(key, 16);
+        let key62 = Tool._10to62(key10);
+        // console.log(key, key10, key62);
+				// console.log(key, key10, key62);
 
 
 				// 判断文件格式

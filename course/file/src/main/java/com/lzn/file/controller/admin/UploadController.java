@@ -43,9 +43,7 @@ public class UploadController {
 
     @RequestMapping("/upload")
     public ResponseDto upload(@RequestBody FileDto fileDto) throws Exception {
-
         LOG.info("上传文件开始");
-
         String use = fileDto.getUse();
         String key = fileDto.getKey();
         String suffix = fileDto.getSuffix();
@@ -55,12 +53,14 @@ public class UploadController {
         // 保存文件到本地
         FileUseEnum useEnum = FileUseEnum.getByCode(use);
 
-        // 如果文件夹不存在则创建
+        //如果文件夹不存在则创建
         String dir = useEnum.name().toLowerCase();
         File fullDir = new File(FILE_PATH + dir);
-        if( !fullDir.exists()){
+        if (!fullDir.exists()) {
             fullDir.mkdir();
         }
+
+//        String path = dir + File.separator + key + "." + suffix + "." + fileDto.getShardIndex();
         String path = new StringBuffer(dir)
                 .append(File.separator)
                 .append(key)
@@ -72,36 +72,33 @@ public class UploadController {
                 .append(fileDto.getShardIndex())
                 .toString(); // course\6sfSqfOwzmik4A4icMYuUe.mp4.1
         String fullPath = FILE_PATH + localPath;
-
-        // 文件的路径应该是自动生成的
-        File dest = new File(fullPath);// 生成目标位置
-        shard.transferTo(dest);// 写道目标位置
+        File dest = new File(fullPath);
+        shard.transferTo(dest);
         LOG.info(dest.getAbsolutePath());
 
         LOG.info("保存文件记录开始");
-        fileDto.setPath(FILE_DOMAIN + path);
+        fileDto.setPath(path);
         fileService.save(fileDto);
 
         ResponseDto responseDto = new ResponseDto();
+        fileDto.setPath(FILE_DOMAIN + path);
         responseDto.setContent(fileDto);
 
-        if(fileDto.getShardTotal() == fileDto.getShardIndex()){
+        if (fileDto.getShardIndex().equals(fileDto.getShardTotal())) {
             this.merge(fileDto);
         }
-
         return responseDto;
     }
 
-    // 合并 分片
-//    @GetMapping("/merge")
     public void merge(FileDto fileDto) throws Exception {
+        LOG.info("合并分片开始");
         String path = fileDto.getPath(); //http://127.0.0.1:9000/file/f/course\6sfSqfOwzmik4A4icMYuUe.mp4
         path = path.replace(FILE_DOMAIN, ""); //course\6sfSqfOwzmik4A4icMYuUe.mp4
         Integer shardTotal = fileDto.getShardTotal();
         File newFile = new File(FILE_PATH + path);
-        FileOutputStream outputStream = new FileOutputStream(newFile, true);// 文件追加写入
-        FileInputStream fileInputStream = null; // 分片文件
-        byte[] byt = new byte[1024*1024*10];
+        FileOutputStream outputStream = new FileOutputStream(newFile, true);//文件追加写入
+        FileInputStream fileInputStream = null;//分片文件
+        byte[] byt = new byte[10 * 1024 * 1024];
         int len;
 
         try {
@@ -112,7 +109,7 @@ public class UploadController {
                     outputStream.write(byt, 0, len);
                 }
             }
-        } catch(IOException e){
+        } catch (IOException e) {
             LOG.error("分片合并异常", e);
         } finally {
             try {
@@ -125,23 +122,20 @@ public class UploadController {
                 LOG.error("IO流关闭", e);
             }
         }
-
         LOG.info("合并分片结束");
 
         System.gc();
+        Thread.sleep(100);
 
         // 删除分片
         LOG.info("删除分片开始");
-        for(int i = 0;i<shardTotal;++i){
-            String filePath = FILE_PATH + path + "." + (i+1);
+        for (int i = 0; i < shardTotal; i++) {
+            String filePath = FILE_PATH + path + "." + (i + 1);
             File file = new File(filePath);
             boolean result = file.delete();
-            LOG.info("删除{}， {}",filePath, result ? "成功" : "失败");
-
-
+            LOG.info("删除{}，{}", filePath, result ? "成功" : "失败");
         }
         LOG.info("删除分片结束");
-
     }
 
 
@@ -150,6 +144,9 @@ public class UploadController {
         LOG.info("检查上传文件分片{}", key);
         ResponseDto responseDto = new ResponseDto();
         FileDto fileDto = fileService.findByKey(key);
+        if(fileDto != null){
+            fileDto.setPath(FILE_DOMAIN + fileDto.getPath());
+        }
         responseDto.setContent(fileDto);
         return responseDto;
     }

@@ -75,12 +75,12 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 				<v-card-text>
 					<v-col cols="12">
 					
-						<file 
+						<big-file 
 						v-bind:text="'上传封面'" 		      		
 						v-bind:after-upload="afterUpload" 
 						v-bind:suffixs="['jpg', 'jpeg', 'png']"
 						v-bind:use="FILE_USE.COURSE.key"
-						v-bind:input-id="'image-upload'" v-bind:label="'封面'"></file>
+						v-bind:input-id="'image-upload'" v-bind:label="'封面'"></big-file>
 					
 					</v-col>
 					
@@ -307,7 +307,8 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 
 <script>
 	import Pagination from "../../components/pagination";
-	import File from "../../components/file.vue"
+	// import File from "../../components/file.vue"
+import BigFile from '../../components/big-file.vue'
 	export default {
 
 		updated() {
@@ -317,7 +318,7 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 
 		components: {
 			Pagination,
-			File
+			BigFile
 		},
 
 		name: 'business-course',
@@ -353,10 +354,7 @@ vuetify和ztree在树形结构数据上有很大不同，因此需要前端重�
 				categoryList: [],
 
 				teachers: [],
-
-
-
-
+				
 				sort: {
 					id: "",
 					oldSort: 0,

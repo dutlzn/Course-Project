@@ -22,9 +22,9 @@
 
 					<v-col cols="12">
 
-						<file v-bind:text="'上传头像'" v-bind:after-upload="afterUpload" v-bind:suffixs="['jpg', 'jpeg', 'png']"
+						<big-file v-bind:text="'上传头像'" v-bind:after-upload="afterUpload" v-bind:suffixs="['jpg', 'jpeg', 'png']"
 						 v-bind:use="FILE_USE.TEACHER.key"
-							v-bind:input-id="'image-upload'" v-bind:label="'头像'"></file>
+							v-bind:input-id="'image-upload'" v-bind:label="'头像'"></big-file>
 
 					</v-col>
 
@@ -136,13 +136,14 @@
 
 <script>
 	import Pagination from "../../components/pagination";
-	import File from "../../components/file.vue";
+	// import File from "../../components/file.vue";
+	import BigFile from '../../components/big-file.vue'
 	export default {
 		name: 'business-teacher',
 
 		components: {
 			Pagination,
-			File
+			BigFile
 		},
 
 		data: function() {
