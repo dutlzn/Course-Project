@@ -139,25 +139,26 @@
 						let resp = response.data;
 						if (shardIndex < shardTotal) {
 							// 下一个分片
-							param.shardIndex = param.shardIndex+1;
+							param.shardIndex = param.shardIndex + 1;
 							_this.upload(param);
 						} else {
 							_this.afterUpload(resp);
+							$("#" + _this.intputId + "-input").val("");
 						}
 						// 清空，下次在选择同一个东西时候，也会触发
-						$("#" + _this.intputId + "-input").val("");
+						// $("#" + _this.intputId + "-input").val("");
 					});
 
 				};
 				fileReader.readAsDataURL(fileShard);
 			},
-			
+
 			getFileShard(shardIndex, shardSize) {
 				let _this = this;
 				let file = _this.$refs.file.files[0];
 				let start = (shardIndex - 1) * shardSize; // 当前分片起始位置
 				let end = Math.min(file.size, start + shardSize); //当前分片结束位置
-				
+
 				let fileShard = file.slice(start, end);
 				return fileShard;
 			},
