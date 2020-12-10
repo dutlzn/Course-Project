@@ -6,6 +6,7 @@ import com.lzn.domain.User;
 import com.lzn.domain.UserExample;
 import com.lzn.domain.Test;
 import com.lzn.domain.TestExample;
+import com.lzn.dto.LoginUserDto;
 import com.lzn.dto.UserDto;
 import com.lzn.dto.PageDto;
 import com.lzn.exception.BusinessException;
@@ -14,6 +15,8 @@ import com.lzn.mapper.UserMapper;
 import com.lzn.mapper.TestMapper;
 import com.lzn.util.CopyUtil;
 import com.lzn.util.UuidUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +29,9 @@ import java.util.List;
 
 @Service
 public class UserService {
+
+    private static final Logger LOG =
+            LoggerFactory.getLogger(UserService.class);
 
     @Autowired
     private UserMapper userMapper;
@@ -112,5 +118,23 @@ public class UserService {
         user.setId(userDto.getId());
         user.setPassword(userDto.getPassword());
         userMapper.updateByPrimaryKeySelective(user);
+    }
+
+    public LoginUserDto login(UserDto userDto) {
+        User user = selectByLoginName(userDto.getLoginName());
+        if ( user == null ) {
+            // 用户名不存在
+            LOG.error("用户名不存在");
+            throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+        } else {
+            if ( user.getPassword().equals(userDto.getPassword())) {
+                // 登录成功
+                return CopyUtil.copy(user, LoginUserDto.class);
+            } else {
+                // 密码不对
+                LOG.error("密码错误");
+                throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+            }
+        }
     }
 }

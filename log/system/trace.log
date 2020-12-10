@@ -655,3 +655,304 @@
 2020-12-10 14:25:01.689 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mD9G2LQxP[0;39m <==      Total: 2
 2020-12-10 14:25:01.689 INFO  com.lzn.config.LogAspect                          :109  [32mD9G2LQxP[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
 2020-12-10 14:25:01.689 INFO  com.lzn.config.LogAspect                          :110  [32mD9G2LQxP[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-10 14:26:44.740 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 14:31:44.741 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 14:36:44.743 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 14:41:44.744 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 14:46:44.745 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 14:51:44.747 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 14:56:44.748 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:01:44.750 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:06:44.751 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:11:44.753 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:16:44.755 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:21:44.757 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:26:44.758 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:31:44.760 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:36:44.761 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:41:44.763 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:46:44.766 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:51:44.766 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 15:56:44.768 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:01:44.770 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:06:44.771 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:11:44.772 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:13:28.079 INFO  com.lzn.config.LogAspect                          :76   [32mjotY5yRh[0;39m ------------- 【用户】保存开始 -------------
+2020-12-10 16:13:28.080 INFO  com.lzn.config.LogAspect                          :77   [32mjotY5yRh[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-10 16:13:28.080 INFO  com.lzn.config.LogAspect                          :78   [32mjotY5yRh[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-10 16:13:28.080 INFO  com.lzn.config.LogAspect                          :79   [32mjotY5yRh[0;39m 远程地址: 127.0.0.1
+2020-12-10 16:13:28.081 INFO  com.lzn.config.LogAspect                          :97   [32mjotY5yRh[0;39m 请求参数: [{}]
+2020-12-10 16:13:28.115 ERROR o.a.c.c.C.[.[.[/system].[dispatcherServlet]       :175  [32mjotY5yRh[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/system] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.lzn.system.controller.admin.UserController.save(UserController.java:30)
+	at com.lzn.system.controller.admin.UserController$$FastClassBySpringCGLIB$$ca709954.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.lzn.config.LogAspect.doAround(LogAspect.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lzn.system.controller.admin.UserController$$EnhancerBySpringCGLIB$$c2b00c1c.save(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-10 16:16:44.775 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:21:44.777 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:26:44.780 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:31:44.782 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:36:44.784 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:41:44.785 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:46:44.787 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:51:44.788 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 16:54:03.411 INFO  com.lzn.config.LogAspect                          :76   [32mAFcG5FBH[0;39m ------------- 【用户】查询开始 -------------
+2020-12-10 16:54:03.411 INFO  com.lzn.config.LogAspect                          :77   [32mAFcG5FBH[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-10 16:54:03.412 INFO  com.lzn.config.LogAspect                          :78   [32mAFcG5FBH[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-10 16:54:03.412 INFO  com.lzn.config.LogAspect                          :79   [32mAFcG5FBH[0;39m 远程地址: 127.0.0.1
+2020-12-10 16:54:03.412 INFO  com.lzn.config.LogAspect                          :97   [32mAFcG5FBH[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-10 16:54:03.418 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mAFcG5FBH[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-10 16:54:03.419 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mAFcG5FBH[0;39m ==> Parameters: 
+2020-12-10 16:54:03.420 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mAFcG5FBH[0;39m <==    Columns: count(0)
+2020-12-10 16:54:03.421 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mAFcG5FBH[0;39m <==        Row: 2
+2020-12-10 16:54:03.421 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mAFcG5FBH[0;39m <==      Total: 1
+2020-12-10 16:54:03.422 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAFcG5FBH[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-10 16:54:03.422 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAFcG5FBH[0;39m ==> Parameters: 5(Integer)
+2020-12-10 16:54:03.423 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAFcG5FBH[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 16:54:03.424 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAFcG5FBH[0;39m <==        Row: 10000000, test, 测试111111, b9b237df8bd22c295180ea0109cb7e67
+2020-12-10 16:54:03.424 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAFcG5FBH[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-10 16:54:03.424 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAFcG5FBH[0;39m <==      Total: 2
+2020-12-10 16:54:03.425 INFO  com.lzn.config.LogAspect                          :109  [32mAFcG5FBH[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-10 16:54:03.426 INFO  com.lzn.config.LogAspect                          :110  [32mAFcG5FBH[0;39m ------------- 结束 耗时：16 ms -------------
+2020-12-10 16:54:19.019 INFO  com.lzn.config.LogAspect                          :76   [32m7vn5z6GK[0;39m ------------- 【用户】保存开始 -------------
+2020-12-10 16:54:19.020 INFO  com.lzn.config.LogAspect                          :77   [32m7vn5z6GK[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-10 16:54:19.020 INFO  com.lzn.config.LogAspect                          :78   [32m7vn5z6GK[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-10 16:54:19.020 INFO  com.lzn.config.LogAspect                          :79   [32m7vn5z6GK[0;39m 远程地址: 127.0.0.1
+2020-12-10 16:54:19.020 INFO  com.lzn.config.LogAspect                          :97   [32m7vn5z6GK[0;39m 请求参数: [{"loginName":"admin","name":"超级管理员","password":"6fb8a81a9009027fb1a9355113aa2e5a"}]
+2020-12-10 16:54:19.088 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7vn5z6GK[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 16:54:19.089 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7vn5z6GK[0;39m ==> Parameters: admin(String)
+2020-12-10 16:54:19.090 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7vn5z6GK[0;39m <==      Total: 0
+2020-12-10 16:54:19.092 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32m7vn5z6GK[0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?) 
+2020-12-10 16:54:19.094 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32m7vn5z6GK[0;39m ==> Parameters: guHzMCGy(String), admin(String), 超级管理员(String), 1f15d405949c4ed3c2279aa6d48b1e9a(String)
+2020-12-10 16:54:19.101 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32m7vn5z6GK[0;39m <==    Updates: 1
+2020-12-10 16:54:19.102 INFO  com.lzn.config.LogAspect                          :109  [32m7vn5z6GK[0;39m 返回结果: {"content":{"loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 16:54:19.102 INFO  com.lzn.config.LogAspect                          :110  [32m7vn5z6GK[0;39m ------------- 结束 耗时：83 ms -------------
+2020-12-10 16:54:19.132 INFO  com.lzn.config.LogAspect                          :76   [32mchL6kZnI[0;39m ------------- 【用户】查询开始 -------------
+2020-12-10 16:54:19.132 INFO  com.lzn.config.LogAspect                          :77   [32mchL6kZnI[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-10 16:54:19.132 INFO  com.lzn.config.LogAspect                          :78   [32mchL6kZnI[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-10 16:54:19.132 INFO  com.lzn.config.LogAspect                          :79   [32mchL6kZnI[0;39m 远程地址: 127.0.0.1
+2020-12-10 16:54:19.132 INFO  com.lzn.config.LogAspect                          :97   [32mchL6kZnI[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-10 16:54:19.133 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mchL6kZnI[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-10 16:54:19.134 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mchL6kZnI[0;39m ==> Parameters: 
+2020-12-10 16:54:19.136 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mchL6kZnI[0;39m <==    Columns: count(0)
+2020-12-10 16:54:19.136 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mchL6kZnI[0;39m <==        Row: 3
+2020-12-10 16:54:19.136 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mchL6kZnI[0;39m <==      Total: 1
+2020-12-10 16:54:19.137 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mchL6kZnI[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-10 16:54:19.138 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mchL6kZnI[0;39m ==> Parameters: 5(Integer)
+2020-12-10 16:54:19.139 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mchL6kZnI[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 16:54:19.139 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mchL6kZnI[0;39m <==        Row: 10000000, test, 测试111111, b9b237df8bd22c295180ea0109cb7e67
+2020-12-10 16:54:19.140 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mchL6kZnI[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-10 16:54:19.141 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mchL6kZnI[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 16:54:19.142 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mchL6kZnI[0;39m <==      Total: 3
+2020-12-10 16:54:19.144 INFO  com.lzn.config.LogAspect                          :109  [32mchL6kZnI[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-10 16:54:19.144 INFO  com.lzn.config.LogAspect                          :110  [32mchL6kZnI[0;39m ------------- 结束 耗时：13 ms -------------
+2020-12-10 16:56:44.789 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 17:01:44.790 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 17:05:55.165 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-10 17:05:56.667 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-10 17:05:58.072 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-10 17:05:58.819 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-10 17:05:58.848 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-10 17:05:58.849 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-10 17:05:58.849 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-10 17:05:58.952 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-10 17:05:58.953 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2273 ms
+2020-12-10 17:05:59.978 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 17:05:59.979 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 17:05:59.984 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 17:05:59.984 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 17:06:00.177 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-10 17:06:01.571 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 17:06:01.627 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-10 17:06:02.732 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 17:06:02.766 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-10 17:06:02.813 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-10 17:06:02.902 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-10 17:06:03.177 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-10 17:06:03.177 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-10 17:06:03.310 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-10 17:06:03.310 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-10 17:06:03.498 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 17:06:03.565 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-10 17:06:03.565 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-10 17:06:03.565 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-10 17:06:03.565 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-10 17:06:03.565 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-10 17:06:03.566 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-10 17:06:03.566 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-10 17:06:03.686 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-10 17:06:03.688 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-10 17:06:03.689 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-10 17:06:03.691 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607591163690 with initial instances count: 4
+2020-12-10 17:06:03.696 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-10 17:06:03.696 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607591163696, current=UP, previous=STARTING]
+2020-12-10 17:06:03.698 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-10 17:06:03.698 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-10 17:06:03.732 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-10 17:06:03.732 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-10 17:06:03.733 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-10 17:06:04.816 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 17:06:04.823 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 11.064 seconds (JVM running for 11.63)
+2020-12-10 17:06:04.824 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-10 17:06:04.824 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-10 17:06:20.493 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-10 17:06:20.493 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-10 17:06:20.503 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
+2020-12-10 17:06:20.542 INFO  com.lzn.config.LogAspect                          :76   [32mmLuK1q4Q[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 17:06:20.543 INFO  com.lzn.config.LogAspect                          :77   [32mmLuK1q4Q[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 17:06:20.543 INFO  com.lzn.config.LogAspect                          :78   [32mmLuK1q4Q[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 17:06:20.543 INFO  com.lzn.config.LogAspect                          :79   [32mmLuK1q4Q[0;39m 远程地址: 127.0.0.1
+2020-12-10 17:06:20.557 INFO  com.lzn.config.LogAspect                          :97   [32mmLuK1q4Q[0;39m 请求参数: [{"password":"e2bc5b4def6d5885a325e965c2e64c1f"}]
+2020-12-10 17:06:20.566 ERROR o.a.c.c.C.[.[.[/system].[dispatcherServlet]       :175  [32mmLuK1q4Q[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/system] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Value for loginName cannot be null] with root cause
+java.lang.RuntimeException: Value for loginName cannot be null
+	at com.lzn.domain.UserExample$GeneratedCriteria.addCriterion(UserExample.java:95)
+	at com.lzn.domain.UserExample$GeneratedCriteria.andLoginNameEqualTo(UserExample.java:188)
+	at com.lzn.domain.UserExample$Criteria.andLoginNameEqualTo(UserExample.java:388)
+	at com.lzn.service.UserService.selectByLoginName(UserService.java:103)
+	at com.lzn.service.UserService.login(UserService.java:124)
+	at com.lzn.system.controller.admin.UserController.login(UserController.java:72)
+	at com.lzn.system.controller.admin.UserController$$FastClassBySpringCGLIB$$ca709954.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.lzn.config.LogAspect.doAround(LogAspect.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lzn.system.controller.admin.UserController$$EnhancerBySpringCGLIB$$765da45b.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

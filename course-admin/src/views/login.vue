@@ -14,9 +14,11 @@
 													登录页面
 												</h1>
 												<v-form>
-													<v-text-field label="Email" name="Email" prepend-icon="email" type="text" color="blue accent-3" />
+													<v-text-field v-model="user.loginName" label="name" name="name" prepend-icon="person" type="text" color="blue accent-3" />
 
-													<v-text-field id="password" label="Password" name="Password" prepend-icon="lock" type="password" color="blue accent-3" />
+													<v-text-field v-model="user.password" id="password" label="Password" name="Password" prepend-icon="lock"
+													 type="password" color="blue accent-3" />
+
 
 												</v-form>
 
@@ -99,6 +101,7 @@
 	export default {
 		name: 'login',
 		data: () => ({
+			user: {},
 			step: 1,
 		}),
 
@@ -114,9 +117,31 @@
 			change2() {
 				this.step--;
 			},
-			
+
 			login() {
-				this.$router.push("/welcome");
+				let _this = this;
+
+				if (
+					1 != 1 ||
+					!Validator.require(_this.user.loginName, "用户名") ||
+					!Validator.require(_this.user.password, "密码")
+				) {
+					return;
+				}
+				// 进行第一次加密
+				_this.user.password = hex_md5(_this.user.password + KEY);
+				Loading.show();
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/login', _this.user).then(
+					(response) => {
+						Loading.hide();
+						let resp = response.data;
+						if (resp.success) {
+							console.log(resp.content);
+							// _this.$router.push("/welcome");
+						} else {
+							Toast.warning(resp.message);
+						}
+					});
 			}
 		}
 	}

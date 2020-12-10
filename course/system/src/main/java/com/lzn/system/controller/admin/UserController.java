@@ -1,5 +1,6 @@
 package com.lzn.system.controller.admin;
 
+import com.lzn.dto.LoginUserDto;
 import com.lzn.dto.PageDto;
 import com.lzn.dto.ResponseDto;
 import com.lzn.dto.UserDto;
@@ -61,5 +62,15 @@ public class UserController {
         return responseDto;
     }
 
-
+    /**
+     * 登录
+     */
+    @PostMapping("/login")
+    public ResponseDto login(@RequestBody UserDto userDto) {
+        userDto.setPassword(DigestUtils.md5DigestAsHex(userDto.getPassword().getBytes()));
+        ResponseDto responseDto = new ResponseDto();
+       LoginUserDto loginUserDto = userService.login(userDto);
+        responseDto.setContent(loginUserDto);
+        return responseDto;
+    }
 }
