@@ -1,0 +1,379 @@
+2020-12-09 15:02:38.800 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-09 15:02:40.319 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-09 15:02:40.900 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-09 15:02:41.535 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-09 15:02:41.542 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-09 15:02:41.543 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-09 15:02:41.543 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 15:02:41.630 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-09 15:02:41.630 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1298 ms
+2020-12-09 15:02:42.098 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-09 15:02:42.099 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-09 15:02:42.104 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-09 15:02:42.104 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-09 15:02:42.344 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 15:02:43.778 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-09 15:02:43.820 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-09 15:02:44.932 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-09 15:02:44.963 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-09 15:02:45.016 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-09 15:02:45.073 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-09 15:02:45.317 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-09 15:02:45.318 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-09 15:02:45.450 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-09 15:02:45.451 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-09 15:02:45.652 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:02:45.719 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-09 15:02:45.719 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-09 15:02:45.719 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-09 15:02:45.719 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-09 15:02:45.719 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-09 15:02:45.720 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-09 15:02:45.720 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-09 15:02:45.855 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-09 15:02:45.859 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-09 15:02:45.862 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-09 15:02:45.866 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607497365865 with initial instances count: 1
+2020-12-09 15:02:45.870 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-09 15:02:45.871 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607497365871, current=UP, previous=STARTING]
+2020-12-09 15:02:45.872 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-09 15:02:45.873 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-09 15:02:45.902 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-09 15:02:45.903 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-09 15:02:45.903 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-09 15:02:46.994 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-09 15:02:47.000 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 9.588 seconds (JVM running for 10.098)
+2020-12-09 15:02:47.001 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-09 15:02:47.001 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-09 15:03:59.384 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 15:03:59.384 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-09 15:03:59.394 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
+2020-12-09 15:03:59.588 INFO  com.lzn.config.LogAspect                          :76   [32mExbRFrSW[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:03:59.589 INFO  com.lzn.config.LogAspect                          :77   [32mExbRFrSW[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:03:59.589 INFO  com.lzn.config.LogAspect                          :78   [32mExbRFrSW[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:03:59.589 INFO  com.lzn.config.LogAspect                          :79   [32mExbRFrSW[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:03:59.606 INFO  com.lzn.config.LogAspect                          :97   [32mExbRFrSW[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:03:59.694 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mExbRFrSW[0;39m HikariPool-1 - Starting...
+2020-12-09 15:03:59.974 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mExbRFrSW[0;39m HikariPool-1 - Start completed.
+2020-12-09 15:04:00.067 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mExbRFrSW[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:04:00.081 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mExbRFrSW[0;39m ==> Parameters: 
+2020-12-09 15:04:00.102 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mExbRFrSW[0;39m <==    Columns: count(0)
+2020-12-09 15:04:00.102 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mExbRFrSW[0;39m <==        Row: 2
+2020-12-09 15:04:00.104 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mExbRFrSW[0;39m <==      Total: 1
+2020-12-09 15:04:00.106 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mExbRFrSW[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:04:00.108 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mExbRFrSW[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:04:00.109 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mExbRFrSW[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:04:00.109 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mExbRFrSW[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:04:00.109 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mExbRFrSW[0;39m <==        Row: 4bsbbzd1, test11, null, 11
+2020-12-09 15:04:00.110 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mExbRFrSW[0;39m <==      Total: 2
+2020-12-09 15:04:00.120 INFO  com.lzn.config.LogAspect                          :109  [32mExbRFrSW[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:04:00.120 INFO  com.lzn.config.LogAspect                          :110  [32mExbRFrSW[0;39m ------------- 结束 耗时：535 ms -------------
+2020-12-09 15:07:45.723 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:12:45.725 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:15:30.977 INFO  com.lzn.config.LogAspect                          :76   [32mmw9LmF8P[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:15:30.978 INFO  com.lzn.config.LogAspect                          :77   [32mmw9LmF8P[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:15:30.978 INFO  com.lzn.config.LogAspect                          :78   [32mmw9LmF8P[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:15:30.978 INFO  com.lzn.config.LogAspect                          :79   [32mmw9LmF8P[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:15:30.978 INFO  com.lzn.config.LogAspect                          :97   [32mmw9LmF8P[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:15:30.981 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mmw9LmF8P[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:15:30.982 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mmw9LmF8P[0;39m ==> Parameters: 
+2020-12-09 15:15:30.983 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mmw9LmF8P[0;39m <==    Columns: count(0)
+2020-12-09 15:15:30.983 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mmw9LmF8P[0;39m <==        Row: 2
+2020-12-09 15:15:30.984 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mmw9LmF8P[0;39m <==      Total: 1
+2020-12-09 15:15:30.985 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mmw9LmF8P[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:15:30.985 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mmw9LmF8P[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:15:30.986 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mmw9LmF8P[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:15:30.986 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mmw9LmF8P[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:15:30.987 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mmw9LmF8P[0;39m <==        Row: 4bsbbzd1, test11, null, 11
+2020-12-09 15:15:30.988 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mmw9LmF8P[0;39m <==      Total: 2
+2020-12-09 15:15:30.989 INFO  com.lzn.config.LogAspect                          :109  [32mmw9LmF8P[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:15:30.989 INFO  com.lzn.config.LogAspect                          :110  [32mmw9LmF8P[0;39m ------------- 结束 耗时：12 ms -------------
+2020-12-09 15:15:35.279 INFO  com.lzn.config.LogAspect                          :76   [32mpJj2gtQS[0;39m ------------- 【用户】保存开始 -------------
+2020-12-09 15:15:35.280 INFO  com.lzn.config.LogAspect                          :77   [32mpJj2gtQS[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-09 15:15:35.280 INFO  com.lzn.config.LogAspect                          :78   [32mpJj2gtQS[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-09 15:15:35.280 INFO  com.lzn.config.LogAspect                          :79   [32mpJj2gtQS[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:15:35.281 INFO  com.lzn.config.LogAspect                          :97   [32mpJj2gtQS[0;39m 请求参数: [{"id":"4bsbbzd1","loginName":"test11","password":"4e5391104b4c46edc6e7e6cd6dfb8784"}]
+2020-12-09 15:15:35.284 DEBUG com.lzn.mapper.UserMapper.updateByPrimaryKey      :159  [32mpJj2gtQS[0;39m ==>  Preparing: update user set login_name = ?, `name` = ?, `password` = ? where id = ? 
+2020-12-09 15:15:35.284 DEBUG com.lzn.mapper.UserMapper.updateByPrimaryKey      :159  [32mpJj2gtQS[0;39m ==> Parameters: test11(String), null, 4db71c791e6a5f87027698565abc76c8(String), 4bsbbzd1(String)
+2020-12-09 15:15:35.289 DEBUG com.lzn.mapper.UserMapper.updateByPrimaryKey      :159  [32mpJj2gtQS[0;39m <==    Updates: 1
+2020-12-09 15:15:35.290 INFO  com.lzn.config.LogAspect                          :109  [32mpJj2gtQS[0;39m 返回结果: {"content":{"id":"4bsbbzd1","loginName":"test11"},"success":true}
+2020-12-09 15:15:35.290 INFO  com.lzn.config.LogAspect                          :110  [32mpJj2gtQS[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-09 15:15:35.321 INFO  com.lzn.config.LogAspect                          :76   [32mxi2I88h5[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:15:35.321 INFO  com.lzn.config.LogAspect                          :77   [32mxi2I88h5[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:15:35.321 INFO  com.lzn.config.LogAspect                          :78   [32mxi2I88h5[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:15:35.321 INFO  com.lzn.config.LogAspect                          :79   [32mxi2I88h5[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:15:35.322 INFO  com.lzn.config.LogAspect                          :97   [32mxi2I88h5[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:15:35.322 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mxi2I88h5[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:15:35.323 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mxi2I88h5[0;39m ==> Parameters: 
+2020-12-09 15:15:35.324 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mxi2I88h5[0;39m <==    Columns: count(0)
+2020-12-09 15:15:35.324 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mxi2I88h5[0;39m <==        Row: 2
+2020-12-09 15:15:35.324 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mxi2I88h5[0;39m <==      Total: 1
+2020-12-09 15:15:35.325 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mxi2I88h5[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:15:35.326 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mxi2I88h5[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:15:35.327 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mxi2I88h5[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:15:35.327 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mxi2I88h5[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:15:35.328 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mxi2I88h5[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:15:35.328 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mxi2I88h5[0;39m <==      Total: 2
+2020-12-09 15:15:35.329 INFO  com.lzn.config.LogAspect                          :109  [32mxi2I88h5[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:15:35.329 INFO  com.lzn.config.LogAspect                          :110  [32mxi2I88h5[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-09 15:17:45.727 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:19:40.270 INFO  com.lzn.config.LogAspect                          :76   [32m4IcjJLek[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:19:40.270 INFO  com.lzn.config.LogAspect                          :77   [32m4IcjJLek[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:19:40.270 INFO  com.lzn.config.LogAspect                          :78   [32m4IcjJLek[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:19:40.270 INFO  com.lzn.config.LogAspect                          :79   [32m4IcjJLek[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:19:40.270 INFO  com.lzn.config.LogAspect                          :97   [32m4IcjJLek[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:19:40.271 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m4IcjJLek[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:19:40.272 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m4IcjJLek[0;39m ==> Parameters: 
+2020-12-09 15:19:40.273 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m4IcjJLek[0;39m <==    Columns: count(0)
+2020-12-09 15:19:40.274 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m4IcjJLek[0;39m <==        Row: 2
+2020-12-09 15:19:40.274 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m4IcjJLek[0;39m <==      Total: 1
+2020-12-09 15:19:40.275 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m4IcjJLek[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:19:40.275 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m4IcjJLek[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:19:40.276 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4IcjJLek[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:19:40.277 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4IcjJLek[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:19:40.277 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4IcjJLek[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:19:40.277 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m4IcjJLek[0;39m <==      Total: 2
+2020-12-09 15:19:40.278 INFO  com.lzn.config.LogAspect                          :109  [32m4IcjJLek[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:19:40.278 INFO  com.lzn.config.LogAspect                          :110  [32m4IcjJLek[0;39m ------------- 结束 耗时：9 ms -------------
+2020-12-09 15:19:49.546 INFO  com.lzn.config.LogAspect                          :76   [32mspsK610S[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:19:49.546 INFO  com.lzn.config.LogAspect                          :77   [32mspsK610S[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:19:49.546 INFO  com.lzn.config.LogAspect                          :78   [32mspsK610S[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:19:49.546 INFO  com.lzn.config.LogAspect                          :79   [32mspsK610S[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:19:49.546 INFO  com.lzn.config.LogAspect                          :97   [32mspsK610S[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:19:49.547 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mspsK610S[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:19:49.548 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mspsK610S[0;39m ==> Parameters: 
+2020-12-09 15:19:49.548 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mspsK610S[0;39m <==    Columns: count(0)
+2020-12-09 15:19:49.549 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mspsK610S[0;39m <==        Row: 2
+2020-12-09 15:19:49.549 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mspsK610S[0;39m <==      Total: 1
+2020-12-09 15:19:49.549 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mspsK610S[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:19:49.550 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mspsK610S[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:19:49.550 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mspsK610S[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:19:49.550 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mspsK610S[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:19:49.551 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mspsK610S[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:19:49.551 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mspsK610S[0;39m <==      Total: 2
+2020-12-09 15:19:49.551 INFO  com.lzn.config.LogAspect                          :109  [32mspsK610S[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:19:49.552 INFO  com.lzn.config.LogAspect                          :110  [32mspsK610S[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-09 15:20:28.168 INFO  com.lzn.config.LogAspect                          :76   [32m0j1zZG0Z[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:20:28.169 INFO  com.lzn.config.LogAspect                          :77   [32m0j1zZG0Z[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:20:28.169 INFO  com.lzn.config.LogAspect                          :78   [32m0j1zZG0Z[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:20:28.169 INFO  com.lzn.config.LogAspect                          :79   [32m0j1zZG0Z[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:20:28.170 INFO  com.lzn.config.LogAspect                          :97   [32m0j1zZG0Z[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:20:28.171 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m0j1zZG0Z[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:20:28.172 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m0j1zZG0Z[0;39m ==> Parameters: 
+2020-12-09 15:20:28.178 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m0j1zZG0Z[0;39m <==    Columns: count(0)
+2020-12-09 15:20:28.178 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m0j1zZG0Z[0;39m <==        Row: 2
+2020-12-09 15:20:28.179 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m0j1zZG0Z[0;39m <==      Total: 1
+2020-12-09 15:20:28.179 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m0j1zZG0Z[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:20:28.180 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m0j1zZG0Z[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:20:28.183 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m0j1zZG0Z[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:20:28.183 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m0j1zZG0Z[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:20:28.184 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m0j1zZG0Z[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:20:28.184 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m0j1zZG0Z[0;39m <==      Total: 2
+2020-12-09 15:20:28.184 INFO  com.lzn.config.LogAspect                          :109  [32m0j1zZG0Z[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:20:28.184 INFO  com.lzn.config.LogAspect                          :110  [32m0j1zZG0Z[0;39m ------------- 结束 耗时：16 ms -------------
+2020-12-09 15:20:30.967 INFO  com.lzn.config.LogAspect                          :76   [32mkhWZqe0u[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:20:30.967 INFO  com.lzn.config.LogAspect                          :77   [32mkhWZqe0u[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:20:30.967 INFO  com.lzn.config.LogAspect                          :78   [32mkhWZqe0u[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:20:30.968 INFO  com.lzn.config.LogAspect                          :79   [32mkhWZqe0u[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:20:30.968 INFO  com.lzn.config.LogAspect                          :97   [32mkhWZqe0u[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:20:30.969 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mkhWZqe0u[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:20:30.969 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mkhWZqe0u[0;39m ==> Parameters: 
+2020-12-09 15:20:30.971 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mkhWZqe0u[0;39m <==    Columns: count(0)
+2020-12-09 15:20:30.972 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mkhWZqe0u[0;39m <==        Row: 2
+2020-12-09 15:20:30.972 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mkhWZqe0u[0;39m <==      Total: 1
+2020-12-09 15:20:30.973 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkhWZqe0u[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:20:30.973 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkhWZqe0u[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:20:30.974 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkhWZqe0u[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:20:30.974 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkhWZqe0u[0;39m <==        Row: 10000000, test, 测试111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:20:30.975 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkhWZqe0u[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:20:30.975 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkhWZqe0u[0;39m <==      Total: 2
+2020-12-09 15:20:30.975 INFO  com.lzn.config.LogAspect                          :109  [32mkhWZqe0u[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:20:30.976 INFO  com.lzn.config.LogAspect                          :110  [32mkhWZqe0u[0;39m ------------- 结束 耗时：9 ms -------------
+2020-12-09 15:22:45.728 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:26:54.628 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-09 15:26:56.080 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-09 15:26:57.449 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-09 15:26:58.154 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-09 15:26:58.178 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-09 15:26:58.179 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-09 15:26:58.179 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 15:26:58.272 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-09 15:26:58.272 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2179 ms
+2020-12-09 15:26:58.901 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-09 15:26:58.901 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-09 15:26:58.906 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-09 15:26:58.907 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-09 15:26:59.105 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 15:27:00.521 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-09 15:27:00.555 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-09 15:27:01.662 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-09 15:27:01.697 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-09 15:27:01.748 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-09 15:27:01.825 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-09 15:27:02.094 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-09 15:27:02.094 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-09 15:27:02.205 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-09 15:27:02.206 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-09 15:27:02.380 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:27:02.444 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-09 15:27:02.445 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-09 15:27:02.445 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-09 15:27:02.445 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-09 15:27:02.445 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-09 15:27:02.445 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-09 15:27:02.445 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-09 15:27:02.568 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-09 15:27:02.570 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-09 15:27:02.571 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-09 15:27:02.574 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607498822573 with initial instances count: 4
+2020-12-09 15:27:02.578 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-09 15:27:02.578 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607498822578, current=UP, previous=STARTING]
+2020-12-09 15:27:02.580 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-09 15:27:02.580 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-09 15:27:02.609 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-09 15:27:02.610 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-09 15:27:02.610 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-09 15:27:03.691 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-09 15:27:03.701 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 10.504 seconds (JVM running for 11.07)
+2020-12-09 15:27:03.703 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-09 15:27:03.703 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-09 15:28:18.036 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 15:28:18.036 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-09 15:28:18.047 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 11 ms
+2020-12-09 15:28:18.091 INFO  com.lzn.config.LogAspect                          :76   [32mN3yEkc5P[0;39m ------------- 【用户】保存开始 -------------
+2020-12-09 15:28:18.091 INFO  com.lzn.config.LogAspect                          :77   [32mN3yEkc5P[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-09 15:28:18.092 INFO  com.lzn.config.LogAspect                          :78   [32mN3yEkc5P[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-09 15:28:18.092 INFO  com.lzn.config.LogAspect                          :79   [32mN3yEkc5P[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:28:18.105 INFO  com.lzn.config.LogAspect                          :97   [32mN3yEkc5P[0;39m 请求参数: [{"id":"10000000","loginName":"test","name":"测试1111","password":"cedc8b41bfbc7785dfea33ea12db6aa4"}]
+2020-12-09 15:28:18.265 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mN3yEkc5P[0;39m HikariPool-1 - Starting...
+2020-12-09 15:28:18.447 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mN3yEkc5P[0;39m HikariPool-1 - Start completed.
+2020-12-09 15:28:18.451 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mN3yEkc5P[0;39m ==>  Preparing: update user SET login_name = ?, `name` = ? where id = ? 
+2020-12-09 15:28:18.464 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mN3yEkc5P[0;39m ==> Parameters: test(String), 测试1111(String), 10000000(String)
+2020-12-09 15:28:18.469 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mN3yEkc5P[0;39m <==    Updates: 1
+2020-12-09 15:28:18.474 INFO  com.lzn.config.LogAspect                          :109  [32mN3yEkc5P[0;39m 返回结果: {"content":{"id":"10000000","loginName":"test","name":"测试1111"},"success":true}
+2020-12-09 15:28:18.474 INFO  com.lzn.config.LogAspect                          :110  [32mN3yEkc5P[0;39m ------------- 结束 耗时：385 ms -------------
+2020-12-09 15:28:18.538 INFO  com.lzn.config.LogAspect                          :76   [32mJ8srEUh3[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:28:18.539 INFO  com.lzn.config.LogAspect                          :77   [32mJ8srEUh3[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:28:18.539 INFO  com.lzn.config.LogAspect                          :78   [32mJ8srEUh3[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:28:18.539 INFO  com.lzn.config.LogAspect                          :79   [32mJ8srEUh3[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:28:18.542 INFO  com.lzn.config.LogAspect                          :97   [32mJ8srEUh3[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:28:18.598 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mJ8srEUh3[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:28:18.599 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mJ8srEUh3[0;39m ==> Parameters: 
+2020-12-09 15:28:18.620 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mJ8srEUh3[0;39m <==    Columns: count(0)
+2020-12-09 15:28:18.620 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mJ8srEUh3[0;39m <==        Row: 2
+2020-12-09 15:28:18.622 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mJ8srEUh3[0;39m <==      Total: 1
+2020-12-09 15:28:18.624 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mJ8srEUh3[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:28:18.625 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mJ8srEUh3[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:28:18.626 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mJ8srEUh3[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:28:18.628 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mJ8srEUh3[0;39m <==        Row: 10000000, test, 测试1111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:28:18.629 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mJ8srEUh3[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:28:18.630 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mJ8srEUh3[0;39m <==      Total: 2
+2020-12-09 15:28:18.632 INFO  com.lzn.config.LogAspect                          :109  [32mJ8srEUh3[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试1111"},{"id":"4bsbbzd1","loginName":"test11"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-09 15:28:18.632 INFO  com.lzn.config.LogAspect                          :110  [32mJ8srEUh3[0;39m ------------- 结束 耗时：94 ms -------------
+2020-12-09 15:28:23.188 INFO  com.lzn.config.LogAspect                          :76   [32mhQzfaET0[0;39m ------------- 【用户】保存开始 -------------
+2020-12-09 15:28:23.188 INFO  com.lzn.config.LogAspect                          :77   [32mhQzfaET0[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-09 15:28:23.189 INFO  com.lzn.config.LogAspect                          :78   [32mhQzfaET0[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-09 15:28:23.189 INFO  com.lzn.config.LogAspect                          :79   [32mhQzfaET0[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:28:23.189 INFO  com.lzn.config.LogAspect                          :97   [32mhQzfaET0[0;39m 请求参数: [{"loginName":"143","name":"31124","password":"2134c245861f6e754a384ab146cfab73"}]
+2020-12-09 15:28:23.202 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mhQzfaET0[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-09 15:28:23.203 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mhQzfaET0[0;39m ==> Parameters: 143(String)
+2020-12-09 15:28:23.204 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mhQzfaET0[0;39m <==      Total: 0
+2020-12-09 15:28:23.204 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32mhQzfaET0[0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?) 
+2020-12-09 15:28:23.205 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32mhQzfaET0[0;39m ==> Parameters: KhPbH19k(String), 143(String), 31124(String), 82b4da88ff711e7f75de4a2f7c273a16(String)
+2020-12-09 15:28:23.210 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32mhQzfaET0[0;39m <==    Updates: 1
+2020-12-09 15:28:23.210 INFO  com.lzn.config.LogAspect                          :109  [32mhQzfaET0[0;39m 返回结果: {"content":{"loginName":"143","name":"31124"},"success":true}
+2020-12-09 15:28:23.210 INFO  com.lzn.config.LogAspect                          :110  [32mhQzfaET0[0;39m ------------- 结束 耗时：22 ms -------------
+2020-12-09 15:28:23.237 INFO  com.lzn.config.LogAspect                          :76   [32mQEbx3XhD[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:28:23.237 INFO  com.lzn.config.LogAspect                          :77   [32mQEbx3XhD[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:28:23.238 INFO  com.lzn.config.LogAspect                          :78   [32mQEbx3XhD[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:28:23.238 INFO  com.lzn.config.LogAspect                          :79   [32mQEbx3XhD[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:28:23.238 INFO  com.lzn.config.LogAspect                          :97   [32mQEbx3XhD[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:28:23.238 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mQEbx3XhD[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:28:23.238 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mQEbx3XhD[0;39m ==> Parameters: 
+2020-12-09 15:28:23.239 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mQEbx3XhD[0;39m <==    Columns: count(0)
+2020-12-09 15:28:23.240 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mQEbx3XhD[0;39m <==        Row: 3
+2020-12-09 15:28:23.240 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mQEbx3XhD[0;39m <==      Total: 1
+2020-12-09 15:28:23.241 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mQEbx3XhD[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:28:23.241 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mQEbx3XhD[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:28:23.242 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mQEbx3XhD[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:28:23.243 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mQEbx3XhD[0;39m <==        Row: 10000000, test, 测试1111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:28:23.243 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mQEbx3XhD[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:28:23.244 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mQEbx3XhD[0;39m <==        Row: KhPbH19k, 143, 31124, 82b4da88ff711e7f75de4a2f7c273a16
+2020-12-09 15:28:23.244 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mQEbx3XhD[0;39m <==      Total: 3
+2020-12-09 15:28:23.245 INFO  com.lzn.config.LogAspect                          :109  [32mQEbx3XhD[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试1111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"KhPbH19k","loginName":"143","name":"31124"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-09 15:28:23.245 INFO  com.lzn.config.LogAspect                          :110  [32mQEbx3XhD[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-09 15:28:27.568 INFO  com.lzn.config.LogAspect                          :76   [32mnUFKJ7VE[0;39m ------------- 【用户】保存开始 -------------
+2020-12-09 15:28:27.568 INFO  com.lzn.config.LogAspect                          :77   [32mnUFKJ7VE[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-09 15:28:27.568 INFO  com.lzn.config.LogAspect                          :78   [32mnUFKJ7VE[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-09 15:28:27.568 INFO  com.lzn.config.LogAspect                          :79   [32mnUFKJ7VE[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:28:27.568 INFO  com.lzn.config.LogAspect                          :97   [32mnUFKJ7VE[0;39m 请求参数: [{"id":"KhPbH19k","loginName":"143","name":"3112411","password":"aa2118583e5d20408edf3d1e6cad8af4"}]
+2020-12-09 15:28:27.569 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mnUFKJ7VE[0;39m ==>  Preparing: update user SET login_name = ?, `name` = ? where id = ? 
+2020-12-09 15:28:27.570 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mnUFKJ7VE[0;39m ==> Parameters: 143(String), 3112411(String), KhPbH19k(String)
+2020-12-09 15:28:27.575 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mnUFKJ7VE[0;39m <==    Updates: 1
+2020-12-09 15:28:27.575 INFO  com.lzn.config.LogAspect                          :109  [32mnUFKJ7VE[0;39m 返回结果: {"content":{"id":"KhPbH19k","loginName":"143","name":"3112411"},"success":true}
+2020-12-09 15:28:27.575 INFO  com.lzn.config.LogAspect                          :110  [32mnUFKJ7VE[0;39m ------------- 结束 耗时：7 ms -------------
+2020-12-09 15:28:27.606 INFO  com.lzn.config.LogAspect                          :76   [32m4EMwvnow[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:28:27.606 INFO  com.lzn.config.LogAspect                          :77   [32m4EMwvnow[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:28:27.606 INFO  com.lzn.config.LogAspect                          :78   [32m4EMwvnow[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:28:27.607 INFO  com.lzn.config.LogAspect                          :79   [32m4EMwvnow[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:28:27.607 INFO  com.lzn.config.LogAspect                          :97   [32m4EMwvnow[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:28:27.607 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m4EMwvnow[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:28:27.608 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m4EMwvnow[0;39m ==> Parameters: 
+2020-12-09 15:28:27.610 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m4EMwvnow[0;39m <==    Columns: count(0)
+2020-12-09 15:28:27.610 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m4EMwvnow[0;39m <==        Row: 3
+2020-12-09 15:28:27.611 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m4EMwvnow[0;39m <==      Total: 1
+2020-12-09 15:28:27.611 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m4EMwvnow[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:28:27.612 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m4EMwvnow[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:28:27.613 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4EMwvnow[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:28:27.613 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4EMwvnow[0;39m <==        Row: 10000000, test, 测试1111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:28:27.614 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4EMwvnow[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:28:27.614 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m4EMwvnow[0;39m <==        Row: KhPbH19k, 143, 3112411, 82b4da88ff711e7f75de4a2f7c273a16
+2020-12-09 15:28:27.614 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m4EMwvnow[0;39m <==      Total: 3
+2020-12-09 15:28:27.614 INFO  com.lzn.config.LogAspect                          :109  [32m4EMwvnow[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试1111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"KhPbH19k","loginName":"143","name":"3112411"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-09 15:28:27.614 INFO  com.lzn.config.LogAspect                          :110  [32m4EMwvnow[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-09 15:29:17.672 INFO  com.lzn.config.LogAspect                          :76   [32mkTn8P33M[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:29:17.672 INFO  com.lzn.config.LogAspect                          :77   [32mkTn8P33M[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:29:17.673 INFO  com.lzn.config.LogAspect                          :78   [32mkTn8P33M[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:29:17.673 INFO  com.lzn.config.LogAspect                          :79   [32mkTn8P33M[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:29:17.673 INFO  com.lzn.config.LogAspect                          :97   [32mkTn8P33M[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:29:17.675 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mkTn8P33M[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:29:17.675 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mkTn8P33M[0;39m ==> Parameters: 
+2020-12-09 15:29:17.676 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mkTn8P33M[0;39m <==    Columns: count(0)
+2020-12-09 15:29:17.676 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mkTn8P33M[0;39m <==        Row: 3
+2020-12-09 15:29:17.677 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mkTn8P33M[0;39m <==      Total: 1
+2020-12-09 15:29:17.677 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkTn8P33M[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:29:17.678 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkTn8P33M[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:29:17.679 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkTn8P33M[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:29:17.679 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkTn8P33M[0;39m <==        Row: 10000000, test, 测试1111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:29:17.679 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkTn8P33M[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:29:17.679 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkTn8P33M[0;39m <==        Row: KhPbH19k, 143, 3112411, 82b4da88ff711e7f75de4a2f7c273a16
+2020-12-09 15:29:17.679 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkTn8P33M[0;39m <==      Total: 3
+2020-12-09 15:29:17.680 INFO  com.lzn.config.LogAspect                          :109  [32mkTn8P33M[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试1111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"KhPbH19k","loginName":"143","name":"3112411"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-09 15:29:17.680 INFO  com.lzn.config.LogAspect                          :110  [32mkTn8P33M[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-09 15:31:00.252 INFO  com.lzn.config.LogAspect                          :76   [32ml1pCMqII[0;39m ------------- 【用户】查询开始 -------------
+2020-12-09 15:31:00.252 INFO  com.lzn.config.LogAspect                          :77   [32ml1pCMqII[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-09 15:31:00.253 INFO  com.lzn.config.LogAspect                          :78   [32ml1pCMqII[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-09 15:31:00.253 INFO  com.lzn.config.LogAspect                          :79   [32ml1pCMqII[0;39m 远程地址: 127.0.0.1
+2020-12-09 15:31:00.253 INFO  com.lzn.config.LogAspect                          :97   [32ml1pCMqII[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-09 15:31:00.254 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32ml1pCMqII[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-09 15:31:00.254 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32ml1pCMqII[0;39m ==> Parameters: 
+2020-12-09 15:31:00.255 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32ml1pCMqII[0;39m <==    Columns: count(0)
+2020-12-09 15:31:00.255 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32ml1pCMqII[0;39m <==        Row: 3
+2020-12-09 15:31:00.255 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32ml1pCMqII[0;39m <==      Total: 1
+2020-12-09 15:31:00.256 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32ml1pCMqII[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-09 15:31:00.256 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32ml1pCMqII[0;39m ==> Parameters: 5(Integer)
+2020-12-09 15:31:00.256 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ml1pCMqII[0;39m <==    Columns: id, login_name, name, password
+2020-12-09 15:31:00.257 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ml1pCMqII[0;39m <==        Row: 10000000, test, 测试1111, e70e2222a9d67c4f2eae107533359aa4
+2020-12-09 15:31:00.257 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ml1pCMqII[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-09 15:31:00.257 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ml1pCMqII[0;39m <==        Row: KhPbH19k, 143, 3112411, 82b4da88ff711e7f75de4a2f7c273a16
+2020-12-09 15:31:00.257 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32ml1pCMqII[0;39m <==      Total: 3
+2020-12-09 15:31:00.258 INFO  com.lzn.config.LogAspect                          :109  [32ml1pCMqII[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试1111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"KhPbH19k","loginName":"143","name":"3112411"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-09 15:31:00.258 INFO  com.lzn.config.LogAspect                          :110  [32ml1pCMqII[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-09 15:32:02.450 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:37:02.453 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:42:02.455 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:47:02.457 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:52:02.459 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 15:57:02.461 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 16:02:02.462 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-09 16:07:02.463 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
