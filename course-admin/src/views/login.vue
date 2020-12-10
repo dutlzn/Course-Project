@@ -14,18 +14,20 @@
 													登录页面
 												</h1>
 												<v-form>
-													<v-text-field  v-model="user.loginName" label="name" name="name" prepend-icon="person" type="text" color="blue accent-3" />
+													<v-text-field v-model="user.loginName" label="name" name="name" prepend-icon="person" type="text" color="blue accent-3" />
 
-													<v-text-field  v-model="user.password" id="password" label="Password" name="Password" prepend-icon="lock"
+													<v-text-field v-model="user.password" id="password" label="Password" name="Password" prepend-icon="lock"
 													 type="password" color="blue accent-3" />
 
 
 												</v-form>
 
-												<h3 class="text-center mt-3">
+												<v-checkbox label="记住我" v-model="remember"></v-checkbox>
+
+												<!-- 				<h3 class="text-center mt-3">
 													忘记密码
 												</h3>
-
+ -->
 											</v-card-text>
 
 											<div class="text-center mt-3">
@@ -103,10 +105,19 @@
 		data: () => ({
 			user: {},
 			step: 1,
+			remember: true,
 		}),
 
 		props: {
 			source: String
+		},
+
+		mounted: function() {
+			let _this = this;
+			let rememberUser = LocalStorage.get(LOCAL_KEY_REMEMBER_USER);
+			if (rememberUser) {
+				_this.user = rememberUser;
+			}
 		},
 
 		methods: {
@@ -121,6 +132,7 @@
 			login() {
 				let _this = this;
 
+
 				if (
 					1 != 1 ||
 					!Validator.require(_this.user.loginName, "用户名") ||
@@ -128,18 +140,45 @@
 				) {
 					return;
 				}
+				
+				// let passwordShow = _this.user.password;
+				// 如果密码是从缓存带出来的，则不需要重新加密
+				let md5 = hex_md5(_this.user.password);
+				let rememberUser = LocalStorage.get(LOCAL_KEY_REMEMBER_USER) || {};
+				if (md5 !== rememberUser.md5) {
+					_this.user.password = hex_md5(_this.user.password + KEY);
+				}
+				
+				
+				
 				// 进行第一次加密
-				_this.user.password = hex_md5(_this.user.password + KEY);
+				// _this.user.password = hex_md5(_this.user.password + KEY);
 				Loading.show();
 				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/login', _this.user).then(
 					(response) => {
 						Loading.hide();
 						let resp = response.data;
+						let loginUser = resp.content;
 						if (resp.success) {
-							
+
 							// console.log(resp.content);
 							// SessionStorage.set("USER", resp.content);
 							Tool.setLoginUser(resp.content);
+							if (_this.remember) {
+								// 如果勾选记住我，则将用户名密码保存到本地缓存
+								// 原：这里需要保存密码明文，否则登录时又会再加一层密
+								// 新：这里保存密码密文，并保存密文md5，用于检测密码是否被重新输入过
+								let md5 = hex_md5(_this.user.password);
+								LocalStorage.set(LOCAL_KEY_REMEMBER_USER, {
+									loginName: loginUser.loginName,
+									password: _this.user.password,
+									md5: md5
+								})
+							} else {
+								// 没有勾选“记住我”时，要把本地缓存清空，否则按照mounted的逻辑，下次打开时会自动显示用户名密码
+								LocalStorage.set(LOCAL_KEY_REMEMBER_USER, null);
+							}
+
 							_this.$router.push("/welcome");
 						} else {
 							Toast.warning(resp.message);

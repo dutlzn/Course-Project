@@ -1444,3 +1444,400 @@ java.lang.RuntimeException: Value for loginName cannot be null
 2020-12-10 20:09:45.213 INFO  com.lzn.config.LogAspect                          :97   [32m4RuO0fMM[0;39m 请求参数: [null]
 2020-12-10 20:09:45.248 INFO  com.lzn.config.LogAspect                          :109  [32m4RuO0fMM[0;39m 返回结果: {"success":true}
 2020-12-10 20:09:45.248 INFO  com.lzn.config.LogAspect                          :110  [32m4RuO0fMM[0;39m ------------- 结束 耗时：41 ms -------------
+2020-12-10 20:13:20.746 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:18:20.747 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:23:20.749 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:28:20.752 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:33:20.753 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:38:20.755 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:40:36.110 INFO  com.lzn.config.LogAspect                          :76   [32mLPttWw2G[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:40:36.110 INFO  com.lzn.config.LogAspect                          :77   [32mLPttWw2G[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:40:36.110 INFO  com.lzn.config.LogAspect                          :78   [32mLPttWw2G[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:40:36.111 INFO  com.lzn.config.LogAspect                          :79   [32mLPttWw2G[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:40:36.113 INFO  com.lzn.config.LogAspect                          :97   [32mLPttWw2G[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:40:36.178 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mLPttWw2G[0;39m HikariPool-1 - Starting...
+2020-12-10 20:40:36.382 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mLPttWw2G[0;39m HikariPool-1 - Start completed.
+2020-12-10 20:40:36.389 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mLPttWw2G[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:40:36.407 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mLPttWw2G[0;39m ==> Parameters: admin(String)
+2020-12-10 20:40:36.417 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mLPttWw2G[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:40:36.417 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mLPttWw2G[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:40:36.418 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mLPttWw2G[0;39m <==      Total: 1
+2020-12-10 20:40:36.429 INFO  com.lzn.config.LogAspect                          :109  [32mLPttWw2G[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:40:36.429 INFO  com.lzn.config.LogAspect                          :110  [32mLPttWw2G[0;39m ------------- 结束 耗时：319 ms -------------
+2020-12-10 20:41:08.905 INFO  com.lzn.config.LogAspect                          :76   [32m6EHpVuWQ[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:08.905 INFO  com.lzn.config.LogAspect                          :77   [32m6EHpVuWQ[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:41:08.906 INFO  com.lzn.config.LogAspect                          :78   [32m6EHpVuWQ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:41:08.906 INFO  com.lzn.config.LogAspect                          :79   [32m6EHpVuWQ[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:08.906 INFO  com.lzn.config.LogAspect                          :97   [32m6EHpVuWQ[0;39m 请求参数: [{"loginName":"amin","password":"bc2a68a6cbd9e5799125ece9b74965cd"},null]
+2020-12-10 20:41:08.908 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m6EHpVuWQ[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:41:08.908 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m6EHpVuWQ[0;39m ==> Parameters: amin(String)
+2020-12-10 20:41:08.909 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m6EHpVuWQ[0;39m <==      Total: 0
+2020-12-10 20:41:08.910 ERROR com.lzn.service.UserService                       :127  [32m6EHpVuWQ[0;39m 用户名不存在
+2020-12-10 20:41:14.822 INFO  com.lzn.config.LogAspect                          :76   [32mptz9l0lX[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:14.822 INFO  com.lzn.config.LogAspect                          :77   [32mptz9l0lX[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:41:14.822 INFO  com.lzn.config.LogAspect                          :78   [32mptz9l0lX[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:41:14.823 INFO  com.lzn.config.LogAspect                          :79   [32mptz9l0lX[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:14.823 INFO  com.lzn.config.LogAspect                          :97   [32mptz9l0lX[0;39m 请求参数: [{"loginName":"amin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:41:14.824 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mptz9l0lX[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:41:14.825 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mptz9l0lX[0;39m ==> Parameters: amin(String)
+2020-12-10 20:41:14.826 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mptz9l0lX[0;39m <==      Total: 0
+2020-12-10 20:41:14.827 ERROR com.lzn.service.UserService                       :127  [32mptz9l0lX[0;39m 用户名不存在
+2020-12-10 20:41:23.795 INFO  com.lzn.config.LogAspect                          :76   [32mg1JZV9tE[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:23.795 INFO  com.lzn.config.LogAspect                          :77   [32mg1JZV9tE[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:41:23.795 INFO  com.lzn.config.LogAspect                          :78   [32mg1JZV9tE[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:41:23.796 INFO  com.lzn.config.LogAspect                          :79   [32mg1JZV9tE[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:23.796 INFO  com.lzn.config.LogAspect                          :97   [32mg1JZV9tE[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:41:23.797 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mg1JZV9tE[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:41:23.798 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mg1JZV9tE[0;39m ==> Parameters: admin(String)
+2020-12-10 20:41:23.798 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mg1JZV9tE[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:41:23.799 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mg1JZV9tE[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:41:23.799 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mg1JZV9tE[0;39m <==      Total: 1
+2020-12-10 20:41:23.800 INFO  com.lzn.config.LogAspect                          :109  [32mg1JZV9tE[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:41:23.800 INFO  com.lzn.config.LogAspect                          :110  [32mg1JZV9tE[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-10 20:41:26.213 INFO  com.lzn.config.LogAspect                          :76   [32mqUkOzyms[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:26.213 INFO  com.lzn.config.LogAspect                          :77   [32mqUkOzyms[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 20:41:26.213 INFO  com.lzn.config.LogAspect                          :78   [32mqUkOzyms[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 20:41:26.213 INFO  com.lzn.config.LogAspect                          :79   [32mqUkOzyms[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:26.214 INFO  com.lzn.config.LogAspect                          :97   [32mqUkOzyms[0;39m 请求参数: [null]
+2020-12-10 20:41:26.214 INFO  com.lzn.config.LogAspect                          :109  [32mqUkOzyms[0;39m 返回结果: {"success":true}
+2020-12-10 20:41:26.214 INFO  com.lzn.config.LogAspect                          :110  [32mqUkOzyms[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 20:41:30.300 INFO  com.lzn.config.LogAspect                          :76   [32muBB6FA36[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:30.301 INFO  com.lzn.config.LogAspect                          :77   [32muBB6FA36[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:41:30.301 INFO  com.lzn.config.LogAspect                          :78   [32muBB6FA36[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:41:30.301 INFO  com.lzn.config.LogAspect                          :79   [32muBB6FA36[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:30.301 INFO  com.lzn.config.LogAspect                          :97   [32muBB6FA36[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:41:30.303 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32muBB6FA36[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:41:30.303 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32muBB6FA36[0;39m ==> Parameters: admin(String)
+2020-12-10 20:41:30.304 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32muBB6FA36[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:41:30.305 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32muBB6FA36[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:41:30.305 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32muBB6FA36[0;39m <==      Total: 1
+2020-12-10 20:41:30.306 INFO  com.lzn.config.LogAspect                          :109  [32muBB6FA36[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:41:30.306 INFO  com.lzn.config.LogAspect                          :110  [32muBB6FA36[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-10 20:41:32.139 INFO  com.lzn.config.LogAspect                          :76   [32mmKZlv6Fo[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:32.139 INFO  com.lzn.config.LogAspect                          :77   [32mmKZlv6Fo[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 20:41:32.140 INFO  com.lzn.config.LogAspect                          :78   [32mmKZlv6Fo[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 20:41:32.140 INFO  com.lzn.config.LogAspect                          :79   [32mmKZlv6Fo[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:32.140 INFO  com.lzn.config.LogAspect                          :97   [32mmKZlv6Fo[0;39m 请求参数: [null]
+2020-12-10 20:41:32.140 INFO  com.lzn.config.LogAspect                          :109  [32mmKZlv6Fo[0;39m 返回结果: {"success":true}
+2020-12-10 20:41:32.140 INFO  com.lzn.config.LogAspect                          :110  [32mmKZlv6Fo[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 20:41:59.105 INFO  com.lzn.config.LogAspect                          :76   [32mN3Crme87[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:41:59.105 INFO  com.lzn.config.LogAspect                          :77   [32mN3Crme87[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:41:59.106 INFO  com.lzn.config.LogAspect                          :78   [32mN3Crme87[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:41:59.106 INFO  com.lzn.config.LogAspect                          :79   [32mN3Crme87[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:41:59.106 INFO  com.lzn.config.LogAspect                          :97   [32mN3Crme87[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:41:59.107 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mN3Crme87[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:41:59.108 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mN3Crme87[0;39m ==> Parameters: admin(String)
+2020-12-10 20:41:59.109 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mN3Crme87[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:41:59.109 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mN3Crme87[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:41:59.110 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mN3Crme87[0;39m <==      Total: 1
+2020-12-10 20:41:59.110 INFO  com.lzn.config.LogAspect                          :109  [32mN3Crme87[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:41:59.110 INFO  com.lzn.config.LogAspect                          :110  [32mN3Crme87[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-10 20:42:00.771 INFO  com.lzn.config.LogAspect                          :76   [32mgGU1D3rT[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:42:00.771 INFO  com.lzn.config.LogAspect                          :77   [32mgGU1D3rT[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 20:42:00.772 INFO  com.lzn.config.LogAspect                          :78   [32mgGU1D3rT[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 20:42:00.772 INFO  com.lzn.config.LogAspect                          :79   [32mgGU1D3rT[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:42:00.772 INFO  com.lzn.config.LogAspect                          :97   [32mgGU1D3rT[0;39m 请求参数: [null]
+2020-12-10 20:42:00.772 INFO  com.lzn.config.LogAspect                          :109  [32mgGU1D3rT[0;39m 返回结果: {"success":true}
+2020-12-10 20:42:00.772 INFO  com.lzn.config.LogAspect                          :110  [32mgGU1D3rT[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 20:43:20.757 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:46:07.952 INFO  com.lzn.config.LogAspect                          :76   [32mn3RiofnO[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:46:07.953 INFO  com.lzn.config.LogAspect                          :77   [32mn3RiofnO[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:46:07.953 INFO  com.lzn.config.LogAspect                          :78   [32mn3RiofnO[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:46:07.953 INFO  com.lzn.config.LogAspect                          :79   [32mn3RiofnO[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:46:07.953 INFO  com.lzn.config.LogAspect                          :97   [32mn3RiofnO[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:46:07.955 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mn3RiofnO[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:46:07.955 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mn3RiofnO[0;39m ==> Parameters: admin(String)
+2020-12-10 20:46:07.962 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mn3RiofnO[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:46:07.963 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mn3RiofnO[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:46:07.963 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mn3RiofnO[0;39m <==      Total: 1
+2020-12-10 20:46:07.964 INFO  com.lzn.config.LogAspect                          :109  [32mn3RiofnO[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:46:07.964 INFO  com.lzn.config.LogAspect                          :110  [32mn3RiofnO[0;39m ------------- 结束 耗时：12 ms -------------
+2020-12-10 20:46:09.590 INFO  com.lzn.config.LogAspect                          :76   [32mrjzUnzwE[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:46:09.590 INFO  com.lzn.config.LogAspect                          :77   [32mrjzUnzwE[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 20:46:09.590 INFO  com.lzn.config.LogAspect                          :78   [32mrjzUnzwE[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 20:46:09.591 INFO  com.lzn.config.LogAspect                          :79   [32mrjzUnzwE[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:46:09.591 INFO  com.lzn.config.LogAspect                          :97   [32mrjzUnzwE[0;39m 请求参数: [null]
+2020-12-10 20:46:09.591 INFO  com.lzn.config.LogAspect                          :109  [32mrjzUnzwE[0;39m 返回结果: {"success":true}
+2020-12-10 20:46:09.591 INFO  com.lzn.config.LogAspect                          :110  [32mrjzUnzwE[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 20:46:11.468 INFO  com.lzn.config.LogAspect                          :76   [32mRDbqqcUM[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:46:11.469 INFO  com.lzn.config.LogAspect                          :77   [32mRDbqqcUM[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:46:11.469 INFO  com.lzn.config.LogAspect                          :78   [32mRDbqqcUM[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:46:11.469 INFO  com.lzn.config.LogAspect                          :79   [32mRDbqqcUM[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:46:11.469 INFO  com.lzn.config.LogAspect                          :97   [32mRDbqqcUM[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:46:11.470 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mRDbqqcUM[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:46:11.471 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mRDbqqcUM[0;39m ==> Parameters: admin(String)
+2020-12-10 20:46:11.472 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mRDbqqcUM[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:46:11.472 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mRDbqqcUM[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:46:11.472 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mRDbqqcUM[0;39m <==      Total: 1
+2020-12-10 20:46:11.473 INFO  com.lzn.config.LogAspect                          :109  [32mRDbqqcUM[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:46:11.473 INFO  com.lzn.config.LogAspect                          :110  [32mRDbqqcUM[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-10 20:46:13.044 INFO  com.lzn.config.LogAspect                          :76   [32mZu9EE0KS[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:46:13.044 INFO  com.lzn.config.LogAspect                          :77   [32mZu9EE0KS[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 20:46:13.044 INFO  com.lzn.config.LogAspect                          :78   [32mZu9EE0KS[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 20:46:13.045 INFO  com.lzn.config.LogAspect                          :79   [32mZu9EE0KS[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:46:13.045 INFO  com.lzn.config.LogAspect                          :97   [32mZu9EE0KS[0;39m 请求参数: [null]
+2020-12-10 20:46:13.045 INFO  com.lzn.config.LogAspect                          :109  [32mZu9EE0KS[0;39m 返回结果: {"success":true}
+2020-12-10 20:46:13.045 INFO  com.lzn.config.LogAspect                          :110  [32mZu9EE0KS[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 20:48:20.759 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:53:20.760 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:54:48.474 INFO  com.lzn.config.LogAspect                          :76   [32mC7YUYgND[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:54:48.475 INFO  com.lzn.config.LogAspect                          :77   [32mC7YUYgND[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:54:48.475 INFO  com.lzn.config.LogAspect                          :78   [32mC7YUYgND[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:54:48.475 INFO  com.lzn.config.LogAspect                          :79   [32mC7YUYgND[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:54:48.475 INFO  com.lzn.config.LogAspect                          :97   [32mC7YUYgND[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 20:54:48.477 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mC7YUYgND[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:54:48.477 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mC7YUYgND[0;39m ==> Parameters: admin(String)
+2020-12-10 20:54:48.478 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mC7YUYgND[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:54:48.478 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mC7YUYgND[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:54:48.479 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mC7YUYgND[0;39m <==      Total: 1
+2020-12-10 20:54:48.479 ERROR com.lzn.service.UserService                       :135  [32mC7YUYgND[0;39m 密码错误
+2020-12-10 20:54:52.384 INFO  com.lzn.config.LogAspect                          :76   [32mdZ5PnWYp[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:54:52.384 INFO  com.lzn.config.LogAspect                          :77   [32mdZ5PnWYp[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:54:52.384 INFO  com.lzn.config.LogAspect                          :78   [32mdZ5PnWYp[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:54:52.384 INFO  com.lzn.config.LogAspect                          :79   [32mdZ5PnWYp[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:54:52.384 INFO  com.lzn.config.LogAspect                          :97   [32mdZ5PnWYp[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 20:54:52.385 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mdZ5PnWYp[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:54:52.386 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mdZ5PnWYp[0;39m ==> Parameters: admin(String)
+2020-12-10 20:54:52.387 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mdZ5PnWYp[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:54:52.387 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mdZ5PnWYp[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:54:52.387 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mdZ5PnWYp[0;39m <==      Total: 1
+2020-12-10 20:54:52.387 ERROR com.lzn.service.UserService                       :135  [32mdZ5PnWYp[0;39m 密码错误
+2020-12-10 20:55:07.792 INFO  com.lzn.config.LogAspect                          :76   [32mkJu8t8Z4[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:55:07.792 INFO  com.lzn.config.LogAspect                          :77   [32mkJu8t8Z4[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:55:07.792 INFO  com.lzn.config.LogAspect                          :78   [32mkJu8t8Z4[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:55:07.792 INFO  com.lzn.config.LogAspect                          :79   [32mkJu8t8Z4[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:55:07.793 INFO  com.lzn.config.LogAspect                          :97   [32mkJu8t8Z4[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 20:55:07.807 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkJu8t8Z4[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:55:07.807 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkJu8t8Z4[0;39m ==> Parameters: admin(String)
+2020-12-10 20:55:07.808 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkJu8t8Z4[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:55:07.809 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkJu8t8Z4[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:55:07.809 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkJu8t8Z4[0;39m <==      Total: 1
+2020-12-10 20:55:07.809 ERROR com.lzn.service.UserService                       :135  [32mkJu8t8Z4[0;39m 密码错误
+2020-12-10 20:55:15.533 INFO  com.lzn.config.LogAspect                          :76   [32mCDs9Foec[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:55:15.533 INFO  com.lzn.config.LogAspect                          :77   [32mCDs9Foec[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:55:15.533 INFO  com.lzn.config.LogAspect                          :78   [32mCDs9Foec[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:55:15.533 INFO  com.lzn.config.LogAspect                          :79   [32mCDs9Foec[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:55:15.534 INFO  com.lzn.config.LogAspect                          :97   [32mCDs9Foec[0;39m 请求参数: [{"loginName":"admin","password":"d6072f8153404a2bbbcd471592b2a21c"},null]
+2020-12-10 20:55:15.535 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mCDs9Foec[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:55:15.535 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mCDs9Foec[0;39m ==> Parameters: admin(String)
+2020-12-10 20:55:15.536 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mCDs9Foec[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:55:15.536 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mCDs9Foec[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:55:15.536 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mCDs9Foec[0;39m <==      Total: 1
+2020-12-10 20:55:15.536 ERROR com.lzn.service.UserService                       :135  [32mCDs9Foec[0;39m 密码错误
+2020-12-10 20:55:23.915 INFO  com.lzn.config.LogAspect                          :76   [32mcXAPaGuY[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:55:23.916 INFO  com.lzn.config.LogAspect                          :77   [32mcXAPaGuY[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:55:23.916 INFO  com.lzn.config.LogAspect                          :78   [32mcXAPaGuY[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:55:23.916 INFO  com.lzn.config.LogAspect                          :79   [32mcXAPaGuY[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:55:23.916 INFO  com.lzn.config.LogAspect                          :97   [32mcXAPaGuY[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 20:55:23.917 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mcXAPaGuY[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:55:23.918 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mcXAPaGuY[0;39m ==> Parameters: admin(String)
+2020-12-10 20:55:23.919 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mcXAPaGuY[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:55:23.919 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mcXAPaGuY[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:55:23.919 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mcXAPaGuY[0;39m <==      Total: 1
+2020-12-10 20:55:23.919 ERROR com.lzn.service.UserService                       :135  [32mcXAPaGuY[0;39m 密码错误
+2020-12-10 20:55:44.467 INFO  com.lzn.config.LogAspect                          :76   [32mFyUmvwZr[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:55:44.468 INFO  com.lzn.config.LogAspect                          :77   [32mFyUmvwZr[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:55:44.468 INFO  com.lzn.config.LogAspect                          :78   [32mFyUmvwZr[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:55:44.468 INFO  com.lzn.config.LogAspect                          :79   [32mFyUmvwZr[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:55:44.468 INFO  com.lzn.config.LogAspect                          :97   [32mFyUmvwZr[0;39m 请求参数: [{"loginName":"admin","password":"d6072f8153404a2bbbcd471592b2a21c"},null]
+2020-12-10 20:55:44.469 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mFyUmvwZr[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:55:44.470 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mFyUmvwZr[0;39m ==> Parameters: admin(String)
+2020-12-10 20:55:44.470 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mFyUmvwZr[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:55:44.471 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mFyUmvwZr[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:55:44.471 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mFyUmvwZr[0;39m <==      Total: 1
+2020-12-10 20:55:44.471 ERROR com.lzn.service.UserService                       :135  [32mFyUmvwZr[0;39m 密码错误
+2020-12-10 20:56:06.480 INFO  com.lzn.config.LogAspect                          :76   [32mjbYKNkWQ[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:56:06.480 INFO  com.lzn.config.LogAspect                          :77   [32mjbYKNkWQ[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:56:06.481 INFO  com.lzn.config.LogAspect                          :78   [32mjbYKNkWQ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:56:06.481 INFO  com.lzn.config.LogAspect                          :79   [32mjbYKNkWQ[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:56:06.481 INFO  com.lzn.config.LogAspect                          :97   [32mjbYKNkWQ[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 20:56:06.483 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mjbYKNkWQ[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:56:06.483 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mjbYKNkWQ[0;39m ==> Parameters: admin(String)
+2020-12-10 20:56:06.484 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mjbYKNkWQ[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:56:06.484 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mjbYKNkWQ[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:56:06.485 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mjbYKNkWQ[0;39m <==      Total: 1
+2020-12-10 20:56:06.485 ERROR com.lzn.service.UserService                       :135  [32mjbYKNkWQ[0;39m 密码错误
+2020-12-10 20:57:55.718 INFO  com.lzn.config.LogAspect                          :76   [32m1G0sEUiH[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:57:55.718 INFO  com.lzn.config.LogAspect                          :77   [32m1G0sEUiH[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:57:55.718 INFO  com.lzn.config.LogAspect                          :78   [32m1G0sEUiH[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:57:55.718 INFO  com.lzn.config.LogAspect                          :79   [32m1G0sEUiH[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:57:55.719 INFO  com.lzn.config.LogAspect                          :97   [32m1G0sEUiH[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 20:57:55.721 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m1G0sEUiH[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:57:55.721 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m1G0sEUiH[0;39m ==> Parameters: admin(String)
+2020-12-10 20:57:55.723 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m1G0sEUiH[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:57:55.723 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m1G0sEUiH[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:57:55.724 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m1G0sEUiH[0;39m <==      Total: 1
+2020-12-10 20:57:55.725 ERROR com.lzn.service.UserService                       :135  [32m1G0sEUiH[0;39m 密码错误
+2020-12-10 20:57:57.539 INFO  com.lzn.config.LogAspect                          :76   [32mi1HbDil4[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:57:57.540 INFO  com.lzn.config.LogAspect                          :77   [32mi1HbDil4[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:57:57.540 INFO  com.lzn.config.LogAspect                          :78   [32mi1HbDil4[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:57:57.540 INFO  com.lzn.config.LogAspect                          :79   [32mi1HbDil4[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:57:57.540 INFO  com.lzn.config.LogAspect                          :97   [32mi1HbDil4[0;39m 请求参数: [{"loginName":"admin","password":"d6072f8153404a2bbbcd471592b2a21c"},null]
+2020-12-10 20:57:57.541 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mi1HbDil4[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:57:57.542 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mi1HbDil4[0;39m ==> Parameters: admin(String)
+2020-12-10 20:57:57.543 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mi1HbDil4[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:57:57.544 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mi1HbDil4[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:57:57.544 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mi1HbDil4[0;39m <==      Total: 1
+2020-12-10 20:57:57.544 ERROR com.lzn.service.UserService                       :135  [32mi1HbDil4[0;39m 密码错误
+2020-12-10 20:57:59.650 INFO  com.lzn.config.LogAspect                          :76   [32msTvrxuq0[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:57:59.651 INFO  com.lzn.config.LogAspect                          :77   [32msTvrxuq0[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:57:59.651 INFO  com.lzn.config.LogAspect                          :78   [32msTvrxuq0[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:57:59.651 INFO  com.lzn.config.LogAspect                          :79   [32msTvrxuq0[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:57:59.651 INFO  com.lzn.config.LogAspect                          :97   [32msTvrxuq0[0;39m 请求参数: [{"loginName":"admin","password":"095030916b4f34791f8d3fe7897920eb"},null]
+2020-12-10 20:57:59.652 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msTvrxuq0[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:57:59.652 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msTvrxuq0[0;39m ==> Parameters: admin(String)
+2020-12-10 20:57:59.653 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32msTvrxuq0[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:57:59.653 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32msTvrxuq0[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:57:59.654 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msTvrxuq0[0;39m <==      Total: 1
+2020-12-10 20:57:59.654 ERROR com.lzn.service.UserService                       :135  [32msTvrxuq0[0;39m 密码错误
+2020-12-10 20:58:20.761 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:58:30.835 INFO  com.lzn.config.LogAspect                          :76   [32mBcuNcnXv[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:58:30.836 INFO  com.lzn.config.LogAspect                          :77   [32mBcuNcnXv[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:58:30.836 INFO  com.lzn.config.LogAspect                          :78   [32mBcuNcnXv[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:58:30.836 INFO  com.lzn.config.LogAspect                          :79   [32mBcuNcnXv[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:58:30.836 INFO  com.lzn.config.LogAspect                          :97   [32mBcuNcnXv[0;39m 请求参数: [{"loginName":"admin","password":"9a5d1d117fb515a8243dc01f0214aaf4"},null]
+2020-12-10 20:58:30.837 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mBcuNcnXv[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:58:30.838 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mBcuNcnXv[0;39m ==> Parameters: admin(String)
+2020-12-10 20:58:30.838 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mBcuNcnXv[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:58:30.839 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mBcuNcnXv[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:58:30.839 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mBcuNcnXv[0;39m <==      Total: 1
+2020-12-10 20:58:30.839 ERROR com.lzn.service.UserService                       :135  [32mBcuNcnXv[0;39m 密码错误
+2020-12-10 21:00:33.437 INFO  com.lzn.config.LogAspect                          :76   [32mWRy7tAY3[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:00:33.438 INFO  com.lzn.config.LogAspect                          :77   [32mWRy7tAY3[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:00:33.438 INFO  com.lzn.config.LogAspect                          :78   [32mWRy7tAY3[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:00:33.438 INFO  com.lzn.config.LogAspect                          :79   [32mWRy7tAY3[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:00:33.438 INFO  com.lzn.config.LogAspect                          :97   [32mWRy7tAY3[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 21:00:33.438 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mWRy7tAY3[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:00:33.439 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mWRy7tAY3[0;39m ==> Parameters: admin(String)
+2020-12-10 21:00:33.440 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mWRy7tAY3[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:00:33.440 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mWRy7tAY3[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:00:33.440 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mWRy7tAY3[0;39m <==      Total: 1
+2020-12-10 21:00:33.441 ERROR com.lzn.service.UserService                       :135  [32mWRy7tAY3[0;39m 密码错误
+2020-12-10 21:00:48.537 INFO  com.lzn.config.LogAspect                          :76   [32mKANkX55Z[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:00:48.538 INFO  com.lzn.config.LogAspect                          :77   [32mKANkX55Z[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:00:48.538 INFO  com.lzn.config.LogAspect                          :78   [32mKANkX55Z[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:00:48.538 INFO  com.lzn.config.LogAspect                          :79   [32mKANkX55Z[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:00:48.538 INFO  com.lzn.config.LogAspect                          :97   [32mKANkX55Z[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 21:00:48.539 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mKANkX55Z[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:00:48.540 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mKANkX55Z[0;39m ==> Parameters: admin(String)
+2020-12-10 21:00:48.541 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mKANkX55Z[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:00:48.541 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mKANkX55Z[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:00:48.542 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mKANkX55Z[0;39m <==      Total: 1
+2020-12-10 21:00:48.542 ERROR com.lzn.service.UserService                       :135  [32mKANkX55Z[0;39m 密码错误
+2020-12-10 21:00:51.377 INFO  com.lzn.config.LogAspect                          :76   [32mP0OFWvHM[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:00:51.378 INFO  com.lzn.config.LogAspect                          :77   [32mP0OFWvHM[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:00:51.378 INFO  com.lzn.config.LogAspect                          :78   [32mP0OFWvHM[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:00:51.378 INFO  com.lzn.config.LogAspect                          :79   [32mP0OFWvHM[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:00:51.378 INFO  com.lzn.config.LogAspect                          :97   [32mP0OFWvHM[0;39m 请求参数: [{"loginName":"admin","password":"d6072f8153404a2bbbcd471592b2a21c"},null]
+2020-12-10 21:00:51.379 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mP0OFWvHM[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:00:51.379 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mP0OFWvHM[0;39m ==> Parameters: admin(String)
+2020-12-10 21:00:51.380 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mP0OFWvHM[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:00:51.380 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mP0OFWvHM[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:00:51.381 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mP0OFWvHM[0;39m <==      Total: 1
+2020-12-10 21:00:51.381 ERROR com.lzn.service.UserService                       :135  [32mP0OFWvHM[0;39m 密码错误
+2020-12-10 21:00:54.923 INFO  com.lzn.config.LogAspect                          :76   [32mAwJpfZWJ[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:00:54.924 INFO  com.lzn.config.LogAspect                          :77   [32mAwJpfZWJ[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:00:54.924 INFO  com.lzn.config.LogAspect                          :78   [32mAwJpfZWJ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:00:54.924 INFO  com.lzn.config.LogAspect                          :79   [32mAwJpfZWJ[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:00:54.924 INFO  com.lzn.config.LogAspect                          :97   [32mAwJpfZWJ[0;39m 请求参数: [{"loginName":"admin","password":"c19cd8bdfcfa855fe4ce0bfd6ec4c08c"},null]
+2020-12-10 21:00:54.926 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAwJpfZWJ[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:00:54.926 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAwJpfZWJ[0;39m ==> Parameters: admin(String)
+2020-12-10 21:00:54.927 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAwJpfZWJ[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:00:54.927 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAwJpfZWJ[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:00:54.927 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAwJpfZWJ[0;39m <==      Total: 1
+2020-12-10 21:00:54.928 ERROR com.lzn.service.UserService                       :135  [32mAwJpfZWJ[0;39m 密码错误
+2020-12-10 21:01:14.885 INFO  com.lzn.config.LogAspect                          :76   [32mOLONHfAA[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:14.885 INFO  com.lzn.config.LogAspect                          :77   [32mOLONHfAA[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:01:14.885 INFO  com.lzn.config.LogAspect                          :78   [32mOLONHfAA[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:01:14.885 INFO  com.lzn.config.LogAspect                          :79   [32mOLONHfAA[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:14.885 INFO  com.lzn.config.LogAspect                          :97   [32mOLONHfAA[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 21:01:14.886 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mOLONHfAA[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:01:14.887 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mOLONHfAA[0;39m ==> Parameters: admin(String)
+2020-12-10 21:01:14.887 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mOLONHfAA[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:01:14.888 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mOLONHfAA[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:01:14.888 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mOLONHfAA[0;39m <==      Total: 1
+2020-12-10 21:01:14.889 INFO  com.lzn.config.LogAspect                          :109  [32mOLONHfAA[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 21:01:14.889 INFO  com.lzn.config.LogAspect                          :110  [32mOLONHfAA[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-10 21:01:17.171 INFO  com.lzn.config.LogAspect                          :76   [32mehTByyvX[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:17.172 INFO  com.lzn.config.LogAspect                          :77   [32mehTByyvX[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 21:01:17.172 INFO  com.lzn.config.LogAspect                          :78   [32mehTByyvX[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 21:01:17.172 INFO  com.lzn.config.LogAspect                          :79   [32mehTByyvX[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:17.172 INFO  com.lzn.config.LogAspect                          :97   [32mehTByyvX[0;39m 请求参数: [null]
+2020-12-10 21:01:17.172 INFO  com.lzn.config.LogAspect                          :109  [32mehTByyvX[0;39m 返回结果: {"success":true}
+2020-12-10 21:01:17.172 INFO  com.lzn.config.LogAspect                          :110  [32mehTByyvX[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 21:01:19.068 INFO  com.lzn.config.LogAspect                          :76   [32mqqU9kL1h[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:19.068 INFO  com.lzn.config.LogAspect                          :77   [32mqqU9kL1h[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:01:19.068 INFO  com.lzn.config.LogAspect                          :78   [32mqqU9kL1h[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:01:19.068 INFO  com.lzn.config.LogAspect                          :79   [32mqqU9kL1h[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:19.068 INFO  com.lzn.config.LogAspect                          :97   [32mqqU9kL1h[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 21:01:19.068 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mqqU9kL1h[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:01:19.069 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mqqU9kL1h[0;39m ==> Parameters: admin(String)
+2020-12-10 21:01:19.069 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mqqU9kL1h[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:01:19.069 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mqqU9kL1h[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:01:19.070 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mqqU9kL1h[0;39m <==      Total: 1
+2020-12-10 21:01:19.070 INFO  com.lzn.config.LogAspect                          :109  [32mqqU9kL1h[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 21:01:19.070 INFO  com.lzn.config.LogAspect                          :110  [32mqqU9kL1h[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-10 21:01:20.756 INFO  com.lzn.config.LogAspect                          :76   [32mqsLt0Dwb[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:20.757 INFO  com.lzn.config.LogAspect                          :77   [32mqsLt0Dwb[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 21:01:20.757 INFO  com.lzn.config.LogAspect                          :78   [32mqsLt0Dwb[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 21:01:20.757 INFO  com.lzn.config.LogAspect                          :79   [32mqsLt0Dwb[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:20.757 INFO  com.lzn.config.LogAspect                          :97   [32mqsLt0Dwb[0;39m 请求参数: [null]
+2020-12-10 21:01:20.757 INFO  com.lzn.config.LogAspect                          :109  [32mqsLt0Dwb[0;39m 返回结果: {"success":true}
+2020-12-10 21:01:20.758 INFO  com.lzn.config.LogAspect                          :110  [32mqsLt0Dwb[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-10 21:01:22.438 INFO  com.lzn.config.LogAspect                          :76   [32msnBrK5N7[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:22.438 INFO  com.lzn.config.LogAspect                          :77   [32msnBrK5N7[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:01:22.438 INFO  com.lzn.config.LogAspect                          :78   [32msnBrK5N7[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:01:22.439 INFO  com.lzn.config.LogAspect                          :79   [32msnBrK5N7[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:22.439 INFO  com.lzn.config.LogAspect                          :97   [32msnBrK5N7[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 21:01:22.440 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msnBrK5N7[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:01:22.440 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msnBrK5N7[0;39m ==> Parameters: admin(String)
+2020-12-10 21:01:22.441 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32msnBrK5N7[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:01:22.441 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32msnBrK5N7[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:01:22.441 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msnBrK5N7[0;39m <==      Total: 1
+2020-12-10 21:01:22.442 INFO  com.lzn.config.LogAspect                          :109  [32msnBrK5N7[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 21:01:22.442 INFO  com.lzn.config.LogAspect                          :110  [32msnBrK5N7[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-10 21:01:24.066 INFO  com.lzn.config.LogAspect                          :76   [32mUbQSG64s[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:24.067 INFO  com.lzn.config.LogAspect                          :77   [32mUbQSG64s[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 21:01:24.067 INFO  com.lzn.config.LogAspect                          :78   [32mUbQSG64s[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 21:01:24.067 INFO  com.lzn.config.LogAspect                          :79   [32mUbQSG64s[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:24.067 INFO  com.lzn.config.LogAspect                          :97   [32mUbQSG64s[0;39m 请求参数: [null]
+2020-12-10 21:01:24.067 INFO  com.lzn.config.LogAspect                          :109  [32mUbQSG64s[0;39m 返回结果: {"success":true}
+2020-12-10 21:01:24.068 INFO  com.lzn.config.LogAspect                          :110  [32mUbQSG64s[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-10 21:01:29.466 INFO  com.lzn.config.LogAspect                          :76   [32mnQc3Vdel[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:29.467 INFO  com.lzn.config.LogAspect                          :77   [32mnQc3Vdel[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:01:29.467 INFO  com.lzn.config.LogAspect                          :78   [32mnQc3Vdel[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:01:29.467 INFO  com.lzn.config.LogAspect                          :79   [32mnQc3Vdel[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:29.467 INFO  com.lzn.config.LogAspect                          :97   [32mnQc3Vdel[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 21:01:29.468 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mnQc3Vdel[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:01:29.469 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mnQc3Vdel[0;39m ==> Parameters: admin(String)
+2020-12-10 21:01:29.469 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mnQc3Vdel[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:01:29.470 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mnQc3Vdel[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:01:29.470 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mnQc3Vdel[0;39m <==      Total: 1
+2020-12-10 21:01:29.470 INFO  com.lzn.config.LogAspect                          :109  [32mnQc3Vdel[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 21:01:29.470 INFO  com.lzn.config.LogAspect                          :110  [32mnQc3Vdel[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-10 21:01:31.289 INFO  com.lzn.config.LogAspect                          :76   [32m4f9kVURg[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:31.290 INFO  com.lzn.config.LogAspect                          :77   [32m4f9kVURg[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 21:01:31.290 INFO  com.lzn.config.LogAspect                          :78   [32m4f9kVURg[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 21:01:31.290 INFO  com.lzn.config.LogAspect                          :79   [32m4f9kVURg[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:31.290 INFO  com.lzn.config.LogAspect                          :97   [32m4f9kVURg[0;39m 请求参数: [null]
+2020-12-10 21:01:31.290 INFO  com.lzn.config.LogAspect                          :109  [32m4f9kVURg[0;39m 返回结果: {"success":true}
+2020-12-10 21:01:31.290 INFO  com.lzn.config.LogAspect                          :110  [32m4f9kVURg[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-10 21:01:35.258 INFO  com.lzn.config.LogAspect                          :76   [32mUTLMOXW7[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:35.259 INFO  com.lzn.config.LogAspect                          :77   [32mUTLMOXW7[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 21:01:35.259 INFO  com.lzn.config.LogAspect                          :78   [32mUTLMOXW7[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 21:01:35.259 INFO  com.lzn.config.LogAspect                          :79   [32mUTLMOXW7[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:35.259 INFO  com.lzn.config.LogAspect                          :97   [32mUTLMOXW7[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 21:01:35.260 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mUTLMOXW7[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 21:01:35.260 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mUTLMOXW7[0;39m ==> Parameters: admin(String)
+2020-12-10 21:01:35.260 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mUTLMOXW7[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 21:01:35.260 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mUTLMOXW7[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 21:01:35.261 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mUTLMOXW7[0;39m <==      Total: 1
+2020-12-10 21:01:35.261 INFO  com.lzn.config.LogAspect                          :109  [32mUTLMOXW7[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 21:01:35.261 INFO  com.lzn.config.LogAspect                          :110  [32mUTLMOXW7[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-10 21:01:36.996 INFO  com.lzn.config.LogAspect                          :76   [32moRK82AZ3[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 21:01:36.997 INFO  com.lzn.config.LogAspect                          :77   [32moRK82AZ3[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 21:01:36.997 INFO  com.lzn.config.LogAspect                          :78   [32moRK82AZ3[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 21:01:36.997 INFO  com.lzn.config.LogAspect                          :79   [32moRK82AZ3[0;39m 远程地址: 127.0.0.1
+2020-12-10 21:01:36.997 INFO  com.lzn.config.LogAspect                          :97   [32moRK82AZ3[0;39m 请求参数: [null]
+2020-12-10 21:01:36.997 INFO  com.lzn.config.LogAspect                          :109  [32moRK82AZ3[0;39m 返回结果: {"success":true}
+2020-12-10 21:01:36.997 INFO  com.lzn.config.LogAspect                          :110  [32moRK82AZ3[0;39m ------------- 结束 耗时：1 ms -------------
