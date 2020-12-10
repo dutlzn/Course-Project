@@ -14,9 +14,9 @@
 													登录页面
 												</h1>
 												<v-form>
-													<v-text-field v-model="user.loginName" label="name" name="name" prepend-icon="person" type="text" color="blue accent-3" />
+													<v-text-field  v-model="user.loginName" label="name" name="name" prepend-icon="person" type="text" color="blue accent-3" />
 
-													<v-text-field v-model="user.password" id="password" label="Password" name="Password" prepend-icon="lock"
+													<v-text-field  v-model="user.password" id="password" label="Password" name="Password" prepend-icon="lock"
 													 type="password" color="blue accent-3" />
 
 
@@ -136,8 +136,11 @@
 						Loading.hide();
 						let resp = response.data;
 						if (resp.success) {
-							console.log(resp.content);
-							// _this.$router.push("/welcome");
+							
+							// console.log(resp.content);
+							// SessionStorage.set("USER", resp.content);
+							Tool.setLoginUser(resp.content);
+							_this.$router.push("/welcome");
 						} else {
 							Toast.warning(resp.message);
 						}

@@ -12,13 +12,18 @@
 
 	export default {
 		name: 'App',
+		
+		mounted: function() {
+			let _this = this;
+			_this.loginUser = SessionStorage.get("USER");
+		},
 
 		components: {
 			Navbar
 		},
 
 		data: () => ({
-			//
+			loginUser: {},
 		}),
 	};
 </script>
