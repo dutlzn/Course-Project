@@ -1182,3 +1182,265 @@ java.lang.RuntimeException: Value for loginName cannot be null
 2020-12-10 19:31:03.618 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-10 19:36:03.619 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-10 19:41:03.622 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 19:46:03.623 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 19:50:04.294 INFO  com.lzn.config.LogAspect                          :76   [32mkMcy8oYC[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 19:50:04.294 INFO  com.lzn.config.LogAspect                          :77   [32mkMcy8oYC[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 19:50:04.294 INFO  com.lzn.config.LogAspect                          :78   [32mkMcy8oYC[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 19:50:04.294 INFO  com.lzn.config.LogAspect                          :79   [32mkMcy8oYC[0;39m 远程地址: 127.0.0.1
+2020-12-10 19:50:04.295 INFO  com.lzn.config.LogAspect                          :97   [32mkMcy8oYC[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"}]
+2020-12-10 19:50:04.297 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkMcy8oYC[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 19:50:04.298 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkMcy8oYC[0;39m ==> Parameters: admin(String)
+2020-12-10 19:50:04.299 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkMcy8oYC[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 19:50:04.299 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mkMcy8oYC[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 19:50:04.299 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mkMcy8oYC[0;39m <==      Total: 1
+2020-12-10 19:50:04.300 INFO  com.lzn.config.LogAspect                          :109  [32mkMcy8oYC[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 19:50:04.300 INFO  com.lzn.config.LogAspect                          :110  [32mkMcy8oYC[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-10 19:51:03.625 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 19:56:03.626 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:01:01.448 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-10 20:01:02.881 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-10 20:01:03.426 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-10 20:01:04.068 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-10 20:01:04.076 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:01:04.076 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-10 20:01:04.077 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-10 20:01:04.185 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-10 20:01:04.185 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1292 ms
+2020-12-10 20:01:04.667 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:01:04.668 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:01:04.672 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:01:04.673 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:01:04.868 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-10 20:01:06.279 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:01:06.314 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-10 20:01:07.429 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:01:07.455 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-10 20:01:07.501 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-10 20:01:07.546 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-10 20:01:07.761 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-10 20:01:07.761 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-10 20:01:07.856 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-10 20:01:07.857 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-10 20:01:08.041 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:01:08.107 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-10 20:01:08.108 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-10 20:01:08.108 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-10 20:01:08.108 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-10 20:01:08.108 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-10 20:01:08.108 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-10 20:01:08.108 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-10 20:01:08.238 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-10 20:01:08.240 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-10 20:01:08.241 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-10 20:01:08.244 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607601668243 with initial instances count: 4
+2020-12-10 20:01:08.248 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-10 20:01:08.248 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607601668248, current=UP, previous=STARTING]
+2020-12-10 20:01:08.249 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-10 20:01:08.249 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:01:08.278 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-10 20:01:08.279 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-10 20:01:08.283 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-10 20:01:09.359 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:01:09.366 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 9.277 seconds (JVM running for 9.749)
+2020-12-10 20:01:09.367 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-10 20:01:09.367 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-10 20:01:32.056 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-10 20:01:32.057 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-10 20:01:32.063 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 6 ms
+2020-12-10 20:01:32.100 INFO  com.lzn.config.LogAspect                          :76   [32mUI2dWrUu[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:01:32.101 INFO  com.lzn.config.LogAspect                          :77   [32mUI2dWrUu[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:01:32.101 INFO  com.lzn.config.LogAspect                          :78   [32mUI2dWrUu[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:01:32.101 INFO  com.lzn.config.LogAspect                          :79   [32mUI2dWrUu[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:01:32.116 INFO  com.lzn.config.LogAspect                          :97   [32mUI2dWrUu[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:01:32.319 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mUI2dWrUu[0;39m HikariPool-1 - Starting...
+2020-12-10 20:01:32.502 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mUI2dWrUu[0;39m HikariPool-1 - Start completed.
+2020-12-10 20:01:32.507 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mUI2dWrUu[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:01:32.522 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mUI2dWrUu[0;39m ==> Parameters: admin(String)
+2020-12-10 20:01:32.531 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mUI2dWrUu[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:01:32.531 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mUI2dWrUu[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:01:32.532 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mUI2dWrUu[0;39m <==      Total: 1
+2020-12-10 20:01:32.550 INFO  com.lzn.config.LogAspect                          :109  [32mUI2dWrUu[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:01:32.550 INFO  com.lzn.config.LogAspect                          :110  [32mUI2dWrUu[0;39m ------------- 结束 耗时：452 ms -------------
+2020-12-10 20:02:16.424 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :199  [32m        [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-10 20:04:14.289 INFO  com.lzn.config.LogAspect                          :76   [32msUKtGC0B[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:04:14.290 INFO  com.lzn.config.LogAspect                          :77   [32msUKtGC0B[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:04:14.290 INFO  com.lzn.config.LogAspect                          :78   [32msUKtGC0B[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:04:14.290 INFO  com.lzn.config.LogAspect                          :79   [32msUKtGC0B[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:04:14.290 INFO  com.lzn.config.LogAspect                          :97   [32msUKtGC0B[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:04:14.293 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msUKtGC0B[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:04:14.294 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msUKtGC0B[0;39m ==> Parameters: admin(String)
+2020-12-10 20:04:14.295 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32msUKtGC0B[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:04:14.296 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32msUKtGC0B[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:04:14.296 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32msUKtGC0B[0;39m <==      Total: 1
+2020-12-10 20:04:14.297 INFO  com.lzn.config.LogAspect                          :109  [32msUKtGC0B[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:04:14.297 INFO  com.lzn.config.LogAspect                          :110  [32msUKtGC0B[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-10 20:04:16.445 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :199  [32m        [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-10 20:04:36.470 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-10 20:04:37.911 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-10 20:04:38.501 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-10 20:04:39.128 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-10 20:04:39.137 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:04:39.138 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-10 20:04:39.138 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-10 20:04:39.235 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-10 20:04:39.235 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1308 ms
+2020-12-10 20:04:39.700 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:04:39.700 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:04:39.705 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:04:39.705 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:04:39.898 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-10 20:04:41.304 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:04:41.339 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-10 20:04:42.450 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:04:42.484 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-10 20:04:42.534 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-10 20:04:42.586 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-10 20:04:42.786 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-10 20:04:42.786 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-10 20:04:42.887 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-10 20:04:42.887 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-10 20:04:43.071 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-10 20:04:43.136 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-10 20:04:43.258 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-10 20:04:43.259 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-10 20:04:43.260 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-10 20:04:43.262 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607601883261 with initial instances count: 4
+2020-12-10 20:04:43.266 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-10 20:04:43.267 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607601883267, current=UP, previous=STARTING]
+2020-12-10 20:04:43.268 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-10 20:04:43.268 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:04:43.295 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-10 20:04:43.296 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-10 20:04:43.298 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-10 20:04:44.378 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:04:44.385 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 9.265 seconds (JVM running for 9.727)
+2020-12-10 20:04:44.387 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-10 20:04:44.387 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-10 20:05:50.107 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-10 20:05:50.108 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-10 20:05:50.114 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 6 ms
+2020-12-10 20:05:50.151 INFO  com.lzn.config.LogAspect                          :76   [32mAnA0OXc2[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:05:50.151 INFO  com.lzn.config.LogAspect                          :77   [32mAnA0OXc2[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-10 20:05:50.152 INFO  com.lzn.config.LogAspect                          :78   [32mAnA0OXc2[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-10 20:05:50.152 INFO  com.lzn.config.LogAspect                          :79   [32mAnA0OXc2[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:05:50.166 INFO  com.lzn.config.LogAspect                          :97   [32mAnA0OXc2[0;39m 请求参数: [{"loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-10 20:05:50.344 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mAnA0OXc2[0;39m HikariPool-1 - Starting...
+2020-12-10 20:05:50.517 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mAnA0OXc2[0;39m HikariPool-1 - Start completed.
+2020-12-10 20:05:50.524 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAnA0OXc2[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-10 20:05:50.539 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAnA0OXc2[0;39m ==> Parameters: admin(String)
+2020-12-10 20:05:50.548 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAnA0OXc2[0;39m <==    Columns: id, login_name, name, password
+2020-12-10 20:05:50.549 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mAnA0OXc2[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-10 20:05:50.550 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mAnA0OXc2[0;39m <==      Total: 1
+2020-12-10 20:05:50.566 INFO  com.lzn.config.LogAspect                          :109  [32mAnA0OXc2[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-10 20:05:50.566 INFO  com.lzn.config.LogAspect                          :110  [32mAnA0OXc2[0;39m ------------- 结束 耗时：417 ms -------------
+2020-12-10 20:05:52.678 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :199  [32m        [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-10 20:07:32.674 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-10 20:07:34.291 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-10 20:07:35.413 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-10 20:07:36.356 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-10 20:07:36.373 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:07:36.374 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-10 20:07:36.374 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-10 20:07:36.520 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-10 20:07:36.521 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2210 ms
+2020-12-10 20:07:37.243 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:07:37.244 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:07:37.253 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:07:37.253 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:07:37.785 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-10 20:07:39.411 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:07:39.531 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-10 20:07:41.214 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:07:41.285 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-10 20:07:41.410 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-10 20:07:41.542 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-10 20:07:41.998 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-10 20:07:41.999 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-10 20:07:42.476 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-10 20:07:42.477 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-10 20:07:43.225 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:07:43.411 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-10 20:07:43.411 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-10 20:07:43.413 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-10 20:07:43.414 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-10 20:07:43.414 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-10 20:07:43.415 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-10 20:07:43.415 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-10 20:07:43.819 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-10 20:07:43.831 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-10 20:07:43.838 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-10 20:07:43.857 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607602063846 with initial instances count: 4
+2020-12-10 20:07:43.878 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-10 20:07:43.880 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607602063880, current=UP, previous=STARTING]
+2020-12-10 20:07:43.887 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-10 20:07:43.900 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:07:44.037 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-10 20:07:44.039 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-10 20:07:44.146 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-10 20:07:45.402 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:07:45.422 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 14.136 seconds (JVM running for 14.647)
+2020-12-10 20:07:45.424 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-10 20:07:45.425 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-10 20:08:14.061 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-10 20:08:15.511 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-10 20:08:16.124 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e38dcf31-fafb-370e-aa06-7ec27a08c692
+2020-12-10 20:08:16.777 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-10 20:08:16.785 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:08:16.785 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-10 20:08:16.785 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-10 20:08:16.871 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-10 20:08:16.871 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1346 ms
+2020-12-10 20:08:17.356 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:08:17.357 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:08:17.362 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-10 20:08:17.362 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-10 20:08:17.550 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-10 20:08:18.933 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:08:18.969 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-10 20:08:20.070 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:08:20.109 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-10 20:08:20.157 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-10 20:08:20.202 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-10 20:08:20.403 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-10 20:08:20.403 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-10 20:08:20.497 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-10 20:08:20.498 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-10 20:08:20.679 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-10 20:08:20.742 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-10 20:08:20.742 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-10 20:08:20.742 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-10 20:08:20.743 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-10 20:08:20.743 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-10 20:08:20.743 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-10 20:08:20.743 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-10 20:08:20.864 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-10 20:08:20.866 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-10 20:08:20.867 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-10 20:08:20.869 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607602100868 with initial instances count: 4
+2020-12-10 20:08:20.873 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-10 20:08:20.873 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607602100873, current=UP, previous=STARTING]
+2020-12-10 20:08:20.875 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-10 20:08:20.875 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-10 20:08:20.901 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-10 20:08:20.902 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-10 20:08:20.902 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-10 20:08:21.986 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-10 20:08:21.991 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 9.297 seconds (JVM running for 9.778)
+2020-12-10 20:08:21.993 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-10 20:08:21.993 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-10 20:09:45.172 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-10 20:09:45.172 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-10 20:09:45.181 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
+2020-12-10 20:09:45.208 INFO  com.lzn.config.LogAspect                          :76   [32m4RuO0fMM[0;39m ------------- 【用户】操作开始 -------------
+2020-12-10 20:09:45.209 INFO  com.lzn.config.LogAspect                          :77   [32m4RuO0fMM[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-10 20:09:45.209 INFO  com.lzn.config.LogAspect                          :78   [32m4RuO0fMM[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-10 20:09:45.209 INFO  com.lzn.config.LogAspect                          :79   [32m4RuO0fMM[0;39m 远程地址: 127.0.0.1
+2020-12-10 20:09:45.213 INFO  com.lzn.config.LogAspect                          :97   [32m4RuO0fMM[0;39m 请求参数: [null]
+2020-12-10 20:09:45.248 INFO  com.lzn.config.LogAspect                          :109  [32m4RuO0fMM[0;39m 返回结果: {"success":true}
+2020-12-10 20:09:45.248 INFO  com.lzn.config.LogAspect                          :110  [32m4RuO0fMM[0;39m ------------- 结束 耗时：41 ms -------------

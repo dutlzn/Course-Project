@@ -1,14 +1,14 @@
 package com.lzn.system.controller.admin;
 
-import com.lzn.dto.LoginUserDto;
-import com.lzn.dto.PageDto;
-import com.lzn.dto.ResponseDto;
-import com.lzn.dto.UserDto;
+import com.lzn.dto.*;
 import com.lzn.service.UserService;
 import com.lzn.util.ValidatorUtil;
+import org.apache.tomcat.util.bcel.Const;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/admin/user")
@@ -66,11 +66,23 @@ public class UserController {
      * 登录
      */
     @PostMapping("/login")
-    public ResponseDto login(@RequestBody UserDto userDto) {
+    public ResponseDto login(@RequestBody UserDto userDto, HttpServletRequest request) {
         userDto.setPassword(DigestUtils.md5DigestAsHex(userDto.getPassword().getBytes()));
         ResponseDto responseDto = new ResponseDto();
-       LoginUserDto loginUserDto = userService.login(userDto);
+        LoginUserDto loginUserDto = userService.login(userDto);
+        request.getSession().setAttribute(Constants.LOGIN_USER, loginUserDto);
         responseDto.setContent(loginUserDto);
         return responseDto;
     }
+
+    /**
+     * 退出
+     */
+    @GetMapping("/logout")
+    public ResponseDto logout(HttpServletRequest request) {
+        ResponseDto responseDto = new ResponseDto();
+        request.getSession().removeAttribute(Constants.LOGIN_USER);
+        return responseDto;
+    }
+
 }

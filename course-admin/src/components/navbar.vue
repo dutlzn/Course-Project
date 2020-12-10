@@ -26,33 +26,33 @@
 				</v-list> -->
 			</v-menu>
 
-			<v-btn text>
-				<span  class="font-weight-bold">退出</span>
+			<v-btn text @click="logout()">
+				<span class="font-weight-bold">退出</span>
 				<v-icon>exit_to_app</v-icon>
 			</v-btn>
 		</v-app-bar>
 
-		<v-navigation-drawer v-model="drawer" app  color="#F8F8F8">
+		<v-navigation-drawer v-model="drawer" app color="#F8F8F8">
 			<!-- 对应了菜单先写死 -->
 			<v-list>
-				
-				<v-list-group  prepend-icon="settings" color="blue" no-action="">
+
+				<v-list-group prepend-icon="settings" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>系统管理</v-list-item-title>
 						</v-list-item-content>
 					</template>
-				
+
 					<v-list-item to="/system/user">
 						<v-list-item-content>
 							<v-list-item-title>用户管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
-				
+
 				</v-list-group>
-				
-				
-				<v-list-group  prepend-icon="apps" color="blue" no-action="">
+
+
+				<v-list-group prepend-icon="apps" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>业务管理</v-list-item-title>
@@ -72,32 +72,32 @@
 					</v-list-item>
 
 					<v-list-item to="/business/category">
-							<v-list-item-content>
-								<v-list-item-title>分类管理</v-list-item-title>
-							</v-list-item-content>
+						<v-list-item-content>
+							<v-list-item-title>分类管理</v-list-item-title>
+						</v-list-item-content>
 					</v-list-item>
 
 				</v-list-group>
-				
+
 				<!-- :value="true" 就是展开了 -->
-				<v-list-group  prepend-icon="folder" color="blue" no-action="">
+				<v-list-group prepend-icon="folder" color="blue" no-action="">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>文件管理</v-list-item-title>
 						</v-list-item-content>
 					</template>
-				
+
 					<v-list-item to="/file/file">
 						<v-list-item-content>
 							<v-list-item-title>文件管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
-				
+
 				</v-list-group>
-				
-				
-				
-				
+
+
+
+
 			</v-list>
 
 		</v-navigation-drawer>
@@ -111,6 +111,25 @@
 				drawer: true,
 				link: '/welcome',
 			}
+		},
+
+		methods: {
+			// 退出
+
+			logout() {
+				let _this = this;
+				Loading.show();
+				_this.$ajax.get(process.env.VUE_APP_SERVER + '/system/admin/user/logout/').then((response) => {
+					Loading.hide();
+					let resp = response.data;
+					if (resp.success) {
+						Tool.setLoginUser(null);
+						_this.$router.push("/login")
+					} else {
+						Toast.warning(resp.message)
+					}
+				});
+			},
 		}
 	}
 </script>
