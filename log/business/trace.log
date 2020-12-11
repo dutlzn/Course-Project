@@ -1,473 +1,329 @@
-2020-12-10 13:28:53.923 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
-2020-12-10 13:28:55.417 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2020-12-10 13:29:02.398 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=76d921bd-aa2d-3712-a2b3-64b2a2e67cfa
-2020-12-10 13:29:07.033 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2020-12-10 13:29:07.452 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2020-12-10 13:29:07.454 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2020-12-10 13:29:07.454 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-12-10 13:29:07.663 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2020-12-10 13:29:07.664 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 12227 ms
-2020-12-10 13:29:10.482 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-10 13:29:10.483 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-10 13:29:10.521 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-10 13:29:10.522 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-10 13:29:11.516 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-10 13:29:13.644 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 13:29:14.049 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
-2020-12-10 13:29:15.331 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 13:29:15.479 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-10 13:29:15.657 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2020-12-10 13:29:15.737 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
-2020-12-10 13:29:16.157 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2020-12-10 13:29:16.157 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2020-12-10 13:29:16.312 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2020-12-10 13:29:16.312 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2020-12-10 13:29:16.837 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 13:29:16.909 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-10 13:29:16.910 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-10 13:29:16.910 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-10 13:29:16.910 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-10 13:29:16.910 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-10 13:29:16.910 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
-2020-12-10 13:29:16.910 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-10 13:29:17.005 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-10 13:29:17.008 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2020-12-10 13:29:17.010 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-10 13:29:17.014 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607578157012 with initial instances count: 0
-2020-12-10 13:29:17.024 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2020-12-10 13:29:17.025 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607578157025, current=UP, previous=STARTING]
-2020-12-10 13:29:17.029 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
-2020-12-10 13:29:17.029 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2020-12-10 13:29:17.164 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2020-12-10 13:29:17.165 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2020-12-10 13:29:17.269 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
-2020-12-10 13:29:18.352 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 13:29:18.362 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 25.88 seconds (JVM running for 26.575)
-2020-12-10 13:29:18.364 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
-2020-12-10 13:29:18.364 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
-2020-12-10 13:29:47.009 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-10 13:29:47.010 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-10 13:29:47.010 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-10 13:29:47.010 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-10 13:29:47.010 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-10 13:29:47.010 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
-2020-12-10 13:29:47.011 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-10 13:29:47.048 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-10 13:30:32.555 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-10 13:30:32.555 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2020-12-10 13:30:32.566 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
-2020-12-10 13:30:32.741 INFO  com.lzn.config.LogAspect                          :76   [32mHlQ9OXiM[0;39m ------------- 【分类】操作开始 -------------
-2020-12-10 13:30:32.741 INFO  com.lzn.config.LogAspect                          :76   [32mJQpvvlkw[0;39m ------------- 【讲师】操作开始 -------------
-2020-12-10 13:30:32.742 INFO  com.lzn.config.LogAspect                          :77   [32mJQpvvlkw[0;39m 请求地址: http://localhost:9002/business/admin/teacher/all POST
-2020-12-10 13:30:32.742 INFO  com.lzn.config.LogAspect                          :77   [32mHlQ9OXiM[0;39m 请求地址: http://localhost:9002/business/admin/category/all POST
-2020-12-10 13:30:32.743 INFO  com.lzn.config.LogAspect                          :78   [32mJQpvvlkw[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.all
-2020-12-10 13:30:32.743 INFO  com.lzn.config.LogAspect                          :78   [32mHlQ9OXiM[0;39m 类名方法: com.lzn.business.controller.admin.CategoryController.all
-2020-12-10 13:30:32.743 INFO  com.lzn.config.LogAspect                          :79   [32mJQpvvlkw[0;39m 远程地址: 127.0.0.1
-2020-12-10 13:30:32.743 INFO  com.lzn.config.LogAspect                          :79   [32mHlQ9OXiM[0;39m 远程地址: 127.0.0.1
-2020-12-10 13:30:32.751 INFO  com.lzn.config.LogAspect                          :97   [32mHlQ9OXiM[0;39m 请求参数: []
-2020-12-10 13:30:32.751 INFO  com.lzn.config.LogAspect                          :97   [32mJQpvvlkw[0;39m 请求参数: []
-2020-12-10 13:30:32.774 INFO  com.lzn.config.LogAspect                          :76   [32mT6Ht2vGs[0;39m ------------- 【课程】查询开始 -------------
-2020-12-10 13:30:32.774 INFO  com.lzn.config.LogAspect                          :77   [32mT6Ht2vGs[0;39m 请求地址: http://localhost:9002/business/admin/course/list POST
-2020-12-10 13:30:32.774 INFO  com.lzn.config.LogAspect                          :78   [32mT6Ht2vGs[0;39m 类名方法: com.lzn.business.controller.admin.CourseController.list
-2020-12-10 13:30:32.775 INFO  com.lzn.config.LogAspect                          :79   [32mT6Ht2vGs[0;39m 远程地址: 127.0.0.1
-2020-12-10 13:30:32.789 INFO  com.lzn.config.LogAspect                          :97   [32mT6Ht2vGs[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2020-12-10 13:30:32.816 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mT6Ht2vGs[0;39m HikariPool-1 - Starting...
-2020-12-10 13:30:33.011 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mT6Ht2vGs[0;39m HikariPool-1 - Start completed.
-2020-12-10 13:30:33.026 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mJQpvvlkw[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher 
-2020-12-10 13:30:33.026 DEBUG com.lzn.mapper.CategoryMapper.selectByExample     :159  [32mHlQ9OXiM[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc 
-2020-12-10 13:30:33.052 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mJQpvvlkw[0;39m ==> Parameters: 
-2020-12-10 13:30:33.052 DEBUG com.lzn.mapper.CategoryMapper.selectByExample     :159  [32mHlQ9OXiM[0;39m ==> Parameters: 
-2020-12-10 13:30:33.067 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
-2020-12-10 13:30:33.067 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==    Columns: id, parent, name, sort
-2020-12-10 13:30:33.068 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000100, 00000000, 前端技术1111, 100
-2020-12-10 13:30:33.068 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
-2020-12-10 13:30:33.069 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000101, 00000100, html/css1, 101
-2020-12-10 13:30:33.069 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
-2020-12-10 13:30:33.069 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000102, 00000100, javascript, 102
-2020-12-10 13:30:33.070 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
-2020-12-10 13:30:33.070 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mT6Ht2vGs[0;39m ==>  Preparing: SELECT count(0) FROM course 
-2020-12-10 13:30:33.070 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000103, 00000100, vue.js, 103
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
-2020-12-10 13:30:33.071 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mT6Ht2vGs[0;39m ==> Parameters: 
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000104, 00000100, react.js, 104
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000105, 00000100, angular, 105
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000106, 00000100, node.js, 106
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: FqgysEp0, 123, 123, /static/image/avatar.png, 123, 123, null
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000107, 00000100, jquery, 107
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CourseMapper.selectByExample_COUNT :165  [32mT6Ht2vGs[0;39m <==    Columns: count(0)
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: jV6EC8WO, 123421, 41234, null, null, null, null
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CourseMapper.selectByExample_COUNT :165  [32mT6Ht2vGs[0;39m <==        Row: 4
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000108, 00000100, 小程序, 108
-2020-12-10 13:30:33.071 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: lDDTaBSH, 陆震宁, 你好, http://127.0.0.1:9000/file/f/teacher/X7uUzKqA-20111108205452769.jpg, 测试工程师, test, test
-2020-12-10 13:30:33.072 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: R1vsRS35, 134, 1234, null, 1234, null, null
-2020-12-10 13:30:33.072 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 2PNPXOps, piWqrMIR, 123, 123
-2020-12-10 13:30:33.072 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: piWqrMIR, 00000000, 123, 123
-2020-12-10 13:30:33.072 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: uAUsTvCX, 12433, 123412, null, null, null, null
-2020-12-10 13:30:33.072 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mT6Ht2vGs[0;39m <==      Total: 1
-2020-12-10 13:30:33.073 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000200, 00000000, 后端技术综合, 200
-2020-12-10 13:30:33.073 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: V8OmXld6, 124321, 41234, null, 无敌无敌, null, null
-2020-12-10 13:30:33.073 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000201, 00000200, java12, 201
-2020-12-10 13:30:33.073 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: YeDH0O7T, 陆振宁, 123, null, 无敌, null, null
-2020-12-10 13:30:33.073 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000202, 00000200, springboot, 202
-2020-12-10 13:30:33.073 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mJQpvvlkw[0;39m <==        Row: YW01e1Ru, 你猜猜, null, http://127.0.0.1:9000/file/f/teacher\OkmgcUYx6EKamwsSIuEOS.jpg, null, null, null
-2020-12-10 13:30:33.074 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mJQpvvlkw[0;39m <==      Total: 13
-2020-12-10 13:30:33.074 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000203, 00000200, spring cloud, 203
-2020-12-10 13:30:33.074 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000204, 00000200, ssm, 204
-2020-12-10 13:30:33.075 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mT6Ht2vGs[0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
-2020-12-10 13:30:33.075 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mT6Ht2vGs[0;39m ==> Parameters: 5(Integer)
-2020-12-10 13:30:33.075 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000205, 00000200, python, 205
-2020-12-10 13:30:33.076 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000206, 00000200, 爬虫, 206
-2020-12-10 13:30:33.076 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: yz6nSAcM, 00000200, .net, 207
-2020-12-10 13:30:33.077 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mT6Ht2vGs[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
-2020-12-10 13:30:33.077 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000300, 00000000, 移动开发, 300
-2020-12-10 13:30:33.077 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000301, 00000300, android, 301
-2020-12-10 13:30:33.077 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mT6Ht2vGs[0;39m <==        Row: m9QPac46, 测试课程, null, 411, 100.00, http://127.0.0.1:9000/file/f/course\19xGddgWsYUEImuQSOM6i6.jpg, 3, C, D, null, 0, 2020-12-01 16:04:18.0, 2020-12-09 15:04:49.928, 2daFvSFf
-2020-12-10 13:30:33.078 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000302, 00000300, ios, 302
-2020-12-10 13:30:33.078 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000303, 00000300, react native, 303
-2020-12-10 13:30:33.078 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000304, 00000300, ionic, 304
-2020-12-10 13:30:33.078 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mT6Ht2vGs[0;39m <==        Row: 1rHGgWFv, 测试课堂2111, 1431241241, 1251, 2143.00, http://127.0.0.1:9000/file/f/course\50D9sDaCYgoKOOcikCSkGo.jpg, 3, C, P, null, 1, 2020-11-30 21:26:51.0, 2020-12-09 15:04:38.007, 2daFvSFf
-2020-12-10 13:30:33.079 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000400, 00000000, 前沿技术, 400
-2020-12-10 13:30:33.080 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mT6Ht2vGs[0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 0, 19.90, http://127.0.0.1:9000/file/f/course\20ssDk0gqQGmo0q6YWI4i.jpg, 2, C, P, 100, 2, 2020-11-22 05:28:27.0, 2020-12-08 14:10:39.292, 3fU0qhfk
-2020-12-10 13:30:33.080 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000401, 00000400, 微服务, 401
-2020-12-10 13:30:33.080 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000402, 00000400, 区块链, 402
-2020-12-10 13:30:33.080 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000403, 00000400, 机器学习, 403
-2020-12-10 13:30:33.080 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mT6Ht2vGs[0;39m <==        Row: 4GGMLjN8, test, null, null, null, http://127.0.0.1:9000/file/f/course\50D9sDaCYgoKOOcikCSkGo.jpg, 1, C, P, null, 4, 2020-12-06 16:59:24.0, 2020-12-09 15:04:56.384, null
-2020-12-10 13:30:33.081 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000404, 00000400, 深度学习, 404
-2020-12-10 13:30:33.081 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mT6Ht2vGs[0;39m <==      Total: 4
-2020-12-10 13:30:33.081 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000405, 00000400, 数据分析&挖掘, 405
-2020-12-10 13:30:33.081 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000500, 00000000, 云计算&大数据, 500
-2020-12-10 13:30:33.082 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000501, 00000500, 大数据, 501
-2020-12-10 13:30:33.083 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000502, 00000500, hadoop, 502
-2020-12-10 13:30:33.084 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000503, 00000500, spark, 503
-2020-12-10 13:30:33.085 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000504, 00000500, hbase, 504
-2020-12-10 13:30:33.086 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000505, 00000500, 阿里云, 505
-2020-12-10 13:30:33.087 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000506, 00000500, docker, 506
-2020-12-10 13:30:33.087 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000507, 00000500, kubernetes, 507
-2020-12-10 13:30:33.088 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000600, 00000000, 运维&测试, 600
-2020-12-10 13:30:33.088 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000601, 00000600, 运维, 601
-2020-12-10 13:30:33.089 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000602, 00000600, 自动化运维, 602
-2020-12-10 13:30:33.089 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000603, 00000600, 中间件, 603
-2020-12-10 13:30:33.089 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000604, 00000600, linux, 604
-2020-12-10 13:30:33.090 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000605, 00000600, 测试, 605
-2020-12-10 13:30:33.090 INFO  com.lzn.config.LogAspect                          :109  [32mJQpvvlkw[0;39m 返回结果: {"content":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"},{"id":"FqgysEp0","image":"/static/image/avatar.png","motto":"123","name":"123","nickname":"123","position":"123"},{"id":"jV6EC8WO","name":"123421","nickname":"41234"},{"id":"lDDTaBSH","image":"http://127.0.0.1:9000/file/f/teacher/X7uUzKqA-20111108205452769.jpg","intro":"test","motto":"test","name":"陆震宁","nickname":"你好","position":"测试工程师"},{"id":"R1vsRS35","name":"134","nickname":"1234","position":"1234"},{"id":"uAUsTvCX","name":"12433","nickname":"123412"},{"id":"V8OmXld6","name":"124321","nickname":"41234","position":"无敌无敌"},{"id":"YeDH0O7T","name":"陆振宁","nickname":"123","position":"无敌"},{"id":"YW01e1Ru","image":"http://127.0.0.1:9000/file/f/teacher\\OkmgcUYx6EKamwsSIuEOS.jpg","name":"你猜猜"}],"success":true}
-2020-12-10 13:30:33.090 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000606, 00000600, 自动化测试, 606
-2020-12-10 13:30:33.090 INFO  com.lzn.config.LogAspect                          :110  [32mJQpvvlkw[0;39m ------------- 结束 耗时：352 ms -------------
-2020-12-10 13:30:33.090 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000700, 00000000, 数据库, 700
-2020-12-10 13:30:33.091 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000701, 00000700, mysql, 701
-2020-12-10 13:30:33.091 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000702, 00000700, redis, 702
-2020-12-10 13:30:33.092 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32mHlQ9OXiM[0;39m <==        Row: 00000703, 00000700, mongodb, 703
-2020-12-10 13:30:33.092 DEBUG com.lzn.mapper.CategoryMapper.selectByExample     :159  [32mHlQ9OXiM[0;39m <==      Total: 49
-2020-12-10 13:30:33.101 INFO  com.lzn.config.LogAspect                          :109  [32mT6Ht2vGs[0;39m 返回结果: {"content":{"list":[{"charge":"C","createdAt":1606809858000,"id":"m9QPac46","image":"http://127.0.0.1:9000/file/f/course\\19xGddgWsYUEImuQSOM6i6.jpg","level":"3","name":"测试课程","price":100.00,"sort":0,"status":"D","teacherId":"2daFvSFf","time":411,"updatedAt":1607497489928},{"charge":"C","createdAt":1606742811000,"id":"1rHGgWFv","image":"http://127.0.0.1:9000/file/f/course\\50D9sDaCYgoKOOcikCSkGo.jpg","level":"3","name":"测试课堂2111","price":2143.00,"sort":1,"status":"P","summary":"1431241241","teacherId":"2daFvSFf","time":1251,"updatedAt":1607497478007},{"charge":"C","createdAt":1605994107000,"enroll":100,"id":"00000001","image":"http://127.0.0.1:9000/file/f/course\\20ssDk0gqQGmo0q6YWI4i.jpg","level":"2","name":"测试课程01","price":19.90,"sort":2,"status":"P","summary":"这是一门测试课程","teacherId":"3fU0qhfk","time":0,"updatedAt":1607407839292},{"charge":"C","createdAt":1607245164000,"id":"4GGMLjN8","image":"http://127.0.0.1:9000/file/f/course\\50D9sDaCYgoKOOcikCSkGo.jpg","level":"1","name":"test","sort":4,"status":"P","updatedAt":1607497496384}],"page":1,"size":5,"total":4},"success":true}
-2020-12-10 13:30:33.101 INFO  com.lzn.config.LogAspect                          :110  [32mT6Ht2vGs[0;39m ------------- 结束 耗时：328 ms -------------
-2020-12-10 13:30:33.103 INFO  com.lzn.config.LogAspect                          :109  [32mHlQ9OXiM[0;39m 返回结果: {"content":[{"id":"00000100","name":"前端技术1111","parent":"00000000","sort":100},{"id":"00000101","name":"html/css1","parent":"00000100","sort":101},{"id":"00000102","name":"javascript","parent":"00000100","sort":102},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000106","name":"node.js","parent":"00000100","sort":106},{"id":"00000107","name":"jquery","parent":"00000100","sort":107},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"2PNPXOps","name":"123","parent":"piWqrMIR","sort":123},{"id":"piWqrMIR","name":"123","parent":"00000000","sort":123},{"id":"00000200","name":"后端技术综合","parent":"00000000","sort":200},{"id":"00000201","name":"java12","parent":"00000200","sort":201},{"id":"00000202","name":"springboot","parent":"00000200","sort":202},{"id":"00000203","name":"spring cloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"yz6nSAcM","name":".net","parent":"00000200","sort":207},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"android","parent":"00000300","sort":301},{"id":"00000302","name":"ios","parent":"00000300","sort":302},{"id":"00000303","name":"react native","parent":"00000300","sort":303},{"id":"00000304","name":"ionic","parent":"00000300","sort":304},{"id":"00000400","name":"前沿技术","parent":"00000000","sort":400},{"id":"00000401","name":"微服务","parent":"00000400","sort":401},{"id":"00000402","name":"区块链","parent":"00000400","sort":402},{"id":"00000403","name":"机器学习","parent":"00000400","sort":403},{"id":"00000404","name":"深度学习","parent":"00000400","sort":404},{"id":"00000405","name":"数据分析&挖掘","parent":"00000400","sort":405},{"id":"00000500","name":"云计算&大数据","parent":"00000000","sort":500},{"id":"00000501","name":"大数据","parent":"00000500","sort":501},{"id":"00000502","name":"hadoop","parent":"00000500","sort":502},{"id":"00000503","name":"spark","parent":"00000500","sort":503},{"id":"00000504","name":"hbase","parent":"00000500","sort":504},{"id":"00000505","name":"阿里云","parent":"00000500","sort":505},{"id":"00000506","name":"docker","parent":"00000500","sort":506},{"id":"00000507","name":"kubernetes","parent":"00000500","sort":507},{"id":"00000600","name":"运维&测试","parent":"00000000","sort":600},{"id":"00000601","name":"运维","parent":"00000600","sort":601},{"id":"00000602","name":"自动化运维","parent":"00000600","sort":602},{"id":"00000603","name":"中间件","parent":"00000600","sort":603},{"id":"00000604","name":"linux","parent":"00000600","sort":604},{"id":"00000605","name":"测试","parent":"00000600","sort":605},{"id":"00000606","name":"自动化测试","parent":"00000600","sort":606},{"id":"00000700","name":"数据库","parent":"00000000","sort":700},{"id":"00000701","name":"mysql","parent":"00000700","sort":701},{"id":"00000702","name":"redis","parent":"00000700","sort":702},{"id":"00000703","name":"mongodb","parent":"00000700","sort":703}],"success":true}
-2020-12-10 13:30:33.103 INFO  com.lzn.config.LogAspect                          :110  [32mHlQ9OXiM[0;39m ------------- 结束 耗时：365 ms -------------
-2020-12-10 13:30:35.491 INFO  com.lzn.config.LogAspect                          :76   [32mQAuDQ9TG[0;39m ------------- 【课程】查询开始 -------------
-2020-12-10 13:30:35.492 INFO  com.lzn.config.LogAspect                          :77   [32mQAuDQ9TG[0;39m 请求地址: http://localhost:9002/business/admin/course/list-category/m9QPac46 POST
-2020-12-10 13:30:35.492 INFO  com.lzn.config.LogAspect                          :78   [32mQAuDQ9TG[0;39m 类名方法: com.lzn.business.controller.admin.CourseController.listCategory
-2020-12-10 13:30:35.492 INFO  com.lzn.config.LogAspect                          :79   [32mQAuDQ9TG[0;39m 远程地址: 127.0.0.1
-2020-12-10 13:30:35.492 INFO  com.lzn.config.LogAspect                          :97   [32mQAuDQ9TG[0;39m 请求参数: ["m9QPac46"]
-2020-12-10 13:30:35.505 DEBUG c.lzn.mapper.CourseCategoryMapper.selectByExample :159  [32mQAuDQ9TG[0;39m ==>  Preparing: select id, course_id, category_id from course_category WHERE ( course_id = ? ) 
-2020-12-10 13:30:35.505 DEBUG c.lzn.mapper.CourseCategoryMapper.selectByExample :159  [32mQAuDQ9TG[0;39m ==> Parameters: m9QPac46(String)
-2020-12-10 13:30:35.507 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==    Columns: id, course_id, category_id
-2020-12-10 13:30:35.507 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: 0wfeSOom, m9QPac46, 00000703
-2020-12-10 13:30:35.508 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: 5lUGm4ub, m9QPac46, 00000108
-2020-12-10 13:30:35.508 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: a1oEWupE, m9QPac46, 00000105
-2020-12-10 13:30:35.508 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: E8CnHS35, m9QPac46, 00000301
-2020-12-10 13:30:35.509 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: EWLfhUc8, m9QPac46, 00000702
-2020-12-10 13:30:35.509 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: GIs2r0M6, m9QPac46, 00000104
-2020-12-10 13:30:35.509 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: GpBl07ye, m9QPac46, 00000302
-2020-12-10 13:30:35.510 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: gXN4D2Ej, m9QPac46, 00000205
-2020-12-10 13:30:35.510 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: i3rw2NU1, m9QPac46, yz6nSAcM
-2020-12-10 13:30:35.510 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: IL2d8zEy, m9QPac46, 00000206
-2020-12-10 13:30:35.511 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: jn4bIkJe, m9QPac46, 00000202
-2020-12-10 13:30:35.511 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: Mo170mfA, m9QPac46, 00000701
-2020-12-10 13:30:35.512 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: mPrDOxqp, m9QPac46, 00000101
-2020-12-10 13:30:35.512 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: nvxgyVCQ, m9QPac46, 00000107
-2020-12-10 13:30:35.512 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: plmsWJBp, m9QPac46, 00000304
-2020-12-10 13:30:35.513 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: qI5CpTWP, m9QPac46, 00000102
-2020-12-10 13:30:35.515 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: VREJNgc5, m9QPac46, 00000203
-2020-12-10 13:30:35.516 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: VydRiMMc, m9QPac46, 00000106
-2020-12-10 13:30:35.516 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: WAk1ij8D, m9QPac46, 00000201
-2020-12-10 13:30:35.516 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: XMXxDDSM, m9QPac46, 2PNPXOps
-2020-12-10 13:30:35.516 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: y9nbmxaj, m9QPac46, 00000103
-2020-12-10 13:30:35.517 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: ytG7EKG2, m9QPac46, 00000303
-2020-12-10 13:30:35.517 TRACE c.lzn.mapper.CourseCategoryMapper.selectByExample :165  [32mQAuDQ9TG[0;39m <==        Row: YuC7tv2X, m9QPac46, 00000204
-2020-12-10 13:30:35.517 DEBUG c.lzn.mapper.CourseCategoryMapper.selectByExample :159  [32mQAuDQ9TG[0;39m <==      Total: 23
-2020-12-10 13:30:35.524 INFO  com.lzn.config.LogAspect                          :109  [32mQAuDQ9TG[0;39m 返回结果: {"content":[{"categoryId":"00000703","courseId":"m9QPac46","id":"0wfeSOom"},{"categoryId":"00000108","courseId":"m9QPac46","id":"5lUGm4ub"},{"categoryId":"00000105","courseId":"m9QPac46","id":"a1oEWupE"},{"categoryId":"00000301","courseId":"m9QPac46","id":"E8CnHS35"},{"categoryId":"00000702","courseId":"m9QPac46","id":"EWLfhUc8"},{"categoryId":"00000104","courseId":"m9QPac46","id":"GIs2r0M6"},{"categoryId":"00000302","courseId":"m9QPac46","id":"GpBl07ye"},{"categoryId":"00000205","courseId":"m9QPac46","id":"gXN4D2Ej"},{"categoryId":"yz6nSAcM","courseId":"m9QPac46","id":"i3rw2NU1"},{"categoryId":"00000206","courseId":"m9QPac46","id":"IL2d8zEy"},{"categoryId":"00000202","courseId":"m9QPac46","id":"jn4bIkJe"},{"categoryId":"00000701","courseId":"m9QPac46","id":"Mo170mfA"},{"categoryId":"00000101","courseId":"m9QPac46","id":"mPrDOxqp"},{"categoryId":"00000107","courseId":"m9QPac46","id":"nvxgyVCQ"},{"categoryId":"00000304","courseId":"m9QPac46","id":"plmsWJBp"},{"categoryId":"00000102","courseId":"m9QPac46","id":"qI5CpTWP"},{"categoryId":"00000203","courseId":"m9QPac46","id":"VREJNgc5"},{"categoryId":"00000106","courseId":"m9QPac46","id":"VydRiMMc"},{"categoryId":"00000201","courseId":"m9QPac46","id":"WAk1ij8D"},{"categoryId":"2PNPXOps","courseId":"m9QPac46","id":"XMXxDDSM"},{"categoryId":"00000103","courseId":"m9QPac46","id":"y9nbmxaj"},{"categoryId":"00000303","courseId":"m9QPac46","id":"ytG7EKG2"},{"categoryId":"00000204","courseId":"m9QPac46","id":"YuC7tv2X"}],"success":true}
-2020-12-10 13:30:35.525 INFO  com.lzn.config.LogAspect                          :110  [32mQAuDQ9TG[0;39m ------------- 结束 耗时：34 ms -------------
-2020-12-10 13:30:42.843 INFO  com.lzn.config.LogAspect                          :76   [32mDX6NtRXM[0;39m ------------- 【课程】保存开始 -------------
-2020-12-10 13:30:42.844 INFO  com.lzn.config.LogAspect                          :77   [32mDX6NtRXM[0;39m 请求地址: http://localhost:9002/business/admin/course/save POST
-2020-12-10 13:30:42.844 INFO  com.lzn.config.LogAspect                          :78   [32mDX6NtRXM[0;39m 类名方法: com.lzn.business.controller.admin.CourseController.save
-2020-12-10 13:30:42.844 INFO  com.lzn.config.LogAspect                          :79   [32mDX6NtRXM[0;39m 远程地址: 127.0.0.1
-2020-12-10 13:30:42.845 INFO  com.lzn.config.LogAspect                          :97   [32mDX6NtRXM[0;39m 请求参数: [{"categorys":[{"id":"00000703","name":"mongodb","parent":"00000700","sort":703},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000301","name":"android","parent":"00000300","sort":301},{"id":"00000702","name":"redis","parent":"00000700","sort":702},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000302","name":"ios","parent":"00000300","sort":302},{"id":"00000205","name":"python","parent":"00000200","sort":205},{"id":"yz6nSAcM","name":".net","parent":"00000200","sort":207},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000202","name":"springboot","parent":"00000200","sort":202},{"id":"00000701","name":"mysql","parent":"00000700","sort":701},{"id":"00000101","name":"html/css1","parent":"00000100","sort":101},{"id":"00000107","name":"jquery","parent":"00000100","sort":107},{"id":"00000304","name":"ionic","parent":"00000300","sort":304},{"id":"00000102","name":"javascript","parent":"00000100","sort":102},{"id":"00000203","name":"spring cloud","parent":"00000200","sort":203},{"id":"00000106","name":"node.js","parent":"00000100","sort":106},{"id":"00000201","name":"java12","parent":"00000200","sort":201},{"id":"2PNPXOps","name":"123","parent":"piWqrMIR","sort":123},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000303","name":"react native","parent":"00000300","sort":303},{"id":"00000204","name":"ssm","parent":"00000200","sort":204}],"charge":"C","createdAt":1606809858000,"id":"m9QPac46","image":"http://127.0.0.1:9000/file/f/course\\3xzByd6GCMOocGK0qIa0kI.jpg","level":"3","name":"测试课程","price":100,"sort":0,"status":"D","teacherId":"2daFvSFf","time":411,"updatedAt":1607497489000}]
-2020-12-10 13:30:42.852 DEBUG com.lzn.mapper.CourseMapper.updateByPrimaryKey    :159  [32mDX6NtRXM[0;39m ==>  Preparing: update course set `name` = ?, summary = ?, `time` = ?, price = ?, image = ?, `level` = ?, charge = ?, `status` = ?, enroll = ?, sort = ?, created_at = ?, updated_at = ?, teacher_id = ? where id = ? 
-2020-12-10 13:30:42.853 DEBUG com.lzn.mapper.CourseMapper.updateByPrimaryKey    :159  [32mDX6NtRXM[0;39m ==> Parameters: 测试课程(String), null, 411(Integer), 100(BigDecimal), http://127.0.0.1:9000/file/f/course\3xzByd6GCMOocGK0qIa0kI.jpg(String), 3(String), C(String), D(String), null, 0(Integer), 2020-12-01 16:04:18.0(Timestamp), 2020-12-10 13:30:42.851(Timestamp), 2daFvSFf(String), m9QPac46(String)
-2020-12-10 13:30:42.855 DEBUG com.lzn.mapper.CourseMapper.updateByPrimaryKey    :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.856 DEBUG c.lzn.mapper.CourseCategoryMapper.deleteByExample :159  [32mDX6NtRXM[0;39m ==>  Preparing: delete from course_category WHERE ( course_id = ? ) 
-2020-12-10 13:30:42.856 DEBUG c.lzn.mapper.CourseCategoryMapper.deleteByExample :159  [32mDX6NtRXM[0;39m ==> Parameters: m9QPac46(String)
-2020-12-10 13:30:42.857 DEBUG c.lzn.mapper.CourseCategoryMapper.deleteByExample :159  [32mDX6NtRXM[0;39m <==    Updates: 23
-2020-12-10 13:30:42.858 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.858 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: M9OdxTa8(String), m9QPac46(String), 00000703(String)
-2020-12-10 13:30:42.859 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.860 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.860 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: C8mCgigR(String), m9QPac46(String), 00000108(String)
-2020-12-10 13:30:42.861 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.862 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.864 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: ulFFwNcv(String), m9QPac46(String), 00000105(String)
-2020-12-10 13:30:42.866 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.867 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.868 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: ZIr9BD6J(String), m9QPac46(String), 00000301(String)
-2020-12-10 13:30:42.870 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.871 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.871 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: yUarxFBW(String), m9QPac46(String), 00000702(String)
-2020-12-10 13:30:42.872 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.873 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.873 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: Hbf0UqJb(String), m9QPac46(String), 00000104(String)
-2020-12-10 13:30:42.874 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.875 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.875 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: 0JmUkxb7(String), m9QPac46(String), 00000302(String)
-2020-12-10 13:30:42.876 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.876 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.877 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: 7f5RhRQu(String), m9QPac46(String), 00000205(String)
-2020-12-10 13:30:42.878 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.879 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.880 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: SFdxCZZl(String), m9QPac46(String), yz6nSAcM(String)
-2020-12-10 13:30:42.881 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.882 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.883 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: qFKIfolU(String), m9QPac46(String), 00000206(String)
-2020-12-10 13:30:42.885 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.885 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.886 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: 1K0K03NV(String), m9QPac46(String), 00000202(String)
-2020-12-10 13:30:42.887 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.888 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.888 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: BADGy1HG(String), m9QPac46(String), 00000701(String)
-2020-12-10 13:30:42.889 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.890 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.890 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: KEuFHkp2(String), m9QPac46(String), 00000101(String)
-2020-12-10 13:30:42.891 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.892 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.892 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: JJfske2K(String), m9QPac46(String), 00000107(String)
-2020-12-10 13:30:42.893 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.894 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.894 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: lssdVBmf(String), m9QPac46(String), 00000304(String)
-2020-12-10 13:30:42.895 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.896 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.897 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: bBdrROaz(String), m9QPac46(String), 00000102(String)
-2020-12-10 13:30:42.900 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.901 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.901 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: nADppkZm(String), m9QPac46(String), 00000203(String)
-2020-12-10 13:30:42.902 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.903 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.903 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: V1Ww3RRH(String), m9QPac46(String), 00000106(String)
-2020-12-10 13:30:42.904 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.904 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.904 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: ca0eDNWx(String), m9QPac46(String), 00000201(String)
-2020-12-10 13:30:42.905 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.905 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.906 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: YQm41cXr(String), m9QPac46(String), 2PNPXOps(String)
-2020-12-10 13:30:42.907 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.907 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.907 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: WykWBsBg(String), m9QPac46(String), 00000103(String)
-2020-12-10 13:30:42.908 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.908 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.909 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: bH4Oq9ES(String), m9QPac46(String), 00000303(String)
-2020-12-10 13:30:42.909 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.910 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
-2020-12-10 13:30:42.910 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m ==> Parameters: ImTF9Ixu(String), m9QPac46(String), 00000204(String)
-2020-12-10 13:30:42.911 DEBUG com.lzn.mapper.CourseCategoryMapper.insert        :159  [32mDX6NtRXM[0;39m <==    Updates: 1
-2020-12-10 13:30:42.915 INFO  com.lzn.config.LogAspect                          :109  [32mDX6NtRXM[0;39m 返回结果: {"content":{"categorys":[{"id":"00000703","name":"mongodb","parent":"00000700","sort":703},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000301","name":"android","parent":"00000300","sort":301},{"id":"00000702","name":"redis","parent":"00000700","sort":702},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000302","name":"ios","parent":"00000300","sort":302},{"id":"00000205","name":"python","parent":"00000200","sort":205},{"id":"yz6nSAcM","name":".net","parent":"00000200","sort":207},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000202","name":"springboot","parent":"00000200","sort":202},{"id":"00000701","name":"mysql","parent":"00000700","sort":701},{"id":"00000101","name":"html/css1","parent":"00000100","sort":101},{"id":"00000107","name":"jquery","parent":"00000100","sort":107},{"id":"00000304","name":"ionic","parent":"00000300","sort":304},{"id":"00000102","name":"javascript","parent":"00000100","sort":102},{"id":"00000203","name":"spring cloud","parent":"00000200","sort":203},{"id":"00000106","name":"node.js","parent":"00000100","sort":106},{"id":"00000201","name":"java12","parent":"00000200","sort":201},{"id":"2PNPXOps","name":"123","parent":"piWqrMIR","sort":123},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000303","name":"react native","parent":"00000300","sort":303},{"id":"00000204","name":"ssm","parent":"00000200","sort":204}],"charge":"C","createdAt":1606809858000,"id":"m9QPac46","image":"http://127.0.0.1:9000/file/f/course\\3xzByd6GCMOocGK0qIa0kI.jpg","level":"3","name":"测试课程","price":100,"sort":0,"status":"D","teacherId":"2daFvSFf","time":411,"updatedAt":1607497489000},"success":true}
-2020-12-10 13:30:42.916 INFO  com.lzn.config.LogAspect                          :110  [32mDX6NtRXM[0;39m ------------- 结束 耗时：73 ms -------------
-2020-12-10 13:30:42.962 INFO  com.lzn.config.LogAspect                          :76   [32mjlsn3dzK[0;39m ------------- 【课程】查询开始 -------------
-2020-12-10 13:30:42.962 INFO  com.lzn.config.LogAspect                          :77   [32mjlsn3dzK[0;39m 请求地址: http://localhost:9002/business/admin/course/list POST
-2020-12-10 13:30:42.962 INFO  com.lzn.config.LogAspect                          :78   [32mjlsn3dzK[0;39m 类名方法: com.lzn.business.controller.admin.CourseController.list
-2020-12-10 13:30:42.962 INFO  com.lzn.config.LogAspect                          :79   [32mjlsn3dzK[0;39m 远程地址: 127.0.0.1
-2020-12-10 13:30:42.962 INFO  com.lzn.config.LogAspect                          :97   [32mjlsn3dzK[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2020-12-10 13:30:42.963 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mjlsn3dzK[0;39m ==>  Preparing: SELECT count(0) FROM course 
-2020-12-10 13:30:42.963 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mjlsn3dzK[0;39m ==> Parameters: 
-2020-12-10 13:30:42.964 TRACE com.lzn.mapper.CourseMapper.selectByExample_COUNT :165  [32mjlsn3dzK[0;39m <==    Columns: count(0)
-2020-12-10 13:30:42.964 TRACE com.lzn.mapper.CourseMapper.selectByExample_COUNT :165  [32mjlsn3dzK[0;39m <==        Row: 4
-2020-12-10 13:30:42.965 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mjlsn3dzK[0;39m <==      Total: 1
-2020-12-10 13:30:42.965 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mjlsn3dzK[0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
-2020-12-10 13:30:42.965 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mjlsn3dzK[0;39m ==> Parameters: 5(Integer)
-2020-12-10 13:30:42.966 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mjlsn3dzK[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
-2020-12-10 13:30:42.966 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mjlsn3dzK[0;39m <==        Row: m9QPac46, 测试课程, null, 411, 100.00, http://127.0.0.1:9000/file/f/course\3xzByd6GCMOocGK0qIa0kI.jpg, 3, C, D, null, 0, 2020-12-01 16:04:18.0, 2020-12-10 13:30:42.851, 2daFvSFf
-2020-12-10 13:30:42.967 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mjlsn3dzK[0;39m <==        Row: 1rHGgWFv, 测试课堂2111, 1431241241, 1251, 2143.00, http://127.0.0.1:9000/file/f/course\50D9sDaCYgoKOOcikCSkGo.jpg, 3, C, P, null, 1, 2020-11-30 21:26:51.0, 2020-12-09 15:04:38.007, 2daFvSFf
-2020-12-10 13:30:42.967 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mjlsn3dzK[0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 0, 19.90, http://127.0.0.1:9000/file/f/course\20ssDk0gqQGmo0q6YWI4i.jpg, 2, C, P, 100, 2, 2020-11-22 05:28:27.0, 2020-12-08 14:10:39.292, 3fU0qhfk
-2020-12-10 13:30:42.967 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mjlsn3dzK[0;39m <==        Row: 4GGMLjN8, test, null, null, null, http://127.0.0.1:9000/file/f/course\50D9sDaCYgoKOOcikCSkGo.jpg, 1, C, P, null, 4, 2020-12-06 16:59:24.0, 2020-12-09 15:04:56.384, null
-2020-12-10 13:30:42.968 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mjlsn3dzK[0;39m <==      Total: 4
-2020-12-10 13:30:42.968 INFO  com.lzn.config.LogAspect                          :109  [32mjlsn3dzK[0;39m 返回结果: {"content":{"list":[{"charge":"C","createdAt":1606809858000,"id":"m9QPac46","image":"http://127.0.0.1:9000/file/f/course\\3xzByd6GCMOocGK0qIa0kI.jpg","level":"3","name":"测试课程","price":100.00,"sort":0,"status":"D","teacherId":"2daFvSFf","time":411,"updatedAt":1607578242851},{"charge":"C","createdAt":1606742811000,"id":"1rHGgWFv","image":"http://127.0.0.1:9000/file/f/course\\50D9sDaCYgoKOOcikCSkGo.jpg","level":"3","name":"测试课堂2111","price":2143.00,"sort":1,"status":"P","summary":"1431241241","teacherId":"2daFvSFf","time":1251,"updatedAt":1607497478007},{"charge":"C","createdAt":1605994107000,"enroll":100,"id":"00000001","image":"http://127.0.0.1:9000/file/f/course\\20ssDk0gqQGmo0q6YWI4i.jpg","level":"2","name":"测试课程01","price":19.90,"sort":2,"status":"P","summary":"这是一门测试课程","teacherId":"3fU0qhfk","time":0,"updatedAt":1607407839292},{"charge":"C","createdAt":1607245164000,"id":"4GGMLjN8","image":"http://127.0.0.1:9000/file/f/course\\50D9sDaCYgoKOOcikCSkGo.jpg","level":"1","name":"test","sort":4,"status":"P","updatedAt":1607497496384}],"page":1,"size":5,"total":4},"success":true}
-2020-12-10 13:30:42.969 INFO  com.lzn.config.LogAspect                          :110  [32mjlsn3dzK[0;39m ------------- 结束 耗时：7 ms -------------
-2020-12-10 13:34:16.913 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 13:39:16.915 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 13:44:16.917 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 13:49:16.918 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 13:54:16.920 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 13:59:16.922 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:04:16.924 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:09:16.925 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:14:16.927 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:19:16.929 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:20:55.206 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
-2020-12-10 14:20:56.671 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2020-12-10 14:20:57.282 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=76d921bd-aa2d-3712-a2b3-64b2a2e67cfa
-2020-12-10 14:20:57.964 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2020-12-10 14:20:57.974 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2020-12-10 14:20:57.974 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2020-12-10 14:20:57.975 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-12-10 14:20:58.066 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2020-12-10 14:20:58.066 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1379 ms
-2020-12-10 14:20:58.623 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-10 14:20:58.623 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-10 14:20:58.628 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-10 14:20:58.629 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-10 14:20:58.864 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-10 14:21:00.308 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 14:21:00.343 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
-2020-12-10 14:21:01.449 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 14:21:01.477 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-10 14:21:01.523 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2020-12-10 14:21:01.571 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
-2020-12-10 14:21:01.766 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2020-12-10 14:21:01.767 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2020-12-10 14:21:01.865 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2020-12-10 14:21:01.866 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2020-12-10 14:21:02.053 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:21:02.123 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-10 14:21:02.123 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-10 14:21:02.123 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-10 14:21:02.123 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-10 14:21:02.123 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-10 14:21:02.123 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
-2020-12-10 14:21:02.124 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-10 14:21:02.262 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-10 14:21:02.264 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2020-12-10 14:21:02.266 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-10 14:21:02.269 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607581262268 with initial instances count: 4
-2020-12-10 14:21:02.273 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2020-12-10 14:21:02.273 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607581262273, current=UP, previous=STARTING]
-2020-12-10 14:21:02.275 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
-2020-12-10 14:21:02.275 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2020-12-10 14:21:02.300 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2020-12-10 14:21:02.301 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2020-12-10 14:21:02.305 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
-2020-12-10 14:21:03.390 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 14:21:03.398 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 9.582 seconds (JVM running for 10.107)
-2020-12-10 14:21:03.399 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
-2020-12-10 14:21:03.400 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
-2020-12-10 14:26:02.127 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:31:02.128 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:36:02.130 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:41:02.132 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:46:02.135 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:51:02.136 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 14:56:02.137 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:01:02.139 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:06:02.140 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:11:02.142 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:16:02.144 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:21:02.145 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:26:02.147 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:31:02.148 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:36:02.149 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:41:02.150 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:46:02.151 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:51:02.153 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 15:56:02.155 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:01:02.156 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:06:02.157 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:11:02.158 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:16:02.160 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:21:02.161 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:26:02.162 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:31:02.164 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:36:02.165 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:41:02.167 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:46:02.169 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:51:02.170 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 16:56:02.172 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:01:02.173 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:06:02.174 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:11:02.176 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:16:02.178 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:21:02.181 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:26:02.183 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:31:02.185 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:36:02.186 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:41:02.186 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:46:02.188 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:51:02.190 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 17:56:02.190 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:01:02.192 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:06:02.193 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:11:02.195 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:16:02.197 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:21:02.198 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:26:02.200 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:31:02.202 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:36:02.203 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:41:02.204 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:46:02.206 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:51:02.207 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 18:56:02.207 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:01:02.209 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:06:02.210 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:11:02.212 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:16:02.213 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:21:02.215 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:26:02.217 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:31:02.218 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:36:02.220 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:41:02.221 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:46:02.223 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:51:02.225 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 19:56:02.226 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 20:01:02.228 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 20:06:02.229 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 20:07:34.483 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
-2020-12-10 20:07:36.351 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2020-12-10 20:07:37.701 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=76d921bd-aa2d-3712-a2b3-64b2a2e67cfa
-2020-12-10 20:07:38.783 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2020-12-10 20:07:38.797 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2020-12-10 20:07:38.797 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2020-12-10 20:07:38.798 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-12-10 20:07:38.907 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2020-12-10 20:07:38.908 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2530 ms
-2020-12-10 20:07:39.701 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-10 20:07:39.701 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-10 20:07:39.711 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-10 20:07:39.711 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-10 20:07:40.219 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-10 20:07:41.836 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 20:07:41.972 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
-2020-12-10 20:07:43.664 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 20:07:43.754 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-10 20:07:44.099 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2020-12-10 20:07:44.373 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
-2020-12-10 20:07:44.718 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2020-12-10 20:07:44.719 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2020-12-10 20:07:44.995 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2020-12-10 20:07:44.996 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2020-12-10 20:07:45.305 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-10 20:07:45.392 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-10 20:07:45.393 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-10 20:07:45.393 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-10 20:07:45.393 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-10 20:07:45.393 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-10 20:07:45.394 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
-2020-12-10 20:07:45.394 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-10 20:07:45.646 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-10 20:07:45.649 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2020-12-10 20:07:45.652 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-10 20:07:45.656 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607602065655 with initial instances count: 4
-2020-12-10 20:07:45.663 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2020-12-10 20:07:45.664 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607602065664, current=UP, previous=STARTING]
-2020-12-10 20:07:45.667 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
-2020-12-10 20:07:45.667 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2020-12-10 20:07:45.703 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2020-12-10 20:07:45.705 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2020-12-10 20:07:45.711 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
-2020-12-10 20:07:46.826 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-10 20:07:46.836 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 13.852 seconds (JVM running for 14.486)
-2020-12-10 20:07:46.838 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
-2020-12-10 20:07:46.838 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-12-11 09:52:35.626 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-11 09:52:37.309 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-11 09:52:38.193 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=07ab4ec2-2621-3d38-a76b-26ae0f52293c
+2020-12-11 09:52:39.085 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-12-11 09:52:39.095 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-11 09:52:39.096 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-11 09:52:39.096 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-11 09:52:39.204 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-11 09:52:39.204 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1866 ms
+2020-12-11 09:52:39.942 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-11 09:52:39.942 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-11 09:52:39.950 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-11 09:52:39.951 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-11 09:52:40.268 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 09:52:41.829 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-11 09:52:41.874 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-11 09:52:43.010 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-11 09:52:43.048 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-11 09:52:43.118 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-11 09:52:43.170 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-11 09:52:43.395 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-11 09:52:43.395 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-11 09:52:43.521 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-11 09:52:43.521 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-11 09:52:43.735 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 09:52:43.800 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-11 09:52:43.800 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-11 09:52:43.800 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-11 09:52:43.800 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-11 09:52:43.800 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-11 09:52:43.801 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-11 09:52:43.801 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-11 09:52:43.896 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-11 09:52:43.899 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-11 09:52:43.901 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-11 09:52:43.903 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607651563903 with initial instances count: 0
+2020-12-11 09:52:43.908 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-12-11 09:52:43.908 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607651563908, current=UP, previous=STARTING]
+2020-12-11 09:52:43.910 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-12-11 09:52:43.911 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-12-11 09:52:43.938 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-12-11 09:52:43.939 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-12-11 09:52:43.970 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-12-11 09:52:45.026 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-11 09:52:45.040 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 11.321 seconds (JVM running for 12.438)
+2020-12-11 09:52:45.041 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-12-11 09:52:45.041 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-12-11 09:53:13.899 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-11 09:53:13.899 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-11 09:53:13.900 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-11 09:53:13.900 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-11 09:53:13.900 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-11 09:53:13.900 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-12-11 09:53:13.900 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-11 09:53:13.931 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-11 09:57:43.805 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:02:43.808 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:07:43.810 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:12:43.812 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:17:43.813 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:22:43.814 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:27:43.816 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:32:43.817 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:37:43.818 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:42:43.819 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:47:43.821 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:52:43.822 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 10:57:43.824 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 13:05:12.832 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-11 13:05:14.322 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-11 13:05:15.295 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=07ab4ec2-2621-3d38-a76b-26ae0f52293c
+2020-12-11 13:05:16.111 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-12-11 13:05:16.123 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-11 13:05:16.124 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-11 13:05:16.124 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-11 13:05:16.241 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-11 13:05:16.241 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1904 ms
+2020-12-11 13:05:16.947 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-11 13:05:16.947 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-11 13:05:16.952 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-11 13:05:16.952 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-11 13:05:17.172 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 13:05:18.569 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-11 13:05:18.605 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-11 13:05:19.709 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-11 13:05:19.739 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-11 13:05:19.788 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-11 13:05:19.865 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-11 13:05:20.153 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-11 13:05:20.154 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-11 13:05:20.268 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-11 13:05:20.269 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-11 13:05:20.442 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 13:05:20.512 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-11 13:05:20.512 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-11 13:05:20.512 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-11 13:05:20.512 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-11 13:05:20.512 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-11 13:05:20.513 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-11 13:05:20.513 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-11 13:05:20.649 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-11 13:05:20.652 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-11 13:05:20.653 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-11 13:05:20.656 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607663120655 with initial instances count: 4
+2020-12-11 13:05:20.660 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-12-11 13:05:20.660 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607663120660, current=UP, previous=STARTING]
+2020-12-11 13:05:20.662 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-12-11 13:05:20.663 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-12-11 13:05:20.693 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-12-11 13:05:20.693 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-12-11 13:05:20.695 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-12-11 13:05:21.770 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-11 13:05:21.777 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 10.384 seconds (JVM running for 11.097)
+2020-12-11 13:05:21.778 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-12-11 13:05:21.778 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-12-11 13:05:32.750 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-11 13:05:32.750 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-11 13:05:32.758 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
+2020-12-11 13:05:32.920 INFO  com.lzn.config.LogAspect                          :76   [32m1LsLwYbG[0;39m ------------- 【分类】操作开始 -------------
+2020-12-11 13:05:32.920 INFO  com.lzn.config.LogAspect                          :76   [32mEULvYj8H[0;39m ------------- 【讲师】操作开始 -------------
+2020-12-11 13:05:32.921 INFO  com.lzn.config.LogAspect                          :77   [32mEULvYj8H[0;39m 请求地址: http://localhost:9002/business/admin/teacher/all POST
+2020-12-11 13:05:32.921 INFO  com.lzn.config.LogAspect                          :77   [32m1LsLwYbG[0;39m 请求地址: http://localhost:9002/business/admin/category/all POST
+2020-12-11 13:05:32.923 INFO  com.lzn.config.LogAspect                          :78   [32m1LsLwYbG[0;39m 类名方法: com.lzn.business.controller.admin.CategoryController.all
+2020-12-11 13:05:32.923 INFO  com.lzn.config.LogAspect                          :78   [32mEULvYj8H[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.all
+2020-12-11 13:05:32.923 INFO  com.lzn.config.LogAspect                          :79   [32mEULvYj8H[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:32.923 INFO  com.lzn.config.LogAspect                          :79   [32m1LsLwYbG[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:32.929 INFO  com.lzn.config.LogAspect                          :97   [32m1LsLwYbG[0;39m 请求参数: []
+2020-12-11 13:05:32.929 INFO  com.lzn.config.LogAspect                          :97   [32mEULvYj8H[0;39m 请求参数: []
+2020-12-11 13:05:32.947 INFO  com.lzn.config.LogAspect                          :76   [32mj7H7HOuc[0;39m ------------- 【课程】查询开始 -------------
+2020-12-11 13:05:32.947 INFO  com.lzn.config.LogAspect                          :77   [32mj7H7HOuc[0;39m 请求地址: http://localhost:9002/business/admin/course/list POST
+2020-12-11 13:05:32.947 INFO  com.lzn.config.LogAspect                          :78   [32mj7H7HOuc[0;39m 类名方法: com.lzn.business.controller.admin.CourseController.list
+2020-12-11 13:05:32.947 INFO  com.lzn.config.LogAspect                          :79   [32mj7H7HOuc[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:33.000 INFO  com.lzn.config.LogAspect                          :97   [32mj7H7HOuc[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-11 13:05:33.013 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mj7H7HOuc[0;39m HikariPool-1 - Starting...
+2020-12-11 13:05:33.391 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mj7H7HOuc[0;39m HikariPool-1 - Start completed.
+2020-12-11 13:05:33.402 DEBUG com.lzn.mapper.CategoryMapper.selectByExample     :159  [32m1LsLwYbG[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc 
+2020-12-11 13:05:33.402 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mEULvYj8H[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher 
+2020-12-11 13:05:33.419 DEBUG com.lzn.mapper.CategoryMapper.selectByExample     :159  [32m1LsLwYbG[0;39m ==> Parameters: 
+2020-12-11 13:05:33.419 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mEULvYj8H[0;39m ==> Parameters: 
+2020-12-11 13:05:33.431 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==    Columns: id, parent, name, sort
+2020-12-11 13:05:33.431 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-12-11 13:05:33.431 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000100, 00000000, 前端技术1111, 100
+2020-12-11 13:05:33.431 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
+2020-12-11 13:05:33.432 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
+2020-12-11 13:05:33.432 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000101, 00000100, html/css1, 101
+2020-12-11 13:05:33.433 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
+2020-12-11 13:05:33.433 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000102, 00000100, javascript, 102
+2020-12-11 13:05:33.433 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000103, 00000100, vue.js, 103
+2020-12-11 13:05:33.434 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
+2020-12-11 13:05:33.434 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
+2020-12-11 13:05:33.434 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000104, 00000100, react.js, 104
+2020-12-11 13:05:33.434 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: FqgysEp0, 123, 123, /static/image/avatar.png, 123, 123, null
+2020-12-11 13:05:33.434 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000105, 00000100, angular, 105
+2020-12-11 13:05:33.434 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: jV6EC8WO, 123421, 41234, null, null, null, null
+2020-12-11 13:05:33.435 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000106, 00000100, node.js, 106
+2020-12-11 13:05:33.435 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: lDDTaBSH, 陆震宁, 你好, http://127.0.0.1:9000/file/f/teacher/X7uUzKqA-20111108205452769.jpg, 测试工程师, test, test
+2020-12-11 13:05:33.435 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: R1vsRS35, 134, 1234, null, 1234, null, null
+2020-12-11 13:05:33.435 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000107, 00000100, jquery, 107
+2020-12-11 13:05:33.435 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: uAUsTvCX, 12433, 123412, null, null, null, null
+2020-12-11 13:05:33.436 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000108, 00000100, 小程序, 108
+2020-12-11 13:05:33.436 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: V8OmXld6, 124321, 41234, null, 无敌无敌, null, null
+2020-12-11 13:05:33.436 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: YeDH0O7T, 陆振宁, 123, null, 无敌, null, null
+2020-12-11 13:05:33.436 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 2PNPXOps, piWqrMIR, 123, 123
+2020-12-11 13:05:33.436 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mEULvYj8H[0;39m <==        Row: YW01e1Ru, 你猜猜, null, http://127.0.0.1:9000/file/f/teacher\OkmgcUYx6EKamwsSIuEOS.jpg, null, null, null
+2020-12-11 13:05:33.436 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: piWqrMIR, 00000000, 123, 123
+2020-12-11 13:05:33.437 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mEULvYj8H[0;39m <==      Total: 13
+2020-12-11 13:05:33.437 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000200, 00000000, 后端技术综合, 200
+2020-12-11 13:05:33.437 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000201, 00000200, java12, 201
+2020-12-11 13:05:33.437 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000202, 00000200, springboot, 202
+2020-12-11 13:05:33.438 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000203, 00000200, spring cloud, 203
+2020-12-11 13:05:33.439 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000204, 00000200, ssm, 204
+2020-12-11 13:05:33.440 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000205, 00000200, python, 205
+2020-12-11 13:05:33.440 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000206, 00000200, 爬虫, 206
+2020-12-11 13:05:33.440 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: yz6nSAcM, 00000200, .net, 207
+2020-12-11 13:05:33.441 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000300, 00000000, 移动开发, 300
+2020-12-11 13:05:33.441 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000301, 00000300, android, 301
+2020-12-11 13:05:33.441 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000302, 00000300, ios, 302
+2020-12-11 13:05:33.441 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000303, 00000300, react native, 303
+2020-12-11 13:05:33.442 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000304, 00000300, ionic, 304
+2020-12-11 13:05:33.442 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000400, 00000000, 前沿技术, 400
+2020-12-11 13:05:33.442 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000401, 00000400, 微服务, 401
+2020-12-11 13:05:33.443 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000402, 00000400, 区块链, 402
+2020-12-11 13:05:33.443 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000403, 00000400, 机器学习, 403
+2020-12-11 13:05:33.443 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000404, 00000400, 深度学习, 404
+2020-12-11 13:05:33.443 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000405, 00000400, 数据分析&挖掘, 405
+2020-12-11 13:05:33.444 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000500, 00000000, 云计算&大数据, 500
+2020-12-11 13:05:33.444 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000501, 00000500, 大数据, 501
+2020-12-11 13:05:33.445 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000502, 00000500, hadoop, 502
+2020-12-11 13:05:33.445 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000503, 00000500, spark, 503
+2020-12-11 13:05:33.446 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000504, 00000500, hbase, 504
+2020-12-11 13:05:33.446 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000505, 00000500, 阿里云, 505
+2020-12-11 13:05:33.446 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000506, 00000500, docker, 506
+2020-12-11 13:05:33.446 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000507, 00000500, kubernetes, 507
+2020-12-11 13:05:33.447 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000600, 00000000, 运维&测试, 600
+2020-12-11 13:05:33.447 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000601, 00000600, 运维, 601
+2020-12-11 13:05:33.447 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000602, 00000600, 自动化运维, 602
+2020-12-11 13:05:33.448 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000603, 00000600, 中间件, 603
+2020-12-11 13:05:33.448 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000604, 00000600, linux, 604
+2020-12-11 13:05:33.448 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000605, 00000600, 测试, 605
+2020-12-11 13:05:33.449 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000606, 00000600, 自动化测试, 606
+2020-12-11 13:05:33.449 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000700, 00000000, 数据库, 700
+2020-12-11 13:05:33.449 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000701, 00000700, mysql, 701
+2020-12-11 13:05:33.449 INFO  com.lzn.config.LogAspect                          :109  [32mEULvYj8H[0;39m 返回结果: {"content":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"},{"id":"FqgysEp0","image":"/static/image/avatar.png","motto":"123","name":"123","nickname":"123","position":"123"},{"id":"jV6EC8WO","name":"123421","nickname":"41234"},{"id":"lDDTaBSH","image":"http://127.0.0.1:9000/file/f/teacher/X7uUzKqA-20111108205452769.jpg","intro":"test","motto":"test","name":"陆震宁","nickname":"你好","position":"测试工程师"},{"id":"R1vsRS35","name":"134","nickname":"1234","position":"1234"},{"id":"uAUsTvCX","name":"12433","nickname":"123412"},{"id":"V8OmXld6","name":"124321","nickname":"41234","position":"无敌无敌"},{"id":"YeDH0O7T","name":"陆振宁","nickname":"123","position":"无敌"},{"id":"YW01e1Ru","image":"http://127.0.0.1:9000/file/f/teacher\\OkmgcUYx6EKamwsSIuEOS.jpg","name":"你猜猜"}],"success":true}
+2020-12-11 13:05:33.449 INFO  com.lzn.config.LogAspect                          :110  [32mEULvYj8H[0;39m ------------- 结束 耗时：663 ms -------------
+2020-12-11 13:05:33.449 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000702, 00000700, redis, 702
+2020-12-11 13:05:33.450 TRACE com.lzn.mapper.CategoryMapper.selectByExample     :165  [32m1LsLwYbG[0;39m <==        Row: 00000703, 00000700, mongodb, 703
+2020-12-11 13:05:33.450 DEBUG com.lzn.mapper.CategoryMapper.selectByExample     :159  [32m1LsLwYbG[0;39m <==      Total: 49
+2020-12-11 13:05:33.457 INFO  com.lzn.config.LogAspect                          :109  [32m1LsLwYbG[0;39m 返回结果: {"content":[{"id":"00000100","name":"前端技术1111","parent":"00000000","sort":100},{"id":"00000101","name":"html/css1","parent":"00000100","sort":101},{"id":"00000102","name":"javascript","parent":"00000100","sort":102},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000106","name":"node.js","parent":"00000100","sort":106},{"id":"00000107","name":"jquery","parent":"00000100","sort":107},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"2PNPXOps","name":"123","parent":"piWqrMIR","sort":123},{"id":"piWqrMIR","name":"123","parent":"00000000","sort":123},{"id":"00000200","name":"后端技术综合","parent":"00000000","sort":200},{"id":"00000201","name":"java12","parent":"00000200","sort":201},{"id":"00000202","name":"springboot","parent":"00000200","sort":202},{"id":"00000203","name":"spring cloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"yz6nSAcM","name":".net","parent":"00000200","sort":207},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"android","parent":"00000300","sort":301},{"id":"00000302","name":"ios","parent":"00000300","sort":302},{"id":"00000303","name":"react native","parent":"00000300","sort":303},{"id":"00000304","name":"ionic","parent":"00000300","sort":304},{"id":"00000400","name":"前沿技术","parent":"00000000","sort":400},{"id":"00000401","name":"微服务","parent":"00000400","sort":401},{"id":"00000402","name":"区块链","parent":"00000400","sort":402},{"id":"00000403","name":"机器学习","parent":"00000400","sort":403},{"id":"00000404","name":"深度学习","parent":"00000400","sort":404},{"id":"00000405","name":"数据分析&挖掘","parent":"00000400","sort":405},{"id":"00000500","name":"云计算&大数据","parent":"00000000","sort":500},{"id":"00000501","name":"大数据","parent":"00000500","sort":501},{"id":"00000502","name":"hadoop","parent":"00000500","sort":502},{"id":"00000503","name":"spark","parent":"00000500","sort":503},{"id":"00000504","name":"hbase","parent":"00000500","sort":504},{"id":"00000505","name":"阿里云","parent":"00000500","sort":505},{"id":"00000506","name":"docker","parent":"00000500","sort":506},{"id":"00000507","name":"kubernetes","parent":"00000500","sort":507},{"id":"00000600","name":"运维&测试","parent":"00000000","sort":600},{"id":"00000601","name":"运维","parent":"00000600","sort":601},{"id":"00000602","name":"自动化运维","parent":"00000600","sort":602},{"id":"00000603","name":"中间件","parent":"00000600","sort":603},{"id":"00000604","name":"linux","parent":"00000600","sort":604},{"id":"00000605","name":"测试","parent":"00000600","sort":605},{"id":"00000606","name":"自动化测试","parent":"00000600","sort":606},{"id":"00000700","name":"数据库","parent":"00000000","sort":700},{"id":"00000701","name":"mysql","parent":"00000700","sort":701},{"id":"00000702","name":"redis","parent":"00000700","sort":702},{"id":"00000703","name":"mongodb","parent":"00000700","sort":703}],"success":true}
+2020-12-11 13:05:33.457 INFO  com.lzn.config.LogAspect                          :110  [32m1LsLwYbG[0;39m ------------- 结束 耗时：671 ms -------------
+2020-12-11 13:05:33.463 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mj7H7HOuc[0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-12-11 13:05:33.464 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mj7H7HOuc[0;39m ==> Parameters: 
+2020-12-11 13:05:33.466 TRACE com.lzn.mapper.CourseMapper.selectByExample_COUNT :165  [32mj7H7HOuc[0;39m <==    Columns: count(0)
+2020-12-11 13:05:33.466 TRACE com.lzn.mapper.CourseMapper.selectByExample_COUNT :165  [32mj7H7HOuc[0;39m <==        Row: 4
+2020-12-11 13:05:33.467 DEBUG com.lzn.mapper.CourseMapper.selectByExample_COUNT :159  [32mj7H7HOuc[0;39m <==      Total: 1
+2020-12-11 13:05:33.469 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mj7H7HOuc[0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-12-11 13:05:33.469 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mj7H7HOuc[0;39m ==> Parameters: 5(Integer)
+2020-12-11 13:05:33.471 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mj7H7HOuc[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-12-11 13:05:33.471 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mj7H7HOuc[0;39m <==        Row: m9QPac46, 测试课程, null, 411, 100.00, http://127.0.0.1:9000/file/f/course\3xzByd6GCMOocGK0qIa0kI.jpg, 3, C, D, null, 0, 2020-12-01 16:04:18.0, 2020-12-10 13:30:42.851, 2daFvSFf
+2020-12-11 13:05:33.472 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mj7H7HOuc[0;39m <==        Row: 1rHGgWFv, 测试课堂2111, 1431241241, 1251, 2143.00, http://127.0.0.1:9000/file/f/course\50D9sDaCYgoKOOcikCSkGo.jpg, 3, C, P, null, 1, 2020-11-30 21:26:51.0, 2020-12-09 15:04:38.007, 2daFvSFf
+2020-12-11 13:05:33.473 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mj7H7HOuc[0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 0, 19.90, http://127.0.0.1:9000/file/f/course\20ssDk0gqQGmo0q6YWI4i.jpg, 2, C, P, 100, 2, 2020-11-22 05:28:27.0, 2020-12-08 14:10:39.292, 3fU0qhfk
+2020-12-11 13:05:33.473 TRACE com.lzn.mapper.CourseMapper.selectByExample       :165  [32mj7H7HOuc[0;39m <==        Row: 4GGMLjN8, test, null, null, null, http://127.0.0.1:9000/file/f/course\50D9sDaCYgoKOOcikCSkGo.jpg, 1, C, P, null, 4, 2020-12-06 16:59:24.0, 2020-12-09 15:04:56.384, null
+2020-12-11 13:05:33.474 DEBUG com.lzn.mapper.CourseMapper.selectByExample       :159  [32mj7H7HOuc[0;39m <==      Total: 4
+2020-12-11 13:05:33.485 INFO  com.lzn.config.LogAspect                          :109  [32mj7H7HOuc[0;39m 返回结果: {"content":{"list":[{"charge":"C","createdAt":1606809858000,"id":"m9QPac46","image":"http://127.0.0.1:9000/file/f/course\\3xzByd6GCMOocGK0qIa0kI.jpg","level":"3","name":"测试课程","price":100.00,"sort":0,"status":"D","teacherId":"2daFvSFf","time":411,"updatedAt":1607578242851},{"charge":"C","createdAt":1606742811000,"id":"1rHGgWFv","image":"http://127.0.0.1:9000/file/f/course\\50D9sDaCYgoKOOcikCSkGo.jpg","level":"3","name":"测试课堂2111","price":2143.00,"sort":1,"status":"P","summary":"1431241241","teacherId":"2daFvSFf","time":1251,"updatedAt":1607497478007},{"charge":"C","createdAt":1605994107000,"enroll":100,"id":"00000001","image":"http://127.0.0.1:9000/file/f/course\\20ssDk0gqQGmo0q6YWI4i.jpg","level":"2","name":"测试课程01","price":19.90,"sort":2,"status":"P","summary":"这是一门测试课程","teacherId":"3fU0qhfk","time":0,"updatedAt":1607407839292},{"charge":"C","createdAt":1607245164000,"id":"4GGMLjN8","image":"http://127.0.0.1:9000/file/f/course\\50D9sDaCYgoKOOcikCSkGo.jpg","level":"1","name":"test","sort":4,"status":"P","updatedAt":1607497496384}],"page":1,"size":5,"total":4},"success":true}
+2020-12-11 13:05:33.485 INFO  com.lzn.config.LogAspect                          :110  [32mj7H7HOuc[0;39m ------------- 结束 耗时：538 ms -------------
+2020-12-11 13:05:34.881 INFO  com.lzn.config.LogAspect                          :76   [32mhYSuEpGz[0;39m ------------- 【讲师】查询开始 -------------
+2020-12-11 13:05:34.882 INFO  com.lzn.config.LogAspect                          :77   [32mhYSuEpGz[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-12-11 13:05:34.882 INFO  com.lzn.config.LogAspect                          :78   [32mhYSuEpGz[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-12-11 13:05:34.882 INFO  com.lzn.config.LogAspect                          :79   [32mhYSuEpGz[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:34.882 INFO  com.lzn.config.LogAspect                          :97   [32mhYSuEpGz[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-11 13:05:34.884 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mhYSuEpGz[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-12-11 13:05:34.884 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mhYSuEpGz[0;39m ==> Parameters: 
+2020-12-11 13:05:34.885 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mhYSuEpGz[0;39m <==    Columns: count(0)
+2020-12-11 13:05:34.886 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mhYSuEpGz[0;39m <==        Row: 13
+2020-12-11 13:05:34.886 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mhYSuEpGz[0;39m <==      Total: 1
+2020-12-11 13:05:34.887 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mhYSuEpGz[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-12-11 13:05:34.887 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mhYSuEpGz[0;39m ==> Parameters: 5(Integer)
+2020-12-11 13:05:34.888 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mhYSuEpGz[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-12-11 13:05:34.888 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mhYSuEpGz[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
+2020-12-11 13:05:34.889 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mhYSuEpGz[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
+2020-12-11 13:05:34.889 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mhYSuEpGz[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
+2020-12-11 13:05:34.890 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mhYSuEpGz[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
+2020-12-11 13:05:34.891 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mhYSuEpGz[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
+2020-12-11 13:05:34.891 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mhYSuEpGz[0;39m <==      Total: 5
+2020-12-11 13:05:34.893 INFO  com.lzn.config.LogAspect                          :109  [32mhYSuEpGz[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"}],"page":1,"size":5,"total":13},"success":true}
+2020-12-11 13:05:34.894 INFO  com.lzn.config.LogAspect                          :110  [32mhYSuEpGz[0;39m ------------- 结束 耗时：13 ms -------------
+2020-12-11 13:05:37.338 INFO  com.lzn.config.LogAspect                          :76   [32mDWHaSvmF[0;39m ------------- 【讲师】查询开始 -------------
+2020-12-11 13:05:37.338 INFO  com.lzn.config.LogAspect                          :77   [32mDWHaSvmF[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-12-11 13:05:37.338 INFO  com.lzn.config.LogAspect                          :78   [32mDWHaSvmF[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-12-11 13:05:37.338 INFO  com.lzn.config.LogAspect                          :79   [32mDWHaSvmF[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:37.339 INFO  com.lzn.config.LogAspect                          :97   [32mDWHaSvmF[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-11 13:05:37.340 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mDWHaSvmF[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-12-11 13:05:37.340 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mDWHaSvmF[0;39m ==> Parameters: 
+2020-12-11 13:05:37.341 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mDWHaSvmF[0;39m <==    Columns: count(0)
+2020-12-11 13:05:37.341 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mDWHaSvmF[0;39m <==        Row: 13
+2020-12-11 13:05:37.342 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mDWHaSvmF[0;39m <==      Total: 1
+2020-12-11 13:05:37.343 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mDWHaSvmF[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-12-11 13:05:37.344 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mDWHaSvmF[0;39m ==> Parameters: 5(Integer)
+2020-12-11 13:05:37.346 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mDWHaSvmF[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-12-11 13:05:37.346 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mDWHaSvmF[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
+2020-12-11 13:05:37.347 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mDWHaSvmF[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
+2020-12-11 13:05:37.347 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mDWHaSvmF[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
+2020-12-11 13:05:37.348 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mDWHaSvmF[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
+2020-12-11 13:05:37.348 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mDWHaSvmF[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
+2020-12-11 13:05:37.348 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mDWHaSvmF[0;39m <==      Total: 5
+2020-12-11 13:05:37.349 INFO  com.lzn.config.LogAspect                          :109  [32mDWHaSvmF[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"}],"page":1,"size":5,"total":13},"success":true}
+2020-12-11 13:05:37.349 INFO  com.lzn.config.LogAspect                          :110  [32mDWHaSvmF[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-11 13:05:46.475 INFO  com.lzn.config.LogAspect                          :76   [32mfHebuh1x[0;39m ------------- 【讲师】查询开始 -------------
+2020-12-11 13:05:46.475 INFO  com.lzn.config.LogAspect                          :77   [32mfHebuh1x[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-12-11 13:05:46.475 INFO  com.lzn.config.LogAspect                          :78   [32mfHebuh1x[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-12-11 13:05:46.476 INFO  com.lzn.config.LogAspect                          :79   [32mfHebuh1x[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:46.476 INFO  com.lzn.config.LogAspect                          :97   [32mfHebuh1x[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-11 13:05:46.478 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mfHebuh1x[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-12-11 13:05:46.479 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mfHebuh1x[0;39m ==> Parameters: 
+2020-12-11 13:05:46.479 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mfHebuh1x[0;39m <==    Columns: count(0)
+2020-12-11 13:05:46.480 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mfHebuh1x[0;39m <==        Row: 13
+2020-12-11 13:05:46.480 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mfHebuh1x[0;39m <==      Total: 1
+2020-12-11 13:05:46.481 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mfHebuh1x[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-12-11 13:05:46.481 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mfHebuh1x[0;39m ==> Parameters: 5(Integer)
+2020-12-11 13:05:46.482 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mfHebuh1x[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-12-11 13:05:46.482 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mfHebuh1x[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
+2020-12-11 13:05:46.483 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mfHebuh1x[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
+2020-12-11 13:05:46.483 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mfHebuh1x[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
+2020-12-11 13:05:46.483 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mfHebuh1x[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
+2020-12-11 13:05:46.483 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mfHebuh1x[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
+2020-12-11 13:05:46.484 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mfHebuh1x[0;39m <==      Total: 5
+2020-12-11 13:05:46.484 INFO  com.lzn.config.LogAspect                          :109  [32mfHebuh1x[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"}],"page":1,"size":5,"total":13},"success":true}
+2020-12-11 13:05:46.484 INFO  com.lzn.config.LogAspect                          :110  [32mfHebuh1x[0;39m ------------- 结束 耗时：9 ms -------------
+2020-12-11 13:05:48.003 INFO  com.lzn.config.LogAspect                          :76   [32mS5Ed6OVP[0;39m ------------- 【讲师】查询开始 -------------
+2020-12-11 13:05:48.003 INFO  com.lzn.config.LogAspect                          :77   [32mS5Ed6OVP[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-12-11 13:05:48.003 INFO  com.lzn.config.LogAspect                          :78   [32mS5Ed6OVP[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-12-11 13:05:48.003 INFO  com.lzn.config.LogAspect                          :79   [32mS5Ed6OVP[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:48.004 INFO  com.lzn.config.LogAspect                          :97   [32mS5Ed6OVP[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-11 13:05:48.005 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mS5Ed6OVP[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-12-11 13:05:48.006 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mS5Ed6OVP[0;39m ==> Parameters: 
+2020-12-11 13:05:48.006 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mS5Ed6OVP[0;39m <==    Columns: count(0)
+2020-12-11 13:05:48.006 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mS5Ed6OVP[0;39m <==        Row: 13
+2020-12-11 13:05:48.007 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mS5Ed6OVP[0;39m <==      Total: 1
+2020-12-11 13:05:48.007 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mS5Ed6OVP[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-12-11 13:05:48.007 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mS5Ed6OVP[0;39m ==> Parameters: 5(Integer)
+2020-12-11 13:05:48.008 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mS5Ed6OVP[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-12-11 13:05:48.009 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mS5Ed6OVP[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
+2020-12-11 13:05:48.010 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mS5Ed6OVP[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
+2020-12-11 13:05:48.011 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mS5Ed6OVP[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
+2020-12-11 13:05:48.011 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mS5Ed6OVP[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
+2020-12-11 13:05:48.012 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mS5Ed6OVP[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
+2020-12-11 13:05:48.012 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mS5Ed6OVP[0;39m <==      Total: 5
+2020-12-11 13:05:48.013 INFO  com.lzn.config.LogAspect                          :109  [32mS5Ed6OVP[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"}],"page":1,"size":5,"total":13},"success":true}
+2020-12-11 13:05:48.013 INFO  com.lzn.config.LogAspect                          :110  [32mS5Ed6OVP[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-11 13:05:49.356 INFO  com.lzn.config.LogAspect                          :76   [32mCmaxZVIz[0;39m ------------- 【讲师】查询开始 -------------
+2020-12-11 13:05:49.357 INFO  com.lzn.config.LogAspect                          :77   [32mCmaxZVIz[0;39m 请求地址: http://localhost:9002/business/admin/teacher/list POST
+2020-12-11 13:05:49.357 INFO  com.lzn.config.LogAspect                          :78   [32mCmaxZVIz[0;39m 类名方法: com.lzn.business.controller.admin.TeacherController.list
+2020-12-11 13:05:49.357 INFO  com.lzn.config.LogAspect                          :79   [32mCmaxZVIz[0;39m 远程地址: 127.0.0.1
+2020-12-11 13:05:49.357 INFO  com.lzn.config.LogAspect                          :97   [32mCmaxZVIz[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-11 13:05:49.359 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mCmaxZVIz[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-12-11 13:05:49.360 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mCmaxZVIz[0;39m ==> Parameters: 
+2020-12-11 13:05:49.365 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mCmaxZVIz[0;39m <==    Columns: count(0)
+2020-12-11 13:05:49.366 TRACE com.lzn.mapper.TeacherMapper.selectByExample_COUNT:165  [32mCmaxZVIz[0;39m <==        Row: 13
+2020-12-11 13:05:49.367 DEBUG com.lzn.mapper.TeacherMapper.selectByExample_COUNT:159  [32mCmaxZVIz[0;39m <==      Total: 1
+2020-12-11 13:05:49.368 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mCmaxZVIz[0;39m ==>  Preparing: select id, `name`, nickname, image, `position`, motto, intro from teacher LIMIT ? 
+2020-12-11 13:05:49.369 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mCmaxZVIz[0;39m ==> Parameters: 5(Integer)
+2020-12-11 13:05:49.371 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mCmaxZVIz[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-12-11 13:05:49.372 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mCmaxZVIz[0;39m <==        Row: 2daFvSFf, 袁庆, 轩辕庆, http://127.0.0.1:9000/file/f/teacher\7wS72c6WQMc2oaUUCu2Eom.jpg, C++工程师, 431323412, 1234
+2020-12-11 13:05:49.373 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mCmaxZVIz[0;39m <==        Row: 3fU0qhfk, 于洋, 李肛哲, http://127.0.0.1:9000/file/f/teacher\5cPPDqyx.jpg, Java工程师, , 134124
+2020-12-11 13:05:49.373 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mCmaxZVIz[0;39m <==        Row: 64MFV930, 官汇华, 华哥, http://127.0.0.1:9000/file/f/teacher\NiyBuUHC.jpg, Java工程师, null, null
+2020-12-11 13:05:49.374 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mCmaxZVIz[0;39m <==        Row: 8F2hDL5Z, 李光哲, 于华洋, http://127.0.0.1:9000/file/f/teacher\Uk51oHo8.jpg, Java工程师, 123, null
+2020-12-11 13:05:49.375 TRACE com.lzn.mapper.TeacherMapper.selectByExample      :165  [32mCmaxZVIz[0;39m <==        Row: eLx2fyyC, 黄玲玲, 黄大喵, http://127.0.0.1:9000/file/f/teacher\COxmBuYQ.jpg, 西安交通大学电气工程学院院长, null, null
+2020-12-11 13:05:49.376 DEBUG com.lzn.mapper.TeacherMapper.selectByExample      :159  [32mCmaxZVIz[0;39m <==      Total: 5
+2020-12-11 13:05:49.378 INFO  com.lzn.config.LogAspect                          :109  [32mCmaxZVIz[0;39m 返回结果: {"content":{"list":[{"id":"2daFvSFf","image":"http://127.0.0.1:9000/file/f/teacher\\7wS72c6WQMc2oaUUCu2Eom.jpg","intro":"1234","motto":"431323412","name":"袁庆","nickname":"轩辕庆","position":"C++工程师"},{"id":"3fU0qhfk","image":"http://127.0.0.1:9000/file/f/teacher\\5cPPDqyx.jpg","intro":"134124","motto":"","name":"于洋","nickname":"李肛哲","position":"Java工程师"},{"id":"64MFV930","image":"http://127.0.0.1:9000/file/f/teacher\\NiyBuUHC.jpg","name":"官汇华","nickname":"华哥","position":"Java工程师"},{"id":"8F2hDL5Z","image":"http://127.0.0.1:9000/file/f/teacher\\Uk51oHo8.jpg","motto":"123","name":"李光哲","nickname":"于华洋","position":"Java工程师"},{"id":"eLx2fyyC","image":"http://127.0.0.1:9000/file/f/teacher\\COxmBuYQ.jpg","name":"黄玲玲","nickname":"黄大喵","position":"西安交通大学电气工程学院院长"}],"page":1,"size":5,"total":13},"success":true}
+2020-12-11 13:05:49.379 INFO  com.lzn.config.LogAspect                          :110  [32mCmaxZVIz[0;39m ------------- 结束 耗时：23 ms -------------

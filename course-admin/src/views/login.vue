@@ -3,23 +3,32 @@
 		<v-content>
 			<v-container class="fill-height" fluid>
 				<v-row align="center" justify="center">
-					<v-col col="12" sm="8" md="8">
+					<v-col col="12" sm="4" md="4">
 						<v-card class="elevation-12">
 							<v-window v-model="step">
 								<v-window-item :value="1">
 									<v-row>
-										<v-col cols="12" md="8">
+										<v-col cols="12" md="12">
 											<v-card-text class="mt-12">
 												<h1 class="text-center display-2 blue--text text--accent-3">
 													登录页面
 												</h1>
 												<v-form>
-													<v-text-field v-model="user.loginName" label="name" name="name" prepend-icon="person" type="text" color="blue accent-3" />
+													<v-text-field v-model="user.loginName" label="用户名" name="name" prepend-icon="person" type="text" color="blue accent-3" />
 
-													<v-text-field v-model="user.password" id="password" label="Password" name="Password" prepend-icon="lock"
-													 type="password" color="blue accent-3" />
-
-
+													<v-text-field v-model="user.password" id="password" label="密码" name="Password" prepend-icon="lock" type="password"
+													 color="blue accent-3" />
+													<v-row class="d-flex align-center jusitify-center">
+												
+														<v-col cols="6">
+															<v-text-field v-model="user.imageCode" id="验证码" label="验证码" name="imgCode" prepend-icon="done"></v-text-field>
+														</v-col>
+														<v-col cols="2" >
+															<v-spacer></v-spacer>
+															<img @click="loadImageCode" id="image-code" alt="验证码" />
+														</v-col>
+														
+													</v-row>
 												</v-form>
 
 												<v-checkbox label="记住我" v-model="remember"></v-checkbox>
@@ -35,7 +44,7 @@
 											</div>
 										</v-col>
 
-										<v-col cols="12" md="4" class="green accent-3">
+								<!-- 		<v-col cols="12" md="4" class="green accent-3">
 											<v-card-text class="blue-grey--text mt-12">
 												<h1 class="text-center display-1">你好，朋友!</h1>
 												<h5 class="text-center">输入您的个人详细信息，然后开始与我们一起旅行。</h5>
@@ -45,7 +54,7 @@
 													注册
 												</v-btn>
 											</div>
-										</v-col>
+										</v-col> -->
 									</v-row>
 								</v-window-item>
 								<v-window-item :value="2">
@@ -106,6 +115,7 @@
 			user: {},
 			step: 1,
 			remember: true,
+			imageCodeToken: ""
 		}),
 
 		props: {
@@ -118,6 +128,9 @@
 			if (rememberUser) {
 				_this.user = rememberUser;
 			}
+
+			// 初始时加载一次验证码图片
+			_this.loadImageCode();
 		},
 
 		methods: {
@@ -140,7 +153,7 @@
 				) {
 					return;
 				}
-				
+
 				// let passwordShow = _this.user.password;
 				// 如果密码是从缓存带出来的，则不需要重新加密
 				let md5 = hex_md5(_this.user.password);
@@ -148,9 +161,9 @@
 				if (md5 !== rememberUser.md5) {
 					_this.user.password = hex_md5(_this.user.password + KEY);
 				}
-				
-				
-				
+
+
+
 				// 进行第一次加密
 				// _this.user.password = hex_md5(_this.user.password + KEY);
 				Loading.show();
@@ -184,7 +197,17 @@
 							Toast.warning(resp.message);
 						}
 					});
-			}
+			},
+
+
+			/**
+			 * 加载图形验证码
+			 */
+			loadImageCode: function() {
+				let _this = this;
+				_this.imageCodeToken = Tool.uuid(8);
+				$('#image-code').attr('src', process.env.VUE_APP_SERVER + '/system/admin/kaptcha/image-code/' + _this.imageCodeToken);
+			},
 		}
 	}
 </script>
