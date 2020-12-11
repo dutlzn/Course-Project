@@ -28,10 +28,12 @@
 															<img @click="loadImageCode" id="image-code" alt="验证码" />
 														</v-col>
 														
+														
+														
 													</v-row>
-												</v-container>
-
 												<v-checkbox label="记住我" v-model="remember"></v-checkbox>
+
+												</v-container>
 
 												<!-- 				<h3 class="text-center mt-3">
 													忘记密码
