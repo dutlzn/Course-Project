@@ -472,3 +472,49 @@
 2020-12-11 14:35:20.541 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-11 14:40:20.543 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-11 14:45:20.544 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 14:50:20.546 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 19:43:46.277 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-11 19:43:46.793 INFO  com.lzn.business.config.BusinessApplication       :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-11 19:43:47.389 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=07ab4ec2-2621-3d38-a76b-26ae0f52293c
+2020-12-11 19:43:48.064 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-12-11 19:43:48.073 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-11 19:43:48.073 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-11 19:43:48.073 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-11 19:43:48.175 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-11 19:43:48.175 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1368 ms
+2020-12-11 19:43:48.661 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-11 19:43:48.662 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-11 19:43:48.666 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-11 19:43:48.667 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-11 19:43:48.836 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 19:43:49.288 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-11 19:43:49.466 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-11 19:43:49.525 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-11 19:43:49.574 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-11 19:43:49.797 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-11 19:43:49.797 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-11 19:43:49.892 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-11 19:43:49.892 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-11 19:43:50.062 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-11 19:43:50.148 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-11 19:43:50.149 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-11 19:43:50.149 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-11 19:43:50.149 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-11 19:43:50.149 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-11 19:43:50.149 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-11 19:43:50.149 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-11 19:43:50.278 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-11 19:43:50.280 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-11 19:43:50.281 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-11 19:43:50.284 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607687030283 with initial instances count: 2
+2020-12-11 19:43:50.288 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-12-11 19:43:50.289 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607687030289, current=UP, previous=STARTING]
+2020-12-11 19:43:50.290 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_BUSINESS/DESKTOP-20I4D4F:business:9002: registering service...
+2020-12-11 19:43:50.290 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-12-11 19:43:50.327 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-12-11 19:43:50.328 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-12-11 19:43:50.333 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_BUSINESS/DESKTOP-20I4D4F:business:9002 - registration status: 204
+2020-12-11 19:43:50.445 INFO  com.lzn.business.config.BusinessApplication       :61   [32m        [0;39m Started BusinessApplication in 4.597 seconds (JVM running for 5.117)
+2020-12-11 19:43:50.446 INFO  com.lzn.business.config.BusinessApplication       :24   [32m        [0;39m 启动成功！！
+2020-12-11 19:43:50.447 INFO  com.lzn.business.config.BusinessApplication       :25   [32m        [0;39m Buiness地址: 	http://127.0.0.1:9002
+2020-12-11 19:48:50.152 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
