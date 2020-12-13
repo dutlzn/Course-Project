@@ -98,3 +98,9 @@
 2020-12-13 15:35:51.053 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-13 15:40:51.055 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-12-13 15:45:51.056 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 15:50:51.058 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 15:51:38.700 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-13 15:51:38.704 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-business
+2020-12-13 15:51:38.704 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: business instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=business,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-13 15:51:38.707 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-13 15:51:38.707 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client business initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=business,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6817b1e4

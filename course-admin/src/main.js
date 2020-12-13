@@ -16,8 +16,14 @@ axios.defaults.withCredentials = true;
 // 添加请求拦截器 这部分axios官网上有
 axios.interceptors.request.use(function (config) {
 	// 在发送请求之前做些什么
-	console.log('请求:', config);
-	return config;
+  console.log("请求：", config);
+  let token = Tool.getLoginUser().token;
+  if (Tool.isNotEmpty(token)) {
+    config.headers.token = token;
+    console.log("请求headers增加token:", token);
+  }
+  return config;
+	// return config;
 }, function (error) {
 	// 对请求错误做些什么
 	return Promise.reject(error);
