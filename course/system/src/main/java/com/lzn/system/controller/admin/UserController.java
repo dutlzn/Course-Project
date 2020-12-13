@@ -1,11 +1,13 @@
 package com.lzn.system.controller.admin;
-
+import com.alibaba.fastjson.JSON;
 import com.lzn.dto.*;
 import com.lzn.service.UserService;
 import com.lzn.util.UuidUtil;
 import com.lzn.util.ValidatorUtil;
 import com.netflix.discovery.converters.Auto;
 import org.apache.tomcat.util.bcel.Const;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.DigestUtils;
@@ -13,11 +15,12 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/admin/user")
 public class UserController {
-
+    private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
     public static final String BUSINESS_NAME = "用户";
 
     @Autowired
@@ -92,22 +95,27 @@ public class UserController {
             return responseDto;
         } else {
             // 验证通过后，移除验证码
-            request.getSession().removeAttribute(userDto.getImageCodeToken());
+//            request.getSession().removeAttribute(userDto.getImageCodeToken());
+            redisTemplate.delete(userDto.getImageCodeToken());
         }
 
         LoginUserDto loginUserDto = userService.login(userDto);
-
-        request.getSession().setAttribute(Constants.LOGIN_USER, loginUserDto);
+        String token = UuidUtil.getShortUuid();
+        loginUserDto.setToken(token);
+//        request.getSession().setAttribute(Constants.LOGIN_USER, loginUserDto);
+        redisTemplate.opsForValue().set(token, JSON.toJSONString(loginUserDto), 3600, TimeUnit.SECONDS);
         responseDto.setContent(loginUserDto);
         return responseDto;
     }
     /**
-     * 退出
+     * 退出登录
      */
-    @GetMapping("/logout")
-    public ResponseDto logout(HttpServletRequest request) {
+    @GetMapping("/logout/{token}")
+    public ResponseDto logout(@PathVariable String token) {
         ResponseDto responseDto = new ResponseDto();
-        request.getSession().removeAttribute(Constants.LOGIN_USER);
+//        request.getSession().removeAttribute(Constants.LOGIN_USER);
+        redisTemplate.delete(token);
+        LOG.info("从redis中删除token:{}", token);
         return responseDto;
     }
 
