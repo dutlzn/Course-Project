@@ -44,6 +44,9 @@ export default new Router(
             name: "admin", 
             // name属性后面会用到
             component: Admin,
+						meta: {
+							loginRequire: true
+						},
             children: [{
                 path: 'welcome',
                 name: 'welcome',
