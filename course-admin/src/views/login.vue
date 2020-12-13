@@ -153,7 +153,8 @@
 				if (
 					1 != 1 ||
 					!Validator.require(_this.user.loginName, "用户名") ||
-					!Validator.require(_this.user.password, "密码")
+					!Validator.require(_this.user.password, "密码") || 
+					!Validator.require(_this.user.imageCode, "验证码")
 				) {
 					return;
 				}

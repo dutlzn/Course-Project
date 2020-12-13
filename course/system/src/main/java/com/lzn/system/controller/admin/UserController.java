@@ -4,8 +4,10 @@ import com.lzn.dto.*;
 import com.lzn.service.UserService;
 import com.lzn.util.UuidUtil;
 import com.lzn.util.ValidatorUtil;
+import com.netflix.discovery.converters.Auto;
 import org.apache.tomcat.util.bcel.Const;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +22,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @PostMapping("/list")
     public ResponseDto list(@RequestBody PageDto pageDto) {
@@ -73,7 +78,8 @@ public class UserController {
         ResponseDto responseDto = new ResponseDto();
 
         // 根据验证码token去获取缓存中的验证码，和用户输入的验证码是否一致
-         String imageCode = (String) request.getSession().getAttribute(userDto.getImageCodeToken());
+//         String imageCode = (String) request.getSession().getAttribute(userDto.getImageCodeToken());
+        String imageCode = (String) redisTemplate.opsForValue().get(userDto.getImageCodeToken());
         System.err.println(request.getSession().getId());
         if (StringUtils.isEmpty(imageCode)) {
             responseDto.setSuccess(false);

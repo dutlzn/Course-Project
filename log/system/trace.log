@@ -1,537 +1,637 @@
-2020-12-12 09:47:12.994 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
-2020-12-12 09:47:14.505 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2020-12-12 09:47:15.772 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=f822464c-3f4a-3350-89ac-4b9a81fa65bf
-2020-12-12 09:47:16.559 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
-2020-12-12 09:47:16.568 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
-2020-12-12 09:47:16.569 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2020-12-12 09:47:16.569 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-12-12 09:47:16.664 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2020-12-12 09:47:16.664 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2143 ms
-2020-12-12 09:47:17.448 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-12 09:47:17.449 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-12 09:47:17.455 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-12 09:47:17.455 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-12 09:47:17.708 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-12 09:47:19.348 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-12 09:47:19.385 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
-2020-12-12 09:47:20.529 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-12 09:47:20.564 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-12 09:47:20.633 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2020-12-12 09:47:20.687 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
-2020-12-12 09:47:20.924 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2020-12-12 09:47:20.924 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2020-12-12 09:47:21.030 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2020-12-12 09:47:21.030 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2020-12-12 09:47:21.255 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 09:47:21.351 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-12 09:47:21.351 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-12 09:47:21.351 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-12 09:47:21.351 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-12 09:47:21.352 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-12 09:47:21.352 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
-2020-12-12 09:47:21.352 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-12 09:47:21.449 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-12 09:47:21.450 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2020-12-12 09:47:21.452 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-12 09:47:21.454 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607737641453 with initial instances count: 0
-2020-12-12 09:47:21.459 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
-2020-12-12 09:47:21.459 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607737641459, current=UP, previous=STARTING]
-2020-12-12 09:47:21.462 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
-2020-12-12 09:47:21.462 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
-2020-12-12 09:47:21.494 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
-2020-12-12 09:47:21.495 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2020-12-12 09:47:21.538 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
-2020-12-12 09:47:22.648 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-12 09:47:22.657 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 11.177 seconds (JVM running for 11.823)
-2020-12-12 09:47:22.659 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
-2020-12-12 09:47:22.660 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
-2020-12-12 09:47:51.451 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-12 09:47:51.451 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-12 09:47:51.451 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-12 09:47:51.452 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-12 09:47:51.452 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-12 09:47:51.452 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
-2020-12-12 09:47:51.452 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-12 09:47:51.482 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-12 09:52:21.356 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 09:54:17.040 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-12 09:54:17.040 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2020-12-12 09:54:17.049 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
-2020-12-12 09:54:17.111 INFO  com.lzn.config.LogAspect                          :76   [32m17l6IGK4[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 09:54:17.113 INFO  com.lzn.config.LogAspect                          :77   [32m17l6IGK4[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/ZaVM71n2 GET
-2020-12-12 09:54:17.113 INFO  com.lzn.config.LogAspect                          :78   [32m17l6IGK4[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 09:54:17.113 INFO  com.lzn.config.LogAspect                          :79   [32m17l6IGK4[0;39m 远程地址: 127.0.0.1
-2020-12-12 09:54:17.117 INFO  com.lzn.config.LogAspect                          :97   [32m17l6IGK4[0;39m 请求参数: ["ZaVM71n2",null,null]
-2020-12-12 09:54:17.512 INFO  com.lzn.config.LogAspect                          :109  [32m17l6IGK4[0;39m 返回结果: null
-2020-12-12 09:54:17.512 INFO  com.lzn.config.LogAspect                          :110  [32m17l6IGK4[0;39m ------------- 结束 耗时：403 ms -------------
-2020-12-12 09:57:21.358 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:01:39.328 INFO  com.lzn.config.LogAspect                          :76   [32m8evRbVWu[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:01:39.329 INFO  com.lzn.config.LogAspect                          :77   [32m8evRbVWu[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/ghIJGXty GET
-2020-12-12 10:01:39.329 INFO  com.lzn.config.LogAspect                          :78   [32m8evRbVWu[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:01:39.329 INFO  com.lzn.config.LogAspect                          :79   [32m8evRbVWu[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:01:39.329 INFO  com.lzn.config.LogAspect                          :97   [32m8evRbVWu[0;39m 请求参数: ["ghIJGXty",null,null]
-2020-12-12 10:01:39.339 INFO  com.lzn.config.LogAspect                          :109  [32m8evRbVWu[0;39m 返回结果: null
-2020-12-12 10:01:39.339 INFO  com.lzn.config.LogAspect                          :110  [32m8evRbVWu[0;39m ------------- 结束 耗时：11 ms -------------
-2020-12-12 10:02:21.359 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:07:21.361 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:08:59.262 INFO  com.lzn.config.LogAspect                          :76   [32myaQExKia[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:08:59.263 INFO  com.lzn.config.LogAspect                          :77   [32myaQExKia[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/DQzXxSJp GET
-2020-12-12 10:08:59.263 INFO  com.lzn.config.LogAspect                          :78   [32myaQExKia[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:08:59.264 INFO  com.lzn.config.LogAspect                          :79   [32myaQExKia[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:08:59.264 INFO  com.lzn.config.LogAspect                          :97   [32myaQExKia[0;39m 请求参数: ["DQzXxSJp",null,null]
-2020-12-12 10:08:59.274 INFO  com.lzn.config.LogAspect                          :109  [32myaQExKia[0;39m 返回结果: null
-2020-12-12 10:08:59.274 INFO  com.lzn.config.LogAspect                          :110  [32myaQExKia[0;39m ------------- 结束 耗时：12 ms -------------
-2020-12-12 10:11:30.969 INFO  com.lzn.config.LogAspect                          :76   [32mrBWn86TG[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:11:30.969 INFO  com.lzn.config.LogAspect                          :77   [32mrBWn86TG[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/DAcPAirC GET
-2020-12-12 10:11:30.969 INFO  com.lzn.config.LogAspect                          :78   [32mrBWn86TG[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:11:30.969 INFO  com.lzn.config.LogAspect                          :79   [32mrBWn86TG[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:11:30.969 INFO  com.lzn.config.LogAspect                          :97   [32mrBWn86TG[0;39m 请求参数: ["DAcPAirC",null,null]
-2020-12-12 10:11:30.978 INFO  com.lzn.config.LogAspect                          :109  [32mrBWn86TG[0;39m 返回结果: null
-2020-12-12 10:11:30.978 INFO  com.lzn.config.LogAspect                          :110  [32mrBWn86TG[0;39m ------------- 结束 耗时：9 ms -------------
-2020-12-12 10:12:21.363 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:14:50.939 INFO  com.lzn.config.LogAspect                          :76   [32mQil4n7J8[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:14:50.940 INFO  com.lzn.config.LogAspect                          :77   [32mQil4n7J8[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/Ny9NRhSC GET
-2020-12-12 10:14:50.941 INFO  com.lzn.config.LogAspect                          :78   [32mQil4n7J8[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:14:50.941 INFO  com.lzn.config.LogAspect                          :79   [32mQil4n7J8[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:14:50.941 INFO  com.lzn.config.LogAspect                          :97   [32mQil4n7J8[0;39m 请求参数: ["Ny9NRhSC",null,null]
-2020-12-12 10:14:50.946 INFO  com.lzn.config.LogAspect                          :109  [32mQil4n7J8[0;39m 返回结果: null
-2020-12-12 10:14:50.947 INFO  com.lzn.config.LogAspect                          :110  [32mQil4n7J8[0;39m ------------- 结束 耗时：8 ms -------------
-2020-12-12 10:14:54.627 INFO  com.lzn.config.LogAspect                          :76   [32mbUYpmmS0[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:14:54.627 INFO  com.lzn.config.LogAspect                          :77   [32mbUYpmmS0[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/f9gpvoUx GET
-2020-12-12 10:14:54.627 INFO  com.lzn.config.LogAspect                          :78   [32mbUYpmmS0[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:14:54.627 INFO  com.lzn.config.LogAspect                          :79   [32mbUYpmmS0[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:14:54.627 INFO  com.lzn.config.LogAspect                          :97   [32mbUYpmmS0[0;39m 请求参数: ["f9gpvoUx",null,null]
-2020-12-12 10:14:54.633 INFO  com.lzn.config.LogAspect                          :109  [32mbUYpmmS0[0;39m 返回结果: null
-2020-12-12 10:14:54.633 INFO  com.lzn.config.LogAspect                          :110  [32mbUYpmmS0[0;39m ------------- 结束 耗时：6 ms -------------
-2020-12-12 10:14:58.336 INFO  com.lzn.config.LogAspect                          :76   [32mZcbJDHPK[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:14:58.337 INFO  com.lzn.config.LogAspect                          :77   [32mZcbJDHPK[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/Pnr3bnpa GET
-2020-12-12 10:14:58.338 INFO  com.lzn.config.LogAspect                          :78   [32mZcbJDHPK[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:14:58.338 INFO  com.lzn.config.LogAspect                          :79   [32mZcbJDHPK[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:14:58.339 INFO  com.lzn.config.LogAspect                          :97   [32mZcbJDHPK[0;39m 请求参数: ["Pnr3bnpa",null,null]
-2020-12-12 10:14:58.344 INFO  com.lzn.config.LogAspect                          :109  [32mZcbJDHPK[0;39m 返回结果: null
-2020-12-12 10:14:58.344 INFO  com.lzn.config.LogAspect                          :110  [32mZcbJDHPK[0;39m ------------- 结束 耗时：8 ms -------------
-2020-12-12 10:15:03.186 INFO  com.lzn.config.LogAspect                          :76   [32m7qurx2gm[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:15:03.186 INFO  com.lzn.config.LogAspect                          :77   [32m7qurx2gm[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:15:03.186 INFO  com.lzn.config.LogAspect                          :78   [32m7qurx2gm[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:15:03.186 INFO  com.lzn.config.LogAspect                          :79   [32m7qurx2gm[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:15:03.197 INFO  com.lzn.config.LogAspect                          :97   [32m7qurx2gm[0;39m 请求参数: [{"imageCode":"124","imageCodeToken":"Pnr3bnpa","loginName":"1234","password":"e8becdbec46bd1d38aa6272a0ebef687"},null]
-2020-12-12 10:15:03.205 INFO  com.lzn.config.LogAspect                          :109  [32m7qurx2gm[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:15:03.205 INFO  com.lzn.config.LogAspect                          :110  [32m7qurx2gm[0;39m ------------- 结束 耗时：20 ms -------------
-2020-12-12 10:15:03.242 INFO  com.lzn.config.LogAspect                          :76   [32mTOOewvBf[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:15:03.243 INFO  com.lzn.config.LogAspect                          :77   [32mTOOewvBf[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/xQzAhnRa GET
-2020-12-12 10:15:03.243 INFO  com.lzn.config.LogAspect                          :78   [32mTOOewvBf[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:15:03.243 INFO  com.lzn.config.LogAspect                          :79   [32mTOOewvBf[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:15:03.243 INFO  com.lzn.config.LogAspect                          :97   [32mTOOewvBf[0;39m 请求参数: ["xQzAhnRa",null,null]
-2020-12-12 10:15:03.247 INFO  com.lzn.config.LogAspect                          :109  [32mTOOewvBf[0;39m 返回结果: null
-2020-12-12 10:15:03.247 INFO  com.lzn.config.LogAspect                          :110  [32mTOOewvBf[0;39m ------------- 结束 耗时：5 ms -------------
-2020-12-12 10:16:26.666 INFO  com.lzn.config.LogAspect                          :76   [32mpm08Ysf7[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:16:26.667 INFO  com.lzn.config.LogAspect                          :77   [32mpm08Ysf7[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/NGpEmm5l GET
-2020-12-12 10:16:26.667 INFO  com.lzn.config.LogAspect                          :78   [32mpm08Ysf7[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:16:26.667 INFO  com.lzn.config.LogAspect                          :79   [32mpm08Ysf7[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:16:26.667 INFO  com.lzn.config.LogAspect                          :97   [32mpm08Ysf7[0;39m 请求参数: ["NGpEmm5l",null,null]
-2020-12-12 10:16:26.672 INFO  com.lzn.config.LogAspect                          :109  [32mpm08Ysf7[0;39m 返回结果: null
-2020-12-12 10:16:26.673 INFO  com.lzn.config.LogAspect                          :110  [32mpm08Ysf7[0;39m ------------- 结束 耗时：7 ms -------------
-2020-12-12 10:16:33.664 INFO  com.lzn.config.LogAspect                          :76   [32mGwO4zLzO[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:16:33.665 INFO  com.lzn.config.LogAspect                          :77   [32mGwO4zLzO[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:16:33.665 INFO  com.lzn.config.LogAspect                          :78   [32mGwO4zLzO[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:16:33.665 INFO  com.lzn.config.LogAspect                          :79   [32mGwO4zLzO[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:16:33.665 INFO  com.lzn.config.LogAspect                          :97   [32mGwO4zLzO[0;39m 请求参数: [{"imageCodeToken":"NGpEmm5l","loginName":"1243","password":"038d93c225b4608da52370c6f7de6b47"},null]
-2020-12-12 10:16:33.666 INFO  com.lzn.config.LogAspect                          :109  [32mGwO4zLzO[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:16:33.666 INFO  com.lzn.config.LogAspect                          :110  [32mGwO4zLzO[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:16:33.683 INFO  com.lzn.config.LogAspect                          :76   [32mqT1B27OE[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:16:33.683 INFO  com.lzn.config.LogAspect                          :77   [32mqT1B27OE[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/DA8xwbep GET
-2020-12-12 10:16:33.683 INFO  com.lzn.config.LogAspect                          :78   [32mqT1B27OE[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:16:33.684 INFO  com.lzn.config.LogAspect                          :79   [32mqT1B27OE[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:16:33.684 INFO  com.lzn.config.LogAspect                          :97   [32mqT1B27OE[0;39m 请求参数: ["DA8xwbep",null,null]
-2020-12-12 10:16:33.691 INFO  com.lzn.config.LogAspect                          :109  [32mqT1B27OE[0;39m 返回结果: null
-2020-12-12 10:16:33.692 INFO  com.lzn.config.LogAspect                          :110  [32mqT1B27OE[0;39m ------------- 结束 耗时：9 ms -------------
-2020-12-12 10:16:39.503 INFO  com.lzn.config.LogAspect                          :76   [32mK30IGhNq[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:16:39.504 INFO  com.lzn.config.LogAspect                          :77   [32mK30IGhNq[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:16:39.504 INFO  com.lzn.config.LogAspect                          :78   [32mK30IGhNq[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:16:39.504 INFO  com.lzn.config.LogAspect                          :79   [32mK30IGhNq[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:16:39.504 INFO  com.lzn.config.LogAspect                          :97   [32mK30IGhNq[0;39m 请求参数: [{"imageCode":"2433","imageCodeToken":"DA8xwbep","loginName":"1243","password":"52ae9f8bb09af94332729e8c60f5c202"},null]
-2020-12-12 10:16:39.504 INFO  com.lzn.config.LogAspect                          :109  [32mK30IGhNq[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:16:39.504 INFO  com.lzn.config.LogAspect                          :110  [32mK30IGhNq[0;39m ------------- 结束 耗时：1 ms -------------
-2020-12-12 10:16:39.525 INFO  com.lzn.config.LogAspect                          :76   [32mSojMPh2F[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:16:39.525 INFO  com.lzn.config.LogAspect                          :77   [32mSojMPh2F[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/bzxyqkLs GET
-2020-12-12 10:16:39.525 INFO  com.lzn.config.LogAspect                          :78   [32mSojMPh2F[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:16:39.525 INFO  com.lzn.config.LogAspect                          :79   [32mSojMPh2F[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:16:39.526 INFO  com.lzn.config.LogAspect                          :97   [32mSojMPh2F[0;39m 请求参数: ["bzxyqkLs",null,null]
-2020-12-12 10:16:39.530 INFO  com.lzn.config.LogAspect                          :109  [32mSojMPh2F[0;39m 返回结果: null
-2020-12-12 10:16:39.530 INFO  com.lzn.config.LogAspect                          :110  [32mSojMPh2F[0;39m ------------- 结束 耗时：5 ms -------------
-2020-12-12 10:16:49.874 INFO  com.lzn.config.LogAspect                          :76   [32mRWtqb5qN[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:16:49.875 INFO  com.lzn.config.LogAspect                          :77   [32mRWtqb5qN[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/NV8C85KM GET
-2020-12-12 10:16:49.875 INFO  com.lzn.config.LogAspect                          :78   [32mRWtqb5qN[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:16:49.875 INFO  com.lzn.config.LogAspect                          :79   [32mRWtqb5qN[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:16:49.875 INFO  com.lzn.config.LogAspect                          :97   [32mRWtqb5qN[0;39m 请求参数: ["NV8C85KM",null,null]
-2020-12-12 10:16:49.878 INFO  com.lzn.config.LogAspect                          :109  [32mRWtqb5qN[0;39m 返回结果: null
-2020-12-12 10:16:49.878 INFO  com.lzn.config.LogAspect                          :110  [32mRWtqb5qN[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:17:21.364 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:22:17.676 INFO  com.lzn.config.LogAspect                          :76   [32myV8LjaGd[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:22:17.676 INFO  com.lzn.config.LogAspect                          :77   [32myV8LjaGd[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/nXkBUd6r GET
-2020-12-12 10:22:17.676 INFO  com.lzn.config.LogAspect                          :78   [32myV8LjaGd[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:22:17.677 INFO  com.lzn.config.LogAspect                          :79   [32myV8LjaGd[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:22:17.677 INFO  com.lzn.config.LogAspect                          :97   [32myV8LjaGd[0;39m 请求参数: ["nXkBUd6r",null,null]
-2020-12-12 10:22:17.680 INFO  com.lzn.config.LogAspect                          :109  [32myV8LjaGd[0;39m 返回结果: null
-2020-12-12 10:22:17.680 INFO  com.lzn.config.LogAspect                          :110  [32myV8LjaGd[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:22:21.365 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:23:30.418 INFO  com.lzn.config.LogAspect                          :76   [32m1i8qGxvk[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:23:30.418 INFO  com.lzn.config.LogAspect                          :77   [32m1i8qGxvk[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/gql0CUFc GET
-2020-12-12 10:23:30.418 INFO  com.lzn.config.LogAspect                          :78   [32m1i8qGxvk[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:23:30.419 INFO  com.lzn.config.LogAspect                          :79   [32m1i8qGxvk[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:23:30.419 INFO  com.lzn.config.LogAspect                          :97   [32m1i8qGxvk[0;39m 请求参数: ["gql0CUFc",null,null]
-2020-12-12 10:23:30.422 INFO  com.lzn.config.LogAspect                          :109  [32m1i8qGxvk[0;39m 返回结果: null
-2020-12-12 10:23:30.422 INFO  com.lzn.config.LogAspect                          :110  [32m1i8qGxvk[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:23:35.602 INFO  com.lzn.config.LogAspect                          :76   [32m4Yhc43nq[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:23:35.602 INFO  com.lzn.config.LogAspect                          :77   [32m4Yhc43nq[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/prZGxhjr GET
-2020-12-12 10:23:35.603 INFO  com.lzn.config.LogAspect                          :78   [32m4Yhc43nq[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:23:35.603 INFO  com.lzn.config.LogAspect                          :79   [32m4Yhc43nq[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:23:35.603 INFO  com.lzn.config.LogAspect                          :97   [32m4Yhc43nq[0;39m 请求参数: ["prZGxhjr",null,null]
-2020-12-12 10:23:35.606 INFO  com.lzn.config.LogAspect                          :109  [32m4Yhc43nq[0;39m 返回结果: null
-2020-12-12 10:23:35.606 INFO  com.lzn.config.LogAspect                          :110  [32m4Yhc43nq[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:23:41.510 INFO  com.lzn.config.LogAspect                          :76   [32mj5Vl6tPT[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:23:41.511 INFO  com.lzn.config.LogAspect                          :77   [32mj5Vl6tPT[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:23:41.511 INFO  com.lzn.config.LogAspect                          :78   [32mj5Vl6tPT[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:23:41.511 INFO  com.lzn.config.LogAspect                          :79   [32mj5Vl6tPT[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:23:41.512 INFO  com.lzn.config.LogAspect                          :97   [32mj5Vl6tPT[0;39m 请求参数: [{"imageCode":"1412341243","imageCodeToken":"prZGxhjr","loginName":"124","password":"229908b1573003ab0590bebb181cc940"},null]
-2020-12-12 10:23:41.512 INFO  com.lzn.config.LogAspect                          :109  [32mj5Vl6tPT[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:23:41.512 INFO  com.lzn.config.LogAspect                          :110  [32mj5Vl6tPT[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:23:41.527 INFO  com.lzn.config.LogAspect                          :76   [32mRFwVZ8A1[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:23:41.527 INFO  com.lzn.config.LogAspect                          :77   [32mRFwVZ8A1[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/7oMrH15y GET
-2020-12-12 10:23:41.527 INFO  com.lzn.config.LogAspect                          :78   [32mRFwVZ8A1[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:23:41.527 INFO  com.lzn.config.LogAspect                          :79   [32mRFwVZ8A1[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:23:41.527 INFO  com.lzn.config.LogAspect                          :97   [32mRFwVZ8A1[0;39m 请求参数: ["7oMrH15y",null,null]
-2020-12-12 10:23:41.531 INFO  com.lzn.config.LogAspect                          :109  [32mRFwVZ8A1[0;39m 返回结果: null
-2020-12-12 10:23:41.531 INFO  com.lzn.config.LogAspect                          :110  [32mRFwVZ8A1[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:23:46.248 INFO  com.lzn.config.LogAspect                          :76   [32mrcelMwhF[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:23:46.248 INFO  com.lzn.config.LogAspect                          :77   [32mrcelMwhF[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:23:46.248 INFO  com.lzn.config.LogAspect                          :78   [32mrcelMwhF[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:23:46.248 INFO  com.lzn.config.LogAspect                          :79   [32mrcelMwhF[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:23:46.248 INFO  com.lzn.config.LogAspect                          :97   [32mrcelMwhF[0;39m 请求参数: [{"imageCode":"1412341243","imageCodeToken":"7oMrH15y","loginName":"124","password":"b91b323be32d50ff1ae29fb335957cac"},null]
-2020-12-12 10:23:46.249 INFO  com.lzn.config.LogAspect                          :109  [32mrcelMwhF[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:23:46.249 INFO  com.lzn.config.LogAspect                          :110  [32mrcelMwhF[0;39m ------------- 结束 耗时：1 ms -------------
-2020-12-12 10:23:46.261 INFO  com.lzn.config.LogAspect                          :76   [32mztdxtiEu[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:23:46.262 INFO  com.lzn.config.LogAspect                          :77   [32mztdxtiEu[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/z8QsTL1A GET
-2020-12-12 10:23:46.262 INFO  com.lzn.config.LogAspect                          :78   [32mztdxtiEu[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:23:46.262 INFO  com.lzn.config.LogAspect                          :79   [32mztdxtiEu[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:23:46.262 INFO  com.lzn.config.LogAspect                          :97   [32mztdxtiEu[0;39m 请求参数: ["z8QsTL1A",null,null]
-2020-12-12 10:23:46.265 INFO  com.lzn.config.LogAspect                          :109  [32mztdxtiEu[0;39m 返回结果: null
-2020-12-12 10:23:46.266 INFO  com.lzn.config.LogAspect                          :110  [32mztdxtiEu[0;39m ------------- 结束 耗时：5 ms -------------
-2020-12-12 10:27:21.367 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:28:11.852 INFO  com.lzn.config.LogAspect                          :76   [32m7Wcm3rpG[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:28:11.852 INFO  com.lzn.config.LogAspect                          :77   [32m7Wcm3rpG[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/T2jn2onE GET
-2020-12-12 10:28:11.852 INFO  com.lzn.config.LogAspect                          :78   [32m7Wcm3rpG[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:28:11.852 INFO  com.lzn.config.LogAspect                          :79   [32m7Wcm3rpG[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:28:11.853 INFO  com.lzn.config.LogAspect                          :97   [32m7Wcm3rpG[0;39m 请求参数: ["T2jn2onE",null,null]
-2020-12-12 10:28:11.859 INFO  com.lzn.config.LogAspect                          :109  [32m7Wcm3rpG[0;39m 返回结果: null
-2020-12-12 10:28:11.859 INFO  com.lzn.config.LogAspect                          :110  [32m7Wcm3rpG[0;39m ------------- 结束 耗时：7 ms -------------
-2020-12-12 10:32:21.369 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:33:12.292 INFO  com.lzn.config.LogAspect                          :76   [32mwdbsqpFd[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:33:12.292 INFO  com.lzn.config.LogAspect                          :77   [32mwdbsqpFd[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:33:12.293 INFO  com.lzn.config.LogAspect                          :78   [32mwdbsqpFd[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:33:12.293 INFO  com.lzn.config.LogAspect                          :79   [32mwdbsqpFd[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:12.293 INFO  com.lzn.config.LogAspect                          :97   [32mwdbsqpFd[0;39m 请求参数: [{"imageCode":"1243","imageCodeToken":"T2jn2onE","loginName":"1234","password":"641e126e74caf4a4bb76fa13a27f68d9"},null]
-2020-12-12 10:33:12.294 INFO  com.lzn.config.LogAspect                          :109  [32mwdbsqpFd[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:33:12.294 INFO  com.lzn.config.LogAspect                          :110  [32mwdbsqpFd[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:33:12.322 INFO  com.lzn.config.LogAspect                          :76   [32mNscxfCm6[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:33:12.322 INFO  com.lzn.config.LogAspect                          :77   [32mNscxfCm6[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/io9X2Mqh GET
-2020-12-12 10:33:12.322 INFO  com.lzn.config.LogAspect                          :78   [32mNscxfCm6[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:33:12.322 INFO  com.lzn.config.LogAspect                          :79   [32mNscxfCm6[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:12.323 INFO  com.lzn.config.LogAspect                          :97   [32mNscxfCm6[0;39m 请求参数: ["io9X2Mqh",null,null]
-2020-12-12 10:33:12.326 INFO  com.lzn.config.LogAspect                          :109  [32mNscxfCm6[0;39m 返回结果: null
-2020-12-12 10:33:12.326 INFO  com.lzn.config.LogAspect                          :110  [32mNscxfCm6[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:33:18.452 INFO  com.lzn.config.LogAspect                          :76   [32mL7hIiNke[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:33:18.452 INFO  com.lzn.config.LogAspect                          :77   [32mL7hIiNke[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:33:18.452 INFO  com.lzn.config.LogAspect                          :78   [32mL7hIiNke[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:33:18.453 INFO  com.lzn.config.LogAspect                          :79   [32mL7hIiNke[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:18.453 INFO  com.lzn.config.LogAspect                          :97   [32mL7hIiNke[0;39m 请求参数: [{"imageCode":"12431234","imageCodeToken":"io9X2Mqh","loginName":"1234","password":"44609481d85e4cca9f7d554c27828eb6"},null]
-2020-12-12 10:33:18.454 INFO  com.lzn.config.LogAspect                          :109  [32mL7hIiNke[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:33:18.454 INFO  com.lzn.config.LogAspect                          :110  [32mL7hIiNke[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:33:18.467 INFO  com.lzn.config.LogAspect                          :76   [32mTX6pdMoB[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:33:18.467 INFO  com.lzn.config.LogAspect                          :77   [32mTX6pdMoB[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/mERNftDW GET
-2020-12-12 10:33:18.467 INFO  com.lzn.config.LogAspect                          :78   [32mTX6pdMoB[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:33:18.467 INFO  com.lzn.config.LogAspect                          :79   [32mTX6pdMoB[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:18.468 INFO  com.lzn.config.LogAspect                          :97   [32mTX6pdMoB[0;39m 请求参数: ["mERNftDW",null,null]
-2020-12-12 10:33:18.470 INFO  com.lzn.config.LogAspect                          :109  [32mTX6pdMoB[0;39m 返回结果: null
-2020-12-12 10:33:18.470 INFO  com.lzn.config.LogAspect                          :110  [32mTX6pdMoB[0;39m ------------- 结束 耗时：3 ms -------------
-2020-12-12 10:33:21.768 INFO  com.lzn.config.LogAspect                          :76   [32mGlq4G3CZ[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:33:21.768 INFO  com.lzn.config.LogAspect                          :77   [32mGlq4G3CZ[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/KTrY9BZa GET
-2020-12-12 10:33:21.768 INFO  com.lzn.config.LogAspect                          :78   [32mGlq4G3CZ[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:33:21.769 INFO  com.lzn.config.LogAspect                          :79   [32mGlq4G3CZ[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:21.769 INFO  com.lzn.config.LogAspect                          :97   [32mGlq4G3CZ[0;39m 请求参数: ["KTrY9BZa",null,null]
-2020-12-12 10:33:21.774 INFO  com.lzn.config.LogAspect                          :109  [32mGlq4G3CZ[0;39m 返回结果: null
-2020-12-12 10:33:21.774 INFO  com.lzn.config.LogAspect                          :110  [32mGlq4G3CZ[0;39m ------------- 结束 耗时：6 ms -------------
-2020-12-12 10:33:24.968 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
-2020-12-12 10:33:26.445 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2020-12-12 10:33:27.052 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=f822464c-3f4a-3350-89ac-4b9a81fa65bf
-2020-12-12 10:33:27.780 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
-2020-12-12 10:33:27.787 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
-2020-12-12 10:33:27.788 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2020-12-12 10:33:27.788 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-12-12 10:33:27.876 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2020-12-12 10:33:27.877 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1416 ms
-2020-12-12 10:33:28.417 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-12 10:33:28.417 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-12 10:33:28.423 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-12-12 10:33:28.423 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-12 10:33:28.645 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-12 10:33:30.153 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-12 10:33:30.191 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
-2020-12-12 10:33:31.341 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-12 10:33:31.370 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-12 10:33:31.418 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2020-12-12 10:33:31.464 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
-2020-12-12 10:33:31.696 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2020-12-12 10:33:31.696 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2020-12-12 10:33:31.801 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2020-12-12 10:33:31.801 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2020-12-12 10:33:31.988 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:33:32.076 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
-2020-12-12 10:33:32.076 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
-2020-12-12 10:33:32.076 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
-2020-12-12 10:33:32.077 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
-2020-12-12 10:33:32.077 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
-2020-12-12 10:33:32.077 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
-2020-12-12 10:33:32.077 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-12-12 10:33:32.200 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
-2020-12-12 10:33:32.202 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2020-12-12 10:33:32.203 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-12 10:33:32.206 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607740412205 with initial instances count: 2
-2020-12-12 10:33:32.210 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
-2020-12-12 10:33:32.210 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607740412210, current=UP, previous=STARTING]
-2020-12-12 10:33:32.212 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
-2020-12-12 10:33:32.212 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
-2020-12-12 10:33:32.238 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
-2020-12-12 10:33:32.241 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2020-12-12 10:33:32.244 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
-2020-12-12 10:33:32.571 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-12 10:33:32.571 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2020-12-12 10:33:32.579 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
-2020-12-12 10:33:32.614 INFO  com.lzn.config.LogAspect                          :76   [32mqLeuQ75z[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:33:32.615 INFO  com.lzn.config.LogAspect                          :77   [32mqLeuQ75z[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:33:32.615 INFO  com.lzn.config.LogAspect                          :78   [32mqLeuQ75z[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:33:32.615 INFO  com.lzn.config.LogAspect                          :79   [32mqLeuQ75z[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:32.630 INFO  com.lzn.config.LogAspect                          :97   [32mqLeuQ75z[0;39m 请求参数: [{"imageCode":"12431","imageCodeToken":"KTrY9BZa","loginName":"141","password":"7bb8a36acc7e084cfa2ad71c19373f85"},null]
-2020-12-12 10:33:32.771 INFO  com.lzn.config.LogAspect                          :109  [32mqLeuQ75z[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:33:32.771 INFO  com.lzn.config.LogAspect                          :110  [32mqLeuQ75z[0;39m ------------- 结束 耗时：159 ms -------------
-2020-12-12 10:33:32.813 INFO  com.lzn.config.LogAspect                          :76   [32m9Y1m8e5o[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:33:32.813 INFO  com.lzn.config.LogAspect                          :77   [32m9Y1m8e5o[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/PXrrtw63 GET
-2020-12-12 10:33:32.813 INFO  com.lzn.config.LogAspect                          :78   [32m9Y1m8e5o[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:33:32.813 INFO  com.lzn.config.LogAspect                          :79   [32m9Y1m8e5o[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:32.813 INFO  com.lzn.config.LogAspect                          :97   [32m9Y1m8e5o[0;39m 请求参数: ["PXrrtw63",null,null]
-2020-12-12 10:33:32.905 INFO  com.lzn.config.LogAspect                          :109  [32m9Y1m8e5o[0;39m 返回结果: null
-2020-12-12 10:33:32.905 INFO  com.lzn.config.LogAspect                          :110  [32m9Y1m8e5o[0;39m ------------- 结束 耗时：93 ms -------------
-2020-12-12 10:33:33.365 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-12-12 10:33:33.373 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 9.808 seconds (JVM running for 10.29)
-2020-12-12 10:33:33.374 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
-2020-12-12 10:33:33.374 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
-2020-12-12 10:33:34.878 INFO  com.lzn.config.LogAspect                          :76   [32mgR3GYmlF[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:33:34.878 INFO  com.lzn.config.LogAspect                          :77   [32mgR3GYmlF[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:33:34.879 INFO  com.lzn.config.LogAspect                          :78   [32mgR3GYmlF[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:33:34.879 INFO  com.lzn.config.LogAspect                          :79   [32mgR3GYmlF[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:34.879 INFO  com.lzn.config.LogAspect                          :97   [32mgR3GYmlF[0;39m 请求参数: [{"imageCode":"12431","imageCodeToken":"PXrrtw63","loginName":"141","password":"14f1b2391217d52114f1f024c4bdf6b7"},null]
-2020-12-12 10:33:34.879 INFO  com.lzn.config.LogAspect                          :109  [32mgR3GYmlF[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:33:34.880 INFO  com.lzn.config.LogAspect                          :110  [32mgR3GYmlF[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:33:34.892 INFO  com.lzn.config.LogAspect                          :76   [32mss3xlUeZ[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:33:34.892 INFO  com.lzn.config.LogAspect                          :77   [32mss3xlUeZ[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/e0HDjFab GET
-2020-12-12 10:33:34.893 INFO  com.lzn.config.LogAspect                          :78   [32mss3xlUeZ[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:33:34.893 INFO  com.lzn.config.LogAspect                          :79   [32mss3xlUeZ[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:33:34.893 INFO  com.lzn.config.LogAspect                          :97   [32mss3xlUeZ[0;39m 请求参数: ["e0HDjFab",null,null]
-2020-12-12 10:33:34.900 INFO  com.lzn.config.LogAspect                          :109  [32mss3xlUeZ[0;39m 返回结果: null
-2020-12-12 10:33:34.901 INFO  com.lzn.config.LogAspect                          :110  [32mss3xlUeZ[0;39m ------------- 结束 耗时：8 ms -------------
-2020-12-12 10:34:49.443 INFO  com.lzn.config.LogAspect                          :76   [32m92vDwDvg[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:34:49.443 INFO  com.lzn.config.LogAspect                          :77   [32m92vDwDvg[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/pScoRgUC GET
-2020-12-12 10:34:49.443 INFO  com.lzn.config.LogAspect                          :78   [32m92vDwDvg[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:34:49.443 INFO  com.lzn.config.LogAspect                          :79   [32m92vDwDvg[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:34:49.443 INFO  com.lzn.config.LogAspect                          :97   [32m92vDwDvg[0;39m 请求参数: ["pScoRgUC",null,null]
-2020-12-12 10:34:49.448 INFO  com.lzn.config.LogAspect                          :109  [32m92vDwDvg[0;39m 返回结果: null
-2020-12-12 10:34:49.448 INFO  com.lzn.config.LogAspect                          :110  [32m92vDwDvg[0;39m ------------- 结束 耗时：5 ms -------------
-2020-12-12 10:34:53.242 INFO  com.lzn.config.LogAspect                          :76   [32mQPTTXPaB[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:34:53.243 INFO  com.lzn.config.LogAspect                          :77   [32mQPTTXPaB[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:34:53.243 INFO  com.lzn.config.LogAspect                          :78   [32mQPTTXPaB[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:34:53.243 INFO  com.lzn.config.LogAspect                          :79   [32mQPTTXPaB[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:34:53.243 INFO  com.lzn.config.LogAspect                          :97   [32mQPTTXPaB[0;39m 请求参数: [{"imageCode":"12431","imageCodeToken":"pScoRgUC","loginName":"141","password":"eee2825985bc1c9e62d6ec338e50d118"},null]
-2020-12-12 10:34:53.244 INFO  com.lzn.config.LogAspect                          :109  [32mQPTTXPaB[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:34:53.244 INFO  com.lzn.config.LogAspect                          :110  [32mQPTTXPaB[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:34:53.257 INFO  com.lzn.config.LogAspect                          :76   [32mOk2iVhsb[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:34:53.258 INFO  com.lzn.config.LogAspect                          :77   [32mOk2iVhsb[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/l3Fikigw GET
-2020-12-12 10:34:53.258 INFO  com.lzn.config.LogAspect                          :78   [32mOk2iVhsb[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:34:53.258 INFO  com.lzn.config.LogAspect                          :79   [32mOk2iVhsb[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:34:53.258 INFO  com.lzn.config.LogAspect                          :97   [32mOk2iVhsb[0;39m 请求参数: ["l3Fikigw",null,null]
-2020-12-12 10:34:53.263 INFO  com.lzn.config.LogAspect                          :109  [32mOk2iVhsb[0;39m 返回结果: null
-2020-12-12 10:34:53.263 INFO  com.lzn.config.LogAspect                          :110  [32mOk2iVhsb[0;39m ------------- 结束 耗时：6 ms -------------
-2020-12-12 10:38:32.079 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:39:46.008 INFO  com.lzn.config.LogAspect                          :76   [32m5zBxuhwl[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:39:46.009 INFO  com.lzn.config.LogAspect                          :77   [32m5zBxuhwl[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/UgKbjgsr GET
-2020-12-12 10:39:46.009 INFO  com.lzn.config.LogAspect                          :78   [32m5zBxuhwl[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:39:46.009 INFO  com.lzn.config.LogAspect                          :79   [32m5zBxuhwl[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:39:46.009 INFO  com.lzn.config.LogAspect                          :97   [32m5zBxuhwl[0;39m 请求参数: ["UgKbjgsr",null,null]
-2020-12-12 10:39:46.013 INFO  com.lzn.config.LogAspect                          :109  [32m5zBxuhwl[0;39m 返回结果: null
-2020-12-12 10:39:46.013 INFO  com.lzn.config.LogAspect                          :110  [32m5zBxuhwl[0;39m ------------- 结束 耗时：5 ms -------------
-2020-12-12 10:39:46.944 INFO  com.lzn.config.LogAspect                          :76   [32mNgHNxoG7[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:39:46.945 INFO  com.lzn.config.LogAspect                          :77   [32mNgHNxoG7[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:39:46.945 INFO  com.lzn.config.LogAspect                          :78   [32mNgHNxoG7[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:39:46.945 INFO  com.lzn.config.LogAspect                          :79   [32mNgHNxoG7[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:39:46.945 INFO  com.lzn.config.LogAspect                          :97   [32mNgHNxoG7[0;39m 请求参数: [{"imageCode":"12431","imageCodeToken":"UgKbjgsr","loginName":"141","password":"74a60b917f17d5080efe491d18e5a651"},null]
-2020-12-12 10:39:46.946 INFO  com.lzn.config.LogAspect                          :109  [32mNgHNxoG7[0;39m 返回结果: {"message":"验证码已过期","success":false}
-2020-12-12 10:39:46.946 INFO  com.lzn.config.LogAspect                          :110  [32mNgHNxoG7[0;39m ------------- 结束 耗时：2 ms -------------
-2020-12-12 10:39:46.956 INFO  com.lzn.config.LogAspect                          :76   [32mEFVRUBCM[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:39:46.956 INFO  com.lzn.config.LogAspect                          :77   [32mEFVRUBCM[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/JYQzGBpm GET
-2020-12-12 10:39:46.957 INFO  com.lzn.config.LogAspect                          :78   [32mEFVRUBCM[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:39:46.957 INFO  com.lzn.config.LogAspect                          :79   [32mEFVRUBCM[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:39:46.957 INFO  com.lzn.config.LogAspect                          :97   [32mEFVRUBCM[0;39m 请求参数: ["JYQzGBpm",null,null]
-2020-12-12 10:39:46.961 INFO  com.lzn.config.LogAspect                          :109  [32mEFVRUBCM[0;39m 返回结果: null
-2020-12-12 10:39:46.962 INFO  com.lzn.config.LogAspect                          :110  [32mEFVRUBCM[0;39m ------------- 结束 耗时：6 ms -------------
-2020-12-12 10:40:49.753 INFO  com.lzn.config.LogAspect                          :76   [32mn6DS7yDp[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:40:49.754 INFO  com.lzn.config.LogAspect                          :77   [32mn6DS7yDp[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/PteEAf3K GET
-2020-12-12 10:40:49.754 INFO  com.lzn.config.LogAspect                          :78   [32mn6DS7yDp[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:40:49.754 INFO  com.lzn.config.LogAspect                          :79   [32mn6DS7yDp[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:40:49.754 INFO  com.lzn.config.LogAspect                          :97   [32mn6DS7yDp[0;39m 请求参数: ["PteEAf3K",null,null]
-2020-12-12 10:40:49.762 INFO  com.lzn.config.LogAspect                          :109  [32mn6DS7yDp[0;39m 返回结果: null
-2020-12-12 10:40:49.762 INFO  com.lzn.config.LogAspect                          :110  [32mn6DS7yDp[0;39m ------------- 结束 耗时：9 ms -------------
-2020-12-12 10:41:09.572 INFO  com.lzn.config.LogAspect                          :76   [32mIFuOxgyo[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:41:09.572 INFO  com.lzn.config.LogAspect                          :77   [32mIFuOxgyo[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/umVF0W5G GET
-2020-12-12 10:41:09.572 INFO  com.lzn.config.LogAspect                          :78   [32mIFuOxgyo[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:41:09.573 INFO  com.lzn.config.LogAspect                          :79   [32mIFuOxgyo[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:09.573 INFO  com.lzn.config.LogAspect                          :97   [32mIFuOxgyo[0;39m 请求参数: ["umVF0W5G",null,null]
-2020-12-12 10:41:09.579 INFO  com.lzn.config.LogAspect                          :109  [32mIFuOxgyo[0;39m 返回结果: null
-2020-12-12 10:41:09.579 INFO  com.lzn.config.LogAspect                          :110  [32mIFuOxgyo[0;39m ------------- 结束 耗时：7 ms -------------
-2020-12-12 10:41:14.866 INFO  com.lzn.config.LogAspect                          :76   [32mrQLZtisW[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:41:14.867 INFO  com.lzn.config.LogAspect                          :77   [32mrQLZtisW[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:41:14.867 INFO  com.lzn.config.LogAspect                          :78   [32mrQLZtisW[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:41:14.867 INFO  com.lzn.config.LogAspect                          :79   [32mrQLZtisW[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:14.867 INFO  com.lzn.config.LogAspect                          :97   [32mrQLZtisW[0;39m 请求参数: [{"imageCode":"124","imageCodeToken":"umVF0W5G","loginName":"1243","password":"038d93c225b4608da52370c6f7de6b47"},null]
-2020-12-12 10:41:14.867 INFO  com.lzn.config.LogAspect                          :109  [32mrQLZtisW[0;39m 返回结果: {"message":"验证码不对","success":false}
-2020-12-12 10:41:14.867 INFO  com.lzn.config.LogAspect                          :110  [32mrQLZtisW[0;39m ------------- 结束 耗时：1 ms -------------
-2020-12-12 10:41:14.881 INFO  com.lzn.config.LogAspect                          :76   [32mWsOXOboN[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:41:14.882 INFO  com.lzn.config.LogAspect                          :77   [32mWsOXOboN[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/pVt464DT GET
-2020-12-12 10:41:14.882 INFO  com.lzn.config.LogAspect                          :78   [32mWsOXOboN[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:41:14.882 INFO  com.lzn.config.LogAspect                          :79   [32mWsOXOboN[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:14.882 INFO  com.lzn.config.LogAspect                          :97   [32mWsOXOboN[0;39m 请求参数: ["pVt464DT",null,null]
-2020-12-12 10:41:14.887 INFO  com.lzn.config.LogAspect                          :109  [32mWsOXOboN[0;39m 返回结果: null
-2020-12-12 10:41:14.887 INFO  com.lzn.config.LogAspect                          :110  [32mWsOXOboN[0;39m ------------- 结束 耗时：6 ms -------------
-2020-12-12 10:41:17.614 INFO  com.lzn.config.LogAspect                          :76   [32mYOEhbR7D[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:41:17.614 INFO  com.lzn.config.LogAspect                          :77   [32mYOEhbR7D[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:41:17.614 INFO  com.lzn.config.LogAspect                          :78   [32mYOEhbR7D[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:41:17.615 INFO  com.lzn.config.LogAspect                          :79   [32mYOEhbR7D[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:17.615 INFO  com.lzn.config.LogAspect                          :97   [32mYOEhbR7D[0;39m 请求参数: [{"imageCode":"1241243","imageCodeToken":"pVt464DT","loginName":"1243","password":"43a7e8626beb3988423a7e8d027cd689"},null]
-2020-12-12 10:41:17.615 INFO  com.lzn.config.LogAspect                          :109  [32mYOEhbR7D[0;39m 返回结果: {"message":"验证码不对","success":false}
-2020-12-12 10:41:17.615 INFO  com.lzn.config.LogAspect                          :110  [32mYOEhbR7D[0;39m ------------- 结束 耗时：1 ms -------------
-2020-12-12 10:41:17.632 INFO  com.lzn.config.LogAspect                          :76   [32mXbbSSPX1[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:41:17.632 INFO  com.lzn.config.LogAspect                          :77   [32mXbbSSPX1[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/yRrav1xA GET
-2020-12-12 10:41:17.632 INFO  com.lzn.config.LogAspect                          :78   [32mXbbSSPX1[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:41:17.632 INFO  com.lzn.config.LogAspect                          :79   [32mXbbSSPX1[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:17.633 INFO  com.lzn.config.LogAspect                          :97   [32mXbbSSPX1[0;39m 请求参数: ["yRrav1xA",null,null]
-2020-12-12 10:41:17.637 INFO  com.lzn.config.LogAspect                          :109  [32mXbbSSPX1[0;39m 返回结果: null
-2020-12-12 10:41:17.638 INFO  com.lzn.config.LogAspect                          :110  [32mXbbSSPX1[0;39m ------------- 结束 耗时：7 ms -------------
-2020-12-12 10:41:21.036 INFO  com.lzn.config.LogAspect                          :76   [32mBCuPbSep[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:41:21.036 INFO  com.lzn.config.LogAspect                          :77   [32mBCuPbSep[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:41:21.036 INFO  com.lzn.config.LogAspect                          :78   [32mBCuPbSep[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:41:21.036 INFO  com.lzn.config.LogAspect                          :79   [32mBCuPbSep[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:21.037 INFO  com.lzn.config.LogAspect                          :97   [32mBCuPbSep[0;39m 请求参数: [{"imageCode":"2177","imageCodeToken":"yRrav1xA","loginName":"1243","password":"e4356cfaf5e7cc74e3108dc9194de053"},null]
-2020-12-12 10:41:21.037 INFO  com.lzn.config.LogAspect                          :109  [32mBCuPbSep[0;39m 返回结果: {"message":"验证码不对","success":false}
-2020-12-12 10:41:21.037 INFO  com.lzn.config.LogAspect                          :110  [32mBCuPbSep[0;39m ------------- 结束 耗时：1 ms -------------
-2020-12-12 10:41:21.053 INFO  com.lzn.config.LogAspect                          :76   [32mMoi6Bnsa[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:41:21.053 INFO  com.lzn.config.LogAspect                          :77   [32mMoi6Bnsa[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/YdHn6onE GET
-2020-12-12 10:41:21.053 INFO  com.lzn.config.LogAspect                          :78   [32mMoi6Bnsa[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:41:21.053 INFO  com.lzn.config.LogAspect                          :79   [32mMoi6Bnsa[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:21.053 INFO  com.lzn.config.LogAspect                          :97   [32mMoi6Bnsa[0;39m 请求参数: ["YdHn6onE",null,null]
-2020-12-12 10:41:21.057 INFO  com.lzn.config.LogAspect                          :109  [32mMoi6Bnsa[0;39m 返回结果: null
-2020-12-12 10:41:21.058 INFO  com.lzn.config.LogAspect                          :110  [32mMoi6Bnsa[0;39m ------------- 结束 耗时：6 ms -------------
-2020-12-12 10:41:26.106 INFO  com.lzn.config.LogAspect                          :76   [32mGrqy5zVN[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:41:26.106 INFO  com.lzn.config.LogAspect                          :77   [32mGrqy5zVN[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:41:26.106 INFO  com.lzn.config.LogAspect                          :78   [32mGrqy5zVN[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:41:26.106 INFO  com.lzn.config.LogAspect                          :79   [32mGrqy5zVN[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:26.107 INFO  com.lzn.config.LogAspect                          :97   [32mGrqy5zVN[0;39m 请求参数: [{"imageCode":"34ng","imageCodeToken":"YdHn6onE","loginName":"1243","password":"cec37b0eb6cd8a10f07d24d74018d899"},null]
-2020-12-12 10:41:26.184 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mGrqy5zVN[0;39m HikariPool-1 - Starting...
-2020-12-12 10:41:26.463 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mGrqy5zVN[0;39m HikariPool-1 - Start completed.
-2020-12-12 10:41:26.468 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mGrqy5zVN[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
-2020-12-12 10:41:26.482 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mGrqy5zVN[0;39m ==> Parameters: 1243(String)
-2020-12-12 10:41:26.519 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mGrqy5zVN[0;39m <==      Total: 0
-2020-12-12 10:41:26.523 ERROR com.lzn.service.UserService                       :127  [32mGrqy5zVN[0;39m 用户名不存在
-2020-12-12 10:41:26.539 INFO  com.lzn.config.LogAspect                          :76   [32mOUpZjQbC[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 10:41:26.539 INFO  com.lzn.config.LogAspect                          :77   [32mOUpZjQbC[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/jsSnszGB GET
-2020-12-12 10:41:26.539 INFO  com.lzn.config.LogAspect                          :78   [32mOUpZjQbC[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 10:41:26.539 INFO  com.lzn.config.LogAspect                          :79   [32mOUpZjQbC[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:26.540 INFO  com.lzn.config.LogAspect                          :97   [32mOUpZjQbC[0;39m 请求参数: ["jsSnszGB",null,null]
-2020-12-12 10:41:26.542 INFO  com.lzn.config.LogAspect                          :109  [32mOUpZjQbC[0;39m 返回结果: null
-2020-12-12 10:41:26.543 INFO  com.lzn.config.LogAspect                          :110  [32mOUpZjQbC[0;39m ------------- 结束 耗时：4 ms -------------
-2020-12-12 10:41:35.110 INFO  com.lzn.config.LogAspect                          :76   [32mS4UEKKKF[0;39m ------------- 【用户】操作开始 -------------
-2020-12-12 10:41:35.111 INFO  com.lzn.config.LogAspect                          :77   [32mS4UEKKKF[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
-2020-12-12 10:41:35.111 INFO  com.lzn.config.LogAspect                          :78   [32mS4UEKKKF[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
-2020-12-12 10:41:35.111 INFO  com.lzn.config.LogAspect                          :79   [32mS4UEKKKF[0;39m 远程地址: 127.0.0.1
-2020-12-12 10:41:35.111 INFO  com.lzn.config.LogAspect                          :97   [32mS4UEKKKF[0;39m 请求参数: [{"imageCode":"mcp2","imageCodeToken":"jsSnszGB","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
-2020-12-12 10:41:35.113 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mS4UEKKKF[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
-2020-12-12 10:41:35.114 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mS4UEKKKF[0;39m ==> Parameters: admin(String)
-2020-12-12 10:41:35.114 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mS4UEKKKF[0;39m <==    Columns: id, login_name, name, password
-2020-12-12 10:41:35.115 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mS4UEKKKF[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
-2020-12-12 10:41:35.116 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mS4UEKKKF[0;39m <==      Total: 1
-2020-12-12 10:41:35.122 INFO  com.lzn.config.LogAspect                          :109  [32mS4UEKKKF[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
-2020-12-12 10:41:35.122 INFO  com.lzn.config.LogAspect                          :110  [32mS4UEKKKF[0;39m ------------- 结束 耗时：12 ms -------------
-2020-12-12 10:43:32.081 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:48:32.082 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:53:32.083 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 10:58:32.084 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:03:32.086 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:08:32.087 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:13:32.088 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:18:32.089 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:20:21.834 INFO  com.lzn.config.LogAspect                          :76   [32mvUTqEZDI[0;39m ------------- 【用户】查询开始 -------------
-2020-12-12 11:20:21.835 INFO  com.lzn.config.LogAspect                          :77   [32mvUTqEZDI[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
-2020-12-12 11:20:21.835 INFO  com.lzn.config.LogAspect                          :78   [32mvUTqEZDI[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
-2020-12-12 11:20:21.835 INFO  com.lzn.config.LogAspect                          :79   [32mvUTqEZDI[0;39m 远程地址: 127.0.0.1
-2020-12-12 11:20:21.837 INFO  com.lzn.config.LogAspect                          :97   [32mvUTqEZDI[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2020-12-12 11:20:21.896 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mvUTqEZDI[0;39m ==>  Preparing: SELECT count(0) FROM user 
-2020-12-12 11:20:21.896 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mvUTqEZDI[0;39m ==> Parameters: 
-2020-12-12 11:20:21.898 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mvUTqEZDI[0;39m <==    Columns: count(0)
-2020-12-12 11:20:21.898 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mvUTqEZDI[0;39m <==        Row: 3
-2020-12-12 11:20:21.899 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mvUTqEZDI[0;39m <==      Total: 1
-2020-12-12 11:20:21.902 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mvUTqEZDI[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
-2020-12-12 11:20:21.902 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mvUTqEZDI[0;39m ==> Parameters: 5(Integer)
-2020-12-12 11:20:21.904 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mvUTqEZDI[0;39m <==    Columns: id, login_name, name, password
-2020-12-12 11:20:21.904 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mvUTqEZDI[0;39m <==        Row: 10000000, test, 测试111111, b9b237df8bd22c295180ea0109cb7e67
-2020-12-12 11:20:21.904 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mvUTqEZDI[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
-2020-12-12 11:20:21.904 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mvUTqEZDI[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
-2020-12-12 11:20:21.905 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mvUTqEZDI[0;39m <==      Total: 3
-2020-12-12 11:20:21.907 INFO  com.lzn.config.LogAspect                          :109  [32mvUTqEZDI[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
-2020-12-12 11:20:21.907 INFO  com.lzn.config.LogAspect                          :110  [32mvUTqEZDI[0;39m ------------- 结束 耗时：73 ms -------------
-2020-12-12 11:20:30.194 INFO  com.lzn.config.LogAspect                          :76   [32mG3n51Sk1[0;39m ------------- 【用户】保存开始 -------------
-2020-12-12 11:20:30.194 INFO  com.lzn.config.LogAspect                          :77   [32mG3n51Sk1[0;39m 请求地址: http://localhost:9001/system/admin/user/save-password POST
-2020-12-12 11:20:30.194 INFO  com.lzn.config.LogAspect                          :78   [32mG3n51Sk1[0;39m 类名方法: com.lzn.system.controller.admin.UserController.savePassword
-2020-12-12 11:20:30.194 INFO  com.lzn.config.LogAspect                          :79   [32mG3n51Sk1[0;39m 远程地址: 127.0.0.1
-2020-12-12 11:20:30.194 INFO  com.lzn.config.LogAspect                          :97   [32mG3n51Sk1[0;39m 请求参数: [{"id":"10000000","loginName":"test","name":"测试111111","password":"87c51b8f00dbc9f5533f66f1aea4a170"}]
-2020-12-12 11:20:30.196 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mG3n51Sk1[0;39m ==>  Preparing: update user SET `password` = ? where id = ? 
-2020-12-12 11:20:30.196 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mG3n51Sk1[0;39m ==> Parameters: 2141e8d27dab5b7a5f7bdcf39e892975(String), 10000000(String)
-2020-12-12 11:20:30.202 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mG3n51Sk1[0;39m <==    Updates: 1
-2020-12-12 11:20:30.202 INFO  com.lzn.config.LogAspect                          :109  [32mG3n51Sk1[0;39m 返回结果: {"content":{"id":"10000000","loginName":"test","name":"测试111111"},"success":true}
-2020-12-12 11:20:30.203 INFO  com.lzn.config.LogAspect                          :110  [32mG3n51Sk1[0;39m ------------- 结束 耗时：9 ms -------------
-2020-12-12 11:20:30.238 INFO  com.lzn.config.LogAspect                          :76   [32mzVXDxIg8[0;39m ------------- 【用户】查询开始 -------------
-2020-12-12 11:20:30.238 INFO  com.lzn.config.LogAspect                          :77   [32mzVXDxIg8[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
-2020-12-12 11:20:30.238 INFO  com.lzn.config.LogAspect                          :78   [32mzVXDxIg8[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
-2020-12-12 11:20:30.238 INFO  com.lzn.config.LogAspect                          :79   [32mzVXDxIg8[0;39m 远程地址: 127.0.0.1
-2020-12-12 11:20:30.239 INFO  com.lzn.config.LogAspect                          :97   [32mzVXDxIg8[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2020-12-12 11:20:30.239 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mzVXDxIg8[0;39m ==>  Preparing: SELECT count(0) FROM user 
-2020-12-12 11:20:30.240 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mzVXDxIg8[0;39m ==> Parameters: 
-2020-12-12 11:20:30.240 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mzVXDxIg8[0;39m <==    Columns: count(0)
-2020-12-12 11:20:30.241 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mzVXDxIg8[0;39m <==        Row: 3
-2020-12-12 11:20:30.241 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mzVXDxIg8[0;39m <==      Total: 1
-2020-12-12 11:20:30.242 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mzVXDxIg8[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
-2020-12-12 11:20:30.242 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mzVXDxIg8[0;39m ==> Parameters: 5(Integer)
-2020-12-12 11:20:30.243 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzVXDxIg8[0;39m <==    Columns: id, login_name, name, password
-2020-12-12 11:20:30.243 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzVXDxIg8[0;39m <==        Row: 10000000, test, 测试111111, 2141e8d27dab5b7a5f7bdcf39e892975
-2020-12-12 11:20:30.244 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzVXDxIg8[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
-2020-12-12 11:20:30.244 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzVXDxIg8[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
-2020-12-12 11:20:30.244 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mzVXDxIg8[0;39m <==      Total: 3
-2020-12-12 11:20:30.245 INFO  com.lzn.config.LogAspect                          :109  [32mzVXDxIg8[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
-2020-12-12 11:20:30.245 INFO  com.lzn.config.LogAspect                          :110  [32mzVXDxIg8[0;39m ------------- 结束 耗时：7 ms -------------
-2020-12-12 11:23:32.091 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:27:28.279 INFO  com.lzn.config.LogAspect                          :76   [32mxusapIhM[0;39m ------------- 【图片验证码】操作开始 -------------
-2020-12-12 11:27:28.279 INFO  com.lzn.config.LogAspect                          :77   [32mxusapIhM[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/nIBBrH9X GET
-2020-12-12 11:27:28.279 INFO  com.lzn.config.LogAspect                          :78   [32mxusapIhM[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
-2020-12-12 11:27:28.279 INFO  com.lzn.config.LogAspect                          :79   [32mxusapIhM[0;39m 远程地址: 127.0.0.1
-2020-12-12 11:27:28.280 INFO  com.lzn.config.LogAspect                          :97   [32mxusapIhM[0;39m 请求参数: ["nIBBrH9X",null,null]
-2020-12-12 11:27:28.283 INFO  com.lzn.config.LogAspect                          :109  [32mxusapIhM[0;39m 返回结果: null
-2020-12-12 11:27:28.284 INFO  com.lzn.config.LogAspect                          :110  [32mxusapIhM[0;39m ------------- 结束 耗时：5 ms -------------
-2020-12-12 11:28:32.093 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:33:32.094 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-12-12 11:38:32.095 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 13:45:45.084 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 13:45:46.709 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-13 13:45:47.878 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 13:45:47.882 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 13:45:47.914 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-12-13 13:45:48.212 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ea87e140-d12b-3755-a710-aed01052c51c
+2020-12-13 13:45:49.081 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-13 13:45:49.090 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-13 13:45:49.091 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-13 13:45:49.091 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 13:45:49.188 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-13 13:45:49.188 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 2453 ms
+2020-12-13 13:45:50.320 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-13 13:45:50.320 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-13 13:45:50.327 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-13 13:45:50.327 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-13 13:45:50.629 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 13:45:52.607 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-13 13:45:52.643 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-13 13:45:53.780 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-13 13:45:53.807 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-13 13:45:53.856 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-13 13:45:53.905 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-13 13:45:54.145 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-13 13:45:54.145 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-13 13:45:54.350 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-13 13:45:54.350 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-13 13:45:54.793 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 13:45:54.878 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-13 13:45:54.878 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-13 13:45:54.878 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-13 13:45:54.878 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-13 13:45:54.879 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-13 13:45:54.879 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-13 13:45:54.879 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-13 13:45:54.960 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-13 13:45:54.961 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-13 13:45:54.963 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-13 13:45:54.965 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607838354964 with initial instances count: 0
+2020-12-13 13:45:54.971 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-13 13:45:54.972 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607838354972, current=UP, previous=STARTING]
+2020-12-13 13:45:54.974 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-13 13:45:54.974 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-13 13:45:55.003 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-13 13:45:55.004 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-13 13:45:55.034 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-13 13:45:56.123 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-13 13:45:56.130 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 12.744 seconds (JVM running for 13.581)
+2020-12-13 13:45:56.131 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-13 13:45:56.132 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-13 13:46:24.963 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-13 13:46:24.963 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-13 13:46:24.963 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-13 13:46:24.963 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-13 13:46:24.964 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-13 13:46:24.964 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-12-13 13:46:24.964 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-13 13:46:24.991 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-13 13:46:59.616 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 13:46:59.617 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-13 13:46:59.627 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
+2020-12-13 13:46:59.700 INFO  com.lzn.config.LogAspect                          :76   [32mPSG7Qxwn[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:46:59.701 INFO  com.lzn.config.LogAspect                          :77   [32mPSG7Qxwn[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/np5KTOIr GET
+2020-12-13 13:46:59.701 INFO  com.lzn.config.LogAspect                          :78   [32mPSG7Qxwn[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:46:59.701 INFO  com.lzn.config.LogAspect                          :79   [32mPSG7Qxwn[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:46:59.706 INFO  com.lzn.config.LogAspect                          :97   [32mPSG7Qxwn[0;39m 请求参数: ["np5KTOIr",null,null]
+2020-12-13 13:47:00.410 INFO  com.lzn.config.LogAspect                          :109  [32mPSG7Qxwn[0;39m 返回结果: null
+2020-12-13 13:47:00.410 INFO  com.lzn.config.LogAspect                          :110  [32mPSG7Qxwn[0;39m ------------- 结束 耗时：713 ms -------------
+2020-12-13 13:47:04.656 INFO  com.lzn.config.LogAspect                          :76   [32mI6jovqpc[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:47:04.656 INFO  com.lzn.config.LogAspect                          :77   [32mI6jovqpc[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:47:04.656 INFO  com.lzn.config.LogAspect                          :78   [32mI6jovqpc[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:47:04.657 INFO  com.lzn.config.LogAspect                          :79   [32mI6jovqpc[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:04.668 INFO  com.lzn.config.LogAspect                          :97   [32mI6jovqpc[0;39m 请求参数: [{"imageCode":"124","imageCodeToken":"np5KTOIr","loginName":"1243","password":"229908b1573003ab0590bebb181cc940"},null]
+2020-12-13 13:47:04.699 INFO  com.lzn.config.LogAspect                          :109  [32mI6jovqpc[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:47:04.700 INFO  com.lzn.config.LogAspect                          :110  [32mI6jovqpc[0;39m ------------- 结束 耗时：44 ms -------------
+2020-12-13 13:47:04.725 INFO  com.lzn.config.LogAspect                          :76   [32muROy3UzC[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:47:04.725 INFO  com.lzn.config.LogAspect                          :77   [32muROy3UzC[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/EFBf5qUT GET
+2020-12-13 13:47:04.725 INFO  com.lzn.config.LogAspect                          :78   [32muROy3UzC[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:47:04.725 INFO  com.lzn.config.LogAspect                          :79   [32muROy3UzC[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:04.725 INFO  com.lzn.config.LogAspect                          :97   [32muROy3UzC[0;39m 请求参数: ["EFBf5qUT",null,null]
+2020-12-13 13:47:04.734 INFO  com.lzn.config.LogAspect                          :109  [32muROy3UzC[0;39m 返回结果: null
+2020-12-13 13:47:04.735 INFO  com.lzn.config.LogAspect                          :110  [32muROy3UzC[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-13 13:47:11.663 INFO  com.lzn.config.LogAspect                          :76   [32mCm0z9S0d[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:47:11.663 INFO  com.lzn.config.LogAspect                          :77   [32mCm0z9S0d[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:47:11.663 INFO  com.lzn.config.LogAspect                          :78   [32mCm0z9S0d[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:47:11.663 INFO  com.lzn.config.LogAspect                          :79   [32mCm0z9S0d[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:11.664 INFO  com.lzn.config.LogAspect                          :97   [32mCm0z9S0d[0;39m 请求参数: [{"imageCode":"x0aa","imageCodeToken":"EFBf5qUT","loginName":"1243","password":"b91b323be32d50ff1ae29fb335957cac"},null]
+2020-12-13 13:47:11.666 INFO  com.lzn.config.LogAspect                          :109  [32mCm0z9S0d[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:47:11.666 INFO  com.lzn.config.LogAspect                          :110  [32mCm0z9S0d[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-13 13:47:11.678 INFO  com.lzn.config.LogAspect                          :76   [32mXrwTTs8f[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:47:11.678 INFO  com.lzn.config.LogAspect                          :77   [32mXrwTTs8f[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/SdLGLXoO GET
+2020-12-13 13:47:11.678 INFO  com.lzn.config.LogAspect                          :78   [32mXrwTTs8f[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:47:11.678 INFO  com.lzn.config.LogAspect                          :79   [32mXrwTTs8f[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:11.678 INFO  com.lzn.config.LogAspect                          :97   [32mXrwTTs8f[0;39m 请求参数: ["SdLGLXoO",null,null]
+2020-12-13 13:47:11.685 INFO  com.lzn.config.LogAspect                          :109  [32mXrwTTs8f[0;39m 返回结果: null
+2020-12-13 13:47:11.685 INFO  com.lzn.config.LogAspect                          :110  [32mXrwTTs8f[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-13 13:47:16.685 INFO  com.lzn.config.LogAspect                          :76   [32m0j8Z0j77[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:47:16.685 INFO  com.lzn.config.LogAspect                          :77   [32m0j8Z0j77[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:47:16.685 INFO  com.lzn.config.LogAspect                          :78   [32m0j8Z0j77[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:47:16.685 INFO  com.lzn.config.LogAspect                          :79   [32m0j8Z0j77[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:16.685 INFO  com.lzn.config.LogAspect                          :97   [32m0j8Z0j77[0;39m 请求参数: [{"imageCode":"n8nn","imageCodeToken":"SdLGLXoO","loginName":"1243","password":"ed2ddf9ac2141ed0c776d7dd29d49a97"},null]
+2020-12-13 13:47:16.762 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m0j8Z0j77[0;39m HikariPool-1 - Starting...
+2020-12-13 13:47:17.034 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m0j8Z0j77[0;39m HikariPool-1 - Start completed.
+2020-12-13 13:47:17.040 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m0j8Z0j77[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-13 13:47:17.058 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m0j8Z0j77[0;39m ==> Parameters: 1243(String)
+2020-12-13 13:47:17.076 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m0j8Z0j77[0;39m <==      Total: 0
+2020-12-13 13:47:17.081 ERROR com.lzn.service.UserService                       :127  [32m0j8Z0j77[0;39m 用户名不存在
+2020-12-13 13:47:17.095 INFO  com.lzn.config.LogAspect                          :76   [32mtAbv9MDm[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:47:17.095 INFO  com.lzn.config.LogAspect                          :77   [32mtAbv9MDm[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/qN0cB1E5 GET
+2020-12-13 13:47:17.095 INFO  com.lzn.config.LogAspect                          :78   [32mtAbv9MDm[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:47:17.095 INFO  com.lzn.config.LogAspect                          :79   [32mtAbv9MDm[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:17.096 INFO  com.lzn.config.LogAspect                          :97   [32mtAbv9MDm[0;39m 请求参数: ["qN0cB1E5",null,null]
+2020-12-13 13:47:17.101 INFO  com.lzn.config.LogAspect                          :109  [32mtAbv9MDm[0;39m 返回结果: null
+2020-12-13 13:47:17.102 INFO  com.lzn.config.LogAspect                          :110  [32mtAbv9MDm[0;39m ------------- 结束 耗时：7 ms -------------
+2020-12-13 13:47:24.699 INFO  com.lzn.config.LogAspect                          :76   [32mKB3F2fg8[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:47:24.699 INFO  com.lzn.config.LogAspect                          :77   [32mKB3F2fg8[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:47:24.699 INFO  com.lzn.config.LogAspect                          :78   [32mKB3F2fg8[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:47:24.699 INFO  com.lzn.config.LogAspect                          :79   [32mKB3F2fg8[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:47:24.699 INFO  com.lzn.config.LogAspect                          :97   [32mKB3F2fg8[0;39m 请求参数: [{"imageCode":"gnn5","imageCodeToken":"qN0cB1E5","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:47:24.702 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mKB3F2fg8[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-13 13:47:24.703 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mKB3F2fg8[0;39m ==> Parameters: admin(String)
+2020-12-13 13:47:24.704 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mKB3F2fg8[0;39m <==    Columns: id, login_name, name, password
+2020-12-13 13:47:24.704 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mKB3F2fg8[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-13 13:47:24.705 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mKB3F2fg8[0;39m <==      Total: 1
+2020-12-13 13:47:24.711 INFO  com.lzn.config.LogAspect                          :109  [32mKB3F2fg8[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-13 13:47:24.712 INFO  com.lzn.config.LogAspect                          :110  [32mKB3F2fg8[0;39m ------------- 结束 耗时：14 ms -------------
+2020-12-13 13:50:54.560 INFO  com.lzn.config.LogAspect                          :76   [32m4dsqE3W0[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:50:54.560 INFO  com.lzn.config.LogAspect                          :77   [32m4dsqE3W0[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-13 13:50:54.560 INFO  com.lzn.config.LogAspect                          :78   [32m4dsqE3W0[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-13 13:50:54.560 INFO  com.lzn.config.LogAspect                          :79   [32m4dsqE3W0[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:50:54.561 INFO  com.lzn.config.LogAspect                          :97   [32m4dsqE3W0[0;39m 请求参数: [null]
+2020-12-13 13:50:54.561 INFO  com.lzn.config.LogAspect                          :109  [32m4dsqE3W0[0;39m 返回结果: {"success":true}
+2020-12-13 13:50:54.561 INFO  com.lzn.config.LogAspect                          :110  [32m4dsqE3W0[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-13 13:50:54.601 INFO  com.lzn.config.LogAspect                          :76   [32mtsxIoxEU[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:50:54.602 INFO  com.lzn.config.LogAspect                          :77   [32mtsxIoxEU[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/c3J503t1 GET
+2020-12-13 13:50:54.602 INFO  com.lzn.config.LogAspect                          :78   [32mtsxIoxEU[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:50:54.602 INFO  com.lzn.config.LogAspect                          :79   [32mtsxIoxEU[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:50:54.602 INFO  com.lzn.config.LogAspect                          :97   [32mtsxIoxEU[0;39m 请求参数: ["c3J503t1",null,null]
+2020-12-13 13:50:54.609 INFO  com.lzn.config.LogAspect                          :109  [32mtsxIoxEU[0;39m 返回结果: null
+2020-12-13 13:50:54.610 INFO  com.lzn.config.LogAspect                          :110  [32mtsxIoxEU[0;39m ------------- 结束 耗时：9 ms -------------
+2020-12-13 13:50:54.880 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 13:50:58.655 INFO  com.lzn.config.LogAspect                          :76   [32mSxGCbmyT[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:50:58.655 INFO  com.lzn.config.LogAspect                          :77   [32mSxGCbmyT[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:50:58.655 INFO  com.lzn.config.LogAspect                          :78   [32mSxGCbmyT[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:50:58.655 INFO  com.lzn.config.LogAspect                          :79   [32mSxGCbmyT[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:50:58.655 INFO  com.lzn.config.LogAspect                          :97   [32mSxGCbmyT[0;39m 请求参数: [{"imageCode":"yeny","imageCodeToken":"c3J503t1","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:50:58.657 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mSxGCbmyT[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-13 13:50:58.658 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mSxGCbmyT[0;39m ==> Parameters: admin(String)
+2020-12-13 13:50:58.658 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mSxGCbmyT[0;39m <==    Columns: id, login_name, name, password
+2020-12-13 13:50:58.659 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mSxGCbmyT[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-13 13:50:58.659 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mSxGCbmyT[0;39m <==      Total: 1
+2020-12-13 13:50:58.659 INFO  com.lzn.config.LogAspect                          :109  [32mSxGCbmyT[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-13 13:50:58.660 INFO  com.lzn.config.LogAspect                          :110  [32mSxGCbmyT[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:51:00.455 INFO  com.lzn.config.LogAspect                          :76   [32mhgIYWntV[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:00.455 INFO  com.lzn.config.LogAspect                          :77   [32mhgIYWntV[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-13 13:51:00.455 INFO  com.lzn.config.LogAspect                          :78   [32mhgIYWntV[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-13 13:51:00.456 INFO  com.lzn.config.LogAspect                          :79   [32mhgIYWntV[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:00.456 INFO  com.lzn.config.LogAspect                          :97   [32mhgIYWntV[0;39m 请求参数: [null]
+2020-12-13 13:51:00.456 INFO  com.lzn.config.LogAspect                          :109  [32mhgIYWntV[0;39m 返回结果: {"success":true}
+2020-12-13 13:51:00.456 INFO  com.lzn.config.LogAspect                          :110  [32mhgIYWntV[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-13 13:51:00.484 INFO  com.lzn.config.LogAspect                          :76   [32mCopMJAic[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:00.484 INFO  com.lzn.config.LogAspect                          :77   [32mCopMJAic[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/1FXEAlbU GET
+2020-12-13 13:51:00.485 INFO  com.lzn.config.LogAspect                          :78   [32mCopMJAic[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:00.485 INFO  com.lzn.config.LogAspect                          :79   [32mCopMJAic[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:00.485 INFO  com.lzn.config.LogAspect                          :97   [32mCopMJAic[0;39m 请求参数: ["1FXEAlbU",null,null]
+2020-12-13 13:51:00.490 INFO  com.lzn.config.LogAspect                          :109  [32mCopMJAic[0;39m 返回结果: null
+2020-12-13 13:51:00.490 INFO  com.lzn.config.LogAspect                          :110  [32mCopMJAic[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:51:02.455 INFO  com.lzn.config.LogAspect                          :76   [32m2pyA7tPW[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:02.455 INFO  com.lzn.config.LogAspect                          :77   [32m2pyA7tPW[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:51:02.455 INFO  com.lzn.config.LogAspect                          :78   [32m2pyA7tPW[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:51:02.455 INFO  com.lzn.config.LogAspect                          :79   [32m2pyA7tPW[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:02.455 INFO  com.lzn.config.LogAspect                          :97   [32m2pyA7tPW[0;39m 请求参数: [{"imageCodeToken":"1FXEAlbU","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:51:02.476 ERROR o.a.c.c.C.[.[.[/system].[dispatcherServlet]       :175  [32m2pyA7tPW[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/system] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.lzn.system.controller.admin.UserController.login(UserController.java:89)
+	at com.lzn.system.controller.admin.UserController$$FastClassBySpringCGLIB$$ca709954.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.lzn.config.LogAspect.doAround(LogAspect.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lzn.system.controller.admin.UserController$$EnhancerBySpringCGLIB$$9a2a4667.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-13 13:51:13.087 INFO  com.lzn.config.LogAspect                          :76   [32mwgOCD480[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:13.087 INFO  com.lzn.config.LogAspect                          :77   [32mwgOCD480[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/uTcFg26S GET
+2020-12-13 13:51:13.087 INFO  com.lzn.config.LogAspect                          :78   [32mwgOCD480[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:13.087 INFO  com.lzn.config.LogAspect                          :79   [32mwgOCD480[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:13.088 INFO  com.lzn.config.LogAspect                          :97   [32mwgOCD480[0;39m 请求参数: ["uTcFg26S",null,null]
+2020-12-13 13:51:13.092 INFO  com.lzn.config.LogAspect                          :109  [32mwgOCD480[0;39m 返回结果: null
+2020-12-13 13:51:13.093 INFO  com.lzn.config.LogAspect                          :110  [32mwgOCD480[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:51:14.231 INFO  com.lzn.config.LogAspect                          :76   [32mTgfFjOPs[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:14.231 INFO  com.lzn.config.LogAspect                          :77   [32mTgfFjOPs[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:51:14.231 INFO  com.lzn.config.LogAspect                          :78   [32mTgfFjOPs[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:51:14.232 INFO  com.lzn.config.LogAspect                          :79   [32mTgfFjOPs[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:14.232 INFO  com.lzn.config.LogAspect                          :97   [32mTgfFjOPs[0;39m 请求参数: [{"imageCodeToken":"uTcFg26S","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:51:14.234 ERROR o.a.c.c.C.[.[.[/system].[dispatcherServlet]       :175  [32mTgfFjOPs[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/system] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.lzn.system.controller.admin.UserController.login(UserController.java:89)
+	at com.lzn.system.controller.admin.UserController$$FastClassBySpringCGLIB$$ca709954.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.lzn.config.LogAspect.doAround(LogAspect.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lzn.system.controller.admin.UserController$$EnhancerBySpringCGLIB$$9a2a4667.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-13 13:51:15.760 INFO  com.lzn.config.LogAspect                          :76   [32mWdI8kRnb[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:15.760 INFO  com.lzn.config.LogAspect                          :77   [32mWdI8kRnb[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/oz8ZVc1m GET
+2020-12-13 13:51:15.760 INFO  com.lzn.config.LogAspect                          :78   [32mWdI8kRnb[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:15.760 INFO  com.lzn.config.LogAspect                          :79   [32mWdI8kRnb[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:15.760 INFO  com.lzn.config.LogAspect                          :97   [32mWdI8kRnb[0;39m 请求参数: ["oz8ZVc1m",null,null]
+2020-12-13 13:51:15.771 INFO  com.lzn.config.LogAspect                          :109  [32mWdI8kRnb[0;39m 返回结果: null
+2020-12-13 13:51:15.772 INFO  com.lzn.config.LogAspect                          :110  [32mWdI8kRnb[0;39m ------------- 结束 耗时：13 ms -------------
+2020-12-13 13:51:21.576 INFO  com.lzn.config.LogAspect                          :76   [32m16fe5m9b[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:21.576 INFO  com.lzn.config.LogAspect                          :77   [32m16fe5m9b[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:51:21.576 INFO  com.lzn.config.LogAspect                          :78   [32m16fe5m9b[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:51:21.576 INFO  com.lzn.config.LogAspect                          :79   [32m16fe5m9b[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:21.577 INFO  com.lzn.config.LogAspect                          :97   [32m16fe5m9b[0;39m 请求参数: [{"imageCode":"1","imageCodeToken":"oz8ZVc1m","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:51:21.578 INFO  com.lzn.config.LogAspect                          :109  [32m16fe5m9b[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:51:21.578 INFO  com.lzn.config.LogAspect                          :110  [32m16fe5m9b[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-13 13:51:21.591 INFO  com.lzn.config.LogAspect                          :76   [32mPVCDBiKz[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:21.592 INFO  com.lzn.config.LogAspect                          :77   [32mPVCDBiKz[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/D5MBtEYy GET
+2020-12-13 13:51:21.592 INFO  com.lzn.config.LogAspect                          :78   [32mPVCDBiKz[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:21.592 INFO  com.lzn.config.LogAspect                          :79   [32mPVCDBiKz[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:21.592 INFO  com.lzn.config.LogAspect                          :97   [32mPVCDBiKz[0;39m 请求参数: ["D5MBtEYy",null,null]
+2020-12-13 13:51:21.597 INFO  com.lzn.config.LogAspect                          :109  [32mPVCDBiKz[0;39m 返回结果: null
+2020-12-13 13:51:21.597 INFO  com.lzn.config.LogAspect                          :110  [32mPVCDBiKz[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:51:26.095 INFO  com.lzn.config.LogAspect                          :76   [32meaI3dr45[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:26.095 INFO  com.lzn.config.LogAspect                          :77   [32meaI3dr45[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:51:26.096 INFO  com.lzn.config.LogAspect                          :78   [32meaI3dr45[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:51:26.096 INFO  com.lzn.config.LogAspect                          :79   [32meaI3dr45[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:26.096 INFO  com.lzn.config.LogAspect                          :97   [32meaI3dr45[0;39m 请求参数: [{"imageCode":"","imageCodeToken":"D5MBtEYy","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:51:26.097 INFO  com.lzn.config.LogAspect                          :109  [32meaI3dr45[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:51:26.097 INFO  com.lzn.config.LogAspect                          :110  [32meaI3dr45[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-13 13:51:26.108 INFO  com.lzn.config.LogAspect                          :76   [32muGaSWUDI[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:26.108 INFO  com.lzn.config.LogAspect                          :77   [32muGaSWUDI[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/LKJgd9UY GET
+2020-12-13 13:51:26.108 INFO  com.lzn.config.LogAspect                          :78   [32muGaSWUDI[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:26.108 INFO  com.lzn.config.LogAspect                          :79   [32muGaSWUDI[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:26.109 INFO  com.lzn.config.LogAspect                          :97   [32muGaSWUDI[0;39m 请求参数: ["LKJgd9UY",null,null]
+2020-12-13 13:51:26.113 INFO  com.lzn.config.LogAspect                          :109  [32muGaSWUDI[0;39m 返回结果: null
+2020-12-13 13:51:26.114 INFO  com.lzn.config.LogAspect                          :110  [32muGaSWUDI[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:51:27.758 INFO  com.lzn.config.LogAspect                          :76   [32mJjJwaO0y[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:27.758 INFO  com.lzn.config.LogAspect                          :77   [32mJjJwaO0y[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:51:27.759 INFO  com.lzn.config.LogAspect                          :78   [32mJjJwaO0y[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:51:27.759 INFO  com.lzn.config.LogAspect                          :79   [32mJjJwaO0y[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:27.759 INFO  com.lzn.config.LogAspect                          :97   [32mJjJwaO0y[0;39m 请求参数: [{"imageCode":"","imageCodeToken":"LKJgd9UY","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:51:27.760 INFO  com.lzn.config.LogAspect                          :109  [32mJjJwaO0y[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:51:27.760 INFO  com.lzn.config.LogAspect                          :110  [32mJjJwaO0y[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-13 13:51:27.770 INFO  com.lzn.config.LogAspect                          :76   [32mQPjnKjwL[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:27.771 INFO  com.lzn.config.LogAspect                          :77   [32mQPjnKjwL[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/rMU3ATOQ GET
+2020-12-13 13:51:27.771 INFO  com.lzn.config.LogAspect                          :78   [32mQPjnKjwL[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:27.771 INFO  com.lzn.config.LogAspect                          :79   [32mQPjnKjwL[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:27.771 INFO  com.lzn.config.LogAspect                          :97   [32mQPjnKjwL[0;39m 请求参数: ["rMU3ATOQ",null,null]
+2020-12-13 13:51:27.776 INFO  com.lzn.config.LogAspect                          :109  [32mQPjnKjwL[0;39m 返回结果: null
+2020-12-13 13:51:27.776 INFO  com.lzn.config.LogAspect                          :110  [32mQPjnKjwL[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:51:29.770 INFO  com.lzn.config.LogAspect                          :76   [32mlgDVMNAO[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:29.770 INFO  com.lzn.config.LogAspect                          :77   [32mlgDVMNAO[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/wGpftTZz GET
+2020-12-13 13:51:29.770 INFO  com.lzn.config.LogAspect                          :78   [32mlgDVMNAO[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:29.770 INFO  com.lzn.config.LogAspect                          :79   [32mlgDVMNAO[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:29.770 INFO  com.lzn.config.LogAspect                          :97   [32mlgDVMNAO[0;39m 请求参数: ["wGpftTZz",null,null]
+2020-12-13 13:51:29.775 INFO  com.lzn.config.LogAspect                          :109  [32mlgDVMNAO[0;39m 返回结果: null
+2020-12-13 13:51:29.775 INFO  com.lzn.config.LogAspect                          :110  [32mlgDVMNAO[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 13:51:31.146 INFO  com.lzn.config.LogAspect                          :76   [32mM2bzMoka[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:51:31.147 INFO  com.lzn.config.LogAspect                          :77   [32mM2bzMoka[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:51:31.147 INFO  com.lzn.config.LogAspect                          :78   [32mM2bzMoka[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:51:31.147 INFO  com.lzn.config.LogAspect                          :79   [32mM2bzMoka[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:31.147 INFO  com.lzn.config.LogAspect                          :97   [32mM2bzMoka[0;39m 请求参数: [{"imageCodeToken":"wGpftTZz","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:51:31.149 ERROR o.a.c.c.C.[.[.[/system].[dispatcherServlet]       :175  [32mM2bzMoka[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/system] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.lzn.system.controller.admin.UserController.login(UserController.java:89)
+	at com.lzn.system.controller.admin.UserController$$FastClassBySpringCGLIB$$ca709954.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.lzn.config.LogAspect.doAround(LogAspect.java:103)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lzn.system.controller.admin.UserController$$EnhancerBySpringCGLIB$$9a2a4667.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-13 13:51:33.419 INFO  com.lzn.config.LogAspect                          :76   [32mSSc17zNw[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:51:33.419 INFO  com.lzn.config.LogAspect                          :77   [32mSSc17zNw[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/kgNWPmF6 GET
+2020-12-13 13:51:33.420 INFO  com.lzn.config.LogAspect                          :78   [32mSSc17zNw[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:51:33.420 INFO  com.lzn.config.LogAspect                          :79   [32mSSc17zNw[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:51:33.420 INFO  com.lzn.config.LogAspect                          :97   [32mSSc17zNw[0;39m 请求参数: ["kgNWPmF6",null,null]
+2020-12-13 13:51:33.427 INFO  com.lzn.config.LogAspect                          :109  [32mSSc17zNw[0;39m 返回结果: null
+2020-12-13 13:51:33.429 INFO  com.lzn.config.LogAspect                          :110  [32mSSc17zNw[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-13 13:52:05.155 INFO  com.lzn.config.LogAspect                          :76   [32mMHhBds05[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:05.155 INFO  com.lzn.config.LogAspect                          :77   [32mMHhBds05[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/UQcaD8r1 GET
+2020-12-13 13:52:05.155 INFO  com.lzn.config.LogAspect                          :78   [32mMHhBds05[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:05.156 INFO  com.lzn.config.LogAspect                          :79   [32mMHhBds05[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:05.156 INFO  com.lzn.config.LogAspect                          :97   [32mMHhBds05[0;39m 请求参数: ["UQcaD8r1",null,null]
+2020-12-13 13:52:05.160 INFO  com.lzn.config.LogAspect                          :109  [32mMHhBds05[0;39m 返回结果: null
+2020-12-13 13:52:05.160 INFO  com.lzn.config.LogAspect                          :110  [32mMHhBds05[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 13:52:17.726 INFO  com.lzn.config.LogAspect                          :76   [32mypvQdruX[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:17.726 INFO  com.lzn.config.LogAspect                          :77   [32mypvQdruX[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/674v4UAY GET
+2020-12-13 13:52:17.726 INFO  com.lzn.config.LogAspect                          :78   [32mypvQdruX[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:17.726 INFO  com.lzn.config.LogAspect                          :79   [32mypvQdruX[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:17.727 INFO  com.lzn.config.LogAspect                          :97   [32mypvQdruX[0;39m 请求参数: ["674v4UAY",null,null]
+2020-12-13 13:52:17.731 INFO  com.lzn.config.LogAspect                          :109  [32mypvQdruX[0;39m 返回结果: null
+2020-12-13 13:52:17.731 INFO  com.lzn.config.LogAspect                          :110  [32mypvQdruX[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 13:52:28.722 INFO  com.lzn.config.LogAspect                          :76   [32mH8NwJqW0[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:28.723 INFO  com.lzn.config.LogAspect                          :77   [32mH8NwJqW0[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/BLDLh6ds GET
+2020-12-13 13:52:28.723 INFO  com.lzn.config.LogAspect                          :78   [32mH8NwJqW0[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:28.723 INFO  com.lzn.config.LogAspect                          :79   [32mH8NwJqW0[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:28.723 INFO  com.lzn.config.LogAspect                          :97   [32mH8NwJqW0[0;39m 请求参数: ["BLDLh6ds",null,null]
+2020-12-13 13:52:28.728 INFO  com.lzn.config.LogAspect                          :109  [32mH8NwJqW0[0;39m 返回结果: null
+2020-12-13 13:52:28.728 INFO  com.lzn.config.LogAspect                          :110  [32mH8NwJqW0[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:52:31.812 INFO  com.lzn.config.LogAspect                          :76   [32mqWOc19PB[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:52:31.812 INFO  com.lzn.config.LogAspect                          :77   [32mqWOc19PB[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:52:31.812 INFO  com.lzn.config.LogAspect                          :78   [32mqWOc19PB[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:52:31.812 INFO  com.lzn.config.LogAspect                          :79   [32mqWOc19PB[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:31.812 INFO  com.lzn.config.LogAspect                          :97   [32mqWOc19PB[0;39m 请求参数: [{"imageCode":"1243","imageCodeToken":"BLDLh6ds","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:52:31.813 INFO  com.lzn.config.LogAspect                          :109  [32mqWOc19PB[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:52:31.813 INFO  com.lzn.config.LogAspect                          :110  [32mqWOc19PB[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-13 13:52:31.824 INFO  com.lzn.config.LogAspect                          :76   [32mEbbQoR1J[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:31.825 INFO  com.lzn.config.LogAspect                          :77   [32mEbbQoR1J[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/gaEAxjGS GET
+2020-12-13 13:52:31.825 INFO  com.lzn.config.LogAspect                          :78   [32mEbbQoR1J[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:31.825 INFO  com.lzn.config.LogAspect                          :79   [32mEbbQoR1J[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:31.825 INFO  com.lzn.config.LogAspect                          :97   [32mEbbQoR1J[0;39m 请求参数: ["gaEAxjGS",null,null]
+2020-12-13 13:52:31.829 INFO  com.lzn.config.LogAspect                          :109  [32mEbbQoR1J[0;39m 返回结果: null
+2020-12-13 13:52:31.829 INFO  com.lzn.config.LogAspect                          :110  [32mEbbQoR1J[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 13:52:34.174 INFO  com.lzn.config.LogAspect                          :76   [32m08XH90sY[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:52:34.174 INFO  com.lzn.config.LogAspect                          :77   [32m08XH90sY[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:52:34.174 INFO  com.lzn.config.LogAspect                          :78   [32m08XH90sY[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:52:34.174 INFO  com.lzn.config.LogAspect                          :79   [32m08XH90sY[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:34.174 INFO  com.lzn.config.LogAspect                          :97   [32m08XH90sY[0;39m 请求参数: [{"imageCode":"1234","imageCodeToken":"gaEAxjGS","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:52:34.176 INFO  com.lzn.config.LogAspect                          :109  [32m08XH90sY[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 13:52:34.176 INFO  com.lzn.config.LogAspect                          :110  [32m08XH90sY[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-13 13:52:34.186 INFO  com.lzn.config.LogAspect                          :76   [32m2z7HYHcs[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:34.187 INFO  com.lzn.config.LogAspect                          :77   [32m2z7HYHcs[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/KThEmVtP GET
+2020-12-13 13:52:34.187 INFO  com.lzn.config.LogAspect                          :78   [32m2z7HYHcs[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:34.187 INFO  com.lzn.config.LogAspect                          :79   [32m2z7HYHcs[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:34.187 INFO  com.lzn.config.LogAspect                          :97   [32m2z7HYHcs[0;39m 请求参数: ["KThEmVtP",null,null]
+2020-12-13 13:52:34.192 INFO  com.lzn.config.LogAspect                          :109  [32m2z7HYHcs[0;39m 返回结果: null
+2020-12-13 13:52:34.192 INFO  com.lzn.config.LogAspect                          :110  [32m2z7HYHcs[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 13:52:35.476 INFO  com.lzn.config.LogAspect                          :76   [32mtM6y5cl6[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:35.476 INFO  com.lzn.config.LogAspect                          :77   [32mtM6y5cl6[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/8NFQKu22 GET
+2020-12-13 13:52:35.476 INFO  com.lzn.config.LogAspect                          :78   [32mtM6y5cl6[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:35.477 INFO  com.lzn.config.LogAspect                          :79   [32mtM6y5cl6[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:35.477 INFO  com.lzn.config.LogAspect                          :97   [32mtM6y5cl6[0;39m 请求参数: ["8NFQKu22",null,null]
+2020-12-13 13:52:35.481 INFO  com.lzn.config.LogAspect                          :109  [32mtM6y5cl6[0;39m 返回结果: null
+2020-12-13 13:52:35.481 INFO  com.lzn.config.LogAspect                          :110  [32mtM6y5cl6[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 13:52:39.279 INFO  com.lzn.config.LogAspect                          :76   [32m5WKoJSKX[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:52:39.279 INFO  com.lzn.config.LogAspect                          :77   [32m5WKoJSKX[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 13:52:39.280 INFO  com.lzn.config.LogAspect                          :78   [32m5WKoJSKX[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 13:52:39.280 INFO  com.lzn.config.LogAspect                          :79   [32m5WKoJSKX[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:39.280 INFO  com.lzn.config.LogAspect                          :97   [32m5WKoJSKX[0;39m 请求参数: [{"imageCode":"c3np","imageCodeToken":"8NFQKu22","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 13:52:39.281 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m5WKoJSKX[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-13 13:52:39.281 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m5WKoJSKX[0;39m ==> Parameters: admin(String)
+2020-12-13 13:52:39.282 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m5WKoJSKX[0;39m <==    Columns: id, login_name, name, password
+2020-12-13 13:52:39.282 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m5WKoJSKX[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-13 13:52:39.283 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m5WKoJSKX[0;39m <==      Total: 1
+2020-12-13 13:52:39.283 INFO  com.lzn.config.LogAspect                          :109  [32m5WKoJSKX[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-13 13:52:39.283 INFO  com.lzn.config.LogAspect                          :110  [32m5WKoJSKX[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-13 13:52:40.414 INFO  com.lzn.config.LogAspect                          :76   [32mBBUrZweR[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 13:52:40.414 INFO  com.lzn.config.LogAspect                          :77   [32mBBUrZweR[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-13 13:52:40.415 INFO  com.lzn.config.LogAspect                          :78   [32mBBUrZweR[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-13 13:52:40.415 INFO  com.lzn.config.LogAspect                          :79   [32mBBUrZweR[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:40.415 INFO  com.lzn.config.LogAspect                          :97   [32mBBUrZweR[0;39m 请求参数: [null]
+2020-12-13 13:52:40.415 INFO  com.lzn.config.LogAspect                          :109  [32mBBUrZweR[0;39m 返回结果: {"success":true}
+2020-12-13 13:52:40.415 INFO  com.lzn.config.LogAspect                          :110  [32mBBUrZweR[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-13 13:52:40.448 INFO  com.lzn.config.LogAspect                          :76   [32mQEJqC8ka[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 13:52:40.448 INFO  com.lzn.config.LogAspect                          :77   [32mQEJqC8ka[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/HHvVhTJi GET
+2020-12-13 13:52:40.448 INFO  com.lzn.config.LogAspect                          :78   [32mQEJqC8ka[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 13:52:40.448 INFO  com.lzn.config.LogAspect                          :79   [32mQEJqC8ka[0;39m 远程地址: 127.0.0.1
+2020-12-13 13:52:40.448 INFO  com.lzn.config.LogAspect                          :97   [32mQEJqC8ka[0;39m 请求参数: ["HHvVhTJi",null,null]
+2020-12-13 13:52:40.454 INFO  com.lzn.config.LogAspect                          :109  [32mQEJqC8ka[0;39m 返回结果: null
+2020-12-13 13:52:40.454 INFO  com.lzn.config.LogAspect                          :110  [32mQEJqC8ka[0;39m ------------- 结束 耗时：7 ms -------------
+2020-12-13 13:55:54.881 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 14:00:54.883 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 14:05:54.885 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 14:10:54.886 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-13 14:12:08.623 INFO  com.lzn.config.LogAspect                          :76   [32mID9rVKPU[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 14:12:08.623 INFO  com.lzn.config.LogAspect                          :77   [32mID9rVKPU[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 14:12:08.623 INFO  com.lzn.config.LogAspect                          :78   [32mID9rVKPU[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 14:12:08.623 INFO  com.lzn.config.LogAspect                          :79   [32mID9rVKPU[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:08.624 INFO  com.lzn.config.LogAspect                          :97   [32mID9rVKPU[0;39m 请求参数: [{"imageCode":"123","imageCodeToken":"HHvVhTJi","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 14:12:08.625 INFO  com.lzn.config.LogAspect                          :109  [32mID9rVKPU[0;39m 返回结果: {"message":"验证码已过期","success":false}
+2020-12-13 14:12:08.626 INFO  com.lzn.config.LogAspect                          :110  [32mID9rVKPU[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-13 14:12:08.637 INFO  com.lzn.config.LogAspect                          :76   [32mmysBA7M0[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 14:12:08.637 INFO  com.lzn.config.LogAspect                          :77   [32mmysBA7M0[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/moQRI1TS GET
+2020-12-13 14:12:08.637 INFO  com.lzn.config.LogAspect                          :78   [32mmysBA7M0[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 14:12:08.637 INFO  com.lzn.config.LogAspect                          :79   [32mmysBA7M0[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:08.637 INFO  com.lzn.config.LogAspect                          :97   [32mmysBA7M0[0;39m 请求参数: ["moQRI1TS",null,null]
+2020-12-13 14:12:08.642 INFO  com.lzn.config.LogAspect                          :109  [32mmysBA7M0[0;39m 返回结果: null
+2020-12-13 14:12:08.643 INFO  com.lzn.config.LogAspect                          :110  [32mmysBA7M0[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 14:12:11.448 INFO  com.lzn.config.LogAspect                          :76   [32mn74htHAX[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 14:12:11.448 INFO  com.lzn.config.LogAspect                          :77   [32mn74htHAX[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 14:12:11.448 INFO  com.lzn.config.LogAspect                          :78   [32mn74htHAX[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 14:12:11.448 INFO  com.lzn.config.LogAspect                          :79   [32mn74htHAX[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:11.449 INFO  com.lzn.config.LogAspect                          :97   [32mn74htHAX[0;39m 请求参数: [{"imageCode":"123123","imageCodeToken":"moQRI1TS","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 14:12:11.450 INFO  com.lzn.config.LogAspect                          :109  [32mn74htHAX[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 14:12:11.450 INFO  com.lzn.config.LogAspect                          :110  [32mn74htHAX[0;39m ------------- 结束 耗时：2 ms -------------
+2020-12-13 14:12:11.461 INFO  com.lzn.config.LogAspect                          :76   [32mi3dXY0B3[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 14:12:11.461 INFO  com.lzn.config.LogAspect                          :77   [32mi3dXY0B3[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/oFxNpI1f GET
+2020-12-13 14:12:11.461 INFO  com.lzn.config.LogAspect                          :78   [32mi3dXY0B3[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 14:12:11.461 INFO  com.lzn.config.LogAspect                          :79   [32mi3dXY0B3[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:11.462 INFO  com.lzn.config.LogAspect                          :97   [32mi3dXY0B3[0;39m 请求参数: ["oFxNpI1f",null,null]
+2020-12-13 14:12:11.465 INFO  com.lzn.config.LogAspect                          :109  [32mi3dXY0B3[0;39m 返回结果: null
+2020-12-13 14:12:11.466 INFO  com.lzn.config.LogAspect                          :110  [32mi3dXY0B3[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 14:12:13.721 INFO  com.lzn.config.LogAspect                          :76   [32mziavZz71[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 14:12:13.721 INFO  com.lzn.config.LogAspect                          :77   [32mziavZz71[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 14:12:13.722 INFO  com.lzn.config.LogAspect                          :78   [32mziavZz71[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 14:12:13.722 INFO  com.lzn.config.LogAspect                          :79   [32mziavZz71[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:13.722 INFO  com.lzn.config.LogAspect                          :97   [32mziavZz71[0;39m 请求参数: [{"imageCode":"123123123","imageCodeToken":"oFxNpI1f","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 14:12:13.724 INFO  com.lzn.config.LogAspect                          :109  [32mziavZz71[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-13 14:12:13.724 INFO  com.lzn.config.LogAspect                          :110  [32mziavZz71[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-13 14:12:13.733 INFO  com.lzn.config.LogAspect                          :76   [32mAqnH6ONt[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 14:12:13.734 INFO  com.lzn.config.LogAspect                          :77   [32mAqnH6ONt[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/j2mg0rPP GET
+2020-12-13 14:12:13.734 INFO  com.lzn.config.LogAspect                          :78   [32mAqnH6ONt[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 14:12:13.734 INFO  com.lzn.config.LogAspect                          :79   [32mAqnH6ONt[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:13.734 INFO  com.lzn.config.LogAspect                          :97   [32mAqnH6ONt[0;39m 请求参数: ["j2mg0rPP",null,null]
+2020-12-13 14:12:13.738 INFO  com.lzn.config.LogAspect                          :109  [32mAqnH6ONt[0;39m 返回结果: null
+2020-12-13 14:12:13.739 INFO  com.lzn.config.LogAspect                          :110  [32mAqnH6ONt[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-13 14:12:19.671 INFO  com.lzn.config.LogAspect                          :76   [32mc9LdUMEl[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 14:12:19.672 INFO  com.lzn.config.LogAspect                          :77   [32mc9LdUMEl[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-13 14:12:19.672 INFO  com.lzn.config.LogAspect                          :78   [32mc9LdUMEl[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-13 14:12:19.672 INFO  com.lzn.config.LogAspect                          :79   [32mc9LdUMEl[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:19.672 INFO  com.lzn.config.LogAspect                          :97   [32mc9LdUMEl[0;39m 请求参数: [{"imageCode":"5wn5","imageCodeToken":"j2mg0rPP","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-13 14:12:19.674 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mc9LdUMEl[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-13 14:12:19.675 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mc9LdUMEl[0;39m ==> Parameters: admin(String)
+2020-12-13 14:12:19.675 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mc9LdUMEl[0;39m <==    Columns: id, login_name, name, password
+2020-12-13 14:12:19.675 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mc9LdUMEl[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-13 14:12:19.676 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mc9LdUMEl[0;39m <==      Total: 1
+2020-12-13 14:12:19.676 INFO  com.lzn.config.LogAspect                          :109  [32mc9LdUMEl[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-13 14:12:19.676 INFO  com.lzn.config.LogAspect                          :110  [32mc9LdUMEl[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 14:12:21.231 INFO  com.lzn.config.LogAspect                          :76   [32mmYiBTT9G[0;39m ------------- 【用户】操作开始 -------------
+2020-12-13 14:12:21.231 INFO  com.lzn.config.LogAspect                          :77   [32mmYiBTT9G[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/ GET
+2020-12-13 14:12:21.231 INFO  com.lzn.config.LogAspect                          :78   [32mmYiBTT9G[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-13 14:12:21.231 INFO  com.lzn.config.LogAspect                          :79   [32mmYiBTT9G[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:21.231 INFO  com.lzn.config.LogAspect                          :97   [32mmYiBTT9G[0;39m 请求参数: [null]
+2020-12-13 14:12:21.231 INFO  com.lzn.config.LogAspect                          :109  [32mmYiBTT9G[0;39m 返回结果: {"success":true}
+2020-12-13 14:12:21.232 INFO  com.lzn.config.LogAspect                          :110  [32mmYiBTT9G[0;39m ------------- 结束 耗时：1 ms -------------
+2020-12-13 14:12:21.265 INFO  com.lzn.config.LogAspect                          :76   [32m03gIN61b[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-13 14:12:21.266 INFO  com.lzn.config.LogAspect                          :77   [32m03gIN61b[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/ziaoRjq6 GET
+2020-12-13 14:12:21.266 INFO  com.lzn.config.LogAspect                          :78   [32m03gIN61b[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-13 14:12:21.266 INFO  com.lzn.config.LogAspect                          :79   [32m03gIN61b[0;39m 远程地址: 127.0.0.1
+2020-12-13 14:12:21.266 INFO  com.lzn.config.LogAspect                          :97   [32m03gIN61b[0;39m 请求参数: ["ziaoRjq6",null,null]
+2020-12-13 14:12:21.270 INFO  com.lzn.config.LogAspect                          :109  [32m03gIN61b[0;39m 返回结果: null
+2020-12-13 14:12:21.270 INFO  com.lzn.config.LogAspect                          :110  [32m03gIN61b[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-13 14:15:54.887 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
