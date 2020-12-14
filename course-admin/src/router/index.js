@@ -13,6 +13,7 @@ import Section from '../views/admin/section.vue'
 import File from '../views/admin/file.vue'
 import User from '../views/admin/user.vue'
 import Role from '../views/admin/role.vue'
+import Resource from '../views/admin/resource.vue'
 // Vue.use(VueRouter);
 Vue.use(Router);
 
@@ -84,6 +85,10 @@ export default new Router(
 							path: 'system/role',
 							name: 'system/role',
 							component: Role	
+						}, {
+							path: 'system/resource',
+							name: 'system/resource',
+							component: Resource
 						}]
         }],
 				

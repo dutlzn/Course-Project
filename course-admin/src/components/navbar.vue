@@ -49,12 +49,21 @@
 						</v-list-item-content>
 					</v-list-item>
 
-				<v-list-item to="/system/role">
+					<v-list-item to="/system/role">
 						<v-list-item-content>
 							<v-list-item-title>角色管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
 					
+					<v-list-item to="/system/resource">
+						<v-list-item-content>
+							<v-list-item-title>资源管理</v-list-item-title>
+						</v-list-item-content>
+					</v-list-item>
+					
+					
+					
+
 				</v-list-group>
 
 
