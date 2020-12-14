@@ -11,7 +11,8 @@ import Course from '../views/admin/course.vue'
 import Chapter from '../views/admin/chapter.vue'
 import Section from '../views/admin/section.vue'
 import File from '../views/admin/file.vue'
-import User from '../views/admin/user'
+import User from '../views/admin/user.vue'
+import Role from '../views/admin/role.vue'
 // Vue.use(VueRouter);
 Vue.use(Router);
 
@@ -79,6 +80,10 @@ export default new Router(
 							path: 'system/user',
 							name: 'system/user',
 							component: User
+						}, {
+							path: 'system/role',
+							name: 'system/role',
+							component: Role	
 						}]
         }],
 				
