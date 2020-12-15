@@ -8,18 +8,18 @@
 				</v-card-title>
 
 				<v-card-text>
-					 						<v-col cols="12">
-							<v-text-field label="名称" v-model="resource.name" required></v-text-field>
-						</v-col>
-						<v-col cols="12">
-							<v-text-field label="页面" v-model="resource.page" required></v-text-field>
-						</v-col>
-						<v-col cols="12">
-							<v-text-field label="请求" v-model="resource.request" required></v-text-field>
-						</v-col>
-						<v-col cols="12">
-							<v-text-field label="父id" v-model="resource.parent" required></v-text-field>
-						</v-col>
+					<v-col cols="12">
+						<v-text-field label="名称" v-model="resource.name" required></v-text-field>
+					</v-col>
+					<v-col cols="12">
+						<v-text-field label="页面" v-model="resource.page" required></v-text-field>
+					</v-col>
+					<v-col cols="12">
+						<v-text-field label="请求" v-model="resource.request" required></v-text-field>
+					</v-col>
+					<v-col cols="12">
+						<v-text-field label="父id" v-model="resource.parent" required></v-text-field>
+					</v-col>
 				</v-card-text>
 				<v-card-actions>
 					<v-spacer></v-spacer>
@@ -37,10 +37,25 @@
 
 		<p class="ma-10">
 
-			<v-btn class="mr-5 mb-5" color="primary" @click="add()">
+			<!-- 		<v-btn class="mr-5 mb-5" color="primary" @click="add()">
 				<v-icon left small>add</v-icon>
 				新增
-			</v-btn>
+			</v-btn> -->
+			
+			<!-- 资源树的编辑 -->
+			<!-- <v-text-field  outlined></v-text-field> --> 
+			<v-row>
+				<v-col cols="10">
+					<v-textarea outlined name="input-7-1" label="资源树"  v-model="resourceStr" hint="输入资源配置信息"></v-textarea>
+				</v-col>
+				
+				<v-col  cols="2" class="d-flex ">
+					<v-btn class="my-auto" color="primary" @click="save()">
+						保存
+					</v-btn>
+				</v-col>
+			</v-row>
+			<br>
 
 			<v-btn class="mb-5" color="primary" @click="list(1)">
 				<v-icon left small>refresh</v-icon>
@@ -59,11 +74,11 @@
 					<v-simple-table>
 						<thead>
 							<tr>
-										<th class="primary--text text-h6 text-center">id</th>
-										<th class="primary--text text-h6 text-center">名称</th>
-										<th class="primary--text text-h6 text-center">页面</th>
-										<th class="primary--text text-h6 text-center">请求</th>
-										<th class="primary--text text-h6 text-center">父id</th>
+								<th class="primary--text text-h6 text-center">id</th>
+								<th class="primary--text text-h6 text-center">名称</th>
+								<th class="primary--text text-h6 text-center">页面</th>
+								<th class="primary--text text-h6 text-center">请求</th>
+								<th class="primary--text text-h6 text-center">父id</th>
 								<th class="primary--text  text-h6 text-center">
 									操作
 								</th>
@@ -72,11 +87,11 @@
 						<tbody>
 							<tr v-for="resource in resources" class="text-center">
 
-												<td>{{resource.id}}</td>
-												<td>{{resource.name}}</td>
-												<td>{{resource.page}}</td>
-												<td>{{resource.request}}</td>
-												<td>{{resource.parent}}</td>
+								<td>{{resource.id}}</td>
+								<td>{{resource.name}}</td>
+								<td>{{resource.page}}</td>
+								<td>{{resource.request}}</td>
+								<td>{{resource.parent}}</td>
 
 								<td>
 									<v-row align="center" justify="space-around">
@@ -109,76 +124,62 @@
 
 		data: function() {
 			return {
-	        resource: {},
-	        resources: [],
+				
+				resource: {},
+				resources: [],
+				// 资源树
+				resourceStr: "",
 
-					dialog: false,
+				dialog: false,
 			}
 		},
 
-	  mounted: function() {
+		mounted: function() {
 			let _this = this;
 			_this.$refs.pagination.size = 5;
 			_this.list(1);
 
-	  },
+		},
 
 		methods: {
 			// 获取所有小节的数据
 			list(page) {
-					let _this = this;
-					Loading.show();
-					_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/resource/list', {
-						page: page,
-						size: _this.$refs.pagination.size,
-					}).then((response)=>{
-						Loading.hide();
-						let resp = response.data;
-						_this.resources = resp.content.list;
-						_this.$refs.pagination.render(page, resp.content.total);
+				let _this = this;
+				Loading.show();
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/resource/list', {
+					page: page,
+					size: _this.$refs.pagination.size,
+				}).then((response) => {
+					Loading.hide();
+					let resp = response.data;
+					_this.resources = resp.content.list;
+					_this.$refs.pagination.render(page, resp.content.total);
 
-					})
+				})
 			},
-			/**
-			 * 新增小节
-			 */
-			add() {
-        let _this = this;
-        _this.resource = {};
-				_this.dialog = true;
-			},
-
-			/**
-			 * 编辑小节
-			 */
-			edit(resource) {
-        let _this = this;
-        _this.resource = $.extend({}, resource);
-				_this.dialog = true;
-      },
-
+			
 			/**
 			 * 保存
 			 */
-			save() {
+     /**
+       * 点击【保存】
+       */
+      save() {
         let _this = this;
 
         // 保存校验
-        if (1 != 1
-          || !Validator.require(_this.resource.name, "名称")
-          || !Validator.length(_this.resource.name, "名称", 1, 100)
-          || !Validator.length(_this.resource.page, "页面", 1, 50)
-          || !Validator.length(_this.resource.request, "请求", 1, 200)
-        ) {
+        if (Tool.isEmpty(_this.resourceStr)) {
+          Toast.warning("资源不能为空！");
           return;
         }
+        let json = JSON.parse(_this.resourceStr);
 
         Loading.show();
-        _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/resource/save', _this.resource).then((response)=>{
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/resource/save', json).then((response)=>{
           Loading.hide();
           let resp = response.data;
           if (resp.success) {
-            _this.dialog = false,
+            $("#form-modal").modal("hide");
             _this.list(1);
             Toast.success("保存成功！");
           } else {
@@ -190,20 +191,20 @@
 			/**
 			 * 删除小节
 			 */
-      del(id) {
-        let _this = this;
-        Confirm.show("删除资源后不可恢复，确认删除？", function () {
-          Loading.show();
-          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/system/admin/resource/delete/' + id).then((response)=>{
-            Loading.hide();
-            let resp = response.data;
-            if (resp.success) {
-              _this.list(1);
-              Toast.success("删除成功！");
-            }
-          })
-        });
-      }
+			del(id) {
+				let _this = this;
+				Confirm.show("删除资源后不可恢复，确认删除？", function() {
+					Loading.show();
+					_this.$ajax.delete(process.env.VUE_APP_SERVER + '/system/admin/resource/delete/' + id).then((response) => {
+						Loading.hide();
+						let resp = response.data;
+						if (resp.success) {
+							_this.list(1);
+							Toast.success("删除成功！");
+						}
+					})
+				});
+			}
 		}
 	}
 </script>

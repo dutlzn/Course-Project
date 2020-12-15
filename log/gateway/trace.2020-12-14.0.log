@@ -1,0 +1,770 @@
+2020-12-14 10:21:48.884 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-14 10:21:51.023 INFO  com.lzn.gateway.GatewayApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-14 10:21:55.479 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 10:21:55.484 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 10:21:55.548 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-12-14 10:21:55.902 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=beab72f5-140f-30c9-8b93-c95d4fbca480
+2020-12-14 10:21:55.980 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 10:21:55.982 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 10:21:55.986 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 10:21:57.693 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 10:21:57.694 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 10:21:57.734 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 10:21:57.735 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 10:21:57.849 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-14 10:21:59.243 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 10:22:00.504 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 10:22:01.427 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2020-12-14 10:22:01.428 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2020-12-14 10:22:01.428 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2020-12-14 10:22:01.429 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2020-12-14 10:22:01.429 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2020-12-14 10:22:01.429 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2020-12-14 10:22:01.429 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2020-12-14 10:22:01.429 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2020-12-14 10:22:01.430 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2020-12-14 10:22:01.430 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-12-14 10:22:01.430 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2020-12-14 10:22:01.430 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2020-12-14 10:22:01.430 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-12-14 10:22:03.103 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 10:22:04.311 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 10:22:04.404 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-14 10:22:04.457 WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger:77   [32m        [0;39m You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-14 10:22:04.557 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-14 10:22:04.741 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-14 10:22:05.438 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-14 10:22:05.438 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-14 10:22:05.638 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-14 10:22:05.638 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-14 10:22:06.140 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:22:06.416 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-14 10:22:06.417 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-14 10:22:06.417 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-14 10:22:06.418 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-14 10:22:06.418 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-14 10:22:06.418 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-14 10:22:06.418 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-14 10:22:06.967 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-14 10:22:06.971 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-14 10:22:06.984 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-14 10:22:06.989 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607912526988 with initial instances count: 0
+2020-12-14 10:22:06.992 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application GATEWAY with eureka with status UP
+2020-12-14 10:22:06.993 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607912526993, current=UP, previous=STARTING]
+2020-12-14 10:22:07.009 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000: registering service...
+2020-12-14 10:22:07.308 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000 - registration status: 204
+2020-12-14 10:22:07.758 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :109  [32m        [0;39m Netty started on port(s): 9000
+2020-12-14 10:22:07.759 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9000
+2020-12-14 10:22:09.140 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 10:22:10.572 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 10:22:10.609 INFO  com.lzn.gateway.GatewayApplication                :61   [32m        [0;39m Started GatewayApplication in 23.157 seconds (JVM running for 23.854)
+2020-12-14 10:22:10.612 INFO  com.lzn.gateway.GatewayApplication                :29   [32m        [0;39m 启动成功！！
+2020-12-14 10:22:10.613 INFO  com.lzn.gateway.GatewayApplication                :30   [32m        [0;39m Gateway: 	http://127.0.0.1:9000
+2020-12-14 10:22:36.972 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-14 10:22:36.973 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-14 10:22:36.973 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-14 10:22:36.973 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-14 10:22:36.973 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-14 10:22:36.974 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: false
+2020-12-14 10:22:36.974 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-14 10:22:37.008 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-14 10:24:57.049 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/Kfj5Tejs
+2020-12-14 10:24:57.292 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 10:24:57.319 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-system
+2020-12-14 10:24:57.320 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: system instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 10:24:57.328 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 10:24:57.351 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 10:24:57.353 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client system initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[localhost:9001],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9001;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@7cd58076
+2020-12-14 10:24:58.333 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 10:25:06.298 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 10:25:10.396 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：li3tPOxA
+2020-12-14 10:25:10.526 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"li3tPOxA"}
+2020-12-14 10:25:18.965 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 10:25:18.965 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 10:25:21.739 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 10:25:21.739 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 10:25:24.413 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：li3tPOxA
+2020-12-14 10:25:24.415 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"li3tPOxA"}
+2020-12-14 10:25:30.757 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/logout/li3tPOxA
+2020-12-14 10:25:30.805 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/D7uomyFV
+2020-12-14 10:25:33.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 10:25:33.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 10:27:06.424 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:32:06.425 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:37:06.428 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:42:06.430 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:47:06.432 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:52:06.433 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 10:57:06.436 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:02:06.438 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:07:06.439 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:12:06.442 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:17:06.443 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:22:06.444 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:27:06.446 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:32:06.447 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:37:06.448 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:42:06.451 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:47:06.453 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:52:06.455 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 11:57:06.456 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:02:06.457 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:07:06.459 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:12:06.461 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:17:06.462 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:22:06.463 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:27:06.465 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:32:06.466 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:37:06.468 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:42:06.469 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:47:06.472 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:52:06.473 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 12:57:06.475 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:02:06.477 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:07:06.479 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:12:06.481 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:17:06.483 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:22:06.485 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:27:06.487 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:32:06.489 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:37:06.491 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:42:06.493 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:47:06.495 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:52:06.496 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 13:57:06.498 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:02:06.500 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:07:06.502 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:12:06.503 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:17:06.504 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:22:06.506 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:27:06.507 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:32:06.509 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:37:06.511 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:42:06.512 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:47:06.514 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:52:06.516 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 14:57:06.517 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:02:06.518 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:07:06.519 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:12:06.520 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:17:06.522 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:18:49.108 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 15:18:49.190 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/0dIWRd88
+2020-12-14 15:18:54.145 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 15:18:59.752 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:18:59.758 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:05.900 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/M3fxPnrk
+2020-12-14 15:19:28.007 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:28.008 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:37.496 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:37.498 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:37.502 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:37.504 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:37.506 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:37.506 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:37.566 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 15:19:37.569 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-business
+2020-12-14 15:19:37.570 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: business instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=business,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 15:19:37.572 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 15:19:37.574 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 15:19:37.575 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client business initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=business,current list of Servers=[localhost:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6eca0dba
+2020-12-14 15:19:38.349 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: file.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 15:19:38.351 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-file
+2020-12-14 15:19:38.352 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: file instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=file,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 15:19:38.355 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 15:19:38.357 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: file.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 15:19:38.358 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client file initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=file,current list of Servers=[localhost:9003],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9003;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@54490995
+2020-12-14 15:19:38.574 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 15:19:39.356 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: file.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 15:19:42.371 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:42.372 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:47.493 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:47.494 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:49.783 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:19:49.785 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:19:54.336 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:19:54.336 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:19:56.884 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:19:56.885 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:19:57.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:19:57.453 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:20:05.063 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：agdcogt1
+2020-12-14 15:20:05.065 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"agdcogt1"}
+2020-12-14 15:22:06.523 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:27:01.642 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/logout/agdcogt1
+2020-12-14 15:27:01.688 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/tICY9Js2
+2020-12-14 15:27:05.544 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:27:05.544 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:27:06.526 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:27:17.780 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:27:17.780 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:27:19.460 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:27:19.460 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:27:20.052 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：null
+2020-12-14 15:27:20.052 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :45   [32m        [0;39m token为空，请求被拦截
+2020-12-14 15:28:32.799 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 15:28:34.497 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/logout/FmH4jbwT
+2020-12-14 15:28:34.536 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/HpDtEzzc
+2020-12-14 15:28:39.943 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 15:28:41.674 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/logout/0A82Emdv
+2020-12-14 15:28:41.707 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/jDmPc9fc
+2020-12-14 15:32:06.526 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:37:06.528 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:42:06.529 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:47:06.531 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:52:06.532 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 15:57:06.533 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:02:06.536 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:07:06.537 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:12:06.539 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:15:04.619 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 16:15:04.652 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/Dn5uuVwo
+2020-12-14 16:15:13.756 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 16:15:13.796 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/yxc7zCEG
+2020-12-14 16:15:23.354 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 16:15:25.461 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 16:15:25.466 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"qNw3oyDY"}
+2020-12-14 16:17:06.540 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:22:06.541 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:27:06.543 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:32:06.545 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:37:06.546 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:42:06.547 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:47:06.548 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:52:06.550 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 16:57:06.552 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:02:06.553 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:07:06.554 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:12:06.557 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:17:06.559 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:22:06.560 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:27:06.563 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:28:01.785 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:01.785 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:01.785 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:01.795 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:01.795 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:01.795 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:24.158 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:24.159 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:24.160 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:24.161 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:24.162 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:24.164 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:29.458 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:29.460 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:35.194 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:35.195 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:42.413 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：qNw3oyDY
+2020-12-14 17:28:42.415 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 17:28:43.732 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/5pFUk3kt
+2020-12-14 17:28:46.492 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/n51ewyP9
+2020-12-14 17:28:53.040 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 17:28:55.140 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:28:55.143 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:32:06.566 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:35:28.184 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:35:28.184 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:35:28.184 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:35:28.186 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:35:28.186 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:35:28.187 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:37:06.567 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:41:30.206 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:41:30.208 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:41:33.980 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:41:33.982 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:41:34.207 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：TeOSrzIo
+2020-12-14 17:41:34.208 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"TeOSrzIo"}
+2020-12-14 17:42:06.568 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:47:06.569 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:50:10.756 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/4Ofe9iex
+2020-12-14 17:50:51.045 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/QTeCBx7q
+2020-12-14 17:50:57.336 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/VnjduKL8
+2020-12-14 17:51:15.642 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/0YWZpzU7
+2020-12-14 17:51:22.417 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 17:51:24.662 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:51:24.664 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:51:51.840 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:51:51.843 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:51:59.020 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:51:59.020 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:51:59.064 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:51:59.065 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:52:01.201 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:52:01.203 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:52:01.240 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:52:01.241 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:52:04.651 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:52:04.652 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:52:06.571 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 17:54:04.148 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 17:54:04.149 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"5jMRAZlx"}
+2020-12-14 17:57:06.574 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:02:06.575 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:07:06.577 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:12:06.578 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:17:06.579 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:22:06.581 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:27:06.583 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:32:06.584 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:37:06.586 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:42:06.589 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:47:06.591 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:52:06.593 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 18:57:06.595 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:02:06.597 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:07:06.598 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:12:06.600 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:17:06.602 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:22:06.604 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:27:06.606 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:32:06.608 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:37:06.610 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:42:06.611 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:47:06.614 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:50:52.763 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:50:52.772 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:52:06.615 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:52:41.459 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:52:41.460 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:52:44.761 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:52:44.763 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:52:58.209 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:52:58.211 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:53:39.674 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:53:39.676 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:53:56.474 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:53:56.475 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:54:59.706 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:54:59.708 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:55:26.220 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:55:26.222 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:55:36.745 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:55:36.750 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:56:08.575 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：5jMRAZlx
+2020-12-14 19:56:08.577 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 19:56:08.645 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/YKZuggcP
+2020-12-14 19:56:23.334 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/9UlXQRxS
+2020-12-14 19:56:37.006 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/pF8GYA0c
+2020-12-14 19:57:06.617 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 19:57:08.333 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/JwXdaSC4
+2020-12-14 19:57:14.041 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 19:57:14.104 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/MCi7uWdb
+2020-12-14 19:57:21.791 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 19:57:24.366 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:57:24.368 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:57:26.580 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:57:26.581 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:57:44.187 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:57:44.189 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:58:05.381 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:58:05.383 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:58:11.672 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:58:11.673 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:58:40.248 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:58:40.249 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:58:53.089 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:58:53.091 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:58:55.940 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:58:55.941 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:59:16.948 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:59:16.949 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 19:59:24.146 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 19:59:24.147 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:00:19.205 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:00:19.208 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:00:31.588 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:00:31.590 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:00:38.637 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:00:38.638 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:07.827 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:07.831 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:10.549 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:10.550 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:12.530 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:12.531 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:14.414 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:14.416 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:46.005 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-14 20:01:47.513 INFO  com.lzn.gateway.GatewayApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-14 20:01:48.026 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 20:01:48.029 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 20:01:48.048 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-12-14 20:01:48.200 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=beab72f5-140f-30c9-8b93-c95d4fbca480
+2020-12-14 20:01:48.252 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:01:48.254 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:01:48.256 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:01:48.647 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 20:01:48.647 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 20:01:48.652 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 20:01:48.652 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 20:01:48.696 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-14 20:01:49.888 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:01:51.026 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2020-12-14 20:01:51.511 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-12-14 20:01:52.850 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:01:53.963 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:01:53.965 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-14 20:01:53.976 WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger:77   [32m        [0;39m You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-14 20:01:54.014 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-14 20:01:54.082 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-14 20:01:54.419 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-14 20:01:54.419 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-14 20:01:54.580 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-14 20:01:54.581 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-14 20:01:54.797 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:01:54.884 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-14 20:01:54.885 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-14 20:01:54.885 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-14 20:01:54.885 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-14 20:01:54.885 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-14 20:01:54.885 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-14 20:01:54.885 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-14 20:01:55.002 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-14 20:01:55.004 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-14 20:01:55.006 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-14 20:01:55.008 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607947315007 with initial instances count: 4
+2020-12-14 20:01:55.009 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application GATEWAY with eureka with status UP
+2020-12-14 20:01:55.009 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607947315009, current=UP, previous=STARTING]
+2020-12-14 20:01:55.011 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000: registering service...
+2020-12-14 20:01:55.035 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000 - registration status: 204
+2020-12-14 20:01:55.216 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :109  [32m        [0;39m Netty started on port(s): 9000
+2020-12-14 20:01:55.217 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9000
+2020-12-14 20:01:55.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:55.559 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:55.702 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:01:55.725 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-system
+2020-12-14 20:01:55.725 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: system instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 20:01:55.729 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 20:01:55.748 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:01:55.749 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client system initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[localhost:9001],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9001;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@3e98e9ca
+2020-12-14 20:01:56.441 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:01:56.733 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:01:57.551 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:01:57.565 INFO  com.lzn.gateway.GatewayApplication                :61   [32m        [0;39m Started GatewayApplication in 12.955 seconds (JVM running for 13.459)
+2020-12-14 20:01:57.566 INFO  com.lzn.gateway.GatewayApplication                :29   [32m        [0;39m 启动成功！！
+2020-12-14 20:01:57.566 INFO  com.lzn.gateway.GatewayApplication                :30   [32m        [0;39m Gateway: 	http://127.0.0.1:9000
+2020-12-14 20:01:58.480 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:58.482 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:01:59.796 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:01:59.797 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:00.947 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:00.948 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:02.851 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:02.853 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:04.019 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:04.020 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:05.157 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:05.159 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:06.300 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:06.301 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:07.618 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:07.619 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:08.884 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:08.885 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:10.020 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:10.021 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:11.180 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:11.181 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:12.219 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:12.221 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:13.289 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:13.291 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:14.564 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:14.566 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:15.611 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:15.613 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:18.251 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:18.253 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:19.572 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:19.574 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:20.674 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:20.675 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:21.924 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:21.925 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"8p9h2Q6z"}
+2020-12-14 20:02:22.980 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:22.981 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 20:02:27.535 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：8p9h2Q6z
+2020-12-14 20:02:27.536 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 20:02:28.071 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/2OzjjDwW
+2020-12-14 20:02:29.007 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/p9iARXnb
+2020-12-14 20:02:35.986 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:02:36.007 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/nC4P1ERO
+2020-12-14 20:02:40.777 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:02:51.194 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-14 20:02:52.642 INFO  com.lzn.gateway.GatewayApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-14 20:02:53.059 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 20:02:53.062 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 20:02:53.079 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-12-14 20:02:53.228 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=beab72f5-140f-30c9-8b93-c95d4fbca480
+2020-12-14 20:02:53.281 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:02:53.283 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:02:53.285 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:02:53.684 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 20:02:53.685 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 20:02:53.689 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 20:02:53.689 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 20:02:53.742 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-14 20:02:54.926 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:02:56.076 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:02:56.587 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2020-12-14 20:02:56.587 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2020-12-14 20:02:56.587 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2020-12-14 20:02:56.587 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2020-12-14 20:02:56.587 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2020-12-14 20:02:56.587 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2020-12-14 20:02:56.588 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-12-14 20:02:57.931 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:02:59.066 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:02:59.068 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-14 20:02:59.077 WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger:77   [32m        [0;39m You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-14 20:02:59.111 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-14 20:02:59.169 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-14 20:02:59.391 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-14 20:02:59.392 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-14 20:02:59.491 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-14 20:02:59.491 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-14 20:02:59.656 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:02:59.738 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-14 20:02:59.738 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-14 20:02:59.738 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-14 20:02:59.738 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-14 20:02:59.738 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-14 20:02:59.738 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-14 20:02:59.739 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-14 20:02:59.852 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-14 20:02:59.854 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-14 20:02:59.856 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-14 20:02:59.858 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1607947379857 with initial instances count: 4
+2020-12-14 20:02:59.859 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application GATEWAY with eureka with status UP
+2020-12-14 20:02:59.859 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1607947379859, current=UP, previous=STARTING]
+2020-12-14 20:02:59.861 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000: registering service...
+2020-12-14 20:02:59.888 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000 - registration status: 204
+2020-12-14 20:03:00.049 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :109  [32m        [0;39m Netty started on port(s): 9000
+2020-12-14 20:03:00.049 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9000
+2020-12-14 20:03:01.157 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:03:02.263 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:03:02.272 INFO  com.lzn.gateway.GatewayApplication                :61   [32m        [0;39m Started GatewayApplication in 12.474 seconds (JVM running for 12.967)
+2020-12-14 20:03:02.273 INFO  com.lzn.gateway.GatewayApplication                :29   [32m        [0;39m 启动成功！！
+2020-12-14 20:03:02.274 INFO  com.lzn.gateway.GatewayApplication                :30   [32m        [0;39m Gateway: 	http://127.0.0.1:9000
+2020-12-14 20:03:06.849 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/logout/JTyeyWG9
+2020-12-14 20:03:06.968 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:03:06.991 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-system
+2020-12-14 20:03:06.991 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: system instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 20:03:06.996 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 20:03:07.015 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:03:07.016 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client system initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[localhost:9001],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9001;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@66b44261
+2020-12-14 20:03:07.154 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/9cTzCeHd
+2020-12-14 20:03:07.999 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:07:59.742 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:08:29.765 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:08:29.789 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/f7t6ewzG
+2020-12-14 20:08:35.216 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:08:38.335 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:08:38.337 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:08:38.338 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:08:38.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:08:38.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:08:38.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:08:38.479 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:08:38.480 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-business
+2020-12-14 20:08:38.480 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: business instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=business,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 20:08:38.481 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 20:08:38.483 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:08:38.483 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client business initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=business,current list of Servers=[localhost:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4d70583c
+2020-12-14 20:08:38.656 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: file.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:08:38.657 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-file
+2020-12-14 20:08:38.657 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: file instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=file,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-14 20:08:38.659 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-14 20:08:38.662 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: file.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:08:38.662 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client file initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=file,current list of Servers=[localhost:9003],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9003;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@47bae052
+2020-12-14 20:08:39.485 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: business.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:08:39.662 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: file.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-14 20:08:46.942 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:08:46.944 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:08:54.935 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:08:54.937 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:10:39.564 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:10:39.570 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:10:39.632 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:10:39.633 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:10:41.505 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:10:41.506 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:10:41.549 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：vIieKyPx
+2020-12-14 20:10:41.550 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"vIieKyPx"}
+2020-12-14 20:12:59.744 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:17:34.687 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/logout/vIieKyPx
+2020-12-14 20:17:34.729 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/VivF0e96
+2020-12-14 20:17:42.551 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:17:59.746 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:18:33.202 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:18:33.204 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:18:34.356 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:18:34.356 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:18:39.012 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:18:39.014 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:18:40.449 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:18:40.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:18:40.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:18:40.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:18:40.453 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:18:40.453 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:12.599 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:20:12.599 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:20:12.600 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:12.600 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:20:12.601 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:12.601 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:53.516 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:20:53.518 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:20:53.519 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:53.519 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：2Nc2UsvZ
+2020-12-14 20:20:53.520 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:53.521 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"2Nc2UsvZ"}
+2020-12-14 20:20:55.795 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/1NiJ7xWN
+2020-12-14 20:21:19.151 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:21:21.028 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：u8WXlRNY
+2020-12-14 20:21:21.030 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"u8WXlRNY"}
+2020-12-14 20:22:59.747 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:27:59.750 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:31:44.393 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：u8WXlRNY
+2020-12-14 20:31:44.394 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 20:31:49.450 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/wAl1a2VZ
+2020-12-14 20:31:50.945 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/WsGZV8Fo
+2020-12-14 20:31:58.081 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:32:00.089 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:32:00.090 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:32:56.138 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:32:56.140 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:32:56.140 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:32:56.141 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:32:56.142 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:32:56.142 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:32:57.715 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:32:57.716 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:32:59.751 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:33:02.389 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:02.390 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:07.575 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:07.576 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:10.193 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:10.195 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:12.406 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:12.407 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:15.218 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:15.220 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:16.617 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:16.619 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:17.406 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:17.407 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:18.473 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:18.474 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:19.698 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:19.700 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:20.220 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:20.221 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:23.149 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:23.150 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:25.410 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:25.411 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:28.838 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:28.840 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:32.927 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:32.927 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:32.928 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:32.928 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:32.929 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:32.930 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:33:33.972 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:33:33.974 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:34:37.428 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:34:37.429 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:34:54.596 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:34:54.597 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:35:37.538 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:35:37.539 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:36:18.649 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:36:18.650 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:36:20.343 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:36:20.345 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"BVaGBP1Y"}
+2020-12-14 20:37:32.299 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：BVaGBP1Y
+2020-12-14 20:37:32.300 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-14 20:37:38.033 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/n9vad2oh
+2020-12-14 20:37:39.674 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/wF8qdW23
+2020-12-14 20:37:51.896 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-14 20:37:54.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：7fKDpLv3
+2020-12-14 20:37:54.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：7fKDpLv3
+2020-12-14 20:37:54.924 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"7fKDpLv3"}
+2020-12-14 20:37:54.924 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"7fKDpLv3"}
+2020-12-14 20:37:54.926 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：7fKDpLv3
+2020-12-14 20:37:54.928 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"7fKDpLv3"}
+2020-12-14 20:37:57.069 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：7fKDpLv3
+2020-12-14 20:37:57.070 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"7fKDpLv3"}
+2020-12-14 20:37:58.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：7fKDpLv3
+2020-12-14 20:37:58.924 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"7fKDpLv3"}
+2020-12-14 20:37:59.753 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-14 20:38:02.888 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：7fKDpLv3
+2020-12-14 20:38:02.889 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"7fKDpLv3"}
+2020-12-14 20:38:30.438 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-14 20:38:31.901 INFO  com.lzn.gateway.GatewayApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-14 20:38:32.315 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 20:38:32.317 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 20:38:32.337 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-12-14 20:38:32.497 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=beab72f5-140f-30c9-8b93-c95d4fbca480
+2020-12-14 20:38:32.556 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:38:32.557 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:38:32.559 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 20:38:32.963 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 20:38:32.963 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 20:38:32.968 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-14 20:38:32.968 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-14 20:38:33.014 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-14 20:38:34.191 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:38:35.343 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-14 20:38:35.868 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2020-12-14 20:38:35.868 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2020-12-14 20:38:35.869 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2020-12-14 20:38:35.869 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2020-12-14 20:38:35.869 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2020-12-14 20:38:35.869 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2020-12-14 20:38:35.869 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2020-12-14 20:38:35.869 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2020-12-14 20:38:35.870 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2020-12-14 20:38:35.870 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-12-14 20:38:35.870 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2020-12-14 20:38:35.870 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2020-12-14 20:38:35.870 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-12-14 20:38:37.250 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname

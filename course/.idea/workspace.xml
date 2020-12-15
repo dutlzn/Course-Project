@@ -15,9 +15,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5382efc3-a507-4c12-bb14-8beb2ecef930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../12-通用权限设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../12-通用权限设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-admin/src/views/admin/resource.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../course-admin/src/views/admin/resource.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/lzn/dto/ResourceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/lzn/dto/ResourceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/lzn/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/lzn/service/ResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/lzn/system/controller/admin/ResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/system/src/main/java/com/lzn/system/controller/admin/ResourceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/src/main/java/com/lzn/system/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/system/src/main/java/com/lzn/system/controller/admin/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../log/business/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../log/business/trace.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../log/eureka/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../log/eureka/trace.log" afterDir="false" />
@@ -87,13 +89,13 @@
       <recent name="D:\code\course-project\course\server\src\main\resources\config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VueGenerator">
-    <configuration name="BusinessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzn.business.config.BusinessApplication" />
-      <module name="business" />
+  <component name="RunManager" selected="Application.SystemApplication (1)">
+    <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzn.EurekaApplication" />
+      <module name="eureka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzn.business.config.*" />
+          <option name="PATTERN" value="com.lzn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzn.file.config.FileApplication" />
-      <module name="file" />
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzn.gateway.GatewayApplication" />
+      <module name="gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzn.file.config.*" />
+          <option name="PATTERN" value="com.lzn.gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,20 +156,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BusinessApplication" />
       <item itemvalue="Application.SystemApplication (1)" />
-      <item itemvalue="Application.FileApplication" />
-      <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Application.ServerGenerator" />
       <item itemvalue="Application.VueGenerator" />
+      <item itemvalue="Maven.mybatis-generator" />
+      <item itemvalue="Application.EurekaApplication" />
+      <item itemvalue="Application.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SystemApplication (1)" />
+        <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.EurekaApplication" />
         <item itemvalue="Application.VueGenerator" />
         <item itemvalue="Application.ServerGenerator" />
-        <item itemvalue="Application.FileApplication" />
-        <item itemvalue="Application.BusinessApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -204,10 +206,10 @@
     </state>
     <state x="332" y="199" width="1095" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603866431135" />
     <state x="2303" y="213" width="1102" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605784849816" />
-    <state x="2657" y="348" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605782426122">
+    <state x="2657" y="348" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607998614677">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
-    <state x="2657" y="348" key="#com.intellij.fileTypes.FileTypeChooser/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1605782426122" />
+    <state x="2657" y="348" key="#com.intellij.fileTypes.FileTypeChooser/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607998614677" />
     <state x="2722" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1607676799637">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
@@ -228,33 +230,33 @@
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603866279850" />
     <state x="1043" y="269" width="440" height="491" key="FileChooserDialogImpl/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1605403611836" />
-    <state width="1815" height="352" key="GridCell.Tab.0.bottom" timestamp="1607947369287">
+    <state width="1815" height="352" key="GridCell.Tab.0.bottom" timestamp="1607998577954">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="352" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607947369287" />
+    <state width="1815" height="352" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607998577954" />
     <state width="1784" height="206" key="GridCell.Tab.0.bottom/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1607167330189" />
-    <state width="1815" height="352" key="GridCell.Tab.0.center" timestamp="1607947369286">
+    <state width="1815" height="352" key="GridCell.Tab.0.center" timestamp="1607998577954">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="352" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607947369286" />
+    <state width="1815" height="352" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607998577954" />
     <state width="1784" height="206" key="GridCell.Tab.0.center/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1607167330189" />
-    <state width="1815" height="352" key="GridCell.Tab.0.left" timestamp="1607947369286">
+    <state width="1815" height="352" key="GridCell.Tab.0.left" timestamp="1607998577954">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="352" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607947369286" />
+    <state width="1815" height="352" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607998577954" />
     <state width="1784" height="206" key="GridCell.Tab.0.left/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1607167330189" />
-    <state width="1815" height="352" key="GridCell.Tab.0.right" timestamp="1607947369287">
+    <state width="1815" height="352" key="GridCell.Tab.0.right" timestamp="1607998577954">
       <screen x="1982" y="8" width="1858" height="1080" />
     </state>
     <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1046/-1920.0.1920.1050@0.0.1920.1046" timestamp="1603961609443" />
     <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603975046116" />
-    <state width="1815" height="352" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607947369287" />
+    <state width="1815" height="352" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@1982.8.1858.1080" timestamp="1607998577954" />
     <state width="1784" height="206" key="GridCell.Tab.0.right/93.0.1827.1080/1982.8.1858.1080@93.0.1827.1080" timestamp="1607167330189" />
     <state width="1815" height="274" key="GridCell.Tab.1.bottom" timestamp="1607855217215">
       <screen x="1982" y="8" width="1858" height="1080" />
