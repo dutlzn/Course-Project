@@ -10,11 +10,20 @@
 			</v-btn>
 
 			<v-row>
-				<v-col cols="10">
-					<v-textarea outlined name="input-7-1" label="资源树" v-model="resourceStr" hint="输入资源配置信息"></v-textarea>
-				</v-col>
 
-				<v-col cols="2" class="d-flex ">
+
+<!-- 				<v-col cols="2">
+					<v-btn class="my-auto" color="primary" @click="save()">
+						保存
+					</v-btn>
+				</v-col> -->
+				<v-col cols="6">
+					<!-- <p class="display-1">资源树</p> -->
+					<v-treeview open-all :items="items" return-object></v-treeview>
+				</v-col>
+				
+				<v-col cols="6">
+					<v-textarea outlined name="input-7-1" label="资源树" v-model="resourceStr" hint="输入资源配置信息"></v-textarea>
 					<v-btn class="my-auto" color="primary" @click="save()">
 						保存
 					</v-btn>
@@ -23,10 +32,11 @@
 			<br>
 
 		</p>
-
+<!-- 
 		<v-main>
+			<p class="display-1">资源树</p>
 			<v-treeview open-all :items="items" return-object></v-treeview>
-		</v-main>
+		</v-main> -->
 
 	</v-app>
 
