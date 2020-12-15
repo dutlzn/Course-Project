@@ -8,6 +8,8 @@ import com.lzn.util.ValidatorUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/admin/resource")
 public class ResourceController {
@@ -40,4 +42,18 @@ public class ResourceController {
         resourceService.delete(id);
         return responseDto;
     }
+
+
+    /**
+     * 资源树查询
+     */
+    @GetMapping("/load-tree")
+    public ResponseDto loadTree() {
+        ResponseDto responseDto = new ResponseDto();
+        List<ResourceDto> resourceDtoList = resourceService.loadTree();
+        responseDto.setContent(resourceDtoList);
+        return responseDto;
+    }
+
+
 }
