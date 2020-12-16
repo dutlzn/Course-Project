@@ -1,5 +1,6 @@
 package com.lzn.system.controller.admin;
 
+import com.lzn.dto.ResourceDto;
 import com.lzn.dto.RoleDto;
 import com.lzn.dto.PageDto;
 import com.lzn.dto.ResponseDto;
@@ -7,6 +8,8 @@ import com.lzn.service.RoleService;
 import com.lzn.util.ValidatorUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/admin/role")
@@ -45,4 +48,31 @@ public class RoleController {
         roleService.delete(id);
         return responseDto;
     }
+
+
+    /**
+     * 保存资源
+     * @param roleDto
+     */
+    @PostMapping("/save-resource")
+    public ResponseDto saveResource(@RequestBody RoleDto roleDto) {
+        ResponseDto<RoleDto> responseDto = new ResponseDto<>();
+        roleService.saveResource(roleDto);
+        responseDto.setContent(roleDto);
+        return responseDto;
+    }
+
+    /**
+     * 加载已关联的资源
+     */
+    @GetMapping("/list-resource/{roleId}")
+    public ResponseDto listResource(@PathVariable String roleId) {
+        ResponseDto responseDto = new ResponseDto<>();
+        List<ResourceDto> resourceIdList = roleService.listResource(roleId);
+        responseDto.setContent(resourceIdList);
+        return responseDto;
+    }
+
+
+
 }

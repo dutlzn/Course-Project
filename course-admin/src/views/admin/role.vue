@@ -264,8 +264,53 @@
 				// console.log("当前角色id", role.id);
 				// 清空之前选择的
 				_this.selection = [];
+				_this.role = $.extend({}, role);
+				// 获取每个角色的资源
+				_this.listRoleResource();
+				
 				_this.diglogRoleResource = true;
 			},
+			/**
+			 * 加载角色资源关联记录
+			 */
+			listRoleResource() {
+				let _this = this;
+				_this.$ajax.get(process.env.VUE_APP_SERVER + '/system/admin/role/list-resource/' + _this.role.id).then((response) => {
+					let resp = response.data;
+					let resources = resp.content;
+					// 只需要子节点
+					let childrenNode = [];
+					_this.findAllNodes(resources,childrenNode);
+					console.log(childrenNode);
+					_this.selection = childrenNode;
+				});
+			},
+			
+			/**
+			 * 找到所有子节点
+			 */
+			findAllNodes(resources,childrenNode) {
+				let _this = this;
+				for(let i = 0;i<_this.items.length;++i) {
+					_this.help2(_this.items[i],resources,childrenNode);
+				}
+			},
+			
+			help2(item,resources,childrenNode) {
+				let _this = this;
+				if(!item.children) {
+					// 没有孩子
+					// 如果有 
+					if(resources.find(a => {return a.id == item.id})) {
+						childrenNode.push(item);
+					}
+				} else {
+					for(let i = 0;i<item.children.length;++i) {
+						_this.help2(item.children[i],resources,childrenNode);
+					}
+				}
+			},
+
 
 			/**
 			 * 资源模态框点击保存
@@ -274,7 +319,7 @@
 				let _this = this;
 				_this.resourceIds = [];
 
-
+				// 把最底层的子节点插入到资源id数组中
 				for (let i = 0; i < _this.selection.length; ++i) {
 					_this.resourceIds.push(_this.selection[i].id);
 				}
@@ -282,7 +327,20 @@
 				// js数组对象查找 返回一个对象
 				// console.log(_this.selection.find( a => {return a.id == "00"}));
 				_this.findAllFathers();
-				console.log(_this.resourceIds);
+				// console.log(_this.resourceIds);
+
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/role/save-resource', {
+					id: _this.role.id,
+					resourceIds: _this.resourceIds
+				}).then((response) => {
+					let resp = response.data;
+					if (resp.success) {
+						_this.diglogRoleResource = false; // 关闭模态框
+						Toast.success("保存成功!");
+					} else {
+						Toast.warning(resp.message);
+					}
+				});
 			},
 
 			/**
@@ -297,30 +355,18 @@
 
 			help1(item) {
 				let _this = this;
-				// push parent 
-
 				if (!item.children) {
-					// if has no children 
-					// console.log(item.id);
+					// 
 				} else {
 					for (let i = 0; i < item.children.length; ++i) {
-
-						// if(_this.resourceIds.includes(item.children[i].name)){
-						// 	_this.resourceIds.push(item.name);
-						// }
-
 						_this.help1(item.children[i]);
 					}
-					// process parent 
-					// console.log(item.id);
-
 					for (let i = 0; i < item.children.length; ++i) {
 						if (_this.resourceIds.includes(item.children[i].id)) {
 							_this.resourceIds.push(item.id);
 							break;
 						}
 					}
-
 				}
 			},
 
