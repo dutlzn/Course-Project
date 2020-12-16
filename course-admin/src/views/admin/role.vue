@@ -8,16 +8,16 @@
 				</v-card-title>
 
 				<v-card-text>
-					 						<v-col cols="12">
-							<v-text-field label="角色" v-model="role.name" required></v-text-field>
-						</v-col>
-						<v-col cols="12">
-							<v-text-field label="描述" v-model="role.desc" required></v-text-field>
-						</v-col>
+					<v-col cols="12">
+						<v-text-field label="角色" v-model="role.name" required></v-text-field>
+					</v-col>
+					<v-col cols="12">
+						<v-text-field label="描述" v-model="role.desc" required></v-text-field>
+					</v-col>
 				</v-card-text>
 				<v-card-actions>
 					<v-spacer></v-spacer>
-					<v-btn @click="dialog = false" clas="info">
+					<v-btn @click="dialog = false" class="warning">
 						取消
 					</v-btn>
 
@@ -27,6 +27,28 @@
 				</v-card-actions>
 			</v-card>
 		</v-dialog>
+
+		<!-- 角色资源关联配置 -->
+		<v-dialog v-model="diglogRoleResource" persistent max-width="500">
+			<v-card>
+				<v-card-title>
+					角色资源关联配置
+				</v-card-title>
+
+				<!-- <v-card-text> -->
+							<v-treeview selectable :items="items" v-model="selection" return-object></v-treeview>
+				<!-- </v-card-text> -->
+
+				<v-card-actions>
+					<v-spacer></v-spacer>
+					<v-btn  @click="diglogRoleResource = false" class="info">
+						取消
+					</v-btn>
+
+				</v-card-actions>
+			</v-card>
+		</v-dialog>
+
 
 
 		<p class="ma-10">
@@ -53,9 +75,9 @@
 					<v-simple-table>
 						<thead>
 							<tr>
-										<th class="primary--text text-h6 text-center">id</th>
-										<th class="primary--text text-h6 text-center">角色</th>
-										<th class="primary--text text-h6 text-center">描述</th>
+								<th class="primary--text text-h6 text-center">id</th>
+								<th class="primary--text text-h6 text-center">角色</th>
+								<th class="primary--text text-h6 text-center">描述</th>
 								<th class="primary--text  text-h6 text-center">
 									操作
 								</th>
@@ -64,12 +86,16 @@
 						<tbody>
 							<tr v-for="role in roles" class="text-center">
 
-												<td>{{role.id}}</td>
-												<td>{{role.name}}</td>
-												<td>{{role.desc}}</td>
+								<td>{{role.id}}</td>
+								<td>{{role.name}}</td>
+								<td>{{role.desc}}</td>
 
 								<td>
 									<v-row align="center" justify="space-around">
+										<v-btn x-small fab @click="editResource(role)" class="success">
+											<v-icon>lock</v-icon>
+										</v-btn>
+
 										<v-btn x-small fab @click="edit(role)" class="primary">
 											<v-icon>edit</v-icon>
 										</v-btn>
@@ -99,42 +125,64 @@
 
 		data: function() {
 			return {
-	        role: {},
-	        roles: [],
-
-					dialog: false,
+				role: {},
+				roles: [],
+				resource: {},
+				resources: [],
+				// 资源树
+				resourceStr: "",
+				items: [],
+				dialog: false,
+				diglogRoleResource: false,
+				selection: [], // 表示已经选择的数据
 			}
 		},
 
-	  mounted: function() {
+		mounted: function() {
 			let _this = this;
 			_this.$refs.pagination.size = 5;
 			_this.list(1);
+			_this.loadResource();
 
-	  },
+		},
+		watch: {
 
+
+			selection: {
+
+				deep: true,
+
+				handler() {
+
+					// changedIndex 就是发生改变的位置
+					console.log(this.selection.length);
+				}
+
+			}
+
+		},
 		methods: {
 			// 获取所有小节的数据
 			list(page) {
-					let _this = this;
-					Loading.show();
-					_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/role/list', {
-						page: page,
-						size: _this.$refs.pagination.size,
-					}).then((response)=>{
-						Loading.hide();
-						let resp = response.data;
-						_this.roles = resp.content.list;
-						_this.$refs.pagination.render(page, resp.content.total);
+				let _this = this;
+				Loading.show();
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/role/list', {
+					page: page,
+					size: _this.$refs.pagination.size,
+				}).then((response) => {
+					Loading.hide();
+					let resp = response.data;
+					_this.roles = resp.content.list;
+					_this.$refs.pagination.render(page, resp.content.total);
 
-					})
+				})
 			},
 			/**
 			 * 新增小节
 			 */
 			add() {
-        let _this = this;
-        _this.role = {};
+				let _this = this;
+				_this.role = {};
 				_this.dialog = true;
 			},
 
@@ -142,58 +190,113 @@
 			 * 编辑小节
 			 */
 			edit(role) {
-        let _this = this;
-        _this.role = $.extend({}, role);
+				let _this = this;
+				_this.role = $.extend({}, role);
 				_this.dialog = true;
-      },
+			},
 
 			/**
 			 * 保存
 			 */
 			save() {
-        let _this = this;
+				let _this = this;
 
-        // 保存校验
-        if (1 != 1
-          || !Validator.require(_this.role.name, "角色")
-          || !Validator.length(_this.role.name, "角色", 1, 50)
-          || !Validator.require(_this.role.desc, "描述")
-          || !Validator.length(_this.role.desc, "描述", 1, 100)
-        ) {
-          return;
-        }
+				// 保存校验
+				if (1 != 1 ||
+					!Validator.require(_this.role.name, "角色") ||
+					!Validator.length(_this.role.name, "角色", 1, 50) ||
+					!Validator.require(_this.role.desc, "描述") ||
+					!Validator.length(_this.role.desc, "描述", 1, 100)
+				) {
+					return;
+				}
 
-        Loading.show();
-        _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/role/save', _this.role).then((response)=>{
-          Loading.hide();
-          let resp = response.data;
-          if (resp.success) {
-            _this.dialog = false,
-            _this.list(1);
-            Toast.success("保存成功！");
-          } else {
-            Toast.warning(resp.message)
-          }
-        })
-      },
+				Loading.show();
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/role/save', _this.role).then((response) => {
+					Loading.hide();
+					let resp = response.data;
+					if (resp.success) {
+						_this.dialog = false,
+							_this.list(1);
+						Toast.success("保存成功！");
+					} else {
+						Toast.warning(resp.message)
+					}
+				})
+			},
 
 			/**
 			 * 删除小节
 			 */
-      del(id) {
-        let _this = this;
-        Confirm.show("删除角色后不可恢复，确认删除？", function () {
-          Loading.show();
-          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/system/admin/role/delete/' + id).then((response)=>{
-            Loading.hide();
-            let resp = response.data;
-            if (resp.success) {
-              _this.list(1);
-              Toast.success("删除成功！");
-            }
-          })
-        });
-      }
+			del(id) {
+				let _this = this;
+				Confirm.show("删除角色后不可恢复，确认删除？", function() {
+					Loading.show();
+					_this.$ajax.delete(process.env.VUE_APP_SERVER + '/system/admin/role/delete/' + id).then((response) => {
+						Loading.hide();
+						let resp = response.data;
+						if (resp.success) {
+							_this.list(1);
+							Toast.success("删除成功！");
+						}
+					})
+				});
+			},
+
+			/**
+			 * 角色资源关联
+			 */
+			editResource(role) {
+				let _this = this;
+				// 加载资源树
+				_this.loadResource();
+				_this.diglogRoleResource = true;
+			},
+
+			/**
+			 * 加载资源数
+			 */
+			loadResource() {
+				let _this = this;
+				Loading.show();
+				_this.$ajax.get(process.env.VUE_APP_SERVER + '/system/admin/resource/load-tree').then((response) => {
+					Loading.hide();
+					let resp = response.data;
+					_this.resources = resp.content;
+					// _this.items = _this.resources;
+					// _this.items = [
+     //    {
+     //      id: 1,
+     //      name: 'Root',
+     //      children: [
+     //        { id: 2, name: 'Child #1' },
+     //        { id: 3, name: 'Child #2' },
+     //        {
+     //          id: 4,
+     //          name: 'Child #3',
+     //          children: [
+     //            { id: 5, name: 'Grandchild #1' },
+     //            { id: 6, name: 'Grandchild #2' },
+     //          ],
+     //        },
+     //      ],
+     //    },
+     //  ];
+		 
+		 _this.items = [
+        {
+            "id": "00",
+            "name": "欢迎",
+            "page": "welcome",
+            "request": "",
+            "parent": "",
+            "children": [],
+        },
+      
+    ];
+					_this.selection = [];
+				})
+			}
 		}
 	}
 </script>

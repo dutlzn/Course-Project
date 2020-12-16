@@ -388,7 +388,7 @@ import BigFile from '../../components/big-file.vue'
 				handler() {
 
 					// changedIndex 就是发生改变的位置
-					console.log(this.selection.length);
+					console.log(this.selection);
 				}
 
 			}

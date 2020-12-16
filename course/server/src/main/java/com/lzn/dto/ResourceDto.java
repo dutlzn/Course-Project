@@ -2,6 +2,8 @@ package com.lzn.dto;
 
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.List;
 
 public class ResourceDto {
@@ -19,18 +21,21 @@ public class ResourceDto {
     /**
      * 页面|路由
      */
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String page;
 
     /**
      * 请求|接口
      */
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String request;
 
     /**
      * 父id
      */
-    private String parent;
 
+    private String parent;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private List<ResourceDto> children;
 
     public String getId() {

@@ -12,7 +12,7 @@
 			<v-row>
 
 
-<!-- 				<v-col cols="2">
+				<!-- 				<v-col cols="2">
 					<v-btn class="my-auto" color="primary" @click="save()">
 						保存
 					</v-btn>
@@ -21,7 +21,7 @@
 					<!-- <p class="display-1">资源树</p> -->
 					<v-treeview open-all :items="items" return-object></v-treeview>
 				</v-col>
-				
+
 				<v-col cols="6">
 					<v-textarea outlined name="input-7-1" label="资源树" v-model="resourceStr" hint="输入资源配置信息"></v-textarea>
 					<v-btn class="my-auto" color="primary" @click="save()">
@@ -32,22 +32,21 @@
 			<br>
 
 		</p>
-<!-- 
-		<v-main>
-			<p class="display-1">资源树</p>
-			<v-treeview open-all :items="items" return-object></v-treeview>
-		</v-main> -->
+
+
 
 	</v-app>
 
 </template>
 
 <script>
-	// import Pagination from "../../components/pagination.vue";
+	import tree from "vue-giant-tree";
+	
 	export default {
 		name: "system-resource",
 		components: {
 			// Pagination
+			tree
 		},
 
 		data: function() {
@@ -59,16 +58,20 @@
 				resourceStr: "",
 				items: [],
 
+												
 			}
 		},
 
 		mounted: function() {
 			let _this = this;
 			_this.list();
+			
 
 		},
 
 		methods: {
+
+
 			// 获取所有小节的数据
 			list() {
 				let _this = this;
@@ -77,8 +80,8 @@
 					Loading.hide();
 					let resp = response.data;
 					_this.resources = resp.content;
-					console.log(_this.resources);
 					_this.items = _this.resources;
+		
 				})
 			},
 
