@@ -110,21 +110,13 @@ public class ResourceService {
      * @param dto
      */
     public void add(List<ResourceDto> list, ResourceDto dto) {
-        if(dto.getRequest() == null) {
-            dto.setRequest("");
-        }
 
-        if(dto.getPage() == null) {
-            dto.setPage("");
-        }
         list.add(dto);
         if (!CollectionUtils.isEmpty(dto.getChildren())) {
             for (ResourceDto d: dto.getChildren()) {
                 d.setParent(dto.getId());
                 add(list, d);
             }
-        } else {
-            dto.setChildren(new ArrayList<>());
         }
     }
 

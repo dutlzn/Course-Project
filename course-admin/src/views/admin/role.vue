@@ -36,13 +36,17 @@
 				</v-card-title>
 
 				<!-- <v-card-text> -->
-							<v-treeview selectable :items="items" v-model="selection" return-object></v-treeview>
+				<v-treeview selectable :items="items" v-model="selection" selection-type="leaf" return-object></v-treeview>
 				<!-- </v-card-text> -->
 
 				<v-card-actions>
 					<v-spacer></v-spacer>
-					<v-btn  @click="diglogRoleResource = false" class="info">
+					<v-btn @click="diglogRoleResource = false" class="info">
 						取消
+					</v-btn>
+
+					<v-btn @click="saveResource()" class="warning">
+						保存
 					</v-btn>
 
 				</v-card-actions>
@@ -129,12 +133,17 @@
 				roles: [],
 				resource: {},
 				resources: [],
+				// json ----> list
+				resourceList: [], /// 【{} {} {} {} {} {} 】
+
 				// 资源树
 				resourceStr: "",
 				items: [],
 				dialog: false,
 				diglogRoleResource: false,
 				selection: [], // 表示已经选择的数据
+				// 勾选上的资源id列表
+				resourceIds: [],
 			}
 		},
 
@@ -142,6 +151,7 @@
 			let _this = this;
 			_this.$refs.pagination.size = 5;
 			_this.list(1);
+			// 加载资源树
 			_this.loadResource();
 
 		},
@@ -149,13 +159,15 @@
 
 
 			selection: {
-
+				// deep: true  // 可以深度检测到对象的属性值的变化
 				deep: true,
 
 				handler() {
 
 					// changedIndex 就是发生改变的位置
-					console.log(this.selection.length);
+					// console.log(this.selection.length)
+					let _this = this;
+
 				}
 
 			}
@@ -174,6 +186,7 @@
 					let resp = response.data;
 					_this.roles = resp.content.list;
 					_this.$refs.pagination.render(page, resp.content.total);
+
 
 				})
 			},
@@ -248,10 +261,74 @@
 			 */
 			editResource(role) {
 				let _this = this;
-				// 加载资源树
-				_this.loadResource();
+				// console.log("当前角色id", role.id);
+				// 清空之前选择的
+				_this.selection = [];
 				_this.diglogRoleResource = true;
 			},
+
+			/**
+			 * 资源模态框点击保存
+			 */
+			saveResource() {
+				let _this = this;
+				_this.resourceIds = [];
+
+
+				for (let i = 0; i < _this.selection.length; ++i) {
+					_this.resourceIds.push(_this.selection[i].id);
+				}
+
+				// js数组对象查找 返回一个对象
+				// console.log(_this.selection.find( a => {return a.id == "00"}));
+				_this.findAllFathers();
+				console.log(_this.resourceIds);
+			},
+
+			/**
+			 * 后续遍历所有的节点
+			 */
+			findAllFathers() {
+				let _this = this;
+				for (let i = 0; i < _this.items.length; ++i) {
+					_this.help1(_this.items[i]);
+				}
+			},
+
+			help1(item) {
+				let _this = this;
+				// push parent 
+
+				if (!item.children) {
+					// if has no children 
+					// console.log(item.id);
+				} else {
+					for (let i = 0; i < item.children.length; ++i) {
+
+						// if(_this.resourceIds.includes(item.children[i].name)){
+						// 	_this.resourceIds.push(item.name);
+						// }
+
+						_this.help1(item.children[i]);
+					}
+					// process parent 
+					// console.log(item.id);
+
+					for (let i = 0; i < item.children.length; ++i) {
+						if (_this.resourceIds.includes(item.children[i].id)) {
+							_this.resourceIds.push(item.id);
+							break;
+						}
+					}
+
+				}
+			},
+
+			/**
+			 * N叉树后序遍历
+			 */
+
+
 
 			/**
 			 * 加载资源数
@@ -263,37 +340,7 @@
 					Loading.hide();
 					let resp = response.data;
 					_this.resources = resp.content;
-					// _this.items = _this.resources;
-					// _this.items = [
-     //    {
-     //      id: 1,
-     //      name: 'Root',
-     //      children: [
-     //        { id: 2, name: 'Child #1' },
-     //        { id: 3, name: 'Child #2' },
-     //        {
-     //          id: 4,
-     //          name: 'Child #3',
-     //          children: [
-     //            { id: 5, name: 'Grandchild #1' },
-     //            { id: 6, name: 'Grandchild #2' },
-     //          ],
-     //        },
-     //      ],
-     //    },
-     //  ];
-		 
-		 _this.items = [
-        {
-            "id": "00",
-            "name": "欢迎",
-            "page": "welcome",
-            "request": "",
-            "parent": "",
-            "children": [],
-        },
-      
-    ];
+					_this.items = _this.resources;
 					_this.selection = [];
 				})
 			}
