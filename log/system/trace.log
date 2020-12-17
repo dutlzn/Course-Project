@@ -7325,3 +7325,810 @@
 2020-12-17 16:23:32.417 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mNIOxd06g[0;39m <==      Total: 1
 2020-12-17 16:23:32.418 INFO  com.lzn.config.LogAspect                          :109  [32mNIOxd06g[0;39m 返回结果: {"content":["4bsbbzd1"],"success":true}
 2020-12-17 16:23:32.418 INFO  com.lzn.config.LogAspect                          :110  [32mNIOxd06g[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-17 16:27:37.667 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:32:27.969 INFO  com.lzn.config.LogAspect                          :76   [32mMjgnbKIa[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:32:27.969 INFO  com.lzn.config.LogAspect                          :77   [32mMjgnbKIa[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:32:27.969 INFO  com.lzn.config.LogAspect                          :78   [32mMjgnbKIa[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:32:27.970 INFO  com.lzn.config.LogAspect                          :79   [32mMjgnbKIa[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:27.970 INFO  com.lzn.config.LogAspect                          :97   [32mMjgnbKIa[0;39m 请求参数: [{"page":1,"size":9999,"total":0}]
+2020-12-17 16:32:27.971 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mMjgnbKIa[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:32:27.971 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mMjgnbKIa[0;39m ==> Parameters: 
+2020-12-17 16:32:27.972 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mMjgnbKIa[0;39m <==    Columns: count(0)
+2020-12-17 16:32:27.972 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mMjgnbKIa[0;39m <==        Row: 3
+2020-12-17 16:32:27.973 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mMjgnbKIa[0;39m <==      Total: 1
+2020-12-17 16:32:27.973 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mMjgnbKIa[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:32:27.973 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mMjgnbKIa[0;39m ==> Parameters: 9999(Integer)
+2020-12-17 16:32:27.974 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mMjgnbKIa[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:32:27.974 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mMjgnbKIa[0;39m <==        Row: 10000000, test, 测试111111, 2141e8d27dab5b7a5f7bdcf39e892975
+2020-12-17 16:32:27.974 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mMjgnbKIa[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-17 16:32:27.975 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mMjgnbKIa[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:32:27.975 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mMjgnbKIa[0;39m <==      Total: 3
+2020-12-17 16:32:27.975 INFO  com.lzn.config.LogAspect                          :109  [32mMjgnbKIa[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":9999,"total":3},"success":true}
+2020-12-17 16:32:27.975 INFO  com.lzn.config.LogAspect                          :110  [32mMjgnbKIa[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-17 16:32:27.997 INFO  com.lzn.config.LogAspect                          :76   [32mM6xlpXid[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 16:32:27.997 INFO  com.lzn.config.LogAspect                          :77   [32mM6xlpXid[0;39m 请求地址: http://localhost:9001/system/admin/role/list-user/00000000 GET
+2020-12-17 16:32:27.997 INFO  com.lzn.config.LogAspect                          :78   [32mM6xlpXid[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.listUser
+2020-12-17 16:32:27.998 INFO  com.lzn.config.LogAspect                          :79   [32mM6xlpXid[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:27.998 INFO  com.lzn.config.LogAspect                          :97   [32mM6xlpXid[0;39m 请求参数: ["00000000"]
+2020-12-17 16:32:27.999 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mM6xlpXid[0;39m ==>  Preparing: select id, role_id, user_id from role_user WHERE ( role_id = ? ) 
+2020-12-17 16:32:27.999 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mM6xlpXid[0;39m ==> Parameters: 00000000(String)
+2020-12-17 16:32:28.000 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mM6xlpXid[0;39m <==    Columns: id, role_id, user_id
+2020-12-17 16:32:28.000 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mM6xlpXid[0;39m <==        Row: N3UDRrq6, 00000000, 10000000
+2020-12-17 16:32:28.000 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mM6xlpXid[0;39m <==        Row: VnnXKTM7, 00000000, guHzMCGy
+2020-12-17 16:32:28.001 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mM6xlpXid[0;39m <==      Total: 2
+2020-12-17 16:32:28.001 INFO  com.lzn.config.LogAspect                          :109  [32mM6xlpXid[0;39m 返回结果: {"content":["10000000","guHzMCGy"],"success":true}
+2020-12-17 16:32:28.001 INFO  com.lzn.config.LogAspect                          :110  [32mM6xlpXid[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-17 16:32:35.797 INFO  com.lzn.config.LogAspect                          :76   [32mYnBuFa29[0;39m ------------- 【角色】保存开始 -------------
+2020-12-17 16:32:35.797 INFO  com.lzn.config.LogAspect                          :77   [32mYnBuFa29[0;39m 请求地址: http://localhost:9001/system/admin/role/save-user POST
+2020-12-17 16:32:35.797 INFO  com.lzn.config.LogAspect                          :78   [32mYnBuFa29[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.saveUser
+2020-12-17 16:32:35.797 INFO  com.lzn.config.LogAspect                          :79   [32mYnBuFa29[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:35.798 INFO  com.lzn.config.LogAspect                          :97   [32mYnBuFa29[0;39m 请求参数: [{"id":"00000000","userIds":["10000000","guHzMCGy","4bsbbzd1"]}]
+2020-12-17 16:32:35.798 DEBUG com.lzn.mapper.RoleUserMapper.deleteByExample     :159  [32mYnBuFa29[0;39m ==>  Preparing: delete from role_user WHERE ( role_id = ? ) 
+2020-12-17 16:32:35.799 DEBUG com.lzn.mapper.RoleUserMapper.deleteByExample     :159  [32mYnBuFa29[0;39m ==> Parameters: 00000000(String)
+2020-12-17 16:32:35.802 DEBUG com.lzn.mapper.RoleUserMapper.deleteByExample     :159  [32mYnBuFa29[0;39m <==    Updates: 2
+2020-12-17 16:32:35.802 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m ==>  Preparing: insert into role_user (id, role_id, user_id) values (?, ?, ?) 
+2020-12-17 16:32:35.802 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m ==> Parameters: 6d8Om9Uc(String), 00000000(String), 10000000(String)
+2020-12-17 16:32:35.808 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m <==    Updates: 1
+2020-12-17 16:32:35.809 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m ==>  Preparing: insert into role_user (id, role_id, user_id) values (?, ?, ?) 
+2020-12-17 16:32:35.809 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m ==> Parameters: 9LK6m77t(String), 00000000(String), guHzMCGy(String)
+2020-12-17 16:32:35.814 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m <==    Updates: 1
+2020-12-17 16:32:35.814 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m ==>  Preparing: insert into role_user (id, role_id, user_id) values (?, ?, ?) 
+2020-12-17 16:32:35.814 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m ==> Parameters: 2vKPxxKx(String), 00000000(String), 4bsbbzd1(String)
+2020-12-17 16:32:35.819 DEBUG com.lzn.mapper.RoleUserMapper.insert              :159  [32mYnBuFa29[0;39m <==    Updates: 1
+2020-12-17 16:32:35.819 INFO  com.lzn.config.LogAspect                          :109  [32mYnBuFa29[0;39m 返回结果: {"content":{"id":"00000000","userIds":["10000000","guHzMCGy","4bsbbzd1"]},"success":true}
+2020-12-17 16:32:35.819 INFO  com.lzn.config.LogAspect                          :110  [32mYnBuFa29[0;39m ------------- 结束 耗时：22 ms -------------
+2020-12-17 16:32:37.568 INFO  com.lzn.config.LogAspect                          :76   [32mb0LWzcQs[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:32:37.569 INFO  com.lzn.config.LogAspect                          :77   [32mb0LWzcQs[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:32:37.569 INFO  com.lzn.config.LogAspect                          :78   [32mb0LWzcQs[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:32:37.569 INFO  com.lzn.config.LogAspect                          :79   [32mb0LWzcQs[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:37.569 INFO  com.lzn.config.LogAspect                          :97   [32mb0LWzcQs[0;39m 请求参数: [{"page":1,"size":9999,"total":0}]
+2020-12-17 16:32:37.571 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mb0LWzcQs[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:32:37.571 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mb0LWzcQs[0;39m ==> Parameters: 
+2020-12-17 16:32:37.572 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mb0LWzcQs[0;39m <==    Columns: count(0)
+2020-12-17 16:32:37.572 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mb0LWzcQs[0;39m <==        Row: 3
+2020-12-17 16:32:37.572 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mb0LWzcQs[0;39m <==      Total: 1
+2020-12-17 16:32:37.573 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mb0LWzcQs[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:32:37.573 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mb0LWzcQs[0;39m ==> Parameters: 9999(Integer)
+2020-12-17 16:32:37.574 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mb0LWzcQs[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:32:37.574 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mb0LWzcQs[0;39m <==        Row: 10000000, test, 测试111111, 2141e8d27dab5b7a5f7bdcf39e892975
+2020-12-17 16:32:37.574 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mb0LWzcQs[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-17 16:32:37.574 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mb0LWzcQs[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:32:37.575 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mb0LWzcQs[0;39m <==      Total: 3
+2020-12-17 16:32:37.575 INFO  com.lzn.config.LogAspect                          :109  [32mb0LWzcQs[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":9999,"total":3},"success":true}
+2020-12-17 16:32:37.575 INFO  com.lzn.config.LogAspect                          :110  [32mb0LWzcQs[0;39m ------------- 结束 耗时：7 ms -------------
+2020-12-17 16:32:37.594 INFO  com.lzn.config.LogAspect                          :76   [32mA8ZB8r4w[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 16:32:37.595 INFO  com.lzn.config.LogAspect                          :77   [32mA8ZB8r4w[0;39m 请求地址: http://localhost:9001/system/admin/role/list-user/00000000 GET
+2020-12-17 16:32:37.595 INFO  com.lzn.config.LogAspect                          :78   [32mA8ZB8r4w[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.listUser
+2020-12-17 16:32:37.595 INFO  com.lzn.config.LogAspect                          :79   [32mA8ZB8r4w[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:37.595 INFO  com.lzn.config.LogAspect                          :97   [32mA8ZB8r4w[0;39m 请求参数: ["00000000"]
+2020-12-17 16:32:37.596 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mA8ZB8r4w[0;39m ==>  Preparing: select id, role_id, user_id from role_user WHERE ( role_id = ? ) 
+2020-12-17 16:32:37.596 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mA8ZB8r4w[0;39m ==> Parameters: 00000000(String)
+2020-12-17 16:32:37.597 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mA8ZB8r4w[0;39m <==    Columns: id, role_id, user_id
+2020-12-17 16:32:37.597 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mA8ZB8r4w[0;39m <==        Row: 2vKPxxKx, 00000000, 4bsbbzd1
+2020-12-17 16:32:37.597 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mA8ZB8r4w[0;39m <==        Row: 6d8Om9Uc, 00000000, 10000000
+2020-12-17 16:32:37.598 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mA8ZB8r4w[0;39m <==        Row: 9LK6m77t, 00000000, guHzMCGy
+2020-12-17 16:32:37.598 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mA8ZB8r4w[0;39m <==      Total: 3
+2020-12-17 16:32:37.598 INFO  com.lzn.config.LogAspect                          :109  [32mA8ZB8r4w[0;39m 返回结果: {"content":["4bsbbzd1","10000000","guHzMCGy"],"success":true}
+2020-12-17 16:32:37.598 INFO  com.lzn.config.LogAspect                          :110  [32mA8ZB8r4w[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-17 16:32:37.669 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:32:43.397 INFO  com.lzn.config.LogAspect                          :76   [32mzHJ4HpAd[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:32:43.398 INFO  com.lzn.config.LogAspect                          :77   [32mzHJ4HpAd[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:32:43.398 INFO  com.lzn.config.LogAspect                          :78   [32mzHJ4HpAd[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:32:43.398 INFO  com.lzn.config.LogAspect                          :79   [32mzHJ4HpAd[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:43.398 INFO  com.lzn.config.LogAspect                          :97   [32mzHJ4HpAd[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 16:32:43.400 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mzHJ4HpAd[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:32:43.401 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mzHJ4HpAd[0;39m ==> Parameters: 
+2020-12-17 16:32:43.401 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mzHJ4HpAd[0;39m <==    Columns: count(0)
+2020-12-17 16:32:43.402 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mzHJ4HpAd[0;39m <==        Row: 3
+2020-12-17 16:32:43.402 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mzHJ4HpAd[0;39m <==      Total: 1
+2020-12-17 16:32:43.403 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mzHJ4HpAd[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:32:43.404 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mzHJ4HpAd[0;39m ==> Parameters: 5(Integer)
+2020-12-17 16:32:43.405 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzHJ4HpAd[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:32:43.405 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzHJ4HpAd[0;39m <==        Row: 10000000, test, 测试111111, 2141e8d27dab5b7a5f7bdcf39e892975
+2020-12-17 16:32:43.406 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzHJ4HpAd[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-17 16:32:43.406 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mzHJ4HpAd[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:32:43.407 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mzHJ4HpAd[0;39m <==      Total: 3
+2020-12-17 16:32:43.407 INFO  com.lzn.config.LogAspect                          :109  [32mzHJ4HpAd[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-17 16:32:43.407 INFO  com.lzn.config.LogAspect                          :110  [32mzHJ4HpAd[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 16:32:56.142 INFO  com.lzn.config.LogAspect                          :76   [32mepx77Vh7[0;39m ------------- 【用户】保存开始 -------------
+2020-12-17 16:32:56.142 INFO  com.lzn.config.LogAspect                          :77   [32mepx77Vh7[0;39m 请求地址: http://localhost:9001/system/admin/user/save-password POST
+2020-12-17 16:32:56.142 INFO  com.lzn.config.LogAspect                          :78   [32mepx77Vh7[0;39m 类名方法: com.lzn.system.controller.admin.UserController.savePassword
+2020-12-17 16:32:56.142 INFO  com.lzn.config.LogAspect                          :79   [32mepx77Vh7[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:56.143 INFO  com.lzn.config.LogAspect                          :97   [32mepx77Vh7[0;39m 请求参数: [{"id":"4bsbbzd1","loginName":"test11","password":"4e5391104b4c46edc6e7e6cd6dfb8784"}]
+2020-12-17 16:32:56.144 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mepx77Vh7[0;39m ==>  Preparing: update user SET `password` = ? where id = ? 
+2020-12-17 16:32:56.144 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mepx77Vh7[0;39m ==> Parameters: 4db71c791e6a5f87027698565abc76c8(String), 4bsbbzd1(String)
+2020-12-17 16:32:56.152 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mepx77Vh7[0;39m <==    Updates: 1
+2020-12-17 16:32:56.152 INFO  com.lzn.config.LogAspect                          :109  [32mepx77Vh7[0;39m 返回结果: {"content":{"id":"4bsbbzd1","loginName":"test11"},"success":true}
+2020-12-17 16:32:56.152 INFO  com.lzn.config.LogAspect                          :110  [32mepx77Vh7[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 16:32:56.184 INFO  com.lzn.config.LogAspect                          :76   [32m7V6CFZLH[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:32:56.184 INFO  com.lzn.config.LogAspect                          :77   [32m7V6CFZLH[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:32:56.185 INFO  com.lzn.config.LogAspect                          :78   [32m7V6CFZLH[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:32:56.185 INFO  com.lzn.config.LogAspect                          :79   [32m7V6CFZLH[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:32:56.185 INFO  com.lzn.config.LogAspect                          :97   [32m7V6CFZLH[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 16:32:56.186 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m7V6CFZLH[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:32:56.187 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m7V6CFZLH[0;39m ==> Parameters: 
+2020-12-17 16:32:56.189 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m7V6CFZLH[0;39m <==    Columns: count(0)
+2020-12-17 16:32:56.190 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m7V6CFZLH[0;39m <==        Row: 3
+2020-12-17 16:32:56.190 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m7V6CFZLH[0;39m <==      Total: 1
+2020-12-17 16:32:56.191 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7V6CFZLH[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:32:56.191 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7V6CFZLH[0;39m ==> Parameters: 5(Integer)
+2020-12-17 16:32:56.192 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7V6CFZLH[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:32:56.192 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7V6CFZLH[0;39m <==        Row: 10000000, test, 测试111111, 2141e8d27dab5b7a5f7bdcf39e892975
+2020-12-17 16:32:56.192 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7V6CFZLH[0;39m <==        Row: 4bsbbzd1, test11, null, 4db71c791e6a5f87027698565abc76c8
+2020-12-17 16:32:56.192 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7V6CFZLH[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:32:56.193 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7V6CFZLH[0;39m <==      Total: 3
+2020-12-17 16:32:56.193 INFO  com.lzn.config.LogAspect                          :109  [32m7V6CFZLH[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-17 16:32:56.193 INFO  com.lzn.config.LogAspect                          :110  [32m7V6CFZLH[0;39m ------------- 结束 耗时：9 ms -------------
+2020-12-17 16:33:03.394 INFO  com.lzn.config.LogAspect                          :76   [32mVRgTGYSZ[0;39m ------------- 【用户】保存开始 -------------
+2020-12-17 16:33:03.395 INFO  com.lzn.config.LogAspect                          :77   [32mVRgTGYSZ[0;39m 请求地址: http://localhost:9001/system/admin/user/save-password POST
+2020-12-17 16:33:03.395 INFO  com.lzn.config.LogAspect                          :78   [32mVRgTGYSZ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.savePassword
+2020-12-17 16:33:03.395 INFO  com.lzn.config.LogAspect                          :79   [32mVRgTGYSZ[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:03.395 INFO  com.lzn.config.LogAspect                          :97   [32mVRgTGYSZ[0;39m 请求参数: [{"id":"4bsbbzd1","loginName":"test11","password":"6fb8a81a9009027fb1a9355113aa2e5a"}]
+2020-12-17 16:33:03.397 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mVRgTGYSZ[0;39m ==>  Preparing: update user SET `password` = ? where id = ? 
+2020-12-17 16:33:03.398 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mVRgTGYSZ[0;39m ==> Parameters: 1f15d405949c4ed3c2279aa6d48b1e9a(String), 4bsbbzd1(String)
+2020-12-17 16:33:03.403 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mVRgTGYSZ[0;39m <==    Updates: 1
+2020-12-17 16:33:03.404 INFO  com.lzn.config.LogAspect                          :109  [32mVRgTGYSZ[0;39m 返回结果: {"content":{"id":"4bsbbzd1","loginName":"test11"},"success":true}
+2020-12-17 16:33:03.404 INFO  com.lzn.config.LogAspect                          :110  [32mVRgTGYSZ[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 16:33:03.435 INFO  com.lzn.config.LogAspect                          :76   [32mfocKaHZs[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:33:03.435 INFO  com.lzn.config.LogAspect                          :77   [32mfocKaHZs[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:33:03.435 INFO  com.lzn.config.LogAspect                          :78   [32mfocKaHZs[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:33:03.435 INFO  com.lzn.config.LogAspect                          :79   [32mfocKaHZs[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:03.436 INFO  com.lzn.config.LogAspect                          :97   [32mfocKaHZs[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 16:33:03.437 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mfocKaHZs[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:33:03.438 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mfocKaHZs[0;39m ==> Parameters: 
+2020-12-17 16:33:03.439 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mfocKaHZs[0;39m <==    Columns: count(0)
+2020-12-17 16:33:03.440 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mfocKaHZs[0;39m <==        Row: 3
+2020-12-17 16:33:03.440 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mfocKaHZs[0;39m <==      Total: 1
+2020-12-17 16:33:03.440 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mfocKaHZs[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:33:03.441 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mfocKaHZs[0;39m ==> Parameters: 5(Integer)
+2020-12-17 16:33:03.441 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mfocKaHZs[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:33:03.441 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mfocKaHZs[0;39m <==        Row: 10000000, test, 测试111111, 2141e8d27dab5b7a5f7bdcf39e892975
+2020-12-17 16:33:03.442 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mfocKaHZs[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:03.442 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mfocKaHZs[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:03.442 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mfocKaHZs[0;39m <==      Total: 3
+2020-12-17 16:33:03.442 INFO  com.lzn.config.LogAspect                          :109  [32mfocKaHZs[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-17 16:33:03.443 INFO  com.lzn.config.LogAspect                          :110  [32mfocKaHZs[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-17 16:33:08.513 INFO  com.lzn.config.LogAspect                          :76   [32mPxj8B775[0;39m ------------- 【用户】保存开始 -------------
+2020-12-17 16:33:08.513 INFO  com.lzn.config.LogAspect                          :77   [32mPxj8B775[0;39m 请求地址: http://localhost:9001/system/admin/user/save-password POST
+2020-12-17 16:33:08.514 INFO  com.lzn.config.LogAspect                          :78   [32mPxj8B775[0;39m 类名方法: com.lzn.system.controller.admin.UserController.savePassword
+2020-12-17 16:33:08.514 INFO  com.lzn.config.LogAspect                          :79   [32mPxj8B775[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:08.514 INFO  com.lzn.config.LogAspect                          :97   [32mPxj8B775[0;39m 请求参数: [{"id":"10000000","loginName":"test","name":"测试111111","password":"6fb8a81a9009027fb1a9355113aa2e5a"}]
+2020-12-17 16:33:08.515 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mPxj8B775[0;39m ==>  Preparing: update user SET `password` = ? where id = ? 
+2020-12-17 16:33:08.515 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mPxj8B775[0;39m ==> Parameters: 1f15d405949c4ed3c2279aa6d48b1e9a(String), 10000000(String)
+2020-12-17 16:33:08.519 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32mPxj8B775[0;39m <==    Updates: 1
+2020-12-17 16:33:08.519 INFO  com.lzn.config.LogAspect                          :109  [32mPxj8B775[0;39m 返回结果: {"content":{"id":"10000000","loginName":"test","name":"测试111111"},"success":true}
+2020-12-17 16:33:08.519 INFO  com.lzn.config.LogAspect                          :110  [32mPxj8B775[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-17 16:33:08.554 INFO  com.lzn.config.LogAspect                          :76   [32md781KSod[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:33:08.555 INFO  com.lzn.config.LogAspect                          :77   [32md781KSod[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:33:08.555 INFO  com.lzn.config.LogAspect                          :78   [32md781KSod[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:33:08.555 INFO  com.lzn.config.LogAspect                          :79   [32md781KSod[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:08.555 INFO  com.lzn.config.LogAspect                          :97   [32md781KSod[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 16:33:08.556 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32md781KSod[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:33:08.556 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32md781KSod[0;39m ==> Parameters: 
+2020-12-17 16:33:08.557 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32md781KSod[0;39m <==    Columns: count(0)
+2020-12-17 16:33:08.557 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32md781KSod[0;39m <==        Row: 3
+2020-12-17 16:33:08.558 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32md781KSod[0;39m <==      Total: 1
+2020-12-17 16:33:08.558 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32md781KSod[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:33:08.558 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32md781KSod[0;39m ==> Parameters: 5(Integer)
+2020-12-17 16:33:08.559 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32md781KSod[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:33:08.559 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32md781KSod[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:08.559 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32md781KSod[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:08.559 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32md781KSod[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:08.560 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32md781KSod[0;39m <==      Total: 3
+2020-12-17 16:33:08.560 INFO  com.lzn.config.LogAspect                          :109  [32md781KSod[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-17 16:33:08.560 INFO  com.lzn.config.LogAspect                          :110  [32md781KSod[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-17 16:33:15.756 INFO  com.lzn.config.LogAspect                          :76   [32muHdLUQBq[0;39m ------------- 【用户】保存开始 -------------
+2020-12-17 16:33:15.756 INFO  com.lzn.config.LogAspect                          :77   [32muHdLUQBq[0;39m 请求地址: http://localhost:9001/system/admin/user/save-password POST
+2020-12-17 16:33:15.756 INFO  com.lzn.config.LogAspect                          :78   [32muHdLUQBq[0;39m 类名方法: com.lzn.system.controller.admin.UserController.savePassword
+2020-12-17 16:33:15.756 INFO  com.lzn.config.LogAspect                          :79   [32muHdLUQBq[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:15.756 INFO  com.lzn.config.LogAspect                          :97   [32muHdLUQBq[0;39m 请求参数: [{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","password":"6fb8a81a9009027fb1a9355113aa2e5a"}]
+2020-12-17 16:33:15.757 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32muHdLUQBq[0;39m ==>  Preparing: update user SET `password` = ? where id = ? 
+2020-12-17 16:33:15.757 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32muHdLUQBq[0;39m ==> Parameters: 1f15d405949c4ed3c2279aa6d48b1e9a(String), guHzMCGy(String)
+2020-12-17 16:33:15.761 DEBUG c.l.mapper.UserMapper.updateByPrimaryKeySelective :159  [32muHdLUQBq[0;39m <==    Updates: 1
+2020-12-17 16:33:15.762 INFO  com.lzn.config.LogAspect                          :109  [32muHdLUQBq[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},"success":true}
+2020-12-17 16:33:15.762 INFO  com.lzn.config.LogAspect                          :110  [32muHdLUQBq[0;39m ------------- 结束 耗时：7 ms -------------
+2020-12-17 16:33:15.795 INFO  com.lzn.config.LogAspect                          :76   [32mN1vebLpI[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:33:15.795 INFO  com.lzn.config.LogAspect                          :77   [32mN1vebLpI[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:33:15.795 INFO  com.lzn.config.LogAspect                          :78   [32mN1vebLpI[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:33:15.795 INFO  com.lzn.config.LogAspect                          :79   [32mN1vebLpI[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:15.795 INFO  com.lzn.config.LogAspect                          :97   [32mN1vebLpI[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 16:33:15.796 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mN1vebLpI[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:33:15.796 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mN1vebLpI[0;39m ==> Parameters: 
+2020-12-17 16:33:15.797 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mN1vebLpI[0;39m <==    Columns: count(0)
+2020-12-17 16:33:15.797 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mN1vebLpI[0;39m <==        Row: 3
+2020-12-17 16:33:15.798 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mN1vebLpI[0;39m <==      Total: 1
+2020-12-17 16:33:15.798 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mN1vebLpI[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:33:15.798 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mN1vebLpI[0;39m ==> Parameters: 5(Integer)
+2020-12-17 16:33:15.799 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mN1vebLpI[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:33:15.799 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mN1vebLpI[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:15.799 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mN1vebLpI[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:15.800 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mN1vebLpI[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:15.800 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mN1vebLpI[0;39m <==      Total: 3
+2020-12-17 16:33:15.800 INFO  com.lzn.config.LogAspect                          :109  [32mN1vebLpI[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-17 16:33:15.800 INFO  com.lzn.config.LogAspect                          :110  [32mN1vebLpI[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-17 16:33:22.225 INFO  com.lzn.config.LogAspect                          :76   [32mi93B1AIR[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:33:22.225 INFO  com.lzn.config.LogAspect                          :77   [32mi93B1AIR[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:33:22.225 INFO  com.lzn.config.LogAspect                          :78   [32mi93B1AIR[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:33:22.225 INFO  com.lzn.config.LogAspect                          :79   [32mi93B1AIR[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:22.225 INFO  com.lzn.config.LogAspect                          :97   [32mi93B1AIR[0;39m 请求参数: [{"page":1,"size":1,"total":0}]
+2020-12-17 16:33:22.226 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mi93B1AIR[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:33:22.227 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mi93B1AIR[0;39m ==> Parameters: 
+2020-12-17 16:33:22.227 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mi93B1AIR[0;39m <==    Columns: count(0)
+2020-12-17 16:33:22.227 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mi93B1AIR[0;39m <==        Row: 3
+2020-12-17 16:33:22.228 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mi93B1AIR[0;39m <==      Total: 1
+2020-12-17 16:33:22.228 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mi93B1AIR[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:33:22.228 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mi93B1AIR[0;39m ==> Parameters: 1(Integer)
+2020-12-17 16:33:22.229 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mi93B1AIR[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:33:22.229 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mi93B1AIR[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:22.229 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mi93B1AIR[0;39m <==      Total: 1
+2020-12-17 16:33:22.229 INFO  com.lzn.config.LogAspect                          :109  [32mi93B1AIR[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"}],"page":1,"size":1,"total":3},"success":true}
+2020-12-17 16:33:22.229 INFO  com.lzn.config.LogAspect                          :110  [32mi93B1AIR[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-17 16:33:24.657 INFO  com.lzn.config.LogAspect                          :76   [32m83GSKECg[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 16:33:24.657 INFO  com.lzn.config.LogAspect                          :77   [32m83GSKECg[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 16:33:24.657 INFO  com.lzn.config.LogAspect                          :78   [32m83GSKECg[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 16:33:24.657 INFO  com.lzn.config.LogAspect                          :79   [32m83GSKECg[0;39m 远程地址: 127.0.0.1
+2020-12-17 16:33:24.658 INFO  com.lzn.config.LogAspect                          :97   [32m83GSKECg[0;39m 请求参数: [{"page":1,"size":100,"total":0}]
+2020-12-17 16:33:24.659 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m83GSKECg[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 16:33:24.660 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m83GSKECg[0;39m ==> Parameters: 
+2020-12-17 16:33:24.662 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m83GSKECg[0;39m <==    Columns: count(0)
+2020-12-17 16:33:24.663 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m83GSKECg[0;39m <==        Row: 3
+2020-12-17 16:33:24.663 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m83GSKECg[0;39m <==      Total: 1
+2020-12-17 16:33:24.664 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m83GSKECg[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 16:33:24.664 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m83GSKECg[0;39m ==> Parameters: 100(Integer)
+2020-12-17 16:33:24.666 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m83GSKECg[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 16:33:24.666 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m83GSKECg[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:24.667 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m83GSKECg[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:24.667 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m83GSKECg[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 16:33:24.667 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m83GSKECg[0;39m <==      Total: 3
+2020-12-17 16:33:24.667 INFO  com.lzn.config.LogAspect                          :109  [32m83GSKECg[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":100,"total":3},"success":true}
+2020-12-17 16:33:24.667 INFO  com.lzn.config.LogAspect                          :110  [32m83GSKECg[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 16:37:37.671 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:42:37.674 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:47:37.675 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:52:37.676 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:57:37.677 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:02:37.678 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:07:37.679 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:12:37.681 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:17:37.681 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:22:37.682 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:27:37.684 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:32:37.686 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:37:37.687 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:42:37.689 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:47:37.691 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:52:37.692 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 17:57:37.695 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:02:37.697 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:07:37.699 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:12:37.700 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:17:37.701 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:22:37.704 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:27:37.705 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:32:37.707 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:37:37.708 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:42:37.710 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:47:37.711 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:50:47.806 INFO  com.lzn.config.LogAspect                          :76   [32mxZxaTt4t[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 18:50:47.807 INFO  com.lzn.config.LogAspect                          :77   [32mxZxaTt4t[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/3aH75GO2 GET
+2020-12-17 18:50:47.807 INFO  com.lzn.config.LogAspect                          :78   [32mxZxaTt4t[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 18:50:47.807 INFO  com.lzn.config.LogAspect                          :79   [32mxZxaTt4t[0;39m 远程地址: 127.0.0.1
+2020-12-17 18:50:47.807 INFO  com.lzn.config.LogAspect                          :97   [32mxZxaTt4t[0;39m 请求参数: ["3aH75GO2",null,null]
+2020-12-17 18:50:47.834 INFO  com.lzn.config.LogAspect                          :109  [32mxZxaTt4t[0;39m 返回结果: null
+2020-12-17 18:50:47.835 INFO  com.lzn.config.LogAspect                          :110  [32mxZxaTt4t[0;39m ------------- 结束 耗时：30 ms -------------
+2020-12-17 18:50:48.798 INFO  com.lzn.config.LogAspect                          :76   [32muSZ364Ug[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 18:50:48.798 INFO  com.lzn.config.LogAspect                          :77   [32muSZ364Ug[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/yTWazCm5 GET
+2020-12-17 18:50:48.798 INFO  com.lzn.config.LogAspect                          :78   [32muSZ364Ug[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 18:50:48.798 INFO  com.lzn.config.LogAspect                          :79   [32muSZ364Ug[0;39m 远程地址: 127.0.0.1
+2020-12-17 18:50:48.798 INFO  com.lzn.config.LogAspect                          :97   [32muSZ364Ug[0;39m 请求参数: ["yTWazCm5",null,null]
+2020-12-17 18:50:48.809 INFO  com.lzn.config.LogAspect                          :109  [32muSZ364Ug[0;39m 返回结果: null
+2020-12-17 18:50:48.809 INFO  com.lzn.config.LogAspect                          :110  [32muSZ364Ug[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-17 18:50:56.012 INFO  com.lzn.config.LogAspect                          :76   [32mdn5GEgYm[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 18:50:56.012 INFO  com.lzn.config.LogAspect                          :77   [32mdn5GEgYm[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-17 18:50:56.012 INFO  com.lzn.config.LogAspect                          :78   [32mdn5GEgYm[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-17 18:50:56.012 INFO  com.lzn.config.LogAspect                          :79   [32mdn5GEgYm[0;39m 远程地址: 127.0.0.1
+2020-12-17 18:50:56.012 INFO  com.lzn.config.LogAspect                          :97   [32mdn5GEgYm[0;39m 请求参数: [{"imageCode":"xgan","imageCodeToken":"yTWazCm5","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-17 18:50:56.019 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mdn5GEgYm[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-17 18:50:56.020 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mdn5GEgYm[0;39m ==> Parameters: admin(String)
+2020-12-17 18:50:56.021 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mdn5GEgYm[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 18:50:56.021 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mdn5GEgYm[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 18:50:56.021 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mdn5GEgYm[0;39m <==      Total: 1
+2020-12-17 18:50:56.023 INFO  com.lzn.config.LogAspect                          :109  [32mdn5GEgYm[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"89mkgnMZ"},"success":true}
+2020-12-17 18:50:56.023 INFO  com.lzn.config.LogAspect                          :110  [32mdn5GEgYm[0;39m ------------- 结束 耗时：11 ms -------------
+2020-12-17 18:52:37.712 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 18:57:37.713 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:02:37.715 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:07:37.716 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:12:37.719 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:17:37.722 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:22:37.723 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:24:50.838 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-17 19:24:52.350 INFO  com.lzn.system.config.SystemApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-17 19:24:52.817 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 19:24:52.820 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 19:24:52.840 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-12-17 19:24:53.035 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b12872b4-1b33-31c5-addc-a3fa542a782c
+2020-12-17 19:24:53.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2020-12-17 19:24:53.697 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-17 19:24:53.697 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-12-17 19:24:53.697 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-17 19:24:53.787 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-12-17 19:24:53.787 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m        [0;39m Root WebApplicationContext: initialization completed in 1424 ms
+2020-12-17 19:24:54.635 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-17 19:24:54.635 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-17 19:24:54.638 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-17 19:24:54.639 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-17 19:24:54.838 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 19:24:56.362 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 19:24:56.409 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-17 19:24:57.547 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 19:24:57.575 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-17 19:24:57.627 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-17 19:24:57.675 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-17 19:24:57.905 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-17 19:24:57.905 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-17 19:24:58.119 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-17 19:24:58.119 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-17 19:24:58.295 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 19:24:58.384 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-17 19:24:58.385 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-17 19:24:58.385 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-17 19:24:58.385 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-17 19:24:58.385 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-17 19:24:58.385 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-17 19:24:58.386 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-17 19:24:58.518 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-17 19:24:58.520 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-17 19:24:58.522 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-17 19:24:58.525 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1608204298524 with initial instances count: 2
+2020-12-17 19:24:58.529 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2020-12-17 19:24:58.529 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1608204298529, current=UP, previous=STARTING]
+2020-12-17 19:24:58.531 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001: registering service...
+2020-12-17 19:24:58.531 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2020-12-17 19:24:58.554 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2020-12-17 19:24:58.555 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2020-12-17 19:24:58.563 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_SYSTEM/localhost:system:9001 - registration status: 204
+2020-12-17 19:24:59.677 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 19:24:59.686 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 10.255 seconds (JVM running for 10.719)
+2020-12-17 19:24:59.687 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
+2020-12-17 19:24:59.687 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-17 19:25:02.737 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 19:25:02.738 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-17 19:25:02.747 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
+2020-12-17 19:25:02.796 INFO  com.lzn.config.LogAspect                          :76   [32myEGVHLV2[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 19:25:02.797 INFO  com.lzn.config.LogAspect                          :77   [32myEGVHLV2[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/CdarOsE1 GET
+2020-12-17 19:25:02.798 INFO  com.lzn.config.LogAspect                          :78   [32myEGVHLV2[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 19:25:02.798 INFO  com.lzn.config.LogAspect                          :79   [32myEGVHLV2[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:02.801 INFO  com.lzn.config.LogAspect                          :97   [32myEGVHLV2[0;39m 请求参数: ["CdarOsE1",null,null]
+2020-12-17 19:25:03.314 INFO  com.lzn.config.LogAspect                          :109  [32myEGVHLV2[0;39m 返回结果: null
+2020-12-17 19:25:03.315 INFO  com.lzn.config.LogAspect                          :110  [32myEGVHLV2[0;39m ------------- 结束 耗时：522 ms -------------
+2020-12-17 19:25:08.185 INFO  com.lzn.config.LogAspect                          :76   [32mfeXVFr9Q[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 19:25:08.185 INFO  com.lzn.config.LogAspect                          :77   [32mfeXVFr9Q[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-17 19:25:08.185 INFO  com.lzn.config.LogAspect                          :78   [32mfeXVFr9Q[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-17 19:25:08.185 INFO  com.lzn.config.LogAspect                          :79   [32mfeXVFr9Q[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:08.195 INFO  com.lzn.config.LogAspect                          :97   [32mfeXVFr9Q[0;39m 请求参数: [{"imageCode":"cx3n","imageCodeToken":"CdarOsE1","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-17 19:25:08.263 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mfeXVFr9Q[0;39m HikariPool-1 - Starting...
+2020-12-17 19:25:08.438 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mfeXVFr9Q[0;39m HikariPool-1 - Start completed.
+2020-12-17 19:25:08.443 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mfeXVFr9Q[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-17 19:25:08.458 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mfeXVFr9Q[0;39m ==> Parameters: admin(String)
+2020-12-17 19:25:08.466 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mfeXVFr9Q[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 19:25:08.467 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mfeXVFr9Q[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:08.468 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mfeXVFr9Q[0;39m <==      Total: 1
+2020-12-17 19:25:08.477 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32mfeXVFr9Q[0;39m ==>  Preparing: select distinct r.id, r.`name`, r.page, r.request, r.parent from role_user ru, role_resource rr, resource r where ru.user_id = ? and ru.role_id = rr.role_id and rr.resource_id = r.id order by r.id asc 
+2020-12-17 19:25:08.477 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32mfeXVFr9Q[0;39m ==> Parameters: guHzMCGy(String)
+2020-12-17 19:25:08.478 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:08.478 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2020-12-17 19:25:08.479 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 01, 系统管理, null, null, 
+2020-12-17 19:25:08.479 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2020-12-17 19:25:08.480 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2020-12-17 19:25:08.480 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 010102, 删除, null, ["/system/admin/user/delete"], 0101
+2020-12-17 19:25:08.480 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2020-12-17 19:25:08.481 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 02, 业务管理, null, null, 
+2020-12-17 19:25:08.481 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0201, 分类管理, business/category, null, 02
+2020-12-17 19:25:08.481 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 020101, 增删改查, null, ["/business/admin/category"], 0201
+2020-12-17 19:25:08.481 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0202, 课程管理, business/course, null, 02
+2020-12-17 19:25:08.482 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 020201, 增删改查, null, ["/business/admin/course","/business/admin/category/all"], 0202
+2020-12-17 19:25:08.482 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2020-12-17 19:25:08.482 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2020-12-17 19:25:08.482 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0204, 会员管理, business/member, null, 02
+2020-12-17 19:25:08.483 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 020401, 增删改查, null, ["/business/admin/member"], 0204
+2020-12-17 19:25:08.483 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0205, 短信管理, business/sms, null, 02
+2020-12-17 19:25:08.484 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 020501, 增删改查, null, ["/business/admin/sms"], 0205
+2020-12-17 19:25:08.484 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 03, 文件管理, null, null, 
+2020-12-17 19:25:08.484 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 0301, 文件管理, file/file, null, 03
+2020-12-17 19:25:08.484 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mfeXVFr9Q[0;39m <==        Row: 030101, 文件管理, null, ["/file/admin/file"], 0301
+2020-12-17 19:25:08.485 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32mfeXVFr9Q[0;39m <==      Total: 20
+2020-12-17 19:25:08.490 INFO  com.lzn.service.UserService                       :171  [32mfeXVFr9Q[0;39m 有权限的请求：[/system/admin/user/save, /business/admin/sms, /system/admin/user/delete, /business/admin/category/all, /business/admin/teacher, /business/admin/category, /business/admin/course, /system/admin/user/save-password, /business/admin/member, /system/admin/user/list, /file/admin/file]
+2020-12-17 19:25:08.500 INFO  com.lzn.config.LogAspect                          :109  [32mfeXVFr9Q[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","requests":["/system/admin/user/save","/business/admin/sms","/system/admin/user/delete","/business/admin/category/all","/business/admin/teacher","/business/admin/category","/business/admin/course","/system/admin/user/save-password","/business/admin/member","/system/admin/user/list","/file/admin/file"],"resources":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010102","name":"删除","parent":"0101","request":"[\"/system/admin/user/delete\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"0201","name":"分类管理","page":"business/category","parent":"02"},{"id":"020101","name":"增删改查","parent":"0201","request":"[\"/business/admin/category\"]"},{"id":"0202","name":"课程管理","page":"business/course","parent":"02"},{"id":"020201","name":"增删改查","parent":"0202","request":"[\"/business/admin/course\",\"/business/admin/category/all\"]"},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"},{"id":"0204","name":"会员管理","page":"business/member","parent":"02"},{"id":"020401","name":"增删改查","parent":"0204","request":"[\"/business/admin/member\"]"},{"id":"0205","name":"短信管理","page":"business/sms","parent":"02"},{"id":"020501","name":"增删改查","parent":"0205","request":"[\"/business/admin/sms\"]"},{"id":"03","name":"文件管理","parent":""},{"id":"0301","name":"文件管理","page":"file/file","parent":"03"},{"id":"030101","name":"文件管理","parent":"0301","request":"[\"/file/admin/file\"]"}],"token":"5OqR4ZW7"},"success":true}
+2020-12-17 19:25:08.501 INFO  com.lzn.config.LogAspect                          :110  [32mfeXVFr9Q[0;39m ------------- 结束 耗时：317 ms -------------
+2020-12-17 19:25:18.450 INFO  com.lzn.config.LogAspect                          :76   [32mgvY4kFYT[0;39m ------------- 【资源】操作开始 -------------
+2020-12-17 19:25:18.450 INFO  com.lzn.config.LogAspect                          :77   [32mgvY4kFYT[0;39m 请求地址: http://localhost:9001/system/admin/resource/load-tree GET
+2020-12-17 19:25:18.451 INFO  com.lzn.config.LogAspect                          :78   [32mgvY4kFYT[0;39m 类名方法: com.lzn.system.controller.admin.ResourceController.loadTree
+2020-12-17 19:25:18.451 INFO  com.lzn.config.LogAspect                          :79   [32mgvY4kFYT[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:18.451 INFO  com.lzn.config.LogAspect                          :97   [32mgvY4kFYT[0;39m 请求参数: []
+2020-12-17 19:25:18.460 INFO  com.lzn.config.LogAspect                          :76   [32mVuzQJCxa[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 19:25:18.461 INFO  com.lzn.config.LogAspect                          :77   [32mVuzQJCxa[0;39m 请求地址: http://localhost:9001/system/admin/role/list POST
+2020-12-17 19:25:18.461 INFO  com.lzn.config.LogAspect                          :78   [32mVuzQJCxa[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.list
+2020-12-17 19:25:18.461 INFO  com.lzn.config.LogAspect                          :79   [32mVuzQJCxa[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:18.463 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32mgvY4kFYT[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource order by id asc 
+2020-12-17 19:25:18.464 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32mgvY4kFYT[0;39m ==> Parameters: 
+2020-12-17 19:25:18.465 INFO  com.lzn.config.LogAspect                          :97   [32mVuzQJCxa[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 19:25:18.465 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:18.465 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2020-12-17 19:25:18.466 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 01, 系统管理, null, null, 
+2020-12-17 19:25:18.466 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2020-12-17 19:25:18.466 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2020-12-17 19:25:18.466 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 010102, 删除, null, ["/system/admin/user/delete"], 0101
+2020-12-17 19:25:18.467 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2020-12-17 19:25:18.467 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0102, 资源管理, system/resource, null, 01
+2020-12-17 19:25:18.467 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 010201, 保存/显示, null, ["/system/admin/resource"], 0102
+2020-12-17 19:25:18.467 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0103, 角色管理, system/role, null, 01
+2020-12-17 19:25:18.468 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 010301, 角色/权限管理, null, ["/system/admin/role"], 0103
+2020-12-17 19:25:18.468 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 02, 业务管理, null, null, 
+2020-12-17 19:25:18.468 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0201, 分类管理, business/category, null, 02
+2020-12-17 19:25:18.468 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 020101, 增删改查, null, ["/business/admin/category"], 0201
+2020-12-17 19:25:18.469 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0202, 课程管理, business/course, null, 02
+2020-12-17 19:25:18.469 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 020201, 增删改查, null, ["/business/admin/course","/business/admin/category/all"], 0202
+2020-12-17 19:25:18.469 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2020-12-17 19:25:18.472 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2020-12-17 19:25:18.473 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0204, 会员管理, business/member, null, 02
+2020-12-17 19:25:18.473 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 020401, 增删改查, null, ["/business/admin/member"], 0204
+2020-12-17 19:25:18.474 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0205, 短信管理, business/sms, null, 02
+2020-12-17 19:25:18.474 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 020501, 增删改查, null, ["/business/admin/sms"], 0205
+2020-12-17 19:25:18.474 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 03, 文件管理, null, null, 
+2020-12-17 19:25:18.475 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 0301, 文件管理, file/file, null, 03
+2020-12-17 19:25:18.475 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32mgvY4kFYT[0;39m <==        Row: 030101, 文件管理, null, ["/file/admin/file"], 0301
+2020-12-17 19:25:18.475 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32mgvY4kFYT[0;39m <==      Total: 24
+2020-12-17 19:25:18.481 INFO  com.lzn.config.LogAspect                          :109  [32mgvY4kFYT[0;39m 返回结果: {"content":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"children":[{"children":[{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010102","name":"删除","parent":"0101","request":"[\"/system/admin/user/delete\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"}],"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"children":[{"id":"010201","name":"保存/显示","parent":"0102","request":"[\"/system/admin/resource\"]"}],"id":"0102","name":"资源管理","page":"system/resource","parent":"01"},{"children":[{"id":"010301","name":"角色/权限管理","parent":"0103","request":"[\"/system/admin/role\"]"}],"id":"0103","name":"角色管理","page":"system/role","parent":"01"}],"id":"01","name":"系统管理","parent":""},{"children":[{"children":[{"id":"020101","name":"增删改查","parent":"0201","request":"[\"/business/admin/category\"]"}],"id":"0201","name":"分类管理","page":"business/category","parent":"02"},{"children":[{"id":"020201","name":"增删改查","parent":"0202","request":"[\"/business/admin/course\",\"/business/admin/category/all\"]"}],"id":"0202","name":"课程管理","page":"business/course","parent":"02"},{"children":[{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"}],"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"children":[{"id":"020401","name":"增删改查","parent":"0204","request":"[\"/business/admin/member\"]"}],"id":"0204","name":"会员管理","page":"business/member","parent":"02"},{"children":[{"id":"020501","name":"增删改查","parent":"0205","request":"[\"/business/admin/sms\"]"}],"id":"0205","name":"短信管理","page":"business/sms","parent":"02"}],"id":"02","name":"业务管理","parent":""},{"children":[{"children":[{"id":"030101","name":"文件管理","parent":"0301","request":"[\"/file/admin/file\"]"}],"id":"0301","name":"文件管理","page":"file/file","parent":"03"}],"id":"03","name":"文件管理","parent":""}],"success":true}
+2020-12-17 19:25:18.481 INFO  com.lzn.config.LogAspect                          :110  [32mgvY4kFYT[0;39m ------------- 结束 耗时：31 ms -------------
+2020-12-17 19:25:18.508 DEBUG com.lzn.mapper.RoleMapper.selectByExample_COUNT   :159  [32mVuzQJCxa[0;39m ==>  Preparing: SELECT count(0) FROM role 
+2020-12-17 19:25:18.509 DEBUG com.lzn.mapper.RoleMapper.selectByExample_COUNT   :159  [32mVuzQJCxa[0;39m ==> Parameters: 
+2020-12-17 19:25:18.510 TRACE com.lzn.mapper.RoleMapper.selectByExample_COUNT   :165  [32mVuzQJCxa[0;39m <==    Columns: count(0)
+2020-12-17 19:25:18.510 TRACE com.lzn.mapper.RoleMapper.selectByExample_COUNT   :165  [32mVuzQJCxa[0;39m <==        Row: 3
+2020-12-17 19:25:18.510 DEBUG com.lzn.mapper.RoleMapper.selectByExample_COUNT   :159  [32mVuzQJCxa[0;39m <==      Total: 1
+2020-12-17 19:25:18.512 DEBUG com.lzn.mapper.RoleMapper.selectByExample         :159  [32mVuzQJCxa[0;39m ==>  Preparing: select id, `name`, `desc` from role LIMIT ? 
+2020-12-17 19:25:18.512 DEBUG com.lzn.mapper.RoleMapper.selectByExample         :159  [32mVuzQJCxa[0;39m ==> Parameters: 5(Integer)
+2020-12-17 19:25:18.513 TRACE com.lzn.mapper.RoleMapper.selectByExample         :165  [32mVuzQJCxa[0;39m <==    Columns: id, name, desc
+2020-12-17 19:25:18.513 TRACE com.lzn.mapper.RoleMapper.selectByExample         :165  [32mVuzQJCxa[0;39m <==        Row: 00000000, 系统管理员, 管理用户、角色权限
+2020-12-17 19:25:18.513 TRACE com.lzn.mapper.RoleMapper.selectByExample         :165  [32mVuzQJCxa[0;39m <==        Row: 00000001, 开发, 维护资源
+2020-12-17 19:25:18.513 TRACE com.lzn.mapper.RoleMapper.selectByExample         :165  [32mVuzQJCxa[0;39m <==        Row: 00000002, 业务管理员, 负责业务管理
+2020-12-17 19:25:18.514 DEBUG com.lzn.mapper.RoleMapper.selectByExample         :159  [32mVuzQJCxa[0;39m <==      Total: 3
+2020-12-17 19:25:18.520 INFO  com.lzn.config.LogAspect                          :109  [32mVuzQJCxa[0;39m 返回结果: {"content":{"list":[{"desc":"管理用户、角色权限","id":"00000000","name":"系统管理员"},{"desc":"维护资源","id":"00000001","name":"开发"},{"desc":"负责业务管理","id":"00000002","name":"业务管理员"}],"page":1,"size":5,"total":3},"success":true}
+2020-12-17 19:25:18.520 INFO  com.lzn.config.LogAspect                          :110  [32mVuzQJCxa[0;39m ------------- 结束 耗时：60 ms -------------
+2020-12-17 19:25:19.824 INFO  com.lzn.config.LogAspect                          :76   [32ma40RVBFZ[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 19:25:19.825 INFO  com.lzn.config.LogAspect                          :77   [32ma40RVBFZ[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 19:25:19.825 INFO  com.lzn.config.LogAspect                          :78   [32ma40RVBFZ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 19:25:19.825 INFO  com.lzn.config.LogAspect                          :79   [32ma40RVBFZ[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:19.825 INFO  com.lzn.config.LogAspect                          :97   [32ma40RVBFZ[0;39m 请求参数: [{"page":1,"size":9999,"total":0}]
+2020-12-17 19:25:19.826 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32ma40RVBFZ[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 19:25:19.826 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32ma40RVBFZ[0;39m ==> Parameters: 
+2020-12-17 19:25:19.827 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32ma40RVBFZ[0;39m <==    Columns: count(0)
+2020-12-17 19:25:19.827 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32ma40RVBFZ[0;39m <==        Row: 3
+2020-12-17 19:25:19.827 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32ma40RVBFZ[0;39m <==      Total: 1
+2020-12-17 19:25:19.828 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32ma40RVBFZ[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 19:25:19.828 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32ma40RVBFZ[0;39m ==> Parameters: 9999(Integer)
+2020-12-17 19:25:19.829 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ma40RVBFZ[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 19:25:19.829 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ma40RVBFZ[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:19.830 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ma40RVBFZ[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:19.830 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32ma40RVBFZ[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:19.830 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32ma40RVBFZ[0;39m <==      Total: 3
+2020-12-17 19:25:19.832 INFO  com.lzn.config.LogAspect                          :109  [32ma40RVBFZ[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":9999,"total":3},"success":true}
+2020-12-17 19:25:19.832 INFO  com.lzn.config.LogAspect                          :110  [32ma40RVBFZ[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-17 19:25:19.859 INFO  com.lzn.config.LogAspect                          :76   [32myuwKdTS5[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 19:25:19.859 INFO  com.lzn.config.LogAspect                          :77   [32myuwKdTS5[0;39m 请求地址: http://localhost:9001/system/admin/role/list-user/00000002 GET
+2020-12-17 19:25:19.859 INFO  com.lzn.config.LogAspect                          :78   [32myuwKdTS5[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.listUser
+2020-12-17 19:25:19.860 INFO  com.lzn.config.LogAspect                          :79   [32myuwKdTS5[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:19.860 INFO  com.lzn.config.LogAspect                          :97   [32myuwKdTS5[0;39m 请求参数: ["00000002"]
+2020-12-17 19:25:19.862 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32myuwKdTS5[0;39m ==>  Preparing: select id, role_id, user_id from role_user WHERE ( role_id = ? ) 
+2020-12-17 19:25:19.863 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32myuwKdTS5[0;39m ==> Parameters: 00000002(String)
+2020-12-17 19:25:19.864 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32myuwKdTS5[0;39m <==      Total: 0
+2020-12-17 19:25:19.864 INFO  com.lzn.config.LogAspect                          :109  [32myuwKdTS5[0;39m 返回结果: {"content":[],"success":true}
+2020-12-17 19:25:19.864 INFO  com.lzn.config.LogAspect                          :110  [32myuwKdTS5[0;39m ------------- 结束 耗时：5 ms -------------
+2020-12-17 19:25:24.118 INFO  com.lzn.config.LogAspect                          :76   [32m7R6B63nJ[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 19:25:24.118 INFO  com.lzn.config.LogAspect                          :77   [32m7R6B63nJ[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 19:25:24.118 INFO  com.lzn.config.LogAspect                          :78   [32m7R6B63nJ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 19:25:24.119 INFO  com.lzn.config.LogAspect                          :79   [32m7R6B63nJ[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:24.119 INFO  com.lzn.config.LogAspect                          :97   [32m7R6B63nJ[0;39m 请求参数: [{"page":1,"size":9999,"total":0}]
+2020-12-17 19:25:24.120 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m7R6B63nJ[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 19:25:24.121 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m7R6B63nJ[0;39m ==> Parameters: 
+2020-12-17 19:25:24.122 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m7R6B63nJ[0;39m <==    Columns: count(0)
+2020-12-17 19:25:24.122 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32m7R6B63nJ[0;39m <==        Row: 3
+2020-12-17 19:25:24.122 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32m7R6B63nJ[0;39m <==      Total: 1
+2020-12-17 19:25:24.122 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7R6B63nJ[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 19:25:24.122 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7R6B63nJ[0;39m ==> Parameters: 9999(Integer)
+2020-12-17 19:25:24.123 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7R6B63nJ[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 19:25:24.123 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7R6B63nJ[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:24.124 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7R6B63nJ[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:24.124 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7R6B63nJ[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:24.124 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7R6B63nJ[0;39m <==      Total: 3
+2020-12-17 19:25:24.124 INFO  com.lzn.config.LogAspect                          :109  [32m7R6B63nJ[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":9999,"total":3},"success":true}
+2020-12-17 19:25:24.124 INFO  com.lzn.config.LogAspect                          :110  [32m7R6B63nJ[0;39m ------------- 结束 耗时：6 ms -------------
+2020-12-17 19:25:24.150 INFO  com.lzn.config.LogAspect                          :76   [32mrS7MdbiG[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 19:25:24.150 INFO  com.lzn.config.LogAspect                          :77   [32mrS7MdbiG[0;39m 请求地址: http://localhost:9001/system/admin/role/list-user/00000000 GET
+2020-12-17 19:25:24.151 INFO  com.lzn.config.LogAspect                          :78   [32mrS7MdbiG[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.listUser
+2020-12-17 19:25:24.151 INFO  com.lzn.config.LogAspect                          :79   [32mrS7MdbiG[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:24.151 INFO  com.lzn.config.LogAspect                          :97   [32mrS7MdbiG[0;39m 请求参数: ["00000000"]
+2020-12-17 19:25:24.151 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mrS7MdbiG[0;39m ==>  Preparing: select id, role_id, user_id from role_user WHERE ( role_id = ? ) 
+2020-12-17 19:25:24.152 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mrS7MdbiG[0;39m ==> Parameters: 00000000(String)
+2020-12-17 19:25:24.152 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mrS7MdbiG[0;39m <==    Columns: id, role_id, user_id
+2020-12-17 19:25:24.153 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mrS7MdbiG[0;39m <==        Row: 2vKPxxKx, 00000000, 4bsbbzd1
+2020-12-17 19:25:24.153 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mrS7MdbiG[0;39m <==        Row: 6d8Om9Uc, 00000000, 10000000
+2020-12-17 19:25:24.153 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32mrS7MdbiG[0;39m <==        Row: 9LK6m77t, 00000000, guHzMCGy
+2020-12-17 19:25:24.154 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32mrS7MdbiG[0;39m <==      Total: 3
+2020-12-17 19:25:24.154 INFO  com.lzn.config.LogAspect                          :109  [32mrS7MdbiG[0;39m 返回结果: {"content":["4bsbbzd1","10000000","guHzMCGy"],"success":true}
+2020-12-17 19:25:24.154 INFO  com.lzn.config.LogAspect                          :110  [32mrS7MdbiG[0;39m ------------- 结束 耗时：4 ms -------------
+2020-12-17 19:25:26.519 INFO  com.lzn.config.LogAspect                          :76   [32mTnpt2DlR[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 19:25:26.519 INFO  com.lzn.config.LogAspect                          :77   [32mTnpt2DlR[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 19:25:26.519 INFO  com.lzn.config.LogAspect                          :78   [32mTnpt2DlR[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 19:25:26.520 INFO  com.lzn.config.LogAspect                          :79   [32mTnpt2DlR[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:26.520 INFO  com.lzn.config.LogAspect                          :97   [32mTnpt2DlR[0;39m 请求参数: [{"page":1,"size":9999,"total":0}]
+2020-12-17 19:25:26.521 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mTnpt2DlR[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 19:25:26.522 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mTnpt2DlR[0;39m ==> Parameters: 
+2020-12-17 19:25:26.523 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mTnpt2DlR[0;39m <==    Columns: count(0)
+2020-12-17 19:25:26.523 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mTnpt2DlR[0;39m <==        Row: 3
+2020-12-17 19:25:26.523 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mTnpt2DlR[0;39m <==      Total: 1
+2020-12-17 19:25:26.523 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mTnpt2DlR[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 19:25:26.524 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mTnpt2DlR[0;39m ==> Parameters: 9999(Integer)
+2020-12-17 19:25:26.524 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mTnpt2DlR[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 19:25:26.524 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mTnpt2DlR[0;39m <==        Row: 10000000, test, 测试111111, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:26.525 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mTnpt2DlR[0;39m <==        Row: 4bsbbzd1, test11, null, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:26.525 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mTnpt2DlR[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:26.525 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mTnpt2DlR[0;39m <==      Total: 3
+2020-12-17 19:25:26.525 INFO  com.lzn.config.LogAspect                          :109  [32mTnpt2DlR[0;39m 返回结果: {"content":{"list":[{"id":"10000000","loginName":"test","name":"测试111111"},{"id":"4bsbbzd1","loginName":"test11"},{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":9999,"total":3},"success":true}
+2020-12-17 19:25:26.526 INFO  com.lzn.config.LogAspect                          :110  [32mTnpt2DlR[0;39m ------------- 结束 耗时：7 ms -------------
+2020-12-17 19:25:26.545 INFO  com.lzn.config.LogAspect                          :76   [32m0aZ33pjX[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 19:25:26.545 INFO  com.lzn.config.LogAspect                          :77   [32m0aZ33pjX[0;39m 请求地址: http://localhost:9001/system/admin/role/list-user/00000000 GET
+2020-12-17 19:25:26.546 INFO  com.lzn.config.LogAspect                          :78   [32m0aZ33pjX[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.listUser
+2020-12-17 19:25:26.546 INFO  com.lzn.config.LogAspect                          :79   [32m0aZ33pjX[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:26.546 INFO  com.lzn.config.LogAspect                          :97   [32m0aZ33pjX[0;39m 请求参数: ["00000000"]
+2020-12-17 19:25:26.546 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32m0aZ33pjX[0;39m ==>  Preparing: select id, role_id, user_id from role_user WHERE ( role_id = ? ) 
+2020-12-17 19:25:26.547 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32m0aZ33pjX[0;39m ==> Parameters: 00000000(String)
+2020-12-17 19:25:26.551 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32m0aZ33pjX[0;39m <==    Columns: id, role_id, user_id
+2020-12-17 19:25:26.552 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32m0aZ33pjX[0;39m <==        Row: 2vKPxxKx, 00000000, 4bsbbzd1
+2020-12-17 19:25:26.552 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32m0aZ33pjX[0;39m <==        Row: 6d8Om9Uc, 00000000, 10000000
+2020-12-17 19:25:26.552 TRACE com.lzn.mapper.RoleUserMapper.selectByExample     :165  [32m0aZ33pjX[0;39m <==        Row: 9LK6m77t, 00000000, guHzMCGy
+2020-12-17 19:25:26.552 DEBUG com.lzn.mapper.RoleUserMapper.selectByExample     :159  [32m0aZ33pjX[0;39m <==      Total: 3
+2020-12-17 19:25:26.553 INFO  com.lzn.config.LogAspect                          :109  [32m0aZ33pjX[0;39m 返回结果: {"content":["4bsbbzd1","10000000","guHzMCGy"],"success":true}
+2020-12-17 19:25:26.553 INFO  com.lzn.config.LogAspect                          :110  [32m0aZ33pjX[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-17 19:25:30.909 INFO  com.lzn.config.LogAspect                          :76   [32my432wvfO[0;39m ------------- 【角色】查询开始 -------------
+2020-12-17 19:25:30.910 INFO  com.lzn.config.LogAspect                          :77   [32my432wvfO[0;39m 请求地址: http://localhost:9001/system/admin/role/list-resource/00000000 GET
+2020-12-17 19:25:30.910 INFO  com.lzn.config.LogAspect                          :78   [32my432wvfO[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.listResource
+2020-12-17 19:25:30.910 INFO  com.lzn.config.LogAspect                          :79   [32my432wvfO[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:30.910 INFO  com.lzn.config.LogAspect                          :97   [32my432wvfO[0;39m 请求参数: ["00000000"]
+2020-12-17 19:25:30.913 DEBUG com.lzn.mapper.RoleResourceMapper.selectByExample :159  [32my432wvfO[0;39m ==>  Preparing: select id, role_id, resource_id from role_resource WHERE ( role_id = ? ) 
+2020-12-17 19:25:30.914 DEBUG com.lzn.mapper.RoleResourceMapper.selectByExample :159  [32my432wvfO[0;39m ==> Parameters: 00000000(String)
+2020-12-17 19:25:30.915 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==    Columns: id, role_id, resource_id
+2020-12-17 19:25:30.915 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: 4zlTatzU, 00000000, 010102
+2020-12-17 19:25:30.916 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: dG5yeUWV, 00000000, 010103
+2020-12-17 19:25:30.916 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: DJPVrVdZ, 00000000, 010101
+2020-12-17 19:25:30.916 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: E94Ez5Yw, 00000000, 0204
+2020-12-17 19:25:30.916 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: ENxwPK63, 00000000, 020101
+2020-12-17 19:25:30.917 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: G38VOQon, 00000000, 02
+2020-12-17 19:25:30.917 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: lh4pwyaU, 00000000, 030101
+2020-12-17 19:25:30.917 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: m25H8hBk, 00000000, 00
+2020-12-17 19:25:30.917 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: M5WaIT2M, 00000000, 01
+2020-12-17 19:25:30.917 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: m6u1ZKTM, 00000000, 020401
+2020-12-17 19:25:30.917 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: MUqfQWdo, 00000000, 0101
+2020-12-17 19:25:30.918 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: OaGz13jP, 00000000, 0201
+2020-12-17 19:25:30.918 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: OlAEJRsh, 00000000, 03
+2020-12-17 19:25:30.918 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: P3THjlq3, 00000000, 0301
+2020-12-17 19:25:30.918 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: PY71FwtF, 00000000, 0205
+2020-12-17 19:25:30.918 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: tbQcIWoz, 00000000, 0203
+2020-12-17 19:25:30.919 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: unbMtX0G, 00000000, 0202
+2020-12-17 19:25:30.919 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: vULb09BA, 00000000, 020301
+2020-12-17 19:25:30.920 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: VYmTx4iu, 00000000, 020201
+2020-12-17 19:25:30.920 TRACE com.lzn.mapper.RoleResourceMapper.selectByExample :165  [32my432wvfO[0;39m <==        Row: XWuLjnR3, 00000000, 020501
+2020-12-17 19:25:30.920 DEBUG com.lzn.mapper.RoleResourceMapper.selectByExample :159  [32my432wvfO[0;39m <==      Total: 20
+2020-12-17 19:25:30.923 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.924 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 010102(String)
+2020-12-17 19:25:30.926 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.926 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 010102, 删除, null, ["/system/admin/user/delete"], 0101
+2020-12-17 19:25:30.926 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.927 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.928 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 010103(String)
+2020-12-17 19:25:30.928 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.929 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2020-12-17 19:25:30.929 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.929 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.930 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 010101(String)
+2020-12-17 19:25:30.930 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.930 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2020-12-17 19:25:30.931 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.931 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.931 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0204(String)
+2020-12-17 19:25:30.932 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.932 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0204, 会员管理, business/member, null, 02
+2020-12-17 19:25:30.932 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.933 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.933 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 020101(String)
+2020-12-17 19:25:30.934 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.934 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 020101, 增删改查, null, ["/business/admin/category"], 0201
+2020-12-17 19:25:30.934 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.935 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.935 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 02(String)
+2020-12-17 19:25:30.936 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.936 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 02, 业务管理, null, null, 
+2020-12-17 19:25:30.936 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.937 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.937 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 030101(String)
+2020-12-17 19:25:30.938 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.939 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 030101, 文件管理, null, ["/file/admin/file"], 0301
+2020-12-17 19:25:30.940 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.941 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.941 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 00(String)
+2020-12-17 19:25:30.942 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.942 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2020-12-17 19:25:30.942 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.943 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.943 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 01(String)
+2020-12-17 19:25:30.944 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.944 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 01, 系统管理, null, null, 
+2020-12-17 19:25:30.944 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.944 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.945 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 020401(String)
+2020-12-17 19:25:30.945 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.946 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 020401, 增删改查, null, ["/business/admin/member"], 0204
+2020-12-17 19:25:30.946 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.946 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.947 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0101(String)
+2020-12-17 19:25:30.947 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.947 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2020-12-17 19:25:30.947 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.948 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.948 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0201(String)
+2020-12-17 19:25:30.948 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.948 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0201, 分类管理, business/category, null, 02
+2020-12-17 19:25:30.948 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.948 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.949 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 03(String)
+2020-12-17 19:25:30.949 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.949 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 03, 文件管理, null, null, 
+2020-12-17 19:25:30.950 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.950 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.951 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0301(String)
+2020-12-17 19:25:30.951 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.951 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0301, 文件管理, file/file, null, 03
+2020-12-17 19:25:30.952 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.953 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.953 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0205(String)
+2020-12-17 19:25:30.955 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.955 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0205, 短信管理, business/sms, null, 02
+2020-12-17 19:25:30.956 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.957 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.958 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0203(String)
+2020-12-17 19:25:30.958 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.958 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2020-12-17 19:25:30.959 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.959 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.960 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 0202(String)
+2020-12-17 19:25:30.960 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.960 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 0202, 课程管理, business/course, null, 02
+2020-12-17 19:25:30.960 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.961 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.961 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 020301(String)
+2020-12-17 19:25:30.962 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.962 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2020-12-17 19:25:30.962 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.962 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.963 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 020201(String)
+2020-12-17 19:25:30.963 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.963 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 020201, 增删改查, null, ["/business/admin/course","/business/admin/category/all"], 0202
+2020-12-17 19:25:30.964 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.964 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==>  Preparing: select id, `name`, page, request, parent from resource WHERE ( id = ? ) 
+2020-12-17 19:25:30.964 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m ==> Parameters: 020501(String)
+2020-12-17 19:25:30.965 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:30.965 TRACE com.lzn.mapper.ResourceMapper.selectByExample     :165  [32my432wvfO[0;39m <==        Row: 020501, 增删改查, null, ["/business/admin/sms"], 0205
+2020-12-17 19:25:30.965 DEBUG com.lzn.mapper.ResourceMapper.selectByExample     :159  [32my432wvfO[0;39m <==      Total: 1
+2020-12-17 19:25:30.966 INFO  com.lzn.config.LogAspect                          :109  [32my432wvfO[0;39m 返回结果: {"content":[{"id":"010102","name":"删除","parent":"0101","request":"[\"/system/admin/user/delete\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"0204","name":"会员管理","page":"business/member","parent":"02"},{"id":"020101","name":"增删改查","parent":"0201","request":"[\"/business/admin/category\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"030101","name":"文件管理","parent":"0301","request":"[\"/file/admin/file\"]"},{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"020401","name":"增删改查","parent":"0204","request":"[\"/business/admin/member\"]"},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"0201","name":"分类管理","page":"business/category","parent":"02"},{"id":"03","name":"文件管理","parent":""},{"id":"0301","name":"文件管理","page":"file/file","parent":"03"},{"id":"0205","name":"短信管理","page":"business/sms","parent":"02"},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"0202","name":"课程管理","page":"business/course","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"},{"id":"020201","name":"增删改查","parent":"0202","request":"[\"/business/admin/course\",\"/business/admin/category/all\"]"},{"id":"020501","name":"增删改查","parent":"0205","request":"[\"/business/admin/sms\"]"}],"success":true}
+2020-12-17 19:25:30.966 INFO  com.lzn.config.LogAspect                          :110  [32my432wvfO[0;39m ------------- 结束 耗时：57 ms -------------
+2020-12-17 19:25:34.334 INFO  com.lzn.config.LogAspect                          :76   [32m7mrGgsUj[0;39m ------------- 【角色】保存开始 -------------
+2020-12-17 19:25:34.335 INFO  com.lzn.config.LogAspect                          :77   [32m7mrGgsUj[0;39m 请求地址: http://localhost:9001/system/admin/role/save-resource POST
+2020-12-17 19:25:34.335 INFO  com.lzn.config.LogAspect                          :78   [32m7mrGgsUj[0;39m 类名方法: com.lzn.system.controller.admin.RoleController.saveResource
+2020-12-17 19:25:34.335 INFO  com.lzn.config.LogAspect                          :79   [32m7mrGgsUj[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:34.335 INFO  com.lzn.config.LogAspect                          :97   [32m7mrGgsUj[0;39m 请求参数: [{"id":"00000000","resourceIds":["00","010101","010102","010103","020101","020201","020301","020401","020501","0101","01","0201","0202","0203","0204","0205","02"]}]
+2020-12-17 19:25:34.336 DEBUG com.lzn.mapper.RoleResourceMapper.deleteByExample :159  [32m7mrGgsUj[0;39m ==>  Preparing: delete from role_resource WHERE ( role_id = ? ) 
+2020-12-17 19:25:34.337 DEBUG com.lzn.mapper.RoleResourceMapper.deleteByExample :159  [32m7mrGgsUj[0;39m ==> Parameters: 00000000(String)
+2020-12-17 19:25:34.343 DEBUG com.lzn.mapper.RoleResourceMapper.deleteByExample :159  [32m7mrGgsUj[0;39m <==    Updates: 20
+2020-12-17 19:25:34.344 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.344 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: mwGmA0xa(String), 00000000(String), 00(String)
+2020-12-17 19:25:34.349 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.350 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.351 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: ukJoRHi2(String), 00000000(String), 010101(String)
+2020-12-17 19:25:34.355 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.357 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.357 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: 0Er6zyXZ(String), 00000000(String), 010102(String)
+2020-12-17 19:25:34.362 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.362 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.363 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: NV2gbH5Z(String), 00000000(String), 010103(String)
+2020-12-17 19:25:34.367 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.368 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.368 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: bMg9weI8(String), 00000000(String), 020101(String)
+2020-12-17 19:25:34.373 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.374 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.374 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: eBNE6BZT(String), 00000000(String), 020201(String)
+2020-12-17 19:25:34.379 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.380 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.380 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: ci1JSRef(String), 00000000(String), 020301(String)
+2020-12-17 19:25:34.386 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.386 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.386 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: GDsbmxy8(String), 00000000(String), 020401(String)
+2020-12-17 19:25:34.394 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.395 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.396 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: d8Vrh6kH(String), 00000000(String), 020501(String)
+2020-12-17 19:25:34.400 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.400 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.401 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: Cl4ilO3U(String), 00000000(String), 0101(String)
+2020-12-17 19:25:34.405 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.406 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.406 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: 6dbjefaO(String), 00000000(String), 01(String)
+2020-12-17 19:25:34.411 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.411 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.412 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: eahnCbVB(String), 00000000(String), 0201(String)
+2020-12-17 19:25:34.416 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.417 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.417 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: tm8MvsnH(String), 00000000(String), 0202(String)
+2020-12-17 19:25:34.421 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.422 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.423 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: rwUigWdB(String), 00000000(String), 0203(String)
+2020-12-17 19:25:34.427 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.427 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.427 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: sLpV0NQU(String), 00000000(String), 0204(String)
+2020-12-17 19:25:34.432 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.433 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.433 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: 35V8RnhC(String), 00000000(String), 0205(String)
+2020-12-17 19:25:34.438 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.439 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==>  Preparing: insert into role_resource (id, role_id, resource_id ) values (?, ?, ? ) 
+2020-12-17 19:25:34.439 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m ==> Parameters: YC0sY40y(String), 00000000(String), 02(String)
+2020-12-17 19:25:34.443 DEBUG com.lzn.mapper.RoleResourceMapper.insert          :159  [32m7mrGgsUj[0;39m <==    Updates: 1
+2020-12-17 19:25:34.443 INFO  com.lzn.config.LogAspect                          :109  [32m7mrGgsUj[0;39m 返回结果: {"content":{"id":"00000000","resourceIds":["00","010101","010102","010103","020101","020201","020301","020401","020501","0101","01","0201","0202","0203","0204","0205","02"]},"success":true}
+2020-12-17 19:25:34.444 INFO  com.lzn.config.LogAspect                          :110  [32m7mrGgsUj[0;39m ------------- 结束 耗时：110 ms -------------
+2020-12-17 19:25:35.989 INFO  com.lzn.config.LogAspect                          :76   [32mRRMi8UsB[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 19:25:35.990 INFO  com.lzn.config.LogAspect                          :77   [32mRRMi8UsB[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/5OqR4ZW7 GET
+2020-12-17 19:25:35.990 INFO  com.lzn.config.LogAspect                          :78   [32mRRMi8UsB[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-17 19:25:35.990 INFO  com.lzn.config.LogAspect                          :79   [32mRRMi8UsB[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:35.990 INFO  com.lzn.config.LogAspect                          :97   [32mRRMi8UsB[0;39m 请求参数: ["5OqR4ZW7"]
+2020-12-17 19:25:35.991 INFO  com.lzn.system.controller.admin.UserController    :118  [32mRRMi8UsB[0;39m 从redis中删除token:5OqR4ZW7
+2020-12-17 19:25:35.992 INFO  com.lzn.config.LogAspect                          :109  [32mRRMi8UsB[0;39m 返回结果: {"success":true}
+2020-12-17 19:25:35.992 INFO  com.lzn.config.LogAspect                          :110  [32mRRMi8UsB[0;39m ------------- 结束 耗时：3 ms -------------
+2020-12-17 19:25:36.032 INFO  com.lzn.config.LogAspect                          :76   [32maxBBKzJ0[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 19:25:36.033 INFO  com.lzn.config.LogAspect                          :77   [32maxBBKzJ0[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/GJnMM64l GET
+2020-12-17 19:25:36.033 INFO  com.lzn.config.LogAspect                          :78   [32maxBBKzJ0[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 19:25:36.033 INFO  com.lzn.config.LogAspect                          :79   [32maxBBKzJ0[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:36.033 INFO  com.lzn.config.LogAspect                          :97   [32maxBBKzJ0[0;39m 请求参数: ["GJnMM64l",null,null]
+2020-12-17 19:25:36.041 INFO  com.lzn.config.LogAspect                          :109  [32maxBBKzJ0[0;39m 返回结果: null
+2020-12-17 19:25:36.042 INFO  com.lzn.config.LogAspect                          :110  [32maxBBKzJ0[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 19:25:41.878 INFO  com.lzn.config.LogAspect                          :76   [32mIbxeL0kU[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 19:25:41.879 INFO  com.lzn.config.LogAspect                          :77   [32mIbxeL0kU[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-17 19:25:41.879 INFO  com.lzn.config.LogAspect                          :78   [32mIbxeL0kU[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-17 19:25:41.879 INFO  com.lzn.config.LogAspect                          :79   [32mIbxeL0kU[0;39m 远程地址: 127.0.0.1
+2020-12-17 19:25:41.879 INFO  com.lzn.config.LogAspect                          :97   [32mIbxeL0kU[0;39m 请求参数: [{"imageCode":"5cf8","imageCodeToken":"GJnMM64l","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-17 19:25:41.882 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mIbxeL0kU[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-17 19:25:41.882 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mIbxeL0kU[0;39m ==> Parameters: admin(String)
+2020-12-17 19:25:41.883 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mIbxeL0kU[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 19:25:41.883 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mIbxeL0kU[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 19:25:41.883 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mIbxeL0kU[0;39m <==      Total: 1
+2020-12-17 19:25:41.884 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32mIbxeL0kU[0;39m ==>  Preparing: select distinct r.id, r.`name`, r.page, r.request, r.parent from role_user ru, role_resource rr, resource r where ru.user_id = ? and ru.role_id = rr.role_id and rr.resource_id = r.id order by r.id asc 
+2020-12-17 19:25:41.884 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32mIbxeL0kU[0;39m ==> Parameters: guHzMCGy(String)
+2020-12-17 19:25:41.885 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 19:25:41.885 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2020-12-17 19:25:41.885 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 01, 系统管理, null, null, 
+2020-12-17 19:25:41.885 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2020-12-17 19:25:41.886 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2020-12-17 19:25:41.886 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 010102, 删除, null, ["/system/admin/user/delete"], 0101
+2020-12-17 19:25:41.886 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2020-12-17 19:25:41.886 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 02, 业务管理, null, null, 
+2020-12-17 19:25:41.886 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 0201, 分类管理, business/category, null, 02
+2020-12-17 19:25:41.887 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 020101, 增删改查, null, ["/business/admin/category"], 0201
+2020-12-17 19:25:41.887 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 0202, 课程管理, business/course, null, 02
+2020-12-17 19:25:41.887 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 020201, 增删改查, null, ["/business/admin/course","/business/admin/category/all"], 0202
+2020-12-17 19:25:41.887 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2020-12-17 19:25:41.887 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2020-12-17 19:25:41.887 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 0204, 会员管理, business/member, null, 02
+2020-12-17 19:25:41.888 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 020401, 增删改查, null, ["/business/admin/member"], 0204
+2020-12-17 19:25:41.888 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 0205, 短信管理, business/sms, null, 02
+2020-12-17 19:25:41.888 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32mIbxeL0kU[0;39m <==        Row: 020501, 增删改查, null, ["/business/admin/sms"], 0205
+2020-12-17 19:25:41.888 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32mIbxeL0kU[0;39m <==      Total: 17
+2020-12-17 19:25:41.889 INFO  com.lzn.service.UserService                       :171  [32mIbxeL0kU[0;39m 有权限的请求：[/system/admin/user/save, /business/admin/sms, /system/admin/user/delete, /business/admin/category/all, /business/admin/teacher, /business/admin/category, /business/admin/course, /system/admin/user/save-password, /business/admin/member, /system/admin/user/list]
+2020-12-17 19:25:41.890 INFO  com.lzn.config.LogAspect                          :109  [32mIbxeL0kU[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","requests":["/system/admin/user/save","/business/admin/sms","/system/admin/user/delete","/business/admin/category/all","/business/admin/teacher","/business/admin/category","/business/admin/course","/system/admin/user/save-password","/business/admin/member","/system/admin/user/list"],"resources":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010102","name":"删除","parent":"0101","request":"[\"/system/admin/user/delete\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"0201","name":"分类管理","page":"business/category","parent":"02"},{"id":"020101","name":"增删改查","parent":"0201","request":"[\"/business/admin/category\"]"},{"id":"0202","name":"课程管理","page":"business/course","parent":"02"},{"id":"020201","name":"增删改查","parent":"0202","request":"[\"/business/admin/course\",\"/business/admin/category/all\"]"},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"},{"id":"0204","name":"会员管理","page":"business/member","parent":"02"},{"id":"020401","name":"增删改查","parent":"0204","request":"[\"/business/admin/member\"]"},{"id":"0205","name":"短信管理","page":"business/sms","parent":"02"},{"id":"020501","name":"增删改查","parent":"0205","request":"[\"/business/admin/sms\"]"}],"token":"om0AqsoG"},"success":true}
+2020-12-17 19:25:41.891 INFO  com.lzn.config.LogAspect                          :110  [32mIbxeL0kU[0;39m ------------- 结束 耗时：13 ms -------------
+2020-12-17 19:29:58.388 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
