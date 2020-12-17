@@ -61,7 +61,7 @@
 
 		<p class="ma-10">
 
-			<v-btn class="mr-5 mb-5" color="primary" @click="add()">
+			<v-btn v-show="hasResource('010101')" class="mr-5 mb-5" color="primary" @click="add()">
 				<v-icon left small>add</v-icon>
 				新增
 			</v-btn>
@@ -102,14 +102,14 @@
 
 								<td>
 									<v-row align="center" justify="space-around">
-										<v-btn x-small fab @click="edit(user)" class="primary">
+										<v-btn v-show="hasResource('010101') " x-small fab @click="edit(user)" class="primary">
 											<v-icon>edit</v-icon>
 										</v-btn>
-										<v-btn x-small fab @click="editPassword(user)" class="info">
+										<v-btn v-show="hasResource('010103') " x-small fab @click="editPassword(user)" class="info">
 											<v-icon>lock</v-icon>
 										</v-btn>
 
-										<v-btn x-small fab @click="del(user.id)" class="warning">
+										<v-btn v-show="hasResource('010102') " x-small fab @click="del(user.id)" class="warning">
 											<v-icon>delete</v-icon>
 										</v-btn>
 									</v-row>
@@ -150,7 +150,11 @@
 		},
 
 		methods: {
-			// 获取所有小节的数据
+			// 获取权限
+			hasResource(id){
+				return Tool.hasResource(id);
+			},
+			// 获取所有小节的 数据
 			list(page) {
 				let _this = this;
 				Loading.show();

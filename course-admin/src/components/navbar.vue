@@ -36,26 +36,26 @@
 			<!-- 对应了菜单先写死 -->
 			<v-list>
 
-				<v-list-group prepend-icon="settings" color="blue" no-action="">
+				<v-list-group prepend-icon="settings" color="blue" no-action=""  v-show="hasResources('01')">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>系统管理</v-list-item-title>
 						</v-list-item-content>
 					</template>
 
-					<v-list-item to="/system/user">
-						<v-list-item-content>
+					<v-list-item to="/system/user" v-show="hasResources('0101')"> 
+						<v-list-item-content >
 							<v-list-item-title>用户管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
 
-					<v-list-item to="/system/role">
+					<v-list-item to="/system/role" v-show="hasResources('0103')">
 						<v-list-item-content>
 							<v-list-item-title>角色管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
 					
-					<v-list-item to="/system/resource">
+					<v-list-item to="/system/resource"  v-show="hasResources('0102')">
 						<v-list-item-content>
 							<v-list-item-title>资源管理</v-list-item-title>
 						</v-list-item-content>
@@ -67,27 +67,27 @@
 				</v-list-group>
 
 
-				<v-list-group prepend-icon="apps" color="blue" no-action="">
+				<v-list-group prepend-icon="apps" color="blue" no-action="" v-show="hasResources('02')">
 					<template v-slot:activator>
-						<v-list-item-content>
+						<v-list-item-content >
 							<v-list-item-title>业务管理</v-list-item-title>
 						</v-list-item-content>
 					</template>
 
 					<v-list-item to="/business/course">
-						<v-list-item-content>
+						<v-list-item-content v-show="hasResources('0202')">
 							<v-list-item-title>课程管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
 
 					<v-list-item to="/business/teacher">
-						<v-list-item-content>
+						<v-list-item-content v-show="hasResources('0203')">
 							<v-list-item-title>讲师管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
 
 					<v-list-item to="/business/category">
-						<v-list-item-content>
+						<v-list-item-content v-show="hasResources('0201')">
 							<v-list-item-title>分类管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
@@ -95,7 +95,7 @@
 				</v-list-group>
 
 				<!-- :value="true" 就是展开了 -->
-				<v-list-group prepend-icon="folder" color="blue" no-action="">
+				<v-list-group prepend-icon="folder" color="blue" no-action="" v-show="hasResources('03')">
 					<template v-slot:activator>
 						<v-list-item-content>
 							<v-list-item-title>文件管理</v-list-item-title>
@@ -103,7 +103,7 @@
 					</template>
 
 					<v-list-item to="/file/file">
-						<v-list-item-content>
+						<v-list-item-content v-show="hasResources('0301')">
 							<v-list-item-title>文件管理</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
@@ -135,8 +135,11 @@
 		},
 
 		methods: {
+			// 获取权限
+			hasResources(id) {
+				return Tool.hasResource(id);
+			},
 			// 退出
-
 			logout() {
 				let _this = this;
 				Loading.show();

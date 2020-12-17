@@ -69,57 +69,75 @@ Tool = {
 		} while (number);
 		return arr.join('');
 	},
-	
+
 	/**
 	 * 保存登录用户
 	 */
 	setLoginUser: function(loginUser) {
 		SessionStorage.set(SESSION_KEY_LOGIN_USER, loginUser);
 	},
-	
+
 	/**
 	 * 获取登录用户
 	 */
-	getLoginUser:function() {
+	getLoginUser: function() {
 		return SessionStorage.get(SESSION_KEY_LOGIN_USER) || {};
 	},
-	
-	
-	  /**
-	   * 随机生成[len]长度的[radix]进制数
-	   * @param len
-	   * @param radix 默认62
-	   * @returns {string}
-	   */
-	  uuid: function (len, radix) {
-	    let chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
-	    let uuid = [];
-	    radix = radix || chars.length;
-	
-	    for (let i = 0; i < len; i++) {
-	      uuid[i] = chars[0 | Math.random() * radix];
-	    }
-	
-	    return uuid.join('');
-	  },
-		
-		 /**
-		   * 移除对象数组中的对象
-		   * @param array
-		   * @param obj
-		   * @returns {number}
-		   */
-		  removeObj: function (array, obj) {
-		    let index = -1;
-		    for (let i = 0; i < array.length; i++) {
-		      if (array[i] === obj) {
-		        array.splice(i, 1);
-		        index = i;
-		        break;
-		      }
-		    }
-		    return index;
-		  },
 
+
+	/**
+	 * 随机生成[len]长度的[radix]进制数
+	 * @param len
+	 * @param radix 默认62
+	 * @returns {string}
+	 */
+	uuid: function(len, radix) {
+		let chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+		let uuid = [];
+		radix = radix || chars.length;
+
+		for (let i = 0; i < len; i++) {
+			uuid[i] = chars[0 | Math.random() * radix];
+		}
+
+		return uuid.join('');
+	},
+
+	/**
+	 * 移除对象数组中的对象
+	 * @param array
+	 * @param obj
+	 * @returns {number}
+	 */
+	removeObj: function(array, obj) {
+		let index = -1;
+		for (let i = 0; i < array.length; i++) {
+			if (array[i] === obj) {
+				array.splice(i, 1);
+				index = i;
+				break;
+			}
+		}
+		return index;
+	},
+
+	/**
+	 * 查找是否有权限
+	 * @param id 资源id
+	 */
+	hasResource: function(id) {
+		let _this = this;
+		let resources = _this.getLoginUser().resources;
+		console.log("查找资源", _this.getLoginUser());
+		if (_this.isEmpty(resources)) {
+			return false;
+		}
+		for (let i = 0; i < resources.length; i++) {
+			if (id === resources[i].id) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 }
