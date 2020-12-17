@@ -389,6 +389,8 @@
 					_this.selection = [];
 				})
 			}
+			
+			
 		}
 	}
 </script>
