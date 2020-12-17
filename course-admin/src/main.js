@@ -48,7 +48,7 @@ axios.interceptors.response.use(function(response) {
 					path: '/login'
 				})
 				location.reload();
-			}, 5000);
+			}, 2000);
 			
 		}
 	}

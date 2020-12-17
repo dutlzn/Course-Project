@@ -103,6 +103,23 @@ Tool = {
 	    return uuid.join('');
 	  },
 		
-		
+		 /**
+		   * 移除对象数组中的对象
+		   * @param array
+		   * @param obj
+		   * @returns {number}
+		   */
+		  removeObj: function (array, obj) {
+		    let index = -1;
+		    for (let i = 0; i < array.length; i++) {
+		      if (array[i] === obj) {
+		        array.splice(i, 1);
+		        index = i;
+		        break;
+		      }
+		    }
+		    return index;
+		  },
+
 
 }

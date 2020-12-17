@@ -9,6 +9,7 @@ import com.lzn.util.ValidatorUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.ws.Response;
 import java.util.List;
 
 @RestController
@@ -73,6 +74,27 @@ public class RoleController {
         return responseDto;
     }
 
+    /**
+     * 保存用户
+     * @param roleDto
+     */
+    @PostMapping("/save-user")
+    public ResponseDto saveUser(@RequestBody RoleDto roleDto) {
+        ResponseDto<RoleDto> responseDto = new ResponseDto<>();
+        roleService.saveUser(roleDto);
+        responseDto.setContent(roleDto);
+        return responseDto;
+    }
 
-
+    /**
+     * 加载用户
+     * @param roleId
+     */
+    @GetMapping("/list-user/{roleId}")
+    public ResponseDto listUser(@PathVariable String roleId) {
+        ResponseDto responseDto = new ResponseDto<>();
+        List<String> userIdList = roleService.listUser(roleId);
+        responseDto.setContent(userIdList);
+        return responseDto;
+    }
 }

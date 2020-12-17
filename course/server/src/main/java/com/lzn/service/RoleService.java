@@ -6,10 +6,7 @@ import com.lzn.domain.*;
 import com.lzn.dto.ResourceDto;
 import com.lzn.dto.RoleDto;
 import com.lzn.dto.PageDto;
-import com.lzn.mapper.ResourceMapper;
-import com.lzn.mapper.RoleMapper;
-import com.lzn.mapper.RoleResourceMapper;
-import com.lzn.mapper.TestMapper;
+import com.lzn.mapper.*;
 import com.lzn.util.CopyUtil;
 import com.lzn.util.UuidUtil;
 import org.springframework.beans.BeanUtils;
@@ -32,6 +29,10 @@ public class RoleService {
 
     @Autowired
     private ResourceMapper resourceMapper;
+
+    @Autowired
+    private RoleUserMapper roleUserMapper;
+
 
     public void list(PageDto pageDto) {
 
@@ -122,5 +123,41 @@ public class RoleService {
             resourceIdList.add(temp2.get(0));
         }
         return resourceIdList;
+    }
+
+    /**
+     * 按角色保存用户
+     */
+    public void saveUser(RoleDto roleDto) {
+        String roleId = roleDto.getId();
+        List<String> userIdList = roleDto.getUserIds();
+        // 清空库中所有的当前角色下的记录
+        RoleUserExample example = new RoleUserExample();
+        example.createCriteria().andRoleIdEqualTo(roleId);
+        roleUserMapper.deleteByExample(example);
+
+        // 保存角色用户
+        for (int i = 0; i < userIdList.size(); i++) {
+            RoleUser roleUser = new RoleUser();
+            roleUser.setId(UuidUtil.getShortUuid());
+            roleUser.setRoleId(roleId);
+            roleUser.setUserId(userIdList.get(i));
+            roleUserMapper.insert(roleUser);
+        }
+    }
+
+    /**
+     * 按角色加载用户
+     * @param roleId
+     */
+    public List<String> listUser(String roleId) {
+        RoleUserExample example = new RoleUserExample();
+        example.createCriteria().andRoleIdEqualTo(roleId);
+        List<RoleUser> roleUserList = roleUserMapper.selectByExample(example);
+        List<String> userIdList = new ArrayList<>();
+        for (int i = 0, l = roleUserList.size(); i < l; i++) {
+            userIdList.add(roleUserList.get(i).getUserId());
+        }
+        return userIdList;
     }
 }

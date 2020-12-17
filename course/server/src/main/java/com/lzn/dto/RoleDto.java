@@ -20,21 +20,32 @@ public class RoleDto {
      */
     private String desc;
 
-    /**
-     * 资源id
-     * @return
-     */
-    private List<String> resourceIds;
-
     @Override
     public String toString() {
         return "RoleDto{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", desc='" + desc + '\'' +
+                ", userIds=" + userIds +
                 ", resourceIds=" + resourceIds +
                 '}';
     }
+
+    public List<String> getUserIds() {
+        return userIds;
+    }
+
+    public void setUserIds(List<String> userIds) {
+        this.userIds = userIds;
+    }
+
+    private List<String> userIds;
+
+    /**
+     * 资源id
+     * @return
+     */
+    private List<String> resourceIds;
 
     public List<String> getResourceIds() {
         return resourceIds;

@@ -54,63 +54,86 @@
 		</v-dialog>
 
 
-   <!--  角色用户关联配置 -->
-	 <v-dialog v-model="dialogRoleUser" persistent max-width="800" >
-		 <v-card>
-			 <v-card-title>
-				 角色用户关联配置
-			 </v-card-title>
-			 
-			 <v-row>
-				 <v-col cols="12" md="6">
-					 <v-simple-table>
-					 	<thead>
-					 		<tr>
+		<!--  角色用户关联配置 -->
+		<v-dialog v-model="dialogRoleUser" persistent max-width="900">
+			<v-card>
+				<v-card-title>
+					角色用户关联配置
+				</v-card-title>
 
-					 			<th class="primary--text text-center text-h6">
-					 				用户名称
-					 			</th>
-					 		</tr>
-					 	</thead>
-					 	<tbody>
-					 		<tr v-for="user in users"   class="text-center">
-					 			<td>{{ user.loginName }}</td>
-					 		</tr>
-					 	</tbody>
-					 </v-simple-table>
-				 </v-col>
-				 
-				 <v-col cols="12" md="6">
-					 <v-simple-table>
-					 	<thead>
-					 		<tr>
-					 
-					 			<th class="primary--text text-center  text-h6">
-					 				用户名称
-					 			</th>
-					 		</tr>
-					 	</thead>
-					 	<tbody>
-					 		<tr v-for="user in roleUsers"  class="text-center">
-					 			<td >{{ user.loginName }}</td>
-					 		</tr>
-					 	</tbody>
-					 </v-simple-table>
-				 </v-col>
-			 </v-row>
-			 
-			 <v-card-actions>
-				 <v-spacer></v-spacer>
-				 <v-btn @click="dialogRoleUser = false" class="warning">
-					  取消
-				 </v-btn>
-				 
-				 <v-btn @click="saveUser()" class="success">
-					 保存
-				 </v-btn>
-			 </v-card-actions>
-		 </v-card>
-	 </v-dialog>
+				<v-card-text>
+
+					<v-row>
+						<v-col cols="12" md="6">
+							<v-simple-table>
+								<thead>
+									<tr>
+
+										<th class="primary--text text-center text-h6">
+											用户名称
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="user in users" class="text-center">
+										<td>
+											<v-row>
+												<v-col cols="8">
+													{{ user.loginName }}
+												</v-col>
+												<v-col cols="2">
+													<v-icon small @click="addUser(user)" color="blue">add</v-icon>
+												</v-col>
+
+											</v-row>
+										</td>
+									</tr>
+								</tbody>
+							</v-simple-table>
+						</v-col>
+
+						<v-col cols="12" md="6">
+							<v-simple-table>
+								<thead>
+									<tr>
+
+										<th class="primary--text text-center  text-h6">
+											角色关联用户
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="user in roleUsers" class="text-center">
+										<td>
+											<v-row>
+												<v-col cols="10">
+													{{ user.loginName }}
+												</v-col>
+												<v-col cols="2">
+													<v-icon small @click="deleteUser(user)" color="warning">delete</v-icon>
+												</v-col>
+
+											</v-row>
+										</td>
+									</tr>
+								</tbody>
+							</v-simple-table>
+						</v-col>
+					</v-row>
+				</v-card-text>
+
+				<v-card-actions>
+					<v-spacer></v-spacer>
+					<v-btn @click="dialogRoleUser = false" class="warning">
+						取消
+					</v-btn>
+
+					<v-btn @click="saveUser()" class="success">
+						保存
+					</v-btn>
+				</v-card-actions>
+			</v-card>
+		</v-dialog>
 
 		<p class="ma-10">
 
@@ -156,7 +179,7 @@
 										<v-btn x-small fab @click="editUser(role)" class="teal">
 											<v-icon>person</v-icon>
 										</v-btn>
-										
+
 										<v-btn x-small fab @click="editResource(role)" class="success">
 											<v-icon>folder</v-icon>
 										</v-btn>
@@ -206,7 +229,7 @@
 				selection: [], // 表示已经选择的数据
 				// 勾选上的资源id列表
 				resourceIds: [],
-				
+
 				users: [],
 				roleUsers: [],
 			}
@@ -320,8 +343,8 @@
 					})
 				});
 			},
-			
-			
+
+
 			/**
 			 * 编辑角色用户关联
 			 */
@@ -332,26 +355,104 @@
 				_this.listUser();
 				_this.dialogRoleUser = true;
 			},
-			
-			
-			   /**
-       * 查询所有用户
+
+
+			/**
+			 * 查询所有用户
+			 */
+			listUser() {
+				let _this = this;
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/list', {
+					page: 1,
+					size: 9999
+				}).then((response) => {
+					let resp = response.data;
+					if (resp.success) {
+						_this.users = resp.content.list;
+						_this.listRoleUser();
+					} else {
+						Toast.warning(resp.message);
+					}
+				})
+			},
+
+      /**
+       * 加载角色用户
        */
-      listUser() {
+      listRoleUser() {
         let _this = this;
-        _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/list', {
-          page: 1,
-          size: 9999
-        }).then((response)=>{
-          let resp = response.data;
-          if (resp.success) {
-            _this.users = resp.content.list;
-            // _this.listRoleUser();
-          } else {
-            Toast.warning(resp.message);
+        _this.roleUsers = [];
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/system/admin/role/list-user/' + _this.role.id).then((res)=>{
+          let response = res.data;
+          let userIds = response.content;
+
+          // 根据加载到用户ID，到【所有用户数组：users】中查找用户对象，用于列表显示
+          for (let i = 0; i < userIds.length; i++) {
+            for (let j = 0; j < _this.users.length; j++) {
+              if (userIds[i] === _this.users[j].id) {
+                _this.roleUsers.push(_this.users[j]);
+              }
+            }
           }
-        })
+        });
       },
+
+			/**
+			 * 角色中增加用户
+			 */
+			addUser(user) {
+				let _this = this;
+				// 如果当前要添加的用户在右边已经有了，就不用添加
+				let users = _this.roleUsers;
+				// users.find(a => {return a == user;})
+				// if( ) {
+				// 	return ;
+				// }
+				for (let i = 0; i < users.length; ++i) {
+					if (user == users[i]) {
+						return;
+					}
+				}
+
+
+				_this.roleUsers.push(user);
+			},
+
+
+			/**
+			 * 删除角色关联用户
+			 */
+			deleteUser(user) {
+				let _this = this;
+				Tool.removeObj(_this.roleUsers, user);
+			},
+
+			/**
+			 * 角色用户模态框点击【保存】
+			 */
+			saveUser() {
+				let _this = this;
+				let users = _this.roleUsers;
+
+				// 保存时，只需要保存用户id，所以使用id数组进行参数传递
+				let userIds = [];
+				for (let i = 0; i < users.length; i++) {
+					userIds.push(users[i].id);
+				}
+				_this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/role/save-user', {
+					id: _this.role.id,
+					userIds: userIds
+				}).then((response) => {
+					console.log("保存角色用户结果：", response);
+					let resp = response.data;
+					if (resp.success) {
+						Toast.success("保存成功!");
+						_this.dialogRoleUser = false;
+					} else {
+						Toast.warning(resp.message);
+					}
+				})
+			},
 
 			/**
 			 * 角色资源关联
@@ -364,7 +465,7 @@
 				_this.role = $.extend({}, role);
 				// 获取每个角色的资源
 				_this.listRoleResource();
-				
+
 				_this.diglogRoleResource = true;
 			},
 			/**
@@ -377,33 +478,35 @@
 					let resources = resp.content;
 					// 只需要子节点
 					let childrenNode = [];
-					_this.findAllNodes(resources,childrenNode);
+					_this.findAllNodes(resources, childrenNode);
 					console.log(childrenNode);
 					_this.selection = childrenNode;
 				});
 			},
-			
+
 			/**
 			 * 找到所有子节点
 			 */
-			findAllNodes(resources,childrenNode) {
+			findAllNodes(resources, childrenNode) {
 				let _this = this;
-				for(let i = 0;i<_this.items.length;++i) {
-					_this.help2(_this.items[i],resources,childrenNode);
+				for (let i = 0; i < _this.items.length; ++i) {
+					_this.help2(_this.items[i], resources, childrenNode);
 				}
 			},
-			
-			help2(item,resources,childrenNode) {
+
+			help2(item, resources, childrenNode) {
 				let _this = this;
-				if(!item.children) {
+				if (!item.children) {
 					// 没有孩子
 					// 如果有 
-					if(resources.find(a => {return a.id == item.id})) {
+					if (resources.find(a => {
+							return a.id == item.id
+						})) {
 						childrenNode.push(item);
 					}
 				} else {
-					for(let i = 0;i<item.children.length;++i) {
-						_this.help2(item.children[i],resources,childrenNode);
+					for (let i = 0; i < item.children.length; ++i) {
+						_this.help2(item.children[i], resources, childrenNode);
 					}
 				}
 			},
@@ -470,8 +573,8 @@
 			/**
 			 * N叉树后序遍历
 			 */
-			
-			
+
+
 			/**
 			 * 加载资源数
 			 */
@@ -486,8 +589,8 @@
 					_this.selection = [];
 				})
 			}
-			
-			
+
+
 		}
 	}
 </script>

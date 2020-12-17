@@ -1,1 +1,593 @@
 2020-12-17 10:35:50.789 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2020-12-17 10:35:52.356 INFO  com.lzn.gateway.GatewayApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-12-17 10:35:54.411 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:35:54.413 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:35:54.432 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m        [0;39m Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-12-17 10:35:54.608 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=beab72f5-140f-30c9-8b93-c95d4fbca480
+2020-12-17 10:35:54.663 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:35:54.664 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:35:54.667 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:35:55.578 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-17 10:35:55.578 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-17 10:35:55.584 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-12-17 10:35:55.584 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-17 10:35:55.639 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:78   [32m        [0;39m Eureka HTTP Client uses Jersey
+2020-12-17 10:35:56.883 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 10:35:58.060 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 10:35:58.715 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2020-12-17 10:35:58.715 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2020-12-17 10:35:58.716 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2020-12-17 10:35:58.716 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2020-12-17 10:35:58.716 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2020-12-17 10:35:58.716 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2020-12-17 10:35:58.716 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2020-12-17 10:35:58.717 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2020-12-17 10:35:58.717 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2020-12-17 10:35:58.717 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-12-17 10:35:58.717 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2020-12-17 10:35:58.717 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2020-12-17 10:35:58.717 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-12-17 10:36:00.213 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 10:36:01.323 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 10:36:01.325 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:86   [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-17 10:36:01.331 WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger:77   [32m        [0;39m You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-17 10:36:01.358 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-12-17 10:36:01.409 INFO  com.netflix.discovery.DiscoveryClient             :371  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-12-17 10:36:01.682 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-12-17 10:36:01.682 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-12-17 10:36:01.792 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-12-17 10:36:01.793 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-12-17 10:36:01.966 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 10:36:02.058 INFO  com.netflix.discovery.DiscoveryClient             :1004 [32m        [0;39m Disable delta property : false
+2020-12-17 10:36:02.058 INFO  com.netflix.discovery.DiscoveryClient             :1005 [32m        [0;39m Single vip registry refresh property : null
+2020-12-17 10:36:02.058 INFO  com.netflix.discovery.DiscoveryClient             :1006 [32m        [0;39m Force full registry fetch : false
+2020-12-17 10:36:02.058 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Application is null : false
+2020-12-17 10:36:02.058 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Registered Applications size is zero : true
+2020-12-17 10:36:02.058 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application version is -1: true
+2020-12-17 10:36:02.059 INFO  com.netflix.discovery.DiscoveryClient             :1093 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-12-17 10:36:02.196 INFO  com.netflix.discovery.DiscoveryClient             :1102 [32m        [0;39m The response status is 200
+2020-12-17 10:36:02.198 INFO  com.netflix.discovery.DiscoveryClient             :1317 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-12-17 10:36:02.199 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-17 10:36:02.203 INFO  com.netflix.discovery.DiscoveryClient             :491  [32m        [0;39m Discovery Client initialized at timestamp 1608172562202 with initial instances count: 1
+2020-12-17 10:36:02.203 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application GATEWAY with eureka with status UP
+2020-12-17 10:36:02.204 INFO  com.netflix.discovery.DiscoveryClient             :1353 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1608172562204, current=UP, previous=STARTING]
+2020-12-17 10:36:02.205 INFO  com.netflix.discovery.DiscoveryClient             :870  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000: registering service...
+2020-12-17 10:36:02.233 INFO  com.netflix.discovery.DiscoveryClient             :879  [32m        [0;39m DiscoveryClient_GATEWAY/localhost:gateway:9000 - registration status: 204
+2020-12-17 10:36:02.478 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :109  [32m        [0;39m Netty started on port(s): 9000
+2020-12-17 10:36:02.480 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9000
+2020-12-17 10:36:03.597 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 10:36:04.705 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-12-17 10:36:04.726 INFO  com.lzn.gateway.GatewayApplication                :61   [32m        [0;39m Started GatewayApplication in 15.409 seconds (JVM running for 16.072)
+2020-12-17 10:36:04.728 INFO  com.lzn.gateway.GatewayApplication                :29   [32m        [0;39m 启动成功！！
+2020-12-17 10:36:04.729 INFO  com.lzn.gateway.GatewayApplication                :30   [32m        [0;39m Gateway: 	http://127.0.0.1:9000
+2020-12-17 10:37:03.507 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/VIZaZFlA
+2020-12-17 10:37:03.713 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-17 10:37:03.736 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer  :58   [32m        [0;39m Shutdown hook installed for: NFLoadBalancer-PingTimer-system
+2020-12-17 10:37:03.736 INFO  com.netflix.loadbalancer.BaseLoadBalancer         :197  [32m        [0;39m Client: system instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-17 10:37:03.744 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :222  [32m        [0;39m Using serverListUpdater PollingServerListUpdater
+2020-12-17 10:37:03.766 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-17 10:37:03.767 INFO  c.n.loadbalancer.DynamicServerListLoadBalancer    :150  [32m        [0;39m DynamicServerListLoadBalancer for client system initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=system,current list of Servers=[localhost:9001],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9001;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6c0d7416
+2020-12-17 10:37:04.748 INFO  com.netflix.config.ChainedDynamicProperty         :115  [32m        [0;39m Flipping property: system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-17 10:37:08.418 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-17 10:37:11.283 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:37:11.288 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:37:11.390 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:37:11.390 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:37:21.117 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:37:21.117 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:37:21.119 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:37:21.119 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:31.494 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:31.495 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:31.496 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:31.496 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:31.542 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:31.542 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:31.544 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:31.544 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:34.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:34.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:34.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:34.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:46.638 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:46.638 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:46.639 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:46.639 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:58.816 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:58.818 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:59.042 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:59.042 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:38:59.044 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:38:59.044 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:00.261 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:00.263 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:01.766 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:01.767 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:03.131 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:03.132 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:07.562 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:07.563 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:11.119 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:11.120 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:12.611 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:12.612 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:14.523 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:14.523 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:16.803 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:16.804 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:18.459 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:18.461 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:39:20.197 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:39:20.198 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:41:02.062 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 10:46:02.063 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 10:46:10.906 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:46:10.906 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:46:10.907 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:46:10.908 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:46:23.350 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:46:23.350 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:46:23.351 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:46:23.351 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:46:54.871 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:46:54.871 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:46:54.872 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:46:54.872 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:47:02.558 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:47:02.558 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:47:02.560 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:47:02.560 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:47:51.516 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:47:51.516 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:47:51.517 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:47:51.518 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:07.088 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:07.088 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:07.090 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:07.090 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:07.679 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:07.679 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:07.680 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:07.681 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:11.414 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:11.414 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:11.415 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:11.415 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:20.181 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:20.181 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:20.184 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:20.184 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:34.044 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:34.044 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:34.046 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:34.046 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:48:57.593 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:48:57.595 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:49:28.930 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:49:28.931 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:49:28.931 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:49:28.931 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:49:38.124 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:49:38.124 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:49:38.125 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:49:38.125 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:51:02.065 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 10:52:21.469 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 10:52:21.470 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 10:56:02.066 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:01:02.067 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:06:02.068 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:11:02.071 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:14:02.453 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:02.453 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:02.455 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:02.455 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:24.329 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:24.329 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:24.330 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:24.330 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:55.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:55.923 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:55.924 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:55.924 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:59.886 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:59.886 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:14:59.887 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:14:59.887 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:16:02.073 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:19:36.066 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:19:36.066 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:19:36.068 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:19:36.068 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:19:53.015 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:19:53.015 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:19:53.017 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:19:53.018 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:21:02.075 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:21:22.788 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:21:22.788 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:21:22.789 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:21:22.790 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:22:29.640 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:22:29.640 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:22:29.641 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:22:29.641 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:22:32.348 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:22:32.349 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"GtMEqCTl"}
+2020-12-17 11:26:02.077 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:31:02.077 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:36:02.079 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:40:26.514 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:40:26.515 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-17 11:40:26.517 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：GtMEqCTl
+2020-12-17 11:40:26.519 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-17 11:40:32.035 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/tLjXYRw2
+2020-12-17 11:40:32.808 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/pXvBTsMx
+2020-12-17 11:41:02.080 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:46:02.082 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:51:02.083 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:56:02.085 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 11:57:42.049 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/9PV2osZ0
+2020-12-17 12:01:02.088 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:06:02.089 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:11:02.091 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:16:02.093 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:21:02.094 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:26:02.096 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:31:02.098 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:36:02.101 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:41:02.104 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:46:02.107 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:51:02.109 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 12:56:02.111 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:01:02.114 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:06:02.116 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:11:02.121 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:16:02.123 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:21:02.125 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:26:02.127 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:31:02.129 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:36:02.130 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:41:02.132 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:46:02.133 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:50:55.378 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/e0m46NQ9
+2020-12-17 13:51:02.135 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 13:56:02.138 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:01:02.139 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:06:02.141 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:11:02.143 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:12:39.669 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/KTyRxagA
+2020-12-17 14:12:45.358 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-17 14:12:45.384 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/yHiviTsh
+2020-12-17 14:12:52.949 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-17 14:12:54.910 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:12:54.913 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:12:54.914 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:12:54.915 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:12:56.147 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:12:56.149 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:13:27.231 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:13:27.232 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:13:29.830 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:13:29.830 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:13:29.831 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:13:29.831 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:13:31.161 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:13:31.162 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:13:40.918 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:13:40.920 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:14:01.434 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:14:01.435 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:14:33.877 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:14:33.878 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:14:33.879 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:14:33.879 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:14:34.983 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:14:34.985 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:16:02.144 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:21:02.145 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:26:02.146 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:31:02.148 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:36:02.149 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:41:02.151 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:44:49.997 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:44:49.997 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:44:49.999 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:44:49.999 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:44:53.281 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:44:53.283 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:02.670 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:02.671 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:09.372 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:09.372 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:09.373 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:09.373 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:10.478 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:10.479 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:18.647 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:18.647 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:18.648 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:18.648 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:45:20.943 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:45:20.945 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:46:02.152 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:51:02.153 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:54:56.263 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:54:56.264 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:00.555 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:00.557 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:00.557 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:00.559 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:05.043 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:05.044 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:05.045 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:05.046 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:06.435 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:06.437 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:35.173 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:35.173 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:35.174 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:35.174 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:36.648 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:36.649 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:52.185 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:52.185 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:52.186 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:52.186 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:55:58.946 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:55:58.947 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:56:02.156 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 14:56:09.581 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:56:09.582 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:56:16.229 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:56:16.230 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:35.279 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:35.279 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:35.281 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:35.281 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:39.233 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:39.233 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:39.234 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:39.234 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:41.464 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:41.466 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:50.090 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:50.091 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:57:50.092 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:57:50.092 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:58:04.080 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:58:04.081 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:58:08.917 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:58:08.918 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 14:58:16.989 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 14:58:16.990 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:00:12.397 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:00:12.399 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:00:58.385 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:00:58.385 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:00:58.386 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:00:58.386 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:01:02.158 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:01:07.586 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:01:07.588 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:01:13.598 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:01:13.599 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:01:56.307 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:01:56.308 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:01:56.310 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:01:56.309 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:02:03.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:02:03.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:02:03.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:02:03.452 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:02:07.723 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:02:07.723 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:02:07.724 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:02:07.725 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:02:39.663 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:02:39.664 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:02:39.665 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:02:39.665 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:02.521 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:02.521 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:02.523 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:02.523 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:02.557 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:02.558 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:02.558 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:02.559 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:02.597 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:02.597 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:02.598 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:02.598 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:05.954 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:05.954 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:05.955 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:05.955 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:32.746 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:32.746 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:32.747 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:32.747 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:42.258 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:42.258 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:42.259 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:42.259 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:03:44.975 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:03:44.976 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:06:02.159 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:07:33.907 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:07:33.907 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:07:33.908 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:07:33.908 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:07:55.143 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:07:55.143 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:07:55.146 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:07:55.146 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:07:56.824 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:07:56.825 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:08:14.258 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:08:14.259 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:08:14.259 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:08:14.261 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:08:15.610 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:08:15.610 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:08:15.613 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:08:15.613 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:08:18.132 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:08:18.133 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:10:43.050 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:10:43.051 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:10:43.052 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:10:43.052 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:10:52.610 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:10:52.611 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:10:52.611 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:10:52.612 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:10:57.611 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:10:57.611 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:10:57.613 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:10:57.613 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:11:02.161 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:11:25.764 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:11:25.765 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:11:25.765 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:11:25.766 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:11:28.003 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:11:28.004 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:12:27.919 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:12:27.919 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:12:27.920 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:12:27.920 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:12:35.917 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:12:35.919 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"FW73huGJ"}
+2020-12-17 15:13:31.649 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:13:31.652 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-17 15:13:37.026 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:13:37.027 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：FW73huGJ
+2020-12-17 15:13:37.029 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-17 15:13:37.029 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-17 15:13:42.102 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/rRBSDGk5
+2020-12-17 15:13:43.115 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/B4byytWn
+2020-12-17 15:13:48.031 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-17 15:13:51.482 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:13:51.483 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:13:51.483 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:13:51.484 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:13:52.697 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:13:52.698 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:14:31.799 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:14:31.799 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:14:31.800 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:14:31.800 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:14:34.203 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:14:34.205 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:14:41.228 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:14:41.228 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:14:41.230 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:14:41.230 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:14:45.210 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:14:45.211 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:15:02.941 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:15:02.941 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:15:02.942 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:15:02.942 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:15:04.027 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:15:04.029 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:16:02.162 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:21:02.164 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:26:02.165 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:31:02.167 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:31:08.445 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:31:08.445 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:31:08.447 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:31:08.447 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:31:21.907 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:31:21.908 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:31:21.909 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:31:21.909 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:36:02.168 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:41:02.170 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:44:43.209 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:44:43.210 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:44:48.705 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:44:48.707 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:45:02.326 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:45:02.327 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:46:02.173 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:51:02.174 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:53:19.855 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:53:19.855 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:53:19.857 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:53:19.857 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:54:23.061 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:54:23.061 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:54:23.062 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:54:23.062 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:54:32.942 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:54:32.942 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:54:32.946 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:54:32.946 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:56:02.175 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 15:59:05.829 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:59:05.830 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:59:07.296 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:59:07.296 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:59:07.298 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:59:07.298 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:59:09.241 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:59:09.243 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:59:10.717 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:59:10.717 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 15:59:10.718 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 15:59:10.718 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 16:01:02.177 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:02:09.570 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 16:02:09.573 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 16:02:11.488 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 16:02:11.489 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 16:02:14.544 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 16:02:14.546 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 16:02:16.017 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 16:02:16.018 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 16:02:17.769 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 16:02:17.771 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"bhqDMPx7"}
+2020-12-17 16:06:02.179 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:11:02.182 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:16:02.184 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:21:02.187 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-12-17 16:22:58.401 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：bhqDMPx7
+2020-12-17 16:22:58.403 WARN  com.lzn.gateway.filter.LoginAdminGatewayFilter    :51   [32m        [0;39m token无效，请求被拦截
+2020-12-17 16:23:03.451 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/9vymbP1U
+2020-12-17 16:23:05.104 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/dHyGgQFL
+2020-12-17 16:23:13.030 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/kaptcha/image-code/GSLDfk4G
+2020-12-17 16:23:18.163 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :38   [32m        [0;39m 不需要控台登录验证：/system/admin/user/login
+2020-12-17 16:23:20.339 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:20.341 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:20.342 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:20.343 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:21.786 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:21.788 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:21.822 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:21.823 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:24.219 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:24.220 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:25.460 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:25.461 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:25.490 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:25.492 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:27.475 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:27.476 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:27.502 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:27.505 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:29.278 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:29.279 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:29.302 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:29.303 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:31.243 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:31.244 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:32.385 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:32.387 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
+2020-12-17 16:23:32.410 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :43   [32m        [0;39m 控台登录验证开始，token：miuAKWuD
+2020-12-17 16:23:32.411 INFO  com.lzn.gateway.filter.LoginAdminGatewayFilter    :55   [32m        [0;39m 已登录：{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","token":"miuAKWuD"}
