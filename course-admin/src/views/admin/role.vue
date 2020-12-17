@@ -54,6 +54,63 @@
 		</v-dialog>
 
 
+   <!--  角色用户关联配置 -->
+	 <v-dialog v-model="dialogRoleUser" persistent max-width="800" >
+		 <v-card>
+			 <v-card-title>
+				 角色用户关联配置
+			 </v-card-title>
+			 
+			 <v-row>
+				 <v-col cols="12" md="6">
+					 <v-simple-table>
+					 	<thead>
+					 		<tr>
+
+					 			<th class="primary--text text-center text-h6">
+					 				用户名称
+					 			</th>
+					 		</tr>
+					 	</thead>
+					 	<tbody>
+					 		<tr v-for="user in users"   class="text-center">
+					 			<td>{{ user.loginName }}</td>
+					 		</tr>
+					 	</tbody>
+					 </v-simple-table>
+				 </v-col>
+				 
+				 <v-col cols="12" md="6">
+					 <v-simple-table>
+					 	<thead>
+					 		<tr>
+					 
+					 			<th class="primary--text text-center  text-h6">
+					 				用户名称
+					 			</th>
+					 		</tr>
+					 	</thead>
+					 	<tbody>
+					 		<tr v-for="user in roleUsers"  class="text-center">
+					 			<td >{{ user.loginName }}</td>
+					 		</tr>
+					 	</tbody>
+					 </v-simple-table>
+				 </v-col>
+			 </v-row>
+			 
+			 <v-card-actions>
+				 <v-spacer></v-spacer>
+				 <v-btn @click="dialogRoleUser = false" class="warning">
+					  取消
+				 </v-btn>
+				 
+				 <v-btn @click="saveUser()" class="success">
+					 保存
+				 </v-btn>
+			 </v-card-actions>
+		 </v-card>
+	 </v-dialog>
 
 		<p class="ma-10">
 
@@ -96,8 +153,12 @@
 
 								<td>
 									<v-row align="center" justify="space-around">
+										<v-btn x-small fab @click="editUser(role)" class="teal">
+											<v-icon>person</v-icon>
+										</v-btn>
+										
 										<v-btn x-small fab @click="editResource(role)" class="success">
-											<v-icon>lock</v-icon>
+											<v-icon>folder</v-icon>
 										</v-btn>
 
 										<v-btn x-small fab @click="edit(role)" class="primary">
@@ -141,9 +202,13 @@
 				items: [],
 				dialog: false,
 				diglogRoleResource: false,
+				dialogRoleUser: false,
 				selection: [], // 表示已经选择的数据
 				// 勾选上的资源id列表
 				resourceIds: [],
+				
+				users: [],
+				roleUsers: [],
 			}
 		},
 
@@ -255,6 +320,38 @@
 					})
 				});
 			},
+			
+			
+			/**
+			 * 编辑角色用户关联
+			 */
+			editUser(role) {
+				let _this = this;
+				_this.role = $.extend({}, role);
+				// 获取所有的用户
+				_this.listUser();
+				_this.dialogRoleUser = true;
+			},
+			
+			
+			   /**
+       * 查询所有用户
+       */
+      listUser() {
+        let _this = this;
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/list', {
+          page: 1,
+          size: 9999
+        }).then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            _this.users = resp.content.list;
+            // _this.listRoleUser();
+          } else {
+            Toast.warning(resp.message);
+          }
+        })
+      },
 
 			/**
 			 * 角色资源关联
