@@ -13983,3 +13983,153 @@
 2020-12-17 21:18:27.080 INFO  com.lzn.system.config.SystemApplication           :61   [32m        [0;39m Started SystemApplication in 10.397 seconds (JVM running for 10.854)
 2020-12-17 21:18:27.081 INFO  com.lzn.system.config.SystemApplication           :24   [32m        [0;39m 启动成功！！
 2020-12-17 21:18:27.081 INFO  com.lzn.system.config.SystemApplication           :25   [32m        [0;39m System地址: 	http://127.0.0.1:9001
+2020-12-17 21:19:00.634 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 21:19:00.634 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-12-17 21:19:00.642 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
+2020-12-17 21:19:00.677 INFO  com.lzn.config.LogAspect                          :76   [32mkGy6Lqj9[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 21:19:00.678 INFO  com.lzn.config.LogAspect                          :77   [32mkGy6Lqj9[0;39m 请求地址: http://localhost:9001/system/admin/user/logout/r9IpLhe1 GET
+2020-12-17 21:19:00.678 INFO  com.lzn.config.LogAspect                          :78   [32mkGy6Lqj9[0;39m 类名方法: com.lzn.system.controller.admin.UserController.logout
+2020-12-17 21:19:00.679 INFO  com.lzn.config.LogAspect                          :79   [32mkGy6Lqj9[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:00.681 INFO  com.lzn.config.LogAspect                          :97   [32mkGy6Lqj9[0;39m 请求参数: ["r9IpLhe1"]
+2020-12-17 21:19:01.043 INFO  com.lzn.system.controller.admin.UserController    :118  [32mkGy6Lqj9[0;39m 从redis中删除token:r9IpLhe1
+2020-12-17 21:19:01.054 INFO  com.lzn.config.LogAspect                          :109  [32mkGy6Lqj9[0;39m 返回结果: {"success":true}
+2020-12-17 21:19:01.055 INFO  com.lzn.config.LogAspect                          :110  [32mkGy6Lqj9[0;39m ------------- 结束 耗时：380 ms -------------
+2020-12-17 21:19:01.155 INFO  com.lzn.config.LogAspect                          :76   [32mjBe6NTPK[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 21:19:01.156 INFO  com.lzn.config.LogAspect                          :77   [32mjBe6NTPK[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/vmbY9TKa GET
+2020-12-17 21:19:01.156 INFO  com.lzn.config.LogAspect                          :78   [32mjBe6NTPK[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 21:19:01.156 INFO  com.lzn.config.LogAspect                          :79   [32mjBe6NTPK[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:01.157 INFO  com.lzn.config.LogAspect                          :97   [32mjBe6NTPK[0;39m 请求参数: ["vmbY9TKa",null,null]
+2020-12-17 21:19:01.262 INFO  com.lzn.config.LogAspect                          :109  [32mjBe6NTPK[0;39m 返回结果: null
+2020-12-17 21:19:01.263 INFO  com.lzn.config.LogAspect                          :110  [32mjBe6NTPK[0;39m ------------- 结束 耗时：108 ms -------------
+2020-12-17 21:19:11.062 INFO  com.lzn.config.LogAspect                          :76   [32mbH9MsN0Z[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 21:19:11.062 INFO  com.lzn.config.LogAspect                          :77   [32mbH9MsN0Z[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-17 21:19:11.062 INFO  com.lzn.config.LogAspect                          :78   [32mbH9MsN0Z[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-17 21:19:11.062 INFO  com.lzn.config.LogAspect                          :79   [32mbH9MsN0Z[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:11.065 INFO  com.lzn.config.LogAspect                          :97   [32mbH9MsN0Z[0;39m 请求参数: [{"imageCode":"b7g7","imageCodeToken":"vmbY9TKa","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-17 21:19:11.074 INFO  com.lzn.config.LogAspect                          :109  [32mbH9MsN0Z[0;39m 返回结果: {"message":"验证码不对","success":false}
+2020-12-17 21:19:11.075 INFO  com.lzn.config.LogAspect                          :110  [32mbH9MsN0Z[0;39m ------------- 结束 耗时：13 ms -------------
+2020-12-17 21:19:11.089 INFO  com.lzn.config.LogAspect                          :76   [32mfX4317x9[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 21:19:11.089 INFO  com.lzn.config.LogAspect                          :77   [32mfX4317x9[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/3sxCKFdj GET
+2020-12-17 21:19:11.089 INFO  com.lzn.config.LogAspect                          :78   [32mfX4317x9[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 21:19:11.089 INFO  com.lzn.config.LogAspect                          :79   [32mfX4317x9[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:11.089 INFO  com.lzn.config.LogAspect                          :97   [32mfX4317x9[0;39m 请求参数: ["3sxCKFdj",null,null]
+2020-12-17 21:19:11.097 INFO  com.lzn.config.LogAspect                          :109  [32mfX4317x9[0;39m 返回结果: null
+2020-12-17 21:19:11.098 INFO  com.lzn.config.LogAspect                          :110  [32mfX4317x9[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 21:19:21.225 INFO  com.lzn.config.LogAspect                          :76   [32maVab9OvV[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 21:19:21.225 INFO  com.lzn.config.LogAspect                          :77   [32maVab9OvV[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-17 21:19:21.226 INFO  com.lzn.config.LogAspect                          :78   [32maVab9OvV[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-17 21:19:21.226 INFO  com.lzn.config.LogAspect                          :79   [32maVab9OvV[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:21.226 INFO  com.lzn.config.LogAspect                          :97   [32maVab9OvV[0;39m 请求参数: [{"imageCode":"p5ya","imageCodeToken":"3sxCKFdj","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-17 21:19:21.290 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32maVab9OvV[0;39m HikariPool-1 - Starting...
+2020-12-17 21:19:21.479 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32maVab9OvV[0;39m HikariPool-1 - Start completed.
+2020-12-17 21:19:21.486 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32maVab9OvV[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-17 21:19:21.500 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32maVab9OvV[0;39m ==> Parameters: admin(String)
+2020-12-17 21:19:21.509 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32maVab9OvV[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 21:19:21.509 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32maVab9OvV[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 21:19:21.510 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32maVab9OvV[0;39m <==      Total: 1
+2020-12-17 21:19:21.522 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32maVab9OvV[0;39m ==>  Preparing: select distinct r.id, r.`name`, r.page, r.request, r.parent from role_user ru, role_resource rr, resource r where ru.user_id = ? and ru.role_id = rr.role_id and rr.resource_id = r.id order by r.id asc 
+2020-12-17 21:19:21.523 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32maVab9OvV[0;39m ==> Parameters: guHzMCGy(String)
+2020-12-17 21:19:21.524 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 21:19:21.525 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2020-12-17 21:19:21.526 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 01, 系统管理, null, null, 
+2020-12-17 21:19:21.526 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2020-12-17 21:19:21.527 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2020-12-17 21:19:21.527 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2020-12-17 21:19:21.527 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 0103, 角色管理, system/role, null, 01
+2020-12-17 21:19:21.528 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 010301, 角色/权限管理, null, ["/system/admin/role"], 0103
+2020-12-17 21:19:21.528 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 02, 业务管理, null, null, 
+2020-12-17 21:19:21.528 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2020-12-17 21:19:21.528 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32maVab9OvV[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2020-12-17 21:19:21.529 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32maVab9OvV[0;39m <==      Total: 10
+2020-12-17 21:19:21.533 INFO  com.lzn.service.UserService                       :171  [32maVab9OvV[0;39m 有权限的请求：[/system/admin/user/save, /business/admin/teacher, /system/admin/user/save-password, /system/admin/user/list, /system/admin/role]
+2020-12-17 21:19:21.542 INFO  com.lzn.config.LogAspect                          :109  [32maVab9OvV[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","requests":["/system/admin/user/save","/business/admin/teacher","/system/admin/user/save-password","/system/admin/user/list","/system/admin/role"],"resources":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"0103","name":"角色管理","page":"system/role","parent":"01"},{"id":"010301","name":"角色/权限管理","parent":"0103","request":"[\"/system/admin/role\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"}],"token":"sKOJXKE3"},"success":true}
+2020-12-17 21:19:21.542 INFO  com.lzn.config.LogAspect                          :110  [32maVab9OvV[0;39m ------------- 结束 耗时：317 ms -------------
+2020-12-17 21:19:23.975 INFO  com.lzn.config.LogAspect                          :76   [32mDIVMy8BK[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 21:19:23.975 INFO  com.lzn.config.LogAspect                          :77   [32mDIVMy8BK[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 21:19:23.975 INFO  com.lzn.config.LogAspect                          :78   [32mDIVMy8BK[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 21:19:23.975 INFO  com.lzn.config.LogAspect                          :79   [32mDIVMy8BK[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:23.977 INFO  com.lzn.config.LogAspect                          :97   [32mDIVMy8BK[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 21:19:24.013 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mDIVMy8BK[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 21:19:24.014 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mDIVMy8BK[0;39m ==> Parameters: 
+2020-12-17 21:19:24.015 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mDIVMy8BK[0;39m <==    Columns: count(0)
+2020-12-17 21:19:24.016 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32mDIVMy8BK[0;39m <==        Row: 1
+2020-12-17 21:19:24.017 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32mDIVMy8BK[0;39m <==      Total: 1
+2020-12-17 21:19:24.020 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mDIVMy8BK[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 21:19:24.020 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mDIVMy8BK[0;39m ==> Parameters: 5(Integer)
+2020-12-17 21:19:24.022 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mDIVMy8BK[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 21:19:24.022 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32mDIVMy8BK[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 21:19:24.022 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mDIVMy8BK[0;39m <==      Total: 1
+2020-12-17 21:19:24.025 INFO  com.lzn.config.LogAspect                          :109  [32mDIVMy8BK[0;39m 返回结果: {"content":{"list":[{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"}],"page":1,"size":5,"total":1},"success":true}
+2020-12-17 21:19:24.025 INFO  com.lzn.config.LogAspect                          :110  [32mDIVMy8BK[0;39m ------------- 结束 耗时：50 ms -------------
+2020-12-17 21:19:27.773 INFO  com.lzn.config.LogAspect                          :76   [32mbugktzJ7[0;39m ------------- 【用户】保存开始 -------------
+2020-12-17 21:19:27.774 INFO  com.lzn.config.LogAspect                          :77   [32mbugktzJ7[0;39m 请求地址: http://localhost:9001/system/admin/user/save POST
+2020-12-17 21:19:27.774 INFO  com.lzn.config.LogAspect                          :78   [32mbugktzJ7[0;39m 类名方法: com.lzn.system.controller.admin.UserController.save
+2020-12-17 21:19:27.774 INFO  com.lzn.config.LogAspect                          :79   [32mbugktzJ7[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:27.774 INFO  com.lzn.config.LogAspect                          :97   [32mbugktzJ7[0;39m 请求参数: [{"loginName":"1243","name":"12431","password":"3bb5ef6c7eee98dca3cb7bd3ec461358"}]
+2020-12-17 21:19:27.776 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mbugktzJ7[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-17 21:19:27.777 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mbugktzJ7[0;39m ==> Parameters: 1243(String)
+2020-12-17 21:19:27.777 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32mbugktzJ7[0;39m <==      Total: 0
+2020-12-17 21:19:27.778 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32mbugktzJ7[0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?) 
+2020-12-17 21:19:27.778 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32mbugktzJ7[0;39m ==> Parameters: IxT29TJQ(String), 1243(String), 12431(String), e2b1ed068542a3aab3b52a69acf743ad(String)
+2020-12-17 21:19:27.784 DEBUG com.lzn.mapper.UserMapper.insert                  :159  [32mbugktzJ7[0;39m <==    Updates: 1
+2020-12-17 21:19:27.785 INFO  com.lzn.config.LogAspect                          :109  [32mbugktzJ7[0;39m 返回结果: {"content":{"loginName":"1243","name":"12431"},"success":true}
+2020-12-17 21:19:27.785 INFO  com.lzn.config.LogAspect                          :110  [32mbugktzJ7[0;39m ------------- 结束 耗时：12 ms -------------
+2020-12-17 21:19:27.818 INFO  com.lzn.config.LogAspect                          :76   [32myGeuLsjQ[0;39m ------------- 【用户】查询开始 -------------
+2020-12-17 21:19:27.819 INFO  com.lzn.config.LogAspect                          :77   [32myGeuLsjQ[0;39m 请求地址: http://localhost:9001/system/admin/user/list POST
+2020-12-17 21:19:27.819 INFO  com.lzn.config.LogAspect                          :78   [32myGeuLsjQ[0;39m 类名方法: com.lzn.system.controller.admin.UserController.list
+2020-12-17 21:19:27.819 INFO  com.lzn.config.LogAspect                          :79   [32myGeuLsjQ[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:19:27.819 INFO  com.lzn.config.LogAspect                          :97   [32myGeuLsjQ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-12-17 21:19:27.820 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32myGeuLsjQ[0;39m ==>  Preparing: SELECT count(0) FROM user 
+2020-12-17 21:19:27.820 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32myGeuLsjQ[0;39m ==> Parameters: 
+2020-12-17 21:19:27.821 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32myGeuLsjQ[0;39m <==    Columns: count(0)
+2020-12-17 21:19:27.821 TRACE com.lzn.mapper.UserMapper.selectByExample_COUNT   :165  [32myGeuLsjQ[0;39m <==        Row: 2
+2020-12-17 21:19:27.822 DEBUG com.lzn.mapper.UserMapper.selectByExample_COUNT   :159  [32myGeuLsjQ[0;39m <==      Total: 1
+2020-12-17 21:19:27.822 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32myGeuLsjQ[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2020-12-17 21:19:27.823 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32myGeuLsjQ[0;39m ==> Parameters: 5(Integer)
+2020-12-17 21:19:27.824 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32myGeuLsjQ[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 21:19:27.824 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32myGeuLsjQ[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 21:19:27.824 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32myGeuLsjQ[0;39m <==        Row: IxT29TJQ, 1243, 12431, e2b1ed068542a3aab3b52a69acf743ad
+2020-12-17 21:19:27.825 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32myGeuLsjQ[0;39m <==      Total: 2
+2020-12-17 21:19:27.825 INFO  com.lzn.config.LogAspect                          :109  [32myGeuLsjQ[0;39m 返回结果: {"content":{"list":[{"id":"guHzMCGy","loginName":"admin","name":"超级管理员"},{"id":"IxT29TJQ","loginName":"1243","name":"12431"}],"page":1,"size":5,"total":2},"success":true}
+2020-12-17 21:19:27.826 INFO  com.lzn.config.LogAspect                          :110  [32myGeuLsjQ[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-17 21:20:00.925 INFO  com.lzn.config.LogAspect                          :76   [32mdQWFdBOw[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 21:20:00.925 INFO  com.lzn.config.LogAspect                          :77   [32mdQWFdBOw[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/qu3PUeak GET
+2020-12-17 21:20:00.925 INFO  com.lzn.config.LogAspect                          :78   [32mdQWFdBOw[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 21:20:00.925 INFO  com.lzn.config.LogAspect                          :79   [32mdQWFdBOw[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:20:00.925 INFO  com.lzn.config.LogAspect                          :97   [32mdQWFdBOw[0;39m 请求参数: ["qu3PUeak",null,null]
+2020-12-17 21:20:00.935 INFO  com.lzn.config.LogAspect                          :109  [32mdQWFdBOw[0;39m 返回结果: null
+2020-12-17 21:20:00.935 INFO  com.lzn.config.LogAspect                          :110  [32mdQWFdBOw[0;39m ------------- 结束 耗时：10 ms -------------
+2020-12-17 21:20:02.431 INFO  com.lzn.config.LogAspect                          :76   [32mzjMcF3DL[0;39m ------------- 【图片验证码】操作开始 -------------
+2020-12-17 21:20:02.431 INFO  com.lzn.config.LogAspect                          :77   [32mzjMcF3DL[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/fofeY4hn GET
+2020-12-17 21:20:02.431 INFO  com.lzn.config.LogAspect                          :78   [32mzjMcF3DL[0;39m 类名方法: com.lzn.system.controller.admin.KaptchaController.imageCode
+2020-12-17 21:20:02.432 INFO  com.lzn.config.LogAspect                          :79   [32mzjMcF3DL[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:20:02.432 INFO  com.lzn.config.LogAspect                          :97   [32mzjMcF3DL[0;39m 请求参数: ["fofeY4hn",null,null]
+2020-12-17 21:20:02.438 INFO  com.lzn.config.LogAspect                          :109  [32mzjMcF3DL[0;39m 返回结果: null
+2020-12-17 21:20:02.439 INFO  com.lzn.config.LogAspect                          :110  [32mzjMcF3DL[0;39m ------------- 结束 耗时：8 ms -------------
+2020-12-17 21:20:46.708 INFO  com.lzn.config.LogAspect                          :76   [32m7zzpvW38[0;39m ------------- 【用户】操作开始 -------------
+2020-12-17 21:20:46.708 INFO  com.lzn.config.LogAspect                          :77   [32m7zzpvW38[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2020-12-17 21:20:46.708 INFO  com.lzn.config.LogAspect                          :78   [32m7zzpvW38[0;39m 类名方法: com.lzn.system.controller.admin.UserController.login
+2020-12-17 21:20:46.708 INFO  com.lzn.config.LogAspect                          :79   [32m7zzpvW38[0;39m 远程地址: 127.0.0.1
+2020-12-17 21:20:46.708 INFO  com.lzn.config.LogAspect                          :97   [32m7zzpvW38[0;39m 请求参数: [{"imageCode":"paye","imageCodeToken":"fofeY4hn","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2020-12-17 21:20:46.711 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7zzpvW38[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2020-12-17 21:20:46.712 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7zzpvW38[0;39m ==> Parameters: admin(String)
+2020-12-17 21:20:46.715 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7zzpvW38[0;39m <==    Columns: id, login_name, name, password
+2020-12-17 21:20:46.715 TRACE com.lzn.mapper.UserMapper.selectByExample         :165  [32m7zzpvW38[0;39m <==        Row: guHzMCGy, admin, 超级管理员, 1f15d405949c4ed3c2279aa6d48b1e9a
+2020-12-17 21:20:46.715 DEBUG com.lzn.mapper.UserMapper.selectByExample         :159  [32m7zzpvW38[0;39m <==      Total: 1
+2020-12-17 21:20:46.716 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32m7zzpvW38[0;39m ==>  Preparing: select distinct r.id, r.`name`, r.page, r.request, r.parent from role_user ru, role_resource rr, resource r where ru.user_id = ? and ru.role_id = rr.role_id and rr.resource_id = r.id order by r.id asc 
+2020-12-17 21:20:46.716 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32m7zzpvW38[0;39m ==> Parameters: guHzMCGy(String)
+2020-12-17 21:20:46.717 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==    Columns: id, name, page, request, parent
+2020-12-17 21:20:46.717 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2020-12-17 21:20:46.718 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 01, 系统管理, null, null, 
+2020-12-17 21:20:46.718 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2020-12-17 21:20:46.718 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2020-12-17 21:20:46.719 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2020-12-17 21:20:46.719 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 0103, 角色管理, system/role, null, 01
+2020-12-17 21:20:46.720 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 010301, 角色/权限管理, null, ["/system/admin/role"], 0103
+2020-12-17 21:20:46.720 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 02, 业务管理, null, null, 
+2020-12-17 21:20:46.720 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2020-12-17 21:20:46.721 TRACE com.lzn.mapper.my.MyUserMapper.findResources      :165  [32m7zzpvW38[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2020-12-17 21:20:46.721 DEBUG com.lzn.mapper.my.MyUserMapper.findResources      :159  [32m7zzpvW38[0;39m <==      Total: 10
+2020-12-17 21:20:46.721 INFO  com.lzn.service.UserService                       :171  [32m7zzpvW38[0;39m 有权限的请求：[/system/admin/user/save, /business/admin/teacher, /system/admin/user/save-password, /system/admin/user/list, /system/admin/role]
+2020-12-17 21:20:46.723 INFO  com.lzn.config.LogAspect                          :109  [32m7zzpvW38[0;39m 返回结果: {"content":{"id":"guHzMCGy","loginName":"admin","name":"超级管理员","requests":["/system/admin/user/save","/business/admin/teacher","/system/admin/user/save-password","/system/admin/user/list","/system/admin/role"],"resources":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"0103","name":"角色管理","page":"system/role","parent":"01"},{"id":"010301","name":"角色/权限管理","parent":"0103","request":"[\"/system/admin/role\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"}],"token":"mJ8ZKz0w"},"success":true}
+2020-12-17 21:20:46.723 INFO  com.lzn.config.LogAspect                          :110  [32m7zzpvW38[0;39m ------------- 结束 耗时：16 ms -------------
