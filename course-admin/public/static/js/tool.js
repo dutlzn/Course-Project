@@ -128,7 +128,7 @@ Tool = {
 	hasResource: function(id) {
 		let _this = this;
 		let resources = _this.getLoginUser().resources;
-		console.log("查找资源", _this.getLoginUser());
+		// console.log("查找资源", _this.getLoginUser());
 		if (_this.isEmpty(resources)) {
 			return false;
 		}
