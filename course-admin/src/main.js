@@ -61,7 +61,6 @@ Object.keys(filter).forEach(key => {
 	Vue.filter(key, filter[key])
 });
 
-
 // 路由登录拦截
 router.beforeEach((to, from, next) => {
 	// 要不要对meta.loginRequire属性做监控拦截
@@ -78,7 +77,6 @@ router.beforeEach((to, from, next) => {
 		next();
 	}
 });
-
 
 new Vue({
 	router,
